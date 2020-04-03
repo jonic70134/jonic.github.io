@@ -5,6 +5,7 @@ $(function(){
 		return false;	
 	});
 	
+	
 	$(".work").click(function(){
 		$("html,body").stop(true,false).animate({scrollTop: ($('#content_two').offset().top)},500);
 		return false;	
