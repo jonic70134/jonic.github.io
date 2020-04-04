@@ -2,11 +2,18 @@ doctype html
 html
 	head
 		meta(charset='UTF-8')
+		meta(content='IE=edge,chrome=1' http-equiv='X-UA-Compatible')
+		meta(neme='description',content='Jonic\'s portfolio')
+		meta(neme='author',content='Jonic')
+		meta(neme='viewport',content='width=device-width,initial-scale=1,user-scalable=1')
+		title='jonic\'s portfolio'
 		script(src='js/jquery.min.js')
 		script(src='js/jquery-ui.min.js')
 		script(src='js/swfobject.js')
 		script(src='js/index.js')
-		link(href='css/index.css', rel='stylesheet')
+		link(href='img/favicon.ico',rel='icon',type='image/svg+xml')
+		link(href='css/index.css',rel='stylesheet' media='all')
+		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	body#home
 		img.bg(src='img/index_bg.jpg', alt='背景圖')
 		#sidebar.clearfix
@@ -141,7 +148,18 @@ html
 		//- 	span.bot
 		//- 	span.top
 		//- 	| Love Hiking、ball games、travel、photography too.
-	
+		#asap4.box-target
+			.content
+				.desktop
+					img(src='img/asap_index.png',alt='ASAP4.0 index page')
+					img(src='img/asap_item.png',alt='ASAP4.0 item page')
+					img(src='img/asap_per.png',alt='ASAP4.0 per page')
+					img(src='img/asap_track.png',alt='ASAP4.0 item page')
+				.mobile
+					img(src='img/asap_m_index.png',alt='ASAP4.0 mobile index page')
+					img(src='img/asap_m_item.png',alt='ASAP4.0 mobile item page')
+					img(src='img/asap_m_per.png',alt='ASAP4.0 mobile per page')
+			a.box-close(href='#')
 			
 
 
