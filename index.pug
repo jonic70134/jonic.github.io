@@ -6,12 +6,15 @@ html
 		meta(name='description',content='Jonic\'s portfolio')
 		meta(name='author',content='Jonic')
 		meta(name='viewport',content='width=device-width,initial-scale=1,user-scalable=1')
+		meta(name='apple-mobile-web-app-capable',content='yes')
+		meta(name='apple-touch-fullscreen',content='yes')
 		title='jonic\'s portfolio'
 		script(src='js/jquery.min.js')
 		script(src='js/jquery-ui.min.js')
 		script(src='js/swfobject.js')
 		script(src='js/index.js')
 		link(href='img/favicon.ico',rel='icon',type='image/svg+xml')
+		ink(href='img/mypic.jpg',rel='image_src',type='image/jpeg')
 		link(href='css/index.css',rel='stylesheet' media='all')
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	body#home
@@ -19,19 +22,21 @@ html
 		#sidebar.clearfix
 			header
 				h1
-					a(href='#', title="jonic's portfolio") jonic's portfolio
+					a(href='#', title="jonic's portfolio") Jonic's portfolio
 			nav#menu
-				ul
+				ul.anchor-link
 					li.home
-						a(href='#') About Me
+						a(href='#content_one') About Me
 					li.work
-						a(href='#') My Work
+						a(href='#content_two') My Work
+					li.exp
+						a(href='#exp') Experience
 					li.video
-						a(href='#') Video Portfolio
+						a(href='#content_three') Video Portfolio
 					li.contact
 						a(href='mailto:jonic70134@gmail.com') Contact
 			footer#copyright
-				| COPYRIGHT © 2017 by Jonic ALL RIGHTS RESERVED.
+				| COPYRIGHT © 2020 by Jonic ALL RIGHTS RESERVED.
 		#content
 			section#content_one
 				h1 About Me
@@ -41,7 +46,73 @@ html
 					| I usually like mountaineering and I am also a tree climbing instructor. 
 					| Because I think that understanding and experiencing different life is the nutrition of the designer. 
 					| If you want to know more about my experience and ability, please feel free to contact me.
-				h2 Experience
+			section#content_two
+				h1 My work
+				.workimg
+					a.work_des(href='https://codepen.io/jonic70134/pen/Dhnta/', target='_blank')
+						.link
+							i.fa.fa-external-link
+							| Pure css Luffy
+						.mask
+						img(src='img/luffy.png', alt='Pure css - Luffy')
+					a.work_des(href='#asap4')
+						.link
+							i.fa.fa-external-link
+							| ASAP 4.0 PC & mobile template
+						.mask
+						img(src='img/asap4.png', alt='ASAP 4.0')
+					a.work_des(href='#shop86')
+						.link
+							i.fa.fa-external-link
+							| 86shop PC & mobile template
+						.mask
+						img(src='img/86shop.png', alt='86 online shopping mall')
+					a.work_des(href='http://store.asus.com/', target='_blank')
+						.link
+							i.fa.fa-external-link
+							| ASUS RWD template
+						.mask
+						img(src='img/asus.png', alt='ASUS online shopping mall')
+				h2 Visual design
+				.workimg.visual
+					a.work_des(href='#')
+						.link
+							i.fa.fa-external-link
+							| Tree Climb t-shirt logo
+						.mask
+						img(src='img/ill_7.png', alt='Tree Climb t-shirt logo')
+					a.work_des(href='#')
+						.link
+							i.fa.fa-external-link
+							| Hiking club logo
+						.mask
+						img(src='img/ill_6.png', alt='Hiking club logo')
+					a.work_des(href='#')
+						.link
+							i.fa.fa-external-link
+							| NCUHRM uniform
+						.mask
+						img(src='img/ill_5.jpg', alt='National Central University HRM uniform')
+					a.work_des(href='#')
+						.link
+							i.fa.fa-external-link
+							| "The Door" badges
+						.mask
+						img(src='img/ill_4.jpg', alt='The Door badges')
+					a.work_des(href='#')
+						.link
+							i.fa.fa-external-link
+							| "The Door" bookmark
+						.mask
+						img(src='img/ill_3.jpg', alt='"The Door" bookmark')
+					a.work_des(href='#')
+						.link
+							i.fa.fa-external-link
+							| Merry Christmas e-card
+						.mask
+						img(src='img/ill_1.jpg', alt='Merry Christmas e-card')
+			section#content_three
+				h2#exp Experience
 				p
 					strong 
 						| | 2013/06-2016/09 | , | 2017/10- 2020/02 | - Uitox co.,Ltd. Web UI Designer
@@ -103,34 +174,7 @@ html
 					li  Text Editor (Sublime、Notepad++)
 					li  Adobe Photoshop
 					li  Adobe Illustrator
-			section#content_two
-				h1 My work
-				.workimg
-					a.luffy(href='https://codepen.io/jonic70134/pen/Dhnta/', target='_blank')
-						.link
-							i.fa.fa-external-link
-							| Pure css Luffy
-						.mask
-						img(src='img/luffy.png', alt='Pure css - Luffy')
-					a.luffy(href='#asap4')
-						.link
-							i.fa.fa-external-link
-							| ASAP 4.0 PC & mobile template
-						.mask
-						img(src='img/asap4.png', alt='ASAP 4.0')
-					a.luffy(href='#shop86')
-						.link
-							i.fa.fa-external-link
-							| 86shop PC & mobile template
-						.mask
-						img(src='img/86shop.png', alt='86 online shopping mall')
-					a.luffy(href='http://store.asus.com/', target='_blank')
-						.link
-							i.fa.fa-external-link
-							| ASUS RWD template
-						.mask
-						img(src='img/asus.png', alt='ASUS online shopping mall')
-			section#content_three
+
 				h1 Video Portfolio
 				.worktitle
 					| Here are some 3D animation and video works.

@@ -1,19 +1,9 @@
 $(function(){
 	//頁面scroll
-	$(".home").click(function(){
-		$("html,body").stop(true,false).animate({scrollTop: ($('#content_one').offset().top)},500);
-		return false;	
-	});
-	
-	
-	$(".work").click(function(){
-		$("html,body").stop(true,false).animate({scrollTop: ($('#content_two').offset().top)},500);
-		return false;	
-	});
-	
-	$(".video").click(function(){
-		$("html,body").stop(true,false).animate({scrollTop: ($('#content_three').offset().top)},500);
-		return false;	
+	$(".anchor-link li a").click(function(e){
+		e.preventDefault();
+		var aid = $(this).attr("href");
+		$('html,body').stop(true,false).animate({scrollTop: $(aid).offset().top},500);
 	});
 
 	//回到頂端
@@ -25,14 +15,14 @@ $(function(){
 			$("#backtop").stop(true,false).animate({top:-100},800);
 		};
 	});
-
 	$("#backtop").click(function(){
 		$("html,body").stop(true,false).animate({scrollTop:0},300);
 	});
-	$("#backtop").hover(function(){
-		$(this).animate(200);
-	},function(){
-		$(this).animate(200);
+
+	$(".visual a").click(function(e){
+		e.preventDefault();
 	});
+
+	
 });
 // by Jonic
