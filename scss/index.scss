@@ -479,13 +479,13 @@ img.bg {
 		.desktop{
 			.mobile{
 				display: flex;
-    			flex-flow: row nowrap;
+    			flex-flow: row wrap;
 				align-items: flex-start;
 				max-width:90%;
 				margin:0 auto;
 				img{
-					width: 31.85%;
-					margin:0 10px;
+					width: 46%;
+					margin:20px;
 				}
 			}
 		}
