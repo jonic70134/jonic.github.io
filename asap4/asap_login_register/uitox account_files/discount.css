@@ -1,0 +1,205 @@
+.account_001 .account-st{
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.account_001 .account-st .account-title{
+  position: relative;
+  padding:15px 0;
+  color:white;
+  background-color: #333;
+}
+.account_001 .account-st .account-title h1{
+  font-size:18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.account_001 .account-st .account-title a{
+  position: absolute;left:5px;top:15px;
+  display: block;
+  width:auto;
+  margin-top:-20px;
+  font-size:18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color:white;
+  border:none;
+  background: none;
+  box-shadow: none;
+  padding:0;
+  margin:0;
+}
+.account_001 .account-st .account-title a i{
+  margin-right:3px;
+}
+
+.discount-search-bar{
+  width: 100%;
+  position: relative;
+  padding: 10px 12px 0 ;
+}
+.discount-search-bar .input-search{
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+  padding-right: 60px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  background: white;
+  -webkit-appearance: none;
+}
+.discount-search-bar .btn-submit{
+  position: absolute;right: 13px;top: 10px;
+  padding: 7px 8px 6px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: white;
+  background: #f63577;
+  cursor: pointer;
+}
+.discount-body{
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  padding:0 10px;
+  background:white;
+}
+.discount-body li{
+  display: flex;
+  flex-flow:row nowrap;
+  align-items: stretch;
+  padding:12px 0;
+  border-bottom:1.5px solid #ddd;
+}
+.discount-body li:last-child{
+  border:none;
+}
+.discount-body .discount-des{
+  width:80%;
+  padding:5px 0;
+}
+.discount-body .discount-des .date{
+  display: flex;
+  flex-flow:row nowrap; 
+  align-items: center;
+}
+.discount-body .discount-des .date-txt{
+  margin-right:5px;
+  padding:5px 2px;
+  font-size:.8rem;
+  color:#f63577;
+  background-color: #feedf3;
+  border:1px solid #ddd;
+}
+.discount-body .discount-des .date-dur{
+  font-size:.8rem;
+  line-height: 1.2;
+}
+.discount-body .discount-des .date-max{
+  color:#f63577;
+}
+.discount-body .discount-des .title{
+    margin:10px 0;
+    color:#333;
+    font-size:1.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.discount-body .discount-des .bottom-txt{
+  font-size:.8rem;
+  line-height: 1.6;
+}
+.discount-body .discount-des .doorsill{
+  color:#f63577;
+}
+
+
+.discount-body .discount-qty{
+  width:20%;
+  padding-top:25px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+  border-left:1.5px solid #ddd;
+}
+.discount-body .discount-qty .num{
+  margin:0 0 15px;
+  color:#f63577;
+  font-size:1.8rem;
+  font-weight: 700;
+}
+.discount-body .discount-qty .txt{
+  font-size:.9rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .account_001 .account-st .account-title{
+    padding:10px 0;
+  }
+  .account_001 .account-st .account-title a{
+    top:12px;
+    font-size:14px;
+  }
+  .account_001 .account-st .account-title a i{
+    font-size:14px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .account_001 .account-st{
+    font-size:14px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .account_001 a {
+    width: 90%;
+    font-size: 22px;
+    margin: 8px 7px;
+  }
+  .account_001 a i {
+    font-size: 16px;
+  }
+}
+
+
+@media only screen and (max-width: 460px) {
+  .discount-body {
+    padding:0 10px;
+  }
+  .discount-body .discount-des{
+    width:77%;
+  }
+  .discount-body .discount-des .date-txt {
+    width: 75px;
+    text-align: center;
+  }
+  .discount-body .discount-des .title{
+    font-size:1rem;
+  }
+  .discount-body .discount-qty{
+    width:23%;
+  }
+  .discount-body .discount-qty .txt{
+    font-size:.8rem;
+  }
+}
+
+
+@media only screen and (max-width: 380px) {
+  .discount-body .discount-qty .num{
+    font-size:1.5rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .discount-body .discount-qty .num{
+    font-size:1.1rem;
+  }
+}

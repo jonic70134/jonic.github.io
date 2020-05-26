@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+    <!doctype html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="zh-TW">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>訂單確認</title>
+    <link rel="icon" href="../img/baichain.ico"/>
+    
+    <link rel="stylesheet" type="text/css" href="../css/cart/cart.css"/>
+
+    <script src="../js/3rd-party/jquery-3.4.1.min.js"></script>
+    <script src="../js/3rd-party/jquery.fancybox.min.js"></script>
+   <script>
+        $(document).ready(function() {
+            $("input[name$='deliver_way']").click(function() {
+                var deliverbox = $(this).val();
+
+                $("div.deliver_block").hide();
+                $("#deliver_block" + deliverbox).show();
+            });
+        });
+   </script>
+</head>
+</head>
+
+<body>
+    <div class="cart-outter">
+        <header class="cart-header" role="banner">
+        <div class="container">
+            <div class="head_con">
+                <a href="../index.html" title="回到BaiChian" class="logo">
+                    <img src="../img/asap40w.png" class="img-logo" itemprop="logo">
+                    <h1 itemprop="name">BaiChian</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+        <div class="cart-body">
+            <div class="cart-main">
+                <div class="order-all">
+                    <!-- 購物車商品清單 標頭-->
+                    <div class="order-head">
+                        <div class="order-chk-all">
+                            <input type="checkbox" class="order-chk" id="order-chk-all" checked="checked"/>
+                            <label for="order-chk-all" class="order-chk-label"></label> 
+                        </div>
+                        <div class="order-title">ASAP購物網</div><!--廠商名稱  -->
+                    </div>
+                    <!--購物車商品清單 列表  -->
+                    <div class="cart-item-block">
+                        <div class="order-chk-all red">
+                            <input type="checkbox" class="order-chk" id="order-chk1" checked="checked"/>
+                            <label for="order-chk1" class="order-chk-label"></label> 
+                        </div>
+                        <div class="cart-img">
+                            <img src="../img/sample/img100_01.jpg" alt="商品圖片"/>
+                        </div>
+                        <div class="cart-info">                               
+                            <div class="cart-name">
+                                <p>韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g</p>
+                                <div class="cart-size">白色 600ml</div>
+                            </div>
+                            <div class="cart-per">個人專屬特價期間07/10~07/13止</div>
+                            <div class="cart-quantity">
+                                <div class="lmt_price">
+                                    <p class="ori">原價<del><span class="currency">$</span>990</del></p>
+                                    <p class="lmt">限時特價<span class="currency">$</span><span class="price">999</span></p>
+                                </div>
+                                <div class="quantity-input">
+                                    <button class="btn-decrease">‒</button>
+                                    <input class="cart-num" type="text" value="1"/>
+                                    <button class="btn-increase">+</button>
+                                </div>
+                            </div>
+                            <div class="cart-gift">
+                                <p>贈品</p>
+                                <ul class="cart-gift-item">
+                                    <li>3M百利爐具專用菜瓜布x1</li>
+                                    <li>室內芳香劑x1</li>
+                                </ul>
+                            </div>
+                            <div class="cart-gift combine">
+                                <p>組合品</p>
+                                <ul class="cart-gift-item">
+                                    <li>蒲公英 環保捲筒衛生紙</li>
+                                    <li>Rebecca Bonbon 日本狗頭包 甜漾塔芙妮。撞色零錢包</li>
+                                </ul>
+                            </div>
+                            <div class="cart-gift addprod">
+                                <p>優惠加購</p>
+                                <ul class="cart-gift-item">
+                                    <li><div class="cart-gift-item_l">麵包超人零食包</div><div class="cart-gift-item_r"><span class="price">$25,000</span> <span>x1</span></div></li>
+                                    <li><div class="cart-gift-item_l">Dior迪奧 Miss Dior ORIGINAL女性淡香水100ml</div><div class="cart-gift-item_r"><span class="price">$999</span> <span>x10</span></div></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cart-price">
+                            <button class="btn-remove">移除</button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-item-block">
+                        <div class="order-chk-all red">
+                            <input type="checkbox" class="order-chk" id="order-chk2" checked="checked"/>
+                            <label for="order-chk2" class="order-chk-label"></label> 
+                        </div>
+                        <div class="cart-img">
+                            <img src="../img/sample/img100_02.jpg" alt="商品圖片"/>
+                        </div>
+                        <div class="cart-info">
+                            <div class="cart-name">
+                                <p>韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g</p>
+                                <div class="cart-size">規格：白色<br/>尺寸：L</div>
+                            </div>
+                            <div class="cart-quantity">
+                                <div class="price"><span class="currency">$</span><span class="price">999</span></div>
+                                <div class="quantity-input">
+                                    <button class="btn-decrease">‒</button>
+                                    <input class="cart-num" type="text" value="1"/>
+                                    <button class="btn-increase is-disabled">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-price">
+                            <button class="btn-remove">移除</button>
+                        </div>
+                    </div>
+                
+                    <div class="cart-item-block">
+                        <div class="order-chk-all red">
+                            <input type="checkbox" class="order-chk" id="order-chk3" checked="checked"/>
+                            <label for="order-chk3" class="order-chk-label"></label> 
+                        </div>
+                        <div class="cart-img">
+                            <img src="../img/sample/img100_03.jpg" alt="商品圖片"/>
+                        </div>
+                        <div class="cart-info">
+                            <div class="cart-name">
+                                <p>韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g</p>
+                                <div class="cart-size">玫瑰素顏霜 30ml</div>
+                            </div>
+                            <div class="cart-quantity">
+                            <div class="price"><span class="currency">$</span><span class="price">999</span></div>
+                                <div class="quantity-input">
+                                    <button class="btn-decrease">‒</button>
+                                    <input class="cart-num" type="text" value="1"/>
+                                    <button class="btn-increase is-disabled">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-price">
+                            <button class="btn-remove">移除</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-all">
+                    <!-- 以前加入的商品列表 -->
+                    <div class="cart-before">您以前加入購物車的商品</div>
+                </div>
+
+                <div class="order-all">
+                    <div class="cart-item-block">
+                        <div class="order-chk-all">
+                            <input type="checkbox" class="order-chk" id="order-chk4"/>
+                            <label for="order-chk4" class="order-chk-label"></label> 
+                        </div>
+                        <div class="cart-img">
+                            <img src="../img/sample/img100_04.jpg" alt="商品圖片"/>
+                            <p class="tag-conv">可超取</p>
+                        </div>
+                        <div class="cart-info">               
+                            <div class="cart-name">
+                                <p>韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g</p>
+                                <div class="cart-size">玫瑰素顏霜 30ml</div>
+                            </div>
+                            <div class="cart-quantity">
+                                <div class="price"><span class="currency">$</span><span class="price">9,999</span></div>
+                                <div class="quantity-input">
+                                    <button class="btn-decrease">‒</button>
+                                    <input class="cart-num" type="text" value="1"/>
+                                    <button class="btn-increase">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-price">
+                            <button class="btn-remove">移除</button>
+                        </div>
+                    </div>
+                        <!-- 補貨狀態 class加上 is-lack, checkbox元素保留 -->
+                    <div class="cart-item-block is-lack">
+                        <div class="order-chk-all">
+                            <input type="checkbox" class="order-chk" id="order-lack1"/>
+                            <label for="order-lack1" class="order-chk-label"></label> 
+                        </div>
+                        <div class="cart-img">
+                            <img src="../img/sample/img100_05.jpg" alt="商品圖片"/>
+                            <p class="tag-conv">可超取</p>
+                            <p class="cart-lack-tag">補貨中</p>
+                        </div>
+                        <div class="cart-info">                                
+                            <div class="cart-name">
+                                <p>韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g</p>
+                                <div class="cart-size">玫瑰素顏霜 30ml</div>
+                            </div>
+                            <div class="cart-quantity">
+                                <div class="price"><span class="currency">$</span><span class="price">999</span></div>
+                            </div>
+                        </div>
+                        <div class="cart-price">
+                            <button class="btn-remove">移除</button>
+                        </div>
+                    </div>
+                    <div class="cart-block orderprice">
+                        <div class="cart-sub-block">
+                            <div class="cart-block-txt"> 小計：</div>
+                            <div class="cart-block-txt"><span class="currency">$</span><span class="price">999,900</span></div>
+                        </div>
+                        <div class="cart-sub-block">
+                            <div class="cart-block-txt"> 本店滿$350超取免運費，滿$490宅配免運費</div>
+                        </div>
+                        <div class="addcart">
+                            <button class="btn-continue" onclick="location.href='../index.html'" type="button"><i class="fa fa-angle-left" aria-hidden="true"></i>繼續選購</button>
+                            <button class="btn-confirm" onclick="location.href='confirm.html'" type="button">開始結帳<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- cart-main -->
+
+
+            <div class="cart-main">
+                <div class="order-all">
+                    <!-- 購物車商品清單 標頭-->
+                    <div class="order-head">
+                        <div class="order-chk-all">
+                            <input type="checkbox" class="order-chk" id="order-chk-all" checked="checked"/>
+                            <label for="order-chk-all" class="order-chk-label"></label> 
+                        </div>
+                        <div class="order-title">燦坤</div><!--廠商名稱  -->
+                    </div>
+                    <!--購物車商品清單 列表  -->
+                    <div class="cart-item-block">
+                        <div class="order-chk-all red">
+                            <input type="checkbox" class="order-chk" id="order-chk2" checked="checked"/>
+                            <label for="order-chk2" class="order-chk-label"></label> 
+                        </div>
+                        <div class="cart-img">
+                            <img src="../img/sample/img100_02.jpg" alt="商品圖片"/>
+                        </div>
+                        <div class="cart-info">
+                            <div class="cart-name">
+                                <p>韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g</p>
+                                <div class="cart-size">規格：白色<br/>尺寸：L</div>
+                            </div>
+                            <div class="cart-quantity">
+                                <div class="price"><span class="currency">$</span><span class="price">999</span></div>
+                                <div class="quantity-input">
+                                    <button class="btn-decrease">‒</button>
+                                    <input class="cart-num" type="text" value="1"/>
+                                    <button class="btn-increase is-disabled">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-price">
+                            <button class="btn-remove">移除</button>
+                        </div>
+                    </div>
+                
+                    <div class="cart-item-block">
+                        <div class="order-chk-all red">
+                            <input type="checkbox" class="order-chk" id="order-chk3" checked="checked"/>
+                            <label for="order-chk3" class="order-chk-label"></label> 
+                        </div>
+                        <div class="cart-img">
+                            <img src="../img/sample/img100_03.jpg" alt="商品圖片"/>
+                        </div>
+                        <div class="cart-info">
+                            <div class="cart-name">
+                                <p>韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g</p>
+                                <div class="cart-size">玫瑰素顏霜 30ml</div>
+                            </div>
+                            <div class="cart-quantity">
+                            <div class="price"><span class="currency">$</span><span class="price">999</span></div>
+                                <div class="quantity-input">
+                                    <button class="btn-decrease">‒</button>
+                                    <input class="cart-num" type="text" value="1"/>
+                                    <button class="btn-increase is-disabled">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-price">
+                            <button class="btn-remove">移除</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-all">
+                    <!-- 以前加入的商品列表 -->
+                    <div class="cart-before">您以前加入購物車的商品</div>
+                </div>
+
+                <div class="order-all">
+                    <div class="cart-item-block">
+                        <div class="order-chk-all">
+                            <input type="checkbox" class="order-chk" id="order-chk4"/>
+                            <label for="order-chk4" class="order-chk-label"></label> 
+                        </div>
+                        <div class="cart-img">
+                            <img src="../img/sample/img100_04.jpg" alt="商品圖片"/>
+                            <p class="tag-conv">可超取</p>
+                        </div>
+                        <div class="cart-info">               
+                            <div class="cart-name">
+                                <p>韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g</p>
+                                <div class="cart-size">玫瑰素顏霜 30ml</div>
+                            </div>
+                            <div class="cart-quantity">
+                                <div class="price"><span class="currency">$</span><span class="price">9,999</span></div>
+                                <div class="quantity-input">
+                                    <button class="btn-decrease">‒</button>
+                                    <input class="cart-num" type="text" value="1"/>
+                                    <button class="btn-increase">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-price">
+                            <button class="btn-remove">移除</button>
+                        </div>
+                    </div>
+                    <div class="cart-block orderprice">
+                        <div class="cart-sub-block">
+                            <div class="cart-block-txt"> 小計：</div>
+                            <div class="cart-block-txt"><span class="currency">$</span><span class="price">999,900</span></div>
+                        </div>
+                        <div class="cart-sub-block">
+                            <div class="cart-block-txt"> 本店滿$350超取免運費，滿$490宅配免運費</div>
+                        </div>
+                        <div class="addcart">
+                            <button class="btn-continue" onclick="location.href='../index.html'" type="button"><i class="fa fa-angle-left" aria-hidden="true"></i>繼續選購</button>
+                            <button class="btn-confirm" onclick="location.href='confirm.html'" type="button">開始結帳<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- cart-main -->
+        </div>
+    </div>
+        
+        <!--<footer class="cart_footer">
+            <div class="addcart">
+                <button class="btn-continue" onclick="location.href='../index.html'" type="button"><i class="fa fa-angle-left" aria-hidden="true"></i>繼續選購</button>
+                <div class="total-price">小計：<span class="currency">$</span><span class="price">999,999</span></div>
+                <button class="btn-confirm" onclick="location.href='confirm.html'" type="button">開始結帳<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            </div>
+        </footer>-->
+</div>
+<!-- 隱藏商品fancybox -->
+    <div id="hide_prod_box" class="hide_prod_box">	
+		<div class="hide_prod_t">
+			<div class="pay_dis ori"><span class="title">原價</span><span class="price"><del>195,000</del></span></div> 
+			<div class="pay_dis"><span class="title">限時特價</span><span class="price">188,000</span></div> 
+		</div>
+		<div class="hide_des">
+			<p>限時特價已截止</p><br/>
+			<small>如要購買此商品，請點擊下方按鈕</small>
+		</div>
+		<div class="hide_btn">
+			<button type="button" class="button btn-cancel" onclick="$.fancybox.close()">取消</button>
+			<button type="button" class="button btn-order" onclick="$.fancybox.close()">我要購買</button>
+		</div>
+	</div>
+
+    <script>
+        $(document).ready(function() {
+            $.fancybox.open({
+                src  : '#hide_prod_box',
+                type : 'inline',
+            });
+		});
+    </script>
+</body> 
+</html>

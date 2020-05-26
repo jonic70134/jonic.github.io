@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>uitox account</title>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link href="./uitox account_files/font-awesome.min.css" rel="stylesheet">
+        <link href="./uitox account_files/common.css" rel="stylesheet" type="text/css">
+        <!--[if lt IE 9]>
+            <script src="/c/js/member/account/rwd/html5.js"></script>
+            <script src="/c/js/member/account/rwd/ie.js"></script>
+            <link rel="stylesheet" type="text/css" href="/c/css/member/account/rwd/ie.css">
+        <![endif]-->
+        
+        <div class="l-container">
+            <!-- <div class="head_title">美妝嚴選。嚴格把關</div> -->
+            <header class="l-header">
+                    <div class="logo"><a href="http://www.asap.com.tw/" class="icon-asap" title="返回ASAP首頁"><img src="./uitox account_files/asap40_176x38_w.png" alt="ASAP首頁"></a></div>
+            </header>
+        </div>
+        <!--header /-->
+        <div class="l-container l-tiny">
+            <!-- login -->
+            <div class="md-login l-card">
+                <h1 class="t-card-title">會員登入</h1>
+                <div class="md-form">
+                    <p class="t-description t-highlight align-left"></p>
+                    <form id="login_form" name="login_form" method="POST" action="">
+                        <ul class="form-content">
+                            <li class="form-item">
+                                <input type="text" tabindex="1" class="input-text input-id" id="input_id" name="account" data-error="輸入格式有誤!" data-empty="請輸入手機號碼或 E-mail!" placeholder="帳號 / E-mail / 手機號碼 (三擇一)" value="">
+                                <label for="input_id" class="place-label" style="display: none;">帳號 / E-mail / 手機號碼 (三擇一)</label>
+                            </li>
+                            <li class="form-item">
+                                <input type="password" tabindex="2" class="input-text" id="input_pwd" name="passwd" autocomplete="off" data-error="請輸入密碼!" placeholder="密碼">
+                                <label for="input_pwd" class="place-label" style="display: none;">密碼</label>
+
+                                <div class="form-item-con">
+                                    <a class="t-register" href="register.html">新客註冊</a>               
+                                    <label class="t-account" for="remember_account"><input type="checkbox" id="remember_account" name="remember_account" value="1">記住帳號</label>
+                                    <a href="#" target="_self" class="t-forgot-pwd">忘記密碼</a>
+                                </div>
+                            </li>
+                            <li class="form-item captcha align-left" style="display: none">
+                                <input type="text" tabindex="3" class="input-text" id="input_captcha" autocomplete="off" name="captcha" size="8" inputmode="numeric" pattern="[0-9]*" placeholder="圖片數字">
+                                <img src="./uitox account_files/showrandimg" id="r-img" class="img-captcha">
+                                <a href="javascript:void(0);" id="reload-img" class="t-reload">換張圖</a>
+                            </li>
+                            <li class="md-form-btn">
+                                <button type="button" class="btn-submit" tabindex="4" onclick="location.href='account.html'">送出</button>
+                            </li>
+                            <hr/>
+                        </ul>
+                    </form>
+                    <!-- <p class="t-description"> 還沒有註冊過？</p> -->
+                </div>
+                <div class="fb-login"><img src="uitox account_files/86app_icon_fb2_w.svg" alt="FB登入"/>Facebook&nbsp;快速登入</div>
+                <div class="line-login"><img src="uitox account_files/86app_icon_Line2_w.svg" alt="Line登入"/>Line&nbsp;快速登入</div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="l-container">
+            <footer class="l-footer">
+                <div class="copyright"></div>
+            </footer>
+        </div>
+        <a class="go-top" title="Back to top"></a>
+        <script src="./uitox account_files/jquery.min.js"></script>
+        <script src="./uitox account_files/common.js"></script>
+
+</body>
+</html>

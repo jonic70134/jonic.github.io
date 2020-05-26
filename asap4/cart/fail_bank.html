@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+    <!doctype html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="zh-TW">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>訂單確認</title>
+    <link rel="icon" href="../img/baichain.ico"/>
+    
+    <link rel="stylesheet" type="text/css" href="../css/cart/cart.css"/>
+
+    <script src="../js/3rd-party/jquery-3.4.1.min.js"></script>
+    <script src="../js/3rd-party/jquery.fancybox.min.js"></script>
+   <script>
+        $(document).ready(function() {
+            $("input[name$='deliver_way']").click(function() {
+                var deliverbox = $(this).val();
+
+                $("div.deliver_block").hide();
+                $("#deliver_block" + deliverbox).show();
+            });
+        });
+   </script>
+</head>
+</head>
+<body>
+    <div class="cart-outter">
+        <header class="cart-header" role="banner">
+        <div class="container">
+            <div class="head_con">
+                <a href="../index.html" title="回到BaiChian" class="logo">
+                    <img src="../img/asap40w.png" class="img-logo" itemprop="logo">
+                    <h1 itemprop="name">BaiChian</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+        <div class="cart-body">
+            <div class="cart-main">
+                <div class="cart-fail">
+                    <p class="red">訂購失敗！</p>
+                    <p>很抱歉，您所提供的信用卡資訊<span class="red">無法通過銀行授權！</span></p>
+                    <p>請確認您的刷卡資訊是否輸入錯誤或是與發卡銀行聯絡</p>
+                    <p>我們已經取消您的訂單，造成您的不便請見諒。</p>
+                </div>
+            </div><!-- cart-main -->
+        </div>
+        
+        <footer class="cart_footer cart-fail-btn">
+            <div class="confirm">
+                <button class="btn-prev" onclick="location.href='orderlist.html'" type="button"><i class="fa fa-angle-left" aria-hidden="true"></i>回上頁</button>
+                <button class="btn-next" onclick="location.href='confirm_delivery.html'" type="button">繼續選購<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            </div>
+        </footer>
+    </div>
+    
+</body> 
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+    <!doctype html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="zh-TW">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>訂單確認</title>
+    <link rel="icon" href="../img/baichain.ico"/>
+    
+    <link rel="stylesheet" type="text/css" href="../css/cart/cart.css"/>
+
+    <script src="../js/3rd-party/jquery-3.4.1.min.js"></script>
+    <script src="../js/3rd-party/jquery.fancybox.min.js"></script>
+   <script>
+        $(document).ready(function() {
+            $("input[name$='deliver_way']").click(function() {
+                var deliverbox = $(this).val();
+
+                $("div.deliver_block").hide();
+                $("#deliver_block" + deliverbox).show();
+            });
+        });
+   </script>
+</head>
+</head>
+<body>
+    <div class="cart-outter">
+        <header class="cart-header" role="banner">
+        <div class="container">
+            <div class="head_con">
+                <a href="../index.html" title="回到BaiChian" class="logo">
+                    <img src="../img/asap40w.png" class="img-logo" itemprop="logo">
+                    <h1 itemprop="name">BaiChian</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+        <div class="cart-body">
+            <div class="cart-main">
+                <div class="cart-fail">
+                    <p class="red">訂購失敗！</p>
+                    <p>很抱歉，在您購買過程中，可能由於搶購原因，商品：SONY 4K 65吋液晶連網電視<span class="red">已經缺貨！</span></p>
+                    <p>我們已經取消您的訂單，造成您的不便請見諒。</p>
+                </div>
+            </div><!-- cart-main -->
+        </div>
+        
+        <footer class="cart_footer cart-fail-btn">
+            <div class="confirm">
+                <button class="btn-next" onclick="location.href='confirm_delivery.html'" type="button">繼續選購<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            </div>
+        </footer>
+    </div>
+    
+</body> 
+</html>

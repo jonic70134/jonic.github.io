@@ -1,0 +1,160 @@
+﻿/* Override frame.css */
+
+.not-display {
+ 	display:none;
+}
+
+.vis-hidden {
+ 	visibility:hidden;
+}
+
+/* 20150616 whitie redmine 10765 覆寫 fancybox-overlay 因為原本的檔案是錯的，省的每次改版都要記得改 frame.css */
+.fancybox-overlay {
+  background: url("../../../c/img/frame/fancybox_overlay.png");
+}
+
+.orderdetail_001 .group .order-list-add.o-events .order-name {
+  color: #2290c6;
+}
+
+.orderdetail_001 .group .order-list-add.o-events .order-name a{
+  color: #2290c6;
+}
+
+.orderdetail_001 .order-list .order-list-content.refund.group .combine-title {
+  margin-top: 10px;
+}
+
+/* 20150810 whitie redmine 11009 查訂單 RWD */
+.orderdetail_001 .order-list .order-list-content.refund.group .combine-title.order-list-r {
+  padding-right: 15px;
+}
+
+/* 20150713 whitie redmine 11009 RWD */
+.orderdetail_001 .order-list .order-list-content.refund .combine-title {
+  margin-top: 10px;
+}
+
+/* 20150713 whitie redmine 11009 RWD */
+.orderdetail_001 .group .order-list-add .order-name.normal-order-name {
+  padding-left:0px;
+}
+
+/* 20150713 whitie redmine 11009 RWD */
+.orderdetail_001 .order-list .order-list-content.refund .normal-order-name {
+  padding-left:0px;
+}
+
+/* 20150713 whitie redmine 11009 RWD */
+.refund_state_001 .group .order-list-add .order-name.normal-order-name {
+  padding-left: 0px;
+}
+
+/* 20150713 whitie redmine 11009 RWD */
+.orderdetail_001 .order-list .order-list-content.refund .combine-order-name {
+  padding-left:14px;
+}
+
+/* 20150713 whitie redmine 11009 RWD */
+.order_refund_001 .group .order-list-add .order-name.normal-order-name {
+  padding-left: 0px;
+}
+
+/* 20150713 whitie redmine 11009 RWD */
+.fancybox-skin {
+  background: #ffffff;
+}
+
+/* 20150713 whitie redmine 11009 RWD */
+.fancybox-iframe {
+  height:100%
+}
+
+/* 20150713 whitie redmine 11009 RWD */
+.refund-info .colred {
+  color:red;
+}
+
+.text16 {
+  font-weight: bold;
+  color: #333333;
+  font-size: 110%;
+}
+/* invoice RWD @20150723 by Eason */
+.fancybox-order-invoice .block {
+  max-height: none;
+}  
+.donation{position:relative;background:url(/c/img/invoice_donate.png) center;top:-37px;left:91px;width:300px;height:300px; }
+.donationimg{margin-top:-300px;}  
+
+/* 20150713 whitie redmine 11009 RWD */
+.order_refund_001 .order-list-add.padding-zero {
+  padding-top: 0px;
+}
+
+/* 20150817 whitie redmine 11009 RWD，華碩有專門的 footer */
+.asus_footer a { 
+  color:#0066bb;
+  text-decoration: underline;
+}
+
+
+/* 20150910 whitie fix redmine 11685 右下角吃平台設定 */
+.wysiwyg-color-black { color: black; }
+
+.wysiwyg-color-silver { color: silver; }
+
+.wysiwyg-color-gray { color: gray; }
+
+.wysiwyg-color-white { color: white; }
+
+.wysiwyg-color-maroon { color: maroon; }
+
+.wysiwyg-color-red { color: red; }
+
+.wysiwyg-color-purple { color: purple; }
+
+.wysiwyg-color-fuchsia { color: fuchsia; }
+
+.wysiwyg-color-green { color: green; }
+
+.wysiwyg-color-lime { color: lime; }
+
+.wysiwyg-color-olive { color: olive; }
+
+.wysiwyg-color-yellow { color: yellow; }
+
+.wysiwyg-color-navy { color: navy; }
+
+.wysiwyg-color-blue { color: blue; }
+
+.wysiwyg-color-teal { color: teal; }
+
+.wysiwyg-color-aqua { color: aqua; }
+
+.wysiwyg-font-size-small { font-size: 0.8rem; }
+
+.wysiwyg-font-size-large { font-size: 1.2rem; }
+
+.wysiwyg-font-size-larger { font-size: 1.4rem; }
+
+.wysiwyg-font-size-x-large { font-size: 1.8rem; }
+
+.wysiwyg-font-size-xx-large { font-size: 2.2rem; }
+
+.wysiwyg-text-align-center { text-align: center; }
+
+.wysiwyg-text-align-justify { text-align: justify; }
+
+.wysiwyg-text-align-left { text-align: left; }
+
+.wysiwyg-text-align-right { text-align: right; }
+
+/* th、vn、ph 填入發票頁面調整@20150911 by Eason*/
+.fancybox-order-invoice2 {
+  max-width: 700px;
+}
+.fancybox-order-invoice2 dl dd input {
+  width: 100%;
+  border: 1px solid #dddddd;
+}
