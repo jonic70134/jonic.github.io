@@ -1,0 +1,136 @@
+figcaption{
+	@include box-sizing(border-box);
+	.buy-actions{
+		margin-top: 10px;
+		> span{
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	.currency{
+		font-size: 0.7em;
+	}
+	.price{
+		font-size: 1.3em;
+		margin-right: 5px;
+	}
+	h1{
+		height:65px;
+		font-size: 1.5em;
+		line-height: 140%;
+		color: $prod_main;
+		font-weight: 600;
+		overflow:hidden;
+		word-break:break-word;
+	}
+	.feature{
+		margin-top: 10px;
+		li{
+			line-height: 180%;
+			font-size: 0.85em;
+			@include one-line;
+		}
+	}
+}
+.col-3{
+	@media only screen and (min-width: $screen-sm-max) and (max-width: $screen-md-max){
+		border-bottom: 1px solid $light_gray;
+	}
+	@media only screen and (min-width: $screen-xl-min){
+		h1{
+			width: 220px;
+		}
+		.feature{
+			height: 72px;
+			width: 220px;
+		}
+		figcaption{
+			margin-right: -42px;
+			border-right: 1px solid $light_gray;
+		}
+	}
+	@media only screen and (min-width: $screen-lg-min) and (max-width: $screen-lg-max){
+		h1{
+			width: 220px;
+		}
+		.feature{
+			height: 72px;
+			width: 220px;
+		}
+		figcaption{
+			margin-right: -10px;
+			border-right: 1px solid $light_gray;
+		}
+	}
+	&:last-child{
+		figcaption{
+			border-right: 0;
+		}
+	}
+}
+//mobile
+@media only screen and (max-width: $screen-sm-max){
+	figcaption{
+		width: 50%;
+		padding: 0 10px;
+		float: left;
+		//margin-top: 10px;
+		.buy-actions{
+			margin-top: 10px;
+			> span{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.price{
+				display: block;
+				margin-bottom: 10px;
+				display: block;
+			}
+		}
+		h1{
+			height:50px;
+			font-size: 1.1em;
+		}
+		button{
+			margin-top: 10px;
+		}
+		.feature{
+			li{
+				font-size: 0.75em;
+			}
+		}
+	}
+	.col-3{
+		width: 100%;
+	}
+}
+//table&mobile
+@media only screen and (max-width: $screen-md-max){
+	figcaption{
+		.buy-actions{
+			> span{
+				color: $red;
+			}
+		}
+		.currency{
+			font-size: 0.6em;
+			padding-top: 10px;
+		}
+		.price{
+			font-size: 1.6em;
+		}
+	}
+	.col-6{
+		width: 100%;
+	}
+}
+//table
+@media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+	.col-3{
+		&:nth-child(even){
+			figcaption{
+				border-right: 0;
+			}
+		}
+	}
+}

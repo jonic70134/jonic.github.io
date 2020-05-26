@@ -1,0 +1,30 @@
+.answer{
+	.red{
+		color: $red;
+		padding: 0 10px;
+	}
+	h1{
+		line-height: 140%;
+		font-size: 1.2em;
+		color: $prod_main;
+		padding-left: 20px;
+		margin: 5px 0;
+	}
+	p{
+		font-size: 0.9em;
+		color: $prod_main;
+		margin-bottom: 15px;
+		padding-left: 20px;
+		a{
+			color: $cart_price;
+			text-decoration: underline;
+		}
+	}
+}
+@media only screen and (max-width: $screen-md-max){
+.answer{
+	h1{
+		font-size: 1em;
+	}
+}
+}

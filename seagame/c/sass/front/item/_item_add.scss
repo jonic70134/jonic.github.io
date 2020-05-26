@@ -1,0 +1,112 @@
+.add{
+	@include clearfix;
+	.col-3{
+		padding: 20px;
+		border: 3px solid transparent;
+		&:hover{
+			border: 3px solid $prod_hover;
+		}
+		img{
+			width: 100%;
+		}
+		.currency{
+			font-size: 0.7em;
+			margin-right: -3px;
+			display: inline-block;
+			vertical-align: bottom;
+			padding-bottom: 1px;
+			color: $prod_second;
+		}
+		.price{
+			margin-right: 10px;
+			font-size: 1.2em;
+			display: inline-block;
+			vertical-align: middle;
+			color: $prod_second;
+		}
+		.line{
+			margin-bottom: 10px;
+			@include clearfix;
+		}
+		.name{
+			margin: 5px 0 10px;
+			font-size: 1.125em;
+			line-height: 140%;
+			color: $prod_second;
+			height:52px;
+			overflow:hidden;
+			word-break:break-all;
+		}
+		.spec{
+			margin: 0 0 10px 0;
+			width: 100%;
+		}
+		.btn-add{
+			line-height: 22px;
+			input[type='checkbox']{
+				margin: 0 3px 0 0;
+			}
+		}
+		.cart-quantity{
+			@include clearfix;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0;
+			margin-right: 10px;
+			float: none;
+			li{
+				width: 30px;
+				height: 22px;
+				&:first-child, &:last-child{
+					width: 22px;
+				}
+				.type{
+					padding: 0;
+					display: block;
+					color: black;
+					line-height: 20px;
+					text-align: center;
+				}
+			}
+			input{
+				width: 28px;
+				height: 20px;
+				border: 0;
+				font-size: 0.8em;
+			}
+			.quantity-alert{
+				top: -200%;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+	.add{
+		.col-3{
+			.btn-add{
+				float: right;
+			}
+		}
+	}
+}
+@media only screen and (max-width: $screen-md-max){
+	.add{
+		h3{
+			margin-left: 30px;
+		}
+		.col-3{
+			width: 50%;
+			float: left;
+		}
+	}
+}
+@media only screen and (max-width: 410px){
+	.add{
+		.col-3{
+			.cart-quantity{
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

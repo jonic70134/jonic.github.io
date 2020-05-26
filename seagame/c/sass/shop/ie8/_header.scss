@@ -1,0 +1,31 @@
+.header-inn{
+    .right-area{
+        .icon-search-s{
+            top: 2px;
+            width: 28px;
+            height: 25px;
+        }
+        input[type='search']{
+            padding: 6px 0 6px 10px;
+            height: 16px;
+        }
+    }
+    .icon-sub-arrow:before{
+        top: -10px;
+    }
+}
+.main-cart-btn{
+    .icon-cart{
+        margin-right: 30px;
+    } 
+}
+.tabs{
+    li{
+        a{
+            .icon-nav-arrow{
+                left: 5px;
+                top: 25px;
+            } 
+        }       
+    } 
+}

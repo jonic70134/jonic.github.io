@@ -1,0 +1,294 @@
+.item-main{
+	margin: 10px 0;
+	@include clearfix;
+	.photo{
+		float: left;
+		width: 41%;
+	}
+	figcaption{
+		float: left;
+		width: 59%;
+		padding: 10px 20px 10px 50px;
+		h1{
+			margin-bottom: 50px;
+			word-break:break-all;
+		}
+		.feature{
+			margin-top: 10px;
+			li{
+				line-height: 180%;
+				color: $prod_second;
+				word-break:break-all;
+			}
+		}
+		.line{
+			margin: 15px 0;
+			@include clearfix;
+		}
+		.buy{
+			text-align: left;
+			.cart-quantity{
+				display: inline-block;
+				vertical-align: middle;
+				float: none;
+			}
+		}
+		.highlight{
+			margin-left: 325px;
+		}
+		.price{
+			font-size: 2.4em;
+			color: $red;
+			margin-right: 10px;
+			display: inline-block;
+			vertical-align: middle;
+			.saletitle{
+				font-size: 0.5em;
+			}
+			.currency{
+				font-size: 0.6em;
+			}
+		}
+		.key{
+			line-height: 220%;
+			color: $prod_main;
+		}
+		label{
+			display: block;
+			padding: 5px 0;
+			color: $prod_second;
+			@include one-line;
+			input[type="radio"]{
+				margin:0 5px 0 0;
+			}
+		}
+		.product-color{
+			@include clearfix;
+			li{
+				float: left;
+				padding: 4px;
+				margin-right: 8px;
+				cursor: pointer;
+				border-radius: 50%;
+				width: 44px;
+				height: 44px;
+				border: 3px solid $prod_color;
+				span{
+					display: block;
+					border-radius: 50%;
+					width: 30px;
+					height: 30px;
+					@include box-shadow(#393838 1px 1px 2px inset);
+					&.red{
+						background: #de0000;
+					}
+					&.white{
+						background: #fff;
+					}
+					&.black{
+						background: #000;
+					}
+					&.yellow{
+						background: $light_yellow;
+					}
+					&.gray{
+						background: $dark_gray;
+					}
+					&.silver{
+						background: $light_gray;
+					}
+					&.purple{
+						background: #8955DD;
+					}
+					img{
+						width:31px;
+						height:31px;
+						@include border-radius(50%)
+					}
+				}
+				&.selected{
+					border: 3px solid $prod_select;
+					line-height: 120%;
+					@include background(12px, 12px, -142px, -25px);
+					&:after{
+						top: inherit;
+						left: inherit;
+						right: 0;
+						bottom: 0;
+					}
+					.type{
+						padding: 3px;
+					}
+				}
+				&.disabled{
+					border: 1px solid $light_gray;
+					img{
+						opacity: 0.5;
+						filter: grayscale(100%);
+						// Browser Specific
+						-webkit-filter: grayscale(100%);
+						-moz-filter: grayscale(100%);
+						-o-filter: grayscale(100%);
+						-ms-filter: grayscale(100%);
+					}
+					.type{
+						color: $light_gray;
+					}
+				}
+			}
+			.type{
+				min-width: 28px;
+				display: block;
+				padding: 5px;
+				text-align: center;
+			}
+		}
+		.attr{
+			@include clearfix;
+			li{
+				float: left;
+				cursor: pointer;
+				margin-right: 8px;
+				padding: 8px 15px;
+				border: 1px solid $light_gray;
+				color: $prod_main;
+				&.selected{
+					border: 1px solid $prod_select;
+					color: $prod_select;
+				}
+			}
+		}
+		.button{
+			margin-top: 5px;
+		}
+	}
+	.add{
+		.rule{
+			border-bottom: 1px solid $light_gray;
+			width: 365px;
+			line-height: 140%;
+			padding: 5px 0;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 50px;
+			color: $prod_main;
+			@include one-line;
+		}
+		select{
+			padding: 3px 5px;
+		}
+	}
+	.sale{
+		color: $cart_price;
+		font-size: 0.815em;
+		margin-bottom: 10px;
+		border: 1px solid $cart_price;
+		padding: 5px;
+		line-height: 140%;
+		display: inline-block;
+		&.count{
+			border: none;
+		}
+		span{
+			word-wrap: break-word;
+		}
+		.time{
+			font-weight: bold;
+			background: $cart_price;
+			color: #fff;
+			padding: 2px 5px;
+			display: inline-block;
+			li{
+				display: inline-block;
+			}
+		}
+		.bought{
+			margin-left: 5px;
+			display:inline-block;
+			vertical-align:middle;
+		}
+		div{
+			display:inline-block;
+			height:19px;
+			vertical-align:top;
+			line-height:1.2;
+		}
+	}
+}
+
+@include RWD(desktop-normal) {
+.item-main{
+	figcaption{
+		.buy{
+			margin-right: 0;
+		}
+	}
+	.add{
+		label{
+			&.rule{
+				width: 348px;
+			}
+		}
+	}
+}
+}
+
+@include RWD(pad) {
+.item-main{
+	figcaption{
+		width: 100%;
+		padding: 30px 15px 0 15px;
+		h1{
+			margin-bottom: 30px;
+		}
+		.price{
+			margin: 15px 0;
+		}
+		.photo{
+			width: 100%;
+		}
+	}
+}
+}
+
+@include RWD(mobile) {
+.item-main{
+	figcaption{
+		width: 100%;
+		padding: 30px 15px 0 15px;
+		h1{
+			margin-bottom: 30px;
+		}
+		.photo{
+			width: 100%;
+		}
+		.feature{
+			li{
+				font-size: 0.85em;
+			}
+		}
+		.buy{
+			margin-left: 0;
+		}
+	}
+	.add{
+		.rule{
+			width: 80%;
+		}
+		select{
+			margin-left: 50px;
+			margin-top: 10px;
+		}
+	}
+}
+}
+
+@media (max-width: 390px){
+.item-main{
+	.sale{
+		span{
+			display: block;
+		}
+	}
+}
+}

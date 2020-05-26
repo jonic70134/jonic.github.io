@@ -1,0 +1,55 @@
+.bottom_pagination{
+	margin: 30px 0 80px;
+	text-align: center;
+	ul{
+		margin: 0 20px;
+		@include inline-block;
+		@include clearfix;
+	}
+	li{
+		float: left;
+		a{
+			min-width: 36px;
+			line-height: 36px;
+			padding: 0 10px;
+			vertical-align: middle;
+			display: inline-block;
+			color: $page_text;
+			border-top: 1px solid $filter_border;
+			border-left: 1px solid $filter_border;
+			border-bottom: 1px solid $filter_border;
+			@include transition(0.6);
+			&.current{
+				background: #ddd;
+				color: black;
+				@include transition(0.6);
+			}
+			&:hover{
+				background: $page_hover;
+				color: $page_hover_text;
+				@include transition(0.6);
+			}
+		}
+		&:first-child{
+			a{
+				@include border-left-radius(5px);
+			}
+		}
+		&:last-child{
+			a{
+				@include border-right-radius(5px);
+				border-right: 1px solid $filter_border;
+			}
+		}
+	}
+	a{
+		display: inline-block;
+		vertical-align: middle;
+		color: $page_text;
+	}
+	.total{
+		margin-top: 20px;
+		color: $prod_second;
+		font-size: 0.8em;
+	}
+}

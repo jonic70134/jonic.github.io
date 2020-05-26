@@ -1,0 +1,127 @@
+figcaption{
+	.buy-actions{
+		margin-top: 10px;
+		> span{
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	.currency{
+		font-size: 0.7em;
+	}
+	.price{
+		font-size: 1.3em;
+		margin-right: 5px;
+	}
+	h1{
+		height: 28px;
+		font-size: 1.5em;
+		line-height: 140%;
+		color: $prod_main;
+		font-weight: 600;
+		overflow:hidden;
+	}
+	.feature{
+		margin-top: 10px;
+		li{
+			line-height: 180%;
+			font-size: 0.85em;
+			@include one-line;
+		}
+	}
+}
+@include RWD(mobile) {
+figcaption{
+	width: 50%;
+	padding: 0 10px;
+	float: left;
+	//margin-top: 10px;
+	.buy-actions{
+		margin-top: 10px;
+		> span{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.price{
+			display: block;
+			margin-bottom: 10px;
+			display: block;
+		}
+	}
+	h1{
+		font-size: 1.1em;
+	}
+	button{
+		margin-top: 10px;
+	}
+	.feature{
+		li{
+			font-size: 0.75em;
+		}
+	}
+}
+.col-3{
+	width: 100%;
+}
+}
+
+@include RWD(pad-mobile) {
+figcaption{
+	.buy-actions{
+		> span{
+			color: $red;
+		}
+	}
+	.currency{
+		font-size: 0.6em;
+		padding-top: 10px;
+	}
+	.price{
+		font-size: 1.6em;
+	}
+}
+.col-6{
+	width: 100%;
+}
+}
+
+@include RWD(pad) {
+.col-3{
+	border-bottom: 1px solid $light_gray;
+	&:nth-child(even){
+		figcaption{
+			border-right: 0;
+		}
+	}
+}
+}
+
+@include RWD(desktop-all) {
+.col-3{
+	h1{
+		width: 220px;
+	}
+	.feature{
+		height: 72px;
+		width: 220px;
+	}
+	figcaption{
+		margin-right: -42px;
+		border-right: 1px solid $light_gray;
+	}
+}
+}
+
+.col-3{
+	@media only screen and (min-width: $screen-lg-min) and (max-width: $screen-lg-max){
+		figcaption{
+			margin-right: -10px;
+			border-right: 1px solid $light_gray;
+		}
+	}
+	&:last-child{
+		figcaption{
+			border-right: 0;
+		}
+	}
+}

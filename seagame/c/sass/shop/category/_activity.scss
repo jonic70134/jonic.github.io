@@ -1,0 +1,396 @@
+.activity{
+	margin-bottom: 15px;
+	line-height: 140%;
+	h3{
+		display: inline-block;
+		border: 1px solid $light_gray;
+		padding: 3px 5px;
+		margin-bottom: 10px;
+		vertical-align:top;
+	}
+	.ready{
+		padding: 5px 10px;
+		background: $red;
+		color: white;
+		letter-spacing: 3px;
+		display:inline-block;
+		vertical-align:top;
+	}
+	.not{
+		padding: 5px 10px;
+		background: $gray;
+		color: white;
+		letter-spacing: 3px;
+		display:inline-block;
+		vertical-align:top;
+	}
+	.act-title{
+		display: inline-block;
+		color: $text;
+		padding: 5px 10px;
+		width: 180px;
+		overflow: hidden;
+		word-break: break-all;
+	}
+	hr{
+		margin: 3px 0;
+	}
+	.date{
+		font-size: 0.8em;
+		margin: 5px 0 2px;
+		padding: 2px 0;
+		text-align: center;
+		background: $ad_yellow;
+	}
+	.desc{
+		width:58%;
+		display: inline-block;
+		margin-left: 15px;
+	}
+	.act-content{
+		font-size: 1.2em;
+		color: $red;
+		font-weight: bold;
+		margin: 10px 0 5px;
+	}
+	.tip{
+		font-size: 0.8em;
+		word-break:break-all;
+	}
+	.act-cart{
+		margin-top: 15px;
+		.swiper-container{
+			position: relative;
+			border: 1px solid $light_gray;
+			display: inline-block;
+			width: 840px;
+			@include clearfix;
+			.swiper-wrapper{
+			}
+			.swiper-slide{
+				float: left;
+				padding: 5px 15px;
+				border-right: 1px solid $light_gray;
+				background: white;
+
+			}
+			.swiper-left{
+				position: absolute;
+				top: 35%;
+				left: 0;
+				z-index: 10;
+			}
+			.swiper-right{
+				position: absolute;
+				top: 35%;
+				right: 0;
+				z-index: 10;
+			}
+			.crop{
+				display: inline-block;
+				float: left;
+				@include crop(80px, white);
+				margin-right: 10px;
+			}
+			.content{
+				width:50%;
+				display: inline-block;
+			}
+			.line{
+				line-height: 0;
+				margin-bottom:3px;
+			}
+			.name{
+				font-size: 0.7em;
+				margin-top: 5px;
+				width: 145px;
+				height: 32px;
+				line-height: 140%;
+				word-break: break-all;
+				overflow:hidden;
+			}
+			.currency{
+				font-size: 0.7em;
+				color: $red;
+			}
+			.price{
+				font-size: 0.8em;
+				line-height: 140%;
+				color: $red;
+			}
+			.quantity{
+				float: left;
+				margin-right: 10px;
+				display: inline-block;
+				@include clearfix;
+				li{
+					float: left;
+					border: 1px solid $light_gray;
+					margin-left: 0;
+					background: white;
+					width: 26px;
+					height: 22px;
+					line-height: 16px;
+					font-size: 0.9em;
+					&:first-child, &:last-child{
+						border-right: none;
+						width: 22px;
+						@include border-left-radius (2px);
+					}
+					&:last-child{
+						border-left: none;
+						border-right: 1px solid $light_gray;
+						@include border-right-radius (2px);
+					}
+					.type{
+						display: block;
+						color: black;
+						padding: 0;
+						text-align: center;
+					}
+					input{
+						width: 24px;
+						border: 0;
+						margin: 0;
+						font-size: 1em;
+					}
+				}
+			}
+			.btn-del{
+				font-size: 0.8em;
+				text-decoration: underline;
+			}
+		}
+		.state{
+			float: right;
+			display: inline-block;
+			vertical-align: top;
+			width: 30%;
+			border: 1px solid $light_gray;
+			padding: 10px 5px;
+			.progress{
+				padding: 15px;
+				border-bottom: 1px solid $light_gray;
+			}
+			.progress-bar-static{
+				position: relative;
+				background: #eee;
+				width: 100%;
+				margin-bottom: 5px;
+				height: 15px;
+				@include border-radius(2px);
+				.inner-bar{
+					height: 15px;
+					background-color: orange;
+					@include box-shadow(0 2px 5px rgba(0, 0, 0, 0.25) inset);
+					@include border-radius(2px);
+					background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+					background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+					background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+					background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+					background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+					-webkit-background-size: 15px 15px;
+					-moz-background-size: 15px 15px;
+					-ms-background-size: 15px 15px;
+					-o-background-size: 15px 15px;
+					background-size: 15px 15px;
+					-webkit-animation: animate-stripes 3s linear infinite;
+					-moz-animation: animate-stripes 3s linear infinite;
+					-ms-animation: animate-stripes 3s linear infinite;
+					-o-animation: animate-stripes 3s linear infinite;
+					animation: animate-stripes 3s linear infinite;
+					&.finish{
+						background-color: $blue;
+					}
+				}
+				.note, .note-finish{
+					position: absolute;
+					top: -200%;
+					left: 0;
+					min-width: 100px;
+					font-size: 0.8em;
+					text-align: center;
+					border: 2px solid $light_gray;
+					padding: 3px 10px;
+					color: black;
+					background: $bk_gray;
+					@include border-radius(4px);
+					white-space:nowrap;
+					z-index:99;
+					&:after{
+						position: absolute;
+						bottom: -30%;
+						left: 35%;
+						content:'';
+						border-style: solid;
+						border-width: 10px 10px 0 10px;
+						border-color: $bk_gray transparent transparent transparent;
+					}
+					&:before{
+						position: absolute;
+						bottom: -38%;
+						left: 35%;
+						content:'';
+						border-style: solid;
+						border-width: 10px 10px 0 10px;
+						border-color: $light_gray transparent transparent transparent;
+					}
+				}
+				.note-finish{
+					color: $blue;
+				}
+			}
+			.actions{
+				margin-top: 23px;
+				color: $red;
+				&.finish{
+					color: $primary;
+				}
+				.current{
+					display: inline-block;
+					margin-top: 5px;
+				}
+				.price{
+					font-size: 1.2em;
+				}
+				.button{
+					float: right;
+				}
+			}
+		}
+	}
+}
+//large desktop
+@include RWD(desktop-normal){
+.activity{
+	.act-cart{
+		.swiper-container{
+			width: 660px;
+			.name{
+				width: 90px;
+			}
+		}
+		.state{
+			.actions{
+				margin-top: 43px;
+			}
+		}
+	}
+}
+}
+
+//pad
+@include RWD(pad-mobile){
+.activity{
+	margin: 15px 15px 0 15px;
+	h3{
+	}
+	.date{
+		margin-top: 10px;
+	}
+	.act-cart{
+		.swiper-container{
+			width: 100%;
+			font-size: 0;
+			.name{
+				width: auto;
+				font-size: 12px;
+			}
+			.currency{
+				font-size: 12px;
+				margin: 0;
+			}
+			.price{
+				font-size: 14px;
+			}
+			.quantity{
+				float: inherit;
+				font-size: 12px;
+			}
+			.btn-del{
+				display: block;
+				font-size: 12px;
+			}
+			.swiper-slide{
+				width: 100%;
+			}
+			.swiper-left{
+				position: static;
+				width: 50%;
+				display: inline-block;
+				text-align: center;
+				padding: 3px 0;
+				border-top: 1px solid $light_gray;
+				border-right: 1px solid $light_gray;
+				background: $bk_gray;
+			}
+			.swiper-right{
+				position: static;
+				width: 50%;
+				display: inline-block;
+				text-align: center;
+				padding: 3px 0;
+				border-top: 1px solid $light_gray;
+				background: $bk_gray;
+			}
+			.crop{
+				display: inline-block;
+				float: inherit;
+				@include crop(40%, white);
+			}
+			.name{
+				margin-top: 10px;
+			}
+		}
+		.state{
+			width: 100%;
+			margin: 20px 0;
+			>.tip{
+				color: $primary;
+				text-align: right;
+			}
+			.actions{
+				margin-top: 10px;
+			}
+		}
+	}
+}
+}
+@include RWD(mobile){
+.activity{
+	.act-cart{
+		.swiper-container{
+			.content{
+				width:100%;
+			}
+		}
+	}
+	.desc{
+		width:95%;
+	}
+}
+}
+
+@-webkit-keyframes animate-stripes {
+  /* line 299, ../sass/split/_product_list_events_main_top.scss */
+  0% {
+    background-position: 0 0;
+  }
+
+  /* line 299, ../sass/split/_product_list_events_main_top.scss */
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  /* line 302, ../sass/split/_product_list_events_main_top.scss */
+  0% {
+    background-position: 0 0;
+  }
+
+  /* line 302, ../sass/split/_product_list_events_main_top.scss */
+  100% {
+    background-position: 60px 0;
+  }
+}

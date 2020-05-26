@@ -1,0 +1,33 @@
+.error{
+	text-align: center;
+	margin: 100px auto 150px;
+	h1{
+		font-weight: bold;
+		font-size: 1.4em;
+		margin-bottom: 30px;
+		color: $prod_main;
+	}
+	ul{
+		display: inline-block;
+		list-style: disc;
+	}
+	li{
+		text-align: left;
+		margin-bottom: 20px;
+		color: $prod_second;
+	}
+	.actions{
+		margin-top: 30px;
+	}
+}
+
+//mobile
+@media only screen and (max-width: $screen-sm-max){
+.error{
+	margin: 30px auto 50px;
+	padding: 0 40px;
+	li{
+		font-size: 0.8em;
+	}
+}
+}

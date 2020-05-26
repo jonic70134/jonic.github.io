@@ -1,0 +1,101 @@
+.header-inn{
+    .right-area{
+        margin-top:40px;
+        float: right;
+        @include clearfix;
+        .icon-search-s{
+            padding: 3px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-left: 1px solid $light_gray;
+            height: 28px;
+            cursor: pointer;
+            background:#e50047;
+            @include border-radius(50%);
+        }
+        .main-search{
+            position: relative;
+            background: $input_bk;
+            border: 1px solid $light_gray;
+            width: 100%;
+            height: 30px;
+            @include border-radius(30px);
+            .input-search{
+                margin: 0;
+                width: 166px;
+                border: 0;
+                height: 28px;
+                padding-left: 10px;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        .recommend{
+            height: 20px;
+            overflow: hidden;
+            line-height: 20px;
+            >a{
+                display:inline-block;
+                color: $gray;
+                font-size: 0.8em;
+                text-decoration: underline;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+@include RWD(desktop-all) {
+    .header-inn{
+        .right-area{
+            .main-search{
+                width:200px;
+            }
+        }
+    }
+}
+@include RWD(pad-mobile) {
+.header-inn{
+    .right-area{
+        width: 100%;
+        height: 54px;
+        margin:0;
+        display: none;
+        position: absolute;
+        top: 98px;
+        z-index: 3;
+        border-top: 2px solid $light_gray;
+        border-bottom: 2px solid $light_gray;
+        .icon-search-s{
+            height: 38px;
+            padding: 8px 10px;
+            @include border-radius(0);
+        }
+        .main-search{
+            height: 38px;
+            border: 0;
+            @include border-radius(0);
+            .input-search{
+                width: 100%;
+                padding-right: 75px;
+                height: 38px;
+                font-size: 1em;
+                padding:0 4px;
+                border-bottom:1px solid #eee;
+            }
+        }
+        .recommend{
+            height:25px;
+            background: white;
+            padding:0 5px 15px;
+            border-bottom: 1px solid $light_gray;
+            >a{
+                font-size: 0.8em;
+                text-decoration: underline;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,41 @@
+.format{
+	padding-left: 20px;
+	.col-6{
+		border-right: 1px solid $light_gray;
+		&:last-child{
+			border: 0;
+			padding: 0 20px;
+		}
+	}
+	h3{
+		color: $prod_main;
+		font-weight: bold;
+		word-break: break-all;
+	}
+	li{
+		font-size: 0.9em;
+		line-height: 200%;
+		color: $prod_second;
+		word-break: break-all;
+		a{
+			color: $cart_price;
+			text-decoration: underline;
+			word-break: break-all;
+		}
+	}
+}
+@include RWD(pad-mobile) {
+.format{
+	padding-left: 0px;
+	&.format-last{
+		padding: 0 20px;
+		margin-bottom: 2em;
+	}
+	.col-6{
+		width: 100%;
+		border-right: 0;
+		float: none;
+		padding: 0 20px;
+	}
+}
+}
