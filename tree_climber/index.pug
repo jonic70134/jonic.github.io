@@ -1,0 +1,230 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		meta(content='IE=edge,chrome=1' http-equiv='X-UA-Compatible')
+		meta(name='keywords',content='攀樹體驗,攀樹修剪,園藝,高空修剪,鏈鋸,修樹')
+		meta(name='description',content='我們是一群樹木的專家，擁有攀樹教練、樹木修剪、空中救援、鏈鋸操作等專業證照，提供包含攀樹體驗、樹木修剪等多元服務')
+		meta(name='author',content='Jonic Huang')
+		meta(name='viewport',content='width=device-width,initial-scale=1,user-scalable=1')
+		meta(name='apple-mobile-web-app-capable',content='yes')
+		meta(name='apple-touch-fullscreen',content='yes')
+		title='Tree Climber'
+
+		script(src='js/jquery.min.js')
+		script(src='js/jquery-ui.min.js')
+		script(src='js/solid.min.js')
+		script(src='js/fontawesome.min.js')
+		
+		link(rel='icon', href='img/favicon.png')
+
+		link(href='css/swiper.min.css',rel='stylesheet' media='all')
+		link(href='css/index.css',rel='stylesheet' media='all')
+	body
+		.site-body
+			header.site-header
+				h1.logo
+					a(href='#')
+						img(src='img/tree_logo.png' alt='logo')
+						p 
+				//- nav.menu
+				//- 	ul
+				//- 		li
+				//- 			a(href='#')
+				//- 				|  關於我們
+				//- 		li.blue
+				//- 			a(href='#')
+				//- 				|  特賣商品
+			
+						
+				
+			.slider
+				.swiper-container
+					.swiper-wrapper
+						.swiper-slide
+							img(src='img/slide01.jpg')
+							.text
+								p 
+									| 我們是一群樹木的專家 <br />
+									| 擁有攀樹教練、樹木修剪、空中救援、鏈鋸操作等專業證照，
+									| 提供包含攀樹體驗、樹木修剪等多元服務 
+						.swiper-slide
+							img(src='img/slide02.jpg')
+							.text.left
+								p 
+									| 攀樹體驗<br />
+									| 花蓮 中華國小
+						.swiper-slide
+							img(src='img/slide03.jpg')
+							.text
+								p 
+									| 攀樹體驗 <br />
+									| 台中 勤益科大羅浮群童軍團
+						.swiper-slide
+							img(src='img/slide04.jpg')
+							.text.topleft
+								p 
+									| 攀樹體驗 <br />
+									| 花蓮 豐裡國小
+						.swiper-slide
+							img(src='img/slide05.jpg')
+							.text.topright
+								p 
+									| 攀樹體驗 <br />
+									| 台北樹林 育林國小
+					.swiper-pagination.swiper-pagination-white
+				.swiper-button-prev.swiper-button-black
+				.swiper-button-next.swiper-button-black
+				
+			.intro
+				p 我們是一群樹木的專家 <br />
+					| 擁有攀樹教練、樹木修剪、空中救援、鏈鋸操作等專業證照，
+					| 提供包含攀樹體驗、樹木修剪等多元服務 
+					
+			//- .hot
+			//- 	h2 
+			//- 		| 服務項目
+			//- 	.container
+			//- 		-var j = 2;
+			//- 		-for (var i = 0; i < j; i++)
+			//- 			.hot-block
+			//- 				.prod
+			//- 					img(src='img/sample02.JPG')
+			//- 					.prod-info
+			//- 						h3.name 3D Crystal square
+			//- 						.price $999,99
+			//- 						a.btn-addcart(href='#') 加入購物車
+			//- 			.hot-block
+			//- 				.prod
+			//- 					img(src='img/sample05.JPG')
+			//- 					.prod-info
+			//- 						h3.name 3D Crystal square
+			//- 						.price $999,99
+			//- 						a.btn-addcart(href='#') 客製化服務
+			//- 			.hot-block
+			//- 				.prod
+			//- 					img(src='img/sample06.JPG')
+			//- 					.prod-info
+			//- 						h3.name 3D Crystal square
+			//- 						.price $999,99
+			//- 						a.btn-addcart(href='#') 客製化服務
+			//- 			.hot-block
+			//- 				.prod
+			//- 					img(src='img/sample07.JPG')
+			//- 					.prod-info
+			//- 						h3.name 3D Crystal square
+			//- 						.price $999,99
+			//- 						a.btn-addcart(href='#') 客製化服務
+			.service
+				.container
+					h2 我們的服務
+					.service_row
+						.service_block
+							.des
+								h3.title 
+									img(src='img/tree_icon.svg') 
+									p 攀樹體驗
+								.content
+									| 我們用最安全、最保護的方式貼近樹木，
+									| 感受祂所能承受的力量，以及祂的視野，甚至能欣賞在樹冠間的動植物們
+							.pic
+								img(src='img/service03.jpg')
+						.service_block
+							.des
+								h3.title 
+									img(src='img/tree_icon.svg') 
+									p 修剪服務
+								.content
+									| 攀樹修剪能夠貼近樹木，
+									| 做最仔細的檢查與修剪。
+									| 我們堅持友善的原樹型修剪，
+									| 讓樹木變得健康又強壯
+							.pic
+								img(src='img/service02.jpg')
+					.service_row
+						.service_block
+							.des
+								h3.title 
+									img(src='img/tree_icon.svg') 
+									p 空拍機救援
+								.content
+									| 空拍機若不小心掛樹了，不必兩手一攤選擇放棄，只要提供足夠的資料給我們，
+									| 我們會盡其所能的幫您尋回！
+							.pic
+								img(src='img/service05.jpg')
+						.service_block
+							.des
+								h3.title 
+									img(src='img/tree_icon.svg') 
+									p 其他服務
+								.content
+									| 我們做過樹上婚紗，
+									| 也在樹上架設過攝影器材，
+									| 有任何跟樹木有關的任務，
+									| 我們都樂於傾聽跟挑戰！
+							.pic
+								img(src='img/service04.jpg')
+			.customer
+				.container
+					h2 服務對象
+					.customer_row
+						ul
+							li 聯合報「幫地球降溫，牽手種樹嘉年華」
+							li 台北 三芝莊園宅邸
+							li 台北 內湖湖光新城
+							li 台北 育林國小
+							li 台北 萬華青年一期公宅 
+							li 台中 勤益科大羅浮群童軍團
+							li 花蓮 中華國小
+							li 花蓮 豐裡國小
+							li 桃園 消防節公益活動
+							li 桃園 內柵國小義修
+							li 南投 承遠寺義修
+							li 雲林 秀潭國小
+							li 台東 長濱綺麗歌詩露營區
+							
+			footer.site-footer
+				.container
+					p Copyright © 2020 Tree Climber All Rights Reserved. 
+					.contact
+						p 聯絡我們
+						a(href='https://line.me/ti/p/h5wfqokKMF')
+							img(src='img/line-48.png') 
+						a(href='mailto:jonic70134@gmail.com')
+							svg#Capa_1(version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewbox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve')
+								g
+									g
+									path(d='M467,61H45C20.218,61,0,81.196,0,106v300c0,24.72,20.128,45,45,45h422c24.72,0,45-20.128,45-45V106\
+									C512,81.28,491.872,61,467,61z M460.786,91L256.954,294.833L51.359,91H460.786z M30,399.788V112.069l144.479,143.24L30,399.788z\
+									M51.213,421l144.57-144.57l50.657,50.222c5.864,5.814,15.327,5.795,21.167-0.046L317,277.213L460.787,421H51.213z M482,399.787\
+									L338.213,256L482,112.212V399.787z')
+
+						//- img(src='img/LineQR.jpg')
+			//- #example1.box-target
+			//- 	.content
+			//- 		.summary
+			//- 			p 
+			//- 				span
+			//- 					| 聯合報「幫地球降溫，牽手種樹嘉年華」
+			//- 		.desktop
+			//- 			img(src='img/asap_index.png',alt='ASAP4.0 index page')
+			//- 			img(src='img/asap_item.png',alt='ASAP4.0 item page')
+			//- 			img(src='img/asap_per.png',alt='ASAP4.0 per page')
+			//- 			img(src='img/asap_track.png',alt='ASAP4.0 item page')
+			//- 			.mobile
+			//- 				img(src='img/asap_m_index.png',alt='ASAP4.0 mobile index page')
+			//- 				img(src='img/asap_m_per.png',alt='ASAP4.0 mobile per page')
+			//- 				img(src='img/asap_m_cate.png',alt='ASAP4.0 mobile cate page')
+			//- 				img(src='img/asap_m_notice.png',alt='ASAP4.0 mobile notice page')
+			//- 				img(src='img/asap_m_item.png',alt='ASAP4.0 mobile item page')
+			//- 				img(src='img/asap_m_item_select.png',alt='ASAP4.0 mobile item select page')
+			//- a.box-close(href='#')
+
+		script(src='js/swiper.min.js')
+		script(src='js/index.js')
+
+
+			
+
+
+		
