@@ -1,0 +1,106 @@
+header.site-header
+	.container
+		.header_top
+			.header_top_l
+				mixin lang(name, options)
+					.select_box.lang
+						.select_box_current(tabindex="1")
+							each option, index in options
+								.select_box_value
+									input.select_box_input(type="radio" id='lang'+index value=option.value name=name checked)
+									p.select_box_input-text #{option.name}
+							span.lnr.lnr-chevron-down
+						ul.select_box_list
+							each option, index in options
+								li
+									label.select_box_option(for='lang'+index aria-hidden) #{option.name}
+				+lang('lang', [
+					{name: 'ENG', value: '2'}, 
+					{name: '中文(繁)', value: '1'}, 
+				])
+
+				mixin currency(name, options)
+					.select_box.cuuency
+						.select_box_current(tabindex="1")
+							each option, index in options
+								.select_box_value
+									input.select_box_input(type="radio" id='currency'+index value=option.value name=name checked)
+									p.select_box_input-text #{option.name}
+							span.lnr.lnr-chevron-down
+						ul.select_box_list
+							each option, index in options
+								li
+									label.select_box_option(for='currency'+index aria-hidden) #{option.name}
+				+currency('currency', [
+					{name: '$ NZD', value: '10'},
+					{name: '₨ IDR', value: '9'},
+					{name: '$ CAD', value: '8'},
+					{name: '€ EUR', value: '7'},
+					{name: '$ AUD', value: '6'},
+					{name: '¥ JPY', value: '5'},
+					{name: '₫ VND', value: '4'},
+					{name: '฿ THB', value: '3'},
+					{name: '$ USD', value: '2'},
+					{name: '$ TWD', value: '1'},
+				])
+					
+
+			.header_top_m
+				.logo
+					a(href="index.html")
+						h1 Qmomo
+						img(src="img/qmomo_logo.png",alt="qmomo logo")
+			.header_top_r
+				.search
+					input(type='text', name='', id='', placeholder="搜尋")
+					button(type='submit')
+						span.lnr.lnr-magnifier
+				ul.header_top_r_item
+					//- li
+					//- 	.line_app
+					//- 		i.fas.fa-mobile-alt
+					//- 		.line_box
+					//- 			.down_app
+					//- 				img(src="img/qr_code_logo.png", alt="qmomo app qr code")
+					//- 				.down_app_r
+					//- 					input(type="text",placeholder='請輸入台灣手機號碼')
+					//- 					button(type='button')
+					//- 						| 免費傳送載點至手機							
+					li
+						.member
+							i.fas.fa-user
+							.member_box
+								a(href="#") 訂單查詢
+								a(href="#") 會員專區
+								a(href="#") 我的收藏
+								a(href="#") 我的優惠券
+								a(href="#") 會員登入/註冊
+					li
+						.cart
+							i.fas.fa-shopping-cart
+							span.cart_notify 
+								span.num 9
+							.cartbox
+								.cartbox_item
+									a.cartbox_img(href='#')
+										img(src='img/1000x1000_prod_2.jpeg', alt='img')
+									.cartbox_info
+										h4
+											a(href='#') 內衣【Rose W 】高級訂製金3D型W鋼圈內衣(銀河藍)
+										p 1 x $250
+									a.remove_product(href='#')
+										span.lnr.lnr-trash
+								.cartbox_item
+									a.cartbox_img(href='#')
+										img(src='img/1000x1000_prod_3.jpeg', alt='img')
+									.cartbox_info
+										h4
+											a(href='#') 內衣 【微甜勾溝】L型包覆舒適成套內衣(魔幻紫)
+										p 1 x $250
+									a.remove_product(href='#')
+										span.lnr.lnr-trash
+								.cartbox_item
+									.total
+										span.cartbox_total_title Total
+										span.cartbox_total_price $500
+								a.checkout(href='checkout.html') Checkout
