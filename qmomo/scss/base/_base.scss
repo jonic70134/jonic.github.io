@@ -5,9 +5,68 @@ body{
 	font-size:$base-font-size;	
 	overflow-x: hidden;
 }
+input[type='password'], input[type='email'], input[type='tel'], input[type='text'], input[type='number'], input[type='search'] {
+	border-color: #cccccc;
+	background: white;
+	color: black;
+	box-sizing: border-box;
+}
+
+.quantity {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: stretch;
+	&:after {
+		content: ".";
+		display: block;
+		clear: both;
+		height: 0;
+		overflow: hidden;
+		visibility: hidden;
+	}
+	.quantity-input {
+		width: 50px;
+		margin: 0;
+		padding: 0;
+		font-size:1rem;
+		text-align: center;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		border: 1px solid #ccc;
+		border-left: none;
+		border-right: none;
+		
+	}
+
+	.quantity-decrease, .quantity-increase {
+		width: 35px;
+		padding: 7px;
+		font-size: .85rem;
+		border: 1px solid #ccc;
+		text-align: center;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		i{
+			color:#777;
+		}
+	}
+}
 .no-padding{
 	padding: 0;
 }
 .fas{
 	color:#999;
+}
+.sm_title{
+	font-size:.9rem;
+}
+.big_title{
+	font-size:1.5rem;
+}
+.mid_title{
+	font-size:1.15rem;
 }
