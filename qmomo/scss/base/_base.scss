@@ -11,7 +11,72 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	color: black;
 	box-sizing: border-box;
 }
-
+#wpf-loader-two {
+	background-color: $theme-color;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 99999;
+  
+	.wpf-loader-two-inner {
+	  border: 2px solid #fff;
+	  border-radius: 50%;
+	  height: 100px;
+	  left: 46%;
+	  position: absolute;
+	  top: 40%;
+	  width: 100px;
+	  text-align: center;
+  
+	  &:before {
+		background: $theme-color;
+		content: "";
+		height: 57%;
+		left: -204px;
+		position: absolute;
+		top: -5px;
+		transition: all 0.5s ease 0s;
+		width: 200px;
+		-webkit-animation-name: loader-two-before-transition;
+		-webkit-animation-duration: 1.5s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: infinite;
+		animation-name: loader-two-before-transition;
+		animation-duration: 1.5s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	  }
+  
+	  &:after {
+		background: $theme-color;
+		content: "";
+		height: 57%;
+		left: 104%;
+		position: absolute;
+		top: 50%;
+		transition: all 0.5s ease 0s;
+		width: 200px;
+		-webkit-animation-name: loader-two-after-transition;
+		-webkit-animation-duration: 1.5s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: infinite;
+		animation-name: loader-two-after-transition;
+		animation-duration: 1.5s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	  }
+  
+	  span {
+		color: #fff;
+		display: inline-block;
+		margin-top: 42%;
+	  }
+	}
+  }
 .quantity {
 	display: flex;
 	flex-flow: row nowrap;
@@ -69,4 +134,46 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 }
 .mid_title{
 	font-size:1.15rem;
+}
+
+
+
+@-webkit-keyframes loader-two-before-transition {
+	50% {
+	  left: -154px;
+	}
+  
+	100% {
+	  left: -97px;
+	}
+  }
+  
+@keyframes loader-two-before-transition {
+	50% {
+		left: -154px;
+	}
+
+	100% {
+		left: -97px;
+	}
+}
+
+@-webkit-keyframes loader-two-after-transition {
+	50% {
+		left: 54px;
+	}
+
+	100% {
+		left: -4px;
+	}
+}
+  
+@keyframes loader-two-after-transition {
+	50% {
+	left: 54px;
+	}
+
+	100% {
+	left: -4px;
+	}
 }

@@ -13,6 +13,69 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   box-sizing: border-box;
 }
 
+#wpf-loader-two {
+  background-color: #ffadad;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+#wpf-loader-two .wpf-loader-two-inner {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 100px;
+  left: 46%;
+  position: absolute;
+  top: 40%;
+  width: 100px;
+  text-align: center;
+}
+#wpf-loader-two .wpf-loader-two-inner:before {
+  background: #ffadad;
+  content: "";
+  height: 57%;
+  left: -204px;
+  position: absolute;
+  top: -5px;
+  transition: all 0.5s ease 0s;
+  width: 200px;
+  -webkit-animation-name: loader-two-before-transition;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-two-before-transition;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#wpf-loader-two .wpf-loader-two-inner:after {
+  background: #ffadad;
+  content: "";
+  height: 57%;
+  left: 104%;
+  position: absolute;
+  top: 50%;
+  transition: all 0.5s ease 0s;
+  width: 200px;
+  -webkit-animation-name: loader-two-after-transition;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-two-after-transition;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#wpf-loader-two .wpf-loader-two-inner span {
+  color: #fff;
+  display: inline-block;
+  margin-top: 42%;
+}
+
 .quantity {
   display: flex;
   flex-flow: row nowrap;
@@ -72,7 +135,22 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 .mid_title {
   font-size: 1.15rem;
 }
-
+@keyframes loader-two-before-transition {
+  50% {
+    left: -154px;
+  }
+  100% {
+    left: -97px;
+  }
+}
+@keyframes loader-two-after-transition {
+  50% {
+    left: 54px;
+  }
+  100% {
+    left: -4px;
+  }
+}
 /*reset*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, th, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -222,7 +300,7 @@ input[type=number]::-webkit-outer-spin-button {
   border: 1px solid #ddd;
   color: #555;
   font-size: 0.9rem;
-  height: 20px;
+  height: 32px;
   padding: 5px 36px 5px 10px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
