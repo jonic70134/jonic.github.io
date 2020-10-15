@@ -75,7 +75,7 @@ jQuery(function($){
 
 
 	// 愛心class切換
-	$(".item .far").click(function(e){
+	$(".far.fa-heart").click(function(e){
 		e.preventDefault();
 		$(this).toggleClass("far fas");
 	});
