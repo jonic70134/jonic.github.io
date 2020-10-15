@@ -11,6 +11,7 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	color: black;
 	box-sizing: border-box;
 }
+// loading 動畫
 #wpf-loader-two {
 	background-color: $theme-color;
 	height: 100%;
@@ -126,6 +127,9 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 .fas{
 	color:#999;
 }
+.fas.fa-heart{	
+	color:#ff5353;
+}
 .sm_title{
 	font-size:.9rem;
 }
@@ -136,18 +140,29 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	font-size:1.15rem;
 }
 
+// scrollbar 顏色
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+	width: 10px;
+	border-radius: 20px;
+	color:#babac0;
+	background-clip: padding-box;
+	border: 3px solid transparent;
+	background-color:white;
 
+}
+*::-webkit-scrollbar-thumb {        
+	box-shadow: inset 0 0 0 10px;
+}
 
 @-webkit-keyframes loader-two-before-transition {
 	50% {
-	  left: -154px;
+		left: -154px;
 	}
-  
 	100% {
-	  left: -97px;
+		left: -97px;
 	}
-  }
-  
+}
 @keyframes loader-two-before-transition {
 	50% {
 		left: -154px;
@@ -162,7 +177,6 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	50% {
 		left: 54px;
 	}
-
 	100% {
 		left: -4px;
 	}
@@ -170,10 +184,9 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
   
 @keyframes loader-two-after-transition {
 	50% {
-	left: 54px;
+		left: 54px;
 	}
-
 	100% {
-	left: -4px;
+		left: -4px;
 	}
 }

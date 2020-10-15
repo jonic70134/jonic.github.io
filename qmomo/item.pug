@@ -17,9 +17,7 @@ html(lang='zh-Hant-TW')
 			.wpf-loader-two-inner
 				span Loading
 		include _header.pug
-		include _menu.pug
-		
-		aside.side_menu
+
 		.item_main
 			.container
 				section.item_top
@@ -76,17 +74,25 @@ html(lang='zh-Hant-TW')
 							.sm_title 顏色
 							ul.value
 								li.img.disabled(title='已售完')
-									//- i.fa.fa-times-circle
-									img(src='img/color_purple.png' alt='顏色' title='顏色')
+									.photo
+										img(src='img/color_purple.png' alt='顏色' title='顏色')
+									p 迷幻紫
 								li.img
-									img(src='img/color_white.png' alt='顏色' title='顏色')
+									.photo
+										img(src='img/color_white.png' alt='顏色' title='顏色')
+									p 你好白
 								li.img
-									img(src='img/color_red.png' alt='顏色' title='顏色')
+									.photo
+										img(src='img/color_red.png' alt='顏色' title='顏色')
+									p 熱力紅
 								li.img
-									img(src='img/color_green.png' alt='顏色' title='顏色')
+									.photo
+										img(src='img/color_green.png' alt='顏色' title='顏色')
+									p 湖水綠
 								li.img.active
-									//- i.fa.fa-check
-									img(src='img/color_orange.png' alt='顏色' title='顏色')
+									.photo
+										img(src='img/color_orange.png' alt='顏色' title='顏色')
+									p 暖心橘
 						.line.size
 							.sm_title 內衣尺寸
 							ul.value
