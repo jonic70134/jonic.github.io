@@ -14,12 +14,11 @@ jQuery(function($){
 			prevEl: '.swiper-button-prev',
 		},
 	});
-	$(".photo-other").on('click', 'img', function(){
+	$(".photo-other").on('click', '.thumb', function(){
 		itemSlider.slideTo($(this).index()+1);
-		console.log($(this).index());
     });
-    $('.photo-other img').on('click', function(){
-		$('.photo-other img').removeClass('active');
+    $('.photo-other .thumb').on('click', function(){
+		$('.photo-other .thumb').removeClass('active');
 		$(this).addClass('active');
 	});	
 
