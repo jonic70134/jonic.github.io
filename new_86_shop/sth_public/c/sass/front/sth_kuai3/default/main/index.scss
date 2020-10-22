@@ -1,0 +1,22 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_kuai3.scss";
+
+@import "../../../../frame/_pc_layout_two_column.scss";
+@import "../../../module_category/pc_category_banner_carousel.scss";
+@import "../../../module_index/pc_index_full_menu_left.scss";
+@import "../../../module_index/pc_index_full.scss";
+@import "../../../module_category/pc_category_1big_6small_list.scss";
+@import "../../../module_category/pc_category_limited_sale_list.scss";
+@import "../../../module_category/pc_category_hot_products_3list.scss";
+@import "../../../module_index/_pc_video_3block.scss";
+@import "../../../module_index/_pc_hot_product.scss";
+//客製化
+.site-header{
+    border-bottom: none;
+}
+.site-left{
+	margin-top: 0px;
+}
+.pc_index_006{
+    margin-bottom:20px;
+}

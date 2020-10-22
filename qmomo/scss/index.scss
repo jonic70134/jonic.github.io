@@ -118,9 +118,42 @@
 			align-items: center;
 			margin:5px 0 0 0;
 		}
+		.track{
+			display: flex;
+			flex-flow: row nowrap;
+			i{
+				margin-right:8px;
+				&:last-child{
+					margin:0;
+				}
+			}
+			.fa-cart-plus{
+				color:#333;
+			}
+		}
 		.dis_price{
 			color:#ff5353;
 		}
+	}
+}
+
+
+.lightbox{
+	display: block;
+	width: 100vw;height:100vh;
+	position: fixed;left:0;top:0;
+	background-color: rgba(0,0,0,0);
+	z-index: 30;
+	img{
+		display: block;
+		position: absolute;top:50%;left:50%;
+		width: 80vw;
+		transform: translate(-50%, -50%);
+	}
+}
+.fancybox-button{
+	svg{
+		color:white;
 	}
 }
 

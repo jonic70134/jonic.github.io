@@ -1,0 +1,77 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_asap_m.scss";
+
+@import "../../../../frame/_reset.scss";
+@import "../../../../frame/_md_layouts.scss";
+@import "../../../../frame/_md_fancybox.scss";
+@import "../../../../frame/_md_style.scss";
+@import "../../../../frame/_md_button.scss";
+@import "../../../module_header/_md_header_001.scss";
+
+@import "../../../module_component/_md_nav_menu.scss";
+@import "../../../module_component/_md_nav_menu_title_002.scss";
+@import "../../../module_component/_md_item_list.scss";
+@import "../../../module_component/_md_item_list_02.scss";
+.title-h3{
+	padding:20px 10px 10px;
+	font-size: 1.2rem;
+	color:black;
+	background: #ddd;
+	text-align: center;
+	letter-spacing: 1px;
+	span{
+		color:black;
+	}
+}
+.time_discount{
+	display: inline-block;
+	margin:0 0 10px 0;
+	padding:5px 3px;
+	font-size:.85rem;
+	color:#fefefe;
+	background:#f05475;
+}
+.fav_icon{
+	display: inline-block;
+	font-size:1.5rem;
+	color:#f05475;
+}
+.foot_title{
+	display: block;
+	padding:10px;
+	font-size:1.2rem;
+	text-align: center;
+	color:#fefefe;
+	background-color: #aaaaaa;
+}
+.md_foot{
+	text-align: center;
+}
+.index_foot{
+	display: inline-block;
+	margin:20px 0;
+	padding:10px 10px;
+	color:#fefefe;
+	letter-spacing: 1px;
+	background:#333;
+	.fa{
+		margin-left:4px;
+	}
+}
+.photo {
+	position: relative;
+	.discount_tip{
+		position: absolute; bottom: 15px; right: 5px;
+		width:45px;height:45px;
+		color:$primary;
+		font-weight: 700;
+		text-align: center;
+		background-image: url('../../../../../../c/img/frame/2hr_icon_45x45.png');
+	}
+}
+@import "../../../module_footer/_md_footer_001.scss";
+@import "../../../module_footer/_md_footer_002.scss";
+@import "../../../module_footer/_md_footer_003.scss";
+@import "../../../module_footer/_md_copyright_001.scss";
+@import "../../../module_component/_site_tags.scss";
+@import "../../../module_component/_site_translation.scss";

@@ -1,0 +1,199 @@
+.pc_left_017 {
+  width: 200px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  display: inline-block !important;
+  background:#feedf3;	
+  .index {
+    background: $primary;
+    padding: 10px;
+    display: block;
+    color: white;
+    /*border-bottom: 1px solid #ccc;*/
+  }
+  .trans-btn {
+    background: #013da4;
+    padding: 11px 10px 8px 32px;
+    display: block;
+    color: white;
+    vertical-align: middle;
+    position: relative;
+    font-size: 15px;
+    .trans-icon {
+      width: 15px;
+      position: absolute;
+      top: 11px;
+      left: 10px;
+    }
+    &:hover {
+      background: #002767;
+    }
+  }
+  .title-h3 {
+    color: #8dadcf;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    word-break: break-word;
+    word-wrap: break-word;
+    position: relative;
+    a {
+      padding: 12px 0 12px 40px;
+      display: block;
+      &:hover {
+        color: #f63577;
+      }
+    }
+  }
+  .title-h3-active {
+    a {
+      color: #ff88aa;
+      font-weight:500;
+      img{
+        position:absolute;
+        left:18px;top:12px;
+        width:18px;
+        height:18px;
+      }
+    }
+  }
+  h5 a {
+    color: #ff88aa;
+    font-size: 14px;
+    padding: 0 0 14px 40px;
+    display: block;
+  }
+  .title-h5 a {
+    color: #ff88aa;
+    position: relative;
+    &:hover {
+      color: #f63577;
+    }
+    img{
+      position:absolute;
+      left:18px;top:-1px;
+      width:18px;
+      height:18px;
+    }
+  }
+  h4 a {
+    color: #ff88aa;
+    font-size: 14px;
+    padding: 0 0 14px 40px;
+    display: block;
+  }
+  .title-h4 a {
+    color: #ff88aa;
+    position: relative;
+    &:hover {
+      color: #f63577;
+    }
+    img {
+      position: absolute;
+      left: 18px;
+      top: -1px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .fa {
+    margin-right: 6px;
+  }
+  .side-menu {
+    font-size: 16px;
+    line-height: 140%;
+    padding-bottom: 10px;
+  }
+  .title-h6 {
+    font-size: 15px;
+  }
+  .title-h6-active a {
+    color: #cc3377;
+    margin: 0;
+    padding: 0 0 14px 40px;
+    display: block;
+  }
+  .side-menu {
+    li:first-child h6 {
+      color: #f63577;
+      position: relative;
+      top: 10px;
+    }
+    h6 {
+      font-size: 15px;
+      color: #8dadcf;
+      cursor: pointer;
+      overflow: hidden;
+      &.title-h6-hide {
+        margin: 0;
+        padding: 0 0 12px 40px;
+      }
+    }
+  }
+  &.side-menu h6 {
+    zoom: 1;
+  }
+  .side-menu {
+    h6 {
+      &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+      }
+      .fa {
+        float: left;
+        display: block;
+        margin-top: 1px;
+      }
+      a {
+        color: #999;
+        float: left;
+        display: block;
+        width: 140px;
+        margin-top: 0;
+        &:hover {
+          color: #f63577 !important;
+        }
+      }
+    }
+    a {
+      color: #8dadcf;
+      overflow: hidden;
+      width: 150px;
+      line-height: 1.4;
+      max-height: 40px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      &:hover {
+        color: #f63577;
+      }
+    }
+    .sec-menu {
+      padding: 2px 0 0 44px;
+      li {
+        font-size: 15px;
+      }
+      a {
+        display: block;
+        color: #666;
+        padding: 0 10px 14px 10px;
+        &:hover {
+          color: #f63577;
+        }
+      }
+      .active {
+        color: #f63577;
+        font-weight: bold;
+      }
+    }
+    > li:last-child {
+      .sec-menu, h6 {
+        border-bottom: 0;
+      }
+    }
+  }
+}

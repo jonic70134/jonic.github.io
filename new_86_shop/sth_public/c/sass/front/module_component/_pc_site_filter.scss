@@ -1,0 +1,177 @@
+.site-filter{
+	.attr-adv-btn{
+		display: block;
+		text-align: center;
+		margin-bottom: 15px;
+		padding: 9px 15px 8px 15px;
+		cursor: pointer;
+		background: $background2;
+		border: 1px solid $border2;
+		//@include border-radius(4px);
+		@include transition(0.3s);		
+		&:hover{
+			background: $hover_bk;
+		}
+		&.a-c-active{
+			margin-bottom: 10px;
+			.attr-btn-content{
+				&:before{
+					@include icon-font("\f139");
+				}
+			}
+		}
+	}
+	.attr-btn-content{		
+		font-size: 14px;
+		color: $text_hover;
+		&:before{
+			@include icon-font("\f161");
+			margin-right: 3px;
+		}
+	}
+	.attr{
+		font-size: 0.813em;
+		line-height: 250%;
+		margin-bottom: 20px;
+		display: none;
+	}
+	.attrcon{
+		position: relative;
+		border-width: 1px;
+		border-style: solid; 
+		border-color: $border2!important;
+		//border: 1px solid $border;
+		border-top: none;
+		padding: 5px 0;
+		&:first-child{
+			border-top-width: 1px;
+			border-top-style: solid;
+			border-top-color: $border2!important;
+			//border-top: 1px solid $border;
+		}
+		> div, label{
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 260%;
+		}
+		label.disabled{
+			color: $disabled;
+			cursor: no-drop;
+		}
+		.colst{
+			width: 12%;
+			text-align: right;
+			margin-right: 20px;
+			vertical-align:top;
+		}
+		.colcheck{
+			width:72%;
+			line-height: 0;
+			a{
+				width:115px;
+				line-height: 200%;
+				margin-right: 20px;
+				display:inline-block;
+				color: $text;
+				@include one-line;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+			.selected{
+				color: $primary;
+			}
+		}
+		.all{
+			display: inline-block;
+			vertical-align: middle;
+			cursor: pointer;
+			line-height: 140%;
+			margin-right: 20px;
+		}
+		.type{
+			width: 65px;
+			margin-right: 0;
+		}
+		.actions{
+			position: absolute;
+			right: 5px;
+			bottom: 0px;
+			vertical-align: bottom;
+			.colclose{
+				display: inline-block;
+				margin-left: 10px;
+				a{
+					color: $link;
+					display: inline-block;
+				}
+			}
+			.clearcheck{
+				margin: 0 0 0 10px;
+			}
+			.tirup,.tirdown{
+				display:inline-block;
+				width:0;
+				height:0;
+				position:relative;
+				bottom:1px;
+				left:1px;
+				border-style:solid;
+				border-width:0 5px 6px 5px;
+				border-color:transparent transparent $link transparent;
+			}
+			.tirdown{
+				border-width:6px 5px 0 5px;
+				border-color:$link transparent transparent transparent;
+			}
+		}
+		label{
+			width:115px;
+	    		cursor: pointer;
+	    		overflow: hidden;
+	    		text-overflow: ellipsis;
+	    		white-space: nowrap;
+	    		margin-right: 20px;
+		}
+		input[type="checkbox"]{
+			margin-left: 0;
+		}
+		.input-number {
+    		padding: 0 0 0 3px;
+    		vertical-align: middle;
+    		width: 70px;
+    		height: 22px;
+    		margin: 0 5px;
+		}
+		input[type="submit"]{
+		}
+		&.special{
+            background: $special_filter; 
+        }
+
+	}
+	.attrft{
+		height:30px;
+		padding-right:5px;
+		text-align:right;
+		border-width: 1px;
+		border-style: solid;
+		border-color: $border2!important;
+		//border: 1px solid $border;
+		border-top:none;
+		a{
+			color: $link3!important;
+		}
+	}
+}
+.result{
+	font-size: 1.8em;
+	line-height: 140%;
+	text-align: center;
+	color: #000;
+	margin: 2em 0;
+	padding: 0 10px;
+}
+.site-filter-m,.sort-s{
+	display:none;
+}

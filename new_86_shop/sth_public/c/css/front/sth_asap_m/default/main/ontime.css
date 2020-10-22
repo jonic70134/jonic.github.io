@@ -1,0 +1,13 @@
+.md_site_ontime .t-ontime-clock {
+  top: 16px;
+  left: 12px;
+  position: absolute;
+  z-index: 1;
+}
+
+.md-ontime-notice {
+  padding: 0 10px 10px;
+  color: #999999;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}

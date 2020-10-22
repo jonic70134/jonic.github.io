@@ -1,0 +1,42 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_asap.scss";
+
+@import "../../../../frame/_reset.scss";
+@import "../../../../frame/_button.scss";
+@import "../../../../frame/_pc_icon.scss";
+@import "../../../../frame/_bank.scss";
+@import "../../../../frame/_fancybox_style.scss";
+@import "../../../../frame/_pc_layout.scss";
+@import "../../../../frame/_pc_style.scss";
+
+@import "../../../module_component/_site_translation.scss";
+@import "../../../module_component/_site_translation_03.scss";
+@import "../../../module_component/_site_tags.scss";
+@import "../../../module_component/_site_ad_top.scss";
+@import "../../../module_header/_pc_header_001.scss";
+@import "../../../module_left/_pc_left_001.scss";
+@import "../../../module_left/_pc_left_002.scss";
+@import "../../../module_left/_pc_left_003.scss";
+@import "../../../module_left/_pc_left_012.scss";
+@import "../../../module_left/_pc_left_014.scss";
+@import "../../../module_left/_pc_left_015.scss";
+@import "../../../module_left/_pc_left_016.scss";
+@import "../../../module_left/_pc_left_017.scss";
+@import "../../../module_left/_pc_left_018.scss";
+@import "../../../module_left/_pc_left_credit_guide.scss";
+body{
+	padding-top:136px;
+}
+.photo{
+	position: relative;
+	.discount_tip{
+		position: absolute; top: 5px; right: 5px;
+		width:45px;height:45px;
+		color:$primary;
+		font-weight: 700;
+		text-align: center;
+		background-image: url('../../../../../../c/img/frame/2hr_icon_45x45.png');
+	}
+}
+@import "../../../module_footer/_pc_footer_001.scss";
+@import "../../../module_footer/_pc_copyright_001.scss";

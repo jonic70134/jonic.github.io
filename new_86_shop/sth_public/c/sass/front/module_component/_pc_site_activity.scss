@@ -1,0 +1,289 @@
+.site-activity{
+	line-height: 1.4;
+	.act-info{
+		@include clearfix;
+	}
+	h3{
+		display: block;
+		// float: left;
+		border-width: 1px;
+		border-style: solid; 
+		//border: 1px solid $border;
+		padding: 3px 5px;
+		margin-bottom: 10px;
+		// width: 420px;
+		@include clearfix;
+	}
+	.ready{
+		display: block;
+		float: left;
+		padding: 5px 10px;
+		//margin-bottom: 5px;
+		//background: $red;
+		color: white;
+		letter-spacing: 3px;
+	}
+	.not{
+		display: block;
+		float: left;
+		padding: 5px 10px;
+		margin-bottom: 5px;
+		//background: $gray;
+		color: white;
+		letter-spacing: 3px;
+	}
+	.act-title, .date{
+		display: block;
+		float: left;
+		color: black;
+		padding: 5px 5px 5px 10px;
+		margin-top: 2px;
+		//width: 270px;
+		height: 30px;
+		overflow: hidden;
+		word-wrap: break-word;
+	}
+	hr{
+		margin: 3px 0;
+		clear: both;
+		//border-color: $border;
+	}
+	.date{
+		/* font-size: 12px;
+		margin: 5px 0 2px;
+		padding: 2px 0;
+		text-align: center;
+		background: $tip!important; */
+		padding: 5px 0;
+		font-size: 15px;
+	}
+	.desc{
+		display: block;
+		//float: left;
+		margin-left: 15px;
+		/* width: 781px;
+		height: 73px; */
+		.tip{
+			// height: 35px;
+			margin: 0 0 20px;
+			overflow: hidden;
+			word-wrap: break-word;
+		}
+	}
+	.act-content{
+		//width: 100%;
+		font-size: 18px;
+		//color: $red;
+		font-weight: bold;
+		margin: 0px 0 5px;
+		// height: 50px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		//word-wrap: break-word;
+		white-space: nowrap;
+	}
+	.tip{
+		font-size: 0.8em;
+		.t-red {
+			color: $red;
+			font-style: normal;
+		}
+	}
+	.act-cart{
+		margin: 0px 0 20px;
+		@include clearfix;
+		.swiper-container{
+			float: left;
+			position: relative;
+			border-width: 1px;
+			border-style: solid; 
+			//border: 1px solid $border;
+			display: inline-block;
+			width: 840px;
+			@include clearfix;
+			.swiper-wrapper{
+			}
+			.swiper-slide{
+				float: left;
+				padding: 5px 10px;
+				border-right-width: 1px;
+				border-right-style: solid; 
+				//border-right: 1px solid $border;
+			}
+			.swiper-left,.swiper-right{
+				position: absolute;
+				top: 35%;
+				left: 0;
+				z-index: 10;
+				font-size: 13px;
+				background: rgba(204, 204, 204, 0.7);
+				color: #fff;
+				padding: 3px;
+			}
+			.swiper-right{
+				left: initial;
+				right: 0;
+			}
+			.photo{
+				display: inline-block;
+				float: left;
+				@include crop(80px, white);
+			}
+			.info{
+				float: left;
+				margin-left: 5px;
+			}
+			.line{
+				padding: 2px 0;
+			}
+			.name{
+				font-size: 12px;
+				width: 145px;
+				height: 32px;
+				overflow: hidden;
+				word-wrap: break-word;
+			}
+			.currency{
+				font-size: 0.7em;
+				//color: $price;
+			}
+			.price{
+				font-size: 13px;
+				//color: $price;
+			}
+			.quantity{
+				vertical-align: top;
+			}
+			.btn-del{
+				font-size: 12px;
+				display: inline-block;
+				vertical-align: top;
+				padding: 4px;
+			}
+		}
+		.state{
+			float: right;
+			display: inline-block;
+			vertical-align: top;
+			width: 30%;
+			border-width: 1px;
+			border-style: solid; 
+			//border: 1px solid $border;
+			padding: 15px 5px 16px;
+			.progress{
+				padding: 15px;
+				border-bottom-width: 1px;
+				border-bottom-style: solid;
+				//border-bottom: 1px solid $border;
+			}
+			.progress-bar-static{
+				position: relative;
+				background: #eee;
+				width: 100%;
+				margin-bottom: 5px;
+				height: 15px;
+				@include border-radius(2px);
+				.inner-bar{
+					height: 15px;
+					background-color: orange;
+					@include box-shadow(0 2px 5px rgba(0, 0, 0, 0.25) inset);
+					@include border-radius(2px);
+					background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+					background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+					background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+					background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+					background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+					-webkit-background-size: 15px 15px;
+					-moz-background-size: 15px 15px;
+					-ms-background-size: 15px 15px;
+					-o-background-size: 15px 15px;
+					background-size: 15px 15px;
+					-webkit-animation: animate-stripes 3s linear infinite;
+					-moz-animation: animate-stripes 3s linear infinite;
+					-ms-animation: animate-stripes 3s linear infinite;
+					-o-animation: animate-stripes 3s linear infinite;
+					animation: animate-stripes 3s linear infinite;
+					&.finish{
+						//background-color: $blue;
+					}
+				}
+				.note, .note-finish{
+					position: absolute;
+					top: -35px;
+					left: 0;
+					min-width: 100px;
+					font-size: 13px;
+					text-align: center;
+					border-width: 2px;
+					border-style: solid; 
+					//border: 2px solid $light_gray;
+					padding: 3px 10px;
+					//color: $text;
+					//background: $background;
+					@include border-radius(4px);
+					&:after{
+						position: absolute;
+						bottom: -8px;
+						left: 75%;
+						content:'';
+						border-style: solid;
+						border-width: 10px 10px 0 10px;
+						//border-color: $background transparent transparent transparent;
+					}
+					&:before{
+						position: absolute;
+						bottom: -10px;
+						left: 75%;
+						content:'';
+						border-style: solid;
+						border-width: 10px 10px 0 10px;
+						//border-color: $light_gray transparent transparent transparent;
+					}
+				}
+				.note-finish{
+					//color: $primary;
+				}
+			}
+			.actions{
+				font-size: 13px;
+				&.finish{
+					//color: $primary;
+				}
+				.current{
+					display: inline-block;
+					margin-top: 5px;
+				}
+				.price{
+					font-size: 16px;
+				}
+				.button{
+					float: right;
+				}
+			}
+		}
+	}
+}
+
+@-webkit-keyframes animate-stripes {
+  /* line 299, ../sass/split/_product_list_events_main_top.scss */
+  0% {
+    background-position: 0 0;
+  }
+
+  /* line 299, ../sass/split/_product_list_events_main_top.scss */
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  /* line 302, ../sass/split/_product_list_events_main_top.scss */
+  0% {
+    background-position: 0 0;
+  }
+
+  /* line 302, ../sass/split/_product_list_events_main_top.scss */
+  100% {
+    background-position: 60px 0;
+  }
+}

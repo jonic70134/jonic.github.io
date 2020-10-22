@@ -1,0 +1,125 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_asap.scss";
+
+@import "../../../../frame/_reset.scss";
+@import "../../../../frame/_button.scss";
+@import "../../../../frame/_pc_icon.scss";
+@import "../../../../frame/_bank.scss";
+@import "../../../../frame/_fancybox_style.scss";
+@import "../../../../frame/_pc_layout.scss";
+@import "../../../../frame/_pc_style.scss";
+
+@import "../../../module_component/_site_translation.scss";
+@import "../../../module_component/_site_translation_03.scss";
+@import "../../../module_component/_site_tags.scss";
+@import "../../../module_component/_site_ad_top.scss";
+@import "../../../module_header/_pc_header_001.scss";
+@import "../../../module_left/_pc_left_001.scss";
+@import "../../../module_left/_pc_left_002.scss";
+@import "../../../module_left/_pc_left_003.scss";
+@import "../../../module_left/_pc_left_012.scss";
+@import "../../../module_left/_pc_left_014.scss";
+@import "../../../module_left/_pc_left_015.scss";
+@import "../../../module_left/_pc_left_016.scss";
+@import "../../../module_left/_pc_left_017.scss";
+@import "../../../module_left/_pc_left_018.scss";
+@import "../../../module_left/_pc_left_credit_guide.scss";
+.photo{
+	position: relative;
+	.discount_tip{
+		position: absolute; top: 5px; right: 5px;
+		width:45px;height:45px;
+		color:$primary;
+		font-weight: 700;
+		text-align: center;
+		background-image: url('../../../../../../c/img/frame/2hr_icon_45x45.png');
+	}
+}
+@import "../../../module_footer/_pc_footer_001.scss";
+@import "../../../module_footer/_pc_copyright_001.scss";
+.coupon_box{
+    display:none;
+    padding:10px;
+    background-color: white;
+    .cole00{
+        color:#e00;
+    }
+    .coupon_title{
+        margin-bottom: 15px;
+        text-align: center;
+        font-size:20px;
+        color: #0069cd;
+    }
+    .price{
+        color: #d00;
+        font-size: 30px;
+        text-decoration: none;
+        small{
+            font-size: 20px;
+        }
+    }
+    .coupon_des{
+        margin-top: 10px;
+        font-size:12px;
+    }
+    .coupon_table{
+        width:100%;
+        margin:10px 0;
+        td,th{
+            padding:10px;
+            border:1px solid #aaa;
+            vertical-align: middle;
+        }
+        th{
+            font-size:12px;
+            background-color: #eee; 
+            &:first-child{
+                text-align: left;
+            }
+        }
+        .coupon_name_td{
+            color:#555;
+            font-size:12px;
+            line-height: 1.4;
+        }
+        .coupon_name{
+            font-size:16px;
+        }
+        .coupon_la{
+            font-size:20px;
+        }
+        small{
+            font-size:12px;
+        }
+    }
+    .coupon_txt{
+        padding:5px;
+        font-size:12px;
+        color: #79a5c5;
+	}
+	&.login_box{
+		padding:30px 100px;	
+		text-align: center;
+	}
+	.login_st{
+		margin:50px 0;
+        font-size:14px;
+        line-height: 1.4;
+		color:#333;
+	}
+	.loginbox-btn{
+		margin:0 auto;
+		padding:10px 20px;
+        color:white;
+        font-size:20px;
+        background:#06c;
+        letter-spacing: 2px;
+	}
+}
+.coupon_search{
+	margin: 9px 0 0 2px;
+	padding: 2px 5px;
+	font-size: 14px;
+	color: white;
+	background-color: #f63578;
+}

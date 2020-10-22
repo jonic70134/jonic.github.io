@@ -1,0 +1,5 @@
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+fire_app_log.txt

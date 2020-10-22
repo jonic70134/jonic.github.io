@@ -3,9 +3,11 @@ html(lang='zh-Hant-TW')
 	head
 		include _head.pug
 		title Qmomo
+		
+		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
 		link(href='css/index.css', rel='stylesheet')
 	body
-		#wpf-loader-two
+		.wpf-loader-two
 			.wpf-loader-two-inner
 				span Loading
 		include _header.pug
@@ -153,9 +155,10 @@ html(lang='zh-Hant-TW')
 				include _items.pug
 				include _items.pug
 		include _footer.pug
-
-		script(src='js/jquery-3.5.1.min.js')
-		script(src='js/svgembedder.min.js')
-
+		
+		.lightbox#index_ad(data-fancybox)
+			a(href="#")
+				img(src="img/index_popup_ad.jpg", alt="")
+		script(src='js/jquery.fancybox.min.js')
 		script(src='js/common.js')
 		script(src='js/index.js')

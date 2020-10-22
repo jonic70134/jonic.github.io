@@ -1,0 +1,102 @@
+.pc_video_3block{
+    margin-bottom:20px;
+    @import"../module_category/_pc_category_products_item_base_style.scss";
+    .title-h3 {
+        margin-bottom: 0;
+        padding:5px 0 5px 8px;
+        background: #ffdfe1;
+        span{
+            display: inline-block;
+            height: 22px;
+            color: #ca3575;
+            line-height: 22px;
+            font-size: 21px;
+            padding-left: 6px;
+            border-left: solid 6px #ca3577;
+        }
+    }
+	.video_block{
+        width: 32.667%;
+        float: left;
+        margin-right: 10px;
+        border: 1px solid #bbb;
+        &:last-child{
+            margin:0;
+        }
+    }
+    .video_frame{
+        position: relative;
+        padding-bottom: 80%;
+        height: 0;
+        overflow: hidden;
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .video_title{
+        height:32px;
+        padding:8px;
+        text-align:center;
+        color:#fff;
+        background-color:#f43678;
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+    }
+    .items {
+        width:100%;
+	}
+	.items:after {
+		display:block;
+		content:" ";
+		clear:both;
+	}
+    .item {
+        width:33.33333%;
+        float:left;
+        border-left:solid 1px #ccc;
+        &:first-child{
+            border:none;
+        }
+
+        .info {
+            padding:4px;
+            background-color:#fff;
+        }
+        .name {
+            height:30px;
+            margin-bottom:8px;
+            overflow:hidden;
+			a {
+				font-size:12px;
+                line-height:16px;
+			}
+		}
+		.text_description {
+			color:#858585;
+			font-size:13px;
+			margin-bottom:20px;
+		}
+		.price {
+            display:block;
+            margin-right:5px;	
+            color:#f73375;
+		}
+		.discount_price {
+            font-size:18px;
+			span {
+				font-size:15px;
+			}
+		}
+		.buy-actions {
+			a {
+				font-size:13px;
+			}
+        }
+
+    }
+}

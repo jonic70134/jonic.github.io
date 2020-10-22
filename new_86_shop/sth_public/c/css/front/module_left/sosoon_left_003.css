@@ -1,0 +1,36 @@
+/* line 1, ../../../sass/front/module_left/_pc_left_003.scss */
+.pc_left_003 {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+}
+/* line 5, ../../../sass/front/module_left/_pc_left_003.scss */
+.pc_left_003 .title-h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  line-height: 1.3;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+/* line 12, ../../../sass/front/module_left/_pc_left_003.scss */
+.pc_left_003 .info {
+  display: none;
+}
+/* line 15, ../../../sass/front/module_left/_pc_left_003.scss */
+.pc_left_003 .item {
+  border: 1px solid #cccccc;
+  margin-bottom: 10px;
+}
+/* line 18, ../../../sass/front/module_left/_pc_left_003.scss */
+.pc_left_003 .item:hover {
+  border: 1px solid #c15797;
+}
+/* line 22, ../../../sass/front/module_left/_pc_left_003.scss */
+.pc_left_003 .photo {
+  font-size: 0;
+  display: block;
+}
+/* line 25, ../../../sass/front/module_left/_pc_left_003.scss */
+.pc_left_003 .photo img {
+  width: 100%;
+}

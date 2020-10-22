@@ -1,0 +1,43 @@
+.pc_hot_product{
+    margin-bottom:20px;
+    @import"../module_category/_pc_category_products_item_base_style.scss";
+    .title-h3 {
+        margin-bottom: 0;
+        padding:5px 0 5px 8px;
+        span{
+            display: inline-block;
+            height: 22px;
+            color: #ca3575;
+            line-height: 22px;
+            font-size: 21px;
+            padding-left: 6px;
+            border-left: solid 6px #ca3577;
+        }
+    }
+    .swiper-slide{
+        border-right:1px solid #ccc;
+    }
+    [class*="swiper-button-"] {
+        height:20px;
+        top:65%;right:3px;
+        opacity:.8;
+    }
+    .swiper-button-prev{
+        left:3px;
+    }
+    a{
+        display: block;
+        padding:5px;
+        color:#555;
+        font-size:15px;
+        text-align: center;
+    }
+    img{
+        display: block;
+        width:100px;
+        height: 100px;
+    }
+    span{
+        display: block;
+    }
+}

@@ -1,0 +1,42 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_asap.scss";
+
+@import "../../../../3rd-party/_idangerous.swiper.scss";
+@import "../../../module_component/_nav_breadcrumbs.scss";
+@import "../../../module_component/_pc_site_activity.scss";
+@import "../../../module_category/_pc_category_list.scss";
+@import "../../../module_category/pc_category_banner_carousel.scss";
+@import "../../../module_category/pc_category_1big_6small_list.scss";
+@import "../../../module_category/pc_category_limited_sale_list.scss";
+@import "../../../module_category/pc_category_hot_products_3list.scss";
+@import "../../../module_component/_site_search_answer.scss";
+@import "../../../module_component/_nav_pagination.scss";
+@import "../../../module_component/_pc_site_sort.scss";
+@import "../../../module_component/_pc_site_filter.scss";
+
+//3列商品改4列
+.pc_category_hot_products_3list .item:nth-child(3n+0){
+	border-right:1px solid transparent;
+} 
+.pc_category_hot_products_3list .item:nth-child(4n),.pc_category_hot_products_3list .item:last-child {
+    border-right: solid 1px #ada9a8;
+}
+.pc_category_hot_products_3list .item {
+	width: 25%;
+}
+//_pc_layout
+.site-filter{
+	.container{
+		width: 100%;
+	}	
+}
+.pc_category_list{
+	.item{
+		height:450px;
+	}
+}
+.pc_category_list.item-list-3{
+	.item{
+		height:530px;
+	}
+}

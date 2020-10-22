@@ -1,0 +1,127 @@
+.pc_category_limited_sale_list {
+  margin-bottom: 20px;
+}
+.pc_category_limited_sale_list .item .photo {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  overflow: hidden;
+}
+.pc_category_limited_sale_list .item .photo img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.pc_category_limited_sale_list .item .info:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+.pc_category_limited_sale_list .item .name {
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.pc_category_limited_sale_list .item .name a {
+  display: block;
+  color: #535353;
+}
+.pc_category_limited_sale_list .item .price del {
+  color: #888;
+  margin-bottom: 0px;
+}
+.pc_category_limited_sale_list .item .discount_price {
+  float: left;
+  color: #f73375;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.pc_category_limited_sale_list .item .discount_price span {
+  font-size: 12px;
+}
+.pc_category_limited_sale_list .item .buy-actions {
+  float: left;
+}
+.pc_category_limited_sale_list .item .buy-actions .link-btn {
+  color: #0063d2;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.pc_category_limited_sale_list .title-h3 {
+  background-color: #f63578;
+  margin-bottom: 0px;
+  padding: 8px 6px;
+}
+.pc_category_limited_sale_list .title-h3 span {
+  height: 21px;
+  display: inline-block;
+  color: #fff;
+  font-size: 21px;
+  line-height: 21px;
+  border-left: 7px solid #fee0e0;
+  padding-left: 8px;
+}
+.pc_category_limited_sale_list .items {
+  background-color: #ffdfe0;
+  padding: 10px 8px;
+}
+.pc_category_limited_sale_list .items:after {
+  display: block;
+  content: ' ';
+  clear: both;
+}
+.pc_category_limited_sale_list .item {
+  width: 150px;
+  float: left;
+  display: block;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.pc_category_limited_sale_list .time {
+  text-align: center;
+  background-color: #ffadb3;
+  padding: 4px 0px 4px 2px;
+  margin-bottom: 3px;
+}
+.pc_category_limited_sale_list .time .time_num {
+  display: inline-block;
+  min-width: 19px;
+  padding: 4px 5px;
+  margin: 0 1px 0 0;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  background: -moz-linear-gradient(top, #000 0%, #696e75 52%, #000 100%);
+  background: -webkit-linear-gradient(top, #000 0%, #696e75 52%, #000 100%);
+  background: linear-gradient(to bottom, #000 0%, #696e75 52%, #000 100%);
+}
+.pc_category_limited_sale_list .time .time_colon {
+  padding: 0 4px 0 0;
+  color: #000;
+  font-style: italic;
+  background: transparent;
+}
+.pc_category_limited_sale_list .photo {
+  width: 150px;
+  background-color: #fff;
+}
+.pc_category_limited_sale_list .info {
+  padding: 4px;
+  background-color: #fff;
+}
+.pc_category_limited_sale_list .info .name {
+  height: 28px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 14px;
+}
+.pc_category_limited_sale_list .info .buy .price {
+  font-weight: bold;
+  color: #f73375;
+}

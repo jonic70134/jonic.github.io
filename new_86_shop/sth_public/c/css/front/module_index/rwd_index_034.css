@@ -1,0 +1,72 @@
+/* line 1, ../../../sass/front/module_index/_rwd_index_034.scss */
+.rwd_index_034 {
+  font-size: 0;
+}
+/* line 3, ../../../sass/front/module_index/_rwd_index_034.scss */
+.rwd_index_034 img {
+  width: 100%;
+}
+/* line 13, ../../../sass/define/___mixins.scss */
+.rwd_index_034 {
+  zoom: 1;
+}
+/* line 16, ../../../sass/define/___mixins.scss */
+.rwd_index_034:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 7, ../../../sass/front/module_index/_rwd_index_034.scss */
+.rwd_index_034 .item-one-block {
+  float: right;
+  width: 50.08%;
+  border: 1px solid #F5F5F5;
+}
+/* line 12, ../../../sass/front/module_index/_rwd_index_034.scss */
+.rwd_index_034 .item-three-block {
+  float: left;
+  width: 24.96%;
+  border: 1px solid #F5F5F5;
+  border-right: none;
+}
+/* line 17, ../../../sass/front/module_index/_rwd_index_034.scss */
+.rwd_index_034 .item-three-block a {
+  display: block;
+  border-bottom: 1px solid #F5F5F5;
+}
+/* line 20, ../../../sass/front/module_index/_rwd_index_034.scss */
+.rwd_index_034 .item-three-block a:last-child {
+  border-bottom: none;
+}
+@media (min-width: 768px) and (max-width: 999px) {
+  /* line 1, ../../../sass/front/module_index/_rwd_index_034.scss */
+  .rwd_index_034 {
+    padding: 0 1%;
+  }
+  /* line 30, ../../../sass/front/module_index/_rwd_index_034.scss */
+  .rwd_index_034 .container {
+    padding: 20px 0;
+    border-bottom: 1px solid #F5F5F5 !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 36, ../../../sass/front/module_index/_rwd_index_034.scss */
+  .rwd_index_034 .container {
+    padding: 10px 0;
+    border-bottom: none;
+  }
+  /* line 40, ../../../sass/front/module_index/_rwd_index_034.scss */
+  .rwd_index_034 .item-one-block {
+    float: none;
+    width: 100%;
+    border-bottom: none;
+  }
+  /* line 45, ../../../sass/front/module_index/_rwd_index_034.scss */
+  .rwd_index_034 .item-three-block {
+    float: left;
+    width: 50%;
+  }
+}

@@ -1,0 +1,38 @@
+.campaign-5{
+    clear: both;
+    padding: 3px 0 7px;
+    li{
+        width: 24.5%;
+        display:inline-block;
+        text-align: center;
+        //border-top: #c9c9c9 1px dashed;
+        padding: 8px 0 0;
+    }
+    a{
+        display: block;
+        width: 100%;
+        font-size: 15px;
+        color: #666;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        word-break: break-word;
+        word-wrap: break-word;
+        padding: 1px 16px 0;
+        text-decoration: underline;
+        //border-right: #DDD 1px solid;
+        &:hover{
+            color: #7fbee5;
+        }
+    }
+    .nth1,.nth2,.nth3,.nth4{
+        font-family: '新細明體';
+        color: #0066cc;
+        &:hover{
+            color: #7fbee5;
+        }
+    }
+    .nth4{
+        //border-right: none;
+    }
+}

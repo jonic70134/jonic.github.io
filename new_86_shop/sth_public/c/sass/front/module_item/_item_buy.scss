@@ -1,0 +1,37 @@
+.item-buy{
+	text-align: center;
+	.highlight, .red-text{
+		margin-top: 5px;
+		font-size: 12px;
+		line-height: 1.2;
+		span{
+			margin: 0 10px;
+		}
+	}
+	.quantity{
+		vertical-align: bottom;
+		margin-right: 10px;
+	}
+}
+/*@include RWD(pad-mobile) {
+.item-buy{
+	padding: 6px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	z-index: 3;
+	// background: #f9f9f9;
+	border-top-width: 1px;
+	border-top-style: solid;
+	//border-top: 1px solid $border;
+	-webkit-backface-visibility:hidden;
+	.container{
+		position:static;
+	}
+	.highlight, .red-text{
+		margin-top: 8px;
+	}
+}
+}*/

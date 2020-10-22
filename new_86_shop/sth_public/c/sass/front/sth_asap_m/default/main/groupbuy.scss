@@ -1,0 +1,134 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_asap_m.scss";
+
+@import "../../../module_component/_md_nav_breadcrumbs.scss";
+@import "../../../module_component/_md_infinite_scroll.scss";
+
+
+.md-groupbuy-top-banner{
+	a,img{
+		display: block;
+		width:100%;
+	}
+}
+.md-top-menu{
+	background: #fff;
+	text-align:center;
+	@include clearfix;
+	li{
+		float:left;
+	}
+	a{
+		display:block;
+		font-size: 0.8em;
+		padding: 10px 8px;
+		color: #333;
+		position:relative;
+	}
+	.top{
+		background:#deedf7;
+	}
+	.sec{
+		border-left:1px solid #ddd;
+		&.active{
+			color:white;
+			background-color: $primary;
+		}
+	}
+	.sec-menu{
+		display:none;
+		position: absolute;
+		width:98%;
+		height:60%;
+		background:#fff;
+		// border:3px solid $primary;
+		z-index: 15;
+		overflow: auto;
+		@include box-shadow(1px 1px 5px #333);
+		li{
+			width:100%;
+			float:none;
+			border-bottom:1px solid #eee;
+		}
+	}
+	.top:hover .sec-menu{
+		display:block;
+	}
+}
+.md-list-item{
+	.groupbuy{
+		&.is-hot{
+			padding:5px 0;
+			background: #f96;
+			color:#fff;
+		}
+		&.is-fast{
+			padding:5px 0;
+			background: #1882EE;
+			color:#fff;
+		}
+	}
+	.t-sale-price{
+		.start{
+			font-size:0.8rem;
+			font-weight: 500;
+			color:#333;
+		}
+	}
+	.sale{
+		display: inline-block;
+		width: 155px;
+		margin: 5px 0;
+		padding:2px 0;
+		text-align: center;
+		background: #fff;
+		border: 1px solid $primary;
+		color: $primary;
+		font-size: 0.9em;
+		b{
+			font-weight:500;
+		}
+		.time {
+			display: inline-block;
+			li {
+				display: inline-block;
+			}
+			div {
+				height: 18px;
+				display: inline-block;
+				vertical-align: top;
+				line-height: 1.2;
+				overflow: hidden;
+			}
+		}
+	}
+	.photo {
+		position: relative;
+		// .discount_tip{
+		// 	position: absolute; bottom: 5px; right: 5px;
+		// 	// width:20px;height:20px;
+		// 	background-color: #fff;
+		// 	border: 3px solid $primary;
+		// 	padding:7px;
+		// 	color:$primary;
+		// 	font-weight: 700;
+		// 	text-align: center;
+		// 	@include border-radius(50%);
+		// }
+		.discount_tip{
+			position: absolute; bottom: 15px; right: 5px;
+			width:45px;height:45px;
+			// background-color: #fff;
+			// border: 5px solid $primary;
+			// padding:10px;
+			color:$primary;
+			font-weight: 700;
+			text-align: center;
+			background-image: url('../../../../../../c/img/frame/2hr_icon_45x45.png');
+			// &.is-txt{
+			// 	background-image: url('../../../../../../c/img/frame/2hr_icon_45x45.png');
+			// }
+		}
+	}
+
+}

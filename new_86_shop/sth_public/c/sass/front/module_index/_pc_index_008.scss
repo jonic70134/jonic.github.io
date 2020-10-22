@@ -1,0 +1,60 @@
+/* pc_index_008 開始 */
+@import "../../3rd-party/_idangerous.swiper.scss";
+.pc_index_008{
+	margin: 0px auto 20px auto;
+	@include clearfix;		
+	.swiper-container{
+		position: relative;
+		width: 800px;		
+		overflow: hidden;
+		line-height: 0;
+		img{
+			width: 100%;
+		}
+		.pagination {
+			position: absolute;
+			left: 0;
+			text-align: center;
+			bottom:5px;
+			width: 100%;
+		}
+		.swiper-pagination-switch {
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border-radius: 10px;
+			background: $gray;
+			margin: 0 3px;
+			cursor: pointer;
+		}
+		.swiper-active-switch {
+			width: 30px;
+			background: $primary;
+		}
+		// .swiper-slide{
+		// 	&:hover{
+		// 		opacity: 0.8;
+		// 	}
+		// }
+	}
+	.col-left {
+        float: left;
+        margin-right: 20px;
+    }
+	.col-right{
+		float: left;
+		width: 180px;
+		>a{ 
+			margin-bottom: 7.3%;
+			&:last-child{ margin: 0; }
+		}
+	}
+	.photo {
+        display: inline-block;
+        img {
+            width: 100%;
+        }
+    }
+}
+/* pc_index_008 結束 */
+

@@ -1,0 +1,97 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_asap_m.scss";
+.md_notice_head {
+	position: relative;
+	.t-title {
+        padding-right: 105px;
+        background:#b8275b;
+        font-size:1rem;
+	}
+	.t-ellipsis {
+        max-width: 75%;
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    .t-count {
+        color: rgba(white,0.8);
+        font-size: 0.8rem;
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+}
+.md_notice_board{
+    font-size:1rem;
+    li{
+        border-bottom:1px solid #ccc;
+        color:#333;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        position: relative;
+        // &:after{
+        //     display: block;
+        //     position: absolute;
+        //     right:5%;
+        //     top:38%;
+        //     font-size:1.2rem;
+        //     content:">";
+        // }
+    }
+    h5{
+        color:#333;
+        font-size:0.9rem;
+    }
+    p{
+        max-width: 100%;
+        margin:5px 0;
+        line-height: 1.2;
+    }
+    .md_notice_coupon{
+        a{
+            display:block;
+        }
+        span{
+            color:#06c;
+            text-decoration: underline;
+        }
+    }
+    .md_notice_order,.md_notice_hbd{
+        p{
+            color:#555;
+        }
+    }
+    .md_notice_orderno{
+        padding:0 3px;
+        color:#fb6190;
+    }
+    .md_notice_icon{
+        width:35px;
+        display: inline-block;
+    }
+    .md_notice_msg{
+        display: inline-block;
+        width: 75%;
+        vertical-align: top;
+    }
+    .md_notice_txt{
+        font-size:0.8rem;
+        color:#777;
+    }
+    .md_notice_date{
+        color:#ccc;
+        font-size:0.6rem;
+    }
+}
+.site-header{
+    .topmenu{
+        display:none;
+    }
+}
+.site-body{
+    background-color:white; 
+}

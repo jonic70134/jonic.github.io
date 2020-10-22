@@ -1,0 +1,42 @@
+.pc_left_credit_guide{
+	margin-bottom: 10px;
+	background:white;
+	border: #f63578 1px solid;
+	.title-h3{
+		padding:10px 0 10px 15px;
+        color:white;
+		background:#f63578;
+		margin-bottom: 0;
+	}
+	.info{
+		display: none;
+	}
+	.items{
+		margin:10px 8px;
+	}
+	.photo{
+		font-size: 0;
+		display: block;
+		padding: 0;
+		background-color: white;
+		border-bottom:1px solid #ccc;
+		img{
+			width: 100%;
+			margin-bottom:5px;
+		}
+		&:first-child{
+			img{
+				margin-bottom:5px;
+			}
+		}
+	}
+	.credit_more{
+		text-align:right;
+		padding:10px 0 0;
+		a{
+			font-size:13px;
+			color:#0070c9;
+			text-decoration: underline;
+		}
+	}
+}

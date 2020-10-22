@@ -1,6 +1,4 @@
 jQuery(function($){
-
-
 	var itemSlider = new Swiper('.item_top_left .swiper-container', {
 		slidesPerView: 1,
 		spaceBetween: 30,
@@ -31,6 +29,18 @@ jQuery(function($){
 			$(this).addClass('active').siblings().removeClass('active').find('.fa-check').remove();
 		}
 	});
+
+	//商品詳細內容tab
+	$('.item_detail a').click(function(e){
+		e.preventDefault();
+		var detail_id = $(this).attr('data-detail');
+
+		$('.item_detail a').removeClass('current');
+		$('.detail_content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+detail_id).addClass('current');
+	})
 	
 });
 

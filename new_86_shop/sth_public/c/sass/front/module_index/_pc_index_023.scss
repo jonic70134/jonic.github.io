@@ -1,0 +1,34 @@
+.pc_index_023{
+    background:$primary;
+	text-align: left;
+	margin-bottom: 5px;
+	@include clearfix;
+    .recommend{
+        position: relative;
+        height: 36px;
+        overflow: hidden;
+        @include clearfix;
+        dd,.hot{
+            float: left;
+            width: 110px;
+            height: 36px;
+            position: relative;
+            color:#333;  
+            text-align: left;
+            a{
+                display: inline-block;
+                font-size: 14px;
+                padding: 0 9px;
+                color: #FFF;   
+                word-break: break-word;
+                word-wrap: break-word;
+                overflow: hidden;
+                height: 36px;
+                line-height: 36px;
+                &:hover{
+                    color: #ddd;
+                }
+            }
+        }
+    }
+}

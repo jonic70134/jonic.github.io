@@ -1,0 +1,11 @@
+/* line 1, ../../../sass/front/module_category/_rwd_category_001.scss */
+.rwd-category-001 {
+  margin: 0 auto 10px auto;
+  width: 100%;
+  height: auto;
+}
+/* line 5, ../../../sass/front/module_category/_rwd_category_001.scss */
+.rwd-category-001 img {
+  width: 100%;
+  max-width: 1220px;
+}

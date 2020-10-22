@@ -1,0 +1,88 @@
+.pc_category_products_list .item .photo {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  overflow: hidden;
+}
+.pc_category_products_list .item .photo img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.pc_category_products_list .item .info:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+.pc_category_products_list .item .name {
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.pc_category_products_list .item .name a {
+  display: block;
+  color: #535353;
+}
+.pc_category_products_list .item .price del {
+  color: #888;
+  margin-bottom: 0px;
+}
+.pc_category_products_list .item .discount_price {
+  float: left;
+  color: #f73375;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.pc_category_products_list .item .discount_price span {
+  font-size: 12px;
+}
+.pc_category_products_list .item .buy-actions {
+  float: left;
+}
+.pc_category_products_list .item .buy-actions .link-btn {
+  color: #0063d2;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.pc_category_products_list .item {
+  width: 25%;
+  display: block;
+  float: left;
+  margin-bottom: 30px;
+}
+.pc_category_products_list .item .photo {
+  display: block;
+  margin-bottom: 7px;
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+}
+.pc_category_products_list .item .photo img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 230px;
+  max-height: 230px;
+}
+.pc_category_products_list .item .info {
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pc_category_products_list .item .info .name {
+  height: 28px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000;
+}

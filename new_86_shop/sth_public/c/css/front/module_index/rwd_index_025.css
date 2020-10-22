@@ -1,0 +1,19 @@
+/* line 1, ../../../sass/front/module_index/_rwd_index_025.scss */
+.rwd_index_025 {
+  margin-bottom: 20px;
+}
+/* line 3, ../../../sass/front/module_index/_rwd_index_025.scss */
+.rwd_index_025 .container {
+  background: white;
+  border-bottom: 0;
+  padding: 0;
+}
+/* line 8, ../../../sass/front/module_index/_rwd_index_025.scss */
+.rwd_index_025 a {
+  display: block;
+  font-size: 0;
+}
+/* line 12, ../../../sass/front/module_index/_rwd_index_025.scss */
+.rwd_index_025 img {
+  width: 100%;
+}

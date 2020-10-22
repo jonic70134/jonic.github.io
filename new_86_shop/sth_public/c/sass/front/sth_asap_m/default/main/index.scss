@@ -1,0 +1,18 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_asap_m.scss";
+
+@import "../../../module_component/_md_index_coverflow.scss";
+@import "../../../module_index/_md_index_001.scss";
+@import "../../../module_index/_md_index_002.scss";
+@import "../../../module_index/_md_index_005.scss";
+@import "../../../module_index/_md_index_006.scss";
+@import "../../../module_index/_md_index_007.scss";
+@import "../../../module_index/_md_index_008.scss";
+@import "../../../module_index/_md_index_018.scss";
+@import "../../../module_index/_md_index_019.scss";
+@import "../../../module_index/_md_index_020.scss";
+.site-header{
+    .topmenu.category{
+        display:none;
+    }
+}

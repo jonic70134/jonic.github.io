@@ -1,0 +1,159 @@
+.pc_left_011 {
+  width: 200px;
+  height: 360px;
+  margin-bottom: 20px;
+  position: relative;
+  border: #c9c9c9 1px solid;
+  -webkit-box-shadow: 3px 1px 6px #f8f8f8;
+  -moz-box-shadow: 3px 1px 6px #f8f8f8;
+  box-shadow: 3px 1px 6px #f8f8f8;
+}
+.pc_left_011 .photoblock {
+  display: inline-block;
+}
+.pc_left_011 .photoblock a, .pc_left_011 .photoblock img {
+  display: block;
+  width: 90px;
+  height: 90px;
+}
+.pc_left_011 ul {
+  background: #f9ebde;
+  border-bottom: #099 2px solid;
+}
+.pc_left_011 ul li {
+  display: inline-block;
+  width: 33.33%;
+  padding: 4px 0 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #099;
+  margin-right: -4px;
+  cursor: pointer;
+}
+.pc_left_011 ul li.active {
+  background: #099;
+}
+.pc_left_011 ul li.active a {
+  color: #FFF;
+}
+.pc_left_011 ul li:nth-child(3) {
+  border-right: none;
+}
+.pc_left_011 ul li a {
+  color: #099;
+}
+.pc_left_011 .content {
+  position: relative;
+}
+.pc_left_011 .items {
+  display: none;
+}
+.pc_left_011 .items.active {
+  display: inherit;
+}
+.pc_left_011 .item {
+  display: block;
+  padding: 10px 0 10px 11px;
+  border-bottom: #c9c9c9 1px dashed;
+}
+.pc_left_011 .item:nth-child(3) {
+  border-bottom: none;
+}
+.pc_left_011 .info {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 90px;
+}
+.pc_left_011 .btn-more {
+  display: inline-block;
+  background: #fc5555;
+  color: #FFF;
+  font-size: 12px;
+  padding: 0 6px 3px;
+  position: relative;
+  bottom: 4px;
+  left: 7px;
+  border-radius: 4px;
+}
+.pc_left_011 .buy {
+  margin: 1px 0 0 7px;
+  color: #e00517;
+  font-size: 12px;
+}
+.pc_left_011 .buy .currency {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  top: 9px;
+}
+.pc_left_011 .buy .price {
+  display: inline-block;
+  width: 71px;
+  height: 25px;
+  margin-top: 3px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Tahoma;
+  overflow: hidden;
+}
+.pc_left_011 .buy .start {
+  font-size: 13px;
+}
+.pc_left_011 .buy .point {
+  color: #666;
+  font-size: 12px;
+  margin: 0 0 3px;
+}
+.pc_left_011 .buy .point .price {
+  width: 85px;
+  height: 14px;
+  font-size: 12px;
+  color: #e00517;
+}
+.pc_left_011 .act-A .name {
+  width: 91px;
+  height: 45px;
+  line-height: 15px;
+  padding-left: 7px;
+  padding-right: 7px;
+  color: #000;
+  font-size: 14px;
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.pc_left_011 .act-A .more {
+  width: 100%;
+  height: 30px;
+  text-align: right;
+}
+.pc_left_011 .act-A .more a {
+  display: inline-block;
+  background: #fc5555;
+  color: #FFF;
+  font-size: 12px;
+  padding: 3px 6px 6px;
+  margin: 10px 16px;
+  border-radius: 4px;
+}
+.pc_left_011 .act-B .name {
+  width: 178px;
+  height: 36px;
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.pc_left_011 .act-B .item {
+  padding: 12px 0 15px 11px;
+}
+.pc_left_011 .act-B .item:nth-child(2) {
+  border-bottom: none;
+}
+.pc_left_011 .act-B .btn-more {
+  top: 1px;
+}

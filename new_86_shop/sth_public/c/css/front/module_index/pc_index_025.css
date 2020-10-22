@@ -1,0 +1,165 @@
+.pc_index_025 {
+  margin: 5px auto 20px;
+  height: 250px;
+  background: #fcf0f0;
+}
+.pc_index_025 .content {
+  margin-top: -1px;
+}
+.pc_index_025 .items {
+  display: none;
+  font-size: 0;
+  padding: 15px 5px;
+}
+.pc_index_025 .items.active {
+  display: inherit;
+}
+.pc_index_025 .item {
+  width: 16.66718%;
+  padding: 0 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+.pc_index_025 .item:hover img {
+  -moz-transform: scale(1.05) translate3d(0, 0, 0);
+  -o-transform: scale(1.05) translate3d(0, 0, 0);
+  -ms-transform: scale(1.05) translate3d(0, 0, 0);
+  -webkit-transform: scale(1.05) translate3d(0, 0, 0);
+  transform: scale(1.05) translate3d(0, 0, 0);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.pc_index_025 .item:hover .name a {
+  color: #e00517;
+}
+.pc_index_025 .time {
+  font-weight: bold;
+  background: #1ba7fc;
+  color: #fff;
+  font-size: 13px;
+  padding: 8px 10px;
+  text-align: center;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+.pc_index_025 .time li {
+  display: inline-block;
+}
+.pc_index_025 .time div {
+  display: inline-block;
+  height: 17px;
+  vertical-align: top;
+  line-height: 1.2;
+  overflow: hidden;
+}
+.pc_index_025 .time.is-come-end {
+  background: #f96;
+}
+.pc_index_025 .time.is-gone {
+  background: #ccc;
+}
+.pc_index_025 .photo {
+  display: inline-block;
+  margin-bottom: 4px;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+  position: relative;
+}
+.pc_index_025 .photo img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.pc_index_025 .name {
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  word-break: break-all;
+  overflow: hidden;
+  height: 16px;
+}
+.pc_index_025 .name a {
+  color: black;
+}
+.pc_index_025 .buy {
+  color: #aa0000;
+  height: 18px;
+}
+.pc_index_025 .buy .start {
+  color: #333;
+  font-size: 12px;
+}
+.pc_index_025 .buy.is-old span {
+  font-size: 12px;
+  color: #777;
+  vertical-align: bottom;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+.pc_index_025 .buy.is-old .price {
+  font-weight: 100;
+}
+.pc_index_025 .currency {
+  display: block;
+  font-size: 12px;
+  vertical-align: bottom;
+  margin-bottom: 2px;
+}
+.pc_index_025 .price {
+  color: #ee0000;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 2px;
+  margin-right: 5px;
+  vertical-align: bottom;
+  display: inline-block;
+}
+.pc_index_025 .btn {
+  margin-top: 3px;
+  font-size: 12px;
+  color: #0066cc;
+  padding: 0;
+  position: relative;
+  bottom: 2px;
+  text-decoration: underline;
+}
+.pc_index_025 .btn:hover {
+  color: #7fbee5;
+}
+.pc_index_025 .more-discount {
+  margin-top: 3px;
+  font-size: 12px;
+  color: #FFF;
+  padding: 0;
+  position: relative;
+  bottom: 2px;
+  background: #bb0000;
+}
+.pc_index_025 .fa {
+  margin-left: 4px;
+}
+.pc_index_025 .tag-status {
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+  z-index: 9;
+}

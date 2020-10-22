@@ -1,0 +1,204 @@
+.pc_left_016 {
+    width: 200px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    display: inline-block !important;
+    background: #feedf3;
+    .index {
+        background: #f63577;
+        padding: 10px;
+        display: block;
+        color: white;
+    }
+    .trans-btn {
+        background: #013da4;
+        padding: 11px 10px 8px 32px;
+        display: block;
+        color: white;
+        vertical-align: middle;
+        position: relative;
+        font-size: 15px;
+        .trans-icon {
+            width: 15px;
+            position: absolute;
+            top: 11px;
+            left: 10px;
+        }
+        &:hover {
+            background: #002767;
+        }
+    }
+    .title-h3 {
+        color: #8dadcf;
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        line-height: 1.3;
+        word-break: break-word;
+        word-wrap: break-word;
+        position: relative;
+        a {
+            padding: 12px 0 12px 40px;
+            display: block;
+            &:hover {
+                color: #f63577;
+            }
+        }
+    }
+    .title-h3-active {
+        a {
+            color: #ff88aa;
+            font-weight: 500;
+            img {
+                position: absolute;
+                left: 18px;
+                top: 12px;
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+    h5 a {
+        color: #8dadcf;
+        font-size: 15px;
+        padding-left: 25px;
+    }
+    .title-h5 a {
+        color: #cc3377;
+        font-weight: 500;
+        &:hover {
+            color: #f63577;
+        }
+    }
+    .title-h5-active {
+        font-weight: bold;
+        a {
+            display: block;
+            padding: 0 0 12px 55px;
+        }
+    }
+    .title-h5-hide {
+        margin: 0;
+        padding: 0 0 12px;
+        a {
+            color: #666;
+            padding-left: 55px;
+        }
+    }
+    h4 a {
+        font-size: 15px;
+        padding: 0 0 14px 40px;
+        display: block;
+    }
+    .title-h4-active {
+        padding: 6px 0;
+    }
+    .title-h4 a {
+        color: #f8a;
+        position: relative;
+        &:hover {
+            color: $primary;
+        }
+        img {
+            position: absolute;
+            left: 18px;
+            top: -1px;
+            width: 18px;
+            height: 18px;
+        }
+    }
+    .title-h4-hide {
+        a {
+            color: #999;
+            font-size: 15px;
+            padding: 0 0 12px 40px;
+            display: block;
+            line-height: 1.4;
+            overflow: hidden;
+            max-height: 40px;
+        }
+    }
+    .fa {
+        margin-right: 6px;
+    }
+    .side-menu {
+        font-size: 15px;
+        line-height: 140%;
+        margin-bottom: 5px;
+        li:first-child h6 {
+            color: #8dadcf;
+            position: relative;
+            top: 10px;
+            /**border-top: 1px solid $border;**/
+        }
+        h6 {
+            padding: 15px 10px 3px 25px;
+            /**border-bottom: 1px dotted #ccc;**/
+            background: white;
+            font-size: 15px;
+            font-weight: bold;
+            color: #8dadcf;
+            cursor: pointer;
+            overflow: hidden;
+            zoom: 1;
+            &:after {
+                content: ".";
+                display: block;
+                clear: both;
+                height: 0;
+                overflow: hidden;
+                visibility: hidden;
+            }
+            .fa {
+                float: left;
+                display: block;
+                margin-top: 1px;
+            }
+            a {
+                color: #8dadcf !important;
+                float: left;
+                display: block;
+                width: 150px;
+                color: #333;
+                margin-top: -2px;
+                &:hover {
+                    color: #f63577 !important;
+                }
+            }
+        }
+        a {
+            color: #666;
+            overflow: hidden;
+            line-height: 1.4;
+            max-height: 40px;
+            padding: 0 10px 14px 55px;
+            &:hover {
+                color: #f63577;
+            }
+        }
+        .sec-menu {
+            padding: 0 0 0 44px;
+            li {
+                font-size: 15px;
+            }
+            a {
+                display: block;
+                color: #555;
+                padding: 0 10px 14px;
+                &:hover {
+                    color: #f63577;
+                }
+            }
+            .active {
+                color: #f63577;
+                font-weight: bold;
+            }
+        }
+        > li:last-child {
+            .sec-menu,
+            h6 {
+                border-bottom: 0;
+            }
+        }
+    }
+}

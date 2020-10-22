@@ -1,0 +1,141 @@
+.pc_left_012 {
+  width: 202px;
+  height: auto;
+  margin-bottom: 20px;
+  position: relative;
+  border: #f63578 1px solid;
+}
+.pc_left_012 .title-h3 {
+  padding-left: 15px;
+  color: white;
+  background: #f63578;
+}
+.pc_left_012 .photoblock {
+  display: inline-block;
+}
+.pc_left_012 .photoblock a, .pc_left_012 .photoblock img {
+  display: block;
+  width: 180px;
+  height: 180px;
+}
+.pc_left_012 .img-attnum {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 22px;
+  font-family: arial;
+  font-weight: 700;
+  line-height: 30px;
+  color: white;
+  background-color: #cc3377;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.pc_left_012 ul {
+  background: #f9ebde;
+  border-bottom: #099 2px solid;
+}
+.pc_left_012 ul li {
+  display: inline-block;
+  width: 33.33%;
+  padding: 4px 0 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #099;
+  margin-right: -4px;
+  cursor: pointer;
+}
+.pc_left_012 ul li.active {
+  background: #099;
+}
+.pc_left_012 ul li.active a {
+  color: #FFF;
+}
+.pc_left_012 ul li:nth-child(3) {
+  border-right: none;
+}
+.pc_left_012 ul li a {
+  color: #099;
+}
+.pc_left_012 .content {
+  position: relative;
+}
+.pc_left_012 .items {
+  display: none;
+}
+.pc_left_012 .items.active {
+  display: inherit;
+}
+.pc_left_012 .item {
+  display: block;
+  padding: 10px 0 10px 11px;
+}
+.pc_left_012 .item:last-of-type {
+  border-bottom: none;
+}
+.pc_left_012 .info {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 180px;
+}
+.pc_left_012 .btn-more {
+  display: inline-block;
+  background: #fc5555;
+  color: #FFF;
+  font-size: 12px;
+  padding: 0 6px 3px;
+}
+.pc_left_012 .buy {
+  margin: 5px 0 0;
+  font-size: 12px;
+}
+.pc_left_012 .buy .currency {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  top: 9px;
+}
+.pc_left_012 .buy .discount_price {
+  float: left;
+  color: #f73375;
+  font-weight: bold;
+  margin-right: 5px;
+  font-size: 16px;
+}
+.pc_left_012 .buy-actions a {
+  color: #0063d2;
+  font-size: 15px;
+  text-decoration: underline;
+}
+.pc_left_012 .act-A .name {
+  height: 32px;
+  line-height: 15px;
+  color: #000;
+  font-size: 14px;
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow: hidden;
+  margin: 6px 0 0;
+}
+.pc_left_012 .act-B .name {
+  width: 180px;
+  height: 36px;
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.pc_left_012 .act-B .btn-more {
+  margin-top: 3px;
+}

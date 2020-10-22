@@ -1,0 +1,33 @@
+.pc_title{
+	margin: 20px auto 0px auto;
+	@include clearfix-ab;
+	.title-h3{
+		padding: 0;
+		float:left;
+		margin-bottom:0;
+		width:490px;
+		height: 25px;
+		overflow: hidden;
+		font-weight: normal;
+		font-size: 25px;
+		color: #1BA7FC;
+	}
+	.top{
+		@include clearfix;
+	}
+	.more{
+		float: right;
+		margin-top: 10px;
+		margin-left: 15px;
+		font-weight: bold;
+		font-size: 13px;
+		color: #1BA7FC;
+		text-decoration: underline;
+		&:hover{
+			color: #0993E7;
+		}
+		i{
+			margin-left: 5px;
+		}
+	}
+}

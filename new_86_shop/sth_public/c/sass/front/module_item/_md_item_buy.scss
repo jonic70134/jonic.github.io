@@ -1,0 +1,26 @@
+.md-item-buy {
+	margin: 15px 0;
+	text-align: center;
+	.md-item-select{
+		position: relative;
+		display: block;
+		width:90%;
+		margin:10px auto;
+		padding:15px 10px;
+		text-align: left;
+		letter-spacing: 1px;
+		color: #555;
+		background-color:#fee7ed;
+		border:1px solid #fb6190;
+		@include border-radius(10px);
+		&:after{
+			position: absolute;
+			top: 12px;
+			right: 15px;
+			display: block;
+			color: #fb6190;
+			content: ">";
+			font-size: 1.2rem;
+		}
+	}
+}

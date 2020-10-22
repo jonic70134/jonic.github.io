@@ -1,0 +1,84 @@
+.md_notice_head {
+  position: relative;
+}
+.md_notice_head .t-title {
+  padding-right: 105px;
+  background: #b8275b;
+  font-size: 1rem;
+}
+.md_notice_head .t-ellipsis {
+  max-width: 75%;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  vertical-align: middle;
+  display: inline-block;
+}
+.md_notice_head .t-count {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.md_notice_board {
+  font-size: 1rem;
+}
+.md_notice_board li {
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+.md_notice_board h5 {
+  color: #333;
+  font-size: 0.9rem;
+}
+.md_notice_board p {
+  max-width: 100%;
+  margin: 5px 0;
+  line-height: 1.2;
+}
+.md_notice_board .md_notice_coupon a {
+  display: block;
+}
+.md_notice_board .md_notice_coupon span {
+  color: #06c;
+  text-decoration: underline;
+}
+.md_notice_board .md_notice_order p, .md_notice_board .md_notice_hbd p {
+  color: #555;
+}
+.md_notice_board .md_notice_orderno {
+  padding: 0 3px;
+  color: #fb6190;
+}
+.md_notice_board .md_notice_icon {
+  width: 35px;
+  display: inline-block;
+}
+.md_notice_board .md_notice_msg {
+  display: inline-block;
+  width: 75%;
+  vertical-align: top;
+}
+.md_notice_board .md_notice_txt {
+  font-size: 0.8rem;
+  color: #777;
+}
+.md_notice_board .md_notice_date {
+  color: #ccc;
+  font-size: 0.6rem;
+}
+
+.site-header .topmenu {
+  display: none;
+}
+
+.site-body {
+  background-color: white;
+}

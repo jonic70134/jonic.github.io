@@ -1,0 +1,43 @@
+.nav-breadcrumbs {
+	.container{
+		padding: 15px 0;
+	}
+    .fa{
+        margin-right: 8px;
+    }
+    .index {
+        position: relative;
+        //color: $primary;
+        font-weight: bold;
+    }
+    .cate {
+        display: inline-block;
+        //color: $primary;
+    }
+    .locate {
+        margin-left: 20px;
+        //color: $gray;
+    }
+    .bread-item-name{
+        font-size: 1.12em;
+        font-weight: bold;
+        color: black;
+    }
+    .type{
+        a{
+            padding: 3px 5px;
+            color: #06c;
+            text-decoration: underline; 
+        }
+    }
+}
+@include RWD(pad-mobile) {
+    .nav-breadcrumbs{
+        margin: 10px;
+    }
+}
+@include RWD(mobile) {
+    .nav-breadcrumbs {
+        margin: 20px 0 10px 10px;
+    }
+}

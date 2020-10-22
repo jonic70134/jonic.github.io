@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* rwd_index_002 開始 */
+/* line 13, ../../../sass/define/___mixins.scss */
+.rwd-index-002 {
+  zoom: 1;
+}
+/* line 16, ../../../sass/define/___mixins.scss */
+.rwd-index-002:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 4, ../../../sass/front/module_index/_rwd_index_002.scss */
+.rwd-index-002 .item {
+  width: 50%;
+  float: left;
+  display: table;
+}
+/* line 9, ../../../sass/front/module_index/_rwd_index_002.scss */
+.rwd-index-002 .photo {
+  display: table-cell;
+}
+/* line 18, ../../../sass/front/module_index/_rwd_index_002.scss */
+.rwd-index-002.trans-002 .photo {
+  padding-top: 50%;
+}
+/* line 22, ../../../sass/front/module_index/_rwd_index_002.scss */
+.rwd-index-002 .info {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  padding: 0 10px;
+}
+/* line 37, ../../../sass/front/module_index/_rwd_index_002.scss */
+.rwd-index-002 .feature {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.4;
+  height: 60px;
+  overflow: hidden;
+}
+/* line 44, ../../../sass/front/module_index/_rwd_index_002.scss */
+.rwd-index-002 del {
+  color: #6c6c6c;
+}
+/* line 47, ../../../sass/front/module_index/_rwd_index_002.scss */
+.rwd-index-002 .currency {
+  font-size: 12px;
+  display: inline-block;
+}
+/* line 52, ../../../sass/front/module_index/_rwd_index_002.scss */
+.rwd-index-002 .price {
+  font-size: 18px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+@media (min-width: 1238px) {
+  /* line 61, ../../../sass/front/module_index/_rwd_index_002.scss */
+  .rwd-index-002 .feature li {
+    width: 285px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1237px) {
+  /* line 69, ../../../sass/front/module_index/_rwd_index_002.scss */
+  .rwd-index-002 .feature li {
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 999px) {
+  /* line 77, ../../../sass/front/module_index/_rwd_index_002.scss */
+  .rwd-index-002 {
+    padding: 0 1%;
+  }
+  /* line 79, ../../../sass/front/module_index/_rwd_index_002.scss */
+  .rwd-index-002 .item {
+    padding: 1% 0 3%;
+    width: 100%;
+    margin: 0;
+    display: table;
+  }
+  /* line 85, ../../../sass/front/module_index/_rwd_index_002.scss */
+  .rwd-index-002 .photo {
+    display: table-cell;
+  }
+  /* line 93, ../../../sass/front/module_index/_rwd_index_002.scss */
+  .rwd-index-002 .info {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    padding: 0 10px;
+  }
+}
+/* rwd_index_002 結束 */

@@ -1,0 +1,48 @@
+@import"../../3rd-party/_swiper.scss";
+.pc_category_banner_carousel {
+	width:1000px;
+	margin-bottom:20px;
+	.swiper-container {}
+	.swiper-wrapper {}
+	.swiper-slide {
+		height:420px;
+	}
+	.swiper-pagination {
+		height:40px;
+		color:#fff;
+		background-color:#ffadb1;
+		position:static;
+		.swiper-pagination-bullet {
+			width:33.33%;
+			height:40px;
+			display:inline-block;
+			line-height:40px;
+			border-radius:0px;
+			background:#ffadb1;
+    		opacity:1;
+			margin:0px;
+		}
+		.swiper-pagination-bullet.swiper-pagination-bullet-active {
+			background-color:#fd6190;
+		}
+	}
+	.swiperBtn {
+		width:40px;
+		height:70px;
+		background-color:#000;
+		opacity:0.5;
+		margin-top:-35px;
+	}
+	.swiper-button-prev {
+		left:0px;
+		border-top-right-radius:8px;
+		border-bottom-right-radius:8px;
+		//background-image:url("../c/img/sth_asap/sample/swiper-button-prev.png");
+	}
+	.swiper-button-next {
+		right:0px;
+		border-top-left-radius:8px;
+		border-bottom-left-radius:8px;
+		//background-image:url("../c/img/sth_asap/sample/swiper-button-next.png");
+	}
+}

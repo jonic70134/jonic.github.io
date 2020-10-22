@@ -1,0 +1,21 @@
+@import "../define/__init.scss";
+.columns{
+    figure{
+        &:hover{
+            border-color: #2f3238;
+            background: #fff;
+            figcaption{
+                a{
+                    h2{
+                        color: #2f3238;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+        p{
+            background: #fff; 
+        }
+    }
+}

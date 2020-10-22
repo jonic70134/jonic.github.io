@@ -1,0 +1,20 @@
+.hide{
+	display: none;
+}
+.container{
+	width: 1220px;
+	position: relative;
+	margin: 0 auto;
+	@include clearfix;
+}
+.site-body{
+	padding-bottom: 40px;
+	width: 1220px;
+	margin: 0 auto;
+	@include clearfix;
+}
+.hidden-desktop{
+	@media only screen and (min-width: $screen-md-max){
+		display: none !important;
+	}
+}

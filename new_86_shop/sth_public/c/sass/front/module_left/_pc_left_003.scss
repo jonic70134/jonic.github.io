@@ -1,0 +1,27 @@
+.pc_left_003{
+	margin-bottom: 10px;
+	padding-bottom:10px;
+	background:#ffdfe0;
+	.title-h3{
+		padding:10px 0 10px 15px;
+        color:white;
+		background:#ffadb1;
+		margin-bottom: 8px;
+	}
+	.info{
+		display: none;
+	}
+	.item{
+		margin-bottom: 10px;
+	}
+	.photo{
+		font-size: 0;
+		display: block;
+		margin:10px;
+		padding: 0;
+		background-color: white;
+		img{
+			width: 100%;
+		}
+	}
+}

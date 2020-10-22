@@ -1,0 +1,118 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_asap.scss";
+
+@import "../../../../3rd-party/font-awesome.min.scss";
+
+.stat_body{
+    width:100%;
+    margin:20px auto;
+    max-width:1220px;
+    .container{
+        width:100%;
+        max-width:1220px;
+    }
+    a{
+        color:#06f;
+        text-decoration: underline;
+    }
+}
+.stat_sub_title{
+    padding:5px;
+    margin:0 2px 10px 0;
+    font-size:18px;
+    text-align: left;
+    line-height: 1.5;
+    color:white;
+    background-color:#ffa8af;
+}
+.stat_brand{
+    font-size:0;
+    margin:0 -5px 10px 0;
+    a{
+        display:inline-block;
+        width:16.2%;
+        height:80px;
+        margin:0 5px 5px 0;
+        padding:20px;
+        vertical-align: top;
+        font-size:15px;
+        text-align: center;
+        line-height: 1.5;
+        color:#333;
+        background-color:#ffecf3 ;
+        position:relative;
+        span{
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            right: 20px;
+            color: black;
+            padding: 20px;
+            transform: translateY(-50%);
+            overflow: hidden;
+        }
+    }
+}
+.brand_img{
+    display:none;
+    img{
+        width:100%;
+        display: block;
+    }
+}
+@media (max-width: 1100px) {
+    .stat_brand {
+        a{
+            width:16.15%;
+        }
+    }
+}
+@media (max-width: 990px){
+    .stat_brand {
+        a{
+            width:16%;
+        }
+    }
+}
+@media (max-width: 900px){
+    .stat_brand {
+        a{
+            width:19.3%;
+        }
+    }
+}
+@media (max-width: 799px){
+    .stat_brand {
+        a{
+            width:24.1%;
+        }
+    }
+}
+@media (max-width: 600px){
+    .stat_brand {
+        a{
+            width:32.3%;
+        }
+    }
+}
+@media (max-width: 500px){
+    .stat_brand {
+        a{
+            width:48.6%;
+        }
+    }
+}
+@media (max-width: 370px){
+    .stat_brand {
+        a{
+            width:48%;
+        }
+    }
+}
+@media (max-width: 320px){
+    .stat_brand {
+        a{
+            width:100%;
+        }
+    }
+}

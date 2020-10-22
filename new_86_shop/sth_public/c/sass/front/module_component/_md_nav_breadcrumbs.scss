@@ -1,0 +1,72 @@
+.md_nav_breadcrumbs {
+    position: relative;
+    background-color: #ffdfdf;
+    &.is-fixed {
+        top: 0;
+        border-bottom: 2px solid $primary;
+        background: rgba(white, 0.9);
+        @include box-shadow(rgba(black,0.3) 0 5px 20px);
+        position: fixed;
+        z-index: 10;
+    }
+    .breadcrumbs{
+        text-align:center;
+        padding-left:10px;
+    }
+    .back{
+        position: absolute;
+        top: 0;left: 10px;
+        font-size: 1.5rem;
+        a{
+            color:#fb6190;
+        }
+    }
+    a{
+        font-size:1rem;
+        color:#777;
+        text-decoration: underline;
+    }
+    .container {
+        padding: 7px;
+    }
+    .item {
+        height: 18px;
+        max-width: 28%;
+        margin-right: 5px;
+        color: lighten($text,20);
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        vertical-align: middle;
+        display: inline-block;
+        & + .item {
+            &:before {
+                content: "\f105";
+                margin-right: 5px;
+                line-height: 1;
+                font-family: FontAwesome;
+                vertical-align: middle;
+                display: inline-block;
+            }
+        }
+        &.item-select {
+            overflow: visible;
+        }
+    }
+    .select-breadcrumbs {
+        width: 95%;
+        padding: 1px 3px;
+        color: $text;
+        font-size: 0.9rem;
+        @include box-sizing(border-box);
+        option {
+            white-space: nowrap;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+}

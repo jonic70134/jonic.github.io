@@ -13,7 +13,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   box-sizing: border-box;
 }
 
-#wpf-loader-two {
+.wpf-loader-two {
   background-color: #ffadad;
   height: 100%;
   bottom: 0;
@@ -24,7 +24,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   width: 100%;
   z-index: 99999;
 }
-#wpf-loader-two .wpf-loader-two-inner {
+.wpf-loader-two .wpf-loader-two-inner {
   border: 2px solid #fff;
   border-radius: 50%;
   height: 100px;
@@ -34,7 +34,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   width: 100px;
   text-align: center;
 }
-#wpf-loader-two .wpf-loader-two-inner:before {
+.wpf-loader-two .wpf-loader-two-inner:before {
   background: #ffadad;
   content: "";
   height: 57%;
@@ -52,7 +52,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-#wpf-loader-two .wpf-loader-two-inner:after {
+.wpf-loader-two .wpf-loader-two-inner:after {
   background: #ffadad;
   content: "";
   height: 57%;
@@ -70,7 +70,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-#wpf-loader-two .wpf-loader-two-inner span {
+.wpf-loader-two .wpf-loader-two-inner span {
   color: #fff;
   display: inline-block;
   margin-top: 42%;
@@ -313,6 +313,19 @@ input[type=number]::-webkit-outer-spin-button {
   left: 0;
   z-index: 30;
   background-color: white;
+}
+.site-header .ciciza {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 3px 10px;
+  font-size: 1.1rem;
+  background-color: #FFEA6E;
+  box-shadow: 0 1px 3px #333;
+}
+.site-header .ciciza img {
+  width: 60px;
 }
 .site-header .logo h1 {
   display: none;
@@ -840,8 +853,44 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
   margin: 5px 0 0 0;
 }
+.items .item .track {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.items .item .track i {
+  margin-right: 8px;
+}
+.items .item .track i:last-child {
+  margin: 0;
+}
+.items .item .track .fa-cart-plus {
+  color: #333;
+}
 .items .item .dis_price {
   color: #ff5353;
+}
+
+.lightbox {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 30;
+}
+.lightbox img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  transform: translate(-50%, -50%);
+}
+
+.fancybox-button svg {
+  color: white;
 }
 
 .site-footer {

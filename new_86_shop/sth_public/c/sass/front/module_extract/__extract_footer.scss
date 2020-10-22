@@ -1,0 +1,33 @@
+//-----------------__rwd_footer_001
+.rwd_footer_001{
+	background-color: $footer_bk;
+	dl{
+		a {
+    		color: $footer_link;
+    		&:hover{
+    			color: $footer_hover;
+    		}
+		}
+	}
+	dt{
+   		color: $footer_title;
+	}
+}
+//-----------------__rwd_footer_001 END
+
+//-----------------__rwd_footer_002
+.rwd_footer_002{
+	background-color: $footer_bk;
+	dl{
+		a {
+    		color: $footer_link;
+    		&:hover{
+    			color: $footer_hover;
+    		}
+		}
+	}
+	dt{
+   		color: $footer_title;
+	}
+}
+//-----------------__rwd_footer_001 END

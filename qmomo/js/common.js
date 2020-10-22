@@ -1,7 +1,7 @@
 jQuery(function($){
 
 	/* loading 動畫*/
-	$('#wpf-loader-two').delay(200).fadeOut('slow'); 
+	$('.wpf-loader-two').delay(200).fadeOut('slow'); 
 	// $(window).load(function() { 
 	// 	$('#wpf-loader-two').delay(200).fadeOut('slow'); // will fade out    
 	// });

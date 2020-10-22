@@ -1,0 +1,139 @@
+.pc_groupbuy_products_2list .item .photo {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  overflow: hidden;
+}
+.pc_groupbuy_products_2list .item .photo img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.pc_groupbuy_products_2list .item .info:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+.pc_groupbuy_products_2list .item .name {
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.pc_groupbuy_products_2list .item .name a {
+  display: block;
+  color: #535353;
+}
+.pc_groupbuy_products_2list .item .price del {
+  color: #888;
+  margin-bottom: 0px;
+}
+.pc_groupbuy_products_2list .item .discount_price {
+  float: left;
+  color: #f73375;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.pc_groupbuy_products_2list .item .discount_price span {
+  font-size: 12px;
+}
+.pc_groupbuy_products_2list .item .buy-actions {
+  float: left;
+}
+.pc_groupbuy_products_2list .item .buy-actions .link-btn {
+  color: #0063d2;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.pc_groupbuy_products_2list .items {
+  margin-bottom: 20px;
+}
+.pc_groupbuy_products_2list .items .item:hover .name a {
+  color: #fff;
+}
+.pc_groupbuy_products_2list .items:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+.pc_groupbuy_products_2list .item {
+  width: 495px;
+  height: 300px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #fff6f7;
+  border: solid 1px #cfcbca;
+  padding-bottom: 18px;
+  padding-top: 31px;
+}
+.pc_groupbuy_products_2list .item .name {
+  width: 495px;
+  height: 30px;
+  padding: 0 10px;
+  margin: -31px 0 0 -1px;
+  background-color: #f63578;
+  color: #fff;
+  line-height: 30px;
+}
+.pc_groupbuy_products_2list .item .name a:hover {
+  color: #fff;
+}
+.pc_groupbuy_products_2list .item .photo {
+  width: 230px;
+  float: left;
+  margin: 15px 8px 0 18px;
+}
+.pc_groupbuy_products_2list .item .photo img {
+  max-width: 230px;
+  max-height: 230px;
+  margin: 0 auto;
+}
+.pc_groupbuy_products_2list .item .info {
+  width: 221px;
+  float: left;
+  padding-top: 15px;
+}
+.pc_groupbuy_products_2list .item .info .status {
+  width: 150px;
+  color: #fff;
+  text-align: center;
+  background-color: #ffadb1;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+.pc_groupbuy_products_2list .item .info .text_description {
+  height: 125px;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.pc_groupbuy_products_2list .item .info .discount_price {
+  font-size: 28px;
+}
+.pc_groupbuy_products_2list .item .info .buy-actions {
+  padding-top: 8px;
+}
+.pc_groupbuy_products_2list .item .info .buy-actions a {
+  font-size: 15px;
+}
+.pc_groupbuy_products_2list .item .info .discount-sale-num {
+  font-size: 12px;
+  clear: both;
+  padding-top: 5px;
+}
+.pc_groupbuy_products_2list .item:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+.pc_groupbuy_products_2list .item-right {
+  margin-right: 0;
+}

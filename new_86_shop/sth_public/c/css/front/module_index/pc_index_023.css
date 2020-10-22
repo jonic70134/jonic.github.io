@@ -1,0 +1,54 @@
+.pc_index_023 {
+  background: #f63577;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.pc_index_023 {
+  zoom: 1;
+}
+.pc_index_023:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.pc_index_023 .recommend {
+  position: relative;
+  height: 36px;
+  overflow: hidden;
+}
+.pc_index_023 .recommend {
+  zoom: 1;
+}
+.pc_index_023 .recommend:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.pc_index_023 .recommend dd, .pc_index_023 .recommend .hot {
+  float: left;
+  width: 110px;
+  height: 36px;
+  position: relative;
+  color: #333;
+  text-align: left;
+}
+.pc_index_023 .recommend dd a, .pc_index_023 .recommend .hot a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 9px;
+  color: #FFF;
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow: hidden;
+  height: 36px;
+  line-height: 36px;
+}
+.pc_index_023 .recommend dd a:hover, .pc_index_023 .recommend .hot a:hover {
+  color: #ddd;
+}

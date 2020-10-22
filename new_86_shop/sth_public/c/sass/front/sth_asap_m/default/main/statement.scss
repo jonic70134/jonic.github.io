@@ -1,0 +1,98 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_asap.scss";
+
+@import "../../../../3rd-party/font-awesome.min.scss";
+
+body{
+    padding-top:55px;
+}
+.stat_body{
+    width:100%;
+    margin:0;
+    .container{
+        width:100%;
+        max-width:800px;
+    }
+    a{
+        color:#06f;
+        text-decoration: underline;
+    }
+}
+.stat_video{
+    padding:25px 45px;
+    background-color:#fbedf3; 
+}
+.stat_main_title{
+    padding:10px;
+    font-size:30px;
+    text-align: center;
+    color:white;
+    background-color:#e24b7a;
+}
+.stat_title{
+    margin-bottom: 10px;
+    padding:10px;
+    font-size:24px;
+    text-align: center;
+    color:white;
+    background-color:#f4b0b3;
+}
+.stat_sub_title{
+    padding:8px;
+    font-size:20px;
+    text-align: left;
+    line-height: 1.5;
+    color:#333;
+    background-color:#fbeff3;
+}
+
+.stat_txt{
+    margin-bottom: 20px;
+    padding:0 10px;
+    font-size:15px;
+    line-height: 1.8;
+    color:#666;    
+}
+
+.video-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+.stat_brand{
+    a{
+        display:block;
+        padding:10px 20px 10px 10px;
+        margin-bottom: 10px;
+        color:#666;
+        font-size:18px;
+        border:1px solid #aaa;
+        text-decoration: none;
+        position: relative;
+        i{
+            display:block;
+            position: absolute;
+            right:5px;
+            top:12px;
+        }
+    }
+}
+.foot{
+    margin:0;
+    padding:20px;
+    background-color:#fbeff3;
+}
+
+@media (max-width: 768px) {
+    .stat_video {
+      padding:0;
+    }
+  }

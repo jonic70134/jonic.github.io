@@ -1,0 +1,10 @@
+.cart-block {
+  margin: 20px 0;
+}
+.cart-block h3 {
+  padding: 8px 5px;
+  font-size: .9rem;
+}
+.cart-block .cart-sub-block {
+  padding: 10px 10px 20px;
+}

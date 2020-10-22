@@ -1,0 +1,186 @@
+.pc_index_full_menu_left {
+  margin-bottom: 20px;
+}
+.pc_index_full_menu_left {
+  zoom: 1;
+}
+.pc_index_full_menu_left:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.pc_index_full_menu_left .nav-menu {
+  float: left;
+  position: relative;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.7);
+}
+.pc_index_full_menu_left .title {
+  padding: 8px 10px 8px 13px;
+  color: white;
+  font-size: 16px;
+  background: #36a;
+  line-height: 1.3;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.pc_index_full_menu_left .title i {
+  margin-top: 3px;
+  float: right;
+}
+.pc_index_full_menu_left .menu-one > li {
+  position: relative;
+  border-bottom: 1px solid #777;
+  padding-left: 13px;
+}
+.pc_index_full_menu_left .menu-one > li:last-child > h3 > a {
+  border-bottom: none;
+}
+.pc_index_full_menu_left .menu-one > li:hover {
+  background: white;
+}
+.pc_index_full_menu_left .menu-one > li:hover .menu-expand {
+  display: block;
+}
+.pc_index_full_menu_left .menu-one > li:hover a {
+  color: black;
+}
+.pc_index_full_menu_left .menu-one > li > h3 > a {
+  position: relative;
+  display: block;
+  padding: 11px 20px 0 25px;
+  margin: 0;
+  color: white;
+  font-size: 15px;
+  line-height: 1.1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-word;
+  word-wrap: break-word;
+  height: 36px;
+}
+.pc_index_full_menu_left .menu-one > li > h3 > a:before {
+  display: block;
+  position: absolute;
+  right: 8px;
+  font-weight: 700;
+  color: white;
+  content: "\f105";
+  font-family: FontAwesome;
+}
+.pc_index_full_menu_left .menu-one > li > h3 > a:hover:before {
+  color: #333;
+}
+.pc_index_full_menu_left .menu-one > li > h3 > a img {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+}
+.pc_index_full_menu_left .menu-expand {
+  width: 1020px;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  z-index: 5;
+  font-size: 0;
+  box-shadow: 1px 0 5px #aaa;
+  display: none;
+}
+.pc_index_full_menu_left .menu-expand {
+  zoom: 1;
+}
+.pc_index_full_menu_left .menu-expand:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.pc_index_full_menu_left .menu-expand .menu-sub-expand {
+  position: relative;
+  width: 185px;
+  display: inline-block;
+  vertical-align: top;
+  background: white;
+  box-shadow: 0px 0px 5px #bbb;
+}
+.pc_index_full_menu_left .menu-expand .menu-sub-expand li > a {
+  display: block;
+  width: 185px;
+  padding: 11px 20px 10px;
+  line-height: 1.1;
+  color: #333;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pc_index_full_menu_left .menu-expand .menu-sub-expand li > a:before {
+  display: block;
+  position: absolute;
+  right: 8px;
+  font-weight: 700;
+  color: #333;
+  content: "\f105";
+  font-family: FontAwesome;
+}
+.pc_index_full_menu_left .menu-expand .menu-sub-expand-blue {
+  display: inline-block;
+  width: 835px;
+  background: #e7f3ff;
+}
+.pc_index_full_menu_left .menu-expand .menu-sub-expand-blue li {
+  padding-left: 5px;
+  border-bottom: 1px dotted #ccc;
+}
+.pc_index_full_menu_left .menu-expand .menu-sub-expand-blue li > a {
+  display: inline-block;
+  width: 112px;
+  padding: 11px 5px 10px;
+  line-height: 1.2;
+  color: #333;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pc_index_full_menu_left .menu-expand .menu-sub-expand-blue li > a.bold {
+  font-weight: 700;
+  color: #06c;
+  text-decoration: underline;
+}
+.pc_index_full_menu_left .menu-expand .menu-sub-expand-blue .menu-sub-expand-more {
+  width: 42px;
+  text-decoration: underline;
+  color: #06c;
+}
+.pc_index_full_menu_left .menu-expand .menu-more {
+  width: 65px;
+  text-align: right;
+  color: #4498c8;
+  position: absolute;
+  bottom: 16px;
+  right: 15px;
+  display: block;
+  background: white;
+}
+.pc_index_full_menu_left .menu-expand h4 {
+  margin-bottom: 10px;
+}
+.pc_index_full_menu_left .menu-expand h4 > a {
+  color: #f63578;
+  font-size: 16px;
+}
+.pc_index_full_menu_left .menu-expand a {
+  font-size: 14px;
+  line-height: 1.3;
+  word-break: break-all;
+  display: block;
+}

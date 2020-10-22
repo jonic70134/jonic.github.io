@@ -1,0 +1,63 @@
+//theme color
+$bg_file:         "../../../../../../c/img/sth_htc/icon_htc.png";
+$bg_file_hpd:     "../../../../../../c/img/sth_htc/icon_htc_retina.png";
+
+//主題色
+$primary:			#69b40f;
+$button:			$primary;
+$button_text:		white;
+
+$text:				#6c6c6c;
+$text_hover:		gray;
+$link:				#333;
+$border:			#dfdfdf;
+$price:				$primary;
+$hover_text:		#1b1b1b;
+$hover_bk:			#eee;
+$active_text:		white;
+$active_bk:			$primary;
+$disabled:			gray;
+$background:		#fff;
+$title_h3:		#555;
+$icon_color:			black;
+
+//header
+$header_border:		#efefef;
+$header_bk:			white;
+$nav_bk:			#373737;
+$nav_border:        none;
+$nav_text: 			#f3f3f3;
+
+// component
+$current:                             $primary;
+
+//item
+$items_hover:		#b3e5fe;
+$items_name:			#333;
+
+//footer
+$footer_bk:			#f3f3f3;
+$footer_title:		#787878;
+$footer_link:		#78828d;
+$footer_hover:		$primary;
+
+//form
+$input_text:		#6c6c6c;
+$input_bk:			white;
+$input_border:		$border;
+
+//site-search
+$search_bk:			#fff;
+$search_text:		$input_text;
+$search_border:		$border;
+$search_btn:		$border;
+$recommend_link:	$gray;
+
+//site-cart
+$count_bg:                            $primary;
+$count:				white;
+$cart_bk:			white;
+
+//aside
+$aside_title:       #504f47;
+$aside_title2:      $primary;

@@ -1,0 +1,61 @@
+.pc_market_004{
+	margin-bottom: 10px;
+	border: 8px solid $background2;
+	.photo-01,.photo-03{
+		float: left;
+		width: 350px;
+		.photo{
+			width:340px;
+			height:220px;
+			display: block;
+			font-size: 0;
+			margin: 4px;
+			border: 1px solid $border2;
+			img{
+				display:block;
+				width:340px;
+				height:220px;
+			}
+		}
+	}
+	.photo-02{
+		float: left;
+		width: 290px;
+		.photo{
+			width:280px;
+			height:105px;
+			display: block;			
+			font-size: 0;
+			margin: 4px 4px 10px;
+			border: 1px solid $border2;
+			img{
+				display:block;
+				width:280px;
+				height:105px;
+			}
+			&:nth-child(2){
+				margin-bottom: 4px;
+			}		
+			&:last-child{
+				margin-bottom: 4px;
+			}
+		}
+	}
+	.photo-03{
+		// float: left;
+		width: 344px;
+		.photo{
+		// 	width:340px;
+		// 	height:220px;
+		// 	display: block;
+		// 	font-size: 0;
+		 	margin: 4px 1px;
+		// 	border: 1px solid $border2;
+		// 	img{
+		// 		display:block;
+		// 		width:340px;
+		// 		height:220px;
+		 	}			
+		// }
+	}
+}

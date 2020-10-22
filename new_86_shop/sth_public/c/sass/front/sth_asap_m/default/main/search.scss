@@ -1,0 +1,26 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_asap_m.scss";
+
+@import "../../../module_component/_md_site_filter.scss";
+@import "../../../module_category/_md_category_001.scss";
+@import "../../../module_category/_md_category_002.scss";
+@import "../../../module_component/_md_infinite_scroll.scss";
+@import "../../../module_index/_md_index_020.scss";
+.site-header{
+    .topmenu{
+        display:none;
+    }
+}
+.site-body{
+    background-color:white; 
+}
+.md_index_026, .infinite-scroll {
+    .buy{
+        text-align: left;
+    }
+    .items{
+        .info{
+            min-height: 100px;
+        }
+    }
+}
