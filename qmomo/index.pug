@@ -16,7 +16,7 @@ html(lang='zh-Hant-TW')
 		section.big_slider
 			.swiper-container
 				.swiper-wrapper
-					.swiper-slide 
+					.swiper-slide
 						a(href="item.html")
 							img(data-seq='', src='img/qmomo_slider6.jpg', alt=' 親膚天絲')
 					.swiper-slide 
@@ -48,13 +48,17 @@ html(lang='zh-Hant-TW')
 					li.tab_link(data-tab='tab-3') 運動健身
 					li.tab_link(data-tab='tab-4') 性感情趣
 				#tab-1.tab_content.current
-					include _items.pug
+					.items
+						include _items.pug
 				#tab-2.tab_content
-					include _items_reverse.pug
+					.items
+						include _items_reverse.pug
 				#tab-3.tab_content
-					include _items.pug
+					.items
+						include _items.pug
 				#tab-4.tab_content
-					include _items_reverse.pug
+					.items
+						include _items_reverse.pug
 
 		.banner
 			.container

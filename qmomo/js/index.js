@@ -30,7 +30,7 @@ jQuery(function($){
 
 	var slider = new Swiper('.big_slider .swiper-container', {
 		slidesPerView: 1,
-		spaceBetween: 30,
+    	spaceBetween: 30,
 		loop: true,
 		autoplay: {
 			delay: 5000,

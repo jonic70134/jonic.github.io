@@ -3,14 +3,6 @@ jQuery(function($){
 		slidesPerView: 1,
 		spaceBetween: 30,
 		loop: true,
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
 	});
 	$(".photo-other").on('click', '.thumb', function(){
 		itemSlider.slideTo($(this).index()+1);
@@ -20,6 +12,15 @@ jQuery(function($){
 		$(this).addClass('active');
 	});	
 
+	var detailSlider = new Swiper('.detail_slider .swiper-container', {
+		slidesPerView: 5,
+		slidesPerColumn: 1,
+		loop: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
 
 	//選尺寸規格
 	$('.value>li').click(function(){

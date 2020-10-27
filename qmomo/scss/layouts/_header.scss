@@ -15,7 +15,7 @@
 		padding:3px 10px;
 		font-size: 1.1rem;
 		background-color: #FFEA6E;
-		@include box-shadow(0,1px,3px,#333);
+		@include box-shadow(0,1px,2px,#aaa);
 		img{
 			width:60px;
 		}
