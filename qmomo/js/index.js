@@ -1,33 +1,6 @@
 jQuery(function($){
 
-	//loading 動畫
-	$('.wpf-loader-two').delay(200).fadeOut('slow'); 
-	// $(window).load(function() { 
-	// 	$('#wpf-loader-two').delay(200).fadeOut('slow'); // will fade out    
-	// });
-
-	$(".line_app").hover(function(){
-			$(this).find(".line_box").stop().fadeIn(200);
-		},function(){
-			$(this).find(".line_box").stop().fadeOut(200);
-		}
-	);
-	$(".cart").hover(function(){
-			$(this).find(".cartbox").stop().fadeIn(200);
-		},function(){
-			$(this).find(".cartbox").stop().fadeOut(200);
-		}
-	);
-
-
-	$(".member").hover(function(){
-			$(this).find(".member_box").stop().fadeIn(200);
-		},function(){
-			$(this).find(".member_box").stop().fadeOut(200);
-		}
-	);
-
-
+	// 首頁Slider
 	var slider = new Swiper('.big_slider .swiper-container', {
 		slidesPerView: 1,
     	spaceBetween: 30,
@@ -58,21 +31,14 @@ jQuery(function($){
 		$("#"+tab_id).addClass('current');
 	})
 
-	/*  scroll to top */
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 300) {
-			$('.gotop').fadeIn();
-		} else {
-			$('.gotop').fadeOut();
-		}
+	//點選購物車彈出視窗選規格
+	$('.item .fa-shopping-cart').on('click', function(e) {
+		e.preventDefault();
+		$.fancybox.open({
+			src  : 'qmomo_fancybox.html#cart_popup',
+			type : 'ajax',
+		});
 	});
-	//Click event to scroll to top
-	$('.gotop').click(function(){
-		$('html, body').animate({scrollTop : 0},800);
-		return false;
-	});
-	
-
 });
 
 $("document").ready(function() {

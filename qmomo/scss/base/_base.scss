@@ -174,22 +174,24 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	flex-flow:row wrap;
 	align-items: center;
 	justify-content:space-between;
-	margin:0 -4px;
+	margin:0 -10px;
 }
 .item{
 	display: block;
-	width:(1220px/4-8);
-	margin:0 4px 20px;
+	width:(1220px/4-10);
+	margin:0 5px 20px;
 	.photo{
-		position: relative;
-		padding-top: 100%;
-		overflow: hidden;
+		height:422px;
+		// position: relative;
+		// padding-top: 100%;
+		// overflow: hidden;
 	}
 	img{
 		display: block;
-		position: absolute;top: 50%;left: 50%;
-		height: 100%;
-		transform: translate(-50%, -50%);
+		width:100%;
+		// position: absolute;top: 50%;left: 50%;
+		// height: 100%;
+		// transform: translate(-50%, -50%);
 	}
 	.info{
 		padding:5px;
@@ -210,23 +212,27 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		align-items: center;
-		margin:5px 0 0 0;
+		margin:8px 0 0 ;
+		padding:8px 0 0;
+		border-top:1px solid #ddd;
 	}
 	.track{
 		display: flex;
 		flex-flow: row nowrap;
 		i{
 			margin-right:15px;
+			color:#ccc;
 			&:last-child{
 				margin:0;
 			}
 		}
-		.fa-cart-plus{
-			color:#333;
+		.fas.fa-heart{
+			color:#ff5353;
 		}
 	}
 	.dis_price{
-		color:#ff5353;
+		color: #555;
+		font-size: .9rem;
 	}
 }
 
@@ -271,6 +277,7 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 		font-size:1.3rem;
 	}
 }
+
 @-webkit-keyframes loader-two-before-transition {
 	50% {
 		left: -154px;
@@ -304,5 +311,13 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	}
 	100% {
 		left: -4px;
+	}
+}
+@keyframes HideList {
+	from {
+		transform: scaleY(1);
+	}
+	to {
+		transform: scaleY(0);
 	}
 }

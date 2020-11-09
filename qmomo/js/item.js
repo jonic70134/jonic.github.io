@@ -22,15 +22,6 @@ jQuery(function($){
 		},
 	});
 
-	//選尺寸規格
-	$('.value>li').click(function(){
-		if($(this).hasClass('disabled')){
-			return false;
-		}else{
-			$(this).addClass('active').siblings().removeClass('active').find('.fa-check').remove();
-		}
-	});
-
 	//商品詳細內容tab
 	$('.item_detail a').click(function(e){
 		e.preventDefault();

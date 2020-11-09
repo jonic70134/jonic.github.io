@@ -6,6 +6,9 @@ html(lang='zh-Hant-TW')
 		
 		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
 		link(href='css/index.css', rel='stylesheet')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/index.js')
 	body
 		.wpf-loader-two
 			.wpf-loader-two-inner
@@ -13,9 +16,12 @@ html(lang='zh-Hant-TW')
 		include _header.pug
 		
 		// Start slider
-		section.big_slider
+		.big_slider
 			.swiper-container
 				.swiper-wrapper
+					.swiper-slide
+						a(href="item.html")
+							img(data-seq='', src='img/qmomo_slider7.jpg', alt=' 親膚天絲')
 					.swiper-slide
 						a(href="item.html")
 							img(data-seq='', src='img/qmomo_slider6.jpg', alt=' 親膚天絲')
@@ -40,132 +46,46 @@ html(lang='zh-Hant-TW')
 				.swiper-pagination.swiper-pagination-white
 				.swiper-button-next.swiper-button-white
 				.swiper-button-prev.swiper-button-white
-		section.tab_container
-			.container
-				ul.tabs
-					li.tab_link.current(data-tab='tab-1') 新品上市
-					li.tab_link(data-tab='tab-2') 熱銷產品
-					li.tab_link(data-tab='tab-3') 運動健身
-					li.tab_link(data-tab='tab-4') 性感情趣
-				#tab-1.tab_content.current
-					.items
-						include _items.pug
-				#tab-2.tab_content
-					.items
-						include _items_reverse.pug
-				#tab-3.tab_content
-					.items
-						include _items.pug
-				#tab-4.tab_content
-					.items
-						include _items_reverse.pug
-
 		.banner
 			.container
 				.one_banner
 					a(href="item.html")
-						img(src='img/qmomo_big_ad_find.jpg', alt='Qmomo banner')
-				.four_banner
-					.four_banner_cate
-						h2 大胸女孩
-						a(href="item.html")
-							img(src='img/qmomo_suite1.jpg', alt='Qmomo banner')
-					.four_banner_cate
-						h2 小胸女孩
-						a(href="item.html")
-							img(src='img/qmomo_suite2.jpg', alt='Qmomo banner')
-					.four_banner_cate
-						h2 包覆副乳
-						a(href="item.html")
-							img(src='img/qmomo_suite3.jpg', alt='Qmomo banner')
-					.four_banner_cate
-						h2 晚安推推
-						a(href="item.html")
-							img(src='img/qmomo_suite4.jpg', alt='Qmomo banner')
-		.banner
+						img(src='img/qmomo_big_ad4.png', alt='Qmomo banner')
+		//- section.tab_container
+		//- 	.container
+		//- 		ul.tabs
+		//- 			li.tab_link.current(data-tab='tab-1') 新品上市
+		//- 			li.tab_link(data-tab='tab-2') 熱銷產品
+		//- 			li.tab_link(data-tab='tab-3') 運動健身
+		//- 			li.tab_link(data-tab='tab-4') 性感情趣
+		//- 		#tab-1.tab_content.current
+		//- 			.items
+		//- 				include _items.pug
+		//- 		#tab-2.tab_content
+		//- 			.items
+		//- 				include _items.pug
+		//- 		#tab-3.tab_content
+		//- 			.items
+		//- 				include _items.pug
+		//- 		#tab-4.tab_content
+		//- 			.items
+		//- 				include _items.pug
+		
+		.index_items
 			.container
-				.one_banner
-					a(href='#')
-						img(src='img/qmomo_banner.jpg', alt='Qmomo banner')
-		.banner
-			.container
-				.one_banner
-					a(href="item.html")
-						img(src='img/qmomo_big_ad.jpg', alt='Qmomo banner')
-					a(href="item.html")
-						img(src='img/qmomo_big_ad2.jpg', alt='Qmomo banner')
-					a(href="item.html")
-						img(src='img/qmomo_big_ad3.jpg', alt='Qmomo banner')
-		.banner
-			.container
-				.three_banner
-					.three_banner_cate
-						a(href="item.html")
-							img(src='img/banner3-1.jpg', alt='#最強美胸知識')
-					.three_banner_cate
-						a(href="item.html")
-							img(src='img/banner3-2.gif', alt='#首次加Line好友送$100購物金')
-					.three_banner_cate
-						a(href="item.html")
-							img(src='img/banner3-3.jpg', alt='#紅利點數2%兌換')
-		.banner
-			.container
-				.four_banner
-					.four_banner_cate
-						h2 新品上市
-						a(href="item.html")
-							img(src='img/new_arrival.jpg', alt='新品上市')
-					.four_banner_cate
-						h2 熱銷商品
-						a(href="item.html")
-							img(src='img/hot_seller.jpg', alt='熱銷商品')
-					.four_banner_cate
-						h2 運動健身
-						a(href="item.html")
-							img(src='img/sport_wear.jpg', alt='運動健身')
-					.four_banner_cate
-						h2 性感情趣
-						a(href="item.html")
-							img(src='img/sexy_gift.jpg', alt='性感情趣')
-				
-		.banner
-			.container
-				.one_banner
-					a(href="item.html")
-						img(src='img/sp_bouns.jpg', alt=' 會員專屬福利')
-		.banner
-			.container
-				.three_banner
-					.three_banner_cate
-						h2 新品上市
-						a(href="item.html")
-							img(src='img/hashtag_3_1.jpg', alt='#最強美胸知識')
-					.three_banner_cate
-						h2 熱銷商品
-						a(href="item.html")
-							img(src='img/hashtag_3_2.jpg', alt='#首次加Line好友送$100購物金')
-					.three_banner_cate
-						h2 運動健身
-						a(href="item.html")
-							img(src='img/hashtag_3_3.jpg', alt='#紅利點數2%兌換')
-		.banner
-			.container
-				.one_banner
-					a(href='https://inline.app/booking/-LG8ttIirXyGBKuOHoQV%3Ainline-live-2a466' target='_blank')
-						img(src='img/reserver.jpg', alt='點我預約')
-		.page_items
-			.container
+				.big_title NIGHT CARE
 				.items
 					include _items.pug
-				.items
-					include _items.pug
-				.items
-					include _items.pug
+		.index_video
+			.container
+				.qmomo_tv
+					a(href="#")
+						img(src="img/qmomo_tv_bg.jpg", alt="")
+					.qmomo_video
+						iframe(src='https://www.youtube.com/embed/MgZeFlFVis8' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
 		include _footer.pug
 		
 		.lightbox#index_ad(data-fancybox)
-			a(href="#")
+			a(href="category.html")
 				img(src="img/index_popup_ad.jpg", alt="")
-		script(src='js/jquery.fancybox.min.js')
-		script(src='js/common.js')
-		script(src='js/index.js')
+		

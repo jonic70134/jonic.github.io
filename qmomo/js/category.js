@@ -1,13 +1,17 @@
 jQuery(function($){
-	//選尺寸規格
-	$('.value>li').click(function(){
-		if($(this).hasClass('disabled')){
-			return false;
-		}else{
-			$(this).addClass('active').siblings().removeClass('active').find('.fa-check').remove();
-		}
+	//點選購物車彈出視窗選規格
+	$('.item .fa-shopping-cart').on('click', function(e) {
+		e.preventDefault();
+		$.fancybox.open({
+			src  : 'qmomo_fancybox.html#cart_popup',
+			type : 'ajax',
+			// opts : {
+			// 	afterShow : function( instance, current ) {
+			// 	console.info( 'done!' );
+			// 	}
+			// }
+		});
 	});
-	
 });
 
 

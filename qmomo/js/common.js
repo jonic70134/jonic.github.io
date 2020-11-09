@@ -39,7 +39,7 @@ jQuery(function($){
 		$("#"+tab_id).addClass('current');
 	})
 
-//  下移300px後gotop按鈕現身
+//  下移300px後gotop按鈕出現
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 300) {
 			$('.gotop').fadeIn();
@@ -55,12 +55,20 @@ jQuery(function($){
 	
 
 
-	// 愛心class切換
-	$(".far.fa-heart").click(function(e){
+	// 愛心class切換	
+	$('.far.fa-heart').click(function(e){
 		e.preventDefault();
 		$(this).toggleClass("far fas");
 	});
 	
+
+
+	//選尺寸規格
+	$('.value>li').click(function(){
+		if($(this).hasClass('disabled')){
+			return false;
+		}else{
+			$(this).addClass('active').siblings().removeClass('active').find('.fa-check').remove();
+		}
+	});
 });
-
-
