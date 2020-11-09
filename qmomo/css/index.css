@@ -489,6 +489,9 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   opacity: 0.8;
 }
 .site-header .search .fa-search {
+  position: absolute;
+  top: 7px;
+  left: 10px;
   color: #555;
 }
 .site-header .line_box .down_app {
