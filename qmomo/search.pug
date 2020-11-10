@@ -18,37 +18,37 @@ html(lang='zh-Hant-TW')
 			.wpf-loader-two-inner
 				span Loading
 		include _header.pug
+		
 		.filter
 			.container
+				.search_blcok 
+					h2.mid_title 商品搜尋
+					.search
+						input(type='text', name='', id='',placeholder='請輸入關鍵字')
+						a(href="search.html")
+							i.fa.fa-search
 				.attr
 					.attrcon.special
-						.colst 特別推薦
+						.colst 其他人都在找
 						.colcheck
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a.current(href='#') 分類名稱
-							a(href='#') 分類名稱
+							a(href='#') 緊緻慕斯
+							a(href='#') 好辣小姐
+							a(href='#') 晚安推推
+							a.current(href='#') 我愛睡覺覺
+							a(href='#') G18緊緻
 					.attrcon
 						.colst 分類
 						.colcheck
-							a(href='#') 分類名稱
-							a.current(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
-							a(href='#') 分類名稱
+							a(href='#') 性感情趣(23)
+							a.current(href='#') 無鋼圈(21)
+							a(href='#') W鋼圈(4)
+							a(href='#') 浪漫蕾絲(18)
+							a(href='#') Bikini 泳裝(33)
+							a(href='#') 大尺碼專屬(12)
+							a(href='#') 人氣商品推薦(11)
+							a(href='#') 運動內衣(8)
+							a(href='#') 小胸女孩(6)
+							a(href='#') 爆乳鋼圈(5)
 					.attrcon
 						.colst 顏色
 						.colcheck
@@ -82,10 +82,18 @@ html(lang='zh-Hant-TW')
 							label
 								input(type='checkbox')
 								span(title='粉紅色') 銀色
-
+					.attrcon
+						.colst 價格
+						.colprice
+							span $
+							input.input-number(type='number' min='0' step='any' placeholder='最低')
+							span ~
+							input.input-number(type='number' min='0' step='any' placeholder='最高')
+							button.btn.submit(type='submit') 搜尋
 		.sort_block
 			.container
-				.mid_title
+				.sm_title
+					| 共 168 個商品
 				.sort
 					label(for="sort1")
 						input(type="radio", name="sort" ,value="1", id="sort1" ,checked="checked")
