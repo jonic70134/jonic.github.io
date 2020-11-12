@@ -1690,7 +1690,6 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 .filter .attrcon .input-number {
   padding: 0 0 0 3px;
-  vertical-align: middle;
   width: 70px;
   height: 22px;
   margin: 0 5px;
@@ -1700,6 +1699,22 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 .filter .attrcon.special {
   background: #fffaf9;
+}
+.filter .attrcon .colprice {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.filter .attrcon .btn-submit {
+  border: none;
+  color: #333;
+  background-color: white;
+  cursor: pointer;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms--border-radius: 2px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px #555;
 }
 .filter .attrft {
   height: 30px;

@@ -222,7 +222,6 @@
 		}
 		.input-number {
 			padding: 0 0 0 3px;
-			vertical-align: middle;
 			width: 70px;
 			height: 22px;
 			margin: 0 5px;
@@ -232,6 +231,19 @@
 		}
 		&.special {
 			background: #fffaf9;
+		}
+		.colprice{
+			display: flex;
+    		flex-flow: row nowrap;
+    		align-items: center;
+		}
+		.btn-submit{
+			border:none;
+			color:#333;
+			background-color: white;
+			cursor: pointer;
+			@include border-radius(2px);
+			@include box-shadow(1px,1px,2px ,#555);
 		}
 	}
 
