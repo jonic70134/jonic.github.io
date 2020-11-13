@@ -131,19 +131,31 @@
 // 		margin:0 0 0 10px;
 // 	}
 // }
-
-.gotop{
+.float_block{
 	position: fixed;bottom:50px; right:20px;
+	z-index: 30;
+}
+.gotop{
+	position: relative;
 	width:40px;height:40px;
 	background-color: white;
 	text-align: center;
 	font-size:.8rem;
-	z-index: 30;
 	cursor: pointer;
 	box-shadow:1px 2px 5px #ccc;
 	@include border-radius(50%);
-	.lnr-chevron-up{
+	.fa-angle-up{
 		position: absolute;;top:50%;left:50%;
+		font-size: 1.1rem;
 		transform: translate(-50%, -50%);
+	}
+}
+.ciciza{
+	display: block;
+	margin:0 0 15px;
+	font-size: 1.1rem;
+	img{
+		width:40px;
+		@include border-radius(50%);
 	}
 }

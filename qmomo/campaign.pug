@@ -1,0 +1,82 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		include _head.pug
+
+		title Qmomo
+		meta(name='description' content='「每秒賣出12套的Qmomo平口推推內衣」怎麼動怎麼跳都不會掉，搭配禮服或小洋裝剛剛好，給妳滿滿的安全感，放心穿搭任何服飾；多種款式任妳挑選。')
+		meta(name='keywords' content='平口內衣,平口內衣推薦,無肩帶內衣,內衣推薦')
+		meta(property='fb:pages' content='qmomotw')
+		meta(property='og:url' content='https://www.qmomo.com.tw/v2/official/SalePageCategory/45567')
+		meta(property='og:image' content='https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original/SalePage/6527577/0/637341444881030000?v=1')
+		meta(itemprop='og:description' content='「每秒賣出12套的Qmomo平口推推內衣」怎麼動怎麼跳都不會掉，搭配禮服或小洋裝剛剛好，給妳滿滿的安全感，放心穿搭任何服飾；多種款式任妳挑選。')
+
+		link(href='css/campaign.css', rel='stylesheet')
+		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
+	body
+		.wpf-loader-two
+			.wpf-loader-two-inner
+				span Loading
+		include _header.pug
+		
+		
+		.sort_block
+			.container
+				.sm_title
+					| 共 168 個商品
+				.sort
+					label(for="sort1")
+						input(type="radio", name="sort" ,value="1", id="sort1" ,checked="checked")
+						span.checkmark
+						p 店長推薦
+					label(for="sort2")
+						input(type="radio", name="sort" ,value="2", id="sort2")
+						span.checkmark
+						p 最新上架
+					label(for="sort3")
+						input(type="radio", name="sort" ,value="3", id="sort3")
+						span.checkmark
+						p 熱賣商品
+					label(for="sort4")
+						input(type="radio", name="sort" ,value="4", id="sort4")
+						span.checkmark
+						p 最多人看
+					label(for="sort5")
+						input(type="radio", name="sort" ,value="5" ,id="sort5")
+						span.checkmark
+						p 價格 低 → 高
+					label(for="sort6")
+						input(type="radio", name="sort" ,value="6", id="sort6")
+						span.checkmark
+						p 價格 高 → 低
+		.category
+			.container
+				.items
+					include _items.pug
+					include _items.pug
+					include _items.pug
+		.nav
+			.container
+				a(href="#" class="prev")
+					i.fas.fa-angle-left
+				.page_num_block
+					a(href="#" class="nav_page_num active") 1	
+					a(href="#" class="nav_page_num") 2
+					a(href="#" class="nav_page_num") 3
+					a(href="#" class="nav_page_num") 4
+					a(href="#" class="nav_page_num") 5
+					a(href="#" class="nav_page_num") 6
+					a(href="#" class="nav_page_num") 7
+					a(href="#" class="nav_page_num") 8
+					a(href="#" class="nav_page_num") 9
+					a(href="#" class="nav_page_num") 10
+				
+				a(href="#" class="next")
+					i.fas.fa-angle-right
+		include _footer.pug
+
+		script(src='js/jquery-3.5.1.min.js')
+		script(src='js/svgembedder.min.js')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/category.js')

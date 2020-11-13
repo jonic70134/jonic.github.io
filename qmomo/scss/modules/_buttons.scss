@@ -5,7 +5,6 @@
 	margin-top: 10px;
 	display: inline-block;
 	@include transition(0.5s);
-
 	&:hover,
 	&:focus{
 		color: $theme-color;
@@ -26,7 +25,6 @@
 	display: inline-block;
 	@include border-radius(4px);
 	@include transition(0.5s);	
-
 	&:hover, &:focus{
 		background-color: $theme-color;
 		text-decoration: none;

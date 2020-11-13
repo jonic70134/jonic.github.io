@@ -9,17 +9,7 @@
 	z-index: 30;
 	background-color: #cbabb0;
 	// box-shadow:0 2px 5px #aaa;
-	.ciciza{
-		position: absolute;top:0; right:0;
-		display: block;
-		padding:3px 10px;
-		font-size: 1.1rem;
-		background-color: #FFEA6E;
-		@include box-shadow(0,1px,2px,#aaa);
-		img{
-			width:60px;
-		}
-	}
+	
 	.logo{
 		h1{
 			display: none;
@@ -320,8 +310,10 @@
 	border: 1px solid #eee;
 	.main_menu{
 		display: flex;
-		flex-flow: row nowrap;
-		justify-content: flex-start;
+		flex-flow: row wrap;
+		justify-content: center;
+    	height: 35px;
+    	overflow: hidden;
 		li{
 			position: relative;
 			a{

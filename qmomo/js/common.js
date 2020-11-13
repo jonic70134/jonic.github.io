@@ -42,9 +42,9 @@ jQuery(function($){
 //  下移300px後gotop按鈕出現
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 300) {
-			$('.gotop').fadeIn();
+			$('.float_block').fadeIn();
 		} else {
-			$('.gotop').fadeOut();
+			$('.float_block').fadeOut();
 		}
 	});
 //Click to scroll to top
