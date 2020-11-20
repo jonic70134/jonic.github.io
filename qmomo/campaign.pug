@@ -19,11 +19,11 @@ html(lang='zh-Hant-TW')
 				span Loading
 		include _header.pug
 		
-		
 		.sort_block
 			.container
-				.sm_title
-					| 共 168 個商品
+				ul.tabs
+					li.tab_link.current(data-tab='tab-1') 性感內衣
+					li.tab_link(data-tab='tab-2') 舒適小褲
 				.sort
 					label(for="sort1")
 						input(type="radio", name="sort" ,value="1", id="sort1" ,checked="checked")
@@ -51,10 +51,12 @@ html(lang='zh-Hant-TW')
 						p 價格 高 → 低
 		.category
 			.container
-				.items
-					include _items.pug
-					include _items.pug
-					include _items.pug
+				#tab-1.tab_content.current
+					.items
+						include _items.pug
+				#tab-2.tab_content
+					.items
+						include _items_pantie.pug
 		.nav
 			.container
 				a(href="#" class="prev")

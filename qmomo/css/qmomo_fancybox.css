@@ -132,6 +132,11 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   box-sizing: border-box;
 }
 
+.container {
+  width: 1020px;
+  margin: 0 auto;
+}
+
 .wpf-loader-two {
   background-color: #ffadad;
   height: 100%;
@@ -296,18 +301,18 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 
 .item {
   display: block;
-  width: 295px;
+  width: 24%;
   margin: 0 5px 20px;
 }
 .item .photo {
-  height: 422px;
+  height: auto;
 }
 .item img {
   display: block;
   width: 100%;
 }
 .item .info {
-  padding: 5px;
+  padding: 10px 5px;
 }
 .item .item_title {
   color: #555;

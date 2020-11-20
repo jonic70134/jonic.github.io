@@ -11,6 +11,10 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	color: black;
 	box-sizing: border-box;
 }
+.container{
+	width:1020px;
+	margin:0 auto;
+}
 // loading 動畫
 .wpf-loader-two {
 	background-color: $theme-color;
@@ -178,10 +182,10 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 }
 .item{
 	display: block;
-	width:(1220px/4-10);
+	width:24%;
 	margin:0 5px 20px;
 	.photo{
-		height:422px;
+		height:auto;
 		// position: relative;
 		// padding-top: 100%;
 		// overflow: hidden;
@@ -194,7 +198,7 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 		// transform: translate(-50%, -50%);
 	}
 	.info{
-		padding:5px;
+		padding:10px 5px;
 	}
 	.item_title{
 		color:#555;

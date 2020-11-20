@@ -1,47 +1,83 @@
 .site-footer{
 	width: 100%;
+	color:#585858;
+	.container{
+		width:1220px;
+	}
+	a{
+		color:#585858;
+	}
 	.inner{
 		display: flex;
 		flex-flow: row nowrap;
 		padding:50px 0;
 		p{
-			color:#999;
 			font-size:.7rem;
-			line-height: 1.5;
+			line-height: 1.8;
 		}
 	}
 	.foot_left{
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
-		align-items: flex-end;
-		flex:0 0 70%;
-		padding:0 100px 0 0;
+		align-items: flex-start;
+		flex:0 0 55%;
+		padding:0;
 		border-right:1px solid #eee;
 	}
+	.contact{
+		flex: 0 0 60%;
+	}
+	.foot_logo{
+		width:150px;
+		margin:0 0 10px;
+	}
 	.time{
-		margin:16px 0 0;
+		margin:3px 0 0;
+	}
+	.sitemap_block{
+		display: flex;
+		flex-flow:column;
+		flex: 0 0 40%;
+		padding: 68px 20px 0;
+	}
+	.site_map_bot{
+		display: flex;
+		flex-flow: row nowrap;
 	}
 	.sitemap{
-		margin:30px 0 0;
-		align-self: flex-start;
+		margin:30px 60px 0 0;
+		&:last-child{
+			margin-right:0;
+		}
 		p{
-			margin:0 0 8px;
-			font-size:.8rem;
-			color:#555;
+			font-size:.9rem;
+			color:#222;
 			letter-spacing: 0.5px;
 		}
 		a{
 			display: block;
-			color:#999;
 			font-size:.7rem;
 			line-height: 1.8;
 			letter-spacing: 0.5px;
 		}
 	}
 	.foot_right{
-		flex:0 0 30%;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		flex:0 0 38%;
 		padding:10px 40px;
+		.sm_title{
+			width:100%;
+			margin:0 0 20px;
+			line-height: 1.5;
+		}
+	}
+	.ciciza_foot{
+		img{
+			width:300px;
+		}
 	}
 	.social{
 		display: flex;
@@ -51,12 +87,11 @@
 			display: block;
 			margin-right:15px;
 			font-size:1.4rem;
-			color:#999;
+			@include border-radius(50%);
 		}
 	}
 	.copyright{
 		margin:3px 0 0 1px;
-		color:#999;
 		font-size:.75rem;
 	}
 	// .foot_top_block{
@@ -151,11 +186,16 @@
 	}
 }
 .ciciza{
+	position: fixed;right:20px;top:91px;
 	display: block;
 	margin:0 0 15px;
+	padding: 28px 10px;
 	font-size: 1.1rem;
+	background-color: #feea6e;
+	@include border-radius(50%);
+	z-index: 30;
 	img{
-		width:40px;
+		width:60px;
 		@include border-radius(50%);
 	}
 }
