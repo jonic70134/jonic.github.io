@@ -1,0 +1,358 @@
+/*reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, th, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+:link {
+  text-decoration: none;
+  outline: none;
+  /* for Firefox */
+  hlbr: expression(this.onFocus=this.blur());
+  /* for IE */
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  color: #333;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+::placeholder {
+  color: #ccc;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+*:first-child + html .clearfix {
+  min-height: 1px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #333;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Lato", sans-serif;
+  color: #333;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+input[type=password], input[type=email], input[type=tel], input[type=text], input[type=number], input[type=search] {
+  border-color: #cccccc;
+  background: white;
+  color: black;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+  width: 10px;
+  border-radius: 20px;
+  color: #babac0;
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  background-color: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 0 10px;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+body {
+  background-color: #333;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  color: white;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  width: 300px;
+  height: 280px;
+  top: 70px;
+  left: 50px;
+  background: #fff;
+  box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, .5);
+  border-radius: 10px;
+}
+
+.title {
+  width: 100%;
+  font-size: 18px;
+  color: white;
+  background: #555;
+  line-height: 50px;
+  height: 50px;
+  border-bottom: 1px solid #D8D8D8;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.dropzone {
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+  display: table;
+  table-layout: fixed;
+  width: 180px;
+  height: 120px;
+  top: 86px;
+  left: 60px;
+  border: 2px dashed #A4A4A4;
+  border-radius: 3px;
+  text-align: center;
+  overflow: hidden;
+  cursor: copy;
+}
+.dropzone.is-dragover {
+  border-color: #666;
+  background: #eee;
+}
+.dropzone .content {
+  display: table-cell;
+  vertical-align: middle;
+}
+.dropzone .content p{
+  color:#333;
+  font-size:.7rem;
+}
+.dropzone .upload {
+  margin: 6px 0 0 2px;
+}
+.dropzone .filename {
+  display: block;
+  color: #676767;
+  font-size: 14px;
+  line-height: 18px;
+}
+.dropzone .input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: copy;
+}
+
+.upload-btn {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  left: 0;
+  bottom: 0;
+  background: #6ECE3B;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  box-shadow: 0 2px 0 0 #498C25;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border-radius: 0 0 10px 10px;
+}
+.upload-btn:hover {
+  box-shadow: 0 2px 0 0 #498C25, 0 2px 10px 0 #6ECE3B;
+}
+
+.bar {
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  height: 3px;
+  top: 49px;
+  left: 0;
+  background: #6ECE3B;
+  -webkit-transition: all 3s ease-out;
+  transition: all 3s ease-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.bar.active {
+  -webkit-transform: scaleX(1) translate3d(0, 0, 0);
+          transform: scaleX(1) translate3d(0, 0, 0);
+}
+
+.syncing {
+  position: absolute;
+  top: 132px;
+  left: 134px;
+  opacity: 0;
+}
+.syncing.active {
+  -webkit-animation: syncing 3.2s ease-in-out;
+          animation: syncing 3.2s ease-in-out;
+}
+
+.done {
+  position: absolute;
+  top: 132px;
+  left: 132px;
+  opacity: 0;
+  color:green;
+}
+.done.active {
+  -webkit-animation: done .5s ease-in 3.2s;
+          animation: done .5s ease-in 3.2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes syncing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes syncing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes done {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes done {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
