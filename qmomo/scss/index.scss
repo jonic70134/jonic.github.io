@@ -117,5 +117,37 @@
 		color:white;
 	}
 }
-
+.nav{
+	.container{
+		align-items:center;
+	}
+	a{
+		min-width:auto;
+		margin:0 3px;
+		padding:5px 8px;
+	}
+	.nav_page_num{
+		&.active{
+			color:#999;
+			background: none;
+			border-bottom:1px solid #333;
+		}
+		&:last-child{
+			border:none;
+		}
+	}
+	
+	.page_num_block{
+		a{
+			color:#333;
+			border:none;
+		}
+	}
+	.prev,.next{
+		font-size:.75rem;
+		.fas{
+			color:#333;
+		}
+	}
+}
 @import 'layouts/_footer.scss';

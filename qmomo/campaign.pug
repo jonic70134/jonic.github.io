@@ -19,6 +19,72 @@ html(lang='zh-Hant-TW')
 				span Loading
 		include _header.pug
 		
+		.site-activity
+			.container
+				#activity_info.act-info
+					h3
+						span.ready 通通給姊包起來~組合價$3988
+						span.act-title 
+						span.date 2020/12/01 00:00 ~ 2020/12/15 23:59
+					.desc
+						p.act-content
+							| 任選5件NT$3,988，折扣可循環累計，且無法使用折價券和其他折扣活動優惠
+						p.tip
+							| 活動優惠可循環累計。
+							//- em.t-red 2016/07/25
+							//- 	|  給點，若商品退貨未達門檻將取消給點。
+						p.tip
+							| 注意：商品中，若有「限定商品」或「FB分享商品」參與折扣活動，將不會顯示於活動頁中，但於購物車結帳時，仍享有優惠。
+						p.tip
+							| 購買活動商品達到「件數門檻」時，即享特定件數商品的活動優惠價。
+				#activity_cart.act-cart
+					.swiper-container
+						.swiper-wrapper
+							.swiper-slide
+								a.photo(href='#')
+									img(src='img/item_long_01.jpg' alt='')
+								.info
+									h1.name 幼桃肌嫩白緊緻慕斯Daily Feminine Mousse
+									.line
+										span.currency NT$
+										span.price
+									.quantity.small
+										span.quantity-decrease -
+										input.quantity-input(type='text' value='1' max='99' title='請輸入購買量')
+										span.quantity-increase +
+									a.btn-del(href='#') 刪除
+							.swiper-slide
+								a.photo(href='#')
+									img(src='img/item_long_02.jpg' alt='')
+								.info
+									h1.name 幼桃肌嫩白緊緻慕斯Daily Feminine Mousse
+									.line
+										span.currency NT$
+										span.price
+									.quantity.small
+										span.quantity-decrease -
+										input.quantity-input(type='text' value='1' max='99' title='請輸入購買量')
+										span.quantity-increase +
+									a.btn-del(href='#') 刪除
+						a.swiper-left(href='#') <
+						a.swiper-right(href='#') >
+					.state
+						#progress-bar-static.progress-bar-static
+							.inner-bar(data-state='100')
+							span.note
+								| 還差 
+								span.price NT$200
+							span.note-finish.hide 已達成條件
+						p.tip
+							| 已選購
+							span.red-text  4件 
+							| 商品：
+						#actActions.actions
+							span.current 目前累計金額：
+							span.price NT$800
+							a.button(href='#') 查看購物車
+
+
 		.sort_block
 			.container
 				ul.tabs
@@ -81,4 +147,4 @@ html(lang='zh-Hant-TW')
 		script(src='js/svgembedder.min.js')
 		script(src='js/jquery.fancybox.min.js')
 		script(src='js/common.js')
-		script(src='js/category.js')
+		script(src='js/campaign.js')

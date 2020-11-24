@@ -71,4 +71,8 @@ jQuery(function($){
 			$(this).addClass('active').siblings().removeClass('active').find('.fa-check').remove();
 		}
 	});
+	// ciciza連結關閉
+	$('.ciciza_block .fa-times').click(function(){
+		$('.ciciza_block').hide();
+	});
 });

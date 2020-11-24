@@ -37,7 +37,9 @@
           <div class="header_top_m"></div>
           <div class="header_top_r">
             <div class="search">
-              <input type="text" name="" id="" placeholder="請輸入關鍵字"><a href="search.html"><i class="fa fa-search"></i></a>
+              <form action="">
+                <input type="text" name="" id="" placeholder="請輸入關鍵字"><a href="search.html"><i class="fa fa-search"></i></a>
+              </form>
             </div>
             <ul class="header_top_r_item">
               <li>
@@ -110,6 +112,50 @@
         </div>
       </nav>
     </header>
+    <div class="site-activity">
+      <div class="container">
+        <div class="act-info" id="activity_info">
+          <h3><span class="ready">通通給姊包起來~組合價$3988</span><span class="act-title"> </span><span class="date">2020/12/01 00:00 ~ 2020/12/15 23:59</span></h3>
+          <div class="desc">
+            <p class="act-content">任選5件NT$3,988，折扣可循環累計，且無法使用折價券和其他折扣活動優惠</p>
+            <p class="tip">活動優惠可循環累計。</p>
+            <p class="tip">注意：商品中，若有「限定商品」或「FB分享商品」參與折扣活動，將不會顯示於活動頁中，但於購物車結帳時，仍享有優惠。</p>
+            <p class="tip">購買活動商品達到「件數門檻」時，即享特定件數商品的活動優惠價。</p>
+          </div>
+        </div>
+        <div class="act-cart" id="activity_cart">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a class="photo" href="#"><img src="img/item_long_01.jpg" alt=""></a>
+                <div class="info">
+                  <h1 class="name">幼桃肌嫩白緊緻慕斯Daily Feminine Mousse</h1>
+                  <div class="line"><span class="currency">NT$</span><span class="price"></span></div>
+                  <div class="quantity small"><span class="quantity-decrease">-</span>
+                    <input class="quantity-input" type="text" value="1" max="99" title="請輸入購買量"><span class="quantity-increase">+</span>
+                  </div><a class="btn-del" href="#">刪除</a>
+                </div>
+              </div>
+              <div class="swiper-slide"><a class="photo" href="#"><img src="img/item_long_02.jpg" alt=""></a>
+                <div class="info">
+                  <h1 class="name">幼桃肌嫩白緊緻慕斯Daily Feminine Mousse</h1>
+                  <div class="line"><span class="currency">NT$</span><span class="price"></span></div>
+                  <div class="quantity small"><span class="quantity-decrease">-</span>
+                    <input class="quantity-input" type="text" value="1" max="99" title="請輸入購買量"><span class="quantity-increase">+</span>
+                  </div><a class="btn-del" href="#">刪除</a>
+                </div>
+              </div>
+            </div><a class="swiper-left" href="#"><</a><a class="swiper-right" href="#">></a>
+          </div>
+          <div class="state">
+            <div class="progress-bar-static" id="progress-bar-static">
+              <div class="inner-bar" data-state="100"></div><span class="note">還差 <span class="price">NT$200</span></span><span class="note-finish hide">已達成條件</span>
+            </div>
+            <p class="tip">已選購<span class="red-text"> 4件 </span>商品：</p>
+            <div class="actions" id="actActions"><span class="current">目前累計金額：</span><span class="price">NT$800</span><a class="button" href="#">查看購物車</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="sort_block">
       <div class="container">
         <ul class="tabs">
@@ -453,7 +499,8 @@
           </div>
         </div>
       </div>
-    </footer><a class="ciciza" href="https://www.ciciza.com.tw/"><img src="img/ciciza.png" alt="ciciza官網"></a>
+    </footer>
+    <div class="ciciza_block"><a class="ciciza" href="https://www.ciciza.com.tw/"><img src="img/ciciza.png" alt="ciciza官網"></a><i class="fas fa-times"></i></div>
     <div class="float_block">
       <div class="gotop"><i class="fas fa-angle-up"></i></div>
     </div>
@@ -461,6 +508,6 @@
     <script src="js/svgembedder.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/category.js"></script>
+    <script src="js/campaign.js"></script>
   </body>
 </html>

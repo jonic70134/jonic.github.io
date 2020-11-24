@@ -76,6 +76,22 @@ html(lang='zh-Hant-TW')
 				.big_title NIGHT CARE
 				.items
 					include _items.pug
+				.nav
+					.container
+						a(href="#" class="prev")
+							i.fas.fa-angle-left
+								| &nbsp;PREV
+						.page_num_block
+							a(href="#" class="nav_page_num active") 1	
+							a(href="#" class="nav_page_num") 2
+							a(href="#" class="nav_page_num") 3
+							a(href="#" class="nav_page_num") 4
+							a(href="#" class="nav_page_num") 5
+							a(href="#" class="nav_page_num") ...
+							a(href="#" class="nav_page_num") 30
+						a(href="#" class="next")
+							i.fas.fa-angle-right
+								| &nbsp;NEXT
 		.index_video
 			.container
 				.qmomo_tv

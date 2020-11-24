@@ -249,7 +249,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 
 .fas.fa-heart {
-  color: #ff5353;
+  color: #fa6093;
 }
 
 .sm_title {
@@ -302,7 +302,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 .item {
   display: block;
   width: 24%;
-  margin: 0 5px 20px;
+  margin: 0 5px 40px;
 }
 .item .photo {
   height: auto;
@@ -345,7 +345,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   margin: 0;
 }
 .item .track .fas.fa-heart {
-  color: #ff5353;
+  color: #fa6093;
 }
 .item .dis_price {
   color: #555;

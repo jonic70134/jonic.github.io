@@ -11,6 +11,7 @@
 		display: flex;
 		flex-flow: row nowrap;
 		padding:50px 0;
+		border-top:1px solid #333;
 		p{
 			font-size:.7rem;
 			line-height: 1.8;
@@ -21,8 +22,8 @@
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		align-items: flex-start;
-		flex:0 0 55%;
-		padding:0;
+		flex:0 0 62%;
+		padding:0 20px;
 		border-right:1px solid #eee;
 	}
 	.contact{
@@ -46,7 +47,7 @@
 		flex-flow: row nowrap;
 	}
 	.sitemap{
-		margin:30px 60px 0 0;
+		margin:30px 70px 0 0;
 		&:last-child{
 			margin-right:0;
 		}
@@ -185,17 +186,23 @@
 		transform: translate(-50%, -50%);
 	}
 }
-.ciciza{
-	position: fixed;right:20px;top:91px;
-	display: block;
-	margin:0 0 15px;
-	padding: 28px 10px;
-	font-size: 1.1rem;
-	background-color: #feea6e;
-	@include border-radius(50%);
-	z-index: 30;
+.ciciza_block{
+	position: fixed;right:20px;top:140px;z-index: 30;
+	.ciciza{
+		display: block;
+		margin:0 0 15px;
+		padding: 28px 10px;
+		font-size: 1.1rem;
+		background-color: #feea6e;
+		@include border-radius(50%);
+	}
 	img{
 		width:60px;
 		@include border-radius(50%);
+	}
+	.fa-times{
+		position: absolute;right:0;top:0;
+		font-size:.9rem;
+		cursor: pointer;
 	}
 }
