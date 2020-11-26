@@ -862,22 +862,21 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .line .button {
-  cursor: pointer;
-  -webkit-appearance: none;
-  color: white;
-  text-decoration: none;
   width: auto;
   height: auto;
-  border: none;
-  background: #ff5353;
   margin-left: 10px;
   padding: 15px 40px;
+  border: none;
+  color: white;
   font-size: 0.9rem;
+  text-decoration: none;
   letter-spacing: 2px;
+  background: #ff5353;
+  -webkit-appearance: none;
   -webkit-user-select: none;
   user-select: none;
-  zoom: 1;
   transition: 0.6s;
+  cursor: pointer;
 }
 
 .item_top {
