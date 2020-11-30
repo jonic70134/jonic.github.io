@@ -32,7 +32,7 @@ jQuery(function($){
 
 		$(this).addClass('current');
 		$("#"+detail_id).addClass('current');
-	})
+	});
 	
 });
 
