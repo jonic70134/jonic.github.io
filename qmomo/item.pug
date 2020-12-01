@@ -53,13 +53,13 @@ html(lang='zh-Hant-TW')
 								//- 		iframe(src='https://www.youtube.com/embed/0QT1sPQ9gXU' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
 						.photo-other
 							.thumb
-								img(src='img/item_long_01.jpg', alt=' 親膚天絲')
+								img(src='img/item_long_01.jpg', alt='親膚天絲')
 							.thumb
-								img(src='img/item_long_02.jpg', alt=' 我只要陷阱妹')
+								img(src='img/item_long_02.jpg', alt='我只要陷阱妹')
 							.thumb
-								img(src='img/item_long_03.jpg', alt=' 我愛睡覺覺')
+								img(src='img/item_long_03.jpg', alt='我愛睡覺覺')
 							.thumb
-								img(src='img/item_long_04.jpg', alt=' 我愛睡覺覺')
+								img(src='img/item_long_04.jpg', alt='我愛睡覺覺')
 							//- .thumb
 							//- 	img(src='img/item_long_05.jpg', alt='美胸BraTop')  
 							//- .thumb
@@ -79,7 +79,7 @@ html(lang='zh-Hant-TW')
 								a(href="#")
 									i.fab.fa-line
 								a(href="#")
-									i.fab.fa-twitter-square
+									i.fab.fa-instagram-square
 							.pay
 								p 付款方式：
 								span.icon.seven
@@ -110,37 +110,35 @@ html(lang='zh-Hant-TW')
 						.line.color
 							.sm_title 顏色
 							ul.value
-								li.img.disabled(title='已售完')
+								li.img.disabled(title='已售完',data-color='color-1')
 									.photo
 										img(src='img/color_purple.png' alt='顏色' title='顏色')
 									p 迷幻紫
-								li.img
+								li.img.active(data-color='color-2')
 									.photo
 										img(src='img/color_white.png' alt='顏色' title='顏色')
 									p 你好白
-								li.img
+								li.img(data-color='color-3')
 									.photo
 										img(src='img/color_red.png' alt='顏色' title='顏色')
 									p 熱力紅
-								li.img
+								li.img(data-color='color-4')
 									.photo
 										img(src='img/color_green.png' alt='顏色' title='顏色')
 									p 湖水綠
-								li.img.active
+								li.img(data-color='color-5')
 									.photo
 										img(src='img/color_orange.png' alt='顏色' title='顏色')
 									p 暖心橘
-						.line.size
+						.line.size.color_block
 							.sm_title 內衣尺寸
-							ul.value
+							ul#color-1.value
 								li.disabled(title='已售完')
-									//- i.fa.fa-times-circle
 									| 65A
 								li 65B
 								li 65C
 								li 65D
 								li.active
-									//- i.fa.fa-check
 									| 65E
 								li 65F
 								li 65G
@@ -218,26 +216,100 @@ html(lang='zh-Hant-TW')
 								li 105G
 								li 105H
 								li 105I
+							ul#color-2.value.active
+								li 65A
+								li 65B
+								li 65C
+								li 65D
+								li 65E
+								li 65F
+								li 65G
+								li 65H
+								li 65I
+								li 70A
+								li 70B
+								li 70C
+								li 70D
+								li 70E
+								li 70F
+								li 70G
+								li 70H
+								li 70I
+								li 75A
+								li 75B
+								li 75C
+								li 75D
+								li 75E
+								li 75F
+								li 75G
+								li 75H
+								li 75I
+							ul#color-3.value
+								li 65A
+								li 65B
+								li 65C
+								li 65D
+								li 65E
+								li 65F
+								li 65G
+								li 65H
+								li 65I
+							ul#color-4.value
+								li 70A
+								li 70B
+								li 70C
+								li 70D
+								li 70E
+								li 70F
+								li 70G
+								li 70H
+								li 70I
+								li 75A
+								li 75B
+								li 75C
+								li 75D
+								li 75E
+								li 75F
+								li 75G
+								li 75H
+								li 75I
+							ul#color-5.value
+								li 75A
+								li 75B
+								li 75C
+								li 75D
+								li 75E
+								li 75F
+								li 75G
+								li 75H
+								li 75I
 						.line.size
 							.sm_title 內褲選擇
-							ul.value
-								li.disabled(title='已售完')
-									| 成套內褲
-								li 我要選他款內褲
-								li 我不需要內褲
-								li 三角 S
-								li.active
-									| 三角 M
-								li 三角 L
-								li 三角 XL
-								li 三角 2XL
-								li 三角 3XL
-								li 三角 S
-								li 四角 M
-								li 四角 L
-								li 四角 XL
-								li 四角 2XL
-								li 四角 3XL
+							.size_block
+								ul.value.size_link
+									li(title='已售完',data-size='size-1') 成套內褲
+									li(data-size='size-2') 我要選他款內褲
+									li(data-size='size-3') 我不需要內褲
+								
+								ul#size-1.value.size_content
+									li.disabled 三角 S
+									li.active
+										| 三角 M
+									li 三角 L
+									li 三角 XL
+									li 三角 2XL
+									li 三角 3XL
+									li 三角 S
+									li 四角 M
+									li 四角 L
+									li 四角 XL
+									li 四角 2XL
+									li 四角 3XL
+								ul#size-2.value.size_content 
+									li A款 三角 S
+									li B款 三角 S
+									li C款 三角 S
+								ul#size-3.value.size_content
 						.line.addcart
 							.quantity-add
 								.quantity
