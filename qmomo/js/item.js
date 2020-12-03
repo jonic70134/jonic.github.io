@@ -34,26 +34,6 @@ jQuery(function($){
 		$("#"+detail_id).addClass('current');
 	});
 	
-	// 顏色選項 tab
-	$('.color > li').click(function(e){
-		e.preventDefault();
-		var color_conten_id = $(this).attr('data-color');
-		$('.color > li').removeClass('active');
-		$('.color_block > ul').removeClass('active');
-		$(this).addClass('active');
-		$("#"+color_conten_id).addClass('active');
-	});
-
-	// 尺寸選項 tab
-	$('.size_link > li').click(function(e){
-		e.preventDefault();
-		var size_conten_id = $(this).attr('data-size');
-		$('.size_link > li').removeClass('active');
-		$('.size_content').removeClass('active');
-		$(this).addClass('active');
-		$("#"+size_conten_id).addClass('active');
-	});
-	
 
 	// 商品數量加減
 	$('.quantity-decrease').click(function () {
@@ -73,6 +53,9 @@ jQuery(function($){
 		return false;
 	});
 
+
+	
+	
 });
 
 

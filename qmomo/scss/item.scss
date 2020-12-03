@@ -53,13 +53,18 @@
 .swiper-container{
 	width:100%;
 	margin-bottom:20px;
+	background-color: black;
 	.swiper-slide{
 		img{
 			width:100%;
 		}
 	}
 }
-
+.video_container{
+	.iframe,.object,.embed{
+		top:20%;
+	}
+}
 
 .photo-other{
 	display: flex;
@@ -227,14 +232,14 @@
 	&.color,&.size{
 		display: flex;
 		flex-flow:row nowrap;
-		margin:30px 0;
+		margin:10px 0;
 		.sm_title{
 			padding:0 10px 10px 0;
 			flex: 0 0 15%;
 		}
 	}
-	&.color_block{
-		.value{
+	.color_block{
+		.color_content{
 			display: none;
 		}
 		.active{

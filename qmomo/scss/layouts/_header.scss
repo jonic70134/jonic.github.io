@@ -307,7 +307,6 @@
 		flex-flow: row wrap;
 		justify-content: center;
     	height: 35px;
-    	overflow: hidden;
 		li{
 			position: relative;
 			a{
@@ -380,20 +379,20 @@
 					cursor: pointer;
 				}
 			}
-			.lnr-chevron-down {
-				color: #60666d;
-				transform: translateY(-50%) rotate(180deg);
-			}
+			// .lnr-chevron-down {
+			// 	color: #60666d;
+			// 	transform: translateY(-50%) rotate(180deg);
+			// }
 		}
 	}
-	.lnr-chevron-down {
-		position: absolute;
-		top: 50%;
-		right: 3px;
-		font-size:.7rem;
-		transform: translateY(-50%);
-		transition: 0.2s ease;	
-	}
+	// .lnr-chevron-down {
+	// 	position: absolute;
+	// 	top: 50%;
+	// 	right: 3px;
+	// 	font-size:.7rem;
+	// 	transform: translateY(-50%);
+	// 	transition: 0.2s ease;	
+	// }
 	&_value {
 		display: flex;
 	}

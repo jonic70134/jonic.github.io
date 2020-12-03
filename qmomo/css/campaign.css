@@ -735,7 +735,6 @@ input[type=number]::-webkit-outer-spin-button {
   flex-flow: row wrap;
   justify-content: center;
   height: 35px;
-  overflow: hidden;
 }
 .site-menu .main_menu li {
   position: relative;
@@ -804,18 +803,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .select_box_current:focus + .select_box_list .select_box_option {
   cursor: pointer;
-}
-.select_box_current:focus .lnr-chevron-down {
-  color: #60666d;
-  transform: translateY(-50%) rotate(180deg);
-}
-.select_box .lnr-chevron-down {
-  position: absolute;
-  top: 50%;
-  right: 3px;
-  font-size: 0.7rem;
-  transform: translateY(-50%);
-  transition: 0.2s ease;
 }
 .select_box_value {
   display: flex;
@@ -1054,6 +1041,15 @@ input[type=number]::-webkit-outer-spin-button {
   border-color: #ff5353 transparent transparent transparent;
 }
 
+.quantity .quantity-decrease, .quantity .quantity-increase {
+  width: 30px;
+  padding: 5px 7px;
+  font-size: 0.75rem;
+}
+.quantity .quantity-input {
+  width: 30px;
+}
+
 .red-text {
   color: #ff5353;
 }
@@ -1142,7 +1138,7 @@ input[type=number]::-webkit-outer-spin-button {
 .site-activity .act-cart .swiper-container .swiper-slide {
   display: flex;
   flex-flow: row nowrap;
-  padding: 5px 10px;
+  padding: 5px 0;
   border-right: 1px solid #ccc;
 }
 .site-activity .act-cart .swiper-container .swiper-left, .site-activity .act-cart .swiper-container .swiper-right {
@@ -1150,23 +1146,24 @@ input[type=number]::-webkit-outer-spin-button {
   top: 35%;
   left: 0;
   z-index: 10;
-  padding: 3px;
+  padding: 2px 6px 2px 4px;
   font-size: 0.85rem;
-  background: rgba(204, 204, 204, 0.7);
+  background: rgba(0, 0, 0, 0.7);
+}
+.site-activity .act-cart .swiper-container .swiper-left i, .site-activity .act-cart .swiper-container .swiper-right i {
   color: white;
 }
 .site-activity .act-cart .swiper-container .swiper-right {
+  padding: 2px 4px 2px 6px;
   left: initial;
   right: 0;
 }
 .site-activity .act-cart .swiper-container .photo {
-  display: inline-block;
-  float: left;
   position: relative;
   width: 80px;
   height: 0;
   overflow: hidden;
-  padding-top: 80px;
+  padding-top: 86px;
 }
 .site-activity .act-cart .swiper-container .photo img {
   position: absolute;
@@ -1179,14 +1176,13 @@ input[type=number]::-webkit-outer-spin-button {
   max-height: 100%;
 }
 .site-activity .act-cart .swiper-container .info {
-  float: left;
   margin-left: 5px;
 }
 .site-activity .act-cart .swiper-container .line {
   padding: 2px 0;
 }
 .site-activity .act-cart .swiper-container .name {
-  font-size: 12px;
+  font-size: 0.8rem;
   width: 145px;
   height: 32px;
   overflow: hidden;
@@ -1201,10 +1197,9 @@ input[type=number]::-webkit-outer-spin-button {
   color: #e00517;
 }
 .site-activity .act-cart .swiper-container .btn-del {
-  font-size: 12px;
-  display: inline-block;
-  vertical-align: top;
+  margin: 0 0 0 5px;
   padding: 4px;
+  font-size: 0.8rem;
 }
 .site-activity .act-cart .state {
   float: right;
@@ -1419,17 +1414,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .filter .attrcon .colcheck .selected {
   color: #e00517;
-}
-.filter .attrcon .all {
-  display: inline-block;
-  vertical-align: middle;
-  cursor: pointer;
-  line-height: 140%;
-  margin-right: 20px;
-}
-.filter .attrcon .type {
-  width: 65px;
-  margin-right: 0;
 }
 .filter .attrcon .actions {
   position: absolute;
