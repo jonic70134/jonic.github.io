@@ -1,8 +1,5 @@
 body{
 	background-color: #ffffff;
-	font-family: $base-font;
-	color:$base-color;
-	font-size:$base-font-size;	
 	overflow-x: hidden;
 }
 input[type='password'], input[type='email'], input[type='tel'], input[type='text'], input[type='number'], input[type='search'] {
@@ -240,45 +237,41 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	}
 }
 
-
 .nav{
-	margin:20px 0 50px;
+	margin:0 0 40px;
 	.container{
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: center;
-		
-	}
-	.page_num_block{
-		display: flex;
-		flex-flow: row nowrap;
+		align-items:center;
 	}
 	a{
-		display: block;
-		min-width: 37px;
-		padding:8px 10px;
-		text-align: center;
-		color:#999;
-		font-size:.9rem;
-		line-height: 1;
-		cursor: pointer;
-		&:hover,.fas:hover{
-			color:#ff5353;
-		}
+		min-width:auto;
+		margin:0 3px;
+		padding:5px 8px;
 	}
 	.nav_page_num{
-		border:1px solid #eee;
-		border-right:none;
-		&:last-child{
-			border-right:1px solid #eee;
-		}
 		&.active{
-			color:white;
-			background-color:#ff5353;
+			color:#999;
+			background: none;
+			border-bottom:1px solid #333;
+		}
+		&:last-child{
+			border:none;
+		}
+	}
+	
+	.page_num_block{
+		a{
+			color:#333;
+			border:none;
 		}
 	}
 	.prev,.next{
-		font-size:1.3rem;
+		font-size:.75rem;
+		.fas{
+			color:#333;
+		}
 	}
 }
 

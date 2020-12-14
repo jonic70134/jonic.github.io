@@ -1,0 +1,49 @@
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_base.scss';
+@import 'base/_reset.scss';
+
+@import 'layouts/_header.scss';
+.about_main{
+	margin: 40px 0;
+	.container{
+		display: flex;
+		flex-flow: row nowrap;
+	}
+}
+.about_menu{
+	flex:0 0 15%;
+
+	padding:0;
+	border-right:1px solid #ccc;
+	font-size:.9rem;
+	dt{
+		padding:10px 20px;
+		border-bottom:1px solid #ccc;
+		border-top:1px solid #ccc;
+	}
+	dd{
+		margin-left:15px;
+		padding:10px 20px;
+	}
+}
+.about_content{
+	flex:0 0 85%;
+	padding: 0 20px 20px;
+	font-size:.9rem;
+	h3{
+		margin:0 0 0 -20px;
+		padding:10px 0 10px 10px;
+		border-left:20px solid  #fdd8d6;
+	}
+	img{
+		width:100%;
+	}
+	p{
+		margin:0 0 10px;
+		line-height: 2.2;
+	}
+}
+
+
+@import 'layouts/_footer.scss';

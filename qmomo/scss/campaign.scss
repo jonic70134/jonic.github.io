@@ -64,7 +64,7 @@
 	}
 	.date{
 		padding: 5px 0;
-		font-size: 15px;
+		font-size: .85rem;
 	}
 	.desc{
 		display: block;
@@ -85,7 +85,7 @@
 		white-space: nowrap;
 	}
 	.tip{
-		font-size: 0.8em;
+		font-size: .8rem;
 		.t-red {
 			color:red;
 			font-style: normal;
@@ -151,11 +151,11 @@
 				word-wrap: break-word;
 			}
 			.currency{
-				font-size: 0.7em;
+				font-size: .75rem;
 				color: #e00517;
 			}
 			.price{
-				font-size: 13px;
+				font-size: .75rem;
 				color: #e00517;
 			}
 			.btn-del{
@@ -165,9 +165,6 @@
 			}
 		}
 		.state{
-			float: right;
-			display: inline-block;
-			vertical-align: top;
 			padding: 15px 5px 16px;
 			width: 30%;
 			border: 1px solid #ccc;
@@ -212,7 +209,7 @@
 					left: 0;
 					min-width: 100px;
 					padding: 3px 10px;
-					font-size: 13px;
+					font-size: .75rem;
 					text-align: center;
 					border: 2px solid #ccc;
 					color: #383838;
@@ -242,7 +239,7 @@
 				}
 			}
 			.actions{
-				font-size: 13px;
+				font-size: .75rem;
 				&.finish{
 					color: #e00517;
 				}
@@ -251,7 +248,7 @@
 					margin-top: 5px;
 				}
 				.price{
-					font-size: 16px;
+					font-size: 1rem;
 				}
 				.button{
 					float: right;
@@ -351,7 +348,7 @@
 	}
 
 	.attr {
-		font-size: 0.813em;
+		font-size: .8rem;
 		line-height: 250%;
 		margin-bottom: 20px;
 	}
@@ -520,7 +517,7 @@
 	}
 }
 .result {
-	font-size: 1.8em;
+	font-size: 1rem;
 	line-height: 140%;
 	text-align: center;
 	color: #000;
