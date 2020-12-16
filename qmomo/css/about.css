@@ -857,23 +857,75 @@ input[type=number]::-webkit-outer-spin-button {
   margin-left: 15px;
   padding: 10px 20px;
 }
+.about_menu a:hover {
+  color: black;
+}
 
 .about_content {
   flex: 0 0 85%;
-  padding: 0 40px 40px;
+  padding: 0 0 0 40px;
   font-size: 0.9rem;
 }
 .about_content h3 {
   margin: 0 0 10px;
-  padding: 8px 0 8px 10px;
+  padding: 6px 0 6px 10px;
   border-left: 20px solid #fdd8d6;
 }
 .about_content img {
+  display: block;
   width: 100%;
+  margin: 0 0 10px;
 }
 .about_content p {
   margin: 0 0 10px;
   line-height: 2.2;
+}
+
+.store_block {
+  display: flex;
+  flex-flow: row wrap;
+}
+.store_block .store {
+  flex: 0 0 32%;
+  margin: 0 10px 20px 0;
+  padding: 0;
+  border: 1px solid #ccc;
+}
+.store_block .store img {
+  margin: 0;
+}
+.store_block .info {
+  padding: 10px 15px;
+}
+.store_block .info .tel {
+  margin: 0 0 5px;
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+.store_block .info a {
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+.store_block .info .fa-map-marker-alt {
+  font-size: 0.92rem;
+}
+.store_block .info i {
+  margin: 0 5px 0 0;
+}
+
+.privacy_block {
+  margin: 20px 0;
+}
+.privacy_block .sm_title {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.privacy_block p {
+  line-height: 1.8;
+}
+.privacy_block p a {
+  color: #06c;
 }
 
 .site-footer {

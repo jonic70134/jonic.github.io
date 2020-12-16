@@ -1067,7 +1067,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .line .color_block .active {
   display: flex;
-  justify-content: center;
 }
 .line .key {
   color: black;
@@ -1083,9 +1082,9 @@ input[type=number]::-webkit-outer-spin-button {
   z-index: 0;
 }
 .line .value > li {
-  padding: 8px 4px;
+  padding: 8px;
   margin: 0 8px 8px 0;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   position: relative;
   z-index: 0;
   cursor: pointer;
