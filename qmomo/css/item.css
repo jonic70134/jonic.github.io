@@ -1090,6 +1090,7 @@ input[type=number]::-webkit-outer-spin-button {
   z-index: 0;
 }
 .line .value > li {
+  display: block;
   padding: 8px;
   margin: 0 8px 8px 0;
   font-size: 0.75rem;
@@ -1161,6 +1162,7 @@ input[type=number]::-webkit-outer-spin-button {
   border: 2px dashed #ccc;
 }
 .line.size .value .active {
+  display: block;
   border: 1px solid #333;
   background-color: #fde3e6;
   -webkit-border-radius: 5px;
