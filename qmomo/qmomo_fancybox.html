@@ -6,24 +6,24 @@
   </div>
   <div class="line color">
     <div class="sm_title">顏色</div>
-    <ul class="value">
-      <li class="img disabled" title="已售完">
+    <ul class="value color_link">
+      <li class="img" data-color="color1">
         <div class="photo"><img src="img/color_purple.png" alt="顏色" title="顏色"/></div>
         <p>迷幻紫</p>
       </li>
-      <li class="img">
+      <li class="img active" data-color="color2">
         <div class="photo"><img src="img/color_white.png" alt="顏色" title="顏色"/></div>
         <p>你好白</p>
       </li>
-      <li class="img">
+      <li class="img" data-color="color3">
         <div class="photo"><img src="img/color_red.png" alt="顏色" title="顏色"/></div>
         <p>熱力紅</p>
       </li>
-      <li class="img">
+      <li class="img" data-color="color4">
         <div class="photo"><img src="img/color_green.png" alt="顏色" title="顏色"/></div>
         <p>湖水綠</p>
       </li>
-      <li class="img active">
+      <li class="img" data-color="color5">
         <div class="photo"><img src="img/color_orange.png" alt="顏色" title="顏色"/></div>
         <p>暖心橘</p>
       </li>
@@ -31,115 +31,220 @@
   </div>
   <div class="line size">
     <div class="sm_title">內衣尺寸</div>
-    <ul class="value">
-      <li class="disabled" title="已售完">65A</li>
-      <li>65B</li>
-      <li>65C</li>
-      <li>65D</li>
-      <li class="active">65E</li>
-      <li>65F</li>
-      <li>65G</li>
-      <li>65H</li>
-      <li>65I</li>
-      <li>70A</li>
-      <li>70B</li>
-      <li>70C</li>
-      <li>70D</li>
-      <li>70E</li>
-      <li>70F</li>
-      <li>70G</li>
-      <li>70H</li>
-      <li>70I</li>
-      <li>75A</li>
-      <li>75B</li>
-      <li>75C</li>
-      <li>75D</li>
-      <li>75E</li>
-      <li>75F</li>
-      <li>75G</li>
-      <li>75H</li>
-      <li>75I</li>
-      <li>80A</li>
-      <li>80B</li>
-      <li>80C</li>
-      <li>80D</li>
-      <li>80E</li>
-      <li>80F</li>
-      <li>80G</li>
-      <li>80H</li>
-      <li>80I</li>
-      <li>85A</li>
-      <li>85B</li>
-      <li>85C</li>
-      <li>85D</li>
-      <li>85E</li>
-      <li>85F</li>
-      <li>85G</li>
-      <li>85H</li>
-      <li>85I</li>
-      <li>90A</li>
-      <li>90B</li>
-      <li>90C</li>
-      <li>90D</li>
-      <li>90E</li>
-      <li>90F</li>
-      <li>90G</li>
-      <li>90H</li>
-      <li>90I</li>
-      <li>95A</li>
-      <li>95B</li>
-      <li>95C</li>
-      <li>95D</li>
-      <li>95E</li>
-      <li>95F</li>
-      <li>95G</li>
-      <li>95H</li>
-      <li>95I</li>
-      <li>100A</li>
-      <li>100B</li>
-      <li>100C</li>
-      <li>100D</li>
-      <li>100E</li>
-      <li>100F</li>
-      <li>100G</li>
-      <li>100H</li>
-      <li>100I</li>
-      <li>105A</li>
-      <li>105B</li>
-      <li>105C</li>
-      <li>105D</li>
-      <li>105E</li>
-      <li>105F</li>
-      <li>105G</li>
-      <li>105H</li>
-      <li>105I</li>
-    </ul>
+    <div class="color_block">
+      <ul class="value color_content" id="color1">
+        <li class="disabled" title="已售完">65A</li>
+        <li>65B</li>
+        <li>65C</li>
+        <li>65D</li>
+        <li class="active">65E</li>
+        <li>65F</li>
+        <li>65G</li>
+        <li>65H</li>
+        <li>65L</li>
+        <li>70A</li>
+        <li>70B</li>
+        <li>70C</li>
+        <li>70D</li>
+        <li>70E</li>
+        <li>70F</li>
+        <li>70G</li>
+        <li>70H</li>
+        <li>70L</li>
+        <li>75A</li>
+        <li>75B</li>
+        <li>75C</li>
+        <li>75D</li>
+        <li>75E</li>
+        <li>75F</li>
+        <li>75G</li>
+        <li>75H</li>
+        <li>75L</li>
+        <li>80A</li>
+        <li>80B</li>
+        <li>80C</li>
+        <li>80D</li>
+        <li>80E</li>
+        <li>80F</li>
+        <li>80G</li>
+        <li>80H</li>
+        <li>80L</li>
+        <li>85A</li>
+        <li>85B</li>
+        <li>85C</li>
+        <li>85D</li>
+        <li>85E</li>
+        <li>85F</li>
+        <li>85G</li>
+        <li>85H</li>
+        <li>85L</li>
+        <li>90A</li>
+        <li>90B</li>
+        <li>90C</li>
+        <li>90D</li>
+        <li>90E</li>
+        <li>90F</li>
+        <li>90G</li>
+        <li>90H</li>
+        <li>90L</li>
+        <li>95A</li>
+        <li>95B</li>
+        <li>95C</li>
+        <li>95D</li>
+        <li>95E</li>
+        <li>95F</li>
+        <li>95G</li>
+        <li>95H</li>
+        <li>95L</li>
+        <li>100A</li>
+        <li>100B</li>
+        <li>100C</li>
+        <li>100D</li>
+        <li>100E</li>
+        <li>100F</li>
+        <li>100G</li>
+        <li>100H</li>
+        <li>100L</li>
+        <li>105A</li>
+        <li>105B</li>
+        <li>105C</li>
+        <li>105D</li>
+        <li>105E</li>
+        <li>105F</li>
+        <li>105G</li>
+        <li>105H</li>
+        <li>105L</li>
+      </ul>
+      <ul class="value active color_content" id="color2">
+        <li>65A</li>
+        <li>65B</li>
+        <li>65C</li>
+        <li>65D</li>
+        <li>65E</li>
+        <li>65F</li>
+        <li>65G</li>
+        <li>65H</li>
+        <li>65L</li>
+        <li>70A</li>
+        <li>70B</li>
+        <li>70C</li>
+        <li>70D</li>
+        <li>70E</li>
+        <li>70F</li>
+        <li>70G</li>
+        <li>70H</li>
+        <li>70L</li>
+        <li>75A</li>
+        <li>75B</li>
+        <li>75C</li>
+        <li>75D</li>
+        <li>75E</li>
+        <li>75F</li>
+        <li>75G</li>
+        <li>75H</li>
+        <li>75L</li>
+      </ul>
+      <ul class="value color_content" id="color3">
+        <li>65A</li>
+        <li>65B</li>
+        <li>65C</li>
+        <li>65D</li>
+        <li>65E</li>
+        <li>65F</li>
+        <li>65G</li>
+        <li>65H</li>
+        <li>65L</li>
+        <li>70A</li>
+        <li>70B</li>
+        <li>70C</li>
+        <li>70D</li>
+        <li>70E</li>
+        <li>70F</li>
+        <li>70G</li>
+        <li>70H</li>
+        <li>70L</li>
+      </ul>
+      <ul class="value color_content" id="color4">
+        <li>70A</li>
+        <li>70B</li>
+        <li>70C</li>
+        <li>70D</li>
+        <li>70E</li>
+        <li>70F</li>
+        <li>70G</li>
+        <li>70H</li>
+        <li>70L</li>
+        <li>75A</li>
+        <li>75B</li>
+        <li>75C</li>
+        <li>75D</li>
+        <li>75E</li>
+        <li>75F</li>
+        <li>75G</li>
+        <li>75H</li>
+        <li>75L</li>
+      </ul>
+      <ul class="value color_content" id="color5">
+        <li>75A</li>
+        <li>75B</li>
+        <li>75C</li>
+        <li>75D</li>
+        <li>75E</li>
+        <li>75F</li>
+        <li>75G</li>
+        <li>75H</li>
+        <li>75L</li>
+        <li>80A</li>
+        <li>80B</li>
+        <li>80C</li>
+        <li>80D</li>
+        <li>80E</li>
+        <li>80F</li>
+        <li>80G</li>
+        <li>80H</li>
+        <li>80L</li>
+      </ul>
+    </div>
   </div>
   <div class="line size">
-    <div class="sm_title">內褲尺寸</div>
-    <ul class="value">
-      <li class="disabled" title="已售完">S</li>
-      <li>S+</li>
-      <li>M</li>
-      <li>M+</li>
-      <li class="active">L</li>
-      <li>L+</li>
-      <li>XL</li>
-      <li>2XL</li>
-      <li>3XL</li>
-      <li>4XL</li>
-    </ul>
+    <div class="sm_title">內褲選擇</div>
+    <div class="size_block">
+      <ul class="value size_link">
+        <li title="已售完" data-size="size-1">成套內褲</li>
+        <li data-size="size-2">我要選他款內褲</li>
+        <li data-size="size-3">我不需要內褲</li>
+      </ul>
+      <ul class="value size_content" id="size-1">
+        <li class="disabled">三角 S</li>
+        <li class="active">三角 M</li>
+        <li>三角 L</li>
+        <li>三角 XL</li>
+        <li>三角 2XL</li>
+        <li>三角 3XL</li>
+        <li>三角 S</li>
+        <li>四角 M</li>
+        <li>四角 L</li>
+        <li>四角 XL</li>
+        <li>四角 2XL</li>
+        <li>四角 3XL</li>
+      </ul>
+      <ul class="value size_content" id="size-2"> 
+        <li>A款 三角 S</li>
+        <li>B款 三角 S</li>
+        <li>C款 三角 S</li>
+      </ul>
+      <ul class="value size_content" id="size-3"></ul>
+    </div>
   </div>
   <div class="line addcart">
     <div class="quantity-add">
       <div class="quantity">
         <p class="quantity-decrease"> <i class="fas fa-minus"></i></p>
-        <input class="quantity-input" type="text" value="1" max="10" title="請輸入購買量"/>
+        <input class="quantity-input" type="number" value="1" max="10" title="請輸入購買量"/>
         <p class="quantity-increase"> <i class="fas fa-plus"></i></p>
       </div>
-      <button class="button large btn-notify">貨到通知</button>
+      <button class="button large btn-ordernow">立刻購買</button>
       <button class="button large btn-addcart">加入購物車</button>
-      <button class="button large btn-ordernow">立即結帳</button>
     </div>
   </div>
 </div>

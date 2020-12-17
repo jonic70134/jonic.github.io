@@ -73,7 +73,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   animation-iteration-count: infinite;
 }
 .wpf-loader-two .wpf-loader-two-inner span {
-  color: #fff;
+  color: white;
   display: inline-block;
   margin-top: 42%;
 }
@@ -104,6 +104,10 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   border-left: none;
   border-right: none;
 }
+.quantity .quantity-input::-webkit-outer-spin-button, .quantity .quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .quantity .quantity-decrease, .quantity .quantity-increase {
   width: 35px;
   padding: 7px;
@@ -116,6 +120,9 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 .quantity .quantity-decrease i, .quantity .quantity-increase i {
   color: #777;
+}
+.quantity input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .no-padding {
@@ -173,7 +180,6 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
   margin: 0 -10px;
 }
 
@@ -771,6 +777,9 @@ input[type=number]::-webkit-outer-spin-button {
   border-bottom-color: #e9e9e9;
   border-width: 11px;
   margin-left: -11px;
+}
+.site-menu .sub_menu li a {
+  white-space: normal;
 }
 
 .select_box {

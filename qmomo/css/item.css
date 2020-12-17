@@ -73,7 +73,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   animation-iteration-count: infinite;
 }
 .wpf-loader-two .wpf-loader-two-inner span {
-  color: #fff;
+  color: white;
   display: inline-block;
   margin-top: 42%;
 }
@@ -104,6 +104,10 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   border-left: none;
   border-right: none;
 }
+.quantity .quantity-input::-webkit-outer-spin-button, .quantity .quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .quantity .quantity-decrease, .quantity .quantity-increase {
   width: 35px;
   padding: 7px;
@@ -116,6 +120,9 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 .quantity .quantity-decrease i, .quantity .quantity-increase i {
   color: #777;
+}
+.quantity input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .no-padding {
@@ -173,7 +180,6 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
   margin: 0 -10px;
 }
 
@@ -772,6 +778,9 @@ input[type=number]::-webkit-outer-spin-button {
   border-width: 11px;
   margin-left: -11px;
 }
+.site-menu .sub_menu li a {
+  white-space: normal;
+}
 
 .select_box {
   position: relative;
@@ -836,24 +845,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .item_main .container {
   width: 1220px;
-}
-
-.line .button {
-  width: auto;
-  height: auto;
-  margin-left: 10px;
-  padding: 15px 40px;
-  border: none;
-  color: white;
-  font-size: 0.9rem;
-  text-decoration: none;
-  letter-spacing: 2px;
-  background: #ff5353;
-  -webkit-appearance: none;
-  -webkit-user-select: none;
-  user-select: none;
-  transition: 0.6s;
-  cursor: pointer;
 }
 
 .item_top {
@@ -1050,6 +1041,23 @@ input[type=number]::-webkit-outer-spin-button {
 .line {
   margin: 0 0 10px;
 }
+.line .button {
+  width: auto;
+  height: auto;
+  margin-left: 10px;
+  padding: 15px 40px;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+  letter-spacing: 2px;
+  background: #ff5353;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: 0.6s;
+  cursor: pointer;
+}
 .line .sm_title {
   padding: 0 0 10px;
 }
@@ -1192,6 +1200,13 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .line .quantity .quantity-decrease, .line .quantity .quantity-increase, .line .quantity .quantity-input {
   border: none;
+}
+.line .quantity .quantity-decrease::-webkit-outer-spin-button, .line .quantity .quantity-decrease::-webkit-inner-spin-button, .line .quantity .quantity-increase::-webkit-outer-spin-button, .line .quantity .quantity-increase::-webkit-inner-spin-button, .line .quantity .quantity-input::-webkit-outer-spin-button, .line .quantity .quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.line .quantity input[type=number] {
+  -moz-appearance: textfield;
 }
 .line .quantity-add {
   display: flex;

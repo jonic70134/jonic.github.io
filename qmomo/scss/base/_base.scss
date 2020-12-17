@@ -23,62 +23,58 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	top: 0;
 	width: 100%;
 	z-index: 99999;
-  
 	.wpf-loader-two-inner {
-	  border: 2px solid #fff;
-	  border-radius: 50%;
-	  height: 100px;
-	  left: 46%;
-	  position: absolute;
-	  top: 40%;
-	  width: 100px;
-	  text-align: center;
-  
-	  &:before {
-		background: $theme-color;
-		content: "";
-		height: 57%;
-		left: -204px;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		height: 100px;
+		left: 46%;
 		position: absolute;
-		top: -5px;
-		transition: all 0.5s ease 0s;
-		width: 200px;
-		-webkit-animation-name: loader-two-before-transition;
-		-webkit-animation-duration: 1.5s;
-		-webkit-animation-timing-function: linear;
-		-webkit-animation-iteration-count: infinite;
-		animation-name: loader-two-before-transition;
-		animation-duration: 1.5s;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-	  }
-  
-	  &:after {
-		background: $theme-color;
-		content: "";
-		height: 57%;
-		left: 104%;
-		position: absolute;
-		top: 50%;
-		transition: all 0.5s ease 0s;
-		width: 200px;
-		-webkit-animation-name: loader-two-after-transition;
-		-webkit-animation-duration: 1.5s;
-		-webkit-animation-timing-function: linear;
-		-webkit-animation-iteration-count: infinite;
-		animation-name: loader-two-after-transition;
-		animation-duration: 1.5s;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-	  }
-  
-	  span {
-		color: #fff;
-		display: inline-block;
-		margin-top: 42%;
-	  }
+		top: 40%;
+		width: 100px;
+		text-align: center;
+		&:before {
+			background: $theme-color;
+			content: "";
+			height: 57%;
+			left: -204px;
+			position: absolute;
+			top: -5px;
+			transition: all 0.5s ease 0s;
+			width: 200px;
+			-webkit-animation-name: loader-two-before-transition;
+			-webkit-animation-duration: 1.5s;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-iteration-count: infinite;
+			animation-name: loader-two-before-transition;
+			animation-duration: 1.5s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+		&:after {
+			background: $theme-color;
+			content: "";
+			height: 57%;
+			left: 104%;
+			position: absolute;
+			top: 50%;
+			transition: all 0.5s ease 0s;
+			width: 200px;
+			-webkit-animation-name: loader-two-after-transition;
+			-webkit-animation-duration: 1.5s;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-iteration-count: infinite;
+			animation-name: loader-two-after-transition;
+			animation-duration: 1.5s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+		span {
+			color: white;
+			display: inline-block;
+			margin-top: 42%;
+		}
 	}
-  }
+}
 .quantity {
 	display: flex;
 	flex-flow: row nowrap;
@@ -103,7 +99,10 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 		border: 1px solid #ccc;
 		border-left: none;
 		border-right: none;
-		
+		&::-webkit-outer-spin-button,&::-webkit-inner-spin-button{
+			-webkit-appearance: none;
+			  margin: 0;
+		}
 	}
 
 	.quantity-decrease, .quantity-increase {
@@ -120,6 +119,9 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 		i{
 			color:#777;
 		}
+	}
+	input[type=number] {
+		-moz-appearance: textfield;
 	}
 }
 .no-padding{
@@ -174,7 +176,6 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	display: flex;
 	flex-flow:row wrap;
 	align-items: center;
-	justify-content:space-between;
 	margin:0 -10px;
 }
 .item{
