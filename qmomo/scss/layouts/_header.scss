@@ -326,36 +326,15 @@
 	.sub_menu{
 		display: none;
 		position: absolute;top:100%;left:0;
-		width:100%;
+		min-width:100%;
 		text-align: center;	
 		background-color:white;
 		z-index: 10;
 		@include box-shadow(0,2px,5px ,#aaa);
-		&:after, &:before {
-			bottom: 100%;
-			left: 50%;
-			border: solid transparent;
-			content: " ";
-			height: 0;
-			width: 0;
-			position: absolute;
-			pointer-events: none;
-		}
-		&:after {
-			border-color: rgba(255, 255, 255, 0);
-			border-bottom-color: #fff;
-			border-width: 10px;
-			margin-left: -10px;
-		}
-		&:before {
-			border-color: rgba(233, 233, 233, 0);
-			border-bottom-color: #e9e9e9;
-			border-width: 11px;
-			margin-left: -11px;
-		}
+		
 		li{
 			a{
-				white-space: normal;
+				white-space: nowrap;
 			}
 		}
 	}

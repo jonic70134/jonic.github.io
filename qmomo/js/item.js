@@ -53,8 +53,12 @@ jQuery(function($){
 		return false;
 	});
 
-
-	
+	// 看更多評價
+	$('.review').slice(0, 5).css('display','flex');//一開始顯示5則
+    $('.loadmore').click(function (e) {
+        e.preventDefault();
+        $('.review:hidden').slice(0, 5).slideDown().css('display','flex');//每按一次再多顯示五則
+    });
 	
 });
 
