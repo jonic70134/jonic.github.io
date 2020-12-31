@@ -4,6 +4,7 @@
 @import 'base/_reset.scss';
 
 @import 'layouts/_header.scss';
+@import 'layouts/_qmomo_fancybox.scss';
 .item_main{
 	.container{
 		width:1220px;
@@ -24,14 +25,14 @@
 		margin: 0 20px 10px 0;	
 	}
 }
-
-.swiper-container{
-	width:100%;
-	margin-bottom:20px;
-	background-color: black;
-	.swiper-slide{
-		img{
-			width:100%;
+.item_top_left{
+	.swiper-container{
+		width:100%;
+		background-color: black;
+		.swiper-slide{
+			img{
+				width:100%;
+			}
 		}
 	}
 }
@@ -44,6 +45,7 @@
 .photo-other{
 	display: flex;
 	flex-flow:row wrap;
+	margin-top:20px;
 	.thumb{
 		display: block;
 		position: relative;
@@ -564,6 +566,19 @@
 		background-color: #999;
 		cursor: pointer;
 		@include border-radius(5px);
+	}
+}
+.relative_prod{
+	.swiper-slide{
+		max-width:300px;
+		.item{
+			width:initial;
+			max-width:300px;
+		}
+		img{
+			width:100%;
+			max-width:300px;
+		}
 	}
 }
 @import 'layouts/_footer.scss';

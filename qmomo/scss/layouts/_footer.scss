@@ -95,42 +95,6 @@
 		margin:3px 0 0 1px;
 		font-size:.75rem;
 	}
-	// .foot_top_block{
-	// 	display: flex;
-	// 	flex-flow: row nowrap;
-	// 	justify-content: space-between;
-	// 	width: 100%;
-	// 	min-height: 100px;
-	// 	padding: 40px 0;
-	// 	h3{
-	// 		padding-bottom: 10px;
-	// 		color: #333;
-	// 	}
-	// 	.social{
-	// 		.fb_fan{
-	// 			display: block;
-	// 			img{
-	// 				width:300px;
-	// 			}
-	// 		}
-	// 	}
-	// 	.foot_list{
-	// 		li{
-	// 			a{
-	// 				display: block;
-	// 				padding:3px 0;
-	// 				color: #555;
-	// 				font-size:.9rem;
-	// 				font-weight: 200;
-	// 				@include transition(all 0.5s);
-	// 				&:hover,&:focus{
-	// 					color: #999
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	//}
-	
 }
 // .down_app{
 // 	display: flex;
@@ -166,7 +130,7 @@
 // 		flex-flow: column nowrap;
 // 		margin:0 0 0 10px;
 // 	}
-// }
+// }                     
 .float_block{
 	position: fixed;bottom:50px; right:20px;
 	z-index: 30;
