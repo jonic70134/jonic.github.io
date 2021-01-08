@@ -21,6 +21,8 @@ jQuery(function($){
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
+		observer: true,
+		observeParents: true,
 	});
 	
 	//商品詳細內容tab

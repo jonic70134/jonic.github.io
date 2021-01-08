@@ -47,9 +47,13 @@ jQuery(function($){
 			$('.float_block').fadeOut();
 		}
 	});
-//Click to scroll to top
-	$('.gotop').click(function(){
+	//Click to scroll to top
+	$('.fa-chevron-up').click(function(){
 		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	$('.fa-chevron-down').click(function(){
+		$('html, body').animate({scrollTop : $(document).height()},800);
 		return false;
 	});
 	
@@ -90,7 +94,7 @@ jQuery(function($){
 		$('#'+size_conten_id).addClass('active');
 	});
 	// ciciza連結關閉
-	$('.ciciza_block .fa-times').click(function(){
-		$('.ciciza_block').hide();
-	});
+	// $('.ciciza_block .fa-times').click(function(){
+	// 	$('.ciciza_block').hide();
+	// });
 });

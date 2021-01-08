@@ -1285,60 +1285,42 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 .float_block {
   position: fixed;
   bottom: 50px;
-  right: 20px;
+  right: 0;
   z-index: 30;
+  display: flex;
+  flex-flow: column;
+}
+.float_block a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background-color: white;
+}
+.float_block a img {
+  width: 35px;
+  height: 35px;
+}
+.float_block a:last-child {
+  border: 1px solid #ccc;
+}
+.float_block .ciciza {
+  background-color: #f5d980;
 }
 
 .gotop {
-  position: relative;
-  width: 40px;
-  height: 40px;
+  display: flex;
+  flex-flow: column;
+  width: 50px;
+  height: auto;
+  padding: 5px;
+  border: 1px solid #ccc;
   background-color: white;
-  text-align: center;
-  font-size: 0.8rem;
-  cursor: pointer;
-  box-shadow: 1px 2px 5px #ccc;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms--border-radius: 50%;
-  border-radius: 50%;
 }
-.gotop .fa-angle-up {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 1.1rem;
-  transform: translate(-50%, -50%);
-}
-
-.ciciza_block {
-  position: fixed;
-  right: 20px;
-  top: 140px;
-  z-index: 30;
-}
-.ciciza_block .ciciza {
-  display: block;
-  margin: 0 0 15px;
-  padding: 28px 10px;
-  font-size: 1.1rem;
-  background-color: #feea6e;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms--border-radius: 50%;
-  border-radius: 50%;
-}
-.ciciza_block img {
-  width: 60px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms--border-radius: 50%;
-  border-radius: 50%;
-}
-.ciciza_block .fa-times {
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-size: 0.9rem;
+.gotop .fas {
+  font-size: 1rem;
+  padding: 3px 13px;
   cursor: pointer;
 }

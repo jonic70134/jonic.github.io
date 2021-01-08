@@ -486,7 +486,7 @@
 	img{
 		margin:0 auto;
 		display: block;
-		width:100%;
+		width:75%;
 	}
 }
 .review{
@@ -570,10 +570,9 @@
 }
 .relative_prod{
 	.swiper-slide{
-		max-width:300px;
+		box-sizing: border-box;
 		.item{
-			width:initial;
-			max-width:300px;
+			width:auto;
 		}
 		img{
 			width:100%;
