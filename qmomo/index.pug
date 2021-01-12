@@ -77,6 +77,46 @@ html(lang='zh-Hant-TW')
 						iframe(src='https://www.youtube.com/embed/MgZeFlFVis8' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
 		include _footer.pug
 		
+		.pop_slider
+			.swiper-container
+				.swiper-wrapper
+					.swiper-slide
+						a(href="#")
+							img(data-seq='', src='img/pop_slider_1.jpg', alt=' 親膚天絲')
+					.swiper-slide
+						a(href="#")
+							img(data-seq='', src='img/pop_slider_2.jpg', alt=' 親膚天絲')
+					.swiper-slide 
+						a(href="#")
+							img(data-seq='', src='img/pop_slider_3.jpg', alt=' 我只要陷阱妹')
+					.swiper-slide 
+						a(href="#")
+							img(data-seq='', src='img/pop_slider_4.jpg', alt=' 我愛睡覺覺')
+					.swiper-slide 
+						a(href="#")
+							img(data-seq='', src='img/pop_slider_5.jpg', alt=' 我愛睡覺覺')
+					.swiper-slide
+						a(href="#")
+							img(data-seq='', src='img/pop_slider_6.jpg', alt='美胸BraTop')  
+				.swiper-pagination.swiper-pagination-white
+			.pop-other
+				.thumb
+					p 新年活動
+				.thumb
+					p 運動內衣活動
+				.thumb
+					p COVID-19 注意事項
+				.thumb
+					p Qmomo app
+				.thumb
+					p 限量版2021年日曆
+				.thumb
+					p 內衣課程
+			.pop_bot
+				.status
+				.close_pop
+					p 關閉
+					i.fas.fa-times
 		.lightbox#index_ad(data-fancybox)
 			a(href="category.html")
 				img(src="img/index_popup_ad.jpg", alt="")

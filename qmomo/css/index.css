@@ -1182,6 +1182,71 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   color: white;
 }
 
+.pop_slider {
+  position: absolute;
+  top: 128px;
+  left: 0;
+  width: 300px;
+  height: 500px;
+  z-index: 30;
+}
+.pop_slider .pop-other {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: #eee;
+}
+.pop_slider .pop-other .thumb {
+  flex-basis: 33.3333333333%;
+  position: relative;
+  height: 70px;
+  color: #555;
+  background-color: #eee;
+  border: 1px solid #e7e7e7;
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+}
+.pop_slider .pop-other .thumb:hover {
+  color: black;
+  background-color: white;
+}
+.pop_slider .pop-other .thumb p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  max-height: 40px;
+  overflow: hidden;
+}
+.pop_slider .pop_bot {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.pop_slider .status {
+  flex-basis: 80%;
+}
+.pop_slider .close_pop {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.pop_slider .close_pop p {
+  margin: 0 5px 0 0;
+  font-size: 0.8rem;
+}
+.pop_slider .close_pop i {
+  color: white;
+  font-size: 0.75rem;
+}
+
 .site-footer {
   width: 100%;
   color: #585858;
