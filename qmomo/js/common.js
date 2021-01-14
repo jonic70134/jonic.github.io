@@ -40,13 +40,13 @@ jQuery(function($){
 	})
 
 //  下移300px後gotop按鈕出現
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 300) {
-			$('.float_block').fadeIn();
-		} else {
-			$('.float_block').fadeOut();
-		}
-	});
+	// $(window).scroll(function(){
+	// 	if ($(this).scrollTop() > 300) {
+	// 		$('.float_block').fadeIn();
+	// 	} else {
+	// 		$('.float_block').fadeOut();
+	// 	}
+	// });
 	//Click to scroll to top
 	$('.fa-chevron-up').click(function(){
 		$('html, body').animate({scrollTop : 0},800);

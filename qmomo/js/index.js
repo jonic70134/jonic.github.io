@@ -40,6 +40,9 @@ jQuery(function($){
 	});
 
 
+	$('.foot_link_open').click(function(){
+		$('.float_block').slideDown();
+	});
 	// tab
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');

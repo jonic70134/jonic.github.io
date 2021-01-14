@@ -191,6 +191,11 @@
 	background-color: #fff;
 	border: 1px solid #E9E9E9;
 	z-index: 20;
+	.cart_item_block{
+		max-height: 450px;
+		margin: 0 -9px 0 0;
+		overflow-y: auto;
+	}
 	.fa-shopping-cart{
 		font-size: 1rem;
 	}

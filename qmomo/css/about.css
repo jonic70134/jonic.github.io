@@ -611,6 +611,11 @@ input[type=number]::-webkit-outer-spin-button {
   border: 1px solid #E9E9E9;
   z-index: 20;
 }
+.cartbox .cart_item_block {
+  max-height: 450px;
+  margin: 0 -9px 0 0;
+  overflow-y: auto;
+}
 .cartbox .fa-shopping-cart {
   font-size: 1rem;
 }
@@ -1015,11 +1020,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 .float_block {
   position: fixed;
-  bottom: 50px;
+  bottom: 50%;
   right: 0;
   z-index: 30;
   display: flex;
   flex-flow: column;
+  transform: translateY(50%);
 }
 .float_block a {
   display: block;
@@ -1052,6 +1058,16 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .gotop .fas {
   font-size: 1rem;
-  padding: 3px 13px;
+  padding: 5px 13px;
+  cursor: pointer;
+}
+
+a.foot_link_open {
+  background-color: black;
+}
+a.foot_link_open .fa-chevron-right {
+  color: white;
+  font-size: 1.3rem;
+  padding: 10px 10px 10px 13px;
   cursor: pointer;
 }
