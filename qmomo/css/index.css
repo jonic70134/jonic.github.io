@@ -1363,6 +1363,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   transform: translateY(50%);
 }
 .float_block a {
+  position: relative;
   display: block;
   width: 50px;
   height: 50px;
@@ -1377,6 +1378,21 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 .float_block a:last-child {
   border: 1px solid #ccc;
+}
+.float_block a span {
+  display: none;
+  position: absolute;
+  right: 120%;
+  bottom: 50%;
+  transform: translateY(50%);
+  padding: 3px 5px;
+  font-size: 0.8rem;
+  color: white;
+  background-color: #333;
+  white-space: nowrap;
+}
+.float_block a:hover span {
+  display: block;
 }
 .float_block .ciciza {
   background-color: #f5d980;
