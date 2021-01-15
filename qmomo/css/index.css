@@ -621,7 +621,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 .cartbox:after, .cartbox:before {
   bottom: 100%;
-  left: 90%;
+  left: 91%;
   border: solid transparent;
   content: " ";
   height: 0;
@@ -714,6 +714,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding: 15px 0 0;
 }
 .cartbox .checkout {
   display: block;
