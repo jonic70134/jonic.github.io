@@ -142,12 +142,15 @@
 		display: block;
 		width:50px;height:50px;
 		padding:5px;
+		text-align: center;
 		border:1px solid #ccc;
 		border-bottom: none;
 		background-color: white;
 		img{
-			width:35px;
-			height:35px;
+			width: auto;
+			height: auto;
+			max-height: 100%;
+			max-width: 100%;
 		}
 		&:last-child{
 			border:1px solid #ccc;
@@ -167,9 +170,15 @@
 				display: block;
 			}
 		}
+		&.ig{
+			padding:10px;
+		}
 	}
 	.ciciza{
 		background-color: #f5d980;
+		img{
+			padding: 13px 0;
+		}
 	}
 }
 .gotop{
