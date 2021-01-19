@@ -50,7 +50,7 @@ jQuery(function($){
 	$('.quantity-increase').click(function () {
 		var $input = $(this).parent().find('.quantity-input');
 		var count = parseInt($input.val()) + 1;
-		count = count > 5 ? 5 : count;
+		count = count > 10 ? 10 : count;
 		$input.val(count);
 		$input.change();
 		return false;
@@ -61,6 +61,21 @@ jQuery(function($){
     $('.loadmore').click(function (e) {
         e.preventDefault();
         $('.review:hidden').slice(0, 5).slideDown().css('display','flex');//每按一次再多顯示五則
-    });
+	});
+	
+
+	//訊息提示小視窗
+	$('.addcart .quantity-increase').click(function () {
+		var maxItemNum=$('.addcart .quantity-input').val();
+		if(maxItemNum > 10){
+			$('.alert_window').show();
+		}else{
+			$('.alert_window').hide();
+		}
+	});
+	
+	$('.alert_close').click(function () {
+		$('.alert_window').hide();
+	});
 	
 });
