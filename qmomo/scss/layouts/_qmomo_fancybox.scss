@@ -25,6 +25,15 @@
 		.mid_title{
 			padding:0 10px 0 0;
 		}
+		.line{
+			display: flex;
+			flex-flow: column;
+			justify-content: space-between;
+		}
+		.price{
+			color: #fa6093;
+			font-size: 1.2rem;
+		}
 	}
 	.line{
 		.button{

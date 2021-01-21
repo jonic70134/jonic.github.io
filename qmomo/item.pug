@@ -319,6 +319,9 @@ html(lang='zh-Hant-TW')
 									input.quantity-input(type='number' value='1' max='10' title='請輸入購買量')
 									p.quantity-increase 
 										i.fas.fa-plus
+									.alert_window
+										.alert_content
+											p 本商品最多購買10件
 								//- button.button.large.btn-notify 貨到通知
 								button.button.large.btn-ordernow 立刻購買
 								button.button.large.btn-addcart 加入購物車
@@ -487,12 +490,6 @@ html(lang='zh-Hant-TW')
 															i.fas.fa-external-link-alt
 									.swiper-button-next.swiper-button-white
 									.swiper-button-prev.swiper-button-white
-		.alert_window
-			.overlay
-			.alert_content
-				.alert_close
-					i.fas.fa-times
-				p 商品數量最多只能買10個
 		include _footer.pug
 
 

@@ -273,6 +273,38 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 		}
 	}
 }
+.alert_window{
+	display:none;
+	position: absolute;left:-2px;top:-42px;
+	z-index: 20;
+	.alert_content{
+		padding:8px 10px;
+		font-size:.7rem;
+		color:white;
+		background:#333;
+		white-space: nowrap;
+	}
+	&:after {
+		position: absolute;
+		left: 45%;
+		content: '';
+		border-style: solid;
+		border-width: 5px 5px 0 5px;
+		border-color: #333 transparent transparent transparent;
+	}
+	// .alert_close{
+	// 	position: absolute;right:0;top:0;
+	// 	i{
+	// 		padding: 5px 10px;
+	// 		font-size: 1rem;
+	// 		text-align: center;
+	// 		background: #eee;
+	// 		color: #555;
+	// 		cursor: pointer;
+	// 		transition: all 0.3s ease-in-out;
+	// 	}
+	// }
+}
 
 @-webkit-keyframes loader-two-before-transition {
 	50% {

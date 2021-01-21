@@ -67,8 +67,11 @@ jQuery(function($){
 	//訊息提示小視窗
 	$('.addcart .quantity-increase').click(function () {
 		var maxItemNum=$('.addcart .quantity-input').val();
-		if(maxItemNum > 10){
-			$('.alert_window').show();
+		if(maxItemNum >= 10){
+			$('.alert_window').fadeIn('fast');
+			setTimeout(function(){
+				$('.alert_window').fadeOut('fast');
+			}, 2000);
 		}else{
 			$('.alert_window').hide();
 		}
