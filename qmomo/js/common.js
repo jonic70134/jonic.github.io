@@ -1,10 +1,6 @@
 jQuery(function($){
-
 	/* loading 動畫*/
 	$('.wpf-loader-two').delay(200).fadeOut('slow'); 
-	// $(window).load(function() { 
-	// 	$('#wpf-loader-two').delay(200).fadeOut('slow'); // will fade out    
-	// });
 
 	$(".line_app").hover(function(){
 			$(this).find(".line_box").stop().fadeIn(200);
@@ -57,18 +53,14 @@ jQuery(function($){
 		return false;
 	});
 	
-
-
 	// 愛心class切換	
 	$('.far.fa-heart').click(function(e){
 		e.preventDefault();
 		$(this).toggleClass("far fas");
 	});
-	
-
 
 	//選尺寸規格
-	$('.value>li').click(function(){
+	$('.value > li').click(function(){
 		if($(this).hasClass('disabled')){
 			return false;
 		}else{
@@ -97,4 +89,36 @@ jQuery(function($){
 	// $('.ciciza_block .fa-times').click(function(){
 	// 	$('.ciciza_block').hide();
 	// });
+
+	//點選商品圖彈出預覽畫面
+	// $('.item .photo a').on('click', function(e) {
+	// 	e.preventDefault();
+	// 	$.fancybox.open({
+	// 		src  : 'qmomo_fancybox.html#cart_popup',
+	// 		type : 'ajax',
+	// 		"touch" : false
+	// 	});
+	// });
+	// 預覽slider
+	var galleryThumbs = new Swiper('.gallery_thumbs', {
+		spaceBetween: 5,
+		slidesPerView: 5,
+		watchOverflow: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		direction: 'vertical',
+	});
+  
+	var galleryTop = new Swiper('.gallery_top', {
+		spaceBetween: 10,
+		observer:true,
+    	observeParents:true,
+		navigation: {
+			nextEl: '.gallery_top .swiper-button-next',
+			prevEl: '.gallery_top .swiper-button-prev',
+		},
+		thumbs: {
+			swiper: galleryThumbs
+		}
+	});
 });

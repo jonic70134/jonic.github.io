@@ -222,11 +222,12 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   display: flex;
   flex-flow: row nowrap;
 }
-.item .track i {
+.item .track i, .item .track a {
+  display: block;
   margin-right: 15px;
   color: #ccc;
 }
-.item .track i:last-child {
+.item .track i:last-child, .item .track a:last-child {
   margin: 0;
 }
 .item .track .fas.fa-heart {

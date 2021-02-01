@@ -6,6 +6,9 @@ html(lang='zh-Hant-TW')
 		
 		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
 		link(href='css/index.css', rel='stylesheet')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/index.js')
 		
 	body
 		.wpf-loader-two
@@ -76,7 +79,7 @@ html(lang='zh-Hant-TW')
 					.qmomo_video
 						iframe(src='https://www.youtube.com/embed/MgZeFlFVis8' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
 		include _footer.pug
-		
+		include qmomo_fancybox.pug
 		.pop_slider
 			.swiper-container
 				.swiper-wrapper
@@ -120,7 +123,5 @@ html(lang='zh-Hant-TW')
 		.lightbox#index_ad(data-fancybox)
 			a(href="category.html")
 				img(src="img/index_popup_ad.jpg", alt="")
-		script(src='js/jquery.fancybox.min.js')
-		script(src='js/common.js')
-		script(src='js/index.js')
+		
 		
