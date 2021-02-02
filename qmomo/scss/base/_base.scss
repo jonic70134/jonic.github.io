@@ -222,6 +222,7 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	.track{
 		display: flex;
 		flex-flow: row nowrap;
+		cursor: pointer;
 		i,a{
 			display: block;
 			margin-right:15px;

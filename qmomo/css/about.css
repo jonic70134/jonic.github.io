@@ -221,6 +221,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 .item .track {
   display: flex;
   flex-flow: row nowrap;
+  cursor: pointer;
 }
 .item .track i, .item .track a {
   display: block;

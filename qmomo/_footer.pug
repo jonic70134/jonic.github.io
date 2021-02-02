@@ -87,4 +87,45 @@ footer.site-footer
 		i.fas.fa-chevron-up
 		i.fas.fa-chevron-down
 
-		
+//- 圖片預覽視窗
+#cart_popup.cart_popup
+	.cart_pop_body
+		.cart_popup_top
+			.swiper-container.gallery_top
+				.swiper-wrapper
+					.swiper-slide
+						img(src='img/item_long_01.jpg', alt='親膚天絲')
+					.swiper-slide 
+						img(src='img/item_long_02.jpg', alt='我只要陷阱妹')
+					.swiper-slide 
+						img(src='img/item_long_03.jpg', alt='我愛睡覺覺')
+					.swiper-slide 
+						img(src='img/item_long_04.jpg', alt='我愛睡覺覺')
+					.swiper-slide
+						img(src='img/item_long_05.jpg', alt='美胸BraTop')
+					.swiper-slide
+						img(src='img/item_long_06.jpg', alt='運動內衣')
+					.swiper-slide
+						img(src='img/item_long_07.jpg', alt='運動內衣')
+				.swiper-button-next.swiper-button-white
+				.swiper-button-prev.swiper-button-white
+			.swiper-container.gallery_thumbs
+				.swiper-wrapper
+					.swiper-slide
+						img(src='img/item_long_01.jpg', alt='親膚天絲')
+					.swiper-slide 
+						img(src='img/item_long_02.jpg', alt='我只要陷阱妹')
+					.swiper-slide 
+						img(src='img/item_long_03.jpg', alt='我愛睡覺覺')
+					.swiper-slide 
+						img(src='img/item_long_04.jpg', alt='我愛睡覺覺')
+					.swiper-slide
+						img(src='img/item_long_05.jpg', alt='美胸BraTop')
+					.swiper-slide
+						img(src='img/item_long_06.jpg', alt='運動內衣')
+					.swiper-slide
+						img(src='img/item_long_07.jpg', alt='運動內衣')
+
+		a(href="item.html").button.large.btn-addcart 加入購物車
+		a.cart_pop_close(href="#")
+			i.fas.fa-times

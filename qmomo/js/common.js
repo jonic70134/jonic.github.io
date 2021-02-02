@@ -91,14 +91,16 @@ jQuery(function($){
 	// });
 
 	//點選商品圖彈出預覽畫面
-	// $('.item .photo a').on('click', function(e) {
-	// 	e.preventDefault();
-	// 	$.fancybox.open({
-	// 		src  : 'qmomo_fancybox.html#cart_popup',
-	// 		type : 'ajax',
-	// 		"touch" : false
-	// 	});
-	// });
+	$('.item .photo a').on('click', function(e) {
+		e.preventDefault();
+		$('.cart_popup').css('visibility','visible');
+		$('body').css('overflow','hidden');
+	});
+	$('.cart_pop_close').on('click', function(e) {
+		e.preventDefault();
+		$('.cart_popup').css('visibility','hidden');
+		$('body').css('overflow','auto');
+	});
 	// 預覽slider
 	var galleryThumbs = new Swiper('.gallery_thumbs', {
 		spaceBetween: 5,
