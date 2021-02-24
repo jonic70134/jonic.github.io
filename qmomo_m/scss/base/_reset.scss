@@ -1,0 +1,108 @@
+/*reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, th, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+	background: transparent;
+	box-sizing: border-box;
+}
+  
+  /* HTML5 display-role reset for older browsers */
+
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote {
+    &:before, &:after {
+		content: '';
+		content: none;
+	}
+}
+  
+q {
+	&:before, &:after {
+		content: '';
+		content: none;
+	}
+}
+  
+table {border-collapse: collapse;border-spacing: 0;}
+:focus {outline: 0;}
+caption {text-align: left;}
+:link {
+	text-decoration: none;
+	outline: none;
+	/* for Firefox */
+	hlbr: expression(this.onFocus=this.blur());
+	/* for IE */
+}
+  
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	color:#333;
+}
+  
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+  
+input, select {
+	vertical-align: middle;
+}
+::-webkit-input-placeholder { /* Edge */
+	color: #ccc;
+  }  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #ccc;
+}
+::placeholder {
+	color: #ccc;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+  
+* {
+	html .clearfix {
+		height: 1%;
+	}
+	&:first-child + html .clearfix {
+		min-height: 1px;
+	}
+}
+html {
+	height: 100%;
+}
+body {
+	min-width: 320px;
+	font-size: 16px;
+	line-height: 1.4;
+	color:#333;
+	font-family: 'open sans', 'Microsoft JhengHei',sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+	opacity: 1;
+}
