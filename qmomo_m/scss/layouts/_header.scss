@@ -335,6 +335,7 @@
 	width: 0;
 	background-color: white;
 	z-index: 40;
+	box-shadow: 1px 1px 5px #aaa;
 	&.active{
 		width: 80%;
 		min-width: 240px;

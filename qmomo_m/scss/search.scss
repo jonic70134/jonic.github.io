@@ -12,14 +12,18 @@
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		align-items: center;
-		margin:30px 15px 15px;
+		margin:15px 10px;
+		.mid_title{
+			color:#999;
+			font-size:1rem;
+		}
 	}
 	.search{
 		display: flex;
 		flex-flow: row nowrap;
 		align-items: center;
 		position: relative;
-		width:500px;
+		width:300px;
 		margin-right:10px;
 		input[type="text"]{
 			width: 100%;
@@ -43,19 +47,62 @@
 			@include transition(all 0.5s);
 			@include border-radius(30px);
 			&:hover{
-				opacity: 0.8;	
-			}	
+				opacity: 0.8;
+			}
 		}
 		.fa-search{
 			position: absolute;top:7px;left:10px;
 			color:#555;
 		}
 	}
-
+	
+	.select_sort{
+		position: relative;
+		display: flex;
+		width: 140px;
+		height: 30px;
+		line-height: 1.4;
+		background: #2c3e50;
+		overflow: hidden;
+		border-radius:5px;
+		select{
+			flex: 1;
+			padding: 0 10px;
+			font-size:.9rem;
+			color: #fff;
+			cursor: pointer;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			-ms-appearance: none;
+			appearance: none;
+			outline: 0;
+			box-shadow: none;
+			border: 0 !important;
+			background: #ffadad;
+			background-image: none;
+		}
+		&::after{
+			content: '\25BC';
+			position: absolute;top: 50%;right: 0;
+			margin-top:-7px;
+			padding: 0 10px;
+			font-size:.7rem;
+			color:white;
+			cursor: pointer;
+			pointer-events: none;
+			-webkit-transition: .25s all ease;
+			-o-transition: .25s all ease;
+			transition: .25s all ease;
+		}
+	}
 	.attr {
+		display: none;
 		font-size: 0.813em;
 		line-height: 250%;
 		margin-bottom: 20px;
+		&.is-expand{
+			display: block;
+		}
 	}
 
 	.attrcon {
@@ -246,8 +293,8 @@
 }
 .sort{
 	display: inline-flex;
-	flex-flow: row nowrap;
-	justify-content: flex-end;
+	flex-flow: row wrap;
+	justify-content:space-evenly;
 	padding:0;
 	font-size:.9rem;
 	label{

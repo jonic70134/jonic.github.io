@@ -7,44 +7,44 @@
 	.inner{
 		display: flex;
 		flex-flow: row nowrap;
-		padding:50px 0;
-		border-top:1px solid #333;
+		font-size:.85rem;
 		p{ 
-			font-size:.7rem;
 			line-height: 1.8;
 		}
 	}
 	.foot_left{
 		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-		align-items: flex-start;
-		flex:0 0 62%;
-		padding:0 20px;
+		flex:0 0 50%;
+		justify-content: center;
+		align-items: center;
+		padding:0 10px;
+		text-align: center;
 		border-right:1px solid #eee;
 	}
 	.contact{
-		flex: 0 0 60%;
+		
 	}
 	.foot_logo{
-		width:150px;
-		margin:0 0 10px;
+		display: block;
+		width:120px;
+		margin:0 auto 10px;
+		text-align: center;
 	}
 	.time{
 		margin:3px 0 0;
 	}
 	.sitemap_block{
 		display: flex;
-		flex-flow:column;
-		flex: 0 0 40%;
-		padding: 68px 20px 0;
+		justify-content: center;
 	}
 	.site_map_bot{
 		display: flex;
 		flex-flow: row nowrap;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 200px;
 	}
 	.sitemap{
-		margin:30px 70px 0 0;
 		&:last-child{
 			margin-right:0;
 		}
@@ -55,17 +55,17 @@
 		}
 		a{
 			display: block;
-			font-size:.7rem;
-			line-height: 1.8;
+			font-size:.9rem;
+			line-height: 2.4;
 			letter-spacing: 0.5px;
 		}
 	}
 	.foot_right{
 		display: flex;
 		flex-flow: column nowrap;
-		align-items: center;
-		flex:0 0 38%;
-		padding:10px 40px;
+		flex:0 0 50%;
+		padding:10px;
+		text-align: left;
 		.sm_title{
 			width:100%;
 			margin:0 0 20px;
@@ -73,24 +73,38 @@
 		}
 	}
 	.ciciza_foot{
+		display: flex;
+		align-items: center;
+		text-align: center;
+		.sm_title,a{
+			flex: 50%;
+			line-height: 1.8;
+		}
 		img{
-			width:300px;
+			width:100%;
 		}
 	}
 	.social{
 		display: flex;
 		flex-flow: row nowrap;
+		justify-content: center;
 		padding:10px 0;
+		border-top:1px solid #333;
 		a{
 			display: block;
 			margin-right:15px;
 			font-size:1.4rem;
 			@include border-radius(50%);
+			&:last-child{
+				margin:0;
+			}
 		}
 	}
 	.copyright{
-		margin:3px 0 0 1px;
-		font-size:.75rem;
+		margin:3px 0 0;
+		padding: 10px 0;
+		text-align: center;
+		font-size:.7rem;
 	}
 }                   
 .float_block{
@@ -165,5 +179,33 @@ a.foot_link_open{
 		font-size: 1.3rem;
 		padding: 10px 10px 10px 13px;
 		cursor: pointer;
+	}
+}
+
+@media (max-width:480px) {
+	.site-footer{
+		.ciciza_foot{
+			position: relative;
+			.sm_title{
+				position: absolute;
+				left: 20px;
+				top: 17%;
+				color: #eee;
+				text-align: left;
+			}
+		}
+	}
+}
+
+@media (max-width:360px) {
+	.site-footer{
+		.inner{
+			font-size:.75rem;
+		}
+		.sitemap{
+			a{
+				font-size:.75rem;
+			}
+		}
 	}
 }

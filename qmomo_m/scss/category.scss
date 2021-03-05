@@ -18,18 +18,17 @@
 	padding:10px 0;
 	.container{
 		display: flex;
-		flex-flow: row nowrap;
+		flex-flow: column nowrap;
 		justify-content: space-between;
 		align-items: center;
-		
 		border-bottom:1px solid $theme-color;
 	}
 }
 .sort{
 	display: inline-flex;
-	flex-flow: row nowrap;
-	justify-content: flex-end;
-	padding:0;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	padding:10px 0 0;
 	font-size:.9rem;
 	label{
 		position: relative;

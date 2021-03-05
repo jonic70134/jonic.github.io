@@ -91,7 +91,7 @@ jQuery(function($){
 	// });
 
 	//點選商品圖彈出預覽畫面
-	$('.item .photo a').on('click', function(e) {
+	$('.item .track .fa-search').on('click', function(e) {
 		e.preventDefault();
 		$('.cart_popup').css('visibility','visible');
 		$('body').css('overflow','hidden');

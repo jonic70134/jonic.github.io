@@ -100,3 +100,9 @@ $(document).ready(function(){
         }
 	}
 });
+
+//排序區塊開合
+$('.btn-toggle-filter').on('click', function() {
+    $(this).toggleClass('is-active');
+    $('.attr').toggleClass('is-expand');
+});

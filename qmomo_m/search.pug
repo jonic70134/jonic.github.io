@@ -22,11 +22,15 @@ html(lang='zh-Hant-TW')
 		.filter
 			.container
 				.search_blcok 
-					h2.mid_title 商品搜尋
-					.search
-						input(type='text', name='', id='',placeholder='請輸入關鍵字')
-						a(href="search.html")
-							i.fa.fa-search
+					h2.mid_title "好辣小姐" 的搜尋結果
+					.select_sort
+						select#sort(name="sort") 
+							option(value="1") 店長推薦
+							option(value="2") 最新上架
+							option(value="3") 熱賣商品
+							option(value="4") 最多人看
+							option(value="5") 價格 低 → 高
+							option(value="6") 價格 高 → 低
 				.attr
 					.attrcon.special
 						.colst 其他人都在找
@@ -90,35 +94,6 @@ html(lang='zh-Hant-TW')
 							span ~
 							input.input-number(type='number' min='0' step='any')
 							button.button.btn-submit(type='submit') 搜尋
-		.sort_block
-			.container
-				.sm_title
-					| 共 168 個商品
-				.sort
-					label(for="sort1")
-						input(type="radio", name="sort" ,value="1", id="sort1" ,checked="checked")
-						span.checkmark
-						p 店長推薦
-					label(for="sort2")
-						input(type="radio", name="sort" ,value="2", id="sort2")
-						span.checkmark
-						p 最新上架
-					label(for="sort3")
-						input(type="radio", name="sort" ,value="3", id="sort3")
-						span.checkmark
-						p 熱賣商品
-					label(for="sort4")
-						input(type="radio", name="sort" ,value="4", id="sort4")
-						span.checkmark
-						p 最多人看
-					label(for="sort5")
-						input(type="radio", name="sort" ,value="5" ,id="sort5")
-						span.checkmark
-						p 價格 低 → 高
-					label(for="sort6")
-						input(type="radio", name="sort" ,value="6", id="sort6")
-						span.checkmark
-						p 價格 高 → 低
 		.category
 			.container
 				.items
