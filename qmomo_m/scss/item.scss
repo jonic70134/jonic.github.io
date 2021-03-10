@@ -5,7 +5,6 @@
 
 @import 'layouts/_header.scss';
 @import 'layouts/_qmomo_fancybox.scss';
-$item_top_left_width:450px;
 
 body{
 	position: relative;
@@ -18,14 +17,14 @@ body{
 .item_top{
 	display: flex;
 	flex-flow:row nowrap ;
-	padding:20px;
+	padding:20px 10px;
 }
 .item_top_left{
 	width:45%;
 }
 .item_top_right{
 	width:55%;
-	padding:0 20px 0 30px;
+	padding:0 15px;
 	.mid_title{
 		margin: 0 20px 10px 0;	
 	}
@@ -39,6 +38,12 @@ body{
 				width:100%;
 			}
 		}
+	}
+	.swiper-pagination{
+		display: none;
+	}
+	.swiper-pagination-bullet-active {
+		background-color: white;
 	}
 }
 .video_container{
@@ -54,13 +59,12 @@ body{
 	.thumb{
 		display: block;
 		position: relative;
-		width:100%;
-		max-width:($item_top_left_width/4-4);
-		margin:0 5px 5px 0;
+		width: 24%;
+		margin:0 0.5% 5px;
 		cursor: pointer;
-		&:nth-child(4n){
-			margin:0 0 5px;
-		}
+		// &:nth-child(4n){
+		// 	margin:0 0 5px;
+		// }
 		img{
 			width:100%;
 		}
@@ -81,6 +85,7 @@ body{
 	margin:10px auto;
 	padding:10px;
 	border:1px solid #eee;
+	display:none;
 }
 .pay{
 	display: flex;
@@ -210,7 +215,7 @@ body{
 		width: auto;
 		height: auto;
 		margin-left: 10px;
-		padding:15px 40px;
+		padding:10px 20px;
 		border: none;
 		color: white;
 		font-size:.9rem;
@@ -235,11 +240,10 @@ body{
 	}
 	&.color,&.size{
 		display: flex;
-		flex-flow:row nowrap;
+		flex-flow:column nowrap;
 		margin:10px 0;
 		.sm_title{
-			padding:0 10px 10px 0;
-			flex: 0 0 15%;
+			padding:0 10px 15px 0;
 		}
 	}
 	.color_block{
@@ -355,7 +359,7 @@ body{
 			&.size_link{
 				margin-bottom: 10px;
 				li{
-					flex:0 0 31%;
+					flex:0 0 28%;
 				}
 			}
 			&.size_content{
@@ -395,9 +399,8 @@ body{
 	.quantity-add {
 		display: flex;
 		flex-flow: row nowrap;
-		justify-content: center;
 		position: relative;
-		margin: 30px 0 ;
+		margin: 20px 0 ;
 	}
 	.btn-ordernow{
 		color:white;
@@ -441,6 +444,7 @@ body{
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
+	justify-content: center;
 	border-bottom: none;
 	li{
 		padding: 10px 15px;
@@ -454,7 +458,7 @@ body{
 	}
 }
 .tab_content{
-	padding:10px 15px;
+	padding:10px 0;
 	li{
 		font-size:.85rem;
 		line-height: 2.2;
@@ -482,11 +486,17 @@ body{
 }
 .detail_content{
 	.detail_video_container{
+		position:relative;
+		height:0;
+		padding-bottom:56.25%;
+		padding-top:30px;
+		overflow:hidden;
 		iframe,embed,object{
-			display: block;
-			width:800px;
-			height:630px;
-			margin:0 auto;
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
 		}
 	}
 	img{
@@ -586,4 +596,79 @@ body{
 		}
 	}
 }
+
+@media (max-width:767px) {
+	.item_top{
+		flex-flow: column nowrap;
+		padding: 10px;
+	}
+	.item_top_left,.item_top_right{
+		width:100%;
+	}
+	.item_top_left{
+		.swiper-pagination{
+			display: block;
+		}
+	}
+	.photo-other{
+		display: none;
+	}
+	.line{
+		&.size{
+			.value{
+				&.size_link{
+					li{
+						flex: auto;
+					}
+				}
+			}
+		}
+		
+		&.addcart{
+			position: fixed;bottom: 0;left: 0;
+			width: 100%;
+			margin: 0;
+			background: white;
+			z-index: 10;
+		}
+		
+		.quantity-add{
+			justify-content: center;
+		}
+	}
+	.site-footer{
+		padding:0 0 100px;
+	}
+}
+@media (max-width:400px) {
+	.item_top{
+		padding:0;
+	}
+	.item_top_right{
+		padding:0 10px;
+	}
+	.line{
+		.button{
+			padding:8px 10px;
+			letter-spacing:1px;
+		}
+	}
+	.quantity{
+		.quantity-input{
+			width:40px;
+		}
+		.quantity-decrease,.quantity-increase{
+			width:30px;
+		}
+	}
+	.tagblock{
+		.tag{
+			font-size:.7rem;
+		}
+		.price{
+			font-size:1rem;
+		}
+	}
+}
+
 @import 'layouts/_footer.scss';

@@ -2,8 +2,27 @@ jQuery(function($){
 	// 商品頁主圖slider
 	var itemSlider = new Swiper('.item_top_left .swiper-container', {
 		slidesPerView: 1,
-		spaceBetween: 30,
+		spaceBetween: 10,
 		loop: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+		// breakpoints: {
+		// 	767: {
+		// 		pagination: {
+		// 			el: '.swiper-pagination',
+		// 			type: 'bullets',
+		// 			clickable: true,
+		// 		},
+		// 	},
+		// },
+		
 	});
 	$(".photo-other").on('click', '.thumb', function(){
 		itemSlider.slideTo($(this).index()+1);	
@@ -15,7 +34,7 @@ jQuery(function($){
 	
 	// 相關商品Slider
 	var relativeSlider = new Swiper('.relative_prod .swiper-container', {
-		slidesPerView: 4,
+		slidesPerView: 2,
     	spaceBetween: 10,
 		navigation: {
 			nextEl: '.swiper-button-next',
@@ -23,6 +42,14 @@ jQuery(function($){
 		},
 		observer: true,
 		observeParents: true,
+		breakpoints: {
+			500: {
+				slidesPerView: 3,
+			},
+			767:{
+				slidesPerView: 4,
+			},
+		},
 	});
 	
 	//商品詳細內容tab

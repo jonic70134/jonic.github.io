@@ -66,9 +66,10 @@
 		}
 	}
 	.search-input{
+		position: absolute;top:100%;left:0;
 		display: none;
 		width: 100%;
-		position: absolute;top:100%;left:0;
+		box-shadow: 0 2px 5px #aaa;
 		input[type="text"]{
 			width: 100%;
 			padding: 15px;
