@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 body {
   background-color: #ffffff;
@@ -1009,7 +1010,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 .banner {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .banner a, .banner i, .banner img {
   display: block;
@@ -1017,14 +1018,15 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .sort_block {
-  margin: 20px 0 0;
+  margin: 10px 0 0;
   padding: 10px 0;
 }
 .sort_block .container {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  padding: 0 0 10px;
   border-bottom: 1px solid #ffadad;
 }
 
@@ -1074,6 +1076,44 @@ input[type=number]::-webkit-outer-spin-button {
   left: 0;
   top: 0;
   cursor: pointer;
+}
+
+.select_sort {
+  position: relative;
+  display: flex;
+  width: 140px;
+  height: 30px;
+  line-height: 1.4;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.select_sort select {
+  flex: 1;
+  padding: 0 10px;
+  font-size: 0.9rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #ffadad;
+  background-image: none;
+}
+.select_sort::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -7px;
+  padding: 0 10px;
+  font-size: 0.7rem;
+  color: white;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
 }
 
 .site-footer {
