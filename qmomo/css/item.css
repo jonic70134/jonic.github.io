@@ -944,6 +944,10 @@ body {
   display: block;
   width: 100%;
 }
+.item_top_left .video_container .iframe, .item_top_left .video_container .object, .item_top_left .video_container .embed {
+  top: 50%;
+  margin-top: -150px;
+}
 
 .video_container .iframe, .video_container .object, .video_container .embed {
   top: 20%;
