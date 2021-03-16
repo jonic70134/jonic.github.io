@@ -1,4 +1,123 @@
+/*reset*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, th, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+:link {
+  text-decoration: none;
+  outline: none;
+  /* for Firefox */
+  hlbr: expression(this.onFocus=this.blur());
+  /* for IE */
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  color: #333;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+::placeholder {
+  color: #ccc;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+*:first-child + html .clearfix {
+  min-height: 1px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #333;
+  font-family: "open sans", "Microsoft JhengHei", sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
 body {
   background-color: #ffffff;
   overflow-x: hidden;
@@ -320,125 +439,6 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
     transform: scaleY(0);
   }
 }
-/*reset*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, th, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  background: transparent;
-  box-sizing: border-box;
-}
-
-/* HTML5 display-role reset for older browsers */
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-:focus {
-  outline: 0;
-}
-
-caption {
-  text-align: left;
-}
-
-:link {
-  text-decoration: none;
-  outline: none;
-  /* for Firefox */
-  hlbr: expression(this.onFocus=this.blur());
-  /* for IE */
-}
-
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-  color: #333;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-input, select {
-  vertical-align: middle;
-}
-
-::placeholder {
-  color: #ccc;
-}
-
-.clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  visibility: hidden;
-  clear: both;
-}
-
-* html .clearfix {
-  height: 1%;
-}
-*:first-child + html .clearfix {
-  min-height: 1px;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  min-width: 320px;
-  font-size: 16px;
-  line-height: 1.4;
-  color: #333;
-  font-family: "open sans", "Microsoft JhengHei", sans-serif;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  opacity: 1;
-}
-
 .site-header {
   position: sticky;
   top: 0;
@@ -916,71 +916,97 @@ input[type=number]::-webkit-outer-spin-button {
   border: 1px solid #ccc;
 }
 
-.banner {
-  margin-bottom: 20px;
+.cart_orderlist {
+  margin: 20px 0;
 }
-.banner a, .banner i, .banner img {
-  display: block;
-  width: 100%;
+.cart_orderlist .cart_title {
+  margin: 10px 0 20px;
+  border-bottom: 1px solid #ccc;
 }
-
-.sort_block {
-  margin: 20px 0 0;
-  padding: 10px 0;
+.cart_orderlist .cart_main {
+  display: flex;
+  flex-flow: row nowrap;
 }
-.sort_block .container {
+.cart_orderlist .od_ul {
+  flex: 65%;
+}
+.cart_orderlist .od_ul li {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  border-bottom: 1px solid #ccc;
+}
+.cart_orderlist .od_ul li:last-child {
+  border: none;
+}
+.cart_orderlist .od_info {
+  margin: 0 0 0 20px;
+}
+.cart_orderlist .od_photo img {
+  width: 100px;
+}
+.cart_orderlist .od_size {
+  margin: 0 0 20px;
+  color: #999;
+  font-size: 0.9rem;
+}
+.cart_orderlist .od_price {
+  margin: 0 0 10px;
+}
+.cart_orderlist .normal_price .currency {
+  color: #999;
+  font-size: 0.9rem;
+  text-decoration: line-through;
+}
+.cart_orderlist .od_func_btn {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 10px 0 0;
+}
+.cart_orderlist .od_func_btn a {
+  color: #999;
+  font-size: 0.85rem;
+}
+.cart_orderlist .od_func_btn a i {
+  margin-right: 3px;
+}
+.cart_orderlist .od_func_btn a:hover {
+  color: #333;
+}
+.cart_orderlist .od_func_btn a:hover i {
+  color: #333;
+}
+.cart_orderlist .od_total {
+  flex: 35%;
+  padding: 0 10px;
+}
+.cart_orderlist .od_total_title {
+  margin: 0 0 10px;
+}
+.cart_orderlist .od_total_price {
+  border-top: 1px solid #ddd;
+}
+.cart_orderlist .od_total_line, .cart_orderlist .od_total_price {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ffadad;
+  padding: 15px 0;
 }
-
-.sort {
-  display: inline-flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  padding: 0;
-  font-size: 0.9rem;
+.cart_orderlist .od_total_line .currency {
+  color: #555;
+  font-size: 1rem;
 }
-.sort label {
-  position: relative;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-end;
-  width: 100px;
-  height: 36px;
-  margin: 0;
+.cart_orderlist .btn-checkout {
+  display: block;
+  width: 100%;
+  padding: 10px;
   text-align: center;
-  cursor: pointer;
-  color: #777;
-}
-.sort label:last-child {
-  margin: 0;
-}
-.sort p {
-  width: 100px;
-  line-height: 36px;
-}
-.sort input {
-  display: none;
-}
-.sort input:checked ~ .checkmark {
+  font-size: 1.1rem;
   border: none;
-  background-color: #ffadad;
-}
-.sort input:checked ~ p {
   color: white;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.sort .checkmark {
-  width: 100px;
-  height: 36px;
-  position: absolute;
-  left: 0;
-  top: 0;
+  background-color: black;
   cursor: pointer;
 }
 

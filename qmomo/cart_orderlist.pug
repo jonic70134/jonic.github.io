@@ -5,19 +5,118 @@ html(lang='zh-Hant-TW')
 		title Qmomo - cart
 		
 		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
-		link(href='css/index.css', rel='stylesheet')
+		link(href='css/cart_orderlist.css', rel='stylesheet')
 		script(src='js/jquery.fancybox.min.js')
 		script(src='js/common.js')
-		script(src='js/index.js')
+		script(src='js/cart_orderlist.js')
 		
 	body
 		.wpf-loader-two
 			.wpf-loader-two-inner
 				span Loading
 		include _header.pug
-		
-		// Start slider
 
+		.cart_orderlist
+			.container
+				.cart_title.mid_title 購物車
+				.cart_main
+					ul.od_ul
+						li
+							figure.od_photo
+								img(src="img/1000x1000_prod_1.jpeg", alt="")
+							.od_info 
+								.sm_title
+									| 內衣【Rose W 】高級訂製金3D型W鋼圈內衣
+								.od_size
+									span.size size：85D
+									span.color 顏色：銀河藍
+								.od_price
+									.normal_price
+										span.currency NT$ 1,390
+									.discount_price
+										span.currency NT$ 1,290
+								.quantity-add
+									.quantity
+										p.quantity-decrease 
+											i.fas.fa-minus
+										input.quantity-input(type='number' value='1' max='10' title='請輸入購買量')
+										p.quantity-increase 
+											i.fas.fa-plus
+										.alert_window
+											.alert_content
+												p 本商品最多購買10件
+								.od_func_btn 
+									a(href="#")
+										i.fas.fa-times
+										span 移除
+						li
+							figure.od_photo
+								img(src="img/1000x1000_prod_2.jpeg", alt="")
+							.od_info 
+								.sm_title
+									| 內衣【Rose W 】高級訂製金3D型W鋼圈內衣
+								.od_size
+									span.size size：85D
+									span.color 顏色：銀河藍
+								.od_price
+									.normal_price
+										span.currency NT$ 1,390
+									.discount_price
+										span.currency NT$ 1,290
+								.quantity-add
+									.quantity
+										p.quantity-decrease 
+											i.fas.fa-minus
+										input.quantity-input(type='number' value='1' max='10' title='請輸入購買量')
+										p.quantity-increase 
+											i.fas.fa-plus
+										.alert_window
+											.alert_content
+												p 本商品最多購買10件
+								.od_func_btn 
+									a(href="#")
+										i.fas.fa-times
+										span 移除
+						li
+							figure.od_photo
+								img(src="img/1000x1000_prod_3.jpeg", alt="")
+							.od_info 
+								.sm_title
+									| 內衣【Rose W 】高級訂製金3D型W鋼圈內衣
+								.od_size
+									span.size size：85D
+									span.color 顏色：銀河藍
+								.od_price
+									.normal_price
+										span.currency NT$ 1,390
+									.discount_price
+										span.currency NT$ 1,290
+								.quantity-add
+									.quantity
+										p.quantity-decrease 
+											i.fas.fa-minus
+										input.quantity-input(type='number' value='1' max='10' title='請輸入購買量')
+										p.quantity-increase 
+											i.fas.fa-plus
+										.alert_window
+											.alert_content
+												p 本商品最多購買10件
+								.od_func_btn 
+									a(href="#")
+										i.fas.fa-times
+										span 移除
+					.od_total
+						.od_total_title.sm_title 訂單總結
+						.od_total_body 
+							.od_total_line
+								p.title 商品總金額
+								p.currency NT$ 3870
+							.od_total_line
+								p.title 運費
+								p.currency NT$ 70
+							.od_total_price 
+								p.title 總價
+								p.currency NT$ 3940
+							.od_checkout 
+								a.btn-checkout 結帳
 		include _footer.pug
-		
-		
