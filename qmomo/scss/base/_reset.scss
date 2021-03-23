@@ -105,4 +105,15 @@ body {
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button {  
 	opacity: 1;
+	-webkit-appearance: none;
+  	margin: 0;
+}
+*:focus{
+	outline: none;
+	border:0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

@@ -116,6 +116,18 @@ body {
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   opacity: 1;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+  border: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 body {
@@ -877,17 +889,6 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   display: flex;
   justify-content: space-between;
 }
-.cart_popup .cart_pop_close {
-  position: absolute;
-  right: -32px;
-  top: 0;
-  display: block;
-  padding: 3px 8px;
-  background-color: #ff5353;
-}
-.cart_popup .cart_pop_close i {
-  color: white;
-}
 .cart_popup .swiper-container .swiper-slide img {
   width: auto;
   height: 578px;
@@ -914,6 +915,18 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   color: #333;
   background: white;
   border: 1px solid #ccc;
+}
+
+.pop_close {
+  position: absolute;
+  right: -32px;
+  top: 0;
+  display: block;
+  padding: 3px 8px;
+  background-color: #ff5353;
+}
+.pop_close i {
+  color: white;
 }
 
 .banner {

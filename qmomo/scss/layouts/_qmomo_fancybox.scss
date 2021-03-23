@@ -18,15 +18,6 @@
 		display: flex;
 		justify-content: space-between;
 	}
-	.cart_pop_close{
-		position: absolute;right:-32px;top:0;
-		display: block;
-		padding:3px 8px;
-		background-color: #ff5353;
-		i{
-			color:white;
-		}
-	}
 	.swiper-container{
 		.swiper-slide{
 			img{
@@ -59,4 +50,13 @@
 		border:1px solid #ccc;
 	}
 	
+}
+.pop_close{
+	position: absolute;right:-32px;top:0;
+	display: block;
+	padding:3px 8px;
+	background-color: #ff5353;
+	i{
+		color:white;
+	}
 }

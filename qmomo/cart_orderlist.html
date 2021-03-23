@@ -14,7 +14,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <title>Qmomo - cart</title>
     <link href="css/jquery.fancybox.min.css" rel="stylesheet">
-    <link href="css/cart_orderlist.css" rel="stylesheet">
+    <link href="css/cart.css" rel="stylesheet">
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/cart_orderlist.js"></script>
@@ -220,7 +220,11 @@
                 <p class="title">總價</p>
                 <p class="currency">NT$ 3940</p>
               </div>
-              <div class="od_checkout"> <a class="btn-checkout">結帳</a></div>
+              <div class="od_code">
+                <input type="text" placeholder="請輸入優惠折扣碼"><a class="btn-discode">確認</a>
+              </div>
+              <div class="od_code_err"> <span>此折扣碼無法使用，請重新確認</span></div>
+              <div class="od_checkout"> <a class="btn-checkout" href="cart_data.html">結帳</a></div>
             </div>
           </div>
         </div>
@@ -295,7 +299,7 @@
               <div class="swiper-slide"><img src="img/item_long_07.jpg" alt="運動內衣"></div>
             </div>
           </div>
-        </div><a class="button large btn-addcart" href="item.html">加入購物車</a><a class="cart_pop_close" href="#"><i class="fas fa-times"></i></a>
+        </div><a class="button large btn-addcart" href="item.html">加入購物車</a><a class="pop_close" href="#"><i class="fas fa-times"></i></a>
       </div>
     </div>
   </body>
