@@ -1199,6 +1199,7 @@ select {
 }
 .od_checkout a {
   flex: 50%;
+  display: block;
 }
 
 .deliver_711_popup, .deliver_family_popup {
