@@ -296,13 +296,12 @@ select{
 
 // .od_total.cart_total{
 // 	padding:0;
-// 	.od_checkout{
-// 		display: flex;
-// 	}
-// 	a{
-// 		flex:50%;
-// 	}
-// }
+.od_checkout{
+	display: flex;
+	a{
+		flex:50%;
+	}
+}
 // .cart_confirm{
 // 	.od_ul{
 // 		flex:100%;
