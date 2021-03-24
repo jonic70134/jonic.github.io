@@ -96,7 +96,7 @@ jQuery(function($){
 		$('.cart_popup').css('visibility','visible');
 		$('body').css('overflow','hidden');
 	});
-	$('.cart_pop_close').on('click', function(e) {
+	$('.pop_close').on('click', function(e) {
 		e.preventDefault();
 		$('.cart_popup').css('visibility','hidden');
 		$('body').css('overflow','auto');

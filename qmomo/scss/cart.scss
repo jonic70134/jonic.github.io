@@ -136,20 +136,21 @@ select{
 		margin-bottom: 20px;
 		color:#999;
 		font-size:.8rem;
+		line-height: 1.8;
 		.title{
 			margin-bottom:5px;
 			color:#333;
 			border-bottom:1px solid #ddd;
-			
 		}
 	}
 	.od_invoice{
 		label{
-			display: flex;
-			align-items: center;
+			display: inline-flex;
+			align-items: baseline;
+			margin:3px 0;
 			cursor: pointer;
 			input[type='text']{
-				margin:0 0 0 5px;
+				margin:0 0 0 8px;
 				padding:5px 10px;
 				border:1px solid #ddd;
 				font-size:.8rem;

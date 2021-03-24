@@ -909,12 +909,11 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   display: block;
   width: 100%;
   margin: 5px 0;
-  padding: 15px 40px;
+  padding: 10px 40px;
   font-size: 0.9rem;
   text-align: center;
-  color: #333;
-  background: white;
-  border: 1px solid #ccc;
+  color: white;
+  background: #333;
 }
 
 .pop_close {
@@ -923,7 +922,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   top: 0;
   display: block;
   padding: 3px 8px;
-  background-color: #ff5353;
+  background-color: #e38796;
 }
 .pop_close i {
   color: white;
@@ -1057,6 +1056,7 @@ select {
   margin-bottom: 20px;
   color: #999;
   font-size: 0.8rem;
+  line-height: 1.8;
 }
 .cart_orderlist .od_addr .title, .cart_orderlist .od_invoice .title {
   margin-bottom: 5px;
@@ -1064,12 +1064,13 @@ select {
   border-bottom: 1px solid #ddd;
 }
 .cart_orderlist .od_invoice label {
-  display: flex;
-  align-items: center;
+  display: inline-flex;
+  align-items: baseline;
+  margin: 3px 0;
   cursor: pointer;
 }
 .cart_orderlist .od_invoice label input[type=text] {
-  margin: 0 0 0 5px;
+  margin: 0 0 0 8px;
   padding: 5px 10px;
   border: 1px solid #ddd;
   font-size: 0.8rem;
