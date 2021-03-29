@@ -158,7 +158,19 @@ html(lang='zh-Hant-TW')
 								a.deliver_complete(href="#") 完成
 								a.pop_close(href="#")
 									i.fas.fa-times
-										
+				.cart_invoice
+					.sm_title 發票
+					.cart_invoice_con
+						label(for="invoice1")
+							input#invoice1(type="radio", name="invoice" checked='checked')
+							span 個人電子發票
+						label(for="invoice2")
+							input#invoice2(type="radio", name="invoice")
+							span 公司戶電子發票
+							input(type="text" placeholder='請輸入統一編號')
+						label(for="invoice3")
+							input#invoice3(type="radio", name="invoice")
+							span 捐贈發票
 				.od_total.cart_total
 					.od_checkout 
 						a(href="cart_orderlist.html").btn-prev 上一步
