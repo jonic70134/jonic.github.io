@@ -14,7 +14,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <title>Qmomo - cart</title>
     <link href="css/jquery.fancybox.min.css" rel="stylesheet">
-    <link href="css/cart.css" rel="stylesheet">
+    <link href="css/member.css" rel="stylesheet">
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/cart_orderlist.js"></script>
@@ -127,63 +127,41 @@
         </div>
       </nav>
     </header>
-    <div class="cart_orderlist cart_confirm">
+    <div class="member">
       <div class="container">
-        <div class="cart_title mid_title">訂單明細</div>
-        <div class="cart_main">
-          <ul class="od_ul">
-            <li>
-              <figure class="od_photo"><img src="img/1000x1000_prod_1.jpeg" alt=""></figure>
-              <div class="od_info"> 
-                <div class="sm_title">內衣【Rose W 】高級訂製金3D型W鋼圈內衣</div>
-                <div class="od_size"><span class="size">size：85D</span><span class="color">顏色：銀河藍</span>
-                  <p class="size">件數:1</p>
-                </div>
-                <div class="od_price">
-                  <div class="normal_price"><span class="currency">NT$ 1,390</span></div>
-                  <div class="discount_price"><span class="currency">NT$ 1,290</span></div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <figure class="od_photo"><img src="img/1000x1000_prod_2.jpeg" alt=""></figure>
-              <div class="od_info"> 
-                <div class="sm_title">內衣【Rose W 】高級訂製金3D型W鋼圈內衣</div>
-                <div class="od_size"><span class="size">size：85D</span><span class="color">顏色：銀河藍</span>
-                  <p class="size">件數:1</p>
-                </div>
-                <div class="od_price">
-                  <div class="normal_price"><span class="currency">NT$ 1,390</span></div>
-                  <div class="discount_price"><span class="currency">NT$ 1,290</span></div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <figure class="od_photo"><img src="img/1000x1000_prod_3.jpeg" alt=""></figure>
-              <div class="od_info"> 
-                <div class="sm_title">內衣【Rose W 】高級訂製金3D型W鋼圈內衣</div>
-                <div class="od_size"><span class="size">size：85D</span><span class="color">顏色：銀河藍</span>
-                  <p class="size">件數:1</p>
-                </div>
-                <div class="od_price">
-                  <div class="normal_price"><span class="currency">NT$ 1,390</span></div>
-                  <div class="discount_price"><span class="currency">NT$ 1,290</span></div>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="od_total cart_total">
-            <div class="od_addr">
-              <p class="title">收件人資訊 </p>
-              <p>姓名：Q毛毛</p>
-              <p>地址：台北市大安區光復南路102號4F</p>
-              <p>電話：0988100900</p>
+        <div class="mem_block">
+          <div class="mid_title">我的收藏</div>
+          <div class="mem_body">
+            <div class="mem_link">
+              <ul>
+                <li><a href="mem_order.html">訂單查詢</a></li>
+                <li><a href="mem_info.html">會員資料</a></li>
+                <li><a class="active" href="mem_fav.html">我的收藏</a></li>
+              </ul><a class="logout" href="#">登出</a>
             </div>
-            <div class="od_total_price"> 
-              <p class="title">總價</p>
-              <p class="currency">NT$ 3940</p>
+            <div class="mem_fav">
+              <div class="fav_block"><img src="img/1000x1000_prod_1.jpeg" alt="">
+                <div class="fav_info">
+                  <div class="mid_title">內衣【Rose W 】高級訂製金3D型W鋼圈內衣</div>
+                  <div class="discount_price"><span class="currency">NT$ 1,290</span></div>
+                  <div class="fav_func_btn"><a class="btn-cart" href="#">加入購物車</a><a class="remove" href="#"><i class="fas fa-times"></i><span>移除</span></a></div>
+                </div>
+              </div>
+              <div class="fav_block"><img src="img/1000x1000_prod_2.jpeg" alt="">
+                <div class="fav_info">
+                  <div class="mid_title">內衣【Rose W 】高級訂製金3D型W鋼圈內衣</div>
+                  <div class="discount_price"><span class="currency">NT$ 1,290</span></div>
+                  <div class="fav_func_btn"><a class="btn-cart" href="#">加入購物車</a><a class="remove" href="#"><i class="fas fa-times"></i><span>移除</span></a></div>
+                </div>
+              </div>
+              <div class="fav_block"><img src="img/1000x1000_prod_3.jpeg" alt="">
+                <div class="fav_info">
+                  <div class="mid_title">內衣【Rose W 】高級訂製金3D型W鋼圈內衣</div>
+                  <div class="discount_price"><span class="currency">NT$ 1,290</span></div>
+                  <div class="fav_func_btn"><a class="btn-cart" href="#">加入購物車</a><a class="remove" href="#"><i class="fas fa-times"></i><span>移除</span></a></div>
+                </div>
+              </div>
             </div>
-            <div class="od_checkout"> <a class="btn-checkout" href="index.html">確認結帳</a></div>
           </div>
         </div>
       </div>

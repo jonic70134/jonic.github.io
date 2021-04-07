@@ -1,0 +1,44 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		include _head.pug
+		title Qmomo - cart
+		
+		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
+		link(href='css/member.css', rel='stylesheet')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/cart_orderlist.js')
+		
+	body
+		.wpf-loader-two
+			.wpf-loader-two-inner
+				span Loading
+		include _header.pug
+
+		.member
+			.container
+				.mem_block
+					.mid_title 會員資料
+					.mem_body
+						.mem_link
+							ul
+								li
+									a(href="mem_order.html") 訂單查詢
+								li
+									a.active(href="mem_info.html") 會員資料
+								li
+									a(href="mem_fav.html") 我的收藏
+							a.logout(href="#") 登出
+
+						.mem_info
+							div
+								input(type='text' placeholder='姓名' value='金城武')
+							div
+								input(type='email' placeholder='Email' value='abc@gmail.com')
+							div
+								input(type='tel' placeholder='電話' value='0912345678')
+							div
+								input(type='text' placeholder='地址' value='中山路一段5弄2號')
+							a.send(href="#") 更新資料
+		include _footer.pug

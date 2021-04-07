@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*reset*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, th, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -773,7 +774,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 .site-menu .main_menu {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   height: 35px;
 }
@@ -874,7 +875,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   width: 100%;
   height: 100%;
   padding: 5px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.75);
   z-index: 30;
 }
 .cart_popup .cart_pop_body {
@@ -913,7 +914,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   font-size: 0.9rem;
   text-align: center;
   color: white;
-  background: #333;
+  background: #222;
 }
 
 .pop_close {
@@ -1216,6 +1217,15 @@ select {
 }
 .cart_pay_data .credit_select:last-child {
   border: none;
+}
+.cart_pay_data .credit_select:after {
+  content: "▾";
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
 }
 .cart_pay_data .credit_select select {
   display: block;
