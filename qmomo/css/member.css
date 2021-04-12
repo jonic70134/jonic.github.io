@@ -928,6 +928,10 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   color: white;
 }
 
+input::placeholder {
+  color: #999;
+}
+
 .err_txt {
   font-size: 0.85rem;
   color: #d00;
@@ -1054,11 +1058,11 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 20px;
   background-color: white;
   box-shadow: 1px 3px 10px #ddd;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 .mem_order_list .mem_left, .mem_order_list .mem_right {
   display: flex;

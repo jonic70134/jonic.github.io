@@ -3,7 +3,10 @@
 @import 'base/_reset.scss';
 @import 'base/_base.scss';
 @import 'layouts/_header.scss';
-@import 'layouts/_qmomo_fancybox.scss';
+@import 'layouts/_qmomo_fancybox.scss';		
+input::placeholder{
+	color:#999;
+}
 .err_txt{
 	font-size:.85rem;
 	color:#d00;
@@ -128,11 +131,11 @@
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	margin-bottom:20px;
+	margin-bottom:10px;
 	padding:20px;
 	background-color: white;
 	box-shadow: 1px 3px 10px #ddd;
-	border-radius: 10px;
+	border-radius: 10px 10px 0 0;
 	.mem_left,.mem_right{
 		display: flex;
 		flex-flow: column;
