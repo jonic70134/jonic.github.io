@@ -697,7 +697,8 @@ input[type=number] {
 }
 .cartbox .cartbox_item .cartbox_img {
   display: block;
-  width: 80px;
+  width: 56px;
+  height: 80px;
 }
 .cartbox .cartbox_item .cartbox_img img {
   width: 100%;
@@ -1005,7 +1006,7 @@ body {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
+  width: 100%;
   margin: 10px auto;
   padding: 10px;
   border: 1px solid #eee;
@@ -1027,6 +1028,7 @@ body {
   background-position: -47px -3px;
 }
 .pay .apple_pay {
+  display: none;
   width: 35px;
   background-position: -300px -3px;
 }
@@ -1043,7 +1045,7 @@ body {
   background-position: -21px -3px;
 }
 .pay .credit {
-  width: 145px;
+  width: 108px;
   background-position: -1px -327px;
 }
 

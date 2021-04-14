@@ -22,10 +22,14 @@ html(lang='zh-Hant-TW')
 					.mid_title 會員登入
 					.login_body
 						.login_line
-							input(type='email' placeholder='Email')
+							input(type='email' placeholder='Email / 手機號碼')
 						.login_line
 							input(type='password' placeholder='密碼')
 							p.err_txt 請輸入正確的帳號 & 密碼
+						.login_btn 
+							a.nor_login.fb(href="mem_order.html") Facebook 登入 
+							a.nor_login.gle(href="mem_order.html") Google 登入
+							a.nor_login.line(href="mem_order.html") Line 登入
 						a.nor_login(href='mem_order.html') 登入
 						.login_reg
 							a.reg(href="mem_reg.html") 註冊新會員

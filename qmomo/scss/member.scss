@@ -44,11 +44,33 @@ input::placeholder{
 			text-decoration: underline
 		}
 	}
+	.login_btn{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		width: 100%;
+		margin:0 0 10px;
+		a{
+			display: block;
+			margin: 0 2% 0 0;
+			font-size:.85rem;
+			background-color: #166fe5;
+			&:last-child{
+				margin:0;
+			}
+		}
+		.gle{
+			background-color: #df543d;
+		}
+		.line{
+			background-color: #00c100;
+		}
+	}
 	input{
 		width:100%;
 		padding:10px;
 		font-size:.9rem;
-		border:1px solid #ccc;
+		border:1px solid #ccc; 
 	}
 	.nor_login{
 		width:100%;
@@ -270,7 +292,7 @@ input::placeholder{
 	.btn-cart{
 		display: block;
 		padding: 5px 15px;
-		font-size: 0.85rem;
+		font-size: .85rem;
 		color: white;
 		background-color: #fa6093;
 		border-radius: 5px;

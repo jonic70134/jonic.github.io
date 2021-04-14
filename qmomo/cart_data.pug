@@ -14,7 +14,7 @@ html(lang='zh-Hant-TW')
 		.wpf-loader-two
 			.wpf-loader-two-inner
 				span Loading
-		include _header.pug
+		include _cart_header.pug
 
 		.cart_orderlist
 			.container
@@ -48,13 +48,6 @@ html(lang='zh-Hant-TW')
 								| 每期應付NT$656
 								a(href='#')
 									| 9家銀行
-					.cart_line
-						.cart_radio_line
-							label(for='radio5')
-								input#radio5.radio-btn(type='radio' name='payment' value='5')
-								span ATM付款
-							.cart_line_txt
-								| 帳號將於訂單送出後提供
 					.cart_line
 						.cart_radio_line
 							label(for='radio6')

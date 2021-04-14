@@ -697,7 +697,8 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 .cartbox .cartbox_item .cartbox_img {
   display: block;
-  width: 80px;
+  width: 56px;
+  height: 80px;
 }
 .cartbox .cartbox_item .cartbox_img img {
   width: 100%;

@@ -697,7 +697,8 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 .cartbox .cartbox_item .cartbox_img {
   display: block;
-  width: 80px;
+  width: 56px;
+  height: 80px;
 }
 .cartbox .cartbox_item .cartbox_img img {
   width: 100%;
@@ -970,6 +971,28 @@ input::placeholder {
   margin: 10px;
   color: #06c;
   text-decoration: underline;
+}
+.login .login_btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 0 10px;
+}
+.login .login_btn a {
+  display: block;
+  margin: 0 2% 0 0;
+  font-size: 0.85rem;
+  background-color: #166fe5;
+}
+.login .login_btn a:last-child {
+  margin: 0;
+}
+.login .login_btn .gle {
+  background-color: #df543d;
+}
+.login .login_btn .line {
+  background-color: #00c100;
 }
 .login input {
   width: 100%;
