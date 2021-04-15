@@ -51,19 +51,42 @@ input::placeholder{
 		width: 100%;
 		margin:0 0 10px;
 		a{
+			position: relative;
 			display: block;
 			margin: 0 2% 0 0;
-			font-size:.85rem;
+			padding:10px 10px 10px 20px;
+			font-size:.8rem;
 			background-color: #166fe5;
 			&:last-child{
 				margin:0;
 			}
+			&:before{
+				display: inline-block;
+				font-style: normal;
+				font-variant: normal;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				content:'\f39e';
+				position: absolute;left:5px;top:50%;
+				transform: translateY(-50%);
+				font-family: 'Font Awesome 5 Brands';
+				font-size:1.2rem;
+				color:#fefefe;
+			}
 		}
 		.gle{
 			background-color: #df543d;
+			&:before{
+				content:'\f1a0';
+			}
+
 		}
 		.line{
 			background-color: #00c100;
+			&:before{
+				content: '\f3c0';
+				font-size:2rem;
+			}
 		}
 	}
 	input{
