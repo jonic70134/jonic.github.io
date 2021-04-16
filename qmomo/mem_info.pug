@@ -22,15 +22,11 @@ html(lang='zh-Hant-TW')
 					.mid_title 會員資料
 					.mem_body
 						.mem_link
-							ul
-								li
-									a(href="mem_order.html") 訂單查詢
-								li
-									a.active(href="mem_info.html") 會員資料
-								li
-									a(href="mem_fav.html") 我的收藏
-							a.logout(href="#") 登出
+							include _mem_menu.pug
 						.mem_info
+							.sub_func
+								a(href="mem_info_location.html") 常用收件人 
+								a(href="mem_info_invo.html") 常用統一編號
 							div
 								input(type='text' placeholder='姓名' value='金小姐')
 							div
@@ -39,5 +35,6 @@ html(lang='zh-Hant-TW')
 								input(type='tel' placeholder='電話' value='0912345678')
 							div
 								input(type='text' placeholder='地址' value='台北市中山區中山路一段5弄2號')
-							a.send(href="#") 更新資料
+							.bot_func
+								a.submit(href="#") 更新資料
 		include _footer.pug

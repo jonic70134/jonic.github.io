@@ -934,6 +934,51 @@ input::placeholder {
   color: #999;
 }
 
+select {
+  cursor: pointer;
+  background: none;
+  background-clip: border-box;
+  outline: 0;
+  border: none;
+  -webkit-appearance: none;
+}
+
+.bot_func {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+.bot_func a {
+  display: block;
+  margin-right: 10px;
+  padding: 8px 20px;
+  color: white;
+  background-color: #e38796;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.bot_func .cancel {
+  color: #e38796;
+  border: 1px solid #e38796;
+  background: none;
+}
+
+.sub_func {
+  display: flex;
+  margin: 0 0 20px;
+}
+.sub_func a {
+  display: block;
+  margin: 0 10px 0 0;
+  padding: 8px 20px;
+  color: #e38796;
+  border-radius: 10px;
+  border: 1px solid #e38796;
+}
+
 .err_txt {
   font-size: 0.85rem;
   color: #d00;
@@ -1098,8 +1143,25 @@ input::placeholder {
   text-align: center;
 }
 
-.mem_info, .mem_order, .mem_fav {
+.mem_info, .mem_order, .mem_fav, .mem_coupon {
   width: 70%;
+}
+
+.mem_data_list {
+  width: 100%;
+  margin: 0 0 30px;
+}
+.mem_data_list td, .mem_data_list th {
+  border-bottom: 1px solid #999;
+  padding: 10px 18px;
+  font-size: 0.85rem;
+  text-align: left;
+}
+.mem_data_list th {
+  color: #999;
+}
+.mem_data_list tr:last-child td {
+  border: none;
 }
 
 .mem_order_list {
@@ -1262,6 +1324,133 @@ input::placeholder {
 }
 .fav_block .remove i {
   margin-right: 3px;
+}
+
+.enter_coupon {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  position: relative;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.enter_coupon input {
+  width: 80%;
+  margin: 0;
+}
+.enter_coupon .submit {
+  width: 20%;
+  display: block;
+  padding: 7px 10px;
+  color: white;
+  background-color: #e38796;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.mem_coupon .coupon_detail {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 15px 0;
+}
+.mem_coupon .coupon_detail a {
+  padding: 8px 20px;
+}
+.mem_coupon .coupon_detail a.active {
+  border-bottom: 2px solid #e38796;
+}
+.mem_coupon .detail_content {
+  display: none;
+}
+.mem_coupon .active {
+  display: block;
+}
+
+.location_pop {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 30;
+}
+.location_pop input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+}
+.location_pop .location_pop_body {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 490px;
+  padding: 20px;
+  background-color: white;
+}
+.location_pop .mid_title {
+  margin: -20px -20px 0 -20px;
+  padding: 10px;
+  color: white;
+  background-color: #e38796;
+  text-align: center;
+}
+.location_pop .location_line {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 10px;
+  color: #333;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+.location_pop .location_select {
+  flex-basis: 50%;
+  position: relative;
+  border-right: 1px solid #aaa;
+}
+.location_pop .location_select:last-child {
+  border: none;
+}
+.location_pop .location_select:after {
+  content: "▾";
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+}
+.location_pop .location_select select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  border-radius: 0;
+}
+.location_pop .location_btn {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.location_pop .btn-addcart {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px 40px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: white;
+  background: #222;
 }
 
 .site-footer {

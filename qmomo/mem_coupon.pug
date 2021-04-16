@@ -1,0 +1,40 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		include _head.pug
+		title Qmomo - cart
+		
+		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
+		link(href='css/member.css', rel='stylesheet')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/member.js')
+		
+	body
+		.wpf-loader-two
+			.wpf-loader-two-inner
+				span Loading
+		include _header.pug
+
+		.member
+			.container
+				.mem_block
+					.mid_title 我的優惠券
+					.mem_body
+						.mem_link
+							include _mem_menu.pug
+						.mem_coupon
+							.enter_coupon 
+								input(type="text" placeholder='輸入優惠券代碼')
+								a.submit(href="#") 新增優惠券 
+							.coupon_detail
+								a(href="#").tab_link.active(data-detail='detail-1') 折價券
+								a(href="#").tab_link(data-detail='detail-2') 贈品券
+								a(href="#").tab_link(data-detail='detail-3') 門市券
+							#detail-1.detail_content.active
+								| 1
+							#detail-2.detail_content
+								| 2
+							#detail-3.detail_content
+								| 3
+		include _footer.pug
