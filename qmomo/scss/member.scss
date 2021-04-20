@@ -151,11 +151,11 @@ select{
 
 .mem_block{
 	width:100%;
-	max-width:800px;
+	max-width:1000px;
 	margin: 40px auto;
 	box-sizing: border-box;
 	.mid_title{
-		margin:40px 0;
+		margin:40px 0 25px;
 		text-align: center;
 	}
 }
@@ -214,7 +214,7 @@ select{
 		text-align: center;
 	}
 }
-.mem_info,.mem_order,.mem_fav,.mem_coupon{
+.mem_info,.mem_order,.mem_fav,.mem_coupon,.mem_point{
 	width:70%;
 }
 .mem_data_list{
@@ -407,11 +407,13 @@ select{
 	input{
 		width:80%;
 		margin:0;
+		padding:8px 10px;
+		border-right:none;
 	}
 	.submit{
 		width:20%;
 		display: block;
-		padding:7px 10px;
+		padding:8px 10px;
 		color: white;
 		background-color: #e38796;
 		border: none;
@@ -427,6 +429,7 @@ select{
 		margin:15px 0;
 		a{
 			padding:8px 20px;
+			border-bottom:1px solid #ffe1e1;
 			&.active{
 				border-bottom:2px solid #e38796;
 			}
@@ -439,7 +442,123 @@ select{
 		display: block;
 	}
 }
+.coupon_body{
+	display: flex;
+	flex-flow: row wrap;
+}
+.coupon_block{
+	display: flex;
+	flex-flow: row nowrap;
+	position: relative;
+	width: 49%;
+	margin: 0 2% 20px 0;
+	padding:10px;
+	box-shadow: 1px 2px 10px rgba(0,0,0,.3);
+	&:nth-child(2n){
+		margin: 0 0 20px;
+	}
+}
+.coupon_ticket{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	position: relative;
+	margin: -10px 10px -10px -10px;
+	padding: 0 25px;
+	font-size: 1.5rem;
+	background-color: #e38796;
+	img{
+		width:100px;
+	}
+	.fas{
+		color:white;
+	}
+	.fa-ticket-alt{
+		transform: rotate(-45deg);
+	}
+}
+.coupon_edge{
+	position: absolute;left:-4px;top:0;
+	width:4px;
+	height:100%;
+	background: radial-gradient(circle at 0 .25rem,transparent 0,transparent .1875rem,#e38796 0);
+	background-size:7px 10px;
+}
+.title{
+	height: 42px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 10px;
+	font-size:.9rem;	
+}
+.date{
+	color:#999;
+	font-size:.75rem;
+}
+.tag{
+	position: absolute;left: -4px;top: 3px;
+	padding:2px 5px;
+	font-size:.75rem;
+	color:white;
+	background-color: #57a0f2;
+	&.place{
+		left:auto;bottom:20px;top:auto;right:10px;
+		font-size:.7rem;
+		background-color: #bbb;
+	}
+}
+.disable{
+	.tag{
+		background-color:#555;
+	}
+	.coupon_ticket{
+		background-color: #999;
+	}
+	.coupon_edge{
+		background: radial-gradient(circle at 0 .25rem,transparent 0,transparent .1875rem,#999 0);
+		background-size:7px 10px;
+	}
+}
 
+.mem_point{
+	.point_block{
+		display: flex;
+		margin:0 0 20px;
+		border:2px solid #ddd;
+		border-radius: 10px;
+		.mypoint,.diepoint{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			width: 50%;
+			padding:10px;
+			
+			.big_title{
+				color:#fa6093;
+			}
+			.sm_title{
+				color:#999;
+			}
+		}
+		.diepoint{
+			border-left:1px solid #ddd;
+			.big_title{
+				color:#333;
+			}
+		}
+	}
+	.point_exchange{
+		.sm_title{
+			margin:0 0 20px;
+			padding:10px;
+			border-bottom:1px solid #ddd;
+		}
+	}
+	.coupon_ticket{
+		padding:0;
+	}
+}
 // 彈出視窗
 .location_pop{
 	visibility: hidden;

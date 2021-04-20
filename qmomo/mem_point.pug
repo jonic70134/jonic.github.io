@@ -1,0 +1,57 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		include _head.pug
+		title Qmomo - cart
+		
+		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
+		link(href='css/member.css', rel='stylesheet')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/member.js')
+		
+	body
+		.wpf-loader-two
+			.wpf-loader-two-inner
+				span Loading
+		include _header.pug
+
+		.member
+			.container
+				.mem_block
+					.mid_title 會員點數
+					.mem_body
+						.mem_link
+							include _mem_menu.pug
+						.mem_point
+							.point_block
+								.mypoint
+									p.big_title 99
+									p.sm_title 我的點數
+								.diepoint
+									p.big_title 20
+									p.sm_title 將到期點數
+							.point_exchange 
+								.sm_title 會員點數兌換專區
+								.coupon_body 
+									mixin coupon(name,tag,place,imgurl,status)
+										a.coupon_block(class=status)(href="campaign.html") 
+											.coupon_ticket
+												img(src=imgurl, alt="")
+											.coupon_t
+												p.title= name
+												p.date 有效日期 2021.04.30
+											.tag
+												= tag
+											.tag.place
+												= place
+									+coupon('Qmomo 單肩環保購物袋兌換券','80點兌換','APP/官網/門市使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/240538/0/637397856000000000?v=1')
+									+coupon('Qmomo 75% 酒精茶樹精油乾洗手凝膠','40點兌換','門市限定使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/258835/0/637448436000000000?v=1')
+									+coupon('Qmomo特製捲尺收納袋組兌換券','20點兌換','APP/官網/門市使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/258855/0/637448436000000000?v=1')
+									+coupon('Qmomo 微笑SMILE晴雨兩用自動傘兌換券','180點兌換','APP/官網/門市使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/240537/0/637398432000000000?v=1')
+									+coupon('Qmomo特製捲尺收納袋組兌換券','20點兌換','APP/官網/門市使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/258855/0/637448436000000000?v=1')
+									+coupon('Qmomo 微笑SMILE晴雨兩用自動傘兌換券','180點兌換','APP/官網/門市使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/240537/0/637398432000000000?v=1')
+									+coupon('Qmomo 單肩環保購物袋兌換券','80點兌換','APP/官網/門市使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/240538/0/637397856000000000?v=1')
+									+coupon('Qmomo 75% 酒精茶樹精油乾洗手凝膠','40點兌換','門市限定使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/258835/0/637448436000000000?v=1')
+									
+		include _footer.pug
