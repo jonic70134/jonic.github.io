@@ -1477,9 +1477,6 @@ select {
 .mem_point .point_block .mypoint .big_title, .mem_point .point_block .diepoint .big_title {
   color: #fa6093;
 }
-.mem_point .point_block .mypoint .sm_title, .mem_point .point_block .diepoint .sm_title {
-  color: #999;
-}
 .mem_point .point_block .diepoint {
   border-left: 1px solid #ddd;
 }
