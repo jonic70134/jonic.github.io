@@ -452,6 +452,7 @@ select{
 		width:80%;
 		margin:0;
 		padding:8px 10px;
+		border:1px solid #ccc;
 		border-right:none;
 	}
 	.submit{
@@ -592,18 +593,16 @@ select{
 	.point_exchange{
 		position: relative;
 		.sub_func{
-			position: absolute;
-			right: 0;
+			position: absolute;top:0;right: 0;
 			a{
-				margin: 0;
+				margin: 0 0 0 10px;
 				padding:5px 10px;
 				font-size: .85rem;
 			}
 		}
 		.sm_title{
-			margin:0 0 20px;
-			padding:10px;
-			border-bottom:1px solid #ddd;
+			margin:0 0 10px;
+			padding:10px 0;
 		}
 	}
 	.coupon_ticket{
@@ -721,6 +720,8 @@ select{
 		width:490px;
 		padding:20px;
 		background-color: white;
+		max-height: 500px;
+		overflow-y: auto;
 	}
 	.mid_title{
 		margin:-20px -20px 0 -20px;
@@ -746,6 +747,19 @@ select{
 		background:#222 ;
 	}
 }
+.mem_point_pop{
+	.location_pop_body{
+		width:800px;
+		padding-bottom:40px;
+	}
+	.bot_func{
+		position: sticky;bottom: -40px;left: 48%;
+		margin: 0px 0 0px -37px;
+		padding: 10px 0;
+		background: white;
+		
+	}
+}
 .location_line{
 	position: relative;
 	display: flex;
@@ -755,6 +769,38 @@ select{
 	color: #333;
 	background-color: white;
 	border-bottom: 1px solid #ddd;
+}
+.location_line_txt{
+	margin:10px 0;
+	padding: 0 10px;
+	p{
+		font-size:.85rem;
+		line-height: 1.8;
+	}
+	.indent{
+		margin:0 0 0 15px;
+	}
+	.red{
+		color:#d00;
+	}
+	strong{
+		font-size:1.1rem;
+		font-weight: 700;
+	}
+	dl{
+		line-height: 1.8;
+		font-size:.8rem;
+		list-style-type: disc;
+		dt{
+			margin:5px 0 5px 15px;
+			
+		}
+		dd{
+			display: list-item; 
+			margin:0 0 10px 40px;
+			list-style: outside none disc;
+		}
+	}
 }
 .location_select{
 	flex-basis: 33%;

@@ -1385,6 +1385,7 @@ select {
   width: 80%;
   margin: 0;
   padding: 8px 10px;
+  border: 1px solid #ccc;
   border-right: none;
 }
 .enter_coupon .submit {
@@ -1536,17 +1537,17 @@ select {
 }
 .mem_point .point_exchange .sub_func {
   position: absolute;
+  top: 0;
   right: 0;
 }
 .mem_point .point_exchange .sub_func a {
-  margin: 0;
+  margin: 0 0 0 10px;
   padding: 5px 10px;
   font-size: 0.85rem;
 }
 .mem_point .point_exchange .sm_title {
-  margin: 0 0 20px;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+  margin: 0 0 10px;
+  padding: 10px 0;
 }
 .mem_point .coupon_ticket {
   padding: 0;
@@ -1666,6 +1667,8 @@ select {
   width: 490px;
   padding: 20px;
   background-color: white;
+  max-height: 500px;
+  overflow-y: auto;
 }
 .location_pop .mid_title {
   margin: -20px -20px 0 -20px;
@@ -1690,6 +1693,19 @@ select {
   background: #222;
 }
 
+.mem_point_pop .location_pop_body {
+  width: 800px;
+  padding-bottom: 40px;
+}
+.mem_point_pop .bot_func {
+  position: sticky;
+  bottom: -40px;
+  left: 48%;
+  margin: 0px 0 0px -37px;
+  padding: 10px 0;
+  background: white;
+}
+
 .location_line {
   position: relative;
   display: flex;
@@ -1699,6 +1715,38 @@ select {
   color: #333;
   background-color: white;
   border-bottom: 1px solid #ddd;
+}
+
+.location_line_txt {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.location_line_txt p {
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+.location_line_txt .indent {
+  margin: 0 0 0 15px;
+}
+.location_line_txt .red {
+  color: #d00;
+}
+.location_line_txt strong {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.location_line_txt dl {
+  line-height: 1.8;
+  font-size: 0.8rem;
+  list-style-type: disc;
+}
+.location_line_txt dl dt {
+  margin: 5px 0 5px 15px;
+}
+.location_line_txt dl dd {
+  display: list-item;
+  margin: 0 0 10px 40px;
+  list-style: outside none disc;
 }
 
 .location_select {
