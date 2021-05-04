@@ -70,6 +70,12 @@ select{
 		justify-content: center;
 		max-width: 400px;
 		margin: 20px auto 50px;
+		input{
+			width:100%;
+			padding:10px;
+			font-size:.9rem;
+			border:1px solid #ccc; 
+		}
 	}
 	.subtitle{
 		margin:5px 0;
@@ -80,6 +86,7 @@ select{
 		margin:0 0 15px;
 	}
 	.login_reg{
+		margin: 0 0 20px;
 		text-align: right;
 		a{
 			display: inline-block;
@@ -93,7 +100,7 @@ select{
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		width: 100%;
-		margin:0 0 10px;
+		margin:10px 0 0;
 		a{
 			position: relative;
 			display: block;
@@ -123,7 +130,6 @@ select{
 			&:before{
 				content:'\f1a0';
 			}
-
 		}
 		.line{
 			background-color: #00c100;
@@ -133,18 +139,58 @@ select{
 			}
 		}
 	}
-	input{
-		width:100%;
-		padding:10px;
-		font-size:.9rem;
-		border:1px solid #ccc; 
-	}
 	.nor_login{
 		width:100%;
 		padding:10px 10px;
 		text-align: center;
 		color:white;
 		background-color: black;
+		&.resend{
+			margin:10px 0 0;
+			background-color: #e38796;
+		}
+	}
+	.login_remind{
+		margin:20px 0 0;
+		text-align: center;
+		p{
+			display: inline-block;
+			padding:10px;
+			text-align: left;
+			color:#999;
+			font-size:.7rem;
+			line-height: 1.8;
+		}
+		span{
+			color:red;
+		}
+	}
+	.login_label{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		width: 100%;
+		padding:10px;
+		background-color: #eee;
+		cursor: pointer;
+		input{
+			width:auto;
+		}
+	}
+	.sync_account{
+		display: flex;
+		align-items: center;
+		.fab{
+			margin:0 5px;
+			color:#166fe5;
+			font-size:1.2rem;
+		}
+		.fa-line{
+			color:#00c100;
+		}
+		.fa-google{
+			color:#df543d;
+		}
 	}
 }
 
@@ -164,16 +210,11 @@ select{
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
 	input{
-		width:100%;
-		margin:0 0 10px;
-		padding:7px 10px;
-		font-size:.9rem;
-		color:#333;
-		border:1px solid #ccc;
-		box-sizing: border-box;
-		letter-spacing: 1px;
+		width: 100%;
+		padding: 10px;
+		font-size: 1rem;
+		border: none;
 	}
-
 	.send{
 		display: block;
 		width:100px;
@@ -214,7 +255,7 @@ select{
 		text-align: center;
 	}
 }
-.mem_info,.mem_order,.mem_fav,.mem_coupon,.mem_point{
+.mem_info,.mem_order,.mem_fav,.mem_coupon,.mem_point,.mem_privacy,.mem_chg_pass,.mem_set{
 	width:70%;
 }
 .mem_data_list{
@@ -274,7 +315,6 @@ select{
 			border-radius: 5px;
 		}
 		.order_detail{
-			
 			background-color: #e38796;
 		}
 	}
@@ -363,8 +403,12 @@ select{
 		width:150px;
 		margin:0 10px 0 0;
 	}
+	.fav_info{
+		width:80%;
+	}
 	.mid_title{
 		margin:0 0 50px;
+		text-align: left;
 	}
 	.fav_func_btn{
 		display: flex;
@@ -523,6 +567,7 @@ select{
 .mem_point{
 	.point_block{
 		display: flex;
+		height:100px;
 		margin:0 0 20px;
 		border:2px solid #ddd;
 		border-radius: 10px;
@@ -545,6 +590,16 @@ select{
 		}
 	}
 	.point_exchange{
+		position: relative;
+		.sub_func{
+			position: absolute;
+			right: 0;
+			a{
+				margin: 0;
+				padding:5px 10px;
+				font-size: .85rem;
+			}
+		}
 		.sm_title{
 			margin:0 0 20px;
 			padding:10px;
@@ -555,6 +610,96 @@ select{
 		padding:0;
 	}
 }
+.mem_privacy{
+	p{
+		margin: 0 0 20px;
+		color:#555;
+		font-size:.9rem;
+		line-height: 1.8;
+		letter-spacing: 1px;
+	}
+	strong{
+		color:#333;
+		font-weight: 700;
+	}
+}
+.mem_set_block{
+	.mid_title{
+		margin:0;
+		padding:10px;
+		text-align: left;
+		background-color: #eee;
+	}
+	.mail{
+		display: flex;
+		align-items: center;
+		margin:10px 0;
+		input{
+			width:50%;
+			border:1px solid #ddd;
+		}
+		a{
+			width: auto;
+			margin:0 0 0 10px;
+			padding: 10px 20px;
+			text-align: center;
+			font-size:.9rem;
+			color: white;
+			background-color: black;
+			&:last-child{
+				background-color: #999;
+			}
+		}
+	}
+}
+.set_item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:10px;
+	border-bottom:1px solid #ddd;
+	small{
+		font-size:.8rem;
+		color:#999;
+	}
+}
+.switch_label {
+	position: relative;
+	display: block;
+	width: 45px;
+	height: 23px;
+	background: grey;
+	border-radius: 45px;
+	cursor: pointer;
+	&:after{
+		content: '';
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		width: 17px;
+		height: 17px;
+		background: #fff;
+		border-radius: 50%;
+		transition: 0.3s;
+	}
+	&:active{
+		&:after{
+			width: 20px;
+		}
+	}
+}
+.switch_check{
+	display: none;
+}
+.switch_check:checked + .switch_label {
+	background: #00c846;
+}
+
+.switch_check:checked + .switch_label:after {
+	left: calc(100% - 3px);
+	transform: translateX(-100%);
+}
+
 // 彈出視窗
 .location_pop{
 	visibility: hidden;
@@ -584,43 +729,6 @@ select{
 		background-color: #e38796;
 		text-align: center;
 	}
-	.location_line{
-		position: relative;
-		display: flex;
-		flex-flow: row nowrap;
-		align-items: center;
-		padding: 10px;
-		color: #333;
-		background-color: white;
-		border-bottom: 1px solid #ddd;
-	}
-	.location_select{
-		flex-basis: 50%;
-		position: relative;
-		border-right: 1px solid #aaa;
-		&:last-child{
-			border:none;
-		}
-		&:after{
-			content: "▾";
-			display: block;
-			position: absolute;
-			right: 10px;
-			top: 50%;
-			transform: translate(-50%,-50%);
-			font-size: 1.2rem;
-		}
-		select{
-			display: block;
-			width: 100%;
-			padding: 10px;
-			font-size: 1rem;
-			-webkit-background-clip: padding-box;
-			-moz-background-clip: padding;
-			background-clip: padding-box;
-			border-radius: 0;
-		}
-	}
 	.location_btn{
 		display: flex;
 		flex-flow: row nowrap;
@@ -637,5 +745,45 @@ select{
 		color:white;
 		background:#222 ;
 	}
+}
+.location_line{
+	position: relative;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	padding: 10px;
+	color: #333;
+	background-color: white;
+	border-bottom: 1px solid #ddd;
+}
+.location_select{
+	flex-basis: 33%;
+	position: relative;
+	border-right: 1px solid #aaa;
+	&:last-child{
+		border:none;
+	}
+	&:after{
+		content: "▾";
+		display: block;
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		font-size: 1.2rem;
+	}
+	select{
+		display: block;
+		width: 100%;
+		padding: 10px;
+		font-size: 1rem;
+		-webkit-background-clip: padding-box;
+		-moz-background-clip: padding;
+		background-clip: padding-box;
+		border-radius: 0;
+	}
+}
+.post{
+	flex-basis: 33%;
 }
 @import 'layouts/_footer.scss';

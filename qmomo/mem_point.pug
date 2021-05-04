@@ -19,7 +19,6 @@ html(lang='zh-Hant-TW')
 		.member
 			.container
 				.mem_block
-					.mid_title 會員點數中心
 					.mem_body
 						.mem_link
 							include _mem_menu.pug
@@ -32,6 +31,8 @@ html(lang='zh-Hant-TW')
 									p.big_title 20
 									p.sm_title 將到期點數
 							.point_exchange 
+								.sub_func
+									a(href="#") 兌換紀錄
 								.sm_title 會員點數兌換專區
 								.coupon_body 
 									mixin coupon(name,tag,place,imgurl,status)
@@ -53,5 +54,4 @@ html(lang='zh-Hant-TW')
 									+coupon('Qmomo 微笑SMILE晴雨兩用自動傘兌換券','180點兌換','APP/官網/門市使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/240537/0/637398432000000000?v=1')
 									+coupon('Qmomo 單肩環保購物袋兌換券','80點兌換','APP/官網/門市使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/240538/0/637397856000000000?v=1')
 									+coupon('Qmomo 75% 酒精茶樹精油乾洗手凝膠','40點兌換','門市限定使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/258835/0/637448436000000000?v=1')
-									
 		include _footer.pug

@@ -816,7 +816,7 @@ select {
   border: none;
 }
 .cart_pay_data .credit_select {
-  flex-basis: 50%;
+  flex-basis: 33%;
   position: relative;
   border-right: 1px solid #aaa;
 }
@@ -841,6 +841,9 @@ select {
   -moz-background-clip: padding;
   background-clip: padding-box;
   border-radius: 0;
+}
+.cart_pay_data .post {
+  flex-basis: 33%;
 }
 
 .od_checkout {

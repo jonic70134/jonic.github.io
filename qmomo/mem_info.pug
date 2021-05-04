@@ -19,7 +19,6 @@ html(lang='zh-Hant-TW')
 		.member
 			.container
 				.mem_block
-					.mid_title 會員資料
 					.mem_body
 						.mem_link
 							include _mem_menu.pug
@@ -27,14 +26,24 @@ html(lang='zh-Hant-TW')
 							.sub_func
 								a(href="mem_info_location.html") 常用收件人 
 								a(href="mem_info_invo.html") 常用統一編號
-							div
+							.location_line
 								input(type='text' placeholder='姓名' value='金小姐')
-							div
+							.location_line
 								input(type='email' placeholder='Email' value='abc@gmail.com')
-							div
+							.location_line
 								input(type='tel' placeholder='電話' value='0912345678')
-							div
-								input(type='text' placeholder='地址' value='台北市中山區中山路一段5弄2號')
+							.location_line
+								.location_select
+									select#credit-month(name='')
+										option(value='1') 台北市
+								.location_select
+									select#credit-year(name='')
+										option(value='1') 信義區
+										option(value='2') 大安區
+										option(value='3') 內湖區
+								input.post(type='text' placeholder='郵遞區號' value='106')
+							.location_line
+								input.addr(type='text' placeholder='地址' value='中山路一段5弄2號')
 							.bot_func
 								a.submit(href="#") 更新資料
 		include _footer.pug

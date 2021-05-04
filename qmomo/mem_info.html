@@ -130,7 +130,6 @@
     <div class="member">
       <div class="container">
         <div class="mem_block">
-          <div class="mid_title">會員資料</div>
           <div class="mem_body">
             <div class="mem_link">
               <ul>
@@ -139,23 +138,39 @@
                 <li><a href="mem_fav.html">我的收藏</a></li>
                 <li><a href="mem_coupon.html">我的優惠券</a></li>
                 <li><a href="mem_point.html">會員點數中心</a></li>
-                <li><a href="#">會員權益聲明</a></li>
-                <li><a href="#">通知設定</a></li>
+                <li><a href="mem_privacy.html">會員權益聲明</a></li>
+                <li><a href="mem_setting.html">通知設定</a></li>
+                <li><a href="mem_chg_pass.html">修改密碼</a></li>
               </ul><a class="logout" href="#">登出</a>
             </div>
             <div class="mem_info">
               <div class="sub_func"><a href="mem_info_location.html">常用收件人 </a><a href="mem_info_invo.html">常用統一編號</a></div>
-              <div>
+              <div class="location_line">
                 <input type="text" placeholder="姓名" value="金小姐">
               </div>
-              <div>
+              <div class="location_line">
                 <input type="email" placeholder="Email" value="abc@gmail.com">
               </div>
-              <div>
+              <div class="location_line">
                 <input type="tel" placeholder="電話" value="0912345678">
               </div>
-              <div>
-                <input type="text" placeholder="地址" value="台北市中山區中山路一段5弄2號">
+              <div class="location_line">
+                <div class="location_select">
+                  <select id="credit-month" name="">
+                    <option value="1">台北市</option>
+                  </select>
+                </div>
+                <div class="location_select">
+                  <select id="credit-year" name="">
+                    <option value="1">信義區</option>
+                    <option value="2">大安區</option>
+                    <option value="3">內湖區</option>
+                  </select>
+                </div>
+                <input class="post" type="text" placeholder="郵遞區號" value="106">
+              </div>
+              <div class="location_line">
+                <input class="addr" type="text" placeholder="地址" value="中山路一段5弄2號">
               </div>
               <div class="bot_func"><a class="submit" href="#">更新資料</a></div>
             </div>

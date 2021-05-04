@@ -296,7 +296,7 @@ select{
 		}
 	}
 	.credit_select{
-		flex-basis: 50%;
+		flex-basis: 33%;
 		position: relative;
 		border-right: 1px solid #aaa;
 		&:last-child{
@@ -331,6 +331,9 @@ select{
 			// 	font-size: 1rem;
 			// }
 		}
+	}
+	.post{
+		flex-basis: 33%;
 	}
 }
 .od_checkout{
