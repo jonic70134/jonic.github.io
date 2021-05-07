@@ -4,8 +4,13 @@
 @import 'base/_base.scss';
 @import 'layouts/_header.scss';
 @import 'layouts/_qmomo_fancybox.scss';		
+//common
 input::placeholder{
 	color:#999;
+}
+input:disabled{
+	color:#ccc;
+	cursor:not-allowed;
 }
 select{
 	cursor: pointer;
@@ -56,6 +61,26 @@ select{
 	color:#d00;
 	margin:5px 0 0;
 }
+.tab_link{
+	padding:8px 20px;
+	border-bottom:1px solid #ffe1e1;
+	&.active{
+		border-bottom:2px solid #e38796;
+	}
+}
+.coupon_detail,.mem_od_detail,.mem_pra_detail{
+	display: flex;
+	flex-flow: row nowrap;
+	margin:0 0 15px;
+}
+.detail_content{
+	display: none;
+}
+.active{
+	display: block;
+}
+
+//page start
 .login{
 	padding:10px;
 	.mid_title{
@@ -447,6 +472,7 @@ select{
 	align-items: baseline;
 	position: relative;
 	width: 100%;
+	margin: 0 0 15px;
 	font-size:.9rem;
 	input{
 		width:80%;
@@ -466,27 +492,7 @@ select{
 		text-align: center;
 	}
 }
-.mem_coupon{
-	.coupon_detail{
-		// width:100%;
-		display: flex;
-		flex-flow: row nowrap;
-		margin:15px 0;
-		a{
-			padding:8px 20px;
-			border-bottom:1px solid #ffe1e1;
-			&.active{
-				border-bottom:2px solid #e38796;
-			}
-		}
-	}
-	.detail_content{
-		display: none;
-	}
-	.active{
-		display: block;
-	}
-}
+
 .coupon_body{
 	display: flex;
 	flex-flow: row wrap;
@@ -699,6 +705,60 @@ select{
 	transform: translateX(-100%);
 }
 
+.now_class,.next_class{
+	padding:5px 15px;
+	border:1px solid #ffe1e1;
+	border-radius: 20px;
+	box-shadow: 1px 1px 5px #ac9797;
+	.sm_title{
+		margin:10px 0 8px;
+	}
+}
+.next_class{
+	margin:10px 0;
+	border:none;
+	box-shadow: none;
+}
+.class_block{
+	display: flex;
+	padding:0 0 10px;
+	.class_pic{
+		width: 30%;
+		text-align: center;
+		img{
+			display: block;
+			width:100% ;
+		}
+		p{
+			font-size:.75rem;
+		}
+		
+	}
+	.class_des{
+		width:69%;
+		margin:0 0 0 1%;
+	}
+	.date{
+		p{
+			margin:0 0 0 10px;
+		}
+	}
+	p{
+		margin:0;
+		font-size:.9rem;
+	}
+}
+.progress{
+	width: 100%;
+	margin:23px 0 0;
+	background-color: grey;
+	.bar{
+		width: 1%;
+		height: 10px;
+		background-color: #fa6093;
+	}
+}
+
 // 彈出視窗
 .location_pop{
 	visibility: hidden;
@@ -803,7 +863,7 @@ select{
 	}
 }
 .location_select{
-	flex-basis: 33%;
+	flex-basis: 40%;
 	position: relative;
 	border-right: 1px solid #aaa;
 	&:last-child{
@@ -830,6 +890,6 @@ select{
 	}
 }
 .post{
-	flex-basis: 33%;
+	flex-basis: 20%;
 }
 @import 'layouts/_footer.scss';

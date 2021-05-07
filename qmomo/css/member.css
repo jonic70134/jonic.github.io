@@ -934,6 +934,11 @@ input::placeholder {
   color: #999;
 }
 
+input:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
 select {
   cursor: pointer;
   background: none;
@@ -983,6 +988,28 @@ select {
   font-size: 0.85rem;
   color: #d00;
   margin: 5px 0 0;
+}
+
+.tab_link {
+  padding: 8px 20px;
+  border-bottom: 1px solid #ffe1e1;
+}
+.tab_link.active {
+  border-bottom: 2px solid #e38796;
+}
+
+.coupon_detail, .mem_od_detail, .mem_pra_detail {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 0 15px;
+}
+
+.detail_content {
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 .login {
@@ -1379,6 +1406,7 @@ select {
   align-items: baseline;
   position: relative;
   width: 100%;
+  margin: 0 0 15px;
   font-size: 0.9rem;
 }
 .enter_coupon input {
@@ -1397,25 +1425,6 @@ select {
   border: none;
   cursor: pointer;
   text-align: center;
-}
-
-.mem_coupon .coupon_detail {
-  display: flex;
-  flex-flow: row nowrap;
-  margin: 15px 0;
-}
-.mem_coupon .coupon_detail a {
-  padding: 8px 20px;
-  border-bottom: 1px solid #ffe1e1;
-}
-.mem_coupon .coupon_detail a.active {
-  border-bottom: 2px solid #e38796;
-}
-.mem_coupon .detail_content {
-  display: none;
-}
-.mem_coupon .active {
-  display: block;
 }
 
 .coupon_body {
@@ -1642,6 +1651,60 @@ select {
   transform: translateX(-100%);
 }
 
+.now_class, .next_class {
+  padding: 5px 15px;
+  border: 1px solid #ffe1e1;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px #ac9797;
+}
+.now_class .sm_title, .next_class .sm_title {
+  margin: 10px 0 8px;
+}
+
+.next_class {
+  margin: 10px 0;
+  border: none;
+  box-shadow: none;
+}
+
+.class_block {
+  display: flex;
+  padding: 0 0 10px;
+}
+.class_block .class_pic {
+  width: 30%;
+  text-align: center;
+}
+.class_block .class_pic img {
+  display: block;
+  width: 100%;
+}
+.class_block .class_pic p {
+  font-size: 0.75rem;
+}
+.class_block .class_des {
+  width: 69%;
+  margin: 0 0 0 1%;
+}
+.class_block .date p {
+  margin: 0 0 0 10px;
+}
+.class_block p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.progress {
+  width: 100%;
+  margin: 23px 0 0;
+  background-color: grey;
+}
+.progress .bar {
+  width: 1%;
+  height: 10px;
+  background-color: #fa6093;
+}
+
 .location_pop {
   visibility: hidden;
   position: fixed;
@@ -1750,7 +1813,7 @@ select {
 }
 
 .location_select {
-  flex-basis: 33%;
+  flex-basis: 40%;
   position: relative;
   border-right: 1px solid #aaa;
 }
@@ -1778,7 +1841,7 @@ select {
 }
 
 .post {
-  flex-basis: 33%;
+  flex-basis: 20%;
 }
 
 .site-footer {

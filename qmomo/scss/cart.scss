@@ -4,6 +4,10 @@
 @import 'base/_base.scss';
 @import 'layouts/_cart_header.scss';
 @import 'layouts/_qmomo_fancybox.scss';
+.container{
+	width:100%;
+	max-width:1020px;
+}
 select{
 	cursor: pointer;
 	background: none;
@@ -18,6 +22,7 @@ select{
 	.sm_title{
 		padding: 10px;
 		background: #eee;
+		text-align: left;
 	}
 	.cart_title{
 		margin:10px 0;
@@ -108,6 +113,7 @@ select{
 			text-align: center;
 			font-size:1.1rem;
 			border:none;
+			white-space: nowrap;
 			cursor: pointer;
 		}
 	}
@@ -170,6 +176,7 @@ select{
 			border-bottom: 1px solid #ddd;
 			cursor: pointer;
 			input[type='text']{
+				width:150px;
 				margin:0 0 0 8px;
 				padding:8px 10px;
 				border:1px solid #ddd;
@@ -296,7 +303,7 @@ select{
 		}
 	}
 	.credit_select{
-		flex-basis: 33%;
+		flex-basis: 40%;
 		position: relative;
 		border-right: 1px solid #aaa;
 		&:last-child{
@@ -333,7 +340,7 @@ select{
 		}
 	}
 	.post{
-		flex-basis: 33%;
+		flex-basis: 20%;
 	}
 }
 .od_checkout{
@@ -414,4 +421,71 @@ select{
 
 	}
 }
-@import 'layouts/_footer.scss';
+@import 'layouts/_footer_m.scss';
+
+// RWD
+@media (max-width: 950px) {
+
+	.float_block{
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	.cart_orderlist{
+		.od_ul{
+			flex:79%;
+			margin:0 1% 0 0;
+		}
+		.od_total{
+			a{
+				white-space: nowrap;
+			}
+		}
+		.cart_add{
+			.items{
+				.item{
+					width:32%;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 700px) {
+	.cart_orderlist{
+		.cart_title{
+			padding:0 1%;
+		}
+		.cart_main{
+			flex-flow:column ;
+		}
+		.od_ul,.od_total{
+			flex:100%;
+			margin:0;
+			padding:0 1%;
+		}
+		.od_total_line,.od_total_price{
+			padding:15px 1%;
+		}
+		.od_code{
+			padding:0 1%;
+		}
+		.sm_title{
+			padding:20px;
+		}
+	}
+}
+@media (max-width: 480px) {
+	.cart_orderlist{
+		.cart_add{
+			.items{
+				.item{
+					width:49%;
+				}
+			}
+			.btn-cart{
+				padding:5px 10px;
+			}
+		}
+	}
+}

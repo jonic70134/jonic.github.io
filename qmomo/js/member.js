@@ -26,4 +26,27 @@ jQuery(function($){
 		$("#"+detail_id).addClass('active');
 	}); 
 
+	// 訂單查詢tab
+	$('.mem_od_detail a').click(function(e){
+		e.preventDefault();
+		var detail_id = $(this).attr('data-detail');
+
+		$('.mem_od_detail a').removeClass('active');
+		$('.detail_content').removeClass('active');
+
+		$(this).addClass('active');
+		$("#"+detail_id).addClass('active');
+	}); 
+
+	//會員權益tab
+	$('.mem_pra_detail a').click(function(e){
+		e.preventDefault();
+		var detail_id = $(this).attr('data-detail');
+
+		$('.mem_pra_detail a').removeClass('active');
+		$('.detail_content').removeClass('active');
+
+		$(this).addClass('active');
+		$("#"+detail_id).addClass('active');
+	}); 
 });
