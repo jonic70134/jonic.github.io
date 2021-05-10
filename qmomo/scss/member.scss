@@ -706,6 +706,7 @@ select{
 }
 
 .now_class,.next_class{
+	margin:0 0 40px;
 	padding:5px 15px;
 	border:1px solid #ffe1e1;
 	border-radius: 20px;
@@ -718,6 +719,12 @@ select{
 	margin:10px 0;
 	border:none;
 	box-shadow: none;
+	.sm_title{
+		margin:0 0 8px;
+	}
+	.date{
+		margin:0 0 10px;
+	}
 }
 .class_block{
 	display: flex;
