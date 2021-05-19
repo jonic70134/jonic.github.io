@@ -998,7 +998,7 @@ select {
   border-bottom: 2px solid #e38796;
 }
 
-.coupon_detail, .mem_od_detail, .mem_pra_detail {
+.coupon_detail, .mem_od_detail, .mem_pra_detail, .mem_info_detail {
   display: flex;
   flex-flow: row nowrap;
   margin: 0 0 15px;
@@ -1222,6 +1222,7 @@ select {
   margin: 0 0 30px;
 }
 .mem_data_list td, .mem_data_list th {
+  min-width: 55px;
   border-bottom: 1px solid #999;
   padding: 10px 18px;
   font-size: 0.85rem;
@@ -1656,7 +1657,6 @@ select {
   padding: 5px 15px;
   border: 1px solid #ffe1e1;
   border-radius: 20px;
-  box-shadow: 1px 1px 5px #ac9797;
 }
 .now_class .sm_title, .next_class .sm_title {
   margin: 10px 0 8px;
@@ -2055,6 +2055,10 @@ a.foot_link_open .fa-chevron-right {
   }
 }
 @media (max-width: 750px) {
+  .mem_block {
+    margin: 20px auto 0;
+  }
+
   .mem_body {
     flex-flow: column;
     align-items: center;
@@ -2063,6 +2067,7 @@ a.foot_link_open .fa-chevron-right {
 
   .mem_info, .mem_order, .mem_fav, .mem_coupon, .mem_point, .mem_privacy, .mem_chg_pass, .mem_set {
     width: 100%;
+    margin: 0 0 30px;
   }
 
   .mem_link {
@@ -2070,13 +2075,16 @@ a.foot_link_open .fa-chevron-right {
     flex-flow: row wrap;
     width: 100%;
     max-width: 480px;
-    margin: 0 0 10px;
+    margin: 0 0 30px;
   }
   .mem_link ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     box-shadow: none;
+  }
+  .mem_link ul li {
+    width: 25%;
   }
   .mem_link ul li a {
     min-width: 100px;

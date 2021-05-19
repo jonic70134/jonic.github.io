@@ -144,35 +144,106 @@
               </ul><a class="logout" href="#">登出</a>
             </div>
             <div class="mem_info">
-              <div class="sub_func"><a href="mem_info_location.html">常用收件人 </a><a href="mem_info_invo.html">常用統一編號</a></div>
-              <div class="location_line">
-                <input type="text" placeholder="姓名" value="金小姐">
-              </div>
-              <div class="location_line">
-                <input type="email" placeholder="Email" value="abc@gmail.com" disabled="disabled">
-              </div>
-              <div class="location_line">
-                <input type="tel" placeholder="電話" value="0912345678" disabled="disabled">
-              </div>
-              <div class="location_line">
-                <div class="location_select">
-                  <select id="credit-month" name="">
-                    <option value="1">台北市</option>
-                  </select>
+              <div class="mem_info_detail"><a class="tab_link active" href="#" data-detail="mem_info_detail-1">會員資料</a><a class="tab_link" href="#" data-detail="mem_info_detail-2">常用收件人</a><a class="tab_link" href="#" data-detail="mem_info_detail-3">常用統一編號</a><a class="tab_link" href="#" data-detail="mem_info_detail-4">修改密碼</a></div>
+              <div class="detail_content active" id="mem_info_detail-1">
+                <div class="location_line">
+                  <input type="text" placeholder="姓名" value="金小姐">
                 </div>
-                <div class="location_select">
-                  <select id="credit-year" name="">
-                    <option value="1">信義區</option>
-                    <option value="2">大安區</option>
-                    <option value="3">內湖區</option>
-                  </select>
+                <div class="location_line">
+                  <input type="email" placeholder="Email" value="abc@gmail.com" disabled="disabled">
                 </div>
-                <input class="post" type="text" placeholder="郵遞區號" value="106">
+                <div class="location_line">
+                  <input type="tel" placeholder="電話" value="0912345678" disabled="disabled">
+                </div>
+                <div class="location_line">
+                  <div class="location_select">
+                    <select id="credit-month" name="">
+                      <option value="1">台北市</option>
+                    </select>
+                  </div>
+                  <div class="location_select">
+                    <select id="credit-year" name="">
+                      <option value="1">信義區</option>
+                      <option value="2">大安區</option>
+                      <option value="3">內湖區</option>
+                    </select>
+                  </div>
+                  <input class="post" type="text" placeholder="郵遞區號" value="106">
+                </div>
+                <div class="location_line">
+                  <input class="addr" type="text" placeholder="地址" value="中山路一段5弄2號">
+                </div>
+                <div class="bot_func"><a class="submit" href="#">更新資料</a></div>
               </div>
-              <div class="location_line">
-                <input class="addr" type="text" placeholder="地址" value="中山路一段5弄2號">
+              <div class="detail_content" id="mem_info_detail-2">
+                <table class="mem_data_list">
+                  <thead>
+                    <tr> 
+                      <th>姓名</th>
+                      <th>電話</th>
+                      <th>地址</th>
+                      <th> </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr> 
+                      <td>通靈術</td>
+                      <td>0912***689</td>
+                      <td>台北市中山區中山路一段5弄2號</td>
+                      <td> <a href="#"><i class="far fa-trash-alt"></i></a></td>
+                    </tr>
+                    <tr> 
+                      <td>版面煉成</td>
+                      <td>0932***777</td>
+                      <td>新北市新店區寶來路一段202弄4巷2號10樓</td>
+                      <td> <a href="#"><i class="far fa-trash-alt"></i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="bot_func"><a class="submit location_pop_btn" href="#recipient_pop">新增常用收件人</a></div>
               </div>
-              <div class="bot_func"><a class="submit" href="#">更新資料</a></div>
+              <div class="detail_content" id="mem_info_detail-3">
+                <table class="mem_data_list invo_data_list">
+                  <thead>
+                    <tr> 
+                      <th>發票抬頭</th>
+                      <th>統一編號</th>
+                      <th> </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr> 
+                      <td>Qmomo</td>
+                      <td>16097091</td>
+                      <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                    </tr>
+                    <tr> 
+                      <td>星巴克</td>
+                      <td>16097091</td>
+                      <td> <a href="#"><i class="far fa-trash-alt"></i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="bot_func"><a class="submit mem_pop_btn" href="#mem_data_pop">新增常用統一編號</a></div>
+              </div>
+              <div class="detail_content" id="mem_info_detail-4">
+                <div class="login">
+                  <div class="login_body">
+                    <div class="login_line">
+                      <input type="password" placeholder="原密碼">
+                      <p class="err_txt">請輸入正確的原密碼</p>
+                    </div>
+                    <div class="login_line">
+                      <input type="password" placeholder="設定新密碼">
+                      <p class="err_txt">至少包含1個數字、1個小寫字母、1個大寫字母、長度10-20位數</p>
+                    </div>
+                    <div class="login_line">
+                      <input type="password" placeholder="請再次輸入新密碼">
+                      <p class="err_txt">請輸入與上一步相同的密碼</p>
+                    </div><a class="nor_login" href="mem_login.html">送出</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -249,6 +320,48 @@
           </div>
         </div><a class="button large btn-addcart" href="item.html">看更多</a><a class="pop_close" href="#"><i class="fas fa-times"></i></a>
       </div>
+    </div>
+    <div class="location_pop" id="mem_data_pop">
+      <div class="location_pop_body">
+        <div class="mid_title">新增常用統一編號</div>
+        <div class="location_line">
+          <input type="text" placeholder="發票抬頭">
+        </div>
+        <div class="location_line">
+          <input type="tel" placeholder="統一編號">
+        </div>
+        <div class="bot_func"><a class="cancel" href="#">取消  </a><a class="submit" href="#">新增 </a></div>
+      </div><a class="pop_close" href="#"><i class="fas fa-times"></i></a>
+    </div>
+    <div class="location_pop" id="recipient_pop">
+      <div class="location_pop_body">
+        <div class="mid_title">新增常用收件人</div>
+        <div class="location_line">
+          <input type="text" placeholder="姓名">
+        </div>
+        <div class="location_line">
+          <input type="tel" placeholder="電話">
+        </div>
+        <div class="location_line address_dat">
+          <div class="location_select">
+            <select id="credit-month" name="">
+              <option value="1">台北市</option>
+            </select>
+          </div>
+          <div class="location_select">
+            <select id="credit-year" name="">
+              <option value="1">信義區</option>
+              <option value="2">大安區</option>
+              <option value="3">內湖區</option>
+            </select>
+          </div>
+          <input class="post" type="text" placeholder="郵遞區號" value="106">
+        </div>
+        <div class="location_line">
+          <input class="credit_num" type="text" id="" placeholder="收貨地址" value="">
+        </div>
+        <div class="bot_func"><a class="cancel" href="#">取消  </a><a class="submit" href="#">新增 </a></div>
+      </div><a class="pop_close" href="#"><i class="fas fa-times"></i></a>
     </div>
   </body>
 </html>
