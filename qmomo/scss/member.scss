@@ -600,7 +600,7 @@ select{
 	.point_exchange{
 		position: relative;
 		.sub_func{
-			position: absolute;top:0;right: 0;
+			position: absolute;top:3px;right: 0;
 			a{
 				margin: 0 0 0 10px;
 				padding:5px 10px;
@@ -1025,7 +1025,7 @@ select{
 		}
 	}
 	.tab_link{
-		padding:5px 10px;
+		padding:5px 12px;
 		font-size:.8rem;
 	}
 	.coupon_block{
@@ -1059,11 +1059,50 @@ select{
 		ul{
 			li{
 				a{
-					min-width:83px;	
+					min-width:auto;	
 					padding:5px;
 					font-size:.75rem;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
 				}
 			}	
+		}
+	}
+	.mem_order_list{
+		.mem_left{
+			font-size:.75rem;
+			.mem_deliver{
+				a{
+					font-size:.75rem;
+				}
+			}
+		}
+		.mem_right{
+			.trans,.order_detail{
+				font-size:.75rem;
+			}
+		}
+	} 
+	.mem_sub_order{
+		.mem_sub_cell > div{
+			padding:8px;
+			font-size:.75rem;
+		}
+		.mem_sub_con{
+			li{
+				.name{
+					width:150px;
+					a{
+						width:auto;
+						white-space: normal;
+						font-size:.75rem;
+					}
+				}
+				.price{
+					width:55px;
+				}
+			}
 		}
 	}
 }
