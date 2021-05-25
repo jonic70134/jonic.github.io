@@ -1,0 +1,22 @@
+//header
+.site-header{
+	position:sticky;
+	top:0;left:0;
+	z-index: 30;
+	background-color: #cbabb0;
+	.logo{
+		h1{
+			display: none;
+		}
+		a{
+			display: block;
+		}
+		img{
+			display: block;
+			width:150px;
+			margin:0 auto;
+			padding:10px;
+		}
+	}
+}
+

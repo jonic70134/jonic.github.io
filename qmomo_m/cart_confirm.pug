@@ -1,0 +1,82 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		include _head.pug
+		title Qmomo - cart
+		
+		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
+		link(href='css/cart.css', rel='stylesheet')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/cart_orderlist.js')
+		
+	body
+		.wpf-loader-two
+			.wpf-loader-two-inner
+				span Loading
+		include _cart_header.pug
+
+		.cart_orderlist.cart_confirm
+			.container
+				.cart_title.mid_title 訂單明細
+				.cart_main
+					ul.od_ul
+						li
+							figure.od_photo
+								img(src="img/1000x1000_prod_1.jpeg", alt="")
+							.od_info 
+								.sm_title
+									| 內衣【Rose W 】高級訂製金3D型W鋼圈內衣
+								.od_size
+									span.size size：85D
+									span.color 顏色：銀河藍
+									p.size 件數:1
+								.od_price
+									.normal_price
+										span.currency NT$ 1,390
+									.discount_price
+										span.currency NT$ 1,290
+
+						li
+							figure.od_photo
+								img(src="img/1000x1000_prod_2.jpeg", alt="")
+							.od_info 
+								.sm_title
+									| 內衣【Rose W 】高級訂製金3D型W鋼圈內衣
+								.od_size
+									span.size size：85D
+									span.color 顏色：銀河藍
+									p.size 件數:1
+								.od_price
+									.normal_price
+										span.currency NT$ 1,390
+									.discount_price
+										span.currency NT$ 1,290
+						li
+							figure.od_photo
+								img(src="img/1000x1000_prod_3.jpeg", alt="")
+							.od_info 
+								.sm_title
+									| 內衣【Rose W 】高級訂製金3D型W鋼圈內衣
+								.od_size
+									span.size size：85D
+									span.color 顏色：銀河藍
+									p.size 件數:1
+								.od_price
+									.normal_price
+										span.currency NT$ 1,390
+									.discount_price
+										span.currency NT$ 1,290
+					.od_total.cart_total
+						.od_addr
+							p.title 收件人資訊 
+							p 姓名：Q毛毛
+							p 地址：台北市大安區光復南路102號4F
+							p 電話：0988100900
+						
+						.od_total_price 
+							p.title 總價
+							p.currency NT$ 3940
+						.od_checkout 
+							a(href="index.html").btn-checkout 確認結帳
+		include _footer_m.pug
