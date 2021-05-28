@@ -43,16 +43,38 @@ jQuery(function($){
 	$('.foot_link_open').click(function(){
 		$('.float_block').slideDown();
 	});
-	// tab
-	$('ul.tabs li').click(function(){
-		var tab_id = $(this).attr('data-tab');
+	// 商品分頁tab
+	$('.nav_page_num').click(function(e){
+		e.preventDefault();
+		var tab_id = $(this).attr('data-page');
 
-		$('ul.tabs li').removeClass('current');
-		$('.tab_content').removeClass('current');
+		$('.nav_page_num').removeClass('active');
+		$('.index_items .items').removeClass('active');
 
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
+		$(this).addClass('active');
+		$("#"+tab_id).addClass('active');
+
 	});
+	// 下一個tab
+	$('.nav .next').click(function (e) {
+		e.preventDefault();
+        var currentTab = $(".nav_page_num.active");
+        var newTab = currentTab.next();
+        if(newTab.length > 0) {
+            currentTab.removeClass('active');
+            newTab.addClass('active');
+        }
+    });
+	// 上一個tab
+	$('.nav .prev').click(function (e) {
+		e.preventDefault();
+        var currentTab = $(".nav_page_num.active");
+        var newTab = currentTab.prev();
+        if(newTab.length > 0) {
+            currentTab.removeClass('active');
+            newTab.addClass('active');
+        }
+    });
 
 	//點選購物車彈出視窗選規格
 	$('.item .fa-shopping-cart').on('click', function(e) {
