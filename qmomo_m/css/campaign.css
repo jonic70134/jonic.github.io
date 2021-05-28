@@ -594,6 +594,14 @@ input[type=number]::-webkit-outer-spin-button {
 .site-header .member_func .member:last-child, .site-header .member_func .cart:last-child {
   border-left: none;
 }
+.site-header .member_func .cart a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
 .site-header .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -714,6 +722,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .site-header .cart .fa-shopping-cart {
   font-size: 1.1rem;
+  margin: 0 2px 0 0;
 }
 .site-header .cart .cart_notify {
   width: 20px;

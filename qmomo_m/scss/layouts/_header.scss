@@ -42,6 +42,12 @@
 				border-left:none;
 			}
 		}
+		.cart{
+			a{
+				display: flex;
+				align-items: flex-end;
+			}
+		}
 	}
 	.search{
 		display: flex;
@@ -144,6 +150,7 @@
 		cursor: pointer;
 		.fa-shopping-cart{
 			font-size:1.1rem;
+			margin: 0 2px 0 0;
 		}
 		.cart_notify{
 			width:20px;height:20px;

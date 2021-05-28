@@ -19,7 +19,7 @@ jQuery(function($){
 		},
 	});
 
-
+	
 	//浮動廣告slider
 	var popSlider = new Swiper('.pop_slider .swiper-container', {
 		slidesPerView: 1,
@@ -43,16 +43,44 @@ jQuery(function($){
 	$('.foot_link_open').click(function(){
 		$('.float_block').slideDown();
 	});
-	// tab
-	$('ul.tabs li').click(function(){
-		var tab_id = $(this).attr('data-tab');
+	// 商品分頁tab
+	$('.nav_page_num').click(function(e){
+		e.preventDefault();
+		var tab_id = $(this).attr('data-page');
 
-		$('ul.tabs li').removeClass('current');
-		$('.tab_content').removeClass('current');
+		$('.nav_page_num').removeClass('active');
+		$('.index_items .items').removeClass('active');
 
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
+		$(this).addClass('active');
+		$("#"+tab_id).addClass('active');
+
 	});
+	$('.nav .next').click(function (e) {
+		e.preventDefault();
+        // get current tab
+        var currentTab = $(".nav_page_num.active");
+        // get the next tab, if there is one (i.e. we are not at the end)
+        var newTab = currentTab.next();
+        if(newTab.length > 0) {
+            // remove active from old tab
+            currentTab.removeClass('active');
+            // add active to new tab
+            newTab.addClass('active');
+        }
+    });
+	$('.nav .prev').click(function (e) {
+		e.preventDefault();
+        // get current tab
+        var currentTab = $(".nav_page_num.active");
+        // get the next tab, if there is one (i.e. we are not at the end)
+        var newTab = currentTab.prev();
+        if(newTab.length > 0) {
+            // remove active from old tab
+            currentTab.removeClass('active');
+            // add active to new tab
+            newTab.addClass('active');
+        }
+    });
 });
 
 $("document").ready(function() {

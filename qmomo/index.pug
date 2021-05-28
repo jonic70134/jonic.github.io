@@ -55,7 +55,11 @@ html(lang='zh-Hant-TW')
 		.index_items
 			.container
 				.big_title NIGHT CARE
-				.items
+				.items#page-1.active
+					include _items.pug
+				.items#page-2
+					include _items.pug
+				.items#page-3
 					include _items.pug
 				.nav
 					.container
@@ -63,13 +67,9 @@ html(lang='zh-Hant-TW')
 							i.fas.fa-angle-left
 								| &nbsp;PREV
 						.page_num_block
-							a(href="#" class="nav_page_num active") 1	
-							a(href="#" class="nav_page_num") 2
-							a(href="#" class="nav_page_num") 3
-							a(href="#" class="nav_page_num") 4
-							a(href="#" class="nav_page_num") 5
-							a(href="#" class="nav_page_num") ...
-							a(href="#" class="nav_page_num") 30
+							a(href="#" class="nav_page_num active" data-page="page-1") 1	
+							a(href="#" class="nav_page_num" data-page="page-2") 2
+							a(href="#" class="nav_page_num" data-page="page-3") 3
 						a(href="#" class="next")
 							i.fas.fa-angle-right
 								| &nbsp;NEXT

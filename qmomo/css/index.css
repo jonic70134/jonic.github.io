@@ -1010,6 +1010,12 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   margin: 20px 0;
   text-align: center;
 }
+.index_items .items, .index_video .items {
+  display: none;
+}
+.index_items .items.active, .index_video .items.active {
+  display: flex;
+}
 
 .qmomo_tv {
   position: relative;
