@@ -55,29 +55,23 @@ jQuery(function($){
 		$("#"+tab_id).addClass('active');
 
 	});
+	// 下一個tab
 	$('.nav .next').click(function (e) {
 		e.preventDefault();
-        // get current tab
         var currentTab = $(".nav_page_num.active");
-        // get the next tab, if there is one (i.e. we are not at the end)
         var newTab = currentTab.next();
         if(newTab.length > 0) {
-            // remove active from old tab
             currentTab.removeClass('active');
-            // add active to new tab
             newTab.addClass('active');
         }
     });
+	// 上一個tab
 	$('.nav .prev').click(function (e) {
 		e.preventDefault();
-        // get current tab
         var currentTab = $(".nav_page_num.active");
-        // get the next tab, if there is one (i.e. we are not at the end)
         var newTab = currentTab.prev();
         if(newTab.length > 0) {
-            // remove active from old tab
             currentTab.removeClass('active');
-            // add active to new tab
             newTab.addClass('active');
         }
     });
