@@ -1,5 +1,5 @@
-@import 'base/_variables.scss';
-@import 'base/_mixins.scss';
+@import '../base/_variables.scss';
+@import '../base/_mixins.scss';
 .cart_popup{
 	visibility: hidden;
 	position:fixed;top:0;left:0;
@@ -20,11 +20,11 @@
 		display: flex;
 		justify-content: space-between;
 	}
-	.cart_pop_close{
+	.pop_close{
 		position: absolute;right:-32px;top:0;
 		display: block;
 		padding:3px 8px;
-		background-color: #ff5353;
+		background-color: #e38796;
 		z-index: 20;
 		i{
 			color:white;
@@ -57,9 +57,8 @@
 		padding:15px 40px;
 		font-size:.9rem;
 		text-align: center;
-		color:#333;
-		background:white ;
-		border:1px solid #ccc;
+		color:white;
+		background:#222 ;
 	}
 	
 }
@@ -69,7 +68,7 @@
 @media (max-width:380px) {
 	.cart_popup{
 		.gallery_top{
-			.swiper-slide{
+			.swiper-slide{ 
 				img{
 					height: 354px;
 				}
@@ -102,7 +101,7 @@
 				height:67px;
 			}
 		}
-		.cart_pop_close{
+		.pop_close{
 			right:-16px;
 		}
 	}

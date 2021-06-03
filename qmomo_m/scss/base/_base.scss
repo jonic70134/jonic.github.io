@@ -124,6 +124,26 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 .fas.fa-heart{	
 	color:#fa6093;
 }
+.fa-line{
+	color:#06C755;
+}
+.fa-facebook-square{
+	color:#4267B2;
+}
+.fa-instagram-square{
+	color:white;
+	font-size:1.4rem;
+	background: #d6249f;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	border-radius:5px;
+	-webkit-background-clip: text;
+	  /* Also define standard property for compatibility */
+	  background-clip: text;
+	  -webkit-text-fill-color: transparent;
+}
+.fa-youtube-square{
+	color: red;
+}
 .sm_title{
 	font-size:.9rem;
 }
@@ -270,6 +290,7 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 		}
 	}
 }
+
 .alert_window{
 	display:none;
 	position: absolute;left:-2px;top:-42px;

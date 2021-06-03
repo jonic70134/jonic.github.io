@@ -1,10 +1,9 @@
-@import 'base/_variables.scss';
-@import 'base/_mixins.scss';
-@import 'base/_reset.scss';
-@import 'base/_base.scss';
-@import 'layouts/_header.scss';
-@import 'layouts/_qmomo_fancybox.scss';		
-
+@import '../base/_variables';
+@import '../base/_mixins.scss';
+@import '../base/_reset.scss';
+@import '../base/_base.scss';
+@import '../layouts/_header.scss';
+@import '../layouts/_qmomo_fancybox.scss';
 //common
 input::placeholder{
 	color:#999;
@@ -900,5 +899,5 @@ select{
 .post{
 	flex-basis: 20%;
 }
-@import 'layouts/_footer.scss';
+@import '../layouts/_footer.scss';
 @import '_rwd_member.scss';

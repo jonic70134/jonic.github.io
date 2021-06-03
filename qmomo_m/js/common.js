@@ -91,12 +91,12 @@ jQuery(function($){
 	// });
 
 	//點選商品圖彈出預覽畫面
-	$('.item .track .fa-search').on('click', function(e) {
+	$('.item .photo a').on('click', function(e) {
 		e.preventDefault();
 		$('.cart_popup').css('visibility','visible');
 		$('body').css('overflow','hidden');
 	});
-	$('.cart_pop_close').on('click', function(e) {
+	$('.pop_close').on('click', function(e) {
 		e.preventDefault();
 		$('.cart_popup').css('visibility','hidden');
 		$('body').css('overflow','auto');
@@ -153,7 +153,7 @@ jQuery(function($){
 		}, 400);
 	};
 	// 搜尋框開合
-	$('.fa-search').click(function(e) {
+	$('.search .fa-search').click(function(e) {
 		e.preventDefault();
 		$('.search-input').stop(true,false).toggleClass("active");
 	});

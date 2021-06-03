@@ -4,8 +4,8 @@ html(lang='zh-Hant-TW')
 		include _head.pug
 		title Qmomo
 		
-		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
-		link(href='css/index.css', rel='stylesheet')
+		link(href='css/mobile/jquery.fancybox.min.css', rel='stylesheet')
+		link(href='css/mobile/index.css', rel='stylesheet')
 		
 	body
 		.wpf-loader-two
@@ -52,7 +52,11 @@ html(lang='zh-Hant-TW')
 		.index_items
 			.container
 				.big_title NIGHT CARE
-				.items
+				.items#page-1.active
+					include _items.pug
+				.items#page-2
+					include _items.pug
+				.items#page-3
 					include _items.pug
 				.nav
 					.container
@@ -71,7 +75,7 @@ html(lang='zh-Hant-TW')
 				.qmomo_tv
 					.qmomo_video
 						iframe(src='https://www.youtube.com/embed/MgZeFlFVis8' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-		include _footer.pug
+		include _footer_m.pug
 		
 		.pop_slider
 			.swiper-container
@@ -110,7 +114,7 @@ html(lang='zh-Hant-TW')
 					p 內衣課程
 			.pop_bot
 				.status
-				.close_pop
+				.pop_close
 					p 關閉
 					i.fas.fa-times
 		.lightbox#index_ad(data-fancybox)

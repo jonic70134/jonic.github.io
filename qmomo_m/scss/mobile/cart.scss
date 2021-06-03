@@ -1,9 +1,9 @@
-@import 'base/_variables.scss';
-@import 'base/_mixins.scss';
-@import 'base/_reset.scss';
-@import 'base/_base.scss';
-@import 'layouts/_cart_header.scss';
-@import 'layouts/_qmomo_fancybox.scss';
+@import '../base/_variables';
+@import '../base/_mixins.scss';
+@import '../base/_reset.scss';
+@import '../base/_base.scss';
+@import '../layouts/_cart_header.scss';
+@import '../layouts/_qmomo_fancybox.scss';
 .container{
 	width:100%;
 	max-width:1020px;
@@ -422,7 +422,7 @@ select{
 
 	}
 }
-@import 'layouts/_footer_m.scss';
+@import '../layouts/_footer.scss';
 
 // RWD
 @media (max-width: 950px) {

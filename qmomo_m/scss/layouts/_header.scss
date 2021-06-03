@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Font Awesome 5 Free';
-    src: url(webfonts/fa-solid-900.woff) format 'opentype';
+    src: url(../../webfonts/fa-solid-900.woff) format 'opentype';
 }
 //header
 .site-header{
@@ -187,9 +187,7 @@
 			}
 		}
 	}
-	.header_top_m{
-		
-	}
+
 	.header_top_r{
 		display: flex;
 		flex-flow: row nowrap;

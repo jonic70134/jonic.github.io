@@ -4,8 +4,8 @@ html(lang='zh-Hant-TW')
 		include _head.pug
 		title Qmomo - cart
 		
-		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
-		link(href='css/member.css', rel='stylesheet')
+		link(href='css/mobile/jquery.fancybox.min.css', rel='stylesheet')
+		link(href='css/mobile/member.css', rel='stylesheet')
 		script(src='js/jquery.fancybox.min.js')
 		script(src='js/common.js')
 		script(src='js/member.js')
@@ -111,7 +111,7 @@ html(lang='zh-Hant-TW')
 											input(type='password' placeholder='請再次輸入新密碼')
 											p.err_txt 請輸入與上一步相同的密碼
 										a.nor_login(href='mem_login.html') 送出
-		include _footer.pug
+		include _footer_m.pug
 		#mem_data_pop.location_pop
 			.location_pop_body
 				.mid_title 新增常用統一編號
