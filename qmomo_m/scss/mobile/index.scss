@@ -79,6 +79,12 @@
 		margin:20px 0;
 		text-align: center;
 	}
+	.items{
+		display: none;
+		&.active{
+			display: flex;
+		}
+	}
 }
 .qmomo_tv{
 	position: relative;
@@ -178,4 +184,4 @@
 		}
 	}
 }
-@import '../layouts/_footer.scss';
+@import '../layouts/_footer_m.scss';

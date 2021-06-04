@@ -669,14 +669,41 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
           box-shadow: 0 2px 5px #aaa;
 }
 .site-header .search-input input[type=text] {
+  display: block;
   width: 100%;
-  padding: 15px;
-  border: 1px solid #ddd;
+  padding: 10px;
   color: #555;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  border: none;
+}
+.site-header .search-input form {
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
 }
 .site-header .search-input.active {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.site-header .search-input .btn_submit {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 37px;
+  color: white;
+  background-color: #cbabb0;
+  border: none;
 }
 .site-header .line_box .down_app {
   padding: 13px;
@@ -1017,11 +1044,14 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 400px;
+  padding-top: 36px;
+  overflow-y: auto;
 }
 .site-menu .main_menu h2, .site-menu .main_menu h3 {
   white-space: nowrap;
@@ -1348,6 +1378,14 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 .index_items .big_title, .index_video .big_title {
   margin: 20px 0;
   text-align: center;
+}
+.index_items .items, .index_video .items {
+  display: none;
+}
+.index_items .items.active, .index_video .items.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .qmomo_tv {
