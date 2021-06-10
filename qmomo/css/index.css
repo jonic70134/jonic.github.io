@@ -964,20 +964,23 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   width: 100%;
 }
 
-.four_banner, .three_banner {
-  display: flex;
+.banner_4 .items {
   flex-flow: row nowrap;
-  justify-content: space-between;
+  margin: 0;
 }
-.four_banner h2, .three_banner h2 {
-  display: none;
+.banner_4 .item {
+  width: 25%;
+  margin: 0;
 }
 
-.four_banner {
-  justify-content: flex-start;
+.banner_6 .items {
+  flex-flow: row wrap;
+  margin: 0 -0.5% 0 0;
 }
-.four_banner .four_banner_cate {
-  width: 25%;
+.banner_6 .item {
+  width: 33.333333%;
+  padding: 0.5% 0.5% 0 0;
+  margin: 0;
 }
 
 .swiper-container {
@@ -1039,6 +1042,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 .index_items .items.active, .index_video .items.active {
   display: flex;
+  margin: 0 -0.5%;
 }
 
 .qmomo_tv {
