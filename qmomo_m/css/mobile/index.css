@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*reset*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, th, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -169,13 +170,15 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 .wpf-loader-two .wpf-loader-two-inner {
   position: absolute;
-  left: 46%;
-  top: 40%;
+  left: 50%;
+  top: 50%;
   width: 100px;
   height: 100px;
   text-align: center;
   border: 2px solid #fff;
   border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .wpf-loader-two .wpf-loader-two-inner:before {
   content: "";
@@ -368,13 +371,13 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0.3%;
+  margin: 0 1%;
 }
 
 .item {
   display: block;
   width: 24%;
-  margin: 0 0.5% 40px;
+  margin: 0 0.5% 20px;
 }
 .item .photo {
   height: auto;
@@ -502,6 +505,52 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   border-color: #333 transparent transparent transparent;
 }
 
+.select_sort {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 140px;
+  height: 30px;
+  line-height: 1.4;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.select_sort select {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 10px;
+  font-size: 0.9rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0 !important;
+  background: #ffadad;
+  background-image: none;
+}
+.select_sort::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -7px;
+  padding: 0 10px;
+  font-size: 0.7rem;
+  color: white;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+}
+
 @-webkit-keyframes loader-two-before-transition {
   50% {
     left: -154px;
@@ -556,12 +605,13 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 @media (max-width: 767px) {
   .item {
-    width: 32%;
+    width: 32.3%;
   }
 }
 @media (max-width: 480px) {
   .item {
-    width: 49%;
+    width: 48%;
+    margin: 0 1% 20px;
   }
 }
 @font-face {
@@ -1241,6 +1291,11 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   background: #222;
 }
 
+@media (max-width: 410px) {
+  .cart_popup .pop_close {
+    right: -23px;
+  }
+}
 @media (max-width: 380px) {
   .cart_popup .gallery_top .swiper-slide img {
     height: 354px;
@@ -1291,15 +1346,20 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   width: 100%;
 }
 
-.banner_4 .items {
+.banner_2 .items, .banner_3 .items, .banner_4 .items {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   margin: 0;
 }
-.banner_4 .item {
+.banner_2 .item, .banner_3 .item, .banner_4 .item {
   width: 50%;
+  margin: 0;
+}
+
+.banner_3 .item {
+  width: 33.333333%;
   margin: 0;
 }
 
@@ -1584,9 +1644,9 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 100%;
   max-width: 200px;
 }

@@ -95,7 +95,7 @@
     <div class="site-activity">
       <div class="container">
         <div class="act-info" id="activity_info">
-          <h3><span class="ready">通通給姊包起來~組合價$3988</span><span class="act-title"> </span><span class="date">2020/12/01 00:00 ~ 2020/12/15 23:59</span></h3>
+          <h3><span class="ready">通通給姊包起來~組合價$3988</span><span class="date">2020/12/01 00:00 ~ 2020/12/15 23:59</span></h3>
           <div class="desc">
             <p class="act-content">任選5件NT$3,988，折扣可循環累計，且無法使用折價券和其他折扣活動優惠</p>
             <p class="tip">活動優惠可循環累計。</p>
@@ -157,7 +157,7 @@
               <div class="inner-bar" data-state="100"></div><span class="note">還差 <span class="price">NT$200</span></span><span class="note-finish hide">已達成條件</span>
             </div>
             <p class="tip">已選購<span class="red-text"> 4件 </span>商品：</p>
-            <div class="actions" id="actActions"><span class="current">目前累計金額：</span><span class="price">NT$800</span><a class="button" href="#">查看購物車</a></div>
+            <div class="actions" id="actActions"><span class="current">目前累計金額：</span><span class="price">NT$800</span><a class="btn-addcart" href="#">查看購物車</a></div>
           </div>
         </div>
       </div>
@@ -168,31 +168,15 @@
           <li class="tab_link current" data-tab="tab-1">性感內衣</li>
           <li class="tab_link" data-tab="tab-2">舒適小褲</li>
         </ul>
-        <div class="sort">
-          <label for="sort1">
-            <input type="radio" name="sort" value="1" id="sort1" checked="checked"><span class="checkmark"></span>
-            <p>店長推薦</p>
-          </label>
-          <label for="sort2">
-            <input type="radio" name="sort" value="2" id="sort2"><span class="checkmark"></span>
-            <p>最新上架</p>
-          </label>
-          <label for="sort3">
-            <input type="radio" name="sort" value="3" id="sort3"><span class="checkmark"></span>
-            <p>熱賣商品</p>
-          </label>
-          <label for="sort4">
-            <input type="radio" name="sort" value="4" id="sort4"><span class="checkmark"></span>
-            <p>最多人看</p>
-          </label>
-          <label for="sort5">
-            <input type="radio" name="sort" value="5" id="sort5"><span class="checkmark"></span>
-            <p>價格 低 → 高</p>
-          </label>
-          <label for="sort6">
-            <input type="radio" name="sort" value="6" id="sort6"><span class="checkmark"></span>
-            <p>價格 高 → 低</p>
-          </label>
+        <div class="select_sort">
+          <select id="sort" name="sort"> 
+            <option value="1">店長推薦</option>
+            <option value="2">最新上架</option>
+            <option value="3">熱賣商品</option>
+            <option value="4">最多人看</option>
+            <option value="5">價格 低 → 高</option>
+            <option value="6">價格 高 → 低</option>
+          </select>
         </div>
       </div>
     </div>
@@ -497,7 +481,7 @@
     </div>
     <div class="nav">
       <div class="container"><a class="prev" href="#"><i class="fas fa-angle-left">&nbsp;PREV</i></a>
-        <div class="page_num_block"><a class="nav_page_num active" href="#">1</a><a class="nav_page_num" href="#">2</a><a class="nav_page_num" href="#">3</a><a class="nav_page_num" href="#">4</a><a class="nav_page_num" href="#">5</a><a class="nav_page_num" href="#">...</a><a class="nav_page_num" href="#">30</a></div><a class="next" href="#"><i class="fas fa-angle-right">&nbsp;NEXT</i></a>
+        <div class="page_num_block"><a class="nav_page_num active" href="#">1</a><a class="nav_page_num" href="#">2</a><a class="nav_page_num" href="#">3</a></div><a class="next" href="#"><i class="fas fa-angle-right">&nbsp;NEXT</i></a>
       </div>
     </div>
     <footer class="site-footer">

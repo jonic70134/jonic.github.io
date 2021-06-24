@@ -964,12 +964,22 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   width: 100%;
 }
 
-.banner_4 .items {
+.banner_2 .items, .banner_3 .items, .banner_4 .items {
   flex-flow: row nowrap;
   margin: 0;
 }
-.banner_4 .item {
+.banner_2 .item, .banner_3 .item, .banner_4 .item {
   width: 25%;
+  margin: 0;
+}
+
+.banner_2 .item {
+  width: 50%;
+  margin: 0;
+}
+
+.banner_3 .item {
+  width: 33.333333%;
   margin: 0;
 }
 

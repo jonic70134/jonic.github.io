@@ -5,25 +5,27 @@
 @import '../layouts/_header.scss';
 @import '../layouts/_qmomo_fancybox.scss';
 .about_main{
-	margin: 40px 0;
+	margin: 20px 3%;
 	.container{ 
 		display: flex;
-		flex-flow: row nowrap;
+		flex-flow: row wrap;
 	}
 }
 .about_menu{
-	flex:0 0 15%;
-	padding:0;
-	border-right:1px solid #ccc;
+	display: flex;
+	flex:0 0 100%;
+	flex-flow:row wrap ;
+	justify-content: center;
+	margin:0 0 10px;
 	font-size:.9rem;
+	.main_menu{
+		display: flex;
+	}
 	dt{
-		padding:10px 20px;
-		border-bottom:1px solid #ccc;
-		border-top:1px solid #ccc;
+		display: none;
 	}
 	dd{
-		margin-left:15px;
-		padding:10px 20px;
+		padding:10px 20px 10px 0;
 	}
 	a{
 		&:hover{
@@ -32,8 +34,7 @@
 	}
 }
 .about_content{
-	flex:0 0 85%;
-	padding: 0 0 0 40px;
+	flex:0 0 100%;
 	font-size:.9rem;
 	h3{
 		margin:0 0 10px;
@@ -55,8 +56,8 @@
 	display: flex;
 	flex-flow: row wrap;
 	.store{
-		flex: 0 0 32%;
-		margin:0 10px 20px 0;
+		width:31%;
+		margin:0 2% 20px 0;
 		padding:0;
 		border:1px solid #ccc;
 		img{
@@ -96,4 +97,15 @@
 		}
 	}
 }
-@import '../layouts/_footer.scss';
+
+@media (max-width:530px) {
+	.store_block{
+		.store{
+			width:48%;
+			// &:last-child{
+			// 	margin:0 0 20px;
+			// }
+		}
+	}
+}
+@import '../layouts/_footer_m.scss';

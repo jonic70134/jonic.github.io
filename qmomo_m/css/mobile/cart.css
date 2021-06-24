@@ -170,13 +170,15 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 .wpf-loader-two .wpf-loader-two-inner {
   position: absolute;
-  left: 46%;
-  top: 40%;
+  left: 50%;
+  top: 50%;
   width: 100px;
   height: 100px;
   text-align: center;
   border: 2px solid #fff;
   border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .wpf-loader-two .wpf-loader-two-inner:before {
   content: "";
@@ -369,13 +371,13 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0.3%;
+  margin: 0 1%;
 }
 
 .item {
   display: block;
   width: 24%;
-  margin: 0 0.5% 40px;
+  margin: 0 0.5% 20px;
 }
 .item .photo {
   height: auto;
@@ -503,6 +505,52 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   border-color: #333 transparent transparent transparent;
 }
 
+.select_sort {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 140px;
+  height: 30px;
+  line-height: 1.4;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.select_sort select {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 10px;
+  font-size: 0.9rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0 !important;
+  background: #ffadad;
+  background-image: none;
+}
+.select_sort::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -7px;
+  padding: 0 10px;
+  font-size: 0.7rem;
+  color: white;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+}
+
 @-webkit-keyframes loader-two-before-transition {
   50% {
     left: -154px;
@@ -557,12 +605,13 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 @media (max-width: 767px) {
   .item {
-    width: 32%;
+    width: 32.3%;
   }
 }
 @media (max-width: 480px) {
   .item {
-    width: 49%;
+    width: 48%;
+    margin: 0 1% 20px;
   }
 }
 .site-header {
@@ -656,6 +705,11 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   background: #222;
 }
 
+@media (max-width: 410px) {
+  .cart_popup .pop_close {
+    right: -23px;
+  }
+}
 @media (max-width: 380px) {
   .cart_popup .gallery_top .swiper-slide img {
     height: 354px;
@@ -1205,9 +1259,9 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 100%;
   max-width: 200px;
 }

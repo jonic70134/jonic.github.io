@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*reset*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, th, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -169,13 +170,15 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 .wpf-loader-two .wpf-loader-two-inner {
   position: absolute;
-  left: 46%;
-  top: 40%;
+  left: 50%;
+  top: 50%;
   width: 100px;
   height: 100px;
   text-align: center;
   border: 2px solid #fff;
   border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .wpf-loader-two .wpf-loader-two-inner:before {
   content: "";
@@ -368,13 +371,13 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0.3%;
+  margin: 0 1%;
 }
 
 .item {
   display: block;
   width: 24%;
-  margin: 0 0.5% 40px;
+  margin: 0 0.5% 20px;
 }
 .item .photo {
   height: auto;
@@ -502,6 +505,52 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   border-color: #333 transparent transparent transparent;
 }
 
+.select_sort {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 140px;
+  height: 30px;
+  line-height: 1.4;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.select_sort select {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 10px;
+  font-size: 0.9rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0 !important;
+  background: #ffadad;
+  background-image: none;
+}
+.select_sort::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -7px;
+  padding: 0 10px;
+  font-size: 0.7rem;
+  color: white;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+}
+
 @-webkit-keyframes loader-two-before-transition {
   50% {
     left: -154px;
@@ -556,12 +605,13 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 @media (max-width: 767px) {
   .item {
-    width: 32%;
+    width: 32.3%;
   }
 }
 @media (max-width: 480px) {
   .item {
-    width: 49%;
+    width: 48%;
+    margin: 0 1% 20px;
   }
 }
 @font-face {
@@ -669,14 +719,41 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
           box-shadow: 0 2px 5px #aaa;
 }
 .site-header .search-input input[type=text] {
+  display: block;
   width: 100%;
-  padding: 15px;
-  border: 1px solid #ddd;
+  padding: 10px;
   color: #555;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  border: none;
+}
+.site-header .search-input form {
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
 }
 .site-header .search-input.active {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.site-header .search-input .btn_submit {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 37px;
+  color: white;
+  background-color: #cbabb0;
+  border: none;
 }
 .site-header .line_box .down_app {
   padding: 13px;
@@ -1017,11 +1094,14 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 400px;
+  padding-top: 36px;
+  overflow-y: auto;
 }
 .site-menu .main_menu h2, .site-menu .main_menu h3 {
   white-space: nowrap;
@@ -1211,6 +1291,11 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   background: #222;
 }
 
+@media (max-width: 410px) {
+  .cart_popup .pop_close {
+    right: -23px;
+  }
+}
 @media (max-width: 380px) {
   .cart_popup .gallery_top .swiper-slide img {
     height: 354px;
@@ -1251,7 +1336,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   }
 }
 .about_main {
-  margin: 40px 0;
+  margin: 20px 3%;
 }
 .about_main .container {
   display: -webkit-box;
@@ -1259,26 +1344,37 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .about_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 15%;
-          flex: 0 0 15%;
-  padding: 0;
-  border-right: 1px solid #ccc;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 10px;
   font-size: 0.9rem;
 }
+.about_menu .main_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .about_menu dt {
-  padding: 10px 20px;
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
+  display: none;
 }
 .about_menu dd {
-  margin-left: 15px;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 0;
 }
 .about_menu a:hover {
   color: black;
@@ -1286,9 +1382,8 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 
 .about_content {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 85%;
-          flex: 0 0 85%;
-  padding: 0 0 0 40px;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   font-size: 0.9rem;
 }
 .about_content h3 {
@@ -1316,10 +1411,8 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
           flex-flow: row wrap;
 }
 .store_block .store {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 32%;
-          flex: 0 0 32%;
-  margin: 0 10px 20px 0;
+  width: 31%;
+  margin: 0 2% 20px 0;
   padding: 0;
   border: 1px solid #ccc;
 }
@@ -1360,6 +1453,11 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   color: #06c;
 }
 
+@media (max-width: 530px) {
+  .store_block .store {
+    width: 48%;
+  }
+}
 .site-footer {
   width: 100%;
   color: #585858;
@@ -1422,9 +1520,9 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 100%;
   max-width: 200px;
 }

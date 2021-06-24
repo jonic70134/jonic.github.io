@@ -62,7 +62,13 @@
 	}
 	
 }
-
+@media (max-width:410px) {
+	.cart_popup{
+		.pop_close{
+			right:-23px;
+		}
+	}
+}
 
 
 @media (max-width:380px) {

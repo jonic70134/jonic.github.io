@@ -22,12 +22,13 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	background-color: $theme-color;
 	z-index: 50;
 	.wpf-loader-two-inner {
-		position: absolute;left: 46%;top: 40%;
+		position: absolute;left: 50%;top: 50%;
 		width: 100px;
 		height: 100px;
 		text-align: center;
 		border: 2px solid #fff;
 		border-radius: 50%;
+		transform: translate(-50%,-50%);
 		&:before {
 			content: "";
 			position: absolute;left: -204px;top: -5px;
@@ -192,12 +193,12 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	display: flex;
 	flex-flow:row wrap;
 	align-items: center;
-	margin: 0 0.3%;
+	margin: 0 1%;
 }
 .item{
 	display: block;
 	width:24%;
-	margin:0 .5% 40px;
+	margin:0 .5% 20px;
 	.photo{
 		height:auto;
 		// position: relative;
@@ -311,6 +312,46 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 		border-color: #333 transparent transparent transparent;
 	}
 }
+
+.select_sort{
+	position: relative;
+	display: flex;
+	width: 140px;
+	height: 30px;
+	line-height: 1.4;
+	background: #2c3e50;
+	overflow: hidden;
+	border-radius:5px;
+	select{
+		flex: 1;
+		padding: 0 10px;
+		font-size:.9rem;
+		color: #fff;
+		cursor: pointer;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		outline: 0;
+		box-shadow: none;
+		border: 0 !important;
+		background: #ffadad;
+		background-image: none;
+	}
+	&::after{
+		content: '\25BC';
+		position: absolute;top: 50%;right: 0;
+		margin-top:-7px;
+		padding: 0 10px;
+		font-size:.7rem;
+		color:white;
+		cursor: pointer;
+		pointer-events: none;
+		-webkit-transition: .25s all ease;
+		-o-transition: .25s all ease;
+		transition: .25s all ease;
+	}
+}
 @-webkit-keyframes loader-two-before-transition {
 	50% {
 		left: -154px;
@@ -358,11 +399,12 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 // Responsive
 @media (max-width:767px) {
 	.item{
-		width:32%;
+		width:32.3%;
 	}
 }
 @media (max-width:480px) {
 	.item{
-		width:49%;
+		width:48%;
+		margin: 0 1% 20px;
 	}
 }
