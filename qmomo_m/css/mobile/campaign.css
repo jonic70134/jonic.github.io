@@ -1598,11 +1598,9 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 
 @-webkit-keyframes animate-stripes {
-  /* line 299, ../sass/split/_product_list_events_main_top.scss */
   0% {
     background-position: 0 0;
   }
-  /* line 299, ../sass/split/_product_list_events_main_top.scss */
   100% {
     background-position: 60px 0;
   }
@@ -2036,6 +2034,10 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   }
   .quantity .quantity-decrease i, .quantity .quantity-increase i {
     font-size: 0.7rem;
+  }
+
+  .select_sort {
+    width: auto;
   }
 }
 .site-footer {

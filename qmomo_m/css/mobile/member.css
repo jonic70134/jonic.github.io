@@ -2898,6 +2898,13 @@ a.foot_link_open .fa-chevron-right {
   }
 }
 @media (max-width: 430px) {
+  .login .login_btn a {
+    padding: 10px 5px;
+  }
+  .login .login_btn a::before {
+    display: none;
+  }
+
   .mem_link ul li a {
     min-width: auto;
     padding: 5px;

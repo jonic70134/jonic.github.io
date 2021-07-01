@@ -153,6 +153,16 @@
 	}
 }
 @media (max-width: 430px) {
+	.login{
+		.login_btn{
+			a{
+				padding:10px 5px;
+				&::before{
+					display: none;
+				}
+			}
+		}
+	}
 	.mem_link{
 		ul{
 			li{

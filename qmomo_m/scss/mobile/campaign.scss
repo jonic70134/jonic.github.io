@@ -254,24 +254,18 @@
 
 
 @-webkit-keyframes animate-stripes {
-  /* line 299, ../sass/split/_product_list_events_main_top.scss */
   0% {
     background-position: 0 0;
   }
-
-  /* line 299, ../sass/split/_product_list_events_main_top.scss */
   100% {
     background-position: 60px 0;
   }
 }
 
 @-moz-keyframes animate-stripes {
-  /* line 302, ../sass/split/_product_list_events_main_top.scss */
   0% {
     background-position: 0 0;
   }
-
-  /* line 302, ../sass/split/_product_list_events_main_top.scss */
   100% {
     background-position: 60px 0;
   }
@@ -650,6 +644,9 @@
 				font-size: .7rem
 			}
 		}
-	} 
+	}
+	.select_sort{
+		width: auto;
+	}
 }
 @import '../layouts/_footer_m.scss';
