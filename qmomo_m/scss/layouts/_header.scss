@@ -367,11 +367,8 @@
 		transition: 250ms all;
 	}
 	.main_menu{
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: center;
+		display: block;
 		height: 400px;
-		padding-top: 36px;
 		overflow-y: auto;
 		h2,h3{
 			white-space: nowrap;

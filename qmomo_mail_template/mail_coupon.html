@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+
+    <title>Qmomo</title>
+    <style>
+      /*reset*/
+      html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, th, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        background: transparent;
+        box-sizing: border-box;
+      }
+
+      /* HTML5 display-role reset for older browsers */
+      body {
+        line-height: 1;
+      }
+
+      ol, ul {
+        list-style: none;
+      }
+
+      blockquote, q {
+        quotes: none;
+      }
+
+      blockquote:before, blockquote:after {
+        content: "";
+        content: none;
+      }
+
+      q:before, q:after {
+        content: "";
+        content: none;
+      }
+
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      :focus {
+        outline: 0;
+      }
+
+      caption {
+        text-align: left;
+      }
+
+      :link {
+        text-decoration: none;
+        outline: none;
+        /* for Firefox */
+        hlbr: expression(this.onFocus=this.blur());
+        /* for IE */
+      }
+
+      a {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        color: #333;
+      }
+
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #cccccc;
+        margin: 1em 0;
+        padding: 0;
+      }
+
+      input, select {
+        vertical-align: middle;
+      }
+
+      ::placeholder {
+        color: #ccc;
+      }
+
+      .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+        clear: both;
+      }
+
+      * html .clearfix {
+        height: 1%;
+      }
+      *:first-child + html .clearfix {
+        min-height: 1px;
+      }
+
+      html {
+        height: 100%;
+      }
+
+      body {
+        min-width: 320px;
+        font-size: 16px;
+        line-height: 1.4;
+        color: #333;
+        background-color: #ffffff;
+        overflow-x: hidden;
+        font-family: "open sans", "Microsoft JhengHei", sans-serif;
+      }
+
+      input[type=password], input[type=email], input[type=tel], input[type=text], input[type=number], input[type=search] {
+        border-color: #cccccc;
+        background: white;
+        color: black;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 1020px;
+        margin: 0 auto;
+      }
+      
+      .sm_title {
+        font-size: 0.9rem;
+      }
+
+      .big_title {
+        font-size: 1.5rem;
+      }
+
+      .mid_title {
+        font-size: 1.2rem;
+      }
+
+      *::-webkit-scrollbar,
+      *::-webkit-scrollbar-thumb {
+        width: 10px;
+        border-radius: 20px;
+        color: #babac0;
+        background-clip: padding-box;
+        border: 3px solid transparent;
+        background-color: white;
+      }
+
+      *::-webkit-scrollbar-thumb {
+        box-shadow: inset 0 0 0 10px;
+      }
+
+      input[type=number]::-webkit-inner-spin-button,
+      input[type=number]::-webkit-outer-spin-button {
+        opacity: 1;
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      *:focus {
+        outline: none;
+        border: 0;
+      }
+      .container{
+        width:100%;
+        max-width: 800px;
+      }
+      .logo{
+        display: block;
+        margin:0 auto 30px;
+        text-align: center;
+      }
+    .content{
+      margin:30px 0;
+      padding:20px;
+      line-height: 2.8;
+    }
+    .btn_submit{
+      display: block;
+      width:100%;
+      margin:10px 0;
+      padding:0px 20px;
+      color:white;
+      text-align: center;
+      background-color: #06c;
+    }
+    .red_txt{
+      color:#d00;
+    }
+    strong{
+      font-weight: 700;
+    }
+    .mid_title{
+      font-size:1.2rem;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="content">
+          <img class="logo" src="qmomo_logo_pink.png" alt="Qmomo logo"/>
+          <p class="mid_title"><strong>你於{商店名稱}的購物金即將到期!</strong></p>
+          <p><strong>{顧客名稱}</strong>你好：</p>
+          <p>你的購物金(100)點,將於(YYYY-MM-DD)過期</p>
+          <p>請在過期前把握機會使用吧!</p>
+          <p>祝 購物愉快!</p>
+          <a href="#" class="btn_submit">開始購物</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
