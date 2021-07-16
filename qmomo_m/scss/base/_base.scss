@@ -123,7 +123,7 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	color:#999;
 }
 .fas.fa-heart{	
-	color:#fa6093;
+	color:$item_fav;
 }
 .fa-line{
 	color:#06C755;
@@ -248,7 +248,7 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 			}
 		}
 		.fas.fa-heart{
-			color:#fa6093;
+			color:$item_fav;
 		}
 	}
 	.dis_price{
@@ -326,7 +326,7 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 		flex: 1;
 		padding: 0 10px;
 		font-size:.9rem;
-		color: #fff;
+		color: $sort_color;
 		cursor: pointer;
 		-webkit-appearance: none;
 		-moz-appearance: none;
@@ -335,7 +335,7 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 		outline: 0;
 		box-shadow: none;
 		border: 0 !important;
-		background: #ffadad;
+		background: $sort_bg;
 		background-image: none;
 	}
 	&::after{

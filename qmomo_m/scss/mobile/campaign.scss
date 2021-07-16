@@ -15,7 +15,7 @@
 	}
 }
 .red-text{
-	color:#ff5353;
+	color:$price_color;
 }
 .site-activity{
 	line-height: 1.4;
@@ -244,8 +244,8 @@
 				.btn-addcart{
 					float: right;
 					padding:5px 10px;
-					color:$add_btn_font_color;
-					background-color: $add_btn_bg_color;
+					color:$campaign_add_color;
+					background-color: $campaign_add_btn;
 				}
 			}
 		}
@@ -372,7 +372,7 @@
 					text-decoration: underline;
 				}
 				&.current{
-					color:#e00517;
+					color:$price_color;
 				}
 			}
 			.selected {
@@ -511,7 +511,7 @@
 		&.current{	
 			color: #222;
 			background:#fefefe;
-			border-bottom:2px solid $theme-color ;
+			border-bottom:2px solid $campaign_tab_line ;
 		}
 	}
 }
@@ -531,7 +531,7 @@
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		align-items: center;
-		border-bottom:1px solid $theme-color;
+		border-bottom:1px solid $campaign_tab_line;
 	}
 }
 .sort{
@@ -563,7 +563,7 @@
 		&:checked{
 			~.checkmark{
 				border:none;
-				background-color:$theme-color;
+				background-color:$campaign_tab_line;
 			}
 			~p{
 				color:white;

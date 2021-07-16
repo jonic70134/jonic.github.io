@@ -21,58 +21,9 @@
 		justify-content: space-between;
 		align-items: center;
 		padding:0 0 10px;
-		border-bottom:1px solid $theme-color;
+		border-bottom:1px solid $sort_bg;
 	}
 }
-.sort{
-	display: inline-flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-	padding:10px 0 0;
-	font-size:.9rem;
-	label{
-		position: relative;
-		display: flex;
-		flex-flow: row nowrap;
-		align-items: flex-end;
-		width:100px;height:36px;
-		margin: 0;
-		text-align: center;
-		cursor: pointer;
-		color:#777;
-		&:last-child{
-			margin:0;
-		}
-	}
-	p{
-		width:100px;
-		line-height: 36px;
-	}
-	input{
-		display: none;
-		&:checked{
-			~.checkmark{
-				border:none;
-				background-color:$theme-color;
-				// &:after{
-				// 	display: block;
-				// 	position: absolute;left:3px;top:-4px;
-				// 	font-size:1.3rem;
-				// 	color:white;
-					
-				// }
-			}
-			~p{
-				color:white;
-				position: absolute;left:0;top:0;
-			}
-		}
-	}
-	.checkmark{
-		width:100px;height:36px;
-		position: absolute;left:0;top:0;
-		cursor: pointer;
-	}
-}
+
 
 @import '../layouts/_footer_m.scss';

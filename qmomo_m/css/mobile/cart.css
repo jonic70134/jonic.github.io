@@ -455,7 +455,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   flex: 1;
   padding: 0 10px;
   font-size: 0.9rem;
-  color: #fff;
+  color: white;
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
