@@ -145,7 +145,7 @@ body{
 		max-width: 350px;
 		margin:0 10px 0 0;
 		padding:2px 0 5px;
-		color:#fa6093;
+		color:$act_color;
 		font-size:.8rem;
 		white-space: nowrap;
 		overflow: hidden;
@@ -189,17 +189,17 @@ body{
 		font-size: .9rem;
 		text-align: center;
 		color: white;
-		background-color: #fa6093;
+		background-color: $tag_color;
 	}
 	.price{
-		color:#fa6093;
+		color:$price_color;
 		font-size:1.2rem;
 	}
 	
 }
 .fa-heart{
 	font-size: 1.2rem;
-	color: #fa6093;
+	color: $item_fav;
 	cursor: pointer;
 }
 .feature{
@@ -454,7 +454,7 @@ body{
 		cursor: pointer;
 		&.current{
 			color: #222;
-			border-bottom:2px solid $theme-color ;
+			border-bottom:2px solid $tab_line ;
 		}
 	}
 }
@@ -481,7 +481,7 @@ body{
 		padding:10px;
 		text-align: center;
 		&.current{
-			border-bottom:2px solid $theme-color;
+			border-bottom:2px solid $tab_line;
 		}
 	}
 }

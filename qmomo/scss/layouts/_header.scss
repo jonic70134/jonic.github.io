@@ -3,7 +3,7 @@
 	position:sticky;
 	top:0;left:0;
 	z-index: 30;
-	background-color: #cbabb0;
+	background-color:$header_bg;
 	.logo{
 		h1{
 			display: none;
@@ -121,7 +121,7 @@
 			color:white;
 			line-height: 1.5;
 			text-align: center;
-			background-color: #c70034;
+			background-color: $cart_notify_bg;
 			border-radius:50%;
 		}
 		.num{

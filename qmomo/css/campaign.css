@@ -1102,11 +1102,11 @@ input[type=number] {
 }
 .site-activity .act-cart .swiper-container .currency {
   font-size: 0.75rem;
-  color: #e00517;
+  color: #fa6093;
 }
 .site-activity .act-cart .swiper-container .price {
   font-size: 0.75rem;
-  color: #e00517;
+  color: #fa6093;
 }
 .site-activity .act-cart .swiper-container .btn-del {
   margin: 0 0 0 5px;
@@ -1617,7 +1617,7 @@ input[type=number] {
   position: fixed;
   bottom: 50%;
   right: 0;
-  z-index: 30;
+  z-index: 20;
   display: flex;
   flex-flow: column;
   transform: translateY(50%);

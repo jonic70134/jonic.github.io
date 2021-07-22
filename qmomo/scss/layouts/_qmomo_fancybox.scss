@@ -1,5 +1,5 @@
-@import 'base/_variables.scss';
-@import 'base/_mixins.scss';
+@import '../base/_variables.scss';
+@import '../base/_mixins.scss';
 .cart_popup{
 	visibility: hidden;
 	position:fixed;top:0;left:0;
@@ -53,7 +53,7 @@
 	position: absolute;right:-32px;top:0;
 	display: block;
 	padding:3px 8px;
-	background-color: #e38796;
+	background-color: $pop_close_color;
 	i{
 		color:white;
 	}

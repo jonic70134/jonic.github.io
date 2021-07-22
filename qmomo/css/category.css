@@ -1125,7 +1125,7 @@ input[type=number] {
   position: fixed;
   bottom: 50%;
   right: 0;
-  z-index: 30;
+  z-index: 20;
   display: flex;
   flex-flow: column;
   transform: translateY(50%);

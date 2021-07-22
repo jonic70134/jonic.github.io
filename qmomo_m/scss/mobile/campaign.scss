@@ -511,7 +511,7 @@
 		&.current{	
 			color: #222;
 			background:#fefefe;
-			border-bottom:2px solid $campaign_tab_line ;
+			border-bottom:2px solid $tab_line;
 		}
 	}
 }
@@ -531,7 +531,7 @@
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		align-items: center;
-		border-bottom:1px solid $campaign_tab_line;
+		border-bottom:1px solid $tab_line;
 	}
 }
 .sort{
@@ -563,7 +563,7 @@
 		&:checked{
 			~.checkmark{
 				border:none;
-				background-color:$campaign_tab_line;
+				background-color:$tab_line;
 			}
 			~p{
 				color:white;

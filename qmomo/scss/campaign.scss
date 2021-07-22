@@ -152,11 +152,11 @@
 			}
 			.currency{
 				font-size: .75rem;
-				color: #e00517;
+				color: $price_color;
 			}
 			.price{
 				font-size: .75rem;
-				color: #e00517;
+				color: $price_color;
 			}
 			.btn-del{
 				margin:0 0 0 5px;
@@ -406,17 +406,6 @@
 				color: #e00517;
 			}
 		}
-		// .all {
-		// 	display: inline-block;
-		// 	vertical-align: middle;
-		// 	cursor: pointer;
-		// 	line-height: 140%;
-		// 	margin-right: 20px;
-		// } 
-		// .type {
-		// 	width: 65px;
-		// 	margin-right: 0;
-		// }
 		.actions {
 			position: absolute;
 			right: 5px;
@@ -538,7 +527,7 @@
 		&.current{	
 			color: #222;
 			background:#fefefe;
-			border-bottom:2px solid $theme-color ;
+			border-bottom:2px solid $tab_line ;
 		}
 	}
 }
@@ -558,7 +547,7 @@
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		align-items: center;
-		border-bottom:1px solid $theme-color;
+		border-bottom:1px solid $tab_line;
 	}
 }
 .sort{

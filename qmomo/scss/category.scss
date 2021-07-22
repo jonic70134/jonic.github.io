@@ -22,7 +22,7 @@
 		justify-content: space-between;
 		align-items: center;
 		
-		border-bottom:1px solid $theme-color;
+		border-bottom:1px solid $sort_bg;
 	}
 }
 .sort{
@@ -54,7 +54,7 @@
 		&:checked{
 			~.checkmark{
 				border:none;
-				background-color:$theme-color;
+				background-color:$sort_bg;
 				// &:after{
 				// 	display: block;
 				// 	position: absolute;left:3px;top:-4px;
@@ -64,7 +64,7 @@
 				// }
 			}
 			~p{
-				color:white;
+				color:$sort_color;
 				position: absolute;left:0;top:0;
 			}
 		}

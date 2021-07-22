@@ -253,7 +253,7 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 			}
 		}
 		.fas.fa-heart{
-			color:#fa6093;
+			color:$item_fav;
 		}
 	}
 	.dis_price{
@@ -329,7 +329,7 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	// }
 }
 .currency{
-	color: #fa6093;
+	color: $price_color;
 	font-size: 1.2rem;
 }
 @-webkit-keyframes loader-two-before-transition {

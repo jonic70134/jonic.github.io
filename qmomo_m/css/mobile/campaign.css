@@ -550,15 +550,18 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   display: flex;
   flex: 0 0 50%;
   justify-content: center;
-  padding: 10px;
+  padding: 0;
   border: 1px solid #eee;
 }
 .site-header .member_func .member:last-child, .site-header .member_func .cart:last-child {
   border-left: none;
 }
-.site-header .member_func .cart a {
+.site-header .member_func a {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
 }
 .site-header .search {
   display: flex;
