@@ -1,0 +1,34 @@
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_base.scss';
+@import 'base/_reset.scss';
+@import 'layouts/_header.scss';
+
+.not-found {
+	color:$txt_color_404;
+	font-size: 3.5rem;
+	font-family: 'Lobster', cursive;
+}
+.msg_404{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	margin:50px 0;
+	text-align: center;
+	p{
+		margin: 20px;
+		line-height: 1.8;
+	}
+	a{
+		display: inline-block;
+		padding:10px 20px;
+		color:white;
+		background-color:$addcart_btn_bg;
+		border-radius: 10px;
+	}
+}
+.cart_popup{
+	display: none;
+}
+@import 'layouts/_footer.scss';

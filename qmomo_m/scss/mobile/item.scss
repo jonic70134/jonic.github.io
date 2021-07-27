@@ -379,6 +379,13 @@ body{
 	}
 	&.addcart{
 		border-top:1px solid  #eee ;
+		.soldout{
+			margin:10px 0 30px;
+			padding:10px;
+			color:grey;
+			background-color: #eee;
+			text-align: center;
+		}
 	}
 	.quantity{
 		position: relative;

@@ -1016,7 +1016,7 @@ select {
 
 .tab_link {
   padding: 8px 20px;
-  border-bottom: 1px solid #ffe1e1;
+  border-bottom: 1px solid #ffadad;
 }
 .tab_link.active {
   border-bottom: 2px solid #e38796;
@@ -1679,7 +1679,7 @@ select {
 .now_class, .next_class {
   margin: 0 0 40px;
   padding: 5px 15px;
-  border: 1px solid #ffe1e1;
+  border: 1px solid #ffadad;
   border-radius: 20px;
 }
 .now_class .sm_title, .next_class .sm_title {
