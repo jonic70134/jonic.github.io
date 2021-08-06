@@ -1,0 +1,37 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		include ../pug_common/_head_m.pug
+		title Qmomo - cart
+		
+		link(href='css/mobile/jquery.fancybox.min.css', rel='stylesheet')
+		link(href='css/mobile/member.css', rel='stylesheet')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/member.js')
+		
+	body
+		.wpf-loader-two
+			.wpf-loader-two-inner
+				span Loading
+		include ../pug_common/_header_m.pug
+
+		.member
+			.container
+				.login
+					.mid_title 會員登入
+					.login_body
+						.login_line
+							input(type='email' placeholder='Email / 手機號碼')
+						.login_line
+							input(type='password' placeholder='密碼')
+							p.err_txt 請輸入正確的帳號 & 密碼
+						a.nor_login(href='mem_order.html') 登入
+						.login_btn 
+							a.nor_login.fb(href="mem_third_login.html") Facebook 登入 
+							a.nor_login.gle(href="mem_third_login.html") Google 登入
+							a.nor_login.line(href="mem_third_login.html") Line 登入
+						.login_reg
+							a.reg(href="mem_reg.html") 註冊新會員
+							a.forgot_pas(href="mem_forgot.html") 忘記密碼
+		include ../pug_common/_footer_m.pug

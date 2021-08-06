@@ -1,0 +1,152 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		include ../pug_common/_head.pug
+		title Qmomo
+		
+		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
+		link(href='css/index.css', rel='stylesheet')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/index.js')
+		
+	body
+		.wpf-loader-two
+			.wpf-loader-two-inner
+				span Loading
+		include ../pug_common/_header.pug
+		
+		// Start slider
+		.big_slider
+			.swiper-container
+				.swiper-wrapper
+					.swiper-slide
+						a(href="item.html")
+							img(data-seq='', src='../img/qmomo_slider7.jpg', alt=' 親膚天絲')
+					.swiper-slide
+						a(href="item.html")
+							img(data-seq='', src='../img/qmomo_slider6.jpg', alt=' 親膚天絲')
+					.swiper-slide 
+						a(href="item.html")
+							img(data-seq='', src='../img/qmomo_slider4.jpg', alt=' 我只要陷阱妹')
+					.swiper-slide 
+						a(href="item.html")
+							img(data-seq='', src='../img/qmomo_slider5.jpg', alt=' 我愛睡覺覺')
+					.swiper-slide 
+						a(href="item.html")
+							img(data-seq='', src='../img/qmomo_slider3.jpg', alt=' 我愛睡覺覺')
+					.swiper-slide
+						a(href="item.html")
+							img(data-seq='', src='../img/qmomo_slider2.jpg', alt='美胸BraTop')  
+					.swiper-slide
+						a(href="item.html")
+							img(data-seq='', src='../img/qmomo_slider1.jpg', alt='運動內衣')
+					//- .swiper-slide
+					//- 	.video_container
+					//- 		iframe(src='https://www.youtube.com/embed/zmHbGq7IkjI', frameborder='0', allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+				.swiper-pagination.swiper-pagination-white
+				.swiper-button-next.swiper-button-white
+				.swiper-button-prev.swiper-button-white
+		.banner
+			.container
+				.one_banner
+					a(href="item.html")
+						img(src='../img/qmomo_big_ad4.png', alt='Qmomo banner')
+		.banner_4
+			.container
+				.items
+					a.item(href="category.html")
+						img(src='../img/banner4-1.jpg', alt='Qmomo banner')
+					a.item(href="category.html")
+						img(src='../img/banner4-2.jpg', alt='Qmomo banner')
+					a.item(href="category.html")
+						img(src='../img/banner4-3.jpg', alt='Qmomo banner')
+					a.item(href="category.html")
+						img(src='../img/banner4-4.jpg', alt='Qmomo banner')
+		.banner_6
+			.container
+				.items
+					a.item(href="category.html")
+						img(src='../img/banner6-1.jpg', alt='Qmomo banner')
+					a.item(href="category.html")
+						img(src='../img/banner6-2.jpg', alt='Qmomo banner')
+					a.item(href="category.html")
+						img(src='../img/banner6-3.jpg', alt='Qmomo banner')
+					a.item(href="category.html")
+						img(src='../img/banner6-4.jpg', alt='Qmomo banner')
+					a.item(href="category.html")
+						img(src='../img/banner6-5.jpg', alt='Qmomo banner')
+					a.item(href="category.html")
+						img(src='../img/banner6-6.jpg', alt='Qmomo banner')
+		.index_items
+			.container
+				.big_title NIGHT CARE
+				.items#page-1.active
+					include ../pug_common/_items.pug
+				.items#page-2
+					include ../pug_common/_items.pug
+				.items#page-3 
+					include ../pug_common/_items.pug
+				.nav
+					.container
+						a(href="#" class="prev")
+							i.fas.fa-angle-left
+								| &nbsp;PREV
+						.page_num_block
+							a(href="#" class="nav_page_num active" data-page="page-1") 1	
+							a(href="#" class="nav_page_num" data-page="page-2") 2
+							a(href="#" class="nav_page_num" data-page="page-3") 3
+						a(href="#" class="next")
+							i.fas.fa-angle-right
+								| &nbsp;NEXT
+		.index_video
+			.container
+				.qmomo_tv
+					.qmomo_video
+						iframe(src='https://www.youtube.com/embed/MgZeFlFVis8' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+		include ../pug_common/_footer.pug
+		.pop_slider
+			.swiper-container
+				.swiper-wrapper
+					.swiper-slide
+						a(href="#")
+							img(data-seq='', src='../img/pop_slider_1.jpg', alt=' 親膚天絲')
+					.swiper-slide
+						a(href="#")
+							img(data-seq='', src='../img/pop_slider_2.jpg', alt=' 親膚天絲')
+					.swiper-slide 
+						a(href="#")
+							img(data-seq='', src='../img/pop_slider_3.jpg', alt=' 我只要陷阱妹')
+					.swiper-slide 
+						a(href="#")
+							img(data-seq='', src='../img/pop_slider_4.jpg', alt=' 我愛睡覺覺')
+					.swiper-slide 
+						a(href="#")
+							img(data-seq='', src='../img/pop_slider_5.jpg', alt=' 我愛睡覺覺')
+					.swiper-slide
+						a(href="#")
+							img(data-seq='', src='../img/pop_slider_6.jpg', alt='美胸BraTop')  
+				.swiper-pagination.swiper-pagination-white
+			.pop-other
+				.thumb
+					p 新年活動
+				.thumb
+					p 運動內衣活動
+				.thumb
+					p COVID-19 注意事項
+				.thumb
+					p Qmomo app
+				.thumb
+					p 限量版2021年日曆
+				.thumb
+					p 內衣課程
+			.pop_bot
+				.status
+				.close_pop
+					p 關閉
+					i.fas.fa-times
+		.lightbox#index_ad(data-fancybox)
+			a(href="category.html")
+				img(src='../img/index_popup_ad.jpg', alt='')
+		
+		

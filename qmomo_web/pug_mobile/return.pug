@@ -1,0 +1,40 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		include ../pug_common/_head_m.pug
+		title Qmomo
+		
+		link(href='css/mobile/jquery.fancybox.min.css', rel='stylesheet')
+		link(href='css/mobile/about.css', rel='stylesheet')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+	body
+		.wpf-loader-two
+			.wpf-loader-two-inner
+				span Loading
+		include ../pug_common/_header_m.pug
+		
+		.about_main
+			.container
+		
+				include ../pug_common/_about_menu.pug
+				.about_content
+					h3 退換貨方式
+					.privacy_block
+						.sm_title 不提供換貨服務
+						p
+							| Qmomo一向以客為尊，為了服務能更貼合客戶的需求，讓您想更換的商品，能在最短的時間送達給您，從2020年01月01號開始，若您收到商品後需要更換，可直接在線上辦理退貨，再重新訂購，感謝您對Qmomo的支持，為您服務是我們最大的榮幸。
+					.privacy_block
+						.sm_title 退貨流程
+						p
+							| 七天鑑賞期內，不下水，不剪標，沒有異味，小褲沒有試穿，大腿襪沒有試穿，隱形胸罩沒有試穿，商品保持完整新品可販售狀態者。 
+							| 請您到您購買的網站&#8594;進到我的訂單&#8594;點選退貨，之後就會有黑貓去跟您收件喔！
+						p
+							| 如果是今天才超取，明天才能點，申請後的1-3天會派車收件(遇周日順延)。線上申請完成會有簡訊通知派車時間，收到簡訊後隔日才會派車前往收取，於下午三點至六點於您填寫的指定地點取件。商品送回公司後（宅配上門取件大約是3天、超商退回大概5天），經檢查無誤，將於七個工作天後退刷或退款於您指定帳戶 (匯款人：九易宇軒) 。
+					.privacy_block
+						.sm_title 異味定義
+						p
+							| 不同於Qmomo現有庫存商品的味道即視為異味，Qmomo擁有最後解釋、定義異味的權力，請務必認同再下單！
+							br
+							| ※海外除商品本身瑕疵外不提供退換貨服務。
+		include ../pug_common/_footer_m.pug

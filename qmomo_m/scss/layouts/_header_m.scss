@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    src: url(../../webfonts/fa-solid-900.woff) format 'opentype';
+}
+//header
+.site-header{
+	position:sticky;
+	top:0;left:0;
+	z-index: 30;
+	background-color: $header_bg;
+	.btn_menu{
+		cursor: pointer;
+		i{
+			font-size:1.2rem;
+			color:white;
+		}
+	}
+	.logo{
+		h1{
+			display: none;
+		}
+		a{
+			display: block;
+		}
+		img{
+			display: block;
+			width:110px;
+			margin:0 auto;
+		}
+	}
+	.member_func{
+		display:flex;
+		flex-flow: row nowrap;
+		.member,.cart{
+			display:flex;
+			flex:0 0 50%;
+			justify-content: center;
+			padding:0;
+			border:1px solid #eee;
+			&:last-child{
+				border-left:none;
+			}
+		}
+		a{
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			width: 100%;
+			padding: 10px;
+		}
+	}
+	.search{
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		position: relative;
+		margin-right:10px;
+		a{
+			display: block;
+			height: 100%;
+			border: medium none;
+			font-size:1.2rem;
+			cursor: pointer;
+			@include transition(all 0.5s);
+			@include border-radius(30px);
+			&:hover{
+				opacity: 0.8;	
+			}	
+		}
+		.fa-search{
+			color:white;
+		}
+	}
+	.search-input{
+		position: absolute;top:100%;left:0;
+		display: none;
+		width: 100%;
+		box-shadow: 0 2px 5px #aaa;
+		input[type="text"]{
+			display: block;
+			width: 100%;
+			padding: 10px;
+			color: #555;
+			font-size: .9rem;
+			border:none;
+		}
+		form{
+			flex-basis: 85%;
+		}
+		&.active{
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: stretch;
+			justify-content: center;
+
+		}
+		.btn_submit{
+			flex-basis: 15%;
+			white-space: nowrap;
+			text-align: center;
+			line-height: 37px;
+			color:white;
+			background-color: $search_btn_bg;
+			border:none;
+		}
+	}
+
+	.cart{
+		display: flex;
+		flex-flow:  row nowrap;
+		align-items: center;
+		padding:0 0 0 10px;
+		cursor: pointer;
+		.fa-shopping-cart{
+			font-size:1.1rem;
+			margin: 0 2px 0 0;
+		}
+		.cart_notify{
+			width:20px;height:20px;
+			color:white;
+			line-height: 1.5;
+			text-align: center;
+			background-color: $cart_notify_bg;
+			border-radius:50%;
+		}
+		.num{
+			font-size:.8rem;
+		}
+		span{
+			display: block;
+		}	
+	}
+	
+	.header_top{
+		display: flex;
+		flex-flow:  row nowrap;
+		align-items: center;
+		justify-content:space-between;
+		padding:10px 20px;
+	}
+	.header_top_l{
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		p{
+			margin-right:20px;
+			font-size: .8rem;
+			span{
+				padding:0 0 0 3px;
+			}
+		}
+	}
+
+	.header_top_r{
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: flex-end;
+		.header_top_r_item{
+			display: flex;
+			flex-flow:  row nowrap;
+			align-items: center;
+			li{
+				position: relative;
+				>a{
+					display: flex;
+					flex-flow: row nowrap;
+					padding:0 10px;
+					font-size:1.2rem;
+					cursor: pointer;
+				}
+			}
+			i{
+				color:#555;
+			}
+		}
+	}
+}
+//menu
+.site-menu{
+	position: absolute;top: 100%;left: -200px;
+	width: 0;
+	background-color: white;
+	z-index: 40;
+	box-shadow: 1px 1px 5px #aaa;
+	&.active{
+		width: 80%;
+		min-width: 240px;
+    	max-width: 400px;
+		left: 0;
+		-webkit-transition: 250ms all;
+		transition: 250ms all;
+	}
+	.main_menu{
+		display: block;
+		height: 400px;
+		overflow-y: auto;
+		h2,h3{
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+		li{
+			position: relative;
+			border-bottom:1px solid #e8e8e8;
+			&:last-child{
+				border:none;
+			}
+			a{
+				position: relative;
+				display: block;
+				max-width: 400px;
+				padding:8px 13px;
+				color:#666;
+				font-size:.85rem;
+				white-space: nowrap;
+				i{
+					position: absolute;top:11px;right: 10px;
+					color: #999;
+					font-size: .9rem;
+					-webkit-transition-duration: .1s;
+					-moz-transition-duration: .1s;
+					-o-transition-duration: .1s;
+					transition-duration: .1s;
+					-webkit-transition-property: -webkit-transform;
+					-moz-transition-property: -moz-transform;
+					-o-transition-property: -o-transform;
+					transition-property: transform;
+				}
+			}
+			
+		}
+	}
+	.sub_menu{
+		display: none;
+		padding: 5px 0 5px 15px;
+		background-color:#efefef;
+		box-shadow: inset 0px 1px 5px #aaa;
+		z-index: 10;
+		&.is-expand{
+			display: block;
+		}
+	}
+}

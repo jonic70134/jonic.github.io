@@ -1,0 +1,174 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		include ../pug_common/_head.pug
+		title Qmomo - cart
+		
+		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
+		link(href='css/cart.css', rel='stylesheet')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/cart_orderlist.js')
+		
+	body
+		.wpf-loader-two
+			.wpf-loader-two-inner
+				span Loading
+		include ../pug_common/_cart_header.pug
+
+		.cart_orderlist
+			.container
+				.cart_payment
+					.sm_title 付款方式 
+					.cart_line
+						.cart_radio_line
+							label(for='radio1')
+								input#radio1.radio-btn(type='radio' name='payment' value='1' checked='checked')
+								span 超商取貨付款
+					.cart_line
+						.cart_radio_line
+							label(for='radio2')
+								input#radio2.radio-btn(type='radio' name='payment' value='2')
+								span 信用卡一次付清
+					.cart_line
+						.cart_radio_line
+							label(for='radio3')
+								input#radio3.radio-btn(type='radio' name='payment' value='3')
+								span 信用卡3期0利率
+							.cart_line_txt
+								| 每期應付NT$1314
+								a(href='#')
+									| 9家銀行
+					.cart_line
+						.cart_radio_line
+							label(for='radio4')
+								input#radio4.radio-btn(type='radio' name='payment' value='4')
+								span 信用卡6期0利率
+							.cart_line_txt
+								| 每期應付NT$656
+								a(href='#')
+									| 9家銀行
+					.cart_line
+						.cart_radio_line
+							label(for='radio6')
+								input#radio6.radio-btn(type='radio' name='payment' value='6')
+								span 貨到付款
+					.cart_line
+						.cart_radio_line
+							label(for='radio7')
+								input#radio7.radio-btn(type='radio' name='payment' value='7')
+								span 街口支付
+							.cart_line_txt
+								| 可用街口儲值帳戶、銀行帳戶或台新街口聯名卡付款(需30分鐘內付款)
+					.cart_line
+						.cart_radio_line
+							label(for='radio8')
+								input#radio8.radio-btn(type='radio' name='payment' value='8')
+								span LINE Pay
+							.cart_line_txt
+								| 可用LINE Points點數折抵
+				
+				.cart_pay_data
+					.sm_title 信用卡資料
+					.credit_data 
+						.cart_line
+							input.credit_name(type='text' id='' placeholder='請輸入姓名' value='')
+						.cart_line
+							input.credit_num(type='number' id='' placeholder='輸入信用卡號' value='' maxlength='16')
+						.cart_line
+							input.credit_name(type='number' id='' placeholder='MM' value='' maxlength='2')
+							p -
+							input.credit_name(type='number' id='' placeholder='YY' value='' maxlength='2')
+						.cart_line
+							input.credit_num(type='number' id='' placeholder='輸入信用卡後三碼' value='' maxlength='3')
+				.cart_pay_data
+					.sm_title 收件人地址
+					.address_data
+						.cart_line
+							input.credit_txt(type='text' id='' placeholder='收貨人姓名' value='')
+						.cart_line
+							input.credit_num(type='tel' id='' placeholder='收貨人手機' value='' maxlength='10')
+						.cart_line.select
+							.credit_select
+								select#credit-month(name='')
+									option(value='1') 台北市
+							.credit_select
+								select#credit-year(name='')
+									option(value='1') 信義區
+									option(value='2') 大安區
+									option(value='3') 內湖區
+							input.post(type='text' placeholder='郵遞區號' value='106')
+						.cart_line
+							input.credit_num(type='text' id='' placeholder='收貨地址' value='')
+						
+
+
+				.cart_deliver 
+					.sm_title 運送方式
+					.deliver_con
+						.cart_radio_line
+							label(for='deliver1')
+								input#deliver1.radio-btn(type='radio' name='deliver' value='1' checked='checked')
+								img(src="../img/icon_family.svg", alt="全家")
+								p 
+									span 全家取貨付款
+									a.deliver_family(href="#") 選擇門市
+							.cart_line_txt
+								| 全家貨到付款約3~5天到貨 (滿 NT$890 免運)
+						.cart_radio_line
+							label(for='deliver2')
+								input#deliver2.radio-btn(type='radio' name='deliver' value='2')
+								img(src="../img/icon_711.svg", alt="7-11")
+								p
+									span 7-11取貨付款
+									a.deliver_711(href="#") 選擇門市
+							.cart_line_txt
+								| 7-11貨到付款約3~5天到貨 (滿 NT$890 免運) 
+						.cart_radio_line
+							label(for='deliver3')
+								input#deliver3.radio-btn(type='radio' name='deliver' value='3')
+								p 宅配
+							.cart_line_txt
+								| 滿 NT$890 免運
+						.deliver_711_popup
+							.deliver_711_body 
+								.mid_title 請填寫取貨人資訊
+								input(type="text" placeholder='姓名')
+								input(type="tel" placeholder='手機號碼')
+								a.deliver_choose(href="#")
+									img(src="../img/icon_711.svg", alt="全家")
+									span(href="#") 請選擇7-11門市
+								a.deliver_complete(href="#") 完成
+								a.pop_close(href="#")
+									i.fas.fa-times
+						.deliver_family_popup
+							.deliver_family_body 
+								.mid_title 請填寫取貨人資訊
+								input(type="text" placeholder='姓名')
+								input(type="tel" placeholder='手機號碼')
+								a.deliver_choose(href="#")
+									img(src="../img/icon_family.svg", alt="全家")
+									span(href="#") 請選擇全家們市
+								a.deliver_complete(href="#") 完成
+								a.pop_close(href="#")
+									i.fas.fa-times
+				.cart_invoice
+					.sm_title 發票
+					.cart_invoice_con
+						label(for="invoice1")
+							input#invoice1(type="radio", name="invoice" checked='checked')
+							span 個人電子發票
+						label(for="invoice2")
+							input#invoice2(type="radio", name="invoice")
+							span 公司戶電子發票
+							input(type="text" placeholder='請輸入統一編號')
+						label(for="invoice3")
+							input#invoice3(type="radio", name="invoice")
+							span 捐贈發票
+				.od_total.cart_total
+					.od_checkout 
+						a(href="cart_orderlist.html").btn-prev 上一步
+						a(href="cart_confirm.html").btn-checkout 下一步
+				
+				
+		include ../pug_common/_footer_m.pug
