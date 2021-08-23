@@ -1,9 +1,9 @@
 @import '../base/_variables';
 @import '../base/_mixins.scss';
 @import '../base/_reset.scss';
-@import '../base/_base.scss';
+@import '../base/_base_m.scss';
 @import '../layouts/_header_m.scss';
-@import '../layouts/_qmomo_fancybox.scss';
+@import '../layouts/_qmomo_fancybox_m.scss';
 //common
 input::placeholder{
 	color:#999;
@@ -84,7 +84,7 @@ select{
 .login{
 	padding:10px;
 	.mid_title{
-		margin:30px 0 20px;
+		margin:0;
 		padding:10px;
 		text-align: center;
 	}
@@ -94,7 +94,7 @@ select{
 		align-items: center;
 		justify-content: center;
 		max-width: 400px;
-		margin: 20px auto 50px;
+		margin: 10px auto 50px;
 		input{
 			width:100%;
 			padding:10px;
@@ -109,14 +109,18 @@ select{
 	.login_line{
 		width:100%;
 		margin:0 0 15px;
+		p{
+			font-size:.9rem;
+		}
 	}
 	.login_reg{
-		margin: 0 0 20px;
+		margin: 0;
 		text-align: right;
 		a{
 			display: inline-block;
 			margin:10px;
 			color:#06c;
+			font-size:.8rem;
 			text-decoration: underline
 		}
 	}
@@ -899,5 +903,228 @@ select{
 .post{
 	flex-basis: 20%;
 }
+
 @import '../layouts/_footer_m.scss';
-@import '_rwd_member.scss';
+
+//RWD
+@media (max-width: 1020px) {
+	.container{
+		width: 100%;
+	}
+}
+@media (max-width: 950px) {
+	.float_block{
+		display: none;
+	}
+	.tag{
+		&.place{
+			right:0;
+			bottom:0;
+		}
+	}
+	.mem_point_pop{
+		.location_pop_body{
+			width:80%;
+		}
+		.bot_func{
+			bottom:-40px;
+			left:0;
+			margin:0;
+		}
+	}
+}
+@media (max-width: 750px) {
+	.mem_block{
+		margin:20px auto 0;
+	}
+	.mem_body{
+		flex-flow: column;
+		align-items: center;
+		padding:0 10px;
+	}
+	.mem_info,.mem_order,.mem_fav,.mem_coupon,.mem_point,.mem_privacy,.mem_chg_pass,.mem_set{
+		width:100%;
+		margin: 0 0 30px;
+	}
+	.mem_link{
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+		max-width:480px;
+		margin:0 0 30px;
+		ul{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			box-shadow:none;
+			li{
+				width:25%;
+				a{
+					min-width: 100px;
+					padding:5px 10px;
+					font-size:.8rem;
+					border:1px solid #eee;
+				}
+			}	
+		}
+		.logout{
+			padding:5px 10px;
+			font-size:.8rem;
+			display: none;
+		}
+	}
+	.fav_block{
+		align-items: normal;
+		.fav_info{
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: space-between;
+		}
+		img{
+			width:120px;
+		}
+		.mid_title{
+			margin:0;
+			font-size:.9rem;
+		}
+	}
+	.location_pop{
+		.location_pop_body{
+			width:85%;
+		}
+	}
+	.coupon_ticket{
+		img{
+			width:90px;
+		}
+	}
+	.enter_coupon{
+		font-size:.8rem;
+		input{
+			width:80%;
+			font-size:.8rem;
+		}
+		.submit{
+			width: auto;
+		}
+	}
+	.tag{
+		top:0;
+		left:0;
+		font-size:.7rem;
+		&.place{
+			display: none;
+		}
+	}
+}
+@media (max-width: 480px) {
+	.mem_order_list{
+		padding:10px;
+	}
+	.enter_coupon{
+		font-size:.8rem;
+		input{
+			width:70%;
+			font-size:.8rem;
+		}
+		.submit{
+			width: auto;
+		}
+	}
+	.tab_link{
+		padding:5px 12px;
+		font-size:.8rem;
+	}
+	.coupon_block{
+		width:100%;
+		margin: 0 0 20px;
+	}
+	.now_class, .next_class{
+		padding:5px 10px;
+	}
+	.class_block{
+		.class_pic{
+			width:34%;
+			p{
+				font-size:.75rem;
+				letter-spacing: 0;
+			}
+		}
+		.class_des{
+			width:65%;
+		}
+	}
+	.mem_privacy{
+		p{
+			font-size:.75rem;
+			letter-spacing: 0;
+		}
+	}
+}
+@media (max-width: 430px) {
+	.login{
+		.login_btn{
+			a{
+				padding:10px 5px;
+				&::before{
+					display: none;
+				}
+			}
+		}
+	}
+	.location_pop{
+		.location_pop_body{
+			width:100%;
+		}
+	}
+	.mem_link{
+		ul{
+			li{
+				a{
+					min-width:auto;	
+					padding:5px;
+					font-size:.75rem;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
+				}
+			}	
+		}
+	}
+	.mem_order_list{
+		.mem_left{
+			font-size:.75rem;
+			.mem_deliver{
+				a{
+					font-size:.75rem;
+				}
+			}
+		}
+		.mem_right{
+			.trans,.order_detail{
+				font-size:.75rem;
+			}
+		}
+	} 
+	.mem_sub_order{
+		.mem_sub_cell > div{
+			padding:8px;
+			font-size:.75rem;
+		}
+		.mem_sub_con{
+			li{
+				.name{
+					width:150px;
+					a{
+						width:auto;
+						white-space: normal;
+						font-size:.75rem;
+					}
+				}
+				.price{
+					width:55px;
+				}
+			}
+		}
+	}
+}

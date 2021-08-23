@@ -68,6 +68,23 @@ jQuery(function($){
 		$('.deliver_family_popup').css('visibility','hidden');
 		$('body').css('overflow','auto');
 	});
+
+	// 選擇常用收件人
+	$('.deliver_pop').on('click', function(e) {
+		e.preventDefault();
+		$('.deliver_use_popup').css('visibility','visible');
+		$('body').css('overflow','hidden');
+	});
+	$('.pop_close').on('click', function(e) {
+		e.preventDefault();
+		$('.deliver_use_popup').css('visibility','hidden');
+		$('body').css('overflow','auto');
+	});
+	$('.deliver_complete').on('click', function(e) {
+		e.preventDefault();
+		$('.deliver_use_popup').css('visibility','hidden');
+		$('body').css('overflow','auto');
+	});
 	// $("input[name$='payment']").click(function() {
     //     var paymentChoose = $(this).val();
 

@@ -1,9 +1,9 @@
 @import '../base/_variables';
 @import '../base/_mixins.scss';
 @import '../base/_reset.scss';
-@import '../base/_base.scss';
+@import '../base/_base_m.scss';
 @import '../layouts/_cart_header.scss';
-@import '../layouts/_qmomo_fancybox.scss';
+@import '../layouts/_qmomo_fancybox_m.scss';
 .container{
 	width:100%;
 	max-width:1020px;
@@ -72,7 +72,7 @@ select{
 		margin: 5px 0;
 		a{
 			display: block;
-			color:#06c;
+			color:$link;
 		}
 	}
 	.od_price{
@@ -271,7 +271,7 @@ select{
 	font-size:.9rem;
 	margin:5px 0 0 25px;
 	a{
-		color:#06c;
+		color:$link;
 		margin: 0 0 0 10px;
 	}
 }
@@ -353,6 +353,13 @@ select{
 	.post{
 		flex-basis: 20%;
 	}
+	.sm_title{
+		display: flex;
+		justify-content: space-between;
+	}
+	.deliver_pop{
+		color:$link;
+	}
 }
 .od_checkout{
 	display: flex;
@@ -385,7 +392,7 @@ select{
 // 		margin:0 20px 0 0;
 // 	}
 // }
-.deliver_711_popup,.deliver_family_popup{
+.deliver_711_popup,.deliver_family_popup,.deliver_use_popup{
 	visibility: hidden;
     position: fixed;
     top: 0;
@@ -395,7 +402,7 @@ select{
     padding: 5px;
     background: rgba(0, 0, 0, 0.8);
     z-index: 30;
-	.deliver_711_body,.deliver_family_body{
+	.deliver_711_body,.deliver_family_body,.deliver_use_body{
 		position: absolute;top:50%;left:50%;
 		transform: translate(-50%, -50%);
 		width:300px;
@@ -432,6 +439,43 @@ select{
 
 	}
 }
+.deliver_use_popup{
+	input{
+		width: auto;
+	}
+	.mid_title{
+		margin:-20px -10px 20px;
+	}
+	label{
+		display: flex;
+		flex-flow: row wrap;
+		font-size:.9rem;
+		cursor: pointer;
+	}
+	.deliver_use_body{
+		.cart_radio_line{
+			margin:0;
+		}
+		p{
+			margin:0 5px;
+			&:last-child{
+				margin:0 0 0 19px;
+			}
+		}
+	}
+}
+.pop_close {
+	position: absolute;
+	right: -32px;
+	top: 0;
+	display: block;
+	padding: 3px 8px;
+	background-color: #e38796;
+	i{
+		color: white;
+	}
+}
+  
 @import '../layouts/_footer_m.scss';
 
 // RWD
