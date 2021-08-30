@@ -1,0 +1,28 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		include ../pug_common/_ciciza_head_m.pug
+		
+		link(href='css/mobile/jquery.fancybox.min.css', rel='stylesheet')
+		link(href='css/mobile/member.css', rel='stylesheet')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/member.js')
+		
+	body
+		.wpf-loader-two
+			.wpf-loader-two-inner
+				span Loading
+		include ../pug_common/_ciciza_header_m.pug
+
+		.member
+			.container
+				.login.forgot 
+					.mid_title 重設密碼
+					.login_body
+						.login_line
+							input(type='password' placeholder='設定密碼')
+						.login_line
+							input(type='password' placeholder='請再輸入一次密碼')
+						a.nor_login(href='mem_login.html') 送出
+		include ../pug_common/_ciciza_footer_m.pug

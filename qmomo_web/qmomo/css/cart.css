@@ -247,7 +247,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
       -ms-flex-align: stretch;
           align-items: stretch;
 }
-.quantity:after {
+.quantity .quantity:after {
   content: ".";
   display: block;
   clear: both;

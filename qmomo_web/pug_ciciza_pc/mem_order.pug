@@ -1,0 +1,97 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		include ../pug_common/_ciciza_head.pug
+		title Qmomo - cart
+		
+		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
+		link(href='css/member.css', rel='stylesheet')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/member.js')
+		
+	body
+		.wpf-loader-two
+			.wpf-loader-two-inner
+				span Loading
+		include ../pug_common/_ciciza_header.pug
+
+		.member
+			.container
+				.mem_block
+					.mem_body
+						.mem_link
+							include ../pug_common/_mem_menu.pug
+						
+						.mem_order
+							.mem_od_detail
+								a(href="#").tab_link.active(data-detail='od_detail-1') 線上
+								a(href="#").tab_link(data-detail='od_detail-2') 門市
+								
+							#od_detail-1.detail_content.active
+								mixin order(name,trans)
+									.mem_order_block
+										.mem_order_list
+											.mem_left
+												.mem_num 訂單編號：#dfuh99u
+												.mem_date 訂單日期：2020/05/05
+												.mem_total 訂單總額：$99,999
+												.mem_deliver 物流資訊：黑貓宅急便  
+													a(href="#") 1342058599
+											.mem_right
+												.trans=trans
+												a.order_detail(href="#") 發票內容
+										.mem_sub_order
+												.mem_sub_cell
+													.mem_sub_t 發票編號
+													.mem_sub_con AB-0448591
+												.mem_sub_cell
+													.mem_sub_t  付款方式
+													.mem_sub_con 信用卡
+												.mem_sub_cell
+													.mem_sub_t 商品明細
+													.mem_sub_con
+														ul
+															li
+																p.name
+																	a(href="item.html")=name
+																p.num x2
+																p.price $98999
+												.total_price
+													p 總金額
+													p $99999
+								+order('內衣【Rose W 】高級訂製金3D型W鋼圈內衣','運送中')
+								+order('內衣【Rose W 】高級訂製金3D型W鋼圈內衣','已完成')
+								+order('內衣【Rose W 】高級訂製金3D型W鋼圈內衣','已完成')
+							#od_detail-2.detail_content
+								mixin order(name,trans)
+									.mem_order_block
+										.mem_order_list
+											.mem_left
+												.mem_num 訂單編號：#202103AM9389138
+												.mem_date 訂單日期：2021/05/05
+												.mem_total 訂單總額：$99,999
+											.mem_right
+												.trans=trans
+												a.order_detail(href="#") 發票內容
+										.mem_sub_order
+												.mem_sub_cell
+													.mem_sub_t 發票編號
+													.mem_sub_con AB-0448591
+												.mem_sub_cell
+													.mem_sub_t  付款方式
+													.mem_sub_con 信用卡
+												.mem_sub_cell
+													.mem_sub_t 商品明細
+													.mem_sub_con
+														ul
+															li
+																p.name
+																	a(href="item.html")=name
+																p.num x2
+																p.price $98999
+												.total_price
+													p 總金額
+													p $99999
+							+order('內衣【Rose W 】高級訂製金3D型W鋼圈內衣','已完成')
+		include ../pug_common/_ciciza_footer.pug

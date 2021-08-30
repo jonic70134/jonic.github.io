@@ -20,16 +20,6 @@
 		display: flex;
 		justify-content: space-between;
 	}
-	.pop_close{
-		position: absolute;right:-32px;top:0;
-		display: block;
-		padding:3px 8px;
-		background-color: #e38796;
-		z-index: 20;
-		i{
-			color:white;
-		}
-	}
 	.swiper-container{
 		.swiper-slide{
 			img{
@@ -60,7 +50,15 @@
 		color:white;
 		background:#222 ;
 	}
-	
+}
+.pop_close{
+	position: absolute;right:-32px;top:0;
+	display: block;
+	padding:3px 8px;
+	background-color: $pop_close_color;
+	i{
+		color:white;
+	}
 }
 @media (max-width:410px) {
 	.cart_popup{

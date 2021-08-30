@@ -1,0 +1,21 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		include ../pug_common/_ciciza_head.pug
+		title Qmomo - cart
+		
+		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
+		link(href='css/cart.css', rel='stylesheet')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/cart_orderlist.js')
+		
+	body
+		.wpf-loader-two
+			.wpf-loader-two-inner
+				span Loading
+		include ../pug_common/_ciciza_cart_header.pug
+
+		include ../pug_common/_cart_data.pug
+				
+		include ../pug_common/_ciciza_footer_m.pug

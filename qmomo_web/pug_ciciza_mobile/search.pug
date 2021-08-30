@@ -1,0 +1,113 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		include ../pug_common/_ciciza_head_m.pug
+
+		link(href='css/mobile/search.css', rel='stylesheet')
+		link(href='css/mobile/jquery.fancybox.min.css', rel='stylesheet')
+	body
+		.wpf-loader-two
+			.wpf-loader-two-inner
+				span Loading
+		include ../pug_common/_ciciza_header_m.pug
+		
+		.filter
+			.container
+				.search_blcok 
+					h2.mid_title "好辣小姐" 的搜尋結果
+					.select_sort
+						select#sort(name="sort") 
+							option(value="1") 店長推薦
+							option(value="2") 最新上架
+							option(value="3") 熱賣商品
+							option(value="4") 最多人看
+							option(value="5") 價格 低 → 高
+							option(value="6") 價格 高 → 低
+				.attr
+					.attrcon.special
+						.colst 其他人都在找
+						.colcheck
+							a(href='#') 緊緻慕斯
+							a(href='#') 好辣小姐
+							a(href='#') 晚安推推
+							a.current(href='#') 我愛睡覺覺
+							a(href='#') G18緊緻
+					.attrcon
+						.colst 分類
+						.colcheck
+							a(href='#') 性感情趣(23)
+							a.current(href='#') 無鋼圈(21)
+							a(href='#') W鋼圈(4)
+							a(href='#') 浪漫蕾絲(18)
+							a(href='#') Bikini 泳裝(33)
+							a(href='#') 大尺碼專屬(12)
+							a(href='#') 人氣商品推薦(11)
+							a(href='#') 運動內衣(8)
+							a(href='#') 小胸女孩(6)
+							a(href='#') 爆乳鋼圈(5)
+					.attrcon
+						.colst 顏色
+						.colcheck
+							label
+								input(type='checkbox')
+								span.all(title='全部') 全部
+							label
+								input(type='checkbox')
+								span(title='灰色' disabled='') 灰色
+							label
+								input(type='checkbox')
+								span(title='白色') 白色
+							label
+								input(type='checkbox')
+								span(title='金色') 金色
+							label
+								input(type='checkbox')
+								span(title='黑色') 黑色
+							label
+								input(type='checkbox')
+								span(title='粉紅色') 粉紅色
+							label
+								input(type='checkbox')
+								span(title='粉紅色') 紅色
+							label
+								input(type='checkbox')
+								span(title='粉紅色') 藍色
+							label
+								input(type='checkbox')
+								span(title='粉紅色') 橘色
+							label
+								input(type='checkbox')
+								span(title='粉紅色') 銀色
+					.attrcon
+						.colst 價格
+						.colprice
+							span $
+							input.input-number(type='number' min='0' step='any')
+							span ~
+							input.input-number(type='number' min='0' step='any')
+							button.button.btn-submit(type='submit') 搜尋
+		.category
+			.container
+				.items
+					include ../pug_common/_items.pug
+					include ../pug_common/_items.pug
+					include ../pug_common/_items.pug
+		.nav
+			.container
+				a(href="#" class="prev")
+					i.fas.fa-angle-left
+						| &nbsp;PREV
+				.page_num_block
+					a(href="#" class="nav_page_num active") 1	
+					a(href="#" class="nav_page_num") 2
+					a(href="#" class="nav_page_num") 3
+				a(href="#" class="next")
+					i.fas.fa-angle-right
+						| &nbsp;NEXT
+		include ../pug_common/_ciciza_footer_m.pug
+
+		script(src='js/jquery-3.5.1.min.js')
+		script(src='js/svgembedder.min.js')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/search.js')

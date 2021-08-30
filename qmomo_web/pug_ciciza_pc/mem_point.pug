@@ -1,0 +1,97 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		include ../pug_common/_ciciza_head.pug
+		title Qmomo - cart
+		
+		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
+		link(href='css/member.css', rel='stylesheet')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/member.js')
+		
+	body
+		.wpf-loader-two
+			.wpf-loader-two-inner
+				span Loading
+		include ../pug_common/_ciciza_header.pug
+
+		.member
+			.container
+				.mem_block
+					.mem_body
+						.mem_link
+							include ../pug_common/_mem_menu.pug
+						.mem_point
+							.point_block
+								.mypoint
+									p.big_title 99
+									p.sm_title 我的點數
+								.diepoint
+									p.big_title 20
+									p.sm_title 將到期點數
+							.point_exchange 
+								.sub_func
+									a#mem_point.location_pop_btn(href="#location_pop") 紅利點數說明
+								.sm_title 會員點數兌換專區
+								.coupon_body 
+									mixin coupon(name,tag,place,imgurl,status)
+										a.coupon_block(class=status)(href="campaign.html") 
+											.coupon_ticket
+												img(src=imgurl, alt="")
+											.coupon_t
+												p.title= name
+												p.date 有效日期 2021.04.30
+											.tag
+												= tag
+											.tag.place
+												= place
+									+coupon('Qmomo 單肩環保購物袋兌換券','80點兌換','APP/官網/門市使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/240538/0/637397856000000000?v=1')
+									+coupon('Qmomo 75% 酒精茶樹精油乾洗手凝膠','40點兌換','門市限定使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/258835/0/637448436000000000?v=1')
+									+coupon('Qmomo特製捲尺收納袋組兌換券','20點兌換','APP/官網/門市使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/258855/0/637448436000000000?v=1')
+									+coupon('Qmomo 微笑SMILE晴雨兩用自動傘兌換券','180點兌換','APP/官網/門市使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/240537/0/637398432000000000?v=1')
+									+coupon('Qmomo特製捲尺收納袋組兌換券','20點兌換','APP/官網/門市使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/258855/0/637448436000000000?v=1')
+									+coupon('Qmomo 微笑SMILE晴雨兩用自動傘兌換券','180點兌換','APP/官網/門市使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/240537/0/637398432000000000?v=1')
+									+coupon('Qmomo 單肩環保購物袋兌換券','80點兌換','APP/官網/門市使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/240538/0/637397856000000000?v=1')
+									+coupon('Qmomo 75% 酒精茶樹精油乾洗手凝膠','40點兌換','門市限定使用','https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original//ECoupon/258835/0/637448436000000000?v=1')
+		include ../pug_common/_ciciza_footer.pug
+		#location_pop.location_pop.mem_point_pop
+			.location_pop_body
+				.mid_title 紅利點數說明
+				.location_line_txt
+					p
+						strong 紅利點數
+						br
+						span.indent 消費回饋點數：消費
+							span.red 2%
+							| 紅利點數回饋。
+				.location_line_txt 
+					p 
+						strong 條款與細則
+					dl
+						dt 消費回饋點數：
+							dd 會員至本商店之
+								span.red APP、官網、全台門市
+								| 消費，依商品實際付款金額給予
+								span.red 2%
+								| 紅利點數回饋，小數點以下不列入回饋，亦無法累計至下筆訂單合併計算。
+							dd 紅利點數以實際付款金額(不含運費)為點數計算基礎，凡使用折扣活動、折價券或紅利點數折抵之金額，不再另行計算點數回饋。
+							dd 消費回饋點數會於出貨完成且鑑賞期結束後，自動發送點數至會員帳戶。若取消訂單或鑑賞期間發生退貨，則一律不發送點數。
+							dd 消費回饋點數效期為發放後的
+								span.red 180天到期
+								|，其他點數依各活動規範而定；點數逾期仍未使用時，系統將於到期時自動從帳戶中扣除。
+							dd 紅利點數為回饋性質，恕無法折換現金，本商店有權隨時變更、修改或終止紅利點數有效期限。
+					dl
+						dt 其他：
+							dd 紅利點數可於「會員專區>會員點數中心」查詢。
+							dd 點數應以帳戶中實際可使用之點數為準。(若因點數生效、折抵時間不同、或資料更新處理中等狀況而有點數差異，仍以帳戶中實際可使用之點數為準)
+							dd 不同會員帳號無法共同累計紅利點數，且無法轉移給其他會員帳號使用。
+				.location_line_txt
+					p
+						strong 修訂之權利
+						br
+						span.indent 本商店有權隨時變更、修改或終止紅利點數規則及約定條款，並得於修訂後公佈在本商店網站，不另行個別通知，您可以隨時在本商店網站上詳閱修訂後的隱私權聲明及相關告知事項。
+				.bot_func
+					a.cancel(href="#") 關閉  
+			a.pop_close(href="#")
+				i.fas.fa-times

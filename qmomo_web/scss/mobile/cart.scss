@@ -1,4 +1,4 @@
-@import '../base/_variables';
+@import '../base/_variables.scss';
 @import '../base/_mixins.scss';
 @import '../base/_reset.scss';
 @import '../base/_base_m.scss';
@@ -17,7 +17,7 @@ select{
 	-webkit-appearance: none;
 }
 .cart_orderlist{
-	margin:20px 0;
+	margin:0 0 20px;
 	position: relative;
 	.sm_title{
 		padding: 10px;
@@ -466,7 +466,7 @@ select{
 }
 .pop_close {
 	position: absolute;
-	right: -32px;
+	right: 0;
 	top: 0;
 	display: block;
 	padding: 3px 8px;
@@ -524,9 +524,6 @@ select{
 		}
 		.od_code{
 			padding:0 1%;
-		}
-		.sm_title{
-			padding:20px;
 		}
 	}
 }

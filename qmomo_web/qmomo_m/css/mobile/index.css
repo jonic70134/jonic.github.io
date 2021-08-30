@@ -247,6 +247,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  position: relative;
 }
 .quantity:after {
   content: ".";
@@ -526,7 +527,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   width: 140px;
   height: 30px;
   line-height: 1.4;
-  background: #2c3e50;
+  background: #ffadad;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -986,18 +987,6 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.cart_popup .pop_close {
-  position: absolute;
-  right: -32px;
-  top: 0;
-  display: block;
-  padding: 3px 8px;
-  background-color: #e38796;
-  z-index: 20;
-}
-.cart_popup .pop_close i {
-  color: white;
-}
 .cart_popup .swiper-container .swiper-slide img {
   width: auto;
   height: 578px;
@@ -1025,6 +1014,18 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   text-align: center;
   color: white;
   background: #222;
+}
+
+.pop_close {
+  position: absolute;
+  right: -32px;
+  top: 0;
+  display: block;
+  padding: 3px 8px;
+  background-color: #e38796;
+}
+.pop_close i {
+  color: white;
 }
 
 @media (max-width: 410px) {

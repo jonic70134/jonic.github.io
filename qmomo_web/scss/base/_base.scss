@@ -70,6 +70,7 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: stretch;
+	position: relative;
 	&:after {
 		content: ".";
 		display: block;

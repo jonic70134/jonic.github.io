@@ -71,6 +71,7 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: stretch;
+	position: relative;
 	&:after {
 		content: ".";
 		display: block;
@@ -330,7 +331,7 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	width: 140px;
 	height: 30px;
 	line-height: 1.4;
-	background: #2c3e50;
+	background: $sort_bg;
 	overflow: hidden;
 	border-radius:5px;
 	select{

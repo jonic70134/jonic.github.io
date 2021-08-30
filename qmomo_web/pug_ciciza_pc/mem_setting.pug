@@ -1,0 +1,59 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		include ../pug_common/_ciciza_head.pug
+		title Qmomo - cart
+		
+		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
+		link(href='css/member.css', rel='stylesheet')
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/common.js')
+		script(src='js/member.js')
+		
+	body
+		.wpf-loader-two
+			.wpf-loader-two-inner
+				span Loading
+		include ../pug_common/_ciciza_header.pug
+
+		.member
+			.container
+				.mem_block
+					.mem_body
+						.mem_link
+							include ../pug_common/_mem_menu.pug
+						.mem_set
+							.mem_set_block
+								.mid_title E-mail 訂閱管理
+								.mail
+									input(type="email" placeholder="請輸入聯絡E-mail")
+									a(href="#") 確認
+									a(href="#") 取消 
+								mixin notify(check_name,descript,num)
+									.set_item
+										.sm_title 
+											p=check_name
+											small=descript
+										.set_switch 
+											input.switch_check(id='switch'+num ,type="checkbox", name="",checked="checked")
+											label.switch_label(for='switch'+num)
+								+notify('活動通知','收到官方最新活動和促銷訊息','1')
+								+notify('交易通知','通知您訂單動態與中獎發票','2')
+								+notify('降價通知','通知您收藏商品降價消息','3')
+								+notify('客服回覆通知','客服有新的回覆時通知您','4')
+								+notify('會員優惠通知','折價券、優惠券及紅利點數相關資訊通知','5')
+							.mem_set_block
+								.mid_title 簡訊通知
+								mixin notify(check_name,descript,num)
+									.set_item
+										.sm_title 
+											p=check_name
+											small=descript
+										.set_switch 
+											input.switch_check(id='msg'+num ,type="checkbox", name="")
+											label.switch_label(for='msg'+num)
+								+notify('活動簡訊','收到官方最新活動和促銷訊息','1')
+
+								
+									
+		include ../pug_common/_ciciza_footer.pug
