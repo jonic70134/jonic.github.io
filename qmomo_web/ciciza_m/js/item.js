@@ -107,5 +107,16 @@ jQuery(function($){
 	$('.alert_close').click(function () {
 		$('.alert_window').hide();
 	});
-	
+	$('.fancybox-close').click(function(e){
+		e.preventDefault();
+		$.fancybox.close();
+	});
+});
+$("document").ready(function() {
+    setTimeout(function() {
+		$.fancybox.open({
+			src  : '#notfor18',
+			type : 'inline',
+		}).trigger('click');
+    },10);
 });
