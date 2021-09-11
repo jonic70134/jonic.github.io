@@ -2,77 +2,9 @@
 @import '../base/_mixins.scss';
 @import '../base/_base.scss';
 @import '../base/_reset.scss';
-
 @import '../layouts/_ciciza_header.scss';
 @import '../layouts/_qmomo_fancybox.scss';
 
-.banner{
-	margin-bottom:20px;
-	a,i,img{
-		display: block;
-		width:100%;
-	}
-}
-.sort_block{
-	margin:20px 0 0;
-	padding:10px 0;
-	.container{
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-		align-items: center;
-		
-		border-bottom:1px solid $sort_bg;
-	}
-}
-.sort{
-	display: inline-flex;
-	flex-flow: row nowrap;
-	justify-content: flex-end;
-	padding:0;
-	font-size:.9rem;
-	label{
-		position: relative;
-		display: flex;
-		flex-flow: row nowrap;
-		align-items: flex-end;
-		width:100px;height:36px;
-		margin: 0;
-		text-align: center;
-		cursor: pointer;
-		color:#777;
-		&:last-child{
-			margin:0;
-		}
-	}
-	p{
-		width:100px;
-		line-height: 36px;
-	}
-	input{
-		display: none;
-		&:checked{
-			~.checkmark{
-				border:none;
-				background-color:$sort_bg;
-				// &:after{
-				// 	display: block;
-				// 	position: absolute;left:3px;top:-4px;
-				// 	font-size:1.3rem;
-				// 	color:white;
-					
-				// }
-			}
-			~p{
-				color:$sort_color;
-				position: absolute;left:0;top:0;
-			}
-		}
-	}
-	.checkmark{
-		width:100px;height:36px;
-		position: absolute;left:0;top:0;
-		cursor: pointer;
-	}
-}
+@import '../common/_category.scss';
+
 @import '../layouts/_ciciza_footer.scss';

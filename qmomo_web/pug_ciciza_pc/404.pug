@@ -3,26 +3,16 @@ html(lang='zh-Hant-TW')
 	head
 		include ../pug_common/_ciciza_head.pug
 
-		title Qmomo - 404 not found
 		link(href='https://fonts.googleapis.com/css2?family=Lobster&display=swap' rel='stylesheet')
 		link(href='css/404.css', rel='stylesheet')
+		script(src='js/common.js')
 
 	body
-		.wpf-loader-two
-			.wpf-loader-two-inner
-				span Loading
+		include ../pug_common/_loading.pug
+		
 		include ../pug_common/_ciciza_header.pug
-		.body_404
-			.container
-				.msg_404
-					.not-found 
-						| 404 not found
-					p
-						
-						| 很抱歉
-						br
-						| 此頁面已經不存在！
+		
+		include ../pug_common/_404.pug
 
-					a(href="index.html") 回首頁
 		include ../pug_common/_ciciza_footer.pug
-		script(src='js/common.js')
+		

@@ -2,43 +2,16 @@ doctype html
 html(lang='zh-Hant-TW')
 	head
 		include ../pug_common/_ciciza_head.pug
-		title Qmomo
 		
 		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
 		link(href='css/about.css', rel='stylesheet')
 		script(src='js/jquery.fancybox.min.js')
 		script(src='js/common.js')
 	body
-		.wpf-loader-two
-			.wpf-loader-two-inner
-				span Loading
+		include ../pug_common/_loading.pug
+
 		include ../pug_common/_ciciza_header.pug
 		
-		.about_main
-			.container
-		
-				include ../pug_common/_about_menu.pug
-				.about_content
-					h3 品牌故事
-					img(src="../img/story.jpg", alt="")
-					p
-						| Qmomo十多年的努力，要解決大家數十年來買內衣遇到的各種問題！
-						br
-						| 女孩子從小沒有人指導如何正確穿內衣、顧胸型。
-						br
-						| 我們過去都是去百貨專櫃、相信專櫃，但...真的專櫃人員就知道怎麼穿得好穿得美嗎？
-
-					p
-						| Qmomo深感女性姊妹在選購內衣這一塊，除了「專業不足」欠缺指導。
-						br
-						|更嚴重的是過往在專櫃買內衣是「櫃上有甚麼、推甚麼買什麼」，然而女性身形、脂肪密度皆不同，
-						br
-						| 我們認知唯有設計出更多尺碼、更多款示、杯型、鋼圈，|24hr從早到晚每一個時刻都重視穿著的正確性，
-						br
-						| 選擇出對正確且合適的商品開始，才能修正長期走山、外擴、下垂的問題。
-						br
-						| 為此Qmomo從一家網路內衣公司開始推廣「多拿尺碼在家試穿」→「線上客服14在線服務」→
-						br
-						| 到2019年陸續完成「全省各教育推廣展示間」來推廣正確穿內衣的理念！
+		include ../pug_common/_story.pug
 
 		include ../pug_common/_ciciza_footer.pug

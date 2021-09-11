@@ -1212,6 +1212,10 @@ input[type=number] {
   color: #06c;
 }
 
+.cart_popup {
+  display: none;
+}
+
 .site-footer {
   width: 100%;
   color: #585858;

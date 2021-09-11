@@ -2,8 +2,7 @@ doctype html
 html(lang='zh-Hant-TW')
 	head
 		include ../pug_common/_head_m.pug
-		title Qmomo - cart
-		
+
 		link(href='css/mobile/jquery.fancybox.min.css', rel='stylesheet')
 		link(href='css/mobile/member.css', rel='stylesheet')
 		script(src='js/jquery.fancybox.min.js')
@@ -11,49 +10,10 @@ html(lang='zh-Hant-TW')
 		script(src='js/member.js')
 		
 	body
-		.wpf-loader-two
-			.wpf-loader-two-inner
-				span Loading
+		include ../pug_common/_loading.pug
+
 		include ../pug_common/_header_m.pug
 
-		.member
-			.container
-				.mem_block
-					.mem_body
-						.mem_link
-							include ../pug_common/_mem_menu.pug
-						.mem_fav
-							.fav_block
-								img(src="../img/1000x1000_prod_1.jpeg", alt="")
-								.fav_info
-									.mid_title 內衣【Rose W 】高級訂製金3D型W鋼圈內衣
-									.discount_price
-										span.currency NT$ 1,290
-									.fav_func_btn
-										a.btn-cart(href="#") 加入購物車
-										a.remove(href="#")
-											i.fas.fa-times
-											span 移除
-							.fav_block
-								img(src="../img/1000x1000_prod_2.jpeg", alt="")
-								.fav_info
-									.mid_title 內衣【Rose W 】高級訂製金3D型W鋼圈內衣
-									.discount_price
-										span.currency NT$ 1,290
-									.fav_func_btn
-										a.btn-cart(href="#") 加入購物車
-										a.remove(href="#")
-											i.fas.fa-times
-											span 移除
-							.fav_block
-								img(src="../img/1000x1000_prod_3.jpeg", alt="")
-								.fav_info
-									.mid_title 內衣【Rose W 】高級訂製金3D型W鋼圈內衣
-									.discount_price
-										span.currency NT$ 1,290
-									.fav_func_btn
-										a.btn-cart(href="#") 加入購物車
-										a.remove(href="#")
-											i.fas.fa-times
-											span 移除
+		include ../pug_common/_mem_fav.pug
+
 		include ../pug_common/_footer_m.pug

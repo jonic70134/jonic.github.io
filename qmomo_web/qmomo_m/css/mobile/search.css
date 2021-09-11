@@ -394,16 +394,20 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 .item .float_18 {
   position: absolute;
-  top: 3px;
-  left: 5px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: #333;
-  opacity: 0.7;
+  opacity: 0.95;
 }
 .item .float_18 img {
-  width: 48px;
-  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 76px;
+  height: 76px;
+  margin: -38px 0 0 -38px;
 }
 .item img {
   display: block;
@@ -1100,11 +1104,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 15px 10px;
-}
-.filter .search_blcok .mid_title {
-  color: #999;
-  font-size: 1rem;
+  margin: 30px 0 15px;
 }
 .filter .search {
   display: -webkit-box;
@@ -1118,7 +1118,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  width: 300px;
+  width: 500px;
   margin-right: 10px;
 }
 .filter .search input[type=text] {
@@ -1161,59 +1161,10 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   left: 10px;
   color: #555;
 }
-.filter .select_sort {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 140px;
-  height: 30px;
-  line-height: 1.4;
-  background: #2c3e50;
-  overflow: hidden;
-  border-radius: 5px;
-}
-.filter .select_sort select {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 0 10px;
-  font-size: 0.9rem;
-  color: #fff;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: 0 !important;
-  background: #ffadad;
-  background-image: none;
-}
-.filter .select_sort::after {
-  content: "▼";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  margin-top: -7px;
-  padding: 0 10px;
-  font-size: 0.7rem;
-  color: white;
-  cursor: pointer;
-  pointer-events: none;
-  -webkit-transition: 0.25s all ease;
-  transition: 0.25s all ease;
-}
 .filter .attr {
-  display: none;
   font-size: 0.813em;
   line-height: 250%;
   margin-bottom: 20px;
-}
-.filter .attr.is-expand {
-  display: block;
 }
 .filter .attrcon {
   display: -webkit-box;
@@ -1427,7 +1378,6 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10px;
   border-bottom: 1px solid #ffadad;
 }
 
@@ -1437,11 +1387,11 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   display: inline-flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 0;
   font-size: 0.9rem;
 }

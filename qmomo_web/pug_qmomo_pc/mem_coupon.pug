@@ -2,7 +2,6 @@ doctype html
 html(lang='zh-Hant-TW')
 	head
 		include ../pug_common/_head.pug
-		title Qmomo - cart
 		
 		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
 		link(href='css/member.css', rel='stylesheet')
@@ -11,88 +10,10 @@ html(lang='zh-Hant-TW')
 		script(src='js/member.js')
 		
 	body
-		.wpf-loader-two
-			.wpf-loader-two-inner
-				span Loading
+		include ../pug_common/_loading.pug
+
 		include ../pug_common/_header.pug
 
-		.member
-			.container
-				.mem_block
-					.mem_body
-						.mem_link
-							include ../pug_common/_mem_menu.pug
-						.mem_coupon
-							.enter_coupon 
-								input(type="text" placeholder='輸入優惠券代碼')
-								a.submit(href="#") 新增優惠券 
-							.coupon_detail
-								a(href="#").tab_link.active(data-detail='detail-1') 折價券
-								a(href="#").tab_link(data-detail='detail-2') 贈品券
-								a(href="#").tab_link(data-detail='detail-3') 門市券
-								a(href="#").tab_link(data-detail='detail-4') 已使用紀錄
-							#detail-1.detail_content.active
-								.coupon_body 
-									mixin coupon(name,tag,status)
-										a.coupon_block(class=status)(href="campaign.html") 
-											.coupon_ticket
-												i.fas.fa-ticket-alt
-												.coupon_edge
-											.coupon_t
-												p.title= name
-												p.date 有效日期 2021.04.30
-											.tag
-												= tag
-									+coupon('滿$2,000 折$100','即將到期')
-									+coupon('滿$5,000 折$500','即將到期')
-									+coupon('滿$10,000 折$1000','未使用')
-									+coupon('滿$3,000 折$200','已使用','disable')
-							#detail-2.detail_content
-								.coupon_body 
-									mixin coupon(name,tag,status)
-										a.coupon_block(class=status)(href="campaign.html") 
-											.coupon_ticket
-												i.fas.fa-gift
-												.coupon_edge
-											.coupon_t
-												p.title= name
-												p.date 有效日期 2021.04.30
-											.tag
-												= tag
-									+coupon('貼身衣物植萃手洗精(甜蜜桃)兌換券','即將到期')
-									+coupon('大腿襪 【獵豔遊戲】蕾絲大腿襪(黑色)兌換券','已使用','disable')
-							#detail-3.detail_content
-								.coupon_body 
-									mixin coupon(name,tag,status)
-										a.coupon_block(class=status)(href="campaign.html") 
-											.coupon_ticket
-												i.fas.fa-store
-												.coupon_edge
-											.coupon_t
-												p.title= name
-												p.date 有效日期 2021.04.30
-											.tag
-												= tag
-									+coupon('滿$2,000 折$100','即將到期')
-									+coupon('滿$5,000 折$500','即將到期')
-									+coupon('滿$10,000 折$1000','未使用')
-									+coupon('滿$3,000 折$200','已使用','disable')
-							#detail-4.detail_content
-								.coupon_body 
-									mixin coupon(name,tag,icon)
-										a.coupon_block.disable(href="#")
-											.coupon_ticket
-												i.fas(class=icon)
-												.coupon_edge
-											.coupon_t
-												p.title= name
-												p.date 有效日期 2021.04.01
-											.tag
-												= tag
-									+coupon('滿$2,000 折$100','已過期','fa-store')
-									+coupon('滿$3,000 折$200','已使用','fa-store')
-									+coupon('滿$5,000 折$500','已使用','fa-store')
-									+coupon('滿$10,000 折$1000','已過期','fa-store')
-									+coupon('貼身衣物植萃手洗精(甜蜜桃)兌換券','已使用','fa-gift')
-									+coupon('大腿襪【獵豔遊戲】蕾絲大腿襪(黑色)兌換券','已使用','fa-gift')
+		include ../pug_common/_mem_coupon.pug
+		
 		include ../pug_common/_footer.pug

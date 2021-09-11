@@ -10,9 +10,8 @@ html(lang='zh-Hant-TW')
 		script(src='js/cart_orderlist.js')
 		
 	body
-		.wpf-loader-two
-			.wpf-loader-two-inner
-				span Loading
+		include ../pug_common/_loading.pug
+		
 		include ../pug_common/_ciciza_cart_header.pug
 
 		include ../pug_common/_cart_confirm.pug

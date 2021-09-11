@@ -13,53 +13,15 @@ html(lang='zh-Hant-TW')
 
 		link(href='css/mobile/category.css', rel='stylesheet')
 		link(href='css/mobile/jquery.fancybox.min.css', rel='stylesheet')
-	body
-		.wpf-loader-two
-			.wpf-loader-two-inner
-				span Loading
-		include ../pug_common/_header_m.pug
-		.banner
-			.container
-				.one_banner
-					a(href='#')
-						img(src='../img/category_ad.jpeg', alt='Qmomo banner')
-		.sort_block
-			.container
-				.mid_title
-					h2 性感情趣
-				.select_sort
-						select#sort(name="sort") 
-							option(value="1") 店長推薦
-							option(value="2") 最新上架
-							option(value="3") 熱賣商品
-							option(value="4") 最多人看
-							option(value="5") 價格 低 → 高
-							option(value="6") 價格 高 → 低
-		.category
-			.container
-				.items
-					include ../pug_common/_items.pug
-					include ../pug_common/_items.pug
-					include ../pug_common/_items.pug
-		.nav
-			.container
-				a(href="#" class="prev")
-					i.fas.fa-angle-left
-						| &nbsp;PREV
-				.page_num_block
-					a(href="#" class="nav_page_num active") 1	
-					a(href="#" class="nav_page_num") 2
-					a(href="#" class="nav_page_num") 3
-					a(href="#" class="nav_page_num") 4
-					a(href="#" class="nav_page_num") 5
-					a(href="#" class="nav_page_num") ...
-					a(href="#" class="nav_page_num") 30
-				a(href="#" class="next")
-					i.fas.fa-angle-right
-						| &nbsp;NEXT
-		include ../pug_common/_footer_m.pug
-
 
 		script(src='js/jquery.fancybox.min.js')
 		script(src='js/common.js')
 		script(src='js/category.js')
+	body
+		include ../pug_common/_loading.pug
+		
+		include ../pug_common/_header_m.pug
+		
+		include ../pug_common/_category_mobile_page.pug
+
+		include ../pug_common/_footer_m.pug

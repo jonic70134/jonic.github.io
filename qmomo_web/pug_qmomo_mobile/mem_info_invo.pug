@@ -2,7 +2,6 @@ doctype html
 html(lang='zh-Hant-TW')
 	head
 		include ../pug_common/_head_m.pug
-		title Qmomo - cart
 		
 		link(href='css/mobile/jquery.fancybox.min.css', rel='stylesheet')
 		link(href='css/mobile/member.css', rel='stylesheet')
@@ -11,50 +10,10 @@ html(lang='zh-Hant-TW')
 		script(src='js/member.js')
 		
 	body
-		.wpf-loader-two
-			.wpf-loader-two-inner
-				span Loading
+		include ../pug_common/_loading.pug
+		
 		include ../pug_common/_header_m.pug
 
-		.member
-			.container
-				.mem_block
-					.mid_title 常用統一編號
-					.mem_body
-						.mem_link
-							include ../pug_common/_mem_menu.pug
-						.mem_info 
-							table.mem_data_list.invo_data_list
-								thead
-									tr 
-										th 發票抬頭
-										th 統一編號
-										th 
-								tbody
-									tr 
-										td Qmomo
-										td 16097091
-										td
-											a(href="#")
-												i.far.fa-trash-alt
-									tr 
-										td 星巴克
-										td 16097091
-										td 
-											a(href="#")
-												i.far.fa-trash-alt
-							.bot_func
-								a.submit.location_pop_btn(href="#mem_data_pop") 新增常用統一編號
+		include ../pug_common/_mem_info_invo.pug
+
 		include ../pug_common/_footer_m.pug
-		#mem_data_pop.location_pop
-			.location_pop_body
-				.mid_title 新增常用統一編號
-				.location_line
-					input(type="text" placeholder='發票抬頭')
-				.location_line
-					input(type="tel" placeholder='統一編號')
-				.bot_func
-					a.cancel(href="#") 取消  
-					a.submit(href="mem_info_invo.html") 新增 
-			a.pop_close(href="#")
-				i.fas.fa-times

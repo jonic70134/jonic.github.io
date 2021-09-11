@@ -2,7 +2,6 @@ doctype html
 html(lang='zh-Hant-TW')
 	head
 		include ../pug_common/_head.pug
-		title Qmomo - cart
 		
 		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
 		link(href='css/member.css', rel='stylesheet')
@@ -11,26 +10,10 @@ html(lang='zh-Hant-TW')
 		script(src='js/member.js')
 		
 	body
-		.wpf-loader-two
-			.wpf-loader-two-inner
-				span Loading
+		include ../pug_common/_loading.pug
+
 		include ../pug_common/_header.pug
 
-		.member
-			.container
-				.login.mobile_reg
-					.mid_title 手機號碼 
-						br
-						| +886 932123456
-					.login_body
-						.login_line
-							input(type='number' placeholder='輸入4位數驗證碼')
-						a.nor_login(href='#') 下一步
-						a.nor_login.resend(href="#") 重發驗證碼 
-						.login_remind 
-							p 
-								span 提醒您
-								|：我們不會以電話或簡訊通知變更付款方式，
-								br
-								| 也不會要您前往ATM進行任何操作。若有任何疑慮，請洽詢165反詐騙專線。
+		include ../pug_common/_mem_msg.pug
+		
 		include ../pug_common/_footer.pug

@@ -2,7 +2,6 @@ doctype html
 html(lang='zh-Hant-TW')
 	head
 		include ../pug_common/_head_m.pug
-		title Qmomo - cart
 		
 		link(href='css/mobile/jquery.fancybox.min.css', rel='stylesheet')
 		link(href='css/mobile/cart.css', rel='stylesheet')
@@ -11,9 +10,8 @@ html(lang='zh-Hant-TW')
 		script(src='js/cart_orderlist.js')
     
 	body
-		.wpf-loader-two
-			.wpf-loader-two-inner
-				span Loading
+		include ../pug_common/_loading.pug
+
 		include ../pug_common/_cart_header.pug
 
 		include ../pug_common/_cart_data.pug

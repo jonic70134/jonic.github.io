@@ -2,8 +2,7 @@ doctype html
 html(lang='zh-Hant-TW')
 	head
 		include ../pug_common/_head_m.pug
-		title Qmomo - cart
-		
+
 		link(href='css/mobile/jquery.fancybox.min.css', rel='stylesheet')
 		link(href='css/mobile/member.css', rel='stylesheet')
 		script(src='js/jquery.fancybox.min.js')
@@ -11,24 +10,10 @@ html(lang='zh-Hant-TW')
 		script(src='js/member.js')
 		
 	body
-		.wpf-loader-two
-			.wpf-loader-two-inner
-				span Loading
+		include ../pug_common/_loading.pug
+
 		include ../pug_common/_header_m.pug
 
-		.member
-			.container
-				.login
-					.mid_title 註冊會員
-					.login_body
-						.login_line
-							input(type='email' placeholder='Email')
-							p.err_txt 請輸入正確的Email格式
-						.login_line
-							input(type='password' placeholder='密碼')
-							p.err_txt 請輸入正確的密碼
-						.login_line
-							input(type='password' placeholder='請再次輸入密碼')
-							p.err_txt 請輸入與上一步相同的密碼
-						a.nor_login(href='mem_login.html') 送出
+		include ../pug_common/_mem_reg.pug
+
 		include ../pug_common/_footer_m.pug

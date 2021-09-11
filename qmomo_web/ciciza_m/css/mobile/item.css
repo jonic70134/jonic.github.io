@@ -394,16 +394,20 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
 }
 .item .float_18 {
   position: absolute;
-  top: 3px;
-  left: 5px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: #333;
-  opacity: 0.7;
+  opacity: 0.95;
 }
 .item .float_18 img {
-  width: 48px;
-  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 76px;
+  height: 76px;
+  margin: -38px 0 0 -38px;
 }
 .item img {
   display: block;
@@ -1647,6 +1651,7 @@ body {
           justify-content: center;
   margin: 0 30%;
   padding: 0 0 1px;
+  border-bottom: 1px solid #bbb;
 }
 .item_detail a {
   display: block;
@@ -1798,7 +1803,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0 50px;
 }
 .review_enter textarea, .review_enter input {
   width: 50%;
@@ -1806,8 +1810,6 @@ body {
   margin: 0 0 5px;
   padding: 10px;
   border: 1px solid #ccc;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 .review_enter input {
   display: block;
@@ -2024,7 +2026,7 @@ body {
             align-items: flex-start;
   }
   .review_enter textarea, .review_enter input {
-    width: 98%;
+    width: 80%;
   }
   .review_enter .rating {
     margin: 0 0 10px;

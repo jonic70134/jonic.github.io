@@ -5,25 +5,6 @@
 @import '../layouts/_ciciza_header_m.scss';
 @import '../layouts/_qmomo_fancybox_m.scss';
 
-.banner{
-	margin-bottom:10px;
-	a,i,img{
-		display: block;
-		width:100%;
-	}
-}
-.sort_block{
-	margin:10px 0 0;
-	padding:10px 0;
-	.container{
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-		align-items: center;
-		padding:0 0 10px;
-		border-bottom:1px solid $sort_bg;
-	}
-}
-
+@import '../common/_category_m.scss';
 
 @import '../layouts/_ciciza_footer_m.scss';

@@ -2,7 +2,6 @@ doctype html
 html(lang='zh-Hant-TW')
 	head
 		include ../pug_common/_head.pug
-		title Qmomo - cart
 		
 		link(href='css/jquery.fancybox.min.css', rel='stylesheet')
 		link(href='css/member.css', rel='stylesheet')
@@ -11,44 +10,10 @@ html(lang='zh-Hant-TW')
 		script(src='js/member.js')
 		
 	body
-		.wpf-loader-two
-			.wpf-loader-two-inner
-				span Loading
+		include ../pug_common/_loading.pug
+
 		include ../pug_common/_header.pug
 
-		.member
-			.container
-				.login
-					.mid_title 會員登入
-					.login_body
-						.login_line
-							label.login_label(for="third_chose1") 
-								input#third_chose1(type="radio", name="third_chose")
-								p 我已是Qmomo會員
-						.login_line
-							.sync_account 
-								p 連結帳號
-								i.fab.fa-line
-								i.fab.fa-google
-								i.fab.fa-facebook-square
-								p Jacko好帥
-						.login_line
-							input(type='email' placeholder='原有帳號')
-						.login_line
-							input(type='password' placeholder='密碼')
-							.login_reg
-								a.forgot_pas(href="mem_forgot.html") 忘記密碼
-						.login_line
-							label.login_label(for="third_chose2") 
-								input#third_chose2(type="radio", name="third_chose")
-								p 我還不是Qmomo會員，我要成為新會員
-						.login_line
-							.sync_account 
-								p 連結帳號
-								i.fab.fa-line
-								i.fab.fa-google
-								i.fab.fa-facebook-square
-								p Jacko一哥
+		include ../pug_common/_mem_third_login.pug
 
-						a.nor_login(href='mem_order.html') 送出
 		include ../pug_common/_footer.pug
