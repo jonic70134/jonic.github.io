@@ -18,11 +18,12 @@ html(lang='zh-Hant-TW')
 		script(src='js/common.js')
 		script(src='js/item.js')
 	body
-		.wpf-loader-two
-			.wpf-loader-two-inner
-				span Loading
+		include ../pug_common/_loading.pug
+
 		include ../pug_common/_header.pug
-		include ../pug_common/_item_page.pug
+
+		include ../pug_common/_item.pug
+
 		include ../pug_common/_footer.pug
 
 

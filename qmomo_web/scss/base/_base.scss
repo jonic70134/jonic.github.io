@@ -335,6 +335,45 @@ input[type='password'], input[type='email'], input[type='tel'], input[type='text
 	color: $price_color;
 	font-size: 1.2rem;
 }
+.select_sort{
+	position: relative;
+	display: flex;
+	width: 140px;
+	height: 30px;
+	line-height: 1.4;
+	background: $sort_bg;
+	overflow: hidden;
+	border-radius:5px;
+	select{
+		flex: 1;
+		padding: 0 10px;
+		font-size:.9rem;
+		color: $sort_color;
+		cursor: pointer;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		outline: 0;
+		box-shadow: none;
+		border: 0 !important;
+		background: $sort_bg;
+		background-image: none;
+	}
+	&::after{
+		content: '\25BC';
+		position: absolute;top: 50%;right: 0;
+		margin-top:-7px;
+		padding: 0 10px;
+		font-size:.7rem;
+		color:white;
+		cursor: pointer;
+		pointer-events: none;
+		-webkit-transition: .25s all ease;
+		-o-transition: .25s all ease;
+		transition: .25s all ease;
+	}
+}
 @-webkit-keyframes loader-two-before-transition {
 	50% {
 		left: -154px;

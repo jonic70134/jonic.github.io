@@ -14,15 +14,31 @@
 						.location_line
 							input(type='text' placeholder='姓名' value='金小姐')
 						.location_line
+							.location_select
+								select#credit-year(name='')
+										option(value='1' ,selected='selected') 出生年
+										option(value='2') 2000
+										option(value='3') 1999
+							.location_select
+								select#credit-month(name='')
+										option(value='1' ,selected='selected') 月
+										option(value='2') 12
+										option(value='3') 11
+							.location_select
+								select#credit-day(name='')
+										option(value='1' ,selected='selected') 日
+										option(value='2') 1
+										option(value='3') 2
+						.location_line
 							input(type='email' placeholder='Email' value='abc@gmail.com' disabled='disabled')
 						.location_line
 							input(type='tel' placeholder='電話' value='0912345678' disabled='disabled')
 						.location_line
 							.location_select
-								select#credit-month(name='')
+								select#credit-city(name='')
 									option(value='1') 台北市
 							.location_select
-								select#credit-year(name='')
+								select#credit-area(name='')
 									option(value='1') 信義區
 									option(value='2') 大安區
 									option(value='3') 內湖區

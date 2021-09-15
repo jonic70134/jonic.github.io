@@ -1,7 +1,7 @@
 doctype html
 html(lang='zh-Hant-TW')
 	head
-		include ../pug_common/_ciciza_head_m.pug
+		include ../pug_common/_ccz_head_m.pug
 
 		title CICIZA | 內衣【SIMPLE BRA】抗敏棉感蕾絲無鋼圈三角杯內衣這個應該會超過兩行
 		meta(name='description' content='因應敏感肌膚、經期、發育中、孕期、哺乳期女孩不適等必備的舒適內衣款～特製鬆緊帶及棉感蕾絲，柔軟舒適質地，可抽取Ｌ型側厚上薄，無鋼圈設計，側推聚集胸型')
@@ -18,9 +18,10 @@ html(lang='zh-Hant-TW')
 		script(src='js/common.js')
 		script(src='js/item.js')
 	body
-		.wpf-loader-two
-			.wpf-loader-two-inner
-				span Loading
-		include ../pug_common/_ciciza_header_m.pug
-		include ../pug_common/_item_page.pug
-		include ../pug_common/_ciciza_footer_m.pug
+		include ../pug_common/_loading.pug
+
+		include ../pug_common/_ccz_header_m.pug
+
+		include ../pug_common/_item.pug
+		
+		include ../pug_common/_ccz_footer_m.pug
