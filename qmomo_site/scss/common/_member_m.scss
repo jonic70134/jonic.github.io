@@ -43,7 +43,6 @@
 		display: flex;
 		flex-flow: row wrap;
 		width: 100%;
-		max-width:480px;
 		margin:0 0 30px;
 		ul{
 			display: flex;
@@ -68,17 +67,20 @@
 	}
 	.fav_block{
 		align-items: normal;
-		.fav_info{
-			display: flex;
-			flex-flow: column nowrap;
-			justify-content: space-between;
-		}
 		img{
 			width:120px;
 		}
 		.mid_title{
 			margin:0;
 			font-size:.9rem;
+		}
+	}
+	.mem_notify{
+		.fav_block{
+			img{
+				width:100px;
+				height:100px;
+			}
 		}
 	}
 	.location_pop{

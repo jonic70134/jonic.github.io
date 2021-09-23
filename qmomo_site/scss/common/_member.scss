@@ -427,6 +427,15 @@ select{
 		color:#999;
 		font-size:.8rem;
 	}
+	.notify_st{
+		display: inline-block;
+		margin: 10px 0 15px;
+		padding: 5px 15px;
+		font-size:.8rem;
+		color:white;
+		background-color: #555;
+		letter-spacing: 1px;
+	}
 	.mid_title{
 		margin:0 0 50px;
 		text-align: left;
@@ -516,6 +525,7 @@ select{
 	flex-flow: row nowrap;
 	position: relative;
 	width: 49%;
+	min-height: 130px;
 	margin: 0 2% 20px 0;
 	padding:10px;
 	box-shadow: 1px 2px 10px rgba(0,0,0,.3);
@@ -527,7 +537,9 @@ select{
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
+	align-items: center;
 	position: relative;
+	width: 45%;
 	margin: -10px 10px -10px -10px;
 	padding: 0 25px;
 	font-size: 1.5rem;
@@ -541,6 +553,12 @@ select{
 	.fa-ticket-alt{
 		transform: rotate(-45deg);
 	}
+}
+.coupon_t{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	width: 55%;
 }
 .coupon_edge{
 	position: absolute;left:-4px;top:0;
@@ -567,7 +585,7 @@ select{
 	color:$mem_tag_color;
 	background-color: $mem_tag;
 	&.place{
-		left:auto;bottom:20px;top:auto;right:10px;
+		left:-4px;bottom:3px;top:auto;right:auto;
 		font-size:.7rem;
 		background-color: #bbb;
 	}
