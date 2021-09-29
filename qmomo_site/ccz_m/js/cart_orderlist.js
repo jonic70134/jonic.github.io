@@ -85,11 +85,31 @@ jQuery(function($){
 		$('.deliver_use_popup').css('visibility','hidden');
 		$('body').css('overflow','auto');
 	});
-	// $("input[name$='payment']").click(function() {
-    //     var paymentChoose = $(this).val();
 
-    //     $(".trans_con").hide();
-    //     $("#trans" + paymentChoose).show();
-    // });
-	
+	// 選擇常用統一編號
+	$('.invoice_pop').on('click', function(e) {
+		e.preventDefault();
+		$('.com_invoice_pop').css('visibility','visible');
+		$('body').css('overflow','hidden');
+	});
+	$('.pop_close').on('click', function(e) {
+		e.preventDefault();
+		$('.com_invoice_pop').css('visibility','hidden');
+		$('body').css('overflow','auto');
+	});
+	$('.deliver_complete').on('click', function(e) {
+		e.preventDefault();
+		$('.com_invoice_pop').css('visibility','hidden');
+		$('body').css('overflow','auto');
+	});
+
+	// 三聯式發票div開合
+	$("input[name$='invoice']").click(function() {	
+		var radio_status = $('#invoice2').is(':checked');
+		if (radio_status){
+			$(".com_invoice").show();
+		}else{
+			$(".com_invoice").hide();
+		}
+    });
 });

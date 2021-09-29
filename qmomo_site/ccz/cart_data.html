@@ -197,18 +197,69 @@
           </div>
         </div>
         <div class="cart_invoice">
-          <div class="sm_title">發票</div>
+          <div class="sm_title">發票<a class="invoice_pop" href="#">常用統一編號</a></div>
           <div class="cart_invoice_con">
             <label for="invoice1">
-              <input id="invoice1" type="radio" name="invoice" checked="checked"><span>個人電子發票</span>
+              <input id="invoice1" type="radio" name="invoice" checked="checked"><span>手機條碼載具</span>
+              <input type="text" placeholder="請輸入手機條碼">
             </label>
             <label for="invoice2">
-              <input id="invoice2" type="radio" name="invoice"><span>公司戶電子發票</span>
-              <input type="text" placeholder="請輸入統一編號">
+              <input id="invoice2" type="radio" name="invoice"><span>三聯式電子發票</span>
             </label>
+            <div class="com_invoice">
+              <div class="cart_line">
+                <input type="text" placeholder="發票抬頭">
+                <input type="text" placeholder="統一編號">
+              </div>
+              <div class="cart_line">
+                <input type="text" placeholder="發票收件人姓名">
+              </div>
+              <div class="cart_line">
+                <p>地址(中獎後發票會寄送至此地址)</p>
+              </div>
+              <div class="cart_line">
+                <div class="credit_select">
+                  <select id="invoice_city" name="">
+                    <option value="1">選擇縣市</option>
+                    <option value="2">台北市</option>
+                    <option value="3">新北市</option>
+                  </select>
+                </div>
+                <div class="credit_select">
+                  <select id="invoice_area" name="">
+                    <option value="1">行政區</option>
+                    <option value="2">大安區</option>
+                    <option value="3">信義區</option>
+                  </select>
+                </div>
+              </div>
+              <div class="cart_line">
+                <input type="text" placeholder="街道地址">
+              </div>
+            </div>
             <label for="invoice3">
               <input id="invoice3" type="radio" name="invoice"><span>捐贈發票</span>
+              <input type="text" placeholder="請輸入愛心碼	">
             </label>
+          </div>
+          <div class="com_invoice_pop">
+            <div class="invoice_use_body"> 
+              <div class="mid_title">請選擇常用統一編號</div>
+              <div class="cart_radio_line">
+                <label for="invoice_g1">
+                  <input class="radio-btn" id="invoice_g1" type="radio" name="invoice_g" value="1" checked="checked">
+                  <p>發票抬頭：Qmomo</p>
+                  <p>統一編號：16097091</p>
+                </label>
+              </div>
+              <div class="cart_radio_line">
+                <label for="invoice_g2">
+                  <input class="radio-btn" id="invoice_g2" type="radio" name="invoice_g" value="2">
+                  <p>發票抬頭：星巴克</p>
+                  <p>統一編號：16097091</p>
+                </label>
+              </div><a class="deliver_complete" href="#">完成<a class="pop_close" href="#"><i class="fas fa-times"></i></a></a>
+            </div>
           </div>
         </div>
         <div class="od_total cart_total">

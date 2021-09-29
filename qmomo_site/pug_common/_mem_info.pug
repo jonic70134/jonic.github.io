@@ -13,6 +13,7 @@
 					#mem_info_detail-1.detail_content.active
 						.location_line
 							input(type='text' placeholder='姓名' value='金小姐')
+							p.red 此欄必填
 						.location_line
 							.location_select
 								select#credit-year(name='')
@@ -31,8 +32,10 @@
 										option(value='3') 2
 						.location_line
 							input(type='email' placeholder='Email' value='abc@gmail.com' disabled='disabled')
+							p.red 此欄必填
 						.location_line
 							input(type='tel' placeholder='電話' value='0912345678' disabled='disabled')
+							p.red 此欄必填
 						.location_line
 							.location_select
 								select#credit-city(name='')

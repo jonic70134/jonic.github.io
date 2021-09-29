@@ -13,6 +13,9 @@ select{
 	border: none;
 	-webkit-appearance: none;
 }
+.red{
+	color:#d00;
+}
 .bot_func{
 	display: flex;
 	flex-flow: row nowrap;
@@ -867,6 +870,15 @@ select{
 	color: #333;
 	background-color: white;
 	border-bottom: 1px solid #ddd;
+	.red{
+		position: absolute;top:50%;right:10px;
+		transform: translateY(-50%);
+		padding:3px 6px;
+		font-size:.8rem;
+		color:white;
+		background-color:#d00 ;
+		border-radius: 5px;
+	}
 }
 .location_line_txt{
 	margin:10px 0;
@@ -877,9 +889,6 @@ select{
 	}
 	.indent{
 		margin:0 0 0 15px;
-	}
-	.red{
-		color:#d00;
 	}
 	strong{
 		font-size:1.1rem;

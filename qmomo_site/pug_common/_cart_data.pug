@@ -155,17 +155,56 @@
 							i.fas.fa-times
 		.cart_invoice
 			.sm_title 發票
+				a.invoice_pop(href="#") 常用統一編號
 			.cart_invoice_con
 				label(for="invoice1")
 					input#invoice1(type="radio", name="invoice" checked='checked')
-					span 個人電子發票
+					span 手機條碼載具
+					input(type="text" placeholder='請輸入手機條碼')
 				label(for="invoice2")
 					input#invoice2(type="radio", name="invoice")
-					span 公司戶電子發票
-					input(type="text" placeholder='請輸入統一編號')
+					span 三聯式電子發票
+				.com_invoice
+					.cart_line
+						input(type="text" placeholder='發票抬頭')
+						input(type="text" placeholder='統一編號')
+					.cart_line
+						input(type="text" placeholder='發票收件人姓名')
+					.cart_line
+						p 地址(中獎後發票會寄送至此地址)
+					.cart_line
+						.credit_select
+							select#invoice_city(name='')
+								option(value='1') 選擇縣市
+								option(value='2') 台北市
+								option(value='3') 新北市
+						.credit_select
+							select#invoice_area(name='')
+								option(value='1') 行政區
+								option(value='2') 大安區
+								option(value='3') 信義區
+					.cart_line
+						input(type="text" placeholder='街道地址')
 				label(for="invoice3")
 					input#invoice3(type="radio", name="invoice")
 					span 捐贈發票
+					input(type="text" placeholder='請輸入愛心碼	')
+			.com_invoice_pop
+				.invoice_use_body 
+					.mid_title 請選擇常用統一編號
+					.cart_radio_line
+						label(for='invoice_g1')
+							input#invoice_g1.radio-btn(type='radio' name='invoice_g' value='1' checked='checked')
+							p 發票抬頭：Qmomo
+							p 統一編號：16097091
+					.cart_radio_line
+						label(for='invoice_g2')
+							input#invoice_g2.radio-btn(type='radio' name='invoice_g' value='2')
+							p 發票抬頭：星巴克
+							p 統一編號：16097091
+					a.deliver_complete(href="#") 完成
+						a.pop_close(href="#")
+							i.fas.fa-times
 		.od_total.cart_total
 			.od_checkout 
 				a(href="cart_orderlist.html").btn-prev 上一步

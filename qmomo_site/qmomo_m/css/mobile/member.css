@@ -1120,6 +1120,10 @@ select {
   -webkit-appearance: none;
 }
 
+.red {
+  color: #d00;
+}
+
 .bot_func {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2183,6 +2187,18 @@ select {
   background-color: white;
   border-bottom: 1px solid #ddd;
 }
+.location_line .red {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 3px 6px;
+  font-size: 0.8rem;
+  color: white;
+  background-color: #d00;
+  border-radius: 5px;
+}
 
 .location_line_txt {
   margin: 10px 0;
@@ -2194,9 +2210,6 @@ select {
 }
 .location_line_txt .indent {
   margin: 0 0 0 15px;
-}
-.location_line_txt .red {
-  color: #d00;
 }
 .location_line_txt strong {
   font-size: 1.1rem;

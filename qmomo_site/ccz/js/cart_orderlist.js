@@ -85,11 +85,15 @@ jQuery(function($){
 		$('.deliver_use_popup').css('visibility','hidden');
 		$('body').css('overflow','auto');
 	});
-	// $("input[name$='payment']").click(function() {
-    //     var paymentChoose = $(this).val();
-
-    //     $(".trans_con").hide();
-    //     $("#trans" + paymentChoose).show();
-    // });
+	
+	// 三聯式發票div開合
+	$("input[name$='invoice']").click(function() {	
+		var radio_status = $('#invoice2').is(':checked');
+		if (radio_status){
+			$(".com_invoice").show();
+		}else{
+			$(".com_invoice").hide();
+		}
+    });
 	
 });
