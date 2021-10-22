@@ -13,7 +13,6 @@
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		align-items: center;
-		
 		border-bottom:1px solid $sort_bg;
 	}
 }
@@ -47,13 +46,6 @@
 			~.checkmark{
 				border:none;
 				background-color:$sort_bg;
-				// &:after{
-				// 	display: block;
-				// 	position: absolute;left:3px;top:-4px;
-				// 	font-size:1.3rem;
-				// 	color:white;
-					
-				// }
 			}
 			~p{
 				color:$sort_color;

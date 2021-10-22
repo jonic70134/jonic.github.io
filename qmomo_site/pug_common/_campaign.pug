@@ -1,139 +1,47 @@
 .site-activity
 	.container
-		#activity_info.act-info
-			h3
-				span.ready 通通給姊包起來~組合價$3988
-				//- span.act-title 
-				span.date 2020/12/01 00:00 ~ 2020/12/15 23:59
-			.desc
-				p.act-content
-					| 任選5件NT$3,988，折扣可循環累計，且無法使用折價券和其他折扣活動優惠
-				p.tip
-					| 活動優惠可循環累計。
-					//- em.t-red 2016/07/25
-					//- 	|  給點，若商品退貨未達門檻將取消給點。
-				p.tip
-					| 注意：商品中，若有「限定商品」或「FB分享商品」參與折扣活動，將不會顯示於活動頁中，但於購物車結帳時，仍享有優惠。
-				p.tip
-					| 購買活動商品達到「件數門檻」時，即享特定件數商品的活動優惠價。
-		#activity_cart.act-cart
-			.swiper-container
-				.swiper-wrapper
-					.swiper-slide
-						a.photo(href='#')
-							img(src='../img/item_long_01.jpg' alt='')
-						.info
-							h1.name 幼桃肌嫩白緊緻慕斯Daily Feminine Mousse
-							.line
-								span.currency NT$ 1099
-								span.price
-							.quantity
-								p.quantity-decrease 
-									i.fas.fa-minus
-								input.quantity-input(type='text' value='1' max='10' title='請輸入購買量')
-								p.quantity-increase 
-									i.fas.fa-plus
-								a.btn-del(href='#')
-									i.far.fa-trash-alt
-					.swiper-slide
-						a.photo(href='#')
-							img(src='../img/item_long_03.jpg' alt='')
-						.info
-							h1.name 幼桃肌嫩白緊緻慕斯Daily Feminine Mousse
-							.line
-								span.currency NT$ 1099
-								span.price
-							.quantity
-								p.quantity-decrease 
-									i.fas.fa-minus
-								input.quantity-input(type='text' value='1' max='10' title='請輸入購買量')
-								p.quantity-increase 
-									i.fas.fa-plus
-								a.btn-del(href='#')
-									i.far.fa-trash-alt
-					.swiper-slide
-						a.photo(href='#')
-							img(src='../img/item_long_02.jpg' alt='')
-						.info
-							h1.name 幼桃肌嫩白緊緻慕斯Daily Feminine Mousse
-							.line
-								span.currency NT$ 1099
-								span.price
-							.quantity
-								p.quantity-decrease 
-									i.fas.fa-minus
-								input.quantity-input(type='text' value='1' max='10' title='請輸入購買量')
-								p.quantity-increase 
-									i.fas.fa-plus
-								a.btn-del(href='#') 
-									i.far.fa-trash-alt
-					.swiper-slide
-						a.photo(href='#')
-							img(src='../img/item_long_04.jpg' alt='')
-						.info
-							h1.name 幼桃肌嫩白緊緻慕斯Daily Feminine Mousse
-							.line
-								span.currency NT$ 1099
-								span.price
-							.quantity
-								p.quantity-decrease 
-									i.fas.fa-minus
-								input.quantity-input(type='text' value='1' max='10' title='請輸入購買量')
-								p.quantity-increase 
-									i.fas.fa-plus
-								a.btn-del(href='#')
-									i.far.fa-trash-alt
-				a.swiper-left(href='#')
-					i.fas.fa-angle-left
-				a.swiper-right(href='#')
-					i.fas.fa-angle-right
-			.state
-				#progress-bar-static.progress-bar-static
-					.inner-bar(data-state='100')
-					span.note
-						| 還差 
-						span.price NT$200
-					span.note-finish.hide 已達成條件
-				p.tip
-					| 已選購
-					span.red-text  4件 
-					| 商品：
-				#actActions.actions
-					span.current 目前累計金額：
-					span.price NT$800
-					a.btn-addcart(href='#') 查看購物車
-
-
-.sort_block
-	.container
-		ul.tabs
-			li.tab_link.current(data-tab='tab-1') 性感內衣
-			li.tab_link(data-tab='tab-2') 舒適小褲
-		.select_sort
-				select#sort(name="sort") 
-					option(value="1") 店長推薦
-					option(value="2") 最新上架
-					option(value="3") 熱賣商品
-					option(value="4") 最多人看
-					option(value="5") 價格 低 → 高
-					option(value="6") 價格 高 → 低
-.category
-	.container
-		#tab-1.tab_content.current
-			.items
-				include ../pug_common/_items.pug
-		#tab-2.tab_content
-			.items
-				include ../pug_common/_items_pantie.pug
-.nav
-	.container
-		a(href="#" class="prev")
-			i.fas.fa-angle-left
-				| &nbsp;PREV
-		.page_num_block
-			a(href="#" class="nav_page_num active") 1
-			a(href="#" class="nav_page_num") 2
-			a(href="#" class="nav_page_num") 3
-		a(href="#" class="next")
-			i.fas.fa-angle-right
-				| &nbsp;NEXT
+		.act-info
+			.coupon_block(href="campaign.html") 
+				.coupon_ticket
+					img(src="../img/prize.jpg", alt="")
+				.coupon_t
+					.title 紅利點數回饋禮：180點贈品：Qmomo微笑SMILE晴雨兩用自動傘兌換券
+					.cont 按鈕式自動折疊傘，一鍵開收，晴雨兩用；抗ＵＶ阻隔紫外線，防曬系數ＵＰＦ3０＋；總重300g，輕巧方便攜帶。【會員粉絲限定】紅利點數回饋禮：180點贈品：Qmomo微笑SMILE晴雨兩用自動傘兌換券，眾多好禮供妳選擇，至門市兌換前請先電話聯繫門市確認。
+					.btn 
+						a(href="#") 180點兌換
+						.date 領取期限 2020/12/01
+				.tag
+					| APP/門市/官網適用
+				
+		.act-cont
+			.act-line
+				.sm_title 點數兌換券期間
+				p  2021/10/31 23:59 - 2020/11/01 16:00
+			.act-line
+				.sm_title 兌換贈品期間
+				p  2021/10/31 23:59 - 2020/11/01 18:00
+			.act-line
+				.sm_title 適用門市
+				ul.act_store
+					li 
+						a(href="https://goo.gl/maps/pxDiN5BL6EvhJaXZ9" target="_blank") 東區門市
+					li 
+						a(href="https://goo.gl/maps/jQn9MpVQcJmEh7s38" target="_blank") 西門町門市
+					li 
+						a(href="https://goo.gl/maps/EZiC4ec23rW8TDHd7" target="_blank") 桃園站前門市
+					li 
+						a(href="https://goo.gl/maps/HZfg4ZiscnRUskiv7" target="_blank") 綠園道門市
+					li
+						a(href="https://goo.gl/maps/hwMBvZLKwht7DzYDA" target="_blank") 凹子底門市
+			.act-line
+				.sm_title 注意事項
+				ul.act_rule
+					li 每檔紅利點數兌換贈品券活動的數量均為限時限量，兌換完為止。
+					li 每張紅利點數兌換贈品券需使用紅利點數兌換，每次兌換一張，可重複兌換。
+					li 兌換後的贈品券則適用一般贈品券使用規則。
+			.act-line
+				.sm_title 使用規則
+				ul.act_rule
+					li 使用本優惠券的訂單如退貨，本優惠券將失效不會歸還。
+					li 本優惠券有使用效期，逾期後則無法使用，且無法恢復。
+					li 商店保留隨時修正、暫停或終止本優惠券之權利。

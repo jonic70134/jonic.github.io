@@ -1793,6 +1793,15 @@ select {
   margin: 0 0 50px;
   text-align: left;
 }
+.fav_block .size {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 3px 8px;
+  font-size: 0.75rem;
+  border: 1px solid #333;
+  background-color: #fde3e6;
+  border-radius: 5px;
+}
 .fav_block .fav_func_btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1836,7 +1845,7 @@ select {
   width: 100px;
 }
 .mem_notify .fav_block .mid_title {
-  margin: 0 0 10px;
+  margin: 0 0 5px;
 }
 .mem_notify .fav_block .currency {
   font-size: 0.9rem;

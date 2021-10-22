@@ -1279,7 +1279,7 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
 }
-.pop_slider .pop_close {
+.pop_slider .close_pop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1294,11 +1294,11 @@ input[type=password], input[type=email], input[type=tel], input[type=text], inpu
   font-size: 0.9rem;
   cursor: pointer;
 }
-.pop_slider .pop_close p {
+.pop_slider .close_pop p {
   margin: 0 5px 0 0;
   font-size: 0.8rem;
 }
-.pop_slider .pop_close i {
+.pop_slider .close_pop i {
   color: white;
   font-size: 0.75rem;
 }
