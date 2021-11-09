@@ -2405,6 +2405,27 @@ select {
       flex-basis: 20%;
 }
 
+.mem_empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+}
+.mem_empty .mem_msg {
+  color: #282828;
+  font-size: 1.8rem;
+}
+
 .site-footer {
   width: 100%;
   color: #585858;

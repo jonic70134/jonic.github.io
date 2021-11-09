@@ -947,3 +947,14 @@ select{
 .post{
 	flex-basis: 20%;
 }
+.mem_empty{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	width:70%;
+	.mem_msg{
+		color:#282828;
+		font-size:1.8rem;
+	}
+}

@@ -1218,6 +1218,89 @@ input[type=number] {
   color: white;
 }
 
+.sort_block {
+  margin: 20px 0 0;
+  padding: 10px 0;
+}
+.sort_block .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ffadad;
+}
+
+.sort {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+  font-size: 0.9rem;
+}
+.sort label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100px;
+  height: 36px;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  color: #777;
+}
+.sort label:last-child {
+  margin: 0;
+}
+.sort p {
+  width: 100px;
+  line-height: 36px;
+}
+.sort input {
+  display: none;
+}
+.sort input:checked ~ .checkmark {
+  border: none;
+  background-color: #ffadad;
+}
+.sort input:checked ~ p {
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sort .checkmark {
+  width: 100px;
+  height: 36px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
 .site-activity {
   line-height: 1.4;
 }
@@ -1281,7 +1364,8 @@ input[type=number] {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 0.9rem;
-  background-color: #f5d980;
+  color: white;
+  background-color: #ffadad;
 }
 .site-activity .date {
   color: #999;
@@ -1356,7 +1440,7 @@ input[type=number] {
   min-width: 140px;
   padding: 5px 15px;
   text-align: center;
-  background-color: #f5d980;
+  background-color: #ffadad;
 }
 .site-activity .act-cont .act-line p {
   margin: 5px 15px;

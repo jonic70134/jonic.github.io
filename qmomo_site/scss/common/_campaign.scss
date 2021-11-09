@@ -1,4 +1,4 @@
-@import '../base/_color_ccz.scss';
+@import '_sort.scss';
 .site-activity{
 	line-height: 1.4;
 	.coupon_block{
@@ -40,7 +40,8 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		font-size:.9rem;
-		background-color: $theme-color;
+		color:$campaign_t;
+		background-color: $campaign_btn;
 	}
 	.date{
 		color:#999;
