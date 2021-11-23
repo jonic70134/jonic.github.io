@@ -186,7 +186,7 @@ img.bg {
 	left: 200px;
 	padding:0 25px 20px;
 	background: #fff;
-	background: rgba(235, 235, 235, 0.8);
+	background: rgba(235, 235, 235, 0.9);
 	width: 650px;
 	box-sizing:border-box;
 }
@@ -211,10 +211,15 @@ img.bg {
 		font-weight: 700;
 	}
 	ul{
+		margin: 0 0 30px;
 		li{
+			
 			color:#333;
-			font-size: 15px;
-			line-height: 1.5;
+			font-size: 14px;
+			line-height: 2.2;
+			list-style: disc inside;
+			letter-spacing: 0.5px;
+
 		}
 	}
 	p{
@@ -253,7 +258,6 @@ img.bg {
 		display: block;
 		position: relative;
 		margin-bottom: 20px;
-		border: 1px solid #bbb;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
@@ -299,9 +303,11 @@ img.bg {
 		// }
 	}
 	img {
+		display: block;
 		max-width: 100%;
 		margin-bottom: 0px;
 		background-color: #CDD1D4;
+		box-shadow: 0 0 5px #999;
 	}
 	blockquote {
 		margin-top: 10px;
