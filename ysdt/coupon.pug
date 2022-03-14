@@ -1,0 +1,64 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
+		title 折價券頁
+		meta(content='白昌首頁', name='description')
+		meta(content='Orange', name='author')
+		meta(content='width=device-width, initial-scale=1.0', name='viewport')
+		link(rel='icon', href='img/baichain.ico')
+		link(href='css/index.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug
+			.sub-head
+				.container
+					include src/_menu.pug
+					include src/_tagcloud.pug
+			// 主要版面
+			.site-main.clearfix(role='main')
+				.container
+					// 熱品推薦
+					.cupn.single
+						.cupn_block
+							a.cupn_bg(href='item.html')
+								.expired
+									img(src='img/sample/item_011.jpg', alt='商品名稱', title='商品名稱')
+									.fog
+									.expired_bg
+										span 已過期
+								.cupn_info
+									.cupn_num 禮券編號:AB1234567890
+									h3.name 鋁合金裝備掛環工具環座帶勾環 C5 M
+									.cupn_dur 01/06 今日對品禮券
+									.cupn_price
+										span.title 限時特價
+										p.price  99,900
+									.cupn_share
+										img(src='img/share1.svg', alt='')
+										img(src='img/share2.svg', alt='')
+						-var j = 32;
+						- for (var i = 0; i < j; i++)
+							.cupn_block
+								a.cupn_bg(href='item.html')
+									img(src='img/sample/item_011.jpg', alt='商品名稱', title='商品名稱')
+									.cupn_info
+										.cupn_num 禮券編號:AB1234567890
+										h3.name 鋁合金裝備掛環工具環座帶勾環 C5 M
+										.cupn_dur 01/06 今日對品禮券
+										.nor
+											span.title 原價
+											p.del 199,900
+										.cupn_price
+											span.title 限時特價
+											p.price  99,900
+										.cupn_share
+											img(src='img/share1.svg', alt='')
+											img(src='img/share2.svg', alt='')
+
+			include src/_foot.pug
+			script(src='js/3rd-party/jquery-1.9.1.min.js')
+			script(src='js/3rd-party/swiper-bundle.min.js')
+			script(src='js/index.js')

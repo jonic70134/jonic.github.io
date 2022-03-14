@@ -1,0 +1,67 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
+		title 白昌
+		meta(content='白昌首頁', name='description')
+		meta(content='Orange', name='author')
+		meta(content='width=device-width, initial-scale=1.0', name='viewport')
+		link(rel='icon', href='img/baichain.ico')
+		link(href='css/supplier.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug
+			.site-main.clearfix(role='main')
+				.container
+					.supplier_t
+						a(href='index.html') 首頁
+						i.fa.fa-angle-right(aria-hidden='true')
+						span 供應商官網列表
+					.supplier
+						-var j = 10;
+						- for (var i = 0; i < j; i++)
+							a(href='#')
+								.photo
+									img(src='img/asap40_black.png', alt='')
+								p
+									span ASAP 4.0購物
+							a(href='#')
+								.photo
+									img(src='img/beauty.png', alt='')
+								p
+									span ASAP 4.0購物無敵白鯧好棒棒耶耶
+							a(href='#')
+								.photo
+									img(src='img/logo.png', alt='')
+								p
+									span ASAP 4.0購物
+							a(href='#')
+								.photo
+									img(src='img/sample/img100_06.jpg', alt='')
+								p
+									span ASAP 4.0購物
+							a(href='#')
+								.photo
+									img(src='img/sample//XRblack.jpg', alt='')
+								p
+									span ASAP 4.0購物
+							a(href='#')
+								.photo
+									img(src='img/ai.jpg', alt='')
+								p
+									span ASAP 4.0購物
+
+						
+					//
+						<div class="loader">
+						<button type="button" class="btn-load">加載更多商品<i class="fa fa-refresh" aria-hidden="true"></i></button>
+						</div>
+			include src/_foot.pug
+			script(src='js/3rd-party/jquery-1.9.1.min.js')
+			//
+				<script src="js/3rd-party/masonry.pkgd.min.js"></script>
+				<script src="js/3rd-party/imagesloaded.pkgd.min.js"></script>
+			script(src='js/3rd-party/swiper-bundle.min.js')
+			script(src='js/index.js')

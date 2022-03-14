@@ -1,0 +1,169 @@
+// 首頁
+@import "partials/base";
+@import "partials/mixin";
+@import "partials/page";
+@import "3rd-party/_font-awesome.min.scss";
+
+.item-list-follow { 
+    margin-top: 25px;	
+    //button style
+    button{
+        width:100%;
+        padding:10px;
+        margin-right: 10px;
+        font-size:.9rem;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-align: center;
+        border:none;
+        color:white;
+        background-color:#0069cd;
+        cursor: pointer;
+        line-height: 1;
+    }
+    .btn-cart{
+        color:white;
+        background-color:#0069cd;
+    }
+    .btn-imd{
+        background-color: #e00;
+    }
+    .btn-fav{
+        color:#0069cd;
+        background-color: #eee;
+        border:1px solid #ccc;
+        i{
+            margin-right:3px;
+        }
+    }
+    .btn-notsale{
+        color:white;
+        background-color:#999;
+        cursor: not-allowed;
+    }
+    .btn-lack{
+        color:#999;
+        background-color: #eee;
+        border:1px solid #ccc;
+        cursor: not-allowed;
+    }
+    .btn-notify{
+        color:#333;
+        background-color:#ffc440;
+    }
+	.follow-list-block{
+		position: relative;
+		width: 100%;
+		height: auto;		
+		color: #333;
+		padding: 12px 15px;
+		margin-bottom: 25px;
+		background: white;
+		border: 1px solid #ccc;
+		&:first-child{
+			margin-top: 5px;
+		}
+		@include box-sizing(border-box);
+		@include transition(0.4s);
+		@include clearfix;
+	}	
+	.follow-list{
+        width: 100%;
+		.follow-list-content{	
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+			margin-bottom: 15px;
+			padding: 0 0px 13px;
+			border-bottom: 1px dashed #ccc;
+			position: relative;
+			&:last-child{
+				border-bottom: none;
+				margin-bottom: 0px;
+				padding-bottom: 0px;
+            }						
+            div{
+                margin: 0 20px;
+            }
+		}
+		.none-item{
+			padding-top: 15px;
+			padding-bottom: 15px!important;
+			font-size: 1em;
+			color: black;
+			font-weight: bold;
+		}
+		.follow-date{
+            flex-basis: 8%;
+            line-height: 1.5;
+            font-size: 0.8rem;
+            text-align: center;
+		}
+		.follow-photo{
+            flex-basis: 10%;
+            text-align: center;
+            a{
+                display: block;
+            }
+			img{
+				max-width: 100px;
+			}
+		}
+		.follow-name{
+            flex-basis: 30%;
+            margin:0 100px 0 10px;
+            font-size: 0.9rem;
+            line-height: 1.3;			
+			a{
+                color: #06c;
+                text-decoration: underline;
+				&:hover {
+				  color: #e00;
+				}
+			}
+		}
+		.follow-price{
+            color:red;
+			text-align: right;
+            font-size:1.3rem;
+            &::first-letter{
+                font-size:.9rem;
+            }
+		}
+		.follow-status{
+			width:110px;
+		}
+
+		.follow-notice-date{
+            width:100px;
+            font-size:.9rem;
+            line-height: 1.3;
+			text-align: center;
+			span{
+				display: block;
+			}
+		}
+		.follow-delete{
+			font-size: 1rem;
+			cursor: pointer;
+			&:before {
+				@include icon-font("\f00d");
+			}				
+		}
+	}
+	.follow-list-info{
+		font-size: 0.95em;
+		line-height: 1.7;
+		padding-bottom: 25px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid #ccc;
+		ul{
+			padding-left: 25px;
+		}
+		li{
+			list-style-type: decimal;
+			margin-top: 5px;
+		}
+	}
+}

@@ -1,0 +1,136 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
+		title 白昌
+		meta(content='白昌首頁', name='description')
+		meta(content='Orange', name='author')
+		meta(content='width=device-width, initial-scale=1.0', name='viewport')
+		link(rel='icon', href='img/baichain.ico')
+		link(href='css/catelist.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug
+			.sub-head
+				.container
+					include src/_menu.pug
+					include src/_tagcloud.pug
+			// 各品牌分類
+			.site-main.clearfix(role='main')
+				.container
+					.items
+						-var j = 5;
+						- for (var i = 0; i < j; i++)
+							.item(href='#')
+								p.photo
+									img(src='img/sample/item_03.jpg', alt='商品名稱', title='商品名稱')
+								.info
+									h3.name 商品名稱商品名稱商品
+									.oth-info
+										.price 999,999
+										a.i-cart(href='#')
+											i.fa.fa-cart-arrow-down(aria-hidden='true')
+										a.i-fav(href='#')
+											i.fa.fa-heart-o(aria-hidden='true')
+										// 實心愛心 <a href="#" class="i-fav"><i class="fa fa-heart" aria-hidden="true"></i></a>
+							.item(href='#')
+								p.photo
+									img(src='img/sample/item_09.jpg', alt='商品名稱', title='商品名稱')
+								.info
+									h3.name 商品名稱商品名稱商品
+									.oth-info
+										.price 999,999
+										a.i-cart(href='#')
+											i.fa.fa-cart-arrow-down(aria-hidden='true')
+										a.i-fav(href='#')
+											i.fa.fa-heart-o(aria-hidden='true')
+										// 實心愛心 <a href="#" class="i-fav"><i class="fa fa-heart" aria-hidden="true"></i></a>
+							.item(href='#')
+								p.photo
+									img(src='img/sample/item_07.jpg', alt='商品名稱', title='商品名稱')
+								.info
+									h3.name 商品名稱商品名稱商品
+									.oth-info
+										.price 999,999
+										a.i-cart(href='#')
+											i.fa.fa-cart-arrow-down(aria-hidden='true')
+										a.i-fav(href='#')
+											i.fa.fa-heart-o(aria-hidden='true')
+										// 實心愛心 <a href="#" class="i-fav"><i class="fa fa-heart" aria-hidden="true"></i></a>
+					.loader
+						button.btn-load(type='button')
+							| 加載更多商品
+							i.fa.fa-refresh(aria-hidden='true')
+				// 相關商品
+				.pc-item-related
+					.related-title 推薦給您：
+					.items
+						a.item(href='item.html')
+							p.photo
+								span.float
+								img(src='img/sample/item_08.jpg', alt='商品名稱', title='商品名稱', itemprop='image')
+							.info
+								h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+								.price(itemprop='price') 999,999
+						a.item(href='item.html')
+							p.photo
+								span.float
+								img(src='img/sample/item_012.jpg', alt='商品名稱', title='商品名稱', itemprop='image')
+							.info
+								h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+								.price(itemprop='price') 999,999
+						a.item(href='item.html')
+							p.photo
+								span.float
+								img(src='img/sample/item_02.jpg', alt='商品名稱', title='商品名稱', itemprop='image')
+							.info
+								h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+								.price(itemprop='price') 999,999
+						a.item(href='item.html')
+							p.photo
+								span.float
+								img(src='img/sample/item_04.jpg', alt='商品名稱', title='商品名稱', itemprop='image')
+							.info
+								h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+								.price(itemprop='price') 999,999
+						a.item(href='item.html')
+							p.photo
+								span.float
+								img(src='img/sample/item_06.jpg', alt='商品名稱', title='商品名稱', itemprop='image')
+							.info
+								h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+								.price(itemprop='price') 999,999
+						a.item(href='item.html')
+							p.photo
+								span.float
+								img(src='img/sample/item_013.jpg', alt='商品名稱', title='商品名稱', itemprop='image')
+							.info
+								h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+								.price(itemprop='price') 999,999
+						a.item(href='item.html')
+							p.photo
+								span.float
+								img(src='img/sample/item_018.jpg', alt='商品名稱', title='商品名稱', itemprop='image')
+							.info
+								h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+								.price(itemprop='price') 999,999
+						a.item(href='item.html')
+							p.photo
+								span.float
+								img(src='img/sample/item_019.jpg', alt='商品名稱', title='商品名稱', itemprop='image')
+							.info
+								h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+								.price(itemprop='price') 999,999
+						a.item(href='item.html')
+							p.photo
+								span.float
+								img(src='img/sample/item_05.jpg', alt='商品名稱', title='商品名稱', itemprop='image')
+							.info
+								h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+								.price(itemprop='price') 999,999
+			include src/_foot.pug
+			script(src='js/3rd-party/jquery-1.9.1.min.js')
+			script(src='js/3rd-party/swiper-bundle.min.js')
+			script(src='js/catelist.js')

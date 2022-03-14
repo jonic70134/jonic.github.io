@@ -1,0 +1,89 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
+		title 白昌
+		meta(content='白昌首頁', name='description')
+		meta(content='Orange', name='author')
+		meta(content='width=device-width, initial-scale=1.0', name='viewport')
+		link(rel='icon', href='img/baichain.ico')
+		link(href='css/follow.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug
+			.sub-head
+				.container
+					include src/_menu.pug
+					include src/_tagcloud.pug
+			.item-list-follow
+				.container
+					.follow-list-block
+						.follow-list
+							.follow-list-content
+								.follow-date 2019-09-19
+								.follow-photo
+									a(href='item.html')
+										img(src='img/sample/item_019.jpg')
+								h3.follow-name
+									a(href='item.html') 500G 主機 + NBA 2K15 + 耳麥+ 保固卡 加送 果凍套 + 保護貼
+								.follow-price $19,900,000
+								.follow-status
+									button.button.small.btn-cart 加入購物車
+								.follow-notice-date
+								.follow-delete
+							.follow-list-content
+								.follow-date 2019-09-19
+								.follow-photo
+									a(href='item.html')
+										img(src='img/sample/item_018.jpg')
+								h3.follow-name
+									a(href='item.html') 雙面羔羊絨連帽外套/連帽大衣 - 雙面款-F
+								.follow-price $19,900,000
+								.follow-status
+									button.button.small.btn-notify 貨到通知
+								.follow-notice-date
+									span 最新通知
+									span 2019-09-01
+								.follow-delete
+							.follow-list-content
+								.follow-date 2019-09-19
+								.follow-photo
+									a(href='item.html')
+										img(src='img/sample/item_019.jpg')
+								h3.follow-name
+									a(href='item.html') 雙面羔羊絨連帽外套/連帽大衣 - 雙面款-F
+								.follow-price $19,900,000
+								.follow-status
+									button.button.small.btn-lack 補貨中
+								.follow-notice-date
+									span 最新通知
+									span 2019-09-01
+								.follow-delete
+							.follow-list-content
+								.follow-date 2019-09-19
+								.follow-photo
+									a(href='item.html')
+										img(src='img/sample/item_019.jpg')
+								h3.follow-name
+									a(href='item.html') 雙面羔羊絨連帽外套/連帽大衣 - 雙面款-F
+								.follow-price $19,900,000
+								.follow-status
+									button.button.small.btn-notsale 尚未開賣
+								.follow-notice-date
+									span 最新通知
+									span 2019-09-01
+								.follow-delete
+							.follow-list-content.none-item
+								| 目前無追蹤任何商品
+					.follow-list-info
+						| 追蹤清單使用說明：
+						ul
+							li 商品售價以網站即時標示為準。
+							li 「貨到通知我」商品將在貨到後通知您，商品數量有限請盡速訂購。
+							li 購物車商品以您加入清單日期算起，三個月後自動刪除，刪除追蹤商品後將不再發送通知。
+			include src/_foot.pug
+			script(src='js/3rd-party/jquery-1.9.1.min.js')
+			script(src='js/3rd-party/swiper-bundle.min.js')
+			script(src='js/index.js')
