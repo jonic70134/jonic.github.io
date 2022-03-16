@@ -120,7 +120,7 @@
 }
 
 .per{
-    margin:20px 0 0;
+    margin:10px 0 0;
     position: relative;
     &.hot_rec{
         .per_r{
@@ -328,13 +328,13 @@
     }
 }
 .ad_banner{
-    margin-top:20px;
+    margin-top:15px;
     img{
         display: block;
     }
 }
 .spec_prod{
-    margin:20px 0 0;
+    margin:15px 0 0;
     background-color:#ece8df;
     @include border-radius(10px);
     .swiper-container{
