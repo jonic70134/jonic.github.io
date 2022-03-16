@@ -536,6 +536,19 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
 }
 
+.sub_head .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .pc_index_menu {
   position: relative;
   z-index: 20;
@@ -619,13 +632,9 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: absolute;
   right: 8px;
-  font-weight: 700;
+  width: 6px;
   color: white;
-  content: "";
-  font-family: FontAwesome;
-}
-.pc_index_menu .menu-one > li > h3 > a:hover:before {
-  color: #333;
+  content: url(../img/icon_dept_arrow.svg);
 }
 .pc_index_menu .menu-one > li > h3 > a img {
   position: absolute;
@@ -685,10 +694,8 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: absolute;
   right: 8px;
-  font-weight: 700;
-  color: #333;
-  content: "";
-  font-family: FontAwesome;
+  width: 6px;
+  content: url(../img/icon_dept_arrow.svg);
 }
 .pc_index_menu .menu-expand .menu-sub-expand-red {
   display: inline-block;
@@ -720,19 +727,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 42px;
   text-decoration: underline;
   color: #dc0000;
-}
-
-.sub_head .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .tag-cloud {
@@ -5364,9 +5358,6 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   color: #d00;
   font-size: 0.9rem;
 }

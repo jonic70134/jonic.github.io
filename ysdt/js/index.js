@@ -42,7 +42,7 @@ var cupnslide = new Swiper('.cupn_slide', {
 
 // 智慧分類menu開合
 $('.nav-menu').hover(function() {
-    $('.menu-one').slideToggle();
+    $('.menu-one').stop(true,true).slideToggle();
 });
 
 $('.btn-load').click(function () {

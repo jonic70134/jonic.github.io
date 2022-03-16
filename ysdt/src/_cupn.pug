@@ -1,12 +1,11 @@
 .cupn
 	.cupn_slide.swiper-container
 		.swiper-wrapper
-			-var j = 5;
-			- for (var i = 0; i < j; i++)
+			mixin cupnimg(src)
 				.swiper-slide
 					a.cupn_bg(href='#')
 						.cupn_prod_img
-							img(src='img/sample/02_09_100.jpg', alt='商品名稱', title='商品名稱')
+							img(src='img/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
 						.cupn_info
 							.cupn_num 折價券編號:AB1234567890
 							h3.name SEIKO精工 Premier 人動電能萬年曆手錶-42.9mm
@@ -20,5 +19,9 @@
 							.cupn_share
 								img(src='img/share1.svg', alt='')
 								img(src='img/share2.svg', alt='')
+			+cupnimg('04_01_80')
+			+cupnimg('04_02_80')
+			+cupnimg('04_03_80')
+			+cupnimg('04_04_80')
 	.swiper-button-next
 	.swiper-button-prev
