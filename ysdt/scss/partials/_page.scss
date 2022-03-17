@@ -245,7 +245,7 @@
 					background: #27374e;
 					border-width:0 2px 2px 0;
 					text-shadow:1px 1px 3px #000;
-					@include border-radius(10px 0px 10px 0px);
+					@include border-radius(10px 0 10px 0);
 				}
 			}
 		}
@@ -320,6 +320,7 @@
 			@include border-radius(5px);
             a,img{
 				display: block;
+				
 			}
 			a{
 				padding:8px;
@@ -337,16 +338,18 @@
             .cart{
                 position: relative;
                 margin-top: 4px;
+				img{
+					width:30px;
+				}
                 &:after{
-                    content:"\f00c";
                     display: block;
                     position: absolute;top:0;left:0;
-                    font-size:.8rem;
-                    font-family: 'FontAwesome';
-                    padding:3px;
+					width: 11px;height:11px;
+                    padding:0 3px 7px;
                     color:white;
                     background: #d00;
                     border:2px solid white;
+					content: url(../img/icon_check.svg);
                     @include border-radius(50%);
                 }
             }

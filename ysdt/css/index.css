@@ -409,7 +409,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  border-radius: 10px 0px 10px 0px;
+  border-radius: 10px 0 10px 0;
 }
 .site-header .main-head .site-search {
   display: inline-block;
@@ -518,18 +518,21 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   margin-top: 4px;
 }
+.site-header .main-head .head-func .cart img {
+  width: 30px;
+}
 .site-header .main-head .head-func .cart:after {
-  content: "";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 0.8rem;
-  font-family: "FontAwesome";
-  padding: 3px;
+  width: 11px;
+  height: 11px;
+  padding: 0 3px 7px;
   color: white;
   background: #d00;
   border: 2px solid white;
+  content: url(../img/icon_check.svg);
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
