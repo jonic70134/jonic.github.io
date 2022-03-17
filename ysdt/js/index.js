@@ -31,7 +31,7 @@ var specslide = new Swiper('.spec_slide', {
 
 // 個人禮券slider
 var cupnslide = new Swiper('.cupn_slide', {
-    slidesPerView: 3.7,
+    slidesPerView: 3.6,
     spaceBetween: 15,
     navigation: {
         nextEl: ".cupn .swiper-button-next",

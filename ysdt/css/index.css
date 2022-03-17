@@ -953,7 +953,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 10px;
+  padding: 0 35px 0 10px;
   border-left: 1px solid #999;
   background-color: black;
   -webkit-background-clip: padding-box;
@@ -964,7 +964,7 @@ h1, h2, h3, h4, h5, h6 {
 .cupn .cupn_dur {
   margin: 0 0 2px;
   font-size: 0.8rem;
-  color: white;
+  color: #aaa;
   line-height: 1.2;
 }
 .cupn .cupn_dur span {
@@ -1031,7 +1031,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .cupn .cupn_share {
   position: absolute;
-  right: 0;
+  right: 2px;
   top: 0;
   bottom: 0;
   display: -webkit-box;
@@ -4873,162 +4873,6 @@ button.swiper-pagination-bullet {
   right: 0px;
 }
 
-.personal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 1030px;
-  margin: 15px 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#000));
-  background-image: -o-linear-gradient(top, #f00, #000);
-  background-image: linear-gradient(to bottom, #f00, #000);
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  border-radius: 10px;
-}
-.personal .per_img {
-  display: block;
-  margin: 10px 20px 10px 0;
-  width: 300px;
-  height: 300px;
-  background: white;
-}
-.personal .personal_info {
-  margin: 10px 30px 10px 20px;
-}
-.personal .personal_limit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding: 9px 0;
-  border-bottom: 2px solid black;
-}
-.personal .personal_limit p {
-  color: #ffa;
-  font-size: 1.6rem;
-}
-.personal .name {
-  color: white;
-  margin: 15px 20px 15px 50px;
-  font-size: 1.3rem;
-  line-height: 1.2;
-  word-break: break-word;
-}
-.personal .personal_buy {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 40px;
-  padding: 15px;
-  font-family: sans-serif;
-  background-color: black;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  border-radius: 10px;
-}
-.personal .personal_buy .dur {
-  margin-bottom: 17px;
-  font-size: 1.8rem;
-  line-height: 1.4;
-  color: #ffa;
-  letter-spacing: 1px;
-  font-family: sans-serif;
-}
-.personal .personal_buy .dur span {
-  font-size: 1.4rem;
-}
-.personal .personal_buy .per_price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-.personal .personal_buy .nor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-right: 10px;
-  font-size: 1.2rem;
-  color: #888;
-}
-.personal .personal_buy .del {
-  color: #888;
-  font-size: 1.8rem;
-}
-.personal .personal_buy .pay_dis {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  color: #ff0;
-  font-size: 1.2rem;
-}
-.personal .personal_buy .pay_dis .price {
-  margin-left: 5px;
-  font-size: 2.5rem;
-  color: #ff0;
-}
-.personal .personal_buy .pay_dis .btn-imd {
-  padding: 12px 30px;
-  margin: -10px 10px;
-  font-size: 1.3rem;
-  letter-spacing: 3px;
-  font-weight: 700;
-  border: none;
-  color: white;
-  background-color: #e00;
-  cursor: pointer;
-  line-height: 1;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
 .per {
   margin: 10px 0 0;
   position: relative;
@@ -5267,7 +5111,8 @@ button.swiper-pagination-bullet {
   color: #888;
   font-size: 0.8rem;
 }
-.per .per_r .per_price {
+
+.per_price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5275,20 +5120,20 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   color: #d00;
   font-size: 0.9rem;
   font-weight: 700;
 }
-.per .per_r .per_price .title {
+.per_price .title {
   font-size: 0.8rem;
 }
-.per .per_r .per_price .currency {
+.per_price .currency {
   font-size: 0.7rem;
 }
-.per .per_r .per_price .rush {
+.per_price .rush {
   margin-left: 10px;
   color: #06c;
   font-size: 0.8rem;
@@ -5353,7 +5198,7 @@ button.swiper-pagination-bullet {
           justify-content: space-between;
   padding: 5px 10px 15px;
 }
-.spec_prod .spec_price {
+.spec_prod .per_price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5363,6 +5208,7 @@ button.swiper-pagination-bullet {
           flex-flow: row nowrap;
   color: #d00;
   font-size: 0.9rem;
+  font-weight: 500;
 }
 .spec_prod .currency {
   font-size: 0.7rem;
@@ -5389,7 +5235,7 @@ button.swiper-pagination-bullet {
       -ms-flex-align: center;
           align-items: center;
 }
-.spec_prod .spec_r_block .spec_price {
+.spec_prod .spec_r_block .per_price {
   padding: 6px 0 10px;
 }
 
