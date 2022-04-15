@@ -3843,7 +3843,7 @@ button.swiper-pagination-bullet {
   height: auto;
   position: absolute;
   right: 0;
-  top: -56px;
+  top: -36px;
   z-index: 1;
   padding: 10px;
   border-left: 1px solid #ccc;
