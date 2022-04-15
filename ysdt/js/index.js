@@ -70,8 +70,8 @@ var masonry = new Macy({
 });
 
 
-// 愛心class切換	
-$('.imgTrack').click(function(e){
+// 愛心class切換
+$(".icon_track").click(function(e){
     e.preventDefault();
-    $(this).toggleClass('imgTrack imgTrackPlus');
+    $(this).toggleClass('icon_track icon_track_plus');
 });

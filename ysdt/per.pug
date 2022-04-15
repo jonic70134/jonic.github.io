@@ -1,106 +1,97 @@
 doctype html
 html
 	head
-		meta(charset='utf-8')
-		meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
-		title 白昌
-		meta(content='白昌首頁', name='description')
-		meta(content='Orange', name='author')
-		meta(content='width=device-width, initial-scale=1.0', name='viewport')
-		link(rel='icon', href='img/baichain.ico')
+		include src/_meta.pug
 		link(href='css/per.css', rel='stylesheet')
 	body
 		.body_container
-			include src/_topbar.pug
-			include src/_header.pug
-			.sub-head
+			header.site-header
 				.container
-					include src/_menu.pug
-					include src/_tagcloud.pug
+					.main_head
+						.header_l
+							a.logo(href='index.html')
+								i.icon.icon_friday_logo
+						.header_r
+							ul.head_func
+								li
+									a.my_account(href='#')
+										i.icon.icon_account
+										span 我的
+								li
+									a.cart(href='cart/orderlist.html')
+										i.icon.icon_cart
+										i.icon.icon_check
 			.site-main.clearfix(role='main')
 				.container
 					.per
-						.per_info.test
+						.edg_pic
+							p 熱賣
+								span 特選
+						.per_t 01/07 今日個人專屬特價商品：
+						.per_info
 							a.per_l(href='item.html')
 								.per_dur
-									.per_t 推薦給您：
 									img.per_img(src='img/sample/item_019.jpg', alt='商品名稱', title='商品名稱')
 								.per_buy
-									h2.name
-										| SONY 索尼 A9FMASTERgggg系列OLED $K ggUltra HD 高動態範圍(HDR) 智慧型電視 KD-65A9F 65吋 OLED 液晶電視
+									h2.name SONY 索尼 A9FMASTERgggg系列OLED $K ggUltra HD 高動態範圍(HDR) 智慧型電視 KD-65A9F 65吋 OLED 液晶電視
 									.per_price
+										.nor
+											span.title 原價
+											p.del 47,400
 										.pay_dis
 											span.title 網路價
-											p.price  195,900
+											p.price  46,488
 											button.button.large.btn-imd 立即購買
 						.per_info
 							a.per_l(href='item.html')
 								.per_dur
-									.per_t 01/06 今日個人專屬特價：
 									img.per_img(src='img/sample/item_04.jpg', alt='商品名稱', title='商品名稱')
 								.per_buy
 									h2.name SONY 索尼 A9F MASTER系列 OLED $K Ultra HD 高動態範圍(HDR) 智慧型電視 KD-65A9F 65吋 OLED 液晶電視
-									// <p class="dur"><span>我的專屬特價期間：</span><br/>5/20 14:00~5/22 14:00</p>
 									.per_price
 										.nor
 											span.title 原價
-											p.del 199,900
+											p.del 349,900
 										.pay_dis
 											span.title 限時特價
-											p.price  195,900
+											p.price  320,000
 											button.button.large.btn-imd 立即購買
 					include src/_cupn.pug
-					.items
-						-var j = 6;
-						- for (var i = 0; i < j; i++)
-							a.item(href='item.html')
-								p.photo
-									span.float
-										i.fa.fa-eye(aria-hidden='true')
-										i.fa.fa-heart-o(aria-hidden='true')
-									img(src='img/sample/item_01.jpg', alt='商品名稱', title='商品名稱')
-								.info
-									h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
-									.price(itemprop='price') 999,999
-							a.item(href='item.html')
-								p.photo
-									span.float
-										i.fa.fa-eye(aria-hidden='true')
-										i.fa.fa-heart-o(aria-hidden='true')
-									img(src='img/sample/item_017.jpg', alt='商品名稱', title='商品名稱')
-								.info
-									h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
-									.price(itemprop='price') 999,999
-							a.item(href='item.html')
-								p.photo
-									span.float
-										i.fa.fa-eye(aria-hidden='true')
-										i.fa.fa-heart-o(aria-hidden='true')
-									img(src='img/sample/item_019.jpg', alt='商品名稱', title='商品名稱')
-								.info
-									h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
-									.price(itemprop='price') 999,999
-							a.item(href='item.html')
-								p.photo
-									span.float
-										i.fa.fa-eye(aria-hidden='true')
-										i.fa.fa-heart-o(aria-hidden='true')
-									img(src='img/sample/item_03.jpg', alt='商品名稱', title='商品名稱')
-								.info
-									h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
-									.price(itemprop='price') 999,999
-							a.item(href='item.html')
-								p.photo
-									span.float
-										i.fa.fa-eye(aria-hidden='true')
-										i.fa.fa-heart-o(aria-hidden='true')
-									img(src='img/sample/item_05.jpg', alt='商品名稱', title='商品名稱')
-								.info
-									h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
-									.price(itemprop='price') 999,999
+					.item_t 以下為您挑選可能需要的商品：
+					.items_bg
+						.items
+							-var j = 6;
+							- for (var i = 0; i < j; i++)
+							mixin item(prod_pic)
+								a.item(href='item.html')
+									.photo
+										.float
+											i.icon.icon_same
+											i.icon.icon_track
+										img(src='img/sample/'+ prod_pic +'.jpg', alt='商品名稱', title='商品名稱')
+									.info
+										h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+										.price(itemprop='price') 999,999
+							+item('05_01_182')
+							+item('05_02_182x240')
+							+item('05_03_182')
+							+item('05_04_182x240')
+							+item('05_05_182')
+							+item('05_06_182x240')
+							+item('05_07_182')
+							+item('05_08_182x240')
+							+item('05_09_182x240')
+							+item('05_10_182')
+							+item('05_11_182x240')
+							+item('05_12_182')
+							+item('05_13_182x240')
+							+item('05_14_182')
+							+item('05_15_182x240')
+							+item('05_16_182')
+							+item('05_17_182x240')
+							+item('05_18_182')
 			include src/_foot.pug
-			script(src='js/3rd-party/jquery-1.9.1.min.js')
-			script(src="js/3rd-party/masonry.pkgd.min.js")
-			script(src="js/3rd-party/imagesloaded.pkgd.min.js")
+			script(src='js/3rd-party/jquery-3.6.0.min.js')
 			script(src='js/3rd-party/swiper-bundle.min.js')
-			script(src='js/index.js')
+			script(src='js/3rd-party/macy.js')
+			script(src='js/per.js')

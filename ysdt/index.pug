@@ -1,13 +1,7 @@
 doctype html
 html
 	head
-		meta(charset='utf-8')
-		meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
-		title friDay 
-		meta(content='friDay', name='description')
-		meta(content='Orange', name='author')
-		meta(content='width=device-width, initial-scale=1.0', name='viewport')
-		link(rel='icon', href='img/baichain.ico')
+		include src/_meta.pug
 		link(href='css/index.css', rel='stylesheet')
 	body
 		.body_container
@@ -137,8 +131,8 @@ html
 								a.item(href='item.html')
 									.photo
 										.float
-											img.imgSame(src="img/icon_same.svg", alt="找相似")
-											img.imgTrack(src="img/icon_track.svg", alt="找相似")
+											i.icon.icon_same
+											i.icon.icon_track
 										img(src='img/sample/'+ prod_pic +'.jpg', alt='商品名稱', title='商品名稱')
 									.info
 										h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品

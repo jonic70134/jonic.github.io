@@ -1,52 +1,34 @@
 doctype html
 html
 	head
-		meta(charset='utf-8')
-		meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
-		title 折價券頁
-		meta(content='白昌首頁', name='description')
-		meta(content='Orange', name='author')
-		meta(content='width=device-width, initial-scale=1.0', name='viewport')
-		link(rel='icon', href='img/baichain.ico')
-		link(href='css/index.css', rel='stylesheet')
+		include src/_meta.pug
+		link(href='css/coupon.css', rel='stylesheet')
 	body
 		.body_container
 			include src/_topbar.pug
 			include src/_header.pug
-			.sub-head
+			.sub_head
 				.container
 					include src/_menu.pug
-					include src/_tagcloud.pug
+					.breadcrumb
+						a.link(href="index.html") 首頁
+						span > 個人對品折價券  
 			// 主要版面
 			.site-main.clearfix(role='main')
 				.container
 					// 熱品推薦
 					.cupn.single
-						.cupn_block
-							a.cupn_bg(href='item.html')
-								.expired
-									img(src='img/sample/item_011.jpg', alt='商品名稱', title='商品名稱')
-									.fog
-									.expired_bg
-										span 已過期
-								.cupn_info
-									.cupn_num 禮券編號:AB1234567890
-									h3.name 鋁合金裝備掛環工具環座帶勾環 C5 M
-									.cupn_dur 01/06 今日對品禮券
-									.cupn_price
-										span.title 限時特價
-										p.price  99,900
-									.cupn_share
-										img(src='img/share1.svg', alt='')
-										img(src='img/share2.svg', alt='')
-						-var j = 32;
-						- for (var i = 0; i < j; i++)
+						mixin cupnimg(src)
 							.cupn_block
-								a.cupn_bg(href='item.html')
-									img(src='img/sample/item_011.jpg', alt='商品名稱', title='商品名稱')
+								a.cupn_bg(href='#')
+									.cupn_prod_img.expired
+										img.cupn_img(src='img/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
+										.fog
+										.expired_bg
+											span 已過期
 									.cupn_info
-										.cupn_num 禮券編號:AB1234567890
-										h3.name 鋁合金裝備掛環工具環座帶勾環 C5 M
+										.cupn_num 折價券編號:AB1234567890
+										h3.name SEIKO精工 Premier 人動電能萬年曆手錶-42.9mm
 										.cupn_dur 01/06 今日對品禮券
 										.nor
 											span.title 原價
@@ -55,10 +37,48 @@ html
 											span.title 限時特價
 											p.price  99,900
 										.cupn_share
-											img(src='img/share1.svg', alt='')
-											img(src='img/share2.svg', alt='')
+											i.icon.icon_share1
+											i.icon.icon_share2
+							.cupn_block
+								a.cupn_bg.rice(href='#')
+									.cupn_prod_img
+										img.cupn_img(src='img/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
+									.cupn_info
+										.cupn_num 推薦給您：
+										h3.name SEIKO精工 Premier 人動電能萬年曆手錶-42.9mm
+										.nor
+											span.title 原價
+											p.del 199,900
+										.cupn_price
+											span.title 網路價
+											p.price  99,900
+						+cupnimg('04_01_80')
+						-var j = 6;
+						- for (var i = 0; i < j; i++)
+							mixin cupnimg(src)
+								.cupn_block
+									a.cupn_bg(href='#')
+										.cupn_prod_img
+											img.cupn_img(src='img/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
+										.cupn_info
+											.cupn_num 折價券編號:AB1234567890
+											h3.name SEIKO精工 Premier 人動電能萬年曆手錶-42.9mm
+											.cupn_dur 01/06 今日對品禮券
+											.nor
+												span.title 原價
+												p.del 199,900
+											.cupn_price
+												span.title 限時特價
+												p.price  99,900
+											.cupn_share
+												i.icon.icon_share1
+												i.icon.icon_share2
+							+cupnimg('04_01_80')
+							+cupnimg('04_02_80')
+							+cupnimg('04_03_80')
+							+cupnimg('04_04_80')
 
 			include src/_foot.pug
-			script(src='js/3rd-party/jquery-1.9.1.min.js')
-			script(src='js/3rd-party/swiper-bundle.min.js')
-			script(src='js/index.js')
+			script(src='js/3rd-party/jquery-3.6.0.min.js')
+			script(src='js/coupon.js')
+

@@ -1,19 +1,13 @@
 doctype html
 html
 	head
-		meta(charset='utf-8')
-		meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
-		title 白昌
-		meta(content='白昌首頁', name='description')
-		meta(content='Orange', name='author')
-		meta(content='width=device-width, initial-scale=1.0', name='viewport')
-		link(rel='icon', href='img/baichain.ico')
+		include src/_meta.pug
 		link(href='css/index.css', rel='stylesheet')
 	body
 		.body_container
 			include src/_topbar.pug
 			include src/_header.pug
-			.sub-head
+			.sub_head
 				.container
 					include src/_menu.pug
 					include src/_tagcloud.pug

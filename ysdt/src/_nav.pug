@@ -1,0 +1,13 @@
+.nav
+	a(href="#" class="first active" data-page="page-first") 第一頁
+	a(href="#" class="prev" data-page="page-prev") 上一頁
+	.page_num_block
+		a(href="#" class="nav_page_num active" data-page="page-1") 1
+		- var j = 8;
+		- for (var i = 2; i < j; i++)
+			a(href="#" class="nav_page_num" data-page="page-"+ i )= i
+		a(href="#" class="nav_page_num" data-page="page-8") ...
+		a(href="#" class="nav_page_num" data-page="page-12") 12
+		a(href="#" class="nav_page_num" data-page="page-13") 13
+	a(href="#" class="next" data-page="page-next") 下一頁
+	a(href="#" class="end" data-page="page-end") 最末頁
