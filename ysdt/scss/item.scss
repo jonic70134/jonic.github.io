@@ -4,7 +4,6 @@
 @import "partials/color";
 @import "partials/page";
 
-@import "3rd-party/_font-awesome.min.scss";
 @import "3rd-party/_swiper.scss";
 @import "3rd-party/_fancybox_style.scss";
 @import "3rd-party/_wysihtml5-editor.scss";
@@ -182,9 +181,10 @@
 
 
     .item-main-left {
+        position: relative;
         float: left;
         width: 33%;
-        position: relative;
+        overflow: hidden;
         .gallery-top .swiper-slide {
             width: 100%;
             height: 0;

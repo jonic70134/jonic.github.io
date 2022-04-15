@@ -331,7 +331,7 @@ h1, h2, h3, h4, h5, h6 {
 .site-header {
   position: relative;
   border-bottom: 1px solid #eee;
-  background-color: #dc0000;
+  background-color: #f5281e;
 }
 .site-header {
   zoom: 1;
@@ -720,7 +720,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 .pc_index_menu .menu-one .bold {
-  color: #dc0000;
+  color: #f5281e;
   font-weight: 700;
 }
 .pc_index_menu .menu-one .menu-title, .pc_index_menu .menu-one .menu-sub-title {
@@ -807,7 +807,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 11px 5px 10px 10px;
 }
 .pc_index_menu .menu-expand .menu-sub-li .menu-sub-title.bold {
-  color: #dc0000;
+  color: #f5281e;
   font-weight: 700;
 }
 .pc_index_menu .menu-expand .menu-sub-li .menu-sub-title.after {
@@ -824,7 +824,7 @@ h1, h2, h3, h4, h5, h6 {
 .pc_index_menu .menu-expand .menu-sub-expand-red .menu-sub-expand-more {
   width: 42px;
   text-decoration: underline;
-  color: #dc0000;
+  color: #f5281e;
 }
 .pc_index_menu .menu-expand .menu-last-li {
   padding-left: 5px;
@@ -844,7 +844,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .pc_index_menu .menu-expand .menu-last-li > a.bold {
   font-weight: 700;
-  color: #dc0000;
+  color: #f5281e;
   text-decoration: underline;
 }
 
