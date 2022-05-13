@@ -30,19 +30,26 @@ html
 		.body_container
 			include src/_topbar.pug
 			include src/_header.pug
-			.sub-head
+			.sub_head
 				.container
 					include src/_menu.pug
-			.site-main.clearfix(role='main')
+					.breadcrumb
+						a.link(href="index.html") 首頁
+						span >
+						a.link(href="index.html") 家電.數位.3C.
+						span >
+						a.link(href="index.html") 智慧型手機
+						span > iphone
+			.site-main(role='main')
 				.pc-item-main
 					.container
 						.item_frame
-							.item_full.clearfix
+							.item_full
 								.item-main-left
 									.swiper-container.gallery-top
 										.swiper-wrapper
 											.swiper-slide
-												img.photo-main(src='img/sample/XRred.jpg', alt='')
+												img.photo-main(src='img/sample/itempage_360_1.jpg', alt='')
 											.swiper-slide
 												img.photo-main(src='img/sample/XRorange.jpg', alt='')
 											.swiper-slide
@@ -57,7 +64,7 @@ html
 										.swiper-container.gallery-thumbs
 											.swiper-wrapper
 												.swiper-slide
-													img(src='img/sample/XRred.jpg', alt='紅色')
+													img(src='img/sample/itempage_360_1.jpg', alt='紅色')
 												.swiper-slide
 													img(src='img/sample/XRorange.jpg', alt='橘色')
 												.swiper-slide
@@ -68,10 +75,10 @@ html
 													img(src='img/sample/XRwhite.jpg', alt='白色')
 												.swiper-slide
 													img(src='img/sample/XRyellow.jpg', alt='黃色')
-										i.fa.fa-angle-left.nextBtn(aria-hidden='true')
-										i.fa.fa-angle-right.prevBtn(aria-hidden='true')
+									i.icon.icon_arrow.nextBtn(aria-hidden='true')
+									i.icon.icon_arrow.prevBtn(aria-hidden='true')
 								.info
-									.comtag 燦坤線上購物
+									.comtag 巨城購物中心
 									// 商品名稱
 									h1.name 送無線充電版多選一+Targus Newport 15吋拉繩後背包-時尚黑 iPhone XR 紅色(PRODUCT)
 									// 留言、購買狀態
@@ -79,32 +86,26 @@ html
 										p 99999人已購買
 										p 333則留言
 										p
-											i.fa.fa-heart(aria-hidden='true')
-											| 933
+											i.icon.icon_track_plus 933
 									// 售價
-									.payinfo
+									.item_line.payinfo
 										.item_line
 											.pay_dis
-												span.title 網路價
-												span.price
-													small $
-													| 195,000
+												.title 網路價
+												.price $195,000
 											.sale_time
 												span.colfe0 1天13小時25分11秒 
 												span.colwhite 特賣結束
-											button.button.large.btn-fav
-												i.fa.fa-heart(aria-hidden='true')
-												| 已追蹤
-										.item_line
-											.coupon
-												| 最高可折 
-												span.cole00 11111
-												| 購物金
-												a(href='#') (說明)
-											a.fancybox.coupon_search(href='../popup/site_fancybox_all.html #login_box')
-												| 查詢可使用的折價券
-												i.fa.fa-chevron-right(aria-hidden='true')
-											.coupon 活動中 
+										a(href="#").btn-fav
+											i.icon.icon_track(aria-hidden='true') 
+											| 追蹤商品
+									.item_line.act_line
+										.coupon 最高可折 
+											span.cole00 11111 購物金
+											a(href='#') (說明)
+										a.fancybox.coupon_search(href='../popup/site_fancybox_all.html #login_box') 查詢可使用的折價券
+											i.icon.icon_arrow
+										.coupon 活動中 
 									// 簡介
 									.feature
 										ul.feature_list
@@ -115,10 +116,10 @@ html
 										.shop_btn
 											.quantity
 												span.quantity-decrease
-													i.fa.fa-minus(aria-hidden='true')
+													i.icon.icon_minus
 												input.quantity-input(type='text', value='1', max='99', title='請輸入購買量')
 												span.quantity-increase
-													i.fa.fa-plus(aria-hidden='true')
+													i.icon.icon_plus
 											button.button.large.btn-imd 立即結帳
 											button.button.large.btn-cart 加入購物車
 

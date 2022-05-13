@@ -63,8 +63,8 @@ $(function(){
       loop: true,
 	  loopedSlides: 10,
       navigation: {
-        nextEl: '.fa-angle-right',
-        prevEl: '.fa-angle-left',
+        nextEl: '.nextBtn',
+        prevEl: '.prevBtn',
       },
     });
     var galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -109,8 +109,7 @@ $(function(){
             $(this).addClass('active');
             $("."+tab_id).addClass('active');
         });
-
-
+        
         $('.item-detail-tabs li').click(function(){
             var tab_id = $(this).attr('data-tab');
             $('.item-detail-tabs li').removeClass('active');

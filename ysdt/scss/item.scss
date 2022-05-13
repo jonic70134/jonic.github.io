@@ -6,28 +6,51 @@
 
 @import "3rd-party/_swiper.scss";
 @import "3rd-party/_fancybox_style.scss";
-@import "3rd-party/_wysihtml5-editor.scss";
+
+.sub_head{
+    .container{
+        justify-content: flex-start;
+    }
+}
+.swiper-container{
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+.icon_arrow:before{
+    margin-left:5px;
+    font-size:.7rem;
+    color:#06c;
+}
+.icon_track_plus:before{
+    font-size:.7rem;
+}
+.icon_track:before{
+    margin-right:3px;
+    color:#666;
+    font-size:1rem;
+}
+.icon_plus:before,.icon_minus:before{
+    font-size: .7rem;
+}
+.item_line{
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size:.85rem;
+    span.title{
+        margin:0 5px 0 0;
+        color:black;
+    }
+}
 .quantity{
-	display: inline-block;
-	font-size: 0;
-	&.small{
-		.quantity-input{
-			height: 22px;
-			width: 24px;
-			font-size: 12px;
-		}
-		.quantity-decrease, .quantity-increase{
-			padding: 2px 4px;
-            width: 20px;
-		}
-	}
+    display: flex;
+    margin:0 10px 0 0;
 	.quantity-input{
-		width: 36px;
-		height: 30px;
-		margin: 0;
-		padding: 0;
+		width: 35px;
 		text-align: center;
-        font-size: 12px;
+        font-size: 1.2rem;
         color:#e00;
 		border:1px solid #ccc;
         border-right:none;
@@ -40,10 +63,7 @@
         @include box-sizing(border-box);
 	}
 	.quantity-decrease,.quantity-increase{
-		padding: 6px;
-		display: inline-block;
-        vertical-align: middle;
-        font-size: 16px;
+        padding: 12px;
         text-align: center;
         line-height: 1;
         color:#777;
@@ -55,16 +75,10 @@
         @include box-sizing(border-box);
 	}
 }
-.item_frame{
-    margin-top: 35px;
-    overflow: hidden;
-}
-
 .pc-item-main {
     line-height: 1.9;
-    font-size: 13px;
-    @include clearfix;
-    margin: 20px 0;
+    font-size: .85rem;
+    margin: 10px 0;
     .item_per{
         position: absolute;top: -56px;left: 217px;
         width:785px;
@@ -75,6 +89,8 @@
         @include border-radius(0 0 10px 10px);
     }
     .item_full{
+        display: flex;
+        
         width:1000px;
     }
     .colwhite{
@@ -182,9 +198,7 @@
 
     .item-main-left {
         position: relative;
-        float: left;
         width: 33%;
-        overflow: hidden;
         .gallery-top .swiper-slide {
             width: 100%;
             height: 0;
@@ -206,37 +220,41 @@
             display: block;
             margin: 0 auto;
         }
-        .swiper-button-next.nextBtn,
-        .swiper-button-prev.prevBtn {
-            width: 15px;
-            height: 30px;
-            margin-top:-15px;
-            background-size: 15px 24px;
-            top: 50%;
-        }
-        .swiper-button-prev,
-        .swiper-container-rtl .swiper-button-next {
-            right: auto;
-        }
-        .swiper-button-next,
-        .swiper-container-rtl .swiper-button-prev {
-            left: auto;
-        }
+        // .swiper-button-next.nextBtn,
+        // .swiper-button-prev.prevBtn {
+        //     width: 15px;
+        //     height: 30px;
+        //     margin-top:-15px;
+        //     background-size: 15px 24px;
+        //     top: 50%;
+        // }
+        // .swiper-button-prev,
+        // .swiper-container-rtl .swiper-button-next {
+        //     right: auto;
+        // }
+        // .swiper-button-next,
+        // .swiper-container-rtl .swiper-button-prev {
+        //     left: auto;
+        // }
     }
     //產品圖
     .swiper-thumbs{
         position: relative;
-        .fa-angle-left,.fa-angle-right{
-            position: absolute;left:0;top:50%;
-            margin-top:-15px;
-            font-size:30px;
-            color:#06f;
-            z-index:10;
-            cursor: pointer;
-        }
-        .fa-angle-right{
-            left:auto;right:0;
-        }
+    }
+    .nextBtn,.prevBtn{
+        position: absolute;left:0;bottom:48px;
+        transform: translateY(-50%);
+        font-size:1rem;
+        color:#666;
+        z-index:30;
+        cursor: pointer;
+    }
+    .prevBtn{
+        bottom: 53px;
+        transform: rotate(-180deg);
+    }
+    .nextBtn{
+        left:auto;right:0;
     }
     .gallery-thumbs {
         margin:5px 15px;
@@ -328,13 +346,15 @@
         clear: both;
     }
     .buyer_st{
+        display: flex;
         margin:-10px 0 5px;
+        color:#999;
         p{
-            display: inline-block;
-            margin-right:10px;
+            margin-right:20px;
             color:#999;
-            i{
-                color:#0ae;
+        }
+        .icon_track_plus{
+            &:before{
                 margin-right:2px;
             }
         }
@@ -365,62 +385,77 @@
             }
         }
     }
+    .pay_dis{
+        display: flex;
+        align-items: baseline;
+        margin:-10px 10px 0 0;
+        .title{
+            font-size:1rem;
+            letter-spacing: 1.5px;
+        }
+        .price{
+            color:#d00;
+            font-size: 2rem;
+            text-decoration: line-through;
+            &::first-letter{
+                font-size:1.3rem;
+                font-family: monospace;
+            }
+        }
+        &.ori{
+            .title,.price{
+                color:#999;
+            }
+            del{
+                font-size:2rem;
+            }
+        }
+    }
+    .btn-fav{
+        display: flex;
+        align-items: center;
+        font-size:.85rem;
+        color:#666;
+    }
+    .coupon{
+        padding: 2px 7px;
+        font-size:.9rem;
+        color:#555;
+        border:1px solid #999;
+        a{
+            color:#999;
+            text-decoration: underline;
+        }
+        .cole00{
+            color:#e00;
+        }
+    }
+    .sale_time{
+        padding:2px 7px;
+        font-size:1rem;
+        background-color: #d00;
+        @include border-radius(8px);
+    }
+    .coupon_search{
+        margin:0 10px;
+        padding:2px 7px;
+        font-size:.9rem;
+        color:#555;
+        border:1px solid #999;
+        background:white;
+    }
     .payinfo{
+        align-items: center ;
+        justify-content: space-between;
         position: relative;
+        margin: 0;
+        >.item_line{
+            margin: 0;
+        }
         span{
             margin-right:5px;
         }
-        .title{
-            color:#555;
-            font-size:14px;
-        }
-        .price{
-            color:#555;
-            text-decoration: line-through;
-            font-size:16px;
-            small{
-                font-size:16px;
-            }
-        }
-        .pay_dis{
-            display:inline-block;
-            margin-top:-10px;
-            .title{
-                font-size:1rem;
-                letter-spacing: 1.5px;
-            }
-            .price{
-                color:#d00;
-                font-size: 2rem;
-                text-decoration:none;
-                small{
-                    font-size:1.2rem;
-                }
-            }
-            &.ori{
-                .title,.price{
-                    color:#999;
-                }
-                del{
-                    font-size:2rem;
-                }
-            }
-        }
-        .btn-fav{
-            display: inline-block;
-            vertical-align: 8px;
-            color:#07b;
-            border:none;
-            background: none;
-            font-size:.85rem;
-            i{
-                margin-right:3px;
-                font-size:1rem;
-            }
-            &:focus{
-                outline: 0;
-            }
-        }
+        
         .bird-price{
 			width:147px;height:65px;
 			position: absolute;
@@ -442,49 +477,6 @@
 				text-decoration: underline;
 			}
 		}
-        .coupon{
-            display:inline-block;
-            padding: 2px 7px;
-            font-size:.9rem;
-            color:#555;
-            border:1px solid #999;
-            a{
-                color:#999;
-                text-decoration: underline;
-            }
-            .cole00{
-                color:#e00;
-            }
-        }
-        .sale_time{
-            display: inline-block;
-            padding:2px 7px;
-            font-size:16px;
-            background-color: #d00;
-            vertical-align: 8px;
-            @include border-radius(8px);
-        }
-        .coupon_search{
-            display: inline-block;
-            padding:2px 7px;
-            font-size:.9rem;
-            color:#555;
-            border:1px solid#999;
-            background:white;
-            i{
-                margin-left:5px;
-                font-size:.85rem;
-                color:#06c;
-            }
-        }
-    }
-    .item_line{
-        margin-bottom: 10px;
-        font-size:14px;
-        span.title{
-            margin:0 5px 0 0;
-            color:black;
-        }
     }
     .send{
         .title{
@@ -828,26 +820,12 @@
             margin-left:17px;
         }
     }
-    .shop_btn_block{
-        .quantity{
-            display: inline-block;
-            margin:0 10px 5px 0;
-            vertical-align: middle;
-            
-            .quantity-decrease,.quantity-increase{
-                padding: 11px 10px 10px 10px;            
-            }
-            .quantity-input{
-                width:60px;
-                height:39px;
-                font-size:1.2rem;
-            }
-        }
-    }
     .shop_btn{
-        margin:20px auto;
+        display: flex;
+        align-items: center;
+        margin:20px 0;
         button{
-            padding:12px 20px;
+            padding:12px 40px;
             margin-right: 10px;
             font-size:1.1rem;
             letter-spacing: 3px;
@@ -1037,10 +1015,6 @@
     .container{
         width:auto;
     }
-	.swiper-container{
-        margin:0;
-		padding:0;
-	}
 	.items{
         padding:0 10px;
         @include clearfix;
@@ -1292,7 +1266,7 @@
 .pc-item-related{
     width:180px;
     height:auto;
-    position: absolute;right:0;top:-36px;z-index: 1;
+    position: absolute;right:0;top:-60px;z-index: 1;
     padding:10px;
     border-left:1px solid #ccc;
     background-color:#f5f5f5;

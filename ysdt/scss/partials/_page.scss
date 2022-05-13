@@ -1,9 +1,9 @@
 @font-face {
 	font-family: 'icomoon';
 	src:
-	  url('../fonts/icomoon.ttf?jedhrd') format('truetype'),
-	  url('../fonts/icomoon.woff?jedhrd') format('woff'),
-	  url('../fonts/icomoon.svg?jedhrd#icomoon') format('svg');
+	  url('../fonts/icomoon.ttf?zajs56') format('truetype'),
+	  url('../fonts/icomoon.woff?zajs56') format('woff'),
+	  url('../fonts/icomoon.svg?zajs56#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -21,6 +21,33 @@
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon_swiper_next:before {
+	content: "\e917";
+  }
+  .icon_swiper_prev:before {
+	content: "\e918";
+  }
+  .icon_ab:before {
+	content: "\e912";
+	color: #888988;
+  }
+  .icon_minus:before {
+	content: "\e913";
+	color: #888988;
+  }
+  .icon_more:before {
+	content: "\e914";
+	color: #1861ae;
+  }
+  .icon_plus:before {
+	content: "\e915";
+	color: #888988;
+  }
+  .icon_star:before {
+	content: "\e916";
+	color: #cf141b;
   }
   .icon_del:before {
 	content: "\e911";
@@ -64,11 +91,26 @@
   }
   .icon_track_plus:before {
 	content: "\e909";
-	color: #d00;
+	color: #f9d0d7;
   }
   .icon_track:before {
 	content: "\e90a";
 	color: #fff;
+  }
+  .item_per_icon .path1:before {
+	content: "\e92e";
+	margin-left: -15em;
+	color: rgb(34, 119, 0);
+  }
+  .item_per_icon .path2:before {
+	content: "\e92f";
+	margin-left: -15em;
+	color: rgb(255, 255, 255);
+  }
+  .item_per_icon .path3:before {
+	content: "\e930";
+	margin-left: -15em;
+	color: rgb(255, 255, 255);
   }
   .icon_search:before {
 	content: "\e90b";
@@ -606,9 +648,12 @@
     margin:0 0 0 20px;
     font-size:.9rem;
     .link{
-        padding: 0 5px 0 0;
-        color:#069;
+        padding: 0 5px 0;
+        color:#0767d3;
         text-decoration: underline;
+		&:first-child{
+			padding:0 5px 0 0 ;
+		}
     }
 }
 .tag-cloud{
