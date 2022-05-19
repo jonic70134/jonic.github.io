@@ -1,0 +1,17 @@
+.pc-item-add.add_view
+	.container
+		h3.title-h3 加價區
+		.items
+			- var j = 10;
+			- for (var i = 1; i < j; i++)
+				figure.item(class='add_chk_00'+i)
+					input(id='add_00'+i)(type='checkbox')
+					label(for='add_00'+i)
+					.photo
+						img(src='img/sample/150_0'+ i +'.jpg', title='商品圖', alt='【PUFII】秋季熱銷品 自訂款素面修身襯衫')
+					figcaption.info
+						h1.name 全家商品卡100元+好收納不鏽鋼刀剪組+100週年紀念公仔
+						span.price
+							$195,000
+						.buy
+							a(href="#").btn-notselect 加入選購

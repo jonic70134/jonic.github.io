@@ -1,3 +1,4 @@
+
 // 頁首標籤slider
 var tagslide = new Swiper('.tag-slide .swiper-container', {
     slidesPerView: 10,
@@ -16,25 +17,17 @@ $('.nav-menu > a').click(function() {
 
 //item main 選規格
 $('.value>li').click(function(){
-	var img = "<i class='fa fa-check'></i>";
+	var img = "<i class='icon icon_check'></i>";
 	if($(this).hasClass('disabled')){
 		return false;
 	}else{
-    	$(this).addClass('active').append(img).siblings().removeClass('active').find('.fa-check').remove();
+    	$(this).addClass('active').append(img).siblings().removeClass('active').find('.icon_check').remove();
 	}
 });
 
 
-// facybox 打開
+
 $(function(){
-    $('.fancybox').fancybox({
-        padding:0,
-          helpers: {
-            overlay: {
-              locked: false
-            }
-          }
-    });
 // 數量加減
 	$('.quantity-increase').click(function(){
 		var html = $('#quantity-alert').html();
@@ -96,7 +89,12 @@ $(function(){
      });
 
 
-
+// 追蹤商品
+$(".btn-fav").click(function(e){
+    e.preventDefault();
+    $(this).text($(this).text() == '已追蹤' ? '追蹤商品' : '已追蹤');
+    $(this).toggleClass('icon_track icon_track_plus');
+});
 
 
     //item-related tab
@@ -110,11 +108,11 @@ $(function(){
             $("."+tab_id).addClass('active');
         });
         
-        $('.item-detail-tabs li').click(function(){
+        $('.item_tab_t').click(function(){
             var tab_id = $(this).attr('data-tab');
-            $('.item-detail-tabs li').removeClass('active');
+            $('.item_tab_t').removeClass('active');
             //$('.item-related .items').removeClass('active');
-            $('.pc-item-detail .items').removeClass('active');
+            $('.item_detail .item').removeClass('active');
 
             $(this).addClass('active');
             $("."+tab_id).addClass('active');
@@ -152,19 +150,19 @@ $(".gift_view input[type='checkbox']").change(function () {
     var gift_view_chkid = $(this).attr('id').slice(5);
     var checkedLength = $(".gift_view input[type='checkbox']:checked").length;
     var gift_text = $(this).closest(".item").find("h1").text();
-    var gifthtml = '<dd><div class="add_chk_block"><input type="checkbox" id="gift_chk_'+gift_view_chkid+'" class="add_chk" checked="checked"><label for="gift_chk_'+gift_view_chkid+'" class="add_label"></label> <span>'+gift_text+'</span></div></dd>';
+    var gifthtml = '<dd><div class="add_chk_block"><input type="checkbox" id="gift_chk_'+gift_view_chkid+'" class="add_chk" checked="checked"><label for="gift_chk_'+gift_view_chkid+'" class="add_label"></label> <span>'+gift_text+'</span></div></dd>';
     if($(this).is(":checked")){
         $(".gift_chk_area .add_list").show();
         $(".gift_chk_area .emp_info").hide();
         $("#gift_chk_" + gift_view_chkid).prop( "checked", true );
         $("#gift_" + gift_view_chkid).parent(".item").addClass("active");
-        $("#gift_"+ gift_view_chkid + "~.info .btn-notselect").removeClass("btn-notselect").addClass("btn-cart").text(btnNotselect);
+        $("#gift_"+ gift_view_chkid + "~.info .btn-notselect").removeClass("btn-notselect").addClass("btn-carted").text(btnNotselect);
         $(".gift_chk_area .add_list dt").after(gifthtml);
     }
     else{
         $("#gift_chk_" + gift_view_chkid).prop( "checked", false );
         $("#gift_" + gift_view_chkid).parent(".item").removeClass("active");
-        $("#gift_"+ gift_view_chkid + " ~.info .btn-cart").removeClass("btn-cart").addClass("btn-notselect").text(btnCart);
+        $("#gift_"+ gift_view_chkid + " ~.info .btn-carted").removeClass("btn-carted").addClass("btn-notselect").text(btnCart);
         $("#gift_chk_00"+this.id.slice(7)).closest("dd").remove();
     };
 
@@ -187,22 +185,22 @@ $(".add_view input[type='checkbox']").change(function () {
     var checkedLength = $(".add_view input[type='checkbox']:checked").length;
     var add_text = $(this).closest(".item").find("h1").text();
     var addhtml =
-     '<dd><div class="add_chk_block"><input type="checkbox" id="add_chk_'+add_view_chkid+'" class="add_chk" checked="checked"><label for="add_chk_'+add_view_chkid+'" class="add_label"></label> <span>'+add_text+'</span></div>'
+     '<dd><div class="add_chk_block"><input type="checkbox" id="add_chk_'+add_view_chkid+'" class="add_chk" checked="checked"><label for="add_chk_'+add_view_chkid+'" class="add_label"></label> <span>'+add_text+'</span></div>'
     +'<div class="quantity-add"><div class="quantity">'
-    +'<span class="quantity-decrease"><i class="fa fa-minus" aria-hidden="true"></i></span>'
+    +'<span class="quantity-decrease"><i class="icon icon_minus"></i></span>'
     +'<input type="text" class="quantity-input" value="1" max="99" title="請輸入購買量">    '
-    +'<span class="quantity-increase"><i class="fa fa-plus" aria-hidden="true"></i></span></div></div></dd>';
+    +'<span class="quantity-increase"><i class="icon icon_plus"></i></span></div></div></dd>';
     if($(this).is(":checked")){
         $(".add_chk_area .add_list").show();
         $(".add_chk_area .emp_info").hide();
         $("#add_chk_" + add_view_chkid).prop( "checked", true );
         $("#add_" + add_view_chkid).parent(".item").addClass("active");
-        $("#add_"+ add_view_chkid + "~.info .btn-notselect").removeClass("btn-notselect").addClass("btn-cart").text(btnNotselect);
+        $("#add_"+ add_view_chkid + "~.info .btn-notselect").removeClass("btn-notselect").addClass("btn-carted").text(btnNotselect);
         $(".add_chk_area .add_list dt").after(addhtml);
     }else{
         $("#add_chk_" + add_view_chkid).prop( "checked", false );
         $("#add_" + add_view_chkid).parent(".item").removeClass("active");
-        $("#add_"+ add_view_chkid + " ~.info .btn-cart").removeClass("btn-cart").addClass("btn-notselect").text(btnCart);
+        $("#add_"+ add_view_chkid + " ~.info .btn-carted").removeClass("btn-carted").addClass("btn-notselect").text(btnCart);
         $("#add_chk_00"+this.id.slice(6)).closest("dd").remove();
     };
 
@@ -240,7 +238,7 @@ $(".btn-notadd").click(function() {
 // 加購看更多折疊
 $('.add_view .items').each(function(){
     var addNum = $(this).find($('.add_view .item')).length;
-    var moreBlock= '<a href="#" class="more">看更多<i class="fa fa-chevron-down" aria-hidden="true"></i></a>';
+    var moreBlock= '<a href="#" class="more"><span class="more_txt">看更多</span><i class="icon icon_more"></i></a>';
 	if( addNum > 5){    //超過3個就截斷
 	  $('.item', this).eq(4).nextAll().hide().addClass('toggleable');
 	  $(this).append(moreBlock);    
