@@ -17,10 +17,6 @@
     padding:0;
     overflow: hidden;
 }
-.icon_check:before{
-    position: absolute;bottom: -2px;right: -5px;z-index: 20;
-    transform: scale(0.5);
-}
 .icon_star:before{
     margin-right:5px;
 }
@@ -190,18 +186,20 @@
             width: 100px;
         }
         .value {
-            display: inline-block;
+            display: flex;
             width: 525px;
             position: relative;
             z-index: 0;
-            vertical-align: top;
+            .icon_check::before{
+                position: absolute;bottom: -2px;right: -5px;z-index: 20;
+                transform: scale(0.5);
+            }
             > li {
                 padding: 5px 12px;
                 margin: 0 8px 8px 0;
                 cursor: pointer;
                 color:#555;
                 border: 1px solid #cccccc;
-                display: inline-block;
                 font-size: 14px;
                 line-height: 14px;
                 vertical-align: top;

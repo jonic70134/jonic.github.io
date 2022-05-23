@@ -2104,16 +2104,6 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-.icon_check:before {
-  position: absolute;
-  bottom: -2px;
-  right: -5px;
-  z-index: 20;
-  -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
-}
-
 .icon_star:before {
   margin-right: 5px;
 }
@@ -2325,11 +2315,21 @@ button.swiper-pagination-bullet {
   width: 100px;
 }
 .pc-item-main .item_line .value {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 525px;
   position: relative;
   z-index: 0;
-  vertical-align: top;
+}
+.pc-item-main .item_line .value .icon_check::before {
+  position: absolute;
+  bottom: -2px;
+  right: -5px;
+  z-index: 20;
+  -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+          transform: scale(0.5);
 }
 .pc-item-main .item_line .value > li {
   padding: 5px 12px;
@@ -2337,7 +2337,6 @@ button.swiper-pagination-bullet {
   cursor: pointer;
   color: #555;
   border: 1px solid #cccccc;
-  display: inline-block;
   font-size: 14px;
   line-height: 14px;
   vertical-align: top;
