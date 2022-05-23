@@ -71,63 +71,62 @@ html
 									// 數量
 									.count.item_line
 										span.title 數量
-										.quantity-add
-											.quantity
-												span.quantity-decrease
-													i.icon.icon_minus
-												input.quantity-input(type='text', value='1', max='99', title='請輸入購買量')
-												span.quantity-increase
-													i.icon.icon_plus
+										.quantity
+											span.quantity-decrease
+												i.icon.icon_minus
+											input.quantity-input(type='text', value='1', max='99', title='請輸入購買量')
+											span.quantity-increase
+												i.icon.icon_plus
 									// 贈品區
 									.gift_chk_area
-										dl.add_list
-											dt.title
+										.add_list
+											.title
 												.l_title
 													i.icon.icon_star  贈品區 
 													| 目前
 													span.cole00 已選購2件，還差1件尚未符合結帳條件
 												.r_title
 													span.cole00 2/3
-											dd
+											.add_line
 												.add_chk_block
 													input#gift_chk_001.add_chk(type='checkbox')
 													label.add_label(for='gift_chk_001')
-													span &nbsp;全家商品卡100元+好收納不鏽鋼刀剪組+100週年紀念公仔
+													p 全家商品卡100元+好收納不鏽鋼刀剪組+100週年紀念公仔
 												select(name='', id='')
 													option(value='1') 紅色24cm(3.6L)
 													option(value='2') 藍色24cm(3.6L)
-											dd
+											.add_line
 												.add_chk_block
 													input#gift_chk_002.add_chk(type='checkbox')
 													label.add_label(for='gift_chk_002')
-													span &nbsp;全家商品卡100元+好收納不鏽鋼刀剪組+100週年紀念公仔
+													p 全家商品卡100元+好收納不鏽鋼刀剪組+100週年紀念公仔
 												select(name='', id='')
 													option(value='1') 紅色24cm(3.6L)
 													option(value='2') 藍色24cm(3.6L)
 									// 加購區
 									.add_chk_area
-										dl.add_list
-											dt.title
+										.add_list
+											.title
 												.l_title
 													i.icon.icon_star 加購區
 												.r_title
 													span.cole00 $99,999
-											dd
+											.add_line
 												.add_chk_block
 													input#add_chk_001.add_chk(type='checkbox')
 													label.add_label(for='add_chk_001')
-													span &nbsp;全家商品卡100元+好收納不鏽鋼刀剪組+100週年紀念公仔
-											dd
+													p 全家商品卡100元+好收納不鏽鋼刀剪組+100週年紀念公仔
+											.add_line
 												.add_chk_block
 													input#add_chk_002.add_chk(type='checkbox')
 													label.add_label(for='add_chk_002')
-													span &nbsp;全家商品卡100元+好收納不鏽鋼刀剪組+100週年紀念公仔
-											dd
+													p 全家商品卡100元+好收納不鏽鋼刀剪組+100週年紀念公仔
+											.add_line
 												.add_chk_block
 													input#add_chk_003.add_chk(type='checkbox')
 													label.add_label(for='add_chk_003')
-													span &nbsp;全家商品卡100元+好收納不鏽鋼刀剪組+100週年紀念公仔
-											dd
+													p 全家商品卡100元+好收納不鏽鋼刀剪組+100週年紀念公仔
+											.add_line
 												a.more(href='#') 看更多
 													i.icon.icon_more
 									.shop_btn_block.item_line

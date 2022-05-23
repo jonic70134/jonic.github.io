@@ -218,17 +218,17 @@
     border-bottom: 1px solid #eee;
     background-color: $primary-color;
 	@include clearfix;
-	&.bg_white{
-		background:white;
-		.main_head{
-			background:white;
-			.site_search{
-				.input_search{
-					border: 1px solid #ccc;
-				}
-			}
-		}
-	}
+	// &.bg_white{
+	// 	background:white;
+	// 	.main_head{
+	// 		background:white;
+	// 		.site_search{
+	// 			.input_search{
+	// 				border: 1px solid #ccc;
+	// 			}
+	// 		}
+	// 	}
+	// }
 	//個人
     &.bg_profile{
 		background:white;
@@ -289,21 +289,18 @@
 		}
     }
 	.profile{
-		display: inline-block;
-		vertical-align: middle;
+		display: flex;
 		margin-right:42px;
 		.prof_l, .prof_r{
-			display: inline-block;
-			vertical-align: middle;
+			display: flex;
 		}
 		img{
-			width:97px;
-			height:97px;
+			width:90px;
+			height:90px;
 			border:3px solid white;
 			@include border-radius(50%);
 		}
 		h1{
-			display: block;
 			margin-bottom:8px;
 			color:black;
 			font-size:1.1rem;
@@ -316,9 +313,10 @@
 			}
 		}
 		.prof_r{
+			flex-flow: column;
+			justify-content: center;
 			margin-left:10px;
 			a{
-				display: inline-block;
 				margin-right:5px;
 			}
 			img{

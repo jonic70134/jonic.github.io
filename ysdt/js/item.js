@@ -150,7 +150,7 @@ $(".gift_view input[type='checkbox']").change(function () {
     var gift_view_chkid = $(this).attr('id').slice(5);
     var checkedLength = $(".gift_view input[type='checkbox']:checked").length;
     var gift_text = $(this).closest(".item").find("h1").text();
-    var gifthtml = '<dd><div class="add_chk_block"><input type="checkbox" id="gift_chk_'+gift_view_chkid+'" class="add_chk" checked="checked"><label for="gift_chk_'+gift_view_chkid+'" class="add_label"></label> <span>'+gift_text+'</span></div></dd>';
+    var gifthtml = '<div class="add_line"><div class="add_chk_block"><input type="checkbox" id="gift_chk_'+gift_view_chkid+'" class="add_chk" checked="checked"><label for="gift_chk_'+gift_view_chkid+'" class="add_label"></label> <p>'+gift_text+'</p></div></div>';
     if($(this).is(":checked")){
         $(".gift_chk_area .add_list").show();
         $(".gift_chk_area .emp_info").hide();
@@ -163,7 +163,7 @@ $(".gift_view input[type='checkbox']").change(function () {
         $("#gift_chk_" + gift_view_chkid).prop( "checked", false );
         $("#gift_" + gift_view_chkid).parent(".item").removeClass("active");
         $("#gift_"+ gift_view_chkid + " ~.info .btn-carted").removeClass("btn-carted").addClass("btn-notselect").text(btnCart);
-        $("#gift_chk_00"+this.id.slice(7)).closest("dd").remove();
+        $("#gift_chk_00"+this.id.slice(7)).closest(".addline").remove();
     };
 
     if (checkedLength > 0){
@@ -185,11 +185,11 @@ $(".add_view input[type='checkbox']").change(function () {
     var checkedLength = $(".add_view input[type='checkbox']:checked").length;
     var add_text = $(this).closest(".item").find("h1").text();
     var addhtml =
-     '<dd><div class="add_chk_block"><input type="checkbox" id="add_chk_'+add_view_chkid+'" class="add_chk" checked="checked"><label for="add_chk_'+add_view_chkid+'" class="add_label"></label> <span>'+add_text+'</span></div>'
-    +'<div class="quantity-add"><div class="quantity">'
+     '<div class="add_line"><div class="add_chk_block"><input type="checkbox" id="add_chk_'+add_view_chkid+'" class="add_chk" checked="checked"><label for="add_chk_'+add_view_chkid+'" class="add_label"></label> <p>'+add_text+'</p></div>'
+    +'<div class="quantity">'
     +'<span class="quantity-decrease"><i class="icon icon_minus"></i></span>'
     +'<input type="text" class="quantity-input" value="1" max="99" title="請輸入購買量">    '
-    +'<span class="quantity-increase"><i class="icon icon_plus"></i></span></div></div></dd>';
+    +'<span class="quantity-increase"><i class="icon icon_plus"></i></span></div></div>';
     if($(this).is(":checked")){
         $(".add_chk_area .add_list").show();
         $(".add_chk_area .emp_info").hide();
@@ -201,7 +201,7 @@ $(".add_view input[type='checkbox']").change(function () {
         $("#add_chk_" + add_view_chkid).prop( "checked", false );
         $("#add_" + add_view_chkid).parent(".item").removeClass("active");
         $("#add_"+ add_view_chkid + " ~.info .btn-carted").removeClass("btn-carted").addClass("btn-notselect").text(btnCart);
-        $("#add_chk_00"+this.id.slice(6)).closest("dd").remove();
+        $("#add_chk_00"+this.id.slice(6)).closest(".add").remove();
     };
 
     if (checkedLength > 0){

@@ -391,15 +391,6 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   visibility: hidden;
 }
-.site-header.bg_white {
-  background: white;
-}
-.site-header.bg_white .main_head {
-  background: white;
-}
-.site-header.bg_white .main_head .site_search .input_search {
-  border: 1px solid #ccc;
-}
 .site-header.bg_profile {
   background: white;
 }
@@ -449,17 +440,19 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 .site-header .profile {
-  display: inline-block;
-  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 42px;
 }
 .site-header .profile .prof_l, .site-header .profile .prof_r {
-  display: inline-block;
-  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .site-header .profile img {
-  width: 97px;
-  height: 97px;
+  width: 90px;
+  height: 90px;
   border: 3px solid white;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
@@ -467,7 +460,6 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
 }
 .site-header .profile h1 {
-  display: block;
   margin-bottom: 8px;
   color: black;
   font-size: 1.1rem;
@@ -481,10 +473,16 @@ h1, h2, h3, h4, h5, h6 {
      text-overflow: ellipsis;
 }
 .site-header .profile .prof_r {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 10px;
 }
 .site-header .profile .prof_r a {
-  display: inline-block;
   margin-right: 5px;
 }
 .site-header .profile .prof_r img {

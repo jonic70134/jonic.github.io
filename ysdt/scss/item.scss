@@ -582,7 +582,6 @@
         }
     }
     .count{
-
         &.ABcount{
             border: 1px solid #ccc;
             .title{
@@ -597,7 +596,7 @@
             }
         }
     }
-    .gift_chk_area,.add_chk_area,.prod_chk_area_AB{
+    .gift_chk_area,.add_chk_area,.prod_chk_area_AB,.add_noc{
         margin:20px 0 10px;
         &.blue{
             .title{
@@ -636,113 +635,6 @@
             color:white;
             background: #aaa;
             cursor: pointer;
-        }
-    }
-
-    .add_list{
-        font-size:.85rem;
-        border:1px solid #ccc;
-        .title{
-            display:flex;
-            justify-content: space-between;
-            padding:5px;
-            background:#efefef;
-        }
-        .r_title{
-            margin:0 10px 0 0;
-        }
-        dd{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding:6px 10px;
-            border-bottom:1px solid #ccc;
-            &:last-child{
-                border:none;
-            }
-        }
-        .add_chk_block{
-            display: flex;
-            align-items: center;
-            span{
-                width:435px;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
-            }
-        }
-        .add_label {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            cursor: pointer;
-            vertical-align: middle;
-            position: relative;
-            border: 1px solid #ccc;
-          }
-          .add_label:after {
-            content: "";
-            position: absolute;
-            height: 5px;
-            width: 9px;
-            border-left: 3px solid #fff;
-            border-bottom: 3px solid #fff;
-            -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-            left: 3px;
-            top: 3px;
-          }
-          .add_chk {
-            display: none;
-          }
-          .add_chk:checked + .add_label {
-            border: 1px solid #e00;
-            color:#e00;
-          }
-          .add_chk:checked + .add_label:after{
-            border-left: 3px solid #e00;
-            border-bottom: 3px solid #e00;
-          }
-        .quantity{
-            margin:0;
-        }
-        .quantity-add{
-            .quantity-input{
-                color:#e00;
-                font-size:1rem;
-                font-weight: 700;
-            }
-            .quantity-decrease,.quantity-increase{
-                padding: 6px;
-                color:#999;
-            }
-        }
-        select{
-            padding:5px;
-            -webkit-appearance: menulist;
-        }
-    }
-    .add_chk_area{
-        dd:last-child{
-            justify-content: flex-end;
-        }
-    }
-    .add_noc{
-        margin-bottom:10px;
-        .l_title{
-            margin-left:10px;
-            color:#06c;
-        }
-        .r_title{
-            margin-right:5px;
-        }
-    }
-    .emp_noc{
-        display: flex;
-        justify-content: space-between;
-        padding:10px;
-        .l_title{
-            margin-left:23px;
         }
     }
     .shop_btn{
@@ -900,6 +792,115 @@
         display: inline-block;
         vertical-align: bottom;
         margin-bottom: 2px;
+    }
+}
+
+// 加購
+.add_list{
+    font-size:.85rem;
+    border:1px solid #ccc;
+    .title{
+        display:flex;
+        justify-content: space-between;
+        padding:5px;
+        background:#efefef;
+    }
+    .icon_star{
+        margin:0 10px;
+    }
+    .r_title{
+        margin:0 10px 0 0;
+    }
+    .add_line{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:6px 10px;
+        border-bottom:1px solid #ccc;
+    }
+    .add_chk_block{
+        display: flex;
+        align-items: center;
+        p{
+            width:435px;
+            margin: 0 0 0 5px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        &:last-child{
+            border:none;
+        }
+    }
+    .add_label {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        vertical-align: middle;
+        position: relative;
+        border: 1px solid #ccc;
+      }
+      .add_label:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        width: 9px;
+        border-left: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        left: 3px;
+        top: 3px;
+      }
+      .add_chk {
+        display: none;
+      }
+      .add_chk:checked + .add_label {
+        border: 1px solid #e00;
+        color:#e00;
+      }
+      .add_chk:checked + .add_label:after{
+        border-left: 3px solid #e00;
+        border-bottom: 3px solid #e00;
+      }
+    .quantity{
+        margin:0;
+        .quantity-input{
+            color:#e00;
+            font-size:1rem;
+            font-weight: 700;
+        }
+        .quantity-decrease,.quantity-increase{
+            padding: 6px;
+            color:#999;
+        }
+    }
+    select{
+        padding:5px;
+        -webkit-appearance: menulist;
+    }
+}
+.add_chk_area{
+    .add_line:last-child{
+        justify-content: flex-end;
+    }
+}
+.add_noc{
+    margin-bottom:10px;
+    .l_title{
+        color:#06c;
+    }
+    .r_title{
+        margin-right:5px;
+    }
+}
+.emp_noc{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    .l_title{
+        margin-left:23px;
     }
 }
 // A+B
