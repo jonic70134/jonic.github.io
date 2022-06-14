@@ -1,0 +1,48 @@
+html
+    head
+        meta(charset='utf-8')
+        meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
+        title friDay 
+        meta(content='friDay', name='description')
+        meta(content='width=device-width, initial-scale=1.0', name='viewport')
+        link(href='css/index.css', rel='stylesheet')
+    body
+        h1.title 心生活遠傳幣加倍抵
+        .sub_txt 
+            p *1遠傳幣折抵2元*(非活動期間1遠傳幣折抵1元)最高折抵XXX傳幣
+            p (最高可折抵的遠傳幣為消費金額的50%,以300遠傳幣為上限)此為假設說明可修改內容
+        .items_bg
+            .items
+                mixin item(prod_pic)
+                    a.item(href='#')
+                        .photo
+                            img(src='img/'+ prod_pic +'.jpg', alt='商品名稱', title='商品名稱')
+                        .info   
+                            h3.name 商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品
+                            .price
+                                .nor_price $99,999
+                                .dis_price $97,999
+                            button.btn-imd 立即搶購
+                +item('580_01')
+                +item('580_02')
+            .items
+                mixin item(prod_pic)
+                    a.item.sm(href='#')
+                        .photo
+                            img(src='img/'+ prod_pic +'.jpg', alt='商品名稱', title='商品名稱')
+                        .info   
+                            h3.name 商品名稱商品名稱商品商品名稱商品名稱商品
+                            .price
+                                .nor_price $99,999
+                                .dis_price $97,999
+                                button.btn-imd 立即搶購
+                +item('250_01')
+                +item('250_02')
+                +item('250_03')
+                +item('250_04')
+                +item('250_05')
+                +item('250_06')
+                +item('250_07')
+                +item('250_08')
+                +item('250_09')
+                +item('250_10')

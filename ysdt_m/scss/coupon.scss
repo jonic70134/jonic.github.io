@@ -1,0 +1,16 @@
+// 首頁
+@import "partials/base";
+@import "partials/mixin";
+@import "partials/color";
+@import "partials/page";
+@import "partials/cupn";
+.sub_head{
+    .container{
+        justify-content: flex-start;
+    }
+}
+.site-main{
+    .container{
+        width:1110px;
+    }
+}

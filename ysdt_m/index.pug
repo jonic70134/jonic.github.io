@@ -1,0 +1,69 @@
+html
+    head
+        include src/_meta.pug
+        link(href='../css/mobile/index.css', rel='stylesheet')
+    body
+        .body_container
+            header.site-header
+                .container
+                    .head_con
+                        .head_l
+                            a.btn-menu(href='#')
+                                img(src='../img/mobile/dept.svg')
+                            a.logo(href='index.html')
+                                img(src='../img/asap40w.png', alt='logo')
+                        .head_r
+                            a.search(href='#')
+                                img(src='../img/mobile/search.svg', alt='搜尋')
+                            a.cart(href='../cart/orderlist.html', title='查看購物車')
+                                img.img-cart(src='../img/mobile/cart_white.svg')
+                        .site-search
+                            input.input-search(type='text', autocomplete='off', placeholder='請輸入商品名稱')
+                            button.btn-cancel
+                                img(src='../img/mobile/clear.svg', alt='search icon')
+                            a.search(href='#')
+                                img(src='../img/mobile/search_gray.svg', alt='搜尋')
+                    include src/_menu.pug
+            .site-body(role='main')
+                article.site-main
+                    .per
+                        .swiper-container.container
+                            .swiper-wrapper
+                            a.swiper-slide.per_slide.test.hot(href='item.html')
+                                .per_dur
+                                    .per_t 熱品推薦：
+                                    img.per_img(src='../img/mobile/sample/01_01_250.jpg', alt='商品名稱', title='商品名稱')
+                                .per_buy
+                                    h2.name SONY 索尼 A9FMASTER系列OLED $K Ultra HD 高動態範圍(HDR) 智慧型電視 KD-65A9F 65吋 OLED 液晶電視
+                                    .per_price
+                                        .pay_dis
+                                            span.title 網路價
+                                            p.price 195,900
+                                            button.button.large.btn-imd 立即購買
+                            a.swiper-slide.rec_slide(href='item.html')
+                                .rec_title
+                                    p 其它推薦商品
+                                        i.fa.fa-caret-right(aria-hidden='true')
+                                .rec_info
+                                    img.rec_img(src='../img/mobile/sample/01_02_200.jpg', alt='商品名稱')
+                                    h3.name SONY 索尼 A9F MASTER系列 OLED 4K Ultra HD 高動態範圍(HDR) 智慧型電視 KD-65A9F 65吋 OLED 液晶電視
+                                    .rec_price
+                                        span.price 199900
+                            mixin item(prod_pic)
+                                a.swiper-slide.rec_slide(href='item.html')
+                                    .rec_info
+                                        img.rec_img(src='../img/mobile/sample/'+ prod_pic +'.jpg', alt='商品名稱')
+                                        h3.name SONY 索尼 A9F MASTER系列 OLED 4K Ultra HD 高動態範圍(HDR) 智慧型電視 KD-65A9F 65吋 OLED 液晶電視
+                                        .rec_price
+                                            span.price 199900
+                            +item('01_03_200')
+                            +item('01_04_200')
+                            +item('02_01_250')
+                            
+                    .ad_banner
+                        img(src='../img/mobile/sample/AD_720x120.jpg', alt='廣告圖')
+
+
+        script(src='js/3rd-party/jquery-3.6.0.min.js')
+        script(src='js/3rd-party/swiper-bundle.min.js')
+        script(src='js/mobile/index.js')
