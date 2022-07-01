@@ -95,23 +95,41 @@ img {
   border-radius: 10px;
 }
 
-.title {
-  padding: 15px;
+.head_banner {
+  width: 100%;
   text-align: center;
-  color: white;
-  background-color: #f5281e;
+}
+.head_banner img {
+  margin: 0 auto;
+  max-width: 1200px;
+  border-radius: 0;
+}
+
+.title {
+  padding: 15px 0 10px;
+  text-align: center;
+  color: black;
+  background-color: white;
   font-size: 2rem;
   letter-spacing: 2px;
 }
 
 .sub_txt {
-  padding: 15px;
+  padding: 0 10px 15px;
   text-align: center;
   color: black;
   font-size: 0.8rem;
   line-height: 1.4;
   letter-spacing: 1px;
   background-color: white;
+}
+
+.saletime {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+  background-color: black;
 }
 
 .items_bg {
@@ -375,6 +393,10 @@ img {
 
   .sub_txt {
     font-size: 0.7rem;
+  }
+
+  .saletime {
+    font-size: 1rem;
   }
 
   .nor_price {
