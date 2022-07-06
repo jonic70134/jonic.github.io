@@ -149,20 +149,25 @@
 .more_txt{
     text-decoration: underline;
 }
-
+.item_per{
+    display: flex;
+    justify-content: center;
+    width:785px;
+    margin:0 0 8px 15px;
+    padding:12px 0;
+    text-align: center;
+    font-size:1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    color:#feff00;
+    background-color: #88c533;
+    @include border-radius(0 0 10px 10px);
+}
 .pc-item-main {
     line-height: 1.9;
     font-size: .85rem;
     margin: 10px 0;
-    .item_per{
-        position: absolute;top: -56px;left: 217px;
-        width:785px;
-        padding:5px 0;
-        text-align: center;
-        line-height: 1;
-        background-color: #88c533;
-        @include border-radius(0 0 10px 10px);
-    }
+   
     .item_full{
         display: flex;
         
