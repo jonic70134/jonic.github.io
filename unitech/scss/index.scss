@@ -1,0 +1,294 @@
+// 首頁
+@import "partials/base";
+@import "partials/mixin";
+@import "partials/color";
+@import "partials/page";
+@import "partials/cupn";
+@import "partials/page_item";
+@import "3rd-party/_swiper.scss";
+.swiper-container{
+    position: relative;
+    overflow: hidden;
+}
+.swiper-button-prev{
+    left:0px;
+}
+.swiper-button-next{
+    right: 0px;
+}
+
+.per{
+    margin:15px 0 0;
+    position: relative;
+    &.hot_rec{
+        .per_r{
+            padding:7px 25px;
+        }
+        .per_block{
+            width: 181px;
+            margin:7px 0;
+        }
+        .per_buy{
+            background: #ddf1ff;
+        }
+        .per_info{
+            border-top: 5px solid #09f;
+            border-bottom: 5px solid #09f;
+        }
+        .edg_pic{
+            background: url('../img/edge_b.png') no-repeat;
+        }
+        .swiper-wrapper{
+            flex-direction: initial;
+        }
+        .per_r_info{
+            margin-left:5px;
+        }
+        .per_r{
+            img{
+                max-width: 100px;
+                max-height: 100px;
+                border:3px solid #e5e5e5;
+                @include border-radius(10px)
+            }
+            .per_block{
+                display: flex;
+                flex-flow: row nowrap;
+            }
+            .name{
+                height: 48px;
+            }
+            .swiper-slide{
+                height: 110px !important;
+            }
+        }
+        .swiper-button-next,.swiper-button-prev{
+            width: 15px;
+            height: 100%;
+            top: 12px;
+            background-color: white;
+        }
+        .swiper-button-next{
+            padding-left: 10px;
+        }
+    }
+    .edg_pic{
+        position: absolute;top:0;left:0;
+        width: 225px;height: 40px;
+        background: url('../img/edge.png') no-repeat;
+        z-index: 10;
+        p{
+            position: absolute;top: 10px;left: 50px;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        span{
+            color:#ff0;
+        }
+    }
+    .per_t{
+        padding:7px 0 7px;
+        color:#ffa;
+        font-size:.98rem;
+    }
+    .per_img{
+        display: block;
+        width:250px;
+        height:250px;
+        background-color: white;
+    }
+    .per_info{
+        display: flex;
+        flex-flow: row nowrap;
+        position: relative;
+        width:100%;
+        border-top: 5px solid #f30;
+        border-bottom: 5px solid #f30;
+    }
+    .per_l{
+        display: flex;
+        flex-flow:row nowrap;
+        width:460px;
+        border-right:1px solid #ccc;
+    }
+    .name{
+        height: 68px;
+        margin:30px 0 20px;
+        font-size:1.2rem;
+        color:#000;
+        line-height: 1.2;
+        word-break: break-word;
+        overflow: hidden;
+    }
+    .per_buy{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width:175px;
+        padding:35px 10px 10px;
+        background: #f8e5e8;
+        .currency{
+            font-size:1.2rem;
+        }
+        .dur{
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+            line-height: 1.2;
+            color:#ffa;
+            letter-spacing: 1px;
+            font-family: sans-serif;
+            span{
+                font-size:.9rem;
+            }
+        }
+        .per_price{
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        .nor{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-end;
+            margin:0 10px 0 0;
+            font-size:.9rem;
+            color:#888;
+        }
+        .del{
+            margin-left:3px;
+            color:#888;
+            font-size:1.3rem;
+        }
+        .pay_dis{
+            display:flex;
+            flex-flow:row wrap;
+            flex-basis:100%;
+            align-items: baseline;
+            color:$primary-color;
+            font-size:.9rem;
+            .price{
+                font-size:1.65rem;
+                color:$primary-color;
+            }
+            .btn-imd{
+                width: 100%;
+                margin-top:10px;
+                padding: 10px 0;
+                font-size: 1rem;
+                letter-spacing: 4px;
+                border: none;
+                color: white;
+                background-color: $primary-color;
+                cursor: pointer;
+                line-height: 1;
+                align-self:center;
+            }
+        }
+    }
+    .per_block{
+        width:160px;
+        margin:15px 17px 0;
+    }
+    .per_r{
+        img{
+            max-height: 160px;
+            max-width: 160px;
+        }
+        .name{
+            margin:10px 0 5px;
+            height:30px;
+            color:#888;
+            font-size:.8rem;
+        }
+    }
+}
+.per_price{
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: baseline;
+    color:$price;
+    font-size:.9rem;
+    font-weight: 700;
+    .title{
+        font-size:.8rem;
+    }
+    .currency{
+        font-size:.7rem;
+    }
+    .rush{
+        margin-left:10px;
+        color:#06c;
+        font-size:.8rem;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+.ad_banner{
+    margin-top:15px;
+    img{
+        display: block;
+    }
+}
+.spec_prod{
+    margin:15px 0 0;
+    background-color:#ece8df;
+    @include border-radius(10px);
+    .swiper-container{
+        padding: 7px 25px;
+    }
+    .title{
+        padding: 8px 0 8px 10px;
+        font-size:1.25rem;
+    }
+    .spec_block{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .spec_l{
+        margin-right: 10px;
+    }
+    img{
+        border:5px solid #ddd5cc;
+        @include border-radius(10px)
+    }
+    .spec_info{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding:5px 10px 15px;
+    }
+    .per_price{
+        display: flex;
+        flex-flow: row nowrap;
+        color:$price;
+        font-size:.9rem;
+        font-weight: 500;
+    }
+    .currency{
+        font-size: .7rem;
+    }
+    .name{
+        width:154px;
+        font-size:.8rem;
+        color: black;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .spec_r_block{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        .per_price{
+            padding: 6px 0 10px;
+        }
+    }
+}
+.cupn_t,.item_t{
+    margin-top:40px;
+    color:#888;
+    font-size:1.1rem;
+}
