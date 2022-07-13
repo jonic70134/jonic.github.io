@@ -1,0 +1,503 @@
+/*by Jonic*/
+
+/*reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, th, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    background: transparent;
+}
+  
+  /* HTML5 display-role reset for older browsers */
+
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote {
+    &:before, &:after {
+		content: '';
+		content: none;
+	}
+}
+  
+q {
+	&:before, &:after {
+		content: '';
+		content: none;
+	}
+}
+  
+table {border-collapse: collapse;border-spacing: 0;}
+:focus {outline: 0;}
+caption {text-align: left;}
+:link {
+	text-decoration: none;
+	outline: none;
+	/* for Firefox */
+	hlbr: expression(this.onFocus=this.blur());
+	/* for IE */
+}
+  
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+  
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+  
+/* change border colour to suit your needs */
+  
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+  
+input, select {
+	vertical-align: middle;
+}
+  
+  
+body {
+	font-family: "微軟正黑體", "Microsoft JhengHei",arial, serif;
+	height: 100%;
+	background-color: #eee;
+}
+  
+/*==============================================================================================================================*/
+img{
+	display: block;
+	width:100%;
+	border-radius: 10px;
+}
+.head_banner{
+	width:100%;
+	text-align: center;
+	img{
+		margin: 0 auto;
+		max-width:1200px;
+		border-radius: 0;
+	}
+}
+.title{
+	padding:15px 0 10px;
+	text-align: center;
+	color:black;
+	background-color: white;
+	font-size:2.5rem;
+	letter-spacing: 2px;
+}
+.sub_txt{
+	padding:0 10px 15px;
+	text-align: center;
+	color:black;
+	font-size:.8rem;
+	line-height: 1.4;
+	letter-spacing: 1px;
+	background-color: white;
+}
+.saletime{
+	max-width: 1280px;
+	margin:0 auto;
+	padding:10px;
+	text-align: center;
+	font-size:1.3rem;
+	color:white;
+	background-color: black;
+	box-sizing: border-box;
+}
+.items_bg{
+	width:100%;
+	max-width:1280px;
+	margin: 20px auto 0;
+}
+.items{
+	display: flex;
+    flex-flow: row wrap;
+	justify-content: space-between;
+	margin:0;
+	
+}
+.item{
+    width: 49.22%;
+	margin:0 1.55% 2% 0;
+	padding:25px;
+	background-color: #333;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+.item:nth-child(2n){
+	margin-left:0;
+	margin-right:0;
+}
+.photo{
+    display: block;
+    background-color: white;
+	border-radius: 10px;
+}
+.cupn{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	margin:15px 0 0;
+}
+.cupn_block{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 25px 0 0;
+}
+.cupn_t{
+	margin:0 0 10px;
+	color:#f5c5c5;
+	font-size:1.1rem;
+}
+.cupn_ticket{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	width:168px;
+	height:70px;
+	font-size:1.1rem;
+	background:  #f5c5c5;
+}
+.cupn_bg{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	width:162px;
+	height:64px;
+	background:  #f5c5c5 url('../img/cupn_frame.svg') no-repeat center center;
+}
+.cupn_dur{
+	color:#555;
+}
+.cupn_price{
+	margin: 5px 0 0;
+	color:#ee6262;
+	font-size:1.5rem;
+	font-weight: 700;
+	&::first-letter{
+		font-size:1.2rem;
+	}
+}
+
+.name{
+	height:62px;
+	margin: 0 35px 35px 0;
+	font-size:1.6rem;
+	color:white;
+	line-height: 1.2;
+	word-break: break-word;
+	overflow: hidden;
+}
+.price{
+	display: flex;
+    flex-flow: row nowrap;
+	align-items: baseline;
+}
+.nor,.dis{
+	display: flex;
+    flex-flow: row nowrap;
+	align-items: baseline;
+}
+.nor{
+	margin: 0 0 -10px;
+}
+.nor_t,.dis_t{
+	margin: 0 5px 0 0;
+	color:#888;
+	font-size:1.5rem;
+}
+.nor_price{
+	text-decoration: line-through;
+}
+
+.nor_price{
+	margin:0 8px 5px 0;
+	font-size:1.5rem;
+	color:#888;
+	text-decoration: line-through;
+	&::first-letter{
+		font-size:1.2rem;
+	}
+}
+.dis{
+	img{
+		width:24px;height:26px;
+		margin: 0 10px;
+	}
+}
+.dis_price{
+	width:163px;
+	color:#f77;
+	font-size:2.5rem;
+	&::first-letter{
+		font-size:1.5rem;
+	}
+}
+.dis_af{
+	color:white;
+	font-size:2rem;
+}
+.dis_af_price{
+	width:226px;
+	color:#ff0;
+	font-size:3.5rem;
+	&::first-letter{
+		font-size:2rem;
+	}
+}
+.btn-imd{
+	width: 100%;
+	margin-top:15px;
+	padding: 9px 0 10px 12px;
+	font-size: 1.2rem;
+	letter-spacing: 16px;
+	border: none;
+	color: white;
+	background-color: #f5281e;
+	cursor: pointer;
+	line-height: 1;
+	align-self:center;
+}
+.item.sm{
+	display: flex;
+    flex-flow: row nowrap;
+	padding: 15px 20px 15px 15px;
+	border-radius: 0;
+	.photo{
+		flex:2 1 auto;
+		border-radius: 0;
+		img{
+			max-width:176px;
+			border:2px solid white;
+			border-radius: 0;
+		}
+	}
+	.info{
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		margin: 0 0 0 15px;
+		flex:2 1 68%;
+	}
+	.cupn{
+		margin:5px 0 0;
+	}
+	.cupn_block{
+		margin:0;
+	}
+	.cupn_t{
+		margin:5px  0 10px;
+	}
+	.name{
+		height:86px;
+		margin:0 45px 15px 0;
+		font-size:1.35rem;
+		line-height: 1.4;
+		letter-spacing: 1px;
+	}
+	.nor{
+		margin:0 0 -15px;
+	}
+	.nor_t, .dis_t{
+		margin: 0 5px 0 0;
+		font-size:1.2rem;
+	}
+	.nor_price{
+		font-size:1.2rem;
+		&::first-letter{
+			font-size:.9rem;
+		}
+	}
+	.dis{
+		margin:0 0 10px;
+		img{
+			height:auto;
+			margin: 0 15px;
+		}
+	}
+	.dis_price{
+		width:107px;
+		font-size:1.65rem;
+		&::first-letter{
+			font-size:1.1rem;
+		}
+	}
+	.dis_af{
+		margin:0 3px 0 0;
+		font-size:1.4rem;
+	}
+	.dis_af_price{
+		width:130px;
+		font-size:2rem;
+		&::first-letter{
+			font-size:1.2rem;
+		}
+	}
+}
+@media (max-width: 830px) {
+	.nor_price{
+		font-size:1.5rem;
+	}
+	.item.sm{
+		.nor_price{
+			font-size:.7rem;
+		}
+		.dis_price{
+			font-size:1.55rem;
+		}
+		.btn-imd{
+			margin: 5px 0 0;
+			letter-spacing: 3px;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.name{
+		height:58px;
+		font-size:1.5rem;
+	}
+	.btn-imd{
+		padding:10px;
+		letter-spacing: 10px;
+	}
+	.item.sm{
+		.name{
+			height:40px;
+			margin: 0 0 15px;
+			font-size:1rem;
+		}
+		.nor_price{
+			font-size:.7rem;
+		}
+		.dis_price{
+			font-size:1.3rem;
+		}
+		.btn-imd{
+			font-size:1rem;
+		}
+	}
+}
+@media (max-width: 660px) {
+	.item.sm{
+		.nor_price{
+			margin:0 3px 0 0;
+			&::first-letter{
+				font-size: .7rem;
+			}
+		}
+		.dis_price{
+			font-size:1.2rem;
+			&::first-letter{
+				font-size: .7rem;
+			}
+		}
+		.btn-imd{
+			padding:5px;
+			font-size:.8rem;
+		}
+		.info{
+			padding:0 0 0 10px;
+		}
+	}
+}
+@media (max-width: 580px) {
+	.item{
+		padding:10px;
+	}
+	.name{
+		height:46px;
+		font-size:1.2rem;
+	}
+	.dis_price{
+		font-size:1.5rem;
+		&::first-letter{
+			font-size: 1.2rem;
+		}
+	}
+	.btn-imd{
+		margin:5px 0 0;
+		letter-spacing: 2px;
+	}
+	.item.sm{
+		padding:10px;
+		.nor_price{
+			font-size:.7rem;
+		}
+		.dis_price{
+			font-size:.95rem;
+		}
+		.name{
+			height:32px;
+			margin:0 0 10px;
+			font-size:.8rem;
+		}
+		.btn-imd{
+			padding:5px;
+			font-size:.7rem;
+			letter-spacing: 1px;
+		}
+	}
+}
+
+@media (max-width: 510px) {
+	.title{
+		font-size:1.5rem;
+	}
+	.sub_txt{
+		font-size:.7rem;
+	}
+	.saletime{
+		font-size:1rem;
+	}
+	.nor_price{
+		font-size: .7rem;
+		&::first-letter{
+			font-size: .7rem;
+		}
+	}
+	.dis_price{
+		font-size:1.1rem;
+		&::first-letter{
+			font-size: .7rem;
+		}
+	}
+	.btn-imd{
+		padding:5px;
+		font-size:1rem;
+		letter-spacing: 1px;
+	}
+	.item.sm{
+		.photo{
+			flex:2 1 40%;
+		}
+		.info{
+			flex:2 1 60%;
+		}
+		.name{
+			height:28px;
+			font-size:.7rem;
+		}
+		.nor_price{
+			margin:0 -8px 0 -8px;
+			transform: scale(.6);
+		}
+	}
+}

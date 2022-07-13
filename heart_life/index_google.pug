@@ -1,0 +1,74 @@
+html
+    head
+        meta(charset='utf-8')
+        meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
+        title friDay 
+        meta(content='friDay', name='description')
+        meta(content='width=device-width, initial-scale=1.0', name='viewport')
+        link(href='css/index_google.css', rel='stylesheet')
+    body
+        .head_banner(style="background-color: #29b7f6;")
+            img(src="img/1220x100bn.jpg", alt="google")
+        h1.title Google必買熱銷夯品
+        .saletime
+            p 優惠時間只到 2022.06.30 23:59
+        .items_bg
+            .items
+                mixin item(prod_pic)
+                    a.item(href='#')
+                        .photo
+                            img(src='img/'+ prod_pic +'.jpg', alt='商品名稱', title='商品名稱')
+                        .info
+                            .cupn
+                                h3.name 商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品
+                                .cupn_block
+                                    .cupn_t 個人對品折價券
+                                    .cupn_ticket
+                                        .cupn_bg
+                                            .cupn_dur 07/13 23:59止
+                                            .cupn_price $1,000 
+                            .nor
+                                .nor_t 市價
+                                .nor_price $999,999
+                            .dis
+                                .dis_t 網路價
+                                .dis_price $299,999
+                                img(src="img/cupn_arrow.svg")
+                                .dis_af 折後
+                                .dis_af_price $298,999
+                            button.btn-imd 立即搶購
+                +item('580_01')
+                +item('580_02')
+            .items
+                mixin item(prod_pic)
+                    a.item.sm(href='#')
+                        .photo
+                            img(src='img/'+ prod_pic +'.jpg', alt='商品名稱', title='商品名稱')
+                        .info
+                            .cupn
+                                h3.name 商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品
+                                .cupn_block
+                                    .cupn_t 個人對品折價券
+                                    .cupn_ticket
+                                        .cupn_bg
+                                            .cupn_dur 07/13 23:59止
+                                            .cupn_price $1,000 
+                            .nor
+                                .nor_t 市價
+                                .nor_price $999,999
+                            .dis
+                                .dis_t 網路價
+                                .dis_price $299,999
+                                img(src="img/cupn_arrow.svg")
+                                .dis_af 折後
+                                .dis_af_price $298,999
+                +item('250_01')
+                +item('250_02')
+                +item('250_03')
+                +item('250_04')
+                +item('250_05')
+                +item('250_06')
+                +item('250_07')
+                +item('250_08')
+                +item('250_09')
+                +item('250_10')
