@@ -144,7 +144,6 @@ img{
 }
 .photo{
     display: block;
-    background-color: white;
 	border-radius: 10px;
 }
 .cupn{
@@ -238,13 +237,17 @@ img{
 	}
 }
 .dis{
+	justify-content: space-between;
 	img{
 		width:24px;height:26px;
-		margin: 0 10px;
+		margin:0 5px;
 	}
 }
+.dis_net{
+	display: flex;
+	align-items: baseline;
+}
 .dis_price{
-	width:163px;
 	color:#f77;
 	font-size:2.5rem;
 	&::first-letter{
@@ -256,7 +259,6 @@ img{
 	font-size:2rem;
 }
 .dis_af_price{
-	width:226px;
 	color:#ff0;
 	font-size:3.5rem;
 	&::first-letter{
@@ -285,9 +287,12 @@ img{
 		flex:2 1 auto;
 		border-radius: 0;
 		img{
+			display: block;
 			max-width:176px;
 			border:2px solid white;
 			border-radius: 0;
+			box-sizing: border-box;
+
 		}
 	}
 	.info{
@@ -330,11 +335,9 @@ img{
 		margin:0 0 10px;
 		img{
 			height:auto;
-			margin: 0 15px;
 		}
 	}
 	.dis_price{
-		width:107px;
 		font-size:1.65rem;
 		&::first-letter{
 			font-size:1.1rem;
@@ -345,159 +348,591 @@ img{
 		font-size:1.4rem;
 	}
 	.dis_af_price{
-		width:130px;
 		font-size:2rem;
 		&::first-letter{
 			font-size:1.2rem;
 		}
 	}
 }
-@media (max-width: 830px) {
-	.nor_price{
-		font-size:1.5rem;
+@media (min-width:748px) and (max-width: 1279px) {
+	.items{
+		margin: 0 20px;
 	}
-	.item.sm{
-		.nor_price{
-			font-size:.7rem;
-		}
-		.dis_price{
-			font-size:1.55rem;
-		}
-		.btn-imd{
-			margin: 5px 0 0;
-			letter-spacing: 3px;
-		}
+	.nor_t, .dis_t{
+		font-size:1.2rem;
 	}
-}
-@media (max-width: 767px) {
-	.name{
-		height:58px;
-		font-size:1.5rem;
+	.dis_price{
+		font-size:2.5rem;
 	}
-	.btn-imd{
-		padding:10px;
-		letter-spacing: 10px;
+	.dis_af{
+		font-size:1.8rem;
+	}
+	.dis_af_price{
+		font-size:3.3rem;
 	}
 	.item.sm{
 		.name{
-			height:40px;
-			margin: 0 0 15px;
-			font-size:1rem;
+			margin:0 20px 15px 0;
 		}
-		.nor_price{
-			font-size:.7rem;
+		.nor_t, .dis_t{
+			font-size:1rem;
 		}
 		.dis_price{
-			font-size:1.3rem;
+			font-size:1.5rem;
 		}
-		.btn-imd{
-			font-size:1rem;
+		.dis_af{
+			font-size:1.2rem;
+		}
+		.dis_af_price{
+			font-size:1.8rem;
 		}
 	}
 }
-@media (max-width: 660px) {
+@media (min-width:748px) and (max-width: 1221px) {
+	.name{
+		margin:0 20px 30px 0;
+	}
+	.dis_price{
+		font-size:2.2rem;
+	}
+	.dis_af{
+		font-size:1.6rem;
+	}
+	.dis_af_price{
+		font-size:3rem;
+	}
+}
+@media (min-width:748px) and (max-width: 1200px) {
+	.nor_t, .dis_t{
+		font-size: 1.2rem;
+	}
+	.dis_af{
+		font-size:1.5rem;
+	}
+	.nor_price{
+		font-size:1.2rem;
+		&::first-letter{
+			font-size:.9rem;
+		}
+	}
+	.dis_price{
+		font-size:2rem;
+	}
+	.dis_af_price{
+		font-size:2.8rem;
+	}
 	.item.sm{
+		.name{
+			margin:0 10px 15px 0;
+		}
+		.nor_t, .dis_t{
+			font-size:1rem;
+		}
+		.dis_af{
+			font-size:1rem;
+		}
 		.nor_price{
-			margin:0 3px 0 0;
+			font-size:.8rem;
 			&::first-letter{
-				font-size: .7rem;
+				font-size:.7rem;
 			}
 		}
 		.dis_price{
 			font-size:1.2rem;
-			&::first-letter{
-				font-size: .7rem;
-			}
 		}
-		.btn-imd{
-			padding:5px;
-			font-size:.8rem;
-		}
-		.info{
-			padding:0 0 0 10px;
+		.dis_af_price{
+			font-size:1.5rem;
 		}
 	}
 }
-@media (max-width: 580px) {
+@media (min-width:748px) and (max-width: 1100px) {
+	.name{
+		margin:0 10px 15px 0;
+	}
+	.cupn_block{
+		margin: 0 15px 0 0;
+	}
+	.nor_t, .dis_t{
+		font-size: 1rem;
+	}
+	.dis_af{
+		font-size:1.2rem;
+	}
+	.nor_price{
+		font-size:1rem;
+		&::first-letter{
+			font-size:.7rem;
+		}
+	}
+	.dis_price{
+		font-size:1.8rem;
+	}
+	.dis_af_price{
+		font-size:2.8rem;
+	}
+	.item.sm{
+		padding:15px;
+		.name{
+			margin:0 5px 15px 0;
+			height: 74px;
+			font-size: 1.15rem;
+		}
+		.nor_t, .dis_t{
+			font-size:.8rem;
+			&::first-letter{
+				font-size:.7rem;
+			}
+		}
+		.dis{
+			img{
+				width:18px;
+				height:auto;
+			}
+		}
+		.dis_af{
+			font-size:1rem;
+		}
+		.nor_price{
+			font-size:.8rem;
+			&::first-letter{
+				font-size:.7rem;
+			}
+		}
+		.dis_price{
+			font-size:1rem;
+			&::first-letter{
+				font-size:.7rem;
+			}
+		}
+		.dis_af_price{
+			font-size:1.5rem;
+		}
+	}
+}
+@media (min-width:748px) and (max-width: 1023px) {
+	.cupn_t{
+		margin: 0 0 5px;
+		font-size:.9rem;
+	}
+	.cupn_ticket{
+		width: 130px;height:55px;
+	}
+	.cupn_bg{
+		width:125px;height:50px;
+		font-size:.9rem;
+	}
+	.cupn_price{
+		font-size:1.1rem;
+		&::first-letter{
+			font-size:.7rem;
+		}
+	}
+
+	.dis_price{
+		font-size:1.5rem;
+	}
+	.dis_af_price{
+		font-size:2.2rem;
+		&::first-letter{
+			font-size:1.5rem;
+		}
+	}
+	.item.sm{
+		.photo{
+			img{
+				max-width:140px;
+			}
+		}
+	}
+}
+@media (min-width:748px) and (max-width: 965px) {
 	.item{
 		padding:10px;
 	}
-	.name{
-		height:46px;
-		font-size:1.2rem;
-	}
-	.dis_price{
-		font-size:1.5rem;
-		&::first-letter{
-			font-size: 1.2rem;
-		}
-	}
-	.btn-imd{
-		margin:5px 0 0;
-		letter-spacing: 2px;
-	}
 	.item.sm{
 		padding:10px;
-		.nor_price{
-			font-size:.7rem;
+		.photo{
+			img{
+				max-width:130px;
+			}
 		}
-		.dis_price{
-			font-size:.95rem;
+		.nor{
+			margin:0 0 -5px;
 		}
-		.name{
-			height:32px;
-			margin:0 0 10px;
-			font-size:.8rem;
-		}
-		.btn-imd{
-			padding:5px;
-			font-size:.7rem;
-			letter-spacing: 1px;
+		.dis{
+			margin:0;
 		}
 	}
 }
+@media (min-width:748px) and (max-width: 925px) {
+	.name{
+		height: 47px;
+		font-size:1.3rem;
 
-@media (max-width: 510px) {
-	.title{
-		font-size:1.5rem;
 	}
-	.sub_txt{
-		font-size:.7rem;
-	}
-	.saletime{
-		font-size:1rem;
-	}
-	.nor_price{
-		font-size: .7rem;
-		&::first-letter{
-			font-size: .7rem;
+	.dis{
+		img{
+			width:18px;
+			height: auto;
 		}
 	}
 	.dis_price{
-		font-size:1.1rem;
+		font-size:1.2rem;
 		&::first-letter{
-			font-size: .7rem;
+			font-size:.9rem;
+		}
+	}
+	.dis_af_price{
+		font-size:2rem;
+		&::first-letter{
+			font-size:1.3rem;
+		}
+	}
+	.item.sm{
+		.photo{
+			img{
+				max-width:110px;
+			}
+		}
+		.dis_af{
+			font-size:.75rem;
+		}
+		.nor_price{
+			font-size:.7rem;
+			&::first-letter{
+				font-size:.7rem;
+			}
+		}
+		.dis_price{
+			font-size:.8rem;
+			&::first-letter{
+				font-size:.7rem;
+			}
+		}
+		.dis_af_price{
+			font-size:1.2rem;
+			&::first-letter{
+				font-size:.7rem;
+			}
+		}
+	}
+}
+@media (min-width:748px) and (max-width: 840px) {
+	.cupn_t{
+		margin: 0 0 5px;
+		font-size:.7rem;
+	}
+	.cupn_ticket{
+		width: 100px;height:42px;
+	}
+	.cupn_bg{
+		width:94px;height:38px;
+		font-size:.7rem;
+	}
+	.cupn_price{
+		font-size:.9rem;
+		&::first-letter{
+			font-size:.7rem;
+		}
+	}
+	.item.sm{
+		.info{
+			margin:0 0 0 5px;
+		}
+		.name{
+			height: 65px;
+			font-size:1rem;
+		}
+		.nor{
+			margin:0 0 -5px;
+		}
+	}
+}
+@media (min-width:748px) and (max-width: 779px) {
+	.dis{
+		img{
+			width:15px;
+		}
+	}
+	.item.sm{
+		.photo{
+			img{
+				max-width:100px;
+			}
+		}
+		.dis{
+			img{
+				width:10px;
+			}
 		}
 	}
 	.btn-imd{
 		padding:5px;
 		font-size:1rem;
-		letter-spacing: 1px;
+	}
+}
+@media (max-width: 747px) {
+	.items{
+		margin: 0 20px;
+	}
+	.item{
+		width:100%;
+		margin:0 0 20px;
 	}
 	.item.sm{
-		.photo{
-			flex:2 1 40%;
+		margin:0 0 20px;
+	}
+}
+
+
+@media (max-width: 655px) {
+	.cupn_block{
+		margin:0 10px 0 0;
+	}
+	.name{
+		margin:0 15px 15px 0;
+	}
+	.nor_price{
+		font-size:1.5rem;
+		&::first-letter{
+			font-size:1.2rem;
 		}
-		.info{
-			flex:2 1 60%;
+	}
+	.dis_price{
+		font-size:1.8rem;
+	}
+	.dis_af_price{
+		font-size:2.8rem;
+	}
+	.item.sm{
+		.name{
+			margin:0 15px 15px 0;
+		}
+		.nor_t, .dis_t{
+			font-size:1rem;
+		}
+		.nor_price{
+			font-size:1rem;
+			&::first-letter{
+				font-size:.7rem;
+			}
+		}
+		.dis_af{
+			font-size:1.2rem;
+		}
+		.dis_price{
+			font-size:1.2rem;
+		}
+		.dis_af_price{
+			font-size:1.5rem;
+		}
+	}
+}
+@media (max-width: 575px) {
+	.item{
+		padding:10px;
+	}
+	.cupn_t{
+		margin: 0 0 5px;
+		font-size:.7rem;
+	}
+	.cupn_ticket{
+		width: 110px;height:52px;
+	}
+	.cupn_bg{
+		width:104px;height:48px;
+		font-size:.7rem;
+	}
+	.cupn_price{
+		font-size:1.2rem;
+		&::first-letter{
+			font-size:.7rem;
+		}
+	}
+	.dis{
+		img{
+			width:18px;
+			height: auto;
+		}
+	}
+	.nor_t, .dis_t{
+		font-size:1rem;
+	}
+	.nor_price{
+		font-size:1.2rem;
+		&::first-letter{
+			font-size:.9rem;
+		}
+	}
+	.dis_af{
+		font-size:1.5rem;
+	}
+	.dis_price{
+		font-size:1.4rem;
+		&::first-letter{
+			font-size:1rem;
+		}
+	}
+	.dis_af_price{
+		font-size:2.5rem;
+		&::first-letter{
+			font-size:1.5rem;
+		}
+	}
+	.item.sm{
+		padding:10px;
+		.photo{
+			img{
+				max-width:120px;
+			}
 		}
 		.name{
-			height:28px;
+			height: 64px;
+			margin:0 15px 15px 0;
+			font-size:1rem;
+		}
+		.cupn{
+			margin:0;
+		}
+		.nor{
+			margin: 0;
+		}
+		.nor_t, .dis_t{
+			font-size:1rem;
+		}
+		.nor_price{
+			font-size:1rem;
+			&::first-letter{
+				font-size:.7rem;
+			}
+		}
+		.dis{
+			margin:0;
+		}
+		.dis_af{
+			font-size:1rem;
+		}
+		.dis_price{
+			font-size:1rem;
+			&::first-letter{
+				font-size:.9rem;
+			}
+		}
+		.dis_af_price{
+			font-size:1.2rem;
+		}
+	}
+}
+@media (max-width: 460px) {
+	.cupn_ticket{
+		width: 100px;height:42px;
+	}
+	.cupn_bg{
+		width:94px;height:38px;
+		font-size:.7rem;
+	}
+	.cupn_price{
+		font-size:1rem;
+		&::first-letter{
+			font-size:.7rem;
+		}
+	}
+	.dis{
+		img{
+			width:15px;
+			height: auto;
+		}
+	}
+	.nor_t, .dis_t{
+		font-size:1.2rem;
+	}
+	.nor_price{
+		font-size:1.2rem;
+		&::first-letter{
+			font-size:.7rem;
+		}
+	}
+	.dis_af{
+		font-size:1.2rem;
+	}
+	.dis_price{
+		font-size:1.2rem;
+		&::first-letter{
+			font-size:.7rem;
+		}
+	}
+	.dis_af_price{
+		font-size:2rem;
+		&::first-letter{
+			font-size:1.2rem;
+		}
+	}
+	.item.sm{
+		.info{
+			margin:0 0 0 5px;
+		}
+		.name{
+			margin: 0 5px 15px 0;
+		}
+		.nor_t, .dis_t{
 			font-size:.7rem;
 		}
 		.nor_price{
-			margin:0 -8px 0 -8px;
-			transform: scale(.6);
+			margin:0;
+			font-size:.7rem;
+			&::first-letter{
+				font-size:.7rem;
+			}
+		}
+		.dis_price{
+			font-size:.7rem;
+			&::first-letter{
+				font-size:.7rem;
+			}
+		}
+		.dis_af{
+			font-size:.7rem;
+		}
+		.dis_af_price{
+			font-size:1rem;
+			&::first-letter{
+				font-size:.7rem;
+			}
+		}
+	}
+}
+@media (max-width: 395px) {
+	.dis{
+		img{
+			width:12px;
+			height: auto;
+		}
+	}
+	.name{
+		height:47px;
+		font-size: 1.3rem;
+	}
+	.nor{
+		margin:0 0 -5px;
+	}
+	.nor_t, .dis_t{
+		font-size:.85rem;
+	}
+	.dis_af_price{
+		font-size:1.5rem;
+		&::first-letter{
+			font-size:1rem;
+		}
+	}
+	.item.sm{
+		.photo{
+			img{
+				max-width:100px;
+			}
+		}
+		.name{
+			height: 55px;
+			font-size:.8rem;
 		}
 	}
 }
