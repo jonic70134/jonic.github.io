@@ -42,6 +42,29 @@ html
                 +item('580_01')
                 +item('580_02')
             .items
+                a.item.sm(href='#')
+                        .photo
+                            img(src='img/250_01.jpg', alt='商品名稱', title='商品名稱')
+                        .info
+                            .cupn
+                                h3.name 商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品
+                                .cupn_block
+                                    .cupn_t 個人對品折價券
+                                    .cupn_ticket
+                                        .cupn_bg
+                                            .cupn_dur 07/13 23:59止
+                                            .cupn_price $1,000 
+                            .nor
+                                .nor_t 市價
+                                .nor_price $999,99
+                            .dis
+                                .dis_net
+                                    .dis_t 網路價
+                                    .dis_price $299,99
+                                img(src="img/cupn_arrow.svg")
+                                .dis_net
+                                    .dis_af 折後
+                                    .dis_af_price $298,99
                 mixin item(prod_pic)
                     a.item.sm(href='#')
                         .photo
@@ -66,7 +89,6 @@ html
                                 .dis_net
                                     .dis_af 折後
                                     .dis_af_price $298,999
-                +item('250_01')
                 +item('250_02')
                 +item('250_03')
                 +item('250_04')

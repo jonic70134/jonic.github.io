@@ -92,11 +92,11 @@ img{
 	}
 }
 .title{
-	padding:15px 0 10px;
+	padding: 15px 0 20px;
 	text-align: center;
 	color:black;
 	background-color: white;
-	font-size:2.5rem;
+	font-size:3.5rem;
 	letter-spacing: 2px;
 }
 .sub_txt{
@@ -477,6 +477,9 @@ img{
 			height: 74px;
 			font-size: 1.15rem;
 		}
+		.nor{
+			margin: 0 0 -10px;
+		}
 		.nor_t, .dis_t{
 			font-size:.8rem;
 			&::first-letter{
@@ -509,7 +512,7 @@ img{
 		}
 	}
 }
-@media (min-width:748px) and (max-width: 1023px) {
+@media (min-width:748px) and (max-width: 1100px) {
 	.cupn_t{
 		margin: 0 0 5px;
 		font-size:.9rem;
@@ -672,6 +675,9 @@ img{
 	}
 }
 @media (max-width: 747px) {
+	.title{
+		font-size:2.5rem;
+	}
 	.items{
 		margin: 0 20px;
 	}
@@ -682,10 +688,19 @@ img{
 	.item.sm{
 		margin:0 0 20px;
 	}
+	.cupn_dur{
+		margin: 0 0 -2px;
+	}
 }
 
 
 @media (max-width: 655px) {
+	.title{
+		font-size:2rem;
+	}
+	.saletime{
+		font-size:1rem;
+	}
 	.cupn_block{
 		margin:0 10px 0 0;
 	}
@@ -824,6 +839,9 @@ img{
 	}
 }
 @media (max-width: 460px) {
+	.title{
+		font-size:1.5rem;
+	}
 	.cupn_ticket{
 		width: 100px;height:42px;
 	}
