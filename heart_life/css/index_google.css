@@ -779,6 +779,9 @@ img {
     font-size: 0.7rem;
   }
 
+  .item.sm .cupn {
+    margin: 0;
+  }
   .item.sm .info {
     margin: 0 0 0 5px;
   }
