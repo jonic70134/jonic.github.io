@@ -1,0 +1,116 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/item.css', rel='stylesheet')
+		script(type='application/ld+json').
+			{
+			"@context": "http://schema.org",
+			"@type": "Product",
+			"name": "送無線充電版多選一+Targus Newport 15吋拉繩後背包-時尚黑 iPhone XR 紅色(PRODUCT)",
+			"description": "擁有 iPhone 歷來最持久的電池續航力 最快的效能表現、防潑抗水能力 媲美攝影棚等級的照片與 4K 影片 #iphone #iphoneXR",
+			"url": "https://baichian.com.tw/item.html",
+			"image": "img/sample/XRred.jpg",
+			"offers": {
+			"@type": "AggregateOffer",
+			"lowPrice": "195.000",
+			"highPrice": "199.000",
+			"priceCurrency": "TWD",
+			"seller": {
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"name": "APPLE",
+			"url": "https://www.apple.com/tw",
+			"image": ""
+			},
+			"availability": "http://schema.org/InStock"
+			},
+			}
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug
+			.sub_head
+				.container
+					include src/_menu.pug
+					.breadcrumb
+						a.link(href="index.html") 首頁
+						span >
+						a.link(href="index.html") 家電.數位.3C.
+						span >
+						a.link(href="index.html") 智慧型手機
+						span > iphone
+			.site-main(role='main')
+				.pc-item-main
+					.container
+						.item_frame
+							.item_full
+								include src/_item_slider.pug
+								.info
+									.comtag 巨城購物中心
+									// 商品名稱
+									h1.name 送無線充電版多選一+Targus Newport 15吋拉繩後背包-時尚黑 iPhone XR 紅色(PRODUCT)
+									// 留言、購買狀態
+									.buyer_st
+										p 99999人已購買
+										p 333則留言
+										p
+											i.icon.icon_track_plus 933
+									// 售價
+									.item_line.hide_prod
+										.dur 個人專屬特價期間07/10~07/13止
+									.item_line.payinfo
+										.item_line
+											.pay_dis.ori
+												.title 原價
+												.price $195,000
+											.pay_dis
+												.title.cole00 限時特價
+												.price $195,000
+										a(href="#").btn-fav.icon.icon_track
+											| 追蹤商品
+									// 簡介
+									.feature
+										ul.feature_list
+											li 擁有 iPhone 歷來最持久的電池續航力
+											li 最快的效能表現、防潑抗水能力
+											li 媲美攝影棚等級的照片與 4K 影片
+									.shop_btn_block.item_line
+										.shop_btn
+											.quantity
+												span.quantity-decrease
+													i.icon.icon_minus
+												input.quantity-input(type='text', value='1', max='99', title='請輸入購買量')
+												span.quantity-increase
+													i.icon.icon_plus
+											button.button.large.btn-imd 立即結帳
+											button.button.large.btn-cart 加入購物車
+				// 商品說明
+				include src/_item_detail.pug
+				// 相關商品
+				include src/_item_relative.pug
+			include src/_foot.pug
+			.lightbox
+				.hide_prod_t
+					.pay_dis.ori
+						.title 原價
+						.price $195,000
+					.pay_dis
+						.title 限時特價
+						.price $188,000
+				.hide_des
+					p 限時特價已截止
+					small 如要購買此商品，請點擊下方按鈕
+				.hide_btn
+					button.button.btn-cancel(type='button', onclick='$.fancybox.close()') 回首頁
+					button.button.btn-order(type='button', onclick='$.fancybox.close()') 我要訂購
+
+			script(src='js/3rd-party/jquery-3.6.0.min.js')
+			script(src='js/3rd-party/swiper-bundle.min.js')
+			script(src='js/3rd-party/lity.min.js')
+			script(src='js/item.js')
+			script.
+				$(document).ready(function() {
+					var lightbox = lity('.lightbox');
+				});
+

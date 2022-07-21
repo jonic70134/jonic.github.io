@@ -1,0 +1,99 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/crazy.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug
+			.sub_head
+				.container
+					include src/_menu.pug
+					.breadcrumb
+						a.link(href="index.html") 首頁
+						span > 瘋最夯  
+			// 各品牌分類
+			.site-main.clearfix(role='main')
+				.container
+					.cate_main
+						.items
+							.sort
+								label(for="sort1")
+									input(type="radio", name="sort" ,value="1", id="sort1" ,checked="checked")
+									span.checkmark
+									p 暢銷排行
+								label(for="sort2")
+									input(type="radio", name="sort" ,value="2", id="sort2")
+									span.checkmark
+									p 最新上架
+								label(for="sort3")
+									input(type="radio", name="sort" ,value="3", id="sort3")
+									span.checkmark
+									p 價格由高到低
+								label(for="sort4")
+									input(type="radio", name="sort" ,value="4", id="sort4")
+									span.checkmark
+									p 價格由低到高
+							mixin cateimg(src,price)
+								.item
+									a.photo(href="#")
+										img(src='img/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
+									.info
+										a(href="#")
+											h3.name SONY 3.1聲道 Dolby Atmos環繞音響 Soundbar 家庭劇院 HT-G700
+										.oth-info
+											.price=price
+											a.cart(href='#')
+												i.icon.icon_cart
+												i.icon.icon_cart_arrow
+											a.track(href='#')
+												i.icon.icon_track
+							+cateimg('item_019','99,999')
+							+cateimg('item_01','999,999')
+							+cateimg('item_02','999,999')
+							+cateimg('item_03','9,999')
+							+cateimg('item_04','999,999')
+							+cateimg('item_019','99,999')
+							+cateimg('item_01','999,999')
+							+cateimg('item_02','999,999')
+							+cateimg('item_03','9,999')
+							+cateimg('item_04','999,999')
+							+cateimg('item_019','99,999')
+							+cateimg('item_01','999,999')
+							+cateimg('item_02','999,999')
+							+cateimg('item_03','9,999')
+							+cateimg('item_04','999,999')
+						.loader
+							a.btn-load(href="#")
+								p 更多商品
+								i.icon.icon_refresh
+					// 相關商品
+					.pc-item-related
+						.related-title 推薦給您：
+						.items
+						mixin item(prod_pic)
+							a.item(href='item.html')
+								p.photo
+									span.float
+									img(src='img/sample/'+ prod_pic+'.jpg', alt='商品名稱', title='商品名稱')
+								.info
+									h3.name(itemprop='name') 環繞音響家庭劇院
+									.relative_price 
+										.currency $
+										.price 999,999
+						+item('05_01_182')
+						+item('05_02_182x240')
+						+item('05_03_182')
+						+item('05_04_182x240')
+						+item('05_05_182')
+						+item('05_06_182x240')
+						+item('05_07_182')
+						+item('05_08_182x240')
+						+item('05_09_182x240')
+						+item('05_10_182')
+						+item('05_11_182x240')
+						
+			include src/_foot.pug
+			script(src='js/3rd-party/jquery-3.6.0.min.js')
+			script(src='js/crazy.js')

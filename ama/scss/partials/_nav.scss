@@ -1,0 +1,39 @@
+.nav{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 40px;
+    .first,.end{
+        border: 1px solid #ccc;
+    }
+    a{
+        display: block;
+        min-width: auto;
+        padding: 9px 13px;
+        text-align: center;
+        font-size: .75rem;
+        color: #333;
+        border: 1px solid #ccc;
+        border-right:none;
+        @include border-radius(5px);
+        &.active{
+            color: white;
+            background-color: #f5281e;
+            border:none;
+        }
+    }
+    .next{
+        margin:0 15px 0 0;
+        border: 1px solid #ccc;
+        @include border-radius(0 5px 5px 0);
+    }
+    .prev{
+        margin:0 0 0 15px;
+        @include border-radius(5px 0 0 5px);
+    }
+    .page_num_block{
+        display: flex;
+        .nav_page_num{
+            @include border-radius(0);
+        }
+    }
+}
