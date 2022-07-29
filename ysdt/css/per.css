@@ -1023,50 +1023,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 10px;
 }
 
-.cupn {
+.cupn_con {
   position: relative;
-  margin-top: 20px;
-  padding: 0 18px;
+  margin: 15px 0 0;
+  padding: 0 20px;
 }
-.cupn.single {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-}
-.cupn .cupn_t {
-  margin: 0 0 5px;
-}
-.cupn .cupn_slide {
-  overflow: hidden;
-}
-.cupn .swiper-slide {
-  color: white;
-}
-.cupn .swiper-slide .cupn_bg {
-  margin: 0;
-}
-.cupn .swiper-slide .cupn_info {
-  padding: 0 30px 0 10px;
-}
-.cupn .swiper-button-prev {
+.cupn_con .swiper-button-prev {
   left: 0;
 }
-.cupn .swiper-button-next {
-  right: 0;
-}
-.cupn .cupn-next-black {
-  position: absolute;
-  top: 36%;
-  right: 12px;
-  font-size: 2rem;
-  z-index: 5;
-  cursor: pointer;
-}
-.cupn .cupn_bg {
+
+.cupn_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1074,90 +1040,13 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  margin: 0 30px 30px 0;
-  cursor: pointer;
+  padding: 8px;
+  background-color: #333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.cupn .cupn_bg .cupn_prod_img {
-  background-color: black;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  border-radius: 10px;
-}
-.cupn .rice .cupn_prod_img, .cupn .rice .cupn_info {
-  border: 2px solid #ddd5cc;
-  background-color: #ece8df;
-}
-.cupn .rice .cupn_prod_img {
-  margin-right: 1px;
-}
-.cupn .rice .cupn_info {
-  padding: 0 36px 0 8px;
-}
-.cupn .rice .cupn_img {
-  margin: 10px 12px;
-}
-.cupn .rice .cupn_num {
-  color: #00f;
-}
-.cupn .rice .nor {
-  color: #888;
-}
-.cupn .rice .name {
-  height: 30px;
-  margin: 8px 0 13px;
-  color: black;
-  white-space: normal;
-}
-.cupn .rice .cupn_price .title, .cupn .rice .cupn_price .price {
-  color: #d00;
-}
-.cupn .cupn_img {
-  width: 80px;
-  height: 80px;
-  margin: 12px 14px;
-  border: 3px solid white;
-}
-.cupn .expired {
-  position: relative;
-}
-.cupn .expired .expired_bg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 80px;
-  height: 40px;
-  background: -o-linear-gradient(45deg, red 25%, white 0, white 50%, red 0, red 75%, white 0);
-  background: linear-gradient(45deg, red 25%, white 0, white 50%, red 0, red 75%, white 0);
-  background-size: 6px 6px;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  opacity: 0.7;
-}
-.cupn .expired .cupn_img {
-  opacity: 0.9;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
-}
-.cupn .expired span {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -14px;
-  width: 80px;
-  height: 28px;
-  line-height: 28px;
-  color: red;
-  font-size: 1.4rem;
-  text-align: center;
-  background: white;
-}
-.cupn .cupn_info {
+
+.info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1165,122 +1054,201 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 38px 0 10px;
-  border-left: 1px solid #999;
-  background-color: black;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  border-radius: 10px 0 0 10px;
-}
-.cupn .cupn_dur {
-  margin: 0 0 2px;
-  font-size: 0.8rem;
-  color: #aaa;
-  line-height: 1.2;
-}
-.cupn .cupn_dur span {
-  font-size: 0.8rem;
-}
-.cupn .cupn_num {
-  margin: 6px 0 0 0;
-  color: #ffc;
-  font-size: 0.6rem;
-  white-space: nowrap;
-  font-family: "新細明體", "PMingLiU";
-}
-.cupn .name {
-  display: block;
-  width: 165px;
-  margin: 10px 0 13px;
-  font-size: 0.9rem;
-  color: white;
-  white-space: nowrap;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-}
-.cupn .nor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin: 0 0 -5px 0;
-  font-size: 0.7rem;
-  color: #aaa;
-}
-.cupn .del {
-  margin-left: 3px;
-  color: #999;
-}
-.cupn .cupn_price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin: 8px 0;
-  font-family: sans-serif;
-}
-.cupn .cupn_price .title {
-  color: #f77;
-  font-size: 0.8rem;
-}
-.cupn .cupn_price .price {
-  margin-left: 5px;
-  color: #ff0;
+  margin: 0 0 0 8px;
 }
 
-.cupn_share {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
+.photo {
+  display: block;
+}
+
+.cupn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 5px 0 0;
+}
+
+.cupnimg {
+  display: block;
+  width: 104px;
+  border: 2px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cupn_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+      -ms-flex-flow: column;
+          flex-flow: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 4px;
-  border: 5px solid black;
-  background-color: #ebe8df;
 }
-.cupn_share .icon {
-  margin: 0 0 10px;
-  color: black;
-  font-size: 1.5rem;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  border-radius: 0;
+
+.cupn_t {
+  margin: 0 0 6px;
+  color: #f5c5c5;
+  font-size: 0.7rem;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
-.cupn_share .icon:last-child {
-  margin: 0;
+
+.cupn_ticket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 91px;
+  height: 39px;
+  margin: 0 6px 0 0;
+  font-size: 0.7rem;
+  background: #f5c5c5 url("../img/cupn_frame.svg") no-repeat center center;
+  border: 2px solid #f5c5c5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cupn_dur {
+  color: #555;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.cupn_price {
+  margin: 2px 0 0;
+  color: #ee6262;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.cupn_price::first-letter {
+  font-size: 0.7rem;
+}
+
+.cupn .name {
+  height: 51px;
+  margin: 0 15px 0 0;
+  font-size: 0.9rem;
+  color: white;
+  line-height: 1.2;
+  word-break: break-word;
+  overflow: hidden;
+}
+.cupn .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.nor, .dis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.nor {
+  margin: 0 0 -8px;
+}
+
+.nor_t, .dis_t {
+  margin: 0 5px 0 0;
+  color: #888;
+  font-size: 0.7rem;
+}
+
+.nor_price {
+  text-decoration: line-through;
+}
+
+.nor_price {
+  margin: 0 8px 0 0;
+  font-size: 0.8rem;
+  color: #888;
+  text-decoration: line-through;
+}
+.nor_price::first-letter {
+  font-size: 0.7rem;
+}
+
+.dis {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.dis img {
+  width: 14px;
+  margin: 0 2px;
+}
+
+.dis_net {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.dis_price {
+  color: #f77;
+  font-size: 1rem;
+}
+.dis_price::first-letter {
+  font-size: 0.7rem;
+}
+
+.dis_af {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.dis_af_price {
+  color: #ff0;
+  font-size: 1.2rem;
+}
+.dis_af_price::first-letter {
+  font-size: 0.7rem;
 }
 
 .items_bg {

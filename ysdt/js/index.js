@@ -1,7 +1,50 @@
+var duo1slide = new Swiper('.duo_1 .per_r', {
+    slidesPerView: 4,
+    slidesPerGroup: 8,
+    spaceBetween: 20,
+    grid: {
+        rows: 2,
+        fill: 'row',
+    },
+    navigation: {
+        nextEl: ".duo_1 .swiper-button-next",
+        prevEl: ".duo_1 .swiper-button-prev",
+    },
+});
+var duo2slide = new Swiper('.duo_2 .per_r', {
+    slidesPerView: 4,
+    slidesPerGroup: 8,
+    spaceBetween: 20,
+    grid: {
+        rows: 2,
+        fill: 'row',
+    },
+    navigation: {
+        nextEl: ".duo_2 .swiper-button-next",
+        prevEl: ".duo_2 .swiper-button-prev",
+    },
+});
+
+$('.cho_tab').click(function(){
+    var cho_tab_id = $(this).attr('data-chotab');
+    $('.cho_tab').removeClass('active');
+    $('.cho_info').removeClass('active');
+    $(this).addClass('active');
+    $("#"+cho_tab_id).addClass('active');
+});
+
+$('.rec_tab').click(function(){
+    var rec_tab_id = $(this).attr('data-rectab');
+    $('.rec_tab').removeClass('active');
+    $('.rec_info').removeClass('active');
+    $(this).addClass('active');
+    $("#"+rec_tab_id).addClass('active');
+});
+
 // 熱賣特選 slider
 var perslide = new Swiper('.hot_cho .per_r', {
     slidesPerView: 4,
-    spaceBetween: 0,
+    spaceBetween: 20,
     navigation: {
         nextEl: ".hot_cho .swiper-button-next",
         prevEl: ".hot_cho .swiper-button-prev",
@@ -9,9 +52,11 @@ var perslide = new Swiper('.hot_cho .per_r', {
 });
 // 夯品推薦 slider
 var recslide = new Swiper('.hot_rec .per_r', {
-    slidesPerView: 3.69,
+    slidesPerView: 3.7,
+    spaceBetween: 15,
     grid: {
         rows: 2,
+        fill: 'row',
     },
     navigation: {
         nextEl: ".hot_rec .swiper-button-next",
@@ -31,11 +76,16 @@ var specslide = new Swiper('.spec_slide', {
 
 // 個人禮券slider
 var cupnslide = new Swiper('.cupn_slide', {
-    slidesPerView: 3.6,
+    slidesPerView: 3.18,
+    slidesPerGroup: 6,
     spaceBetween: 15,
+    grid: {
+        rows: 2,
+        fill: 'row',
+    },
     navigation: {
-        nextEl: ".cupn .swiper-button-next",
-        prevEl: ".cupn .swiper-button-prev",
+        nextEl: ".cupn_con .swiper-button-next",
+        prevEl: ".cupn_con .swiper-button-prev",
       },
 });
 
