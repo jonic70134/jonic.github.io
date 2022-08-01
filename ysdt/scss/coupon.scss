@@ -11,6 +11,14 @@
 }
 .site-main{
     .container{
-        width:1110px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width:1130px;
+        margin: 20px auto;
     }
+}
+.cupn_item{
+    width: 32%;
+    margin: 0 0 20px 0;
 }

@@ -106,7 +106,7 @@ img {
 }
 
 .title {
-  padding: 15px 0 20px;
+  padding: 22px 0;
   text-align: center;
   color: black;
   background-color: white;
@@ -130,10 +130,14 @@ img {
   padding: 10px;
   text-align: center;
   font-size: 1.3rem;
+  line-height: 1.4;
   color: white;
   background-color: black;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+.saletime span {
+  color: #ff0;
 }
 
 .items_bg {
@@ -839,6 +843,9 @@ img {
 
   .saletime {
     font-size: 1rem;
+  }
+  .saletime p {
+    display: inline;
   }
 
   .cupn_block {

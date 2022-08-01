@@ -13,71 +13,43 @@ html
 					.breadcrumb
 						a.link(href="index.html") 首頁
 						span > 個人對品折價券  
-			// 主要版面
 			.site-main.clearfix(role='main')
 				.container
-					// 熱品推薦
-					.cupn.single
-						mixin cupnimg(src)
-							.cupn_block
-								a.cupn_bg(href='#')
-									.cupn_prod_img.expired
-										img.cupn_img(src='img/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
-										.fog
-										.expired_bg
-											span 已過期
-									.cupn_info
-										.cupn_num 折價券編號:AB1234567890
-										h3.name SEIKO精工 Premier 人動電能萬年曆手錶-42.9mm
-										.cupn_dur 01/06 今日對品禮券
-										.nor
-											span.title 原價
-											p.del 199,900
-										.cupn_price
-											span.title 限時特價
-											p.price  99,900
-										.cupn_share
-											i.icon.icon_share1
-											i.icon.icon_share2
-							.cupn_block
-								a.cupn_bg.rice(href='#')
-									.cupn_prod_img
-										img.cupn_img(src='img/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
-									.cupn_info
-										.cupn_num 推薦給您：
-										h3.name SEIKO精工 Premier 人動電能萬年曆手錶-42.9mm
-										.nor
-											span.title 原價
-											p.del 199,900
-										.cupn_price
-											span.title 網路價
-											p.price  99,900
-						+cupnimg('04_01_80')
-						-var j = 6;
-						- for (var i = 0; i < j; i++)
-							mixin cupnimg(src)
-								.cupn_block
-									a.cupn_bg(href='#')
-										.cupn_prod_img
-											img.cupn_img(src='img/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
-										.cupn_info
-											.cupn_num 折價券編號:AB1234567890
-											h3.name SEIKO精工 Premier 人動電能萬年曆手錶-42.9mm
-											.cupn_dur 01/06 今日對品禮券
-											.nor
-												span.title 原價
-												p.del 199,900
-											.cupn_price
-												span.title 限時特價
-												p.price  99,900
-											.cupn_share
-												i.icon.icon_share1
-												i.icon.icon_share2
-							+cupnimg('04_01_80')
-							+cupnimg('04_02_80')
-							+cupnimg('04_03_80')
-							+cupnimg('04_04_80')
-
+					mixin cupnimg(src)
+						a.cupn_item(href='#')
+							.photo
+								img.cupnimg(src='img/sample/'+ src +'.jpg', alt='商品名稱', title='商品名稱')
+							.info
+								.cupn
+									h3.name 商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品
+									.cupn_block
+										.cupn_t 個人對品折價券
+										.cupn_ticket
+											.cupn_dur 07/13 23:59止
+											.cupn_price $1,000 
+								.nor
+									.nor_t 市價
+									.nor_price $999,999
+								.dis
+									.dis_net
+										.dis_t 網路價
+										.dis_price $299,999
+									img(src="img/cupn_arrow.svg")
+									.dis_net
+										.dis_af 折後
+										.dis_af_price $298,999
+					+cupnimg('04_01_80')
+					+cupnimg('04_02_80')
+					+cupnimg('04_03_80')
+					+cupnimg('04_04_80')
+					+cupnimg('04_01_80')
+					+cupnimg('04_02_80')
+					+cupnimg('04_03_80')
+					+cupnimg('04_04_80')
+					+cupnimg('04_01_80')
+					+cupnimg('04_02_80')
+					+cupnimg('04_03_80')
+					+cupnimg('04_04_80')
 			include src/_foot.pug
 			script(src='js/3rd-party/jquery-3.6.0.min.js')
 			script(src='js/coupon.js')
