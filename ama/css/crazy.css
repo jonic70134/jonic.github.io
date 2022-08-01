@@ -425,6 +425,12 @@ h1, h2, h3, h4, h5, h6 {
 .site-header.bg_black .main_head {
   background: black;
 }
+.site-header.bg_brown {
+  background: #908165;
+}
+.site-header.bg_brown .main_head {
+  background: #908165;
+}
 .site-header.bg_pic {
   display: -webkit-box;
   display: -ms-flexbox;

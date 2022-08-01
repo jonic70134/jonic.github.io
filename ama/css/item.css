@@ -425,6 +425,12 @@ h1, h2, h3, h4, h5, h6 {
 .site-header.bg_black .main_head {
   background: black;
 }
+.site-header.bg_brown {
+  background: #908165;
+}
+.site-header.bg_brown .main_head {
+  background: #908165;
+}
 .site-header.bg_pic {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2544,7 +2550,7 @@ button.swiper-pagination-bullet {
   display: inline-block;
   margin-bottom: 5px;
   padding: 0 8px;
-  background-color: #9ce8f0;
+  background-color: #fde859;
   font-size: 0.8rem;
 }
 .pc-item-main h1.name {

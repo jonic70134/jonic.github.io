@@ -7,115 +7,115 @@
 @import "partials/page_item";
 @import "3rd-party/_swiper.scss";
 .swiper-container{
+    height: 100%; 
     position: relative;
     overflow: hidden;
-}
+  }
 .swiper-button-prev{
-    left:0px;
+    left:12px;
 }
 .swiper-button-next{
-    right: 0px;
+    right: 0;
 }
-
-.per{
+.pay_dis{
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: baseline;
+    color:$primary-color;
+    font-size:.9rem;
+    .price{
+        font-size:2rem;
+        color:$primary-color;
+        &::first-letter{
+            font-size:1.2rem;
+        }
+    }
+}
+.price{
+    &::first-letter{
+        font-size:.7rem;
+    }
+}
+.per_dur{
+    position: relative;
+}
+.restock{
+    position: absolute;left:0;bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size:.9rem;
+    letter-spacing: 2px;
+    color:white;
+    background: rgba($color: #000000, $alpha: .7);
+}
+.btn-imd{
+    width: 180px;
+    padding: 10px 0 10px 10px;
+    font-size: .9rem;
+    letter-spacing: 6px;
+    border: none;
+    color: white;
+    background-color: $primary-color;
+    cursor: pointer;
+    line-height: 1;
+    align-self:center;
+}
+.per_info{
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    width:100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+.per_l{
+    display: flex;
+    flex-flow: column;
+    width:460px;
+    border-right:1px solid #ccc;
+    background-color: #ece8df;
+}
+.per_price{
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: baseline;
+    color:$price;
+    font-size:1rem;
+    font-weight: 700;
+    .title{
+        font-size:.8rem;
+    }
+    .rush{
+        margin-left:10px;
+        color:#06c;
+        font-size:.8rem;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+// slider
+.per_duoslide{
     margin:15px 0 0;
     position: relative;
-    &.hot_rec{
-        .per_r{
-            padding:7px 25px;
-        }
-        .per_block{
-            width: 181px;
-            margin:7px 0;
-        }
-        .per_buy{
-            background: #ddf1ff;
-        }
-        .per_info{
-            border-top: 5px solid #09f;
-            border-bottom: 5px solid #09f;
-        }
-        .edg_pic{
-            background: url('../img/edge_b.png') no-repeat;
-        }
-        .swiper-wrapper{
-            flex-direction: initial;
-        }
-        .per_r_info{
-            margin-left:5px;
-        }
-        .per_r{
-            img{
-                max-width: 100px;
-                max-height: 100px;
-                border:3px solid #e5e5e5;
-                @include border-radius(10px)
-            }
-            .per_block{
-                display: flex;
-                flex-flow: row nowrap;
-            }
-            .name{
-                height: 48px;
-            }
-            .swiper-slide{
-                height: 110px !important;
-            }
-        }
-        .swiper-button-next,.swiper-button-prev{
-            width: 15px;
-            height: 100%;
-            top: 12px;
-            background-color: white;
-        }
-        .swiper-button-next{
-            padding-left: 10px;
+    &.duo_2{
+        background-color: #ece8df;
+        .per_l{
+            border:none;
         }
     }
-    .edg_pic{
-        position: absolute;top:0;left:0;
-        width: 225px;height: 40px;
-        background: url('../img/edge.png') no-repeat;
-        z-index: 10;
-        p{
-            position: absolute;top: 10px;left: 50px;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-        span{
-            color:#ff0;
-        }
-    }
-    .per_t{
-        padding:7px 0 7px;
-        color:#ffa;
-        font-size:.98rem;
+    .per_l{
+        padding: 15px;
     }
     .per_img{
         display: block;
-        width:250px;
-        height:250px;
+        width:360px;
+        height:360px;
         background-color: white;
     }
-    .per_info{
-        display: flex;
-        flex-flow: row nowrap;
-        position: relative;
-        width:100%;
-        border-top: 5px solid #f30;
-        border-bottom: 5px solid #f30;
-    }
-    .per_l{
-        display: flex;
-        flex-flow:row nowrap;
-        width:460px;
-        border-right:1px solid #ccc;
-    }
     .name{
-        height: 68px;
-        margin:30px 0 20px;
+        height: 46px;
+        margin:0 0 20px;
         font-size:1.2rem;
         color:#000;
         line-height: 1.2;
@@ -123,75 +123,26 @@
         overflow: hidden;
     }
     .per_buy{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        align-items: center;
-        width:175px;
-        padding:35px 10px 10px;
-        background: #f8e5e8;
+        padding:10px;
+        background: white;
         .currency{
             font-size:1.2rem;
         }
-        .dur{
-            margin-bottom: 10px;
-            font-size: 1.25rem;
-            line-height: 1.2;
-            color:#ffa;
-            letter-spacing: 1px;
-            font-family: sans-serif;
-            span{
-                font-size:.9rem;
-            }
-        }
         .per_price{
-            display: flex;
-            flex-flow: column nowrap;
-        }
-        .nor{
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: flex-end;
-            margin:0 10px 0 0;
-            font-size:.9rem;
-            color:#888;
-        }
-        .del{
-            margin-left:3px;
-            color:#888;
-            font-size:1.3rem;
-        }
-        .pay_dis{
-            display:flex;
-            flex-flow:row wrap;
-            flex-basis:100%;
-            align-items: baseline;
-            color:$primary-color;
-            font-size:.9rem;
-            .price{
-                font-size:1.65rem;
-                color:$primary-color;
-            }
-            .btn-imd{
-                width: 100%;
-                margin-top:10px;
-                padding: 10px 0;
-                font-size: 1rem;
-                letter-spacing: 4px;
-                border: none;
-                color: white;
-                background-color: $primary-color;
-                cursor: pointer;
-                line-height: 1;
-                align-self:center;
+            justify-content: space-between;
+            &::first-letter{
+                .price{
+                    font-size:.7rem;
+                }
             }
         }
     }
     .per_block{
         width:160px;
-        margin:15px 17px 0;
+        margin:0 10px 15px;
     }
     .per_r{
+        padding:15px 28px 0;
         img{
             max-height: 160px;
             max-width: 160px;
@@ -204,27 +155,124 @@
         }
     }
 }
-.per_price{
-    display: flex;
-    flex-flow:row nowrap;
-    align-items: baseline;
-    color:$price;
-    font-size:.9rem;
-    font-weight: 700;
-    .title{
-        font-size:.8rem;
+
+// ----------------------
+.per{
+    margin:15px 0 0;
+    position: relative;
+    .swiper-wrapper{
+        flex-direction: initial;
     }
-    .currency{
-        font-size:.7rem;
+    .topic{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
     }
-    .rush{
-        margin-left:10px;
-        color:#06c;
-        font-size:.8rem;
-        font-weight: 700;
-        text-decoration: underline;
+    .tab_t{
+        width: 445px;
+        margin: 0 0 0 5px;
+        font-size:1.2rem;
+        letter-spacing: 1px;
+    }
+    .per_tab{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        width: 770px;
+        font-size:.9rem;
+        .active{
+            border-bottom: 3px solid $primary-color;
+        }
+    }
+    .tab{
+        cursor: pointer;
+    }
+    .per_img{
+        display: block;
+        width:250px;
+        height:250px;
+    }
+    .per_info{
+        display: none;
+        &.active{
+            display: flex;
+        }
+    }
+    .per_l{
+        flex-flow: row nowrap;
+    }
+    .name{
+        height: 68px;
+        margin:20px 0;
+        font-size:1.2rem;
+        color:#000;
+        line-height: 1.2;
+        word-break: break-word;
+        overflow: hidden;
+    }
+    .per_buy{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        padding:10px;
+        background-color: #f5f1e8;
+    }
+    .pay_dis{
+        .price{
+            margin:10px 0;
+            &::first-letter{
+                font-size:1.2rem;
+            }
+        }
+    }
+    .per_r{
+        padding:10px 17px;
+        img{
+            max-height: 160px;
+            max-width: 160px;
+        }
+        .name{
+            margin:10px 0 5px;
+            height:30px;
+            color:#888;
+            font-size:.8rem;
+        }
+    }
+    &.hot_rec{
+        .per_r{
+            padding:15px 25px;
+        }
+        .per_r_info{
+            margin-left:5px;
+        }
+        .per_r{
+            img{
+                max-width: 100px;
+                max-height: 100px;
+                border:3px solid #e5e5e5;
+                border-radius: 10px;
+                box-sizing: border-box;
+            }
+            .per_block{
+                display: flex;
+                flex-flow: row nowrap;
+            }
+            .name{
+                height: 48px;
+            }
+        }
+        .swiper-button-prev{
+            left:3px;
+        }
+        .swiper-button-next{
+            top: 15px; 
+            height: 100%;
+            padding: 0 5px;
+            background: white;
+        }
     }
 }
+
 .ad_banner{
     margin-top:15px;
     img{
@@ -234,7 +282,6 @@
 .spec_prod{
     margin:15px 0 0;
     background-color:#ece8df;
-    @include border-radius(10px);
     .swiper-container{
         padding: 7px 25px;
     }
@@ -261,9 +308,6 @@
         padding:5px 10px 15px;
     }
     .per_price{
-        display: flex;
-        flex-flow: row nowrap;
-        color:$price;
         font-size:.9rem;
         font-weight: 500;
     }
@@ -287,7 +331,7 @@
         }
     }
 }
-.cupn_t,.item_t{
+.item_t{
     margin-top:40px;
     color:#888;
     font-size:1.1rem;

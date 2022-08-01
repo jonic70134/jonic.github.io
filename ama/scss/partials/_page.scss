@@ -270,13 +270,18 @@
 			background:black;
 		}
 	}
+	&.bg_brown{
+		background:#908165;
+		.main_head{
+			background:#908165;
+		}
+	}
 	&.bg_pic{
 		display: flex;
     	flex-flow: column;
     	justify-content: center;
 		height:122px;
 		background:#908165;
-		// background:#908165 url('../img/1220x120.jpg') no-repeat center center;
 		.main_head{
 			background:transparent;
 			padding: 8px 0 9px;
@@ -391,7 +396,7 @@
 	width: 250px;
 	font-size:2rem;
 	img{
-		width:200px;
+		width: 200px;
 	}
 }
 .avatar{
