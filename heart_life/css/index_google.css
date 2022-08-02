@@ -85,7 +85,6 @@ input, select {
 body {
   font-family: "微軟正黑體", "Microsoft JhengHei", arial, serif;
   height: 100%;
-  background-color: #eee;
 }
 
 /*==============================================================================================================================*/
@@ -105,11 +104,27 @@ img {
   border-radius: 0;
 }
 
+.head {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.logo img {
+  width: 200px;
+}
+
 .title {
   padding: 22px 0;
   text-align: center;
   color: black;
-  background-color: white;
   font-size: 3.5rem;
   letter-spacing: 2px;
 }
@@ -121,7 +136,6 @@ img {
   font-size: 0.8rem;
   line-height: 1.4;
   letter-spacing: 1px;
-  background-color: white;
 }
 
 .saletime {
@@ -795,6 +809,22 @@ img {
   }
   .item.sm .nor {
     margin: 0 0 -5px;
+  }
+}
+@media (max-width: 840px) {
+  .logo {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    margin: 5px 0;
+  }
+  .logo img {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .title {
+    padding: 0 0 10px;
   }
 }
 @media (min-width: 748px) and (max-width: 779px) {
