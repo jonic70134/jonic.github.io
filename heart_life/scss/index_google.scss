@@ -78,7 +78,6 @@ body {
 /*==============================================================================================================================*/
 img{
 	display: block;
-	width:100%;
 	border-radius: 10px;
 }
 .head_banner{
@@ -161,6 +160,7 @@ img{
     padding-top: 100%;
     overflow: hidden;
 	border-radius: 10px;
+	background: white;
 	img{
 		position: absolute;
 		left: 0;
