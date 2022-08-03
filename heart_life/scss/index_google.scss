@@ -311,12 +311,12 @@ img{
 	border-radius: 0;
 	.photo{
 		flex:2 1 32%;
-		max-width: 176px;
+		max-width: 180px;
 		padding-top:32% ;
 		border-radius: 0;
 		img{
 			display: block;
-			border:2px solid white;
+			height: 100%;
 			border-radius: 0;
 			box-sizing: border-box;
 		}
@@ -566,13 +566,13 @@ img{
 			font-size:1.5rem;
 		}
 	}
-	.item.sm{
-		.photo{
-			img{
-				max-width:140px;
-			}
-		}
-	}
+	// .item.sm{
+	// 	.photo{
+	// 		img{
+	// 			max-width:140px;
+	// 		}
+	// 	}
+	// }
 }
 @media (min-width:748px) and (max-width: 965px) {
 	.item{
@@ -580,11 +580,11 @@ img{
 	}
 	.item.sm{
 		padding:10px;
-		.photo{
-			img{
-				max-width:130px;
-			}
-		}
+		// .photo{
+		// 	img{
+		// 		max-width:130px;
+		// 	}
+		// }
 		.nor{
 			margin:0 0 -5px;
 		}
@@ -701,11 +701,11 @@ img{
 		}
 	}
 	.item.sm{
-		.photo{
-			img{
-				max-width:100px;
-			}
-		}
+		// .photo{
+		// 	img{
+		// 		max-width:100px;
+		// 	}
+		// }
 		.dis{
 			img{
 				width:10px;
@@ -842,11 +842,11 @@ img{
 	}
 	.item.sm{
 		padding:10px;
-		.photo{
-			img{
-				max-width:120px;
-			}
-		}
+		// .photo{
+		// 	img{
+		// 		max-width:120px;
+		// 	}
+		// }
 		.name{
 			height: 64px;
 			margin:0 15px 15px 0;
@@ -989,11 +989,11 @@ img{
 		}
 	}
 	.item.sm{
-		.photo{
-			img{
-				max-width:100px;
-			}
-		}
+		// .photo{
+		// 	img{
+		// 		max-width:100px;
+		// 	}
+		// }
 		.name{
 			height: 55px;
 			font-size:.8rem;
