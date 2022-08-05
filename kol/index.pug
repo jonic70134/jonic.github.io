@@ -1,0 +1,69 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
+        title KOL  
+        meta(content='KOL', name='description')
+        meta(content='width=device-width, initial-scale=1.0', name='viewport')
+        link(href='css/index.css', rel='stylesheet')
+
+        script(src='js/3rd-party/jquery-3.6.0.min.js')
+        script(src='js/3rd-party/swiper-bundle.min.js')
+        script(src='js/index.js')
+    body
+        .kol_slide.swiper
+            .swiper-wrapper
+                mixin slider(src)
+                    .swiper-slide
+                        img(src='img/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
+                +slider('720main')
+                +slider('720main')
+                +slider('720main')
+                +slider('720main')
+                +slider('720main')
+                +slider('720main')
+                +slider('720main')
+                +slider('720main')
+                +slider('720main')
+                +slider('720main')
+            .swiper-button-prev
+            .swiper-button-next
+            .swiper-pagination
+        .kol
+            .line
+                .prod_info
+                    h1.name Miss Hana花娜小姐 妝素顏透亮霜 (素顏霜  / 玫瑰素顏霜) 30ml
+                    i.icon.icon_track
+                .pay_info
+                    .pay_block
+                        .nor
+                            .nor_t 市價
+                            .nor_price $999,999
+                        .dis
+                            .dis_t 網路價
+                            .dis_price $888,888
+                    a.btn_pay(href="#") 去付款
+            .line
+                .add_t 加購品
+                .add_block
+                    mixin add_prod(src)
+                        a(href="#").add_prod
+                            img.add_prod_img(src='img/'+ src+'.jpg', alt='加購品名稱')
+                            .add_price $9,999
+                    +add_prod('120_1')
+                    +add_prod('120_2')
+                    +add_prod('120_3')
+            .line
+                .gift 
+                    .gift_t 贈品
+                    .gift_con 贈品名稱贈品名稱 (不挑款)
+                    a.gift_chk(href="#") 查看
+                .gift 
+                    .gift_t 贈品
+                    .gift_con 贈品名稱贈品名稱 (不挑款)
+                    a.gift_chk(href="#") 查看
+                .gift 
+                    .gift_t 贈品
+                    .gift_con 贈品名稱贈品名稱 (不挑款)
+                    a.gift_chk(href="#") 查看
