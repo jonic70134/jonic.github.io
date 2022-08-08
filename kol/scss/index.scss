@@ -185,6 +185,7 @@ img{
 	}
 }
 .btn_pay{
+	display: block;
 	padding:10px 15px;
 	color:white;
 	background-color: #f5281d;
@@ -193,8 +194,8 @@ img{
 }
 
 // 加購
-.add_t{
-	margin: 0 0 10px;
+.add_t,.des_t{
+	margin: 5px 0 15px;
 }
 .add_block{
 	display: flex;
@@ -237,4 +238,34 @@ img{
 	margin:0 0 0 5px;
 	color:#06c;
 	text-decoration: underline;
+}
+.replace_t{
+	position: relative;
+	margin: 5px 0;
+	display: block;
+	color:black;
+	&:after{
+		content:'next';
+		display: block;
+		position: absolute;right:5px;top:50%;transform: translateY(-50%);
+		font-family: swiper-icons;
+		font-size: 1rem;
+		text-transform: none !important;
+		letter-spacing: 0;
+		text-transform: none;
+		font-variant: initial;
+		line-height: 1;
+	}
+}
+.bot_line{
+	text-align: right;
+}
+.btn_bot_pay{
+	display: inline-block;
+	margin: 20px 0;
+	padding:10px 30px;
+	color:white;
+	background-color: #f5281d;
+	border-radius: 20px;
+	letter-spacing: 4px;
 }

@@ -1,0 +1,149 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
+        title KOL  
+        meta(content='KOL', name='description')
+        meta(content='width=device-width, initial-scale=1.0', name='viewport')
+        link(href='css/chk.css', rel='stylesheet')
+
+        script(src='js/3rd-party/jquery-3.6.0.min.js')
+        script(src='js/3rd-party/swiper-bundle.min.js')
+        script(src='js/index.js')
+    body
+        .chk
+            .line
+                .prod_chk
+                    .prod_photo
+                        img.prod_img(src="img/720main.jpg", alt="")
+                    .prod_info
+                        h1.name Miss Hana花娜小姐 妝素顏透亮霜 30ml (素顏霜  / 玫瑰素顏霜)
+                        .prod_spec 
+                            .prod_spec_name 玫瑰素顏霜 30ml
+                            .prod_num x1
+                        .prod_price
+                            .dis
+                                .dis_t 網路價
+                                .dis_price $888,888
+                            .icon_trash
+                    
+            .line.total_block
+                .total
+                    .total_t 商品總金額：
+                    .total_price $888,888
+            .line
+                .title.pay_t 付款方式
+                .pay_way
+                    label.pay_way_lb(for="pay_way_1") 
+                        input#pay_way_1(type="radio", name="pay_way" checked="chedked")
+                        p LINE Pay
+                    label.pay_way_lb(for="pay_way_2") 
+                        input#pay_way_2(type="radio", name="pay_way")
+                        p 街口支付
+                    label.pay_way_lb(for="pay_way_3") 
+                        input#pay_way_3(type="radio", name="pay_way")
+                        p 信用卡
+            .line
+                mixin form(title,placeholder)
+                    .form
+                        .form_t=title
+                        .form_input
+                            input(type="text" placeholder=placeholder)
+                +form('訂購人姓名','請輸入姓名')
+                +form('手機','請輸入手機號碼')
+                +form('Email','請輸入Email')
+                hr
+                .form.same
+                    .form_t 收貨人姓名
+                    .form_input
+                        input(type="text" placeholder='請輸入姓名')
+                    .form_same
+                        <input type="checkbox" id="form_same" value="1"/>
+                        <label for="form_same">同訂購人</label>
+                +form('手機','請輸入手機號碼')
+                +form('Email','請輸入Email')
+                .form.addr
+                    .form_t 收貨地址
+                    .form_input
+                        .select_b
+                            select#county(name="")
+                                option(value="1") 台北市  
+                            select#distric(name="") 
+                                option(value="1") 內湖區
+                        input(type="text" placeholder='請輸入收貨地址')
+            .line.invoice
+                .title.inv_t 發票資訊
+                .invo_b
+                    .invo_per
+                        input#personal(type="radio", name="invo")
+                        label(for="personal") 個人電子發票(
+                            a.perbox(href="#perbox") 說明
+                        |)
+                    p.remind 中獎會主動寄出
+                    p.nortxt 如欲使用手機號碼載具，請於輸入框輸入驗證
+                    input.phone_invo_input(type="text",placeholder="/大寫英數字7碼 (共8個字元)" style="border: 1px solid #d00;")
+                    p.alert 手機號碼載具有誤，請重新輸入
+                hr
+                .invo_b
+                    .invo_per
+                        input#donate(type="radio", name="invo")
+                        label(for="donate") 發票捐贈(
+                            a.donatbox(href="#donatbox") 說明
+                        |)
+                    p.nortxt 伊甸基金會
+                hr
+                .invo_b
+                    .invo_per
+                        input#company(type="radio", name="invo")
+                        label(for="company") 公司電子發票 (
+                            a.combox(href="#combox") 說明
+                        |)
+                    .form
+                        .form_t 統一編號
+                        .form_input
+                            input(type="text" placeholder='請輸入統一編號共8碼')
+                    .form
+                        .form_t 公司名稱
+                        .form_input
+                            input(type="text" placeholder='請輸入公司完整名稱')
+            .line.note
+                .title.note_t 備註
+                .note_b
+                    textarea.note_area(name="", cols="20", rows="5" placeholder="有任何購買需求，請填寫在備註欄")
+            .agree
+                input#agree_box(type="checkbox") 
+                label(for="agree_box") 我已閱讀並同意《
+                    a(href="#") 購物約定條款
+                | 》
+            .bot_line
+                a.btn_bot_pay(href="#") 確認購買
+
+    .lightbox-target#perbox
+        .content
+            .con_t 個人電子發票
+            ul
+                li friDay購物已採用電子發票，開立後可至【訂單查詢】 點選「發票資訊」，即可查詢發票圖像。
+                li 電子發票會在開獎次日自動兌獎，如中獎會於次月5號 以紙本寄送【掛號信】至會員地址 (使用手機載具將由 財政部自動兌獎)。
+                li 依統一發票使用辦法規定： 統一發票一經開立，不得 任意更改或改開公司發票。(
+                    a(href="#") 財政部電子發票流程說明
+                    |)
+            a.box_btn(href="#") 確定
+    .lightbox-target#donatbox
+        .content
+            .con_t 發票捐贈
+            ul
+                li 依統一發票使用辦法規定： 統一發票一經開立，不得 任意更改或改開公司發票。(
+                    a(href="#") 財政部電子發票流程說明
+                    |)
+            a.box_btn(href="#") 確定
+    .lightbox-target#combox
+        .content
+            .con_t 公司電子發票
+            ul
+                li 如您需紙本發票，請至【訂單查詢】點選「發票資訊」 直接下載列印PDF。
+                li 依統一發票使用辦法規定： 統一發票一經開立，不得 任意更改或改開公司發票。(
+                    a(href="#") 財政部電子發票流程說明
+                    |)
+            a.box_btn(href="#") 確定
+    

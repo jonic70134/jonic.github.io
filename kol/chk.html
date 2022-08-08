@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>KOL  </title>
+    <meta content="KOL" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/chk.css" rel="stylesheet">
+    <script src="js/3rd-party/jquery-3.6.0.min.js"></script>
+    <script src="js/3rd-party/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="chk">
+      <div class="line">
+        <div class="prod_chk">
+          <div class="prod_photo"><img class="prod_img" src="img/720main.jpg" alt=""></div>
+          <div class="prod_info">
+            <h1 class="name">Miss Hana花娜小姐 妝素顏透亮霜 30ml (素顏霜  / 玫瑰素顏霜)</h1>
+            <div class="prod_spec"> 
+              <div class="prod_spec_name">玫瑰素顏霜 30ml</div>
+              <div class="prod_num">x1</div>
+            </div>
+            <div class="prod_price">
+              <div class="dis">
+                <div class="dis_t">網路價</div>
+                <div class="dis_price">$888,888</div>
+              </div>
+              <div class="icon_trash"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line total_block">
+        <div class="total">
+          <div class="total_t">商品總金額：</div>
+          <div class="total_price">$888,888</div>
+        </div>
+      </div>
+      <div class="line">
+        <div class="title pay_t">付款方式</div>
+        <div class="pay_way">
+          <label class="pay_way_lb" for="pay_way_1"> 
+            <input id="pay_way_1" type="radio" name="pay_way" checked="chedked">
+            <p>LINE Pay</p>
+          </label>
+          <label class="pay_way_lb" for="pay_way_2"> 
+            <input id="pay_way_2" type="radio" name="pay_way">
+            <p>街口支付</p>
+          </label>
+          <label class="pay_way_lb" for="pay_way_3"> 
+            <input id="pay_way_3" type="radio" name="pay_way">
+            <p>信用卡</p>
+          </label>
+        </div>
+      </div>
+      <div class="line">
+                <div class="form">
+                  <div class="form_t">訂購人姓名</div>
+                  <div class="form_input">
+                    <input type="text" placeholder="請輸入姓名">
+                  </div>
+                </div>
+                <div class="form">
+                  <div class="form_t">手機</div>
+                  <div class="form_input">
+                    <input type="text" placeholder="請輸入手機號碼">
+                  </div>
+                </div>
+                <div class="form">
+                  <div class="form_t">Email</div>
+                  <div class="form_input">
+                    <input type="text" placeholder="請輸入Email">
+                  </div>
+                </div>
+        <hr>
+        <div class="form same">
+          <div class="form_t">收貨人姓名</div>
+          <div class="form_input">
+            <input type="text" placeholder="請輸入姓名">
+          </div>
+          <div class="form_same"><input type="checkbox" id="form_same" value="1"/>
+<label for="form_same">同訂購人</label>
+          </div>
+        </div>
+                <div class="form">
+                  <div class="form_t">手機</div>
+                  <div class="form_input">
+                    <input type="text" placeholder="請輸入手機號碼">
+                  </div>
+                </div>
+                <div class="form">
+                  <div class="form_t">Email</div>
+                  <div class="form_input">
+                    <input type="text" placeholder="請輸入Email">
+                  </div>
+                </div>
+        <div class="form addr">
+          <div class="form_t">收貨地址</div>
+          <div class="form_input">
+            <div class="select_b">
+              <select id="county" name="">
+                <option value="1">台北市  </option>
+              </select>
+              <select id="distric" name=""> 
+                <option value="1">內湖區</option>
+              </select>
+            </div>
+            <input type="text" placeholder="請輸入收貨地址">
+          </div>
+        </div>
+      </div>
+      <div class="line invoice">
+        <div class="title inv_t">發票資訊</div>
+        <div class="invo_b">
+          <div class="invo_per">
+            <input id="personal" type="radio" name="invo">
+            <label for="personal">個人電子發票(<a class="perbox" href="#perbox">說明</a></label>)
+          </div>
+          <p class="remind">中獎會主動寄出</p>
+          <p class="nortxt">如欲使用手機號碼載具，請於輸入框輸入驗證</p>
+          <input class="phone_invo_input" type="text" placeholder="/大寫英數字7碼 (共8個字元)" style="border: 1px solid #d00;">
+          <p class="alert">手機號碼載具有誤，請重新輸入</p>
+        </div>
+        <hr>
+        <div class="invo_b">
+          <div class="invo_per">
+            <input id="donate" type="radio" name="invo">
+            <label for="donate">發票捐贈(<a class="donatbox" href="#donatbox">說明</a></label>)
+          </div>
+          <p class="nortxt">伊甸基金會</p>
+        </div>
+        <hr>
+        <div class="invo_b">
+          <div class="invo_per">
+            <input id="company" type="radio" name="invo">
+            <label for="company">公司電子發票 (<a class="combox" href="#combox">說明</a></label>)
+          </div>
+          <div class="form">
+            <div class="form_t">統一編號</div>
+            <div class="form_input">
+              <input type="text" placeholder="請輸入統一編號共8碼">
+            </div>
+          </div>
+          <div class="form">
+            <div class="form_t">公司名稱</div>
+            <div class="form_input">
+              <input type="text" placeholder="請輸入公司完整名稱">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line note">
+        <div class="title note_t">備註</div>
+        <div class="note_b">
+          <textarea class="note_area" name="" cols="20" rows="5" placeholder="有任何購買需求，請填寫在備註欄"></textarea>
+        </div>
+      </div>
+      <div class="agree">
+        <input id="agree_box" type="checkbox">
+        <label for="agree_box">我已閱讀並同意《<a href="#">購物約定條款</a></label>》
+      </div>
+      <div class="bot_line"><a class="btn_bot_pay" href="#">確認購買</a></div>
+    </div>
+  </body>
+  <div class="lightbox-target" id="perbox">
+    <div class="content">
+      <div class="con_t">個人電子發票</div>
+      <ul>
+        <li>friDay購物已採用電子發票，開立後可至【訂單查詢】 點選「發票資訊」，即可查詢發票圖像。</li>
+        <li>電子發票會在開獎次日自動兌獎，如中獎會於次月5號 以紙本寄送【掛號信】至會員地址 (使用手機載具將由 財政部自動兌獎)。</li>
+        <li>依統一發票使用辦法規定： 統一發票一經開立，不得 任意更改或改開公司發票。(<a href="#">財政部電子發票流程說明</a>)</li>
+      </ul><a class="box_btn" href="#">確定</a>
+    </div>
+  </div>
+  <div class="lightbox-target" id="donatbox">
+    <div class="content">
+      <div class="con_t">發票捐贈</div>
+      <ul>
+        <li>依統一發票使用辦法規定： 統一發票一經開立，不得 任意更改或改開公司發票。(<a href="#">財政部電子發票流程說明</a>)</li>
+      </ul><a class="box_btn" href="#">確定</a>
+    </div>
+  </div>
+  <div class="lightbox-target" id="combox">
+    <div class="content">
+      <div class="con_t">公司電子發票</div>
+      <ul>
+        <li>如您需紙本發票，請至【訂單查詢】點選「發票資訊」 直接下載列印PDF。</li>
+        <li>依統一發票使用辦法規定： 統一發票一經開立，不得 任意更改或改開公司發票。(<a href="#">財政部電子發票流程說明</a>)</li>
+      </ul><a class="box_btn" href="#">確定</a>
+    </div>
+  </div>
+</html>
