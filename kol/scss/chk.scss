@@ -79,11 +79,11 @@ body {
 /*==============================================================================================================================*/
 @font-face {
 	font-family: 'icomoon';
-	src:  url('../fonts/icomoon.eot?rxqewy');
-	src:  url('../fonts/icomoon.eot?rxqewy#iefix') format('embedded-opentype'),
-	url('../fonts/icomoon.ttf?rxqewy') format('truetype'),
-	url('../fonts/icomoon.woff?rxqewy') format('woff'),
-	url('../fonts/icomoon.svg?rxqewy#icomoon') format('svg');
+	src:  url('../fonts/icomoon.eot?h4pzcd');
+	src:  url('../fonts/icomoon.eot?h4pzcd#iefix') format('embedded-opentype'),
+	  url('../fonts/icomoon.ttf?h4pzcd') format('truetype'),
+	  url('../fonts/icomoon.woff?h4pzcd') format('woff'),
+	  url('../fonts/icomoon.svg?h4pzcd#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -210,11 +210,9 @@ img{
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
+	justify-content: space-around;
 	margin: 10px 0 5px;
 	font-size: .9rem;
-}
-.pay_way_lb{
-	margin: 0 30px 0 0;
 }
 .form{
 	display: flex;
@@ -247,6 +245,7 @@ img{
 .form_same{
 	display: flex;
 	align-items: center;
+	font-size:.8rem;
 }
 .invo_b{
 	margin: 10px 0 0;
@@ -306,7 +305,7 @@ img{
 .agree{
 	display: flex;
     align-items: center;
-	margin: 10px;
+	margin: 30px 10px 10px;
 	font-size:.8rem;
 	a{
 		color:#06c;
@@ -329,6 +328,8 @@ img{
 	letter-spacing: 4px;
 }
 
+
+// css lightbox
 .lightbox-target {
 	position: fixed;
 	top: -100%;
@@ -336,6 +337,7 @@ img{
 	background: rgba(0,0,0,.7);
 	opacity: 0;
 	overflow: hidden;
+	z-index: 50;
 	.con_t{
 		font-size:1rem;	
 		text-align: center;
@@ -357,11 +359,34 @@ img{
 		border: 3px solid #fff;
 		box-sizing: border-box;
 		box-shadow:0 0 8px rgba(0,0,0,.3);
+		line-height: 1.4;
+	}
+	.con_long{
+		height:350px;
+		margin:10px 0;
+		overflow: auto;
+		line-height: 1.6;
+		p{
+			color:#888;
+			font-size:.8rem;
+		}
+	}
+	.cont_ul,.con_sub_ul{
+		list-style:decimal outside;
+		margin:10px 0 20px 10px;
+		li{
+			margin:0 0 5px 12px;
+		}
+	}
+	.con_sub_ul{
+		list-style:upper-alpha outside;
+	}
+	.con_sub_t{
+		margin:10px 0;
 	}
 	ul{
 		display: block;
 		margin:20px 0;
-		line-height: 1.4;
 		list-style:disc outside;
 	}
 	li{
@@ -373,7 +398,9 @@ img{
 			text-decoration: underline;
 		}
 	}
-	
+	.con_end{
+		text-align: right;
+	}
 	&:target {
 		opacity: 1;
 		top: 0;

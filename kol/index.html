@@ -7,9 +7,6 @@
     <meta content="KOL" name="description">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="css/index.css" rel="stylesheet">
-    <script src="js/3rd-party/jquery-3.6.0.min.js"></script>
-    <script src="js/3rd-party/swiper-bundle.min.js"></script>
-    <script src="js/index.js"></script>
   </head>
   <body>
     <div class="kol_slide swiper">
@@ -25,8 +22,6 @@
                 <div class="swiper-slide"><img src="img/720main.jpg" alt="商品名稱" title="商品名稱"></div>
                 <div class="swiper-slide"><img src="img/720main.jpg" alt="商品名稱" title="商品名稱"></div>
       </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
       <div class="swiper-pagination"></div>
     </div>
     <div class="kol">
@@ -44,29 +39,29 @@
               <div class="dis_t">網路價</div>
               <div class="dis_price">$888,888</div>
             </div>
-          </div>
+          </div><a class="btn_pay" href="#spec">去付款</a>
         </div>
       </div>
       <div class="line">
         <div class="add_t">加購品</div>
-        <div class="add_block"><a class="add_prod" href="#"><img class="add_prod_img" src="img/120_1.jpg" alt="加購品名稱">
-                      <div class="add_price">$9,999</div></a><a class="add_prod" href="#"><img class="add_prod_img" src="img/120_2.jpg" alt="加購品名稱">
-                      <div class="add_price">$9,999</div></a><a class="add_prod" href="#"><img class="add_prod_img" src="img/120_3.jpg" alt="加購品名稱">
+        <div class="add_block"><a class="add_prod" href="#addpop"><img class="add_prod_img" src="img/120_1.jpg" alt="加購品名稱">
+                      <div class="add_price">$9,999</div></a><a class="add_prod" href="#addpop"><img class="add_prod_img" src="img/120_2.jpg" alt="加購品名稱">
+                      <div class="add_price">$9,999</div></a><a class="add_prod" href="#addpop"><img class="add_prod_img" src="img/120_3.jpg" alt="加購品名稱">
                       <div class="add_price">$9,999</div></a>
         </div>
       </div>
       <div class="line">
         <div class="gift"> 
           <div class="gift_t">贈品</div>
-          <div class="gift_con">贈品名稱贈品名稱 (不挑款)</div><a class="gift_chk" href="#">查看</a>
+          <div class="gift_con">贈品名稱贈品名稱 (不挑款)</div><a class="gift_chk" href="#giftpop">查看</a>
         </div>
         <div class="gift"> 
           <div class="gift_t">贈品</div>
-          <div class="gift_con">贈品名稱贈品名稱 (不挑款)</div><a class="gift_chk" href="#">查看</a>
+          <div class="gift_con">贈品名稱贈品名稱 (不挑款)</div><a class="gift_chk" href="#giftpop">查看</a>
         </div>
         <div class="gift"> 
           <div class="gift_t">贈品</div>
-          <div class="gift_con">贈品名稱贈品名稱 (不挑款)</div><a class="gift_chk" href="#">查看</a>
+          <div class="gift_con">贈品名稱贈品名稱 (不挑款)</div><a class="gift_chk" href="#giftpop">查看</a>
         </div>
       </div>
       <div class="line">
@@ -76,5 +71,159 @@
       <div class="line"><a class="replace_t" href="#">退換貨說明</a></div>
       <div class="bot_line"><a class="btn_bot_pay" href="chk.html">去付款</a></div>
     </div>
+    <div class="lightbox-target" id="spec">
+      <div class="light_box">
+        <div class="spec_t"><img class="spec_img" src="img/720main.jpg" alt="商品圖">
+          <div class="pay_box">
+            <div class="dis">
+              <div class="dis_t">網路價</div>
+              <div class="dis_price">$888,888</div>
+            </div>
+            <div class="more_dis">
+              <div class="more_dis_t">再折扣</div>
+              <div class="more_dis_price">$888</div>
+            </div>
+          </div>
+        </div>
+        <div class="spec_chos">
+          <div class="spec_chos_t">選規格</div>
+          <div class="spec_line">
+            <div class="spec_opt">
+              <input class="spec_radio" id="size1" type="radio" name="size" checked="checked">
+              <label class="spec_lb" for="size1">玫瑰素顏霜30ml</label>
+            </div>
+            <div class="spec_opt">
+              <input class="spec_radio" id="size2" type="radio" name="size">
+              <label class="spec_lb" for="size2">30ml x 2組</label>
+            </div>
+            <div class="spec_opt">
+              <input class="spec_radio" id="size3" type="radio" name="size">
+              <label class="spec_lb" for="size3">50ml</label>
+            </div>
+            <div class="spec_opt">
+              <input class="spec_radio" id="size4" type="radio" name="size">
+              <label class="spec_lb" for="size4">50ml x 2組</label>
+            </div>
+          </div>
+        </div>
+        <div class="spec_chos">
+          <div class="spec_chos_t">選顏色</div>
+          <div class="spec_line">
+            <div class="spec_opt">
+              <input class="spec_radio" id="color1" type="radio" name="color" checked="checked">
+              <label class="spec_lb" for="color1">黑色</label>
+            </div>
+            <div class="spec_opt">
+              <input class="spec_radio" id="color2" type="radio" name="color">
+              <label class="spec_lb" for="color2">紅色</label>
+            </div>
+            <div class="spec_opt">
+              <input class="spec_radio" id="color3" type="radio" name="color">
+              <label class="spec_lb" for="color3">藍色</label>
+            </div>
+            <div class="spec_opt">
+              <input class="spec_radio" id="color4" type="radio" name="color">
+              <label class="spec_lb" for="color4">白色</label>
+            </div>
+          </div>
+        </div>
+        <div class="buy_num">
+          <div class="buy_num_t">購買數量</div>
+          <div class="quantity">
+            <div class="quantity-decrease"><i class="icon icon_minus"></i></div>
+            <input class="quantity-input" type="text" value="1" max="99" title="請輸入購買量">
+            <div class="quantity-increase"><i class="icon icon_plus"></i></div>
+          </div>
+        </div>
+        <div class="add_list">
+          <div class="add_list_t">加購品</div>
+                    <div class="add_list_block">
+                      <div class="add_list_photo"><img class="add_list_img" src="img/120_1.jpg" alt="加購品"></div>
+                      <div class="add_list_info">
+                        <div class="add_list_name">加購品名稱加購品名稱加購品名稱加購品名稱</div>
+                        <div class="add_list_price">
+                          <div class="add_nor_price">$9,999</div>
+                          <div class="add_dis_price">$8,888</div>
+                        </div>
+                      </div>
+                      <div class="quantity">
+                        <div class="quantity-decrease"><i class="icon icon_minus"></i></div>
+                        <input class="quantity-input" type="text" value="1" max="99" title="請輸入購買量">
+                        <div class="quantity-increase"><i class="icon icon_plus"></i></div>
+                      </div>
+                    </div>
+                    <div class="add_list_block">
+                      <div class="add_list_photo"><img class="add_list_img" src="img/120_2.jpg" alt="加購品"></div>
+                      <div class="add_list_info">
+                        <div class="add_list_name">加購品名稱加購品名稱加購品名稱加購品名稱</div>
+                        <div class="add_list_price">
+                          <div class="add_nor_price">$9,999</div>
+                          <div class="add_dis_price">$8,888</div>
+                        </div>
+                      </div>
+                      <div class="quantity">
+                        <div class="quantity-decrease"><i class="icon icon_minus"></i></div>
+                        <input class="quantity-input" type="text" value="1" max="99" title="請輸入購買量">
+                        <div class="quantity-increase"><i class="icon icon_plus"></i></div>
+                      </div>
+                    </div>
+                    <div class="add_list_block">
+                      <div class="add_list_photo"><img class="add_list_img" src="img/120_3.jpg" alt="加購品"></div>
+                      <div class="add_list_info">
+                        <div class="add_list_name">加購品名稱加購品名稱加購品名稱加購品名稱</div>
+                        <div class="add_list_price">
+                          <div class="add_nor_price">$9,999</div>
+                          <div class="add_dis_price">$8,888</div>
+                        </div>
+                      </div>
+                      <div class="quantity">
+                        <div class="quantity-decrease"><i class="icon icon_minus"></i></div>
+                        <input class="quantity-input" type="text" value="1" max="99" title="請輸入購買量">
+                        <div class="quantity-increase"><i class="icon icon_plus"></i></div>
+                      </div>
+                    </div>
+        </div><a class="lightbox-close" href="#"></a><a class="btn_bot_pay" href="chk.html">確定</a>
+      </div>
+    </div>
+    <div class="lightbox-target" id="addpop">
+      <div class="addpop">
+        <div class="addpop_t">加購品</div>
+        <div class="addpop_photo"><img class="addpop_img" src="img/120_1.jpg" alt="加購品名稱"></div>
+        <div class="addpop_info">
+          <div class="add_list_name">加購品名稱加購品名稱加購品名稱加購品名稱加購品名稱加購品名稱加購品名稱加購品名稱加購品名稱加購品名稱</div>
+          <div class="addpop_price">
+            <div class="addpop_nor_t">原價</div>
+            <div class="addpop_nor_price">$9,999</div>
+            <div class="addpop_dis_t">加購價</div>
+            <div class="addpop_dis_price">$8,888</div>
+          </div>
+        </div>
+        <hr>
+        <div class="addpop_intro_t">商品簡介</div>
+        <div class="addpop_intro">商品簡介商品簡介商品簡介商品簡介商品簡介商品簡介商品簡介商品簡介商品簡介商品簡介</div><a class="lightbox-close" href="#"></a>
+      </div>
+    </div>
+    <div class="lightbox-target" id="giftpop">
+      <div class="giftpop">
+        <div class="giftpop_t">贈品</div>
+        <div class="giftpop_sub_t">贈品送完為止 ，請依結帳頁面為準</div>
+        <div class="add_list">
+          <div class="add_list_t">買就送</div>
+          <div class="add_list_block">
+            <div class="add_list_photo"><img class="add_list_img" src="img/120_1.jpg" alt="加購品"></div>
+            <div class="add_list_info">
+              <div class="add_list_name">加購品名稱加購品名稱加購品名稱加購品名稱</div>
+            </div>
+            <div class="add_list_num">x1</div>
+          </div>
+        </div>
+        <hr>
+        <div class="giftpop_intro_t">活動注意事項</div>
+        <div class="giftpop_intro">行銷活動限同一筆訂單且同一種配送方式。 參與行銷活動之商品如欲退貨需全數一併退回，恕不接受單一商 品辦理退貨。</div><a class="lightbox-close" href="#"></a>
+      </div>
+    </div>
+    <script src="js/3rd-party/jquery-3.6.0.min.js"></script>
+    <script src="js/3rd-party/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

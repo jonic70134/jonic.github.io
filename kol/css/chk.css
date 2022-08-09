@@ -929,8 +929,8 @@ body {
 /*==============================================================================================================================*/
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?rxqewy");
-  src: url("../fonts/icomoon.eot?rxqewy#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?rxqewy") format("truetype"), url("../fonts/icomoon.woff?rxqewy") format("woff"), url("../fonts/icomoon.svg?rxqewy#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?h4pzcd");
+  src: url("../fonts/icomoon.eot?h4pzcd#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?h4pzcd") format("truetype"), url("../fonts/icomoon.woff?h4pzcd") format("woff"), url("../fonts/icomoon.svg?h4pzcd#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1149,12 +1149,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 10px 0 5px;
   font-size: 0.9rem;
-}
-
-.pay_way_lb {
-  margin: 0 30px 0 0;
 }
 
 .form {
@@ -1203,6 +1201,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 0.8rem;
 }
 
 .invo_b {
@@ -1279,7 +1278,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px;
+  margin: 30px 10px 10px;
   font-size: 0.8rem;
 }
 .agree a {
@@ -1310,6 +1309,7 @@ img {
   background: rgba(0, 0, 0, 0.7);
   opacity: 0;
   overflow: hidden;
+  z-index: 50;
 }
 .lightbox-target .con_t {
   font-size: 1rem;
@@ -1335,11 +1335,34 @@ img {
           box-sizing: border-box;
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  line-height: 1.4;
+}
+.lightbox-target .con_long {
+  height: 350px;
+  margin: 10px 0;
+  overflow: auto;
+  line-height: 1.6;
+}
+.lightbox-target .con_long p {
+  color: #888;
+  font-size: 0.8rem;
+}
+.lightbox-target .cont_ul, .lightbox-target .con_sub_ul {
+  list-style: decimal outside;
+  margin: 10px 0 20px 10px;
+}
+.lightbox-target .cont_ul li, .lightbox-target .con_sub_ul li {
+  margin: 0 0 5px 12px;
+}
+.lightbox-target .con_sub_ul {
+  list-style: upper-alpha outside;
+}
+.lightbox-target .con_sub_t {
+  margin: 10px 0;
 }
 .lightbox-target ul {
   display: block;
   margin: 20px 0;
-  line-height: 1.4;
   list-style: disc outside;
 }
 .lightbox-target li {
@@ -1350,6 +1373,9 @@ img {
 .lightbox-target li a {
   color: #06c;
   text-decoration: underline;
+}
+.lightbox-target .con_end {
+  text-align: right;
 }
 .lightbox-target:target {
   opacity: 1;

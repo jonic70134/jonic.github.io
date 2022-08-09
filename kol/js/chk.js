@@ -1,12 +1,12 @@
-var swiper = new Swiper('.swiper', {
+var kol_slide = new Swiper('.kol_slide', {
     pagination: {
       el: '.swiper-pagination',
       type: 'fraction',
     },
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 });
 
 
