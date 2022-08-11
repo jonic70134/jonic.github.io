@@ -79,11 +79,11 @@ body {
 /*==============================================================================================================================*/
 @font-face {
 	font-family: 'icomoon';
-	src:  url('../fonts/icomoon.eot?h4pzcd');
-	src:  url('../fonts/icomoon.eot?h4pzcd#iefix') format('embedded-opentype'),
-	  url('../fonts/icomoon.ttf?h4pzcd') format('truetype'),
-	  url('../fonts/icomoon.woff?h4pzcd') format('woff'),
-	  url('../fonts/icomoon.svg?h4pzcd#icomoon') format('svg');
+	src:  url('../fonts/icomoon.eot?at2ntu');
+	src:  url('../fonts/icomoon.eot?at2ntu#iefix') format('embedded-opentype'),
+	  url('../fonts/icomoon.ttf?at2ntu') format('truetype'),
+	  url('../fonts/icomoon.woff?at2ntu') format('woff'),
+	  url('../fonts/icomoon.svg?at2ntu#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -101,7 +101,24 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+.icon_wrong .path1:before {
+	content: "\e905";
+	color: rgb(86, 178, 50);
+}
+.icon_wrong .path2:before {
+	content: "\e906";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
+.icon_done .path1:before {
+	content: "\e907";
+	color: rgb(230, 47, 33);
+}
+.icon_done .path2:before {
+	content: "\e908";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
 .icon_minus:before {
 	content: "\e900";
 	color: #888988;

@@ -1,5 +1,4 @@
 /*by Jonic*/
-@import "3rd-party/_swiper.scss";
 /*reset*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, th, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -79,11 +78,11 @@ body {
 /*==============================================================================================================================*/
 @font-face {
 	font-family: 'icomoon';
-	src:  url('../fonts/icomoon.eot?h4pzcd');
-	src:  url('../fonts/icomoon.eot?h4pzcd#iefix') format('embedded-opentype'),
-	  url('../fonts/icomoon.ttf?h4pzcd') format('truetype'),
-	  url('../fonts/icomoon.woff?h4pzcd') format('woff'),
-	  url('../fonts/icomoon.svg?h4pzcd#icomoon') format('svg');
+	src:  url('../fonts/icomoon.eot?at2ntu');
+	src:  url('../fonts/icomoon.eot?at2ntu#iefix') format('embedded-opentype'),
+	  url('../fonts/icomoon.ttf?at2ntu') format('truetype'),
+	  url('../fonts/icomoon.woff?at2ntu') format('woff'),
+	  url('../fonts/icomoon.svg?at2ntu#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -101,7 +100,24 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+.icon_wrong .path1:before {
+	content: "\e905";
+	color: rgb(86, 178, 50);
+}
+.icon_wrong .path2:before {
+	content: "\e906";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
+.icon_done .path1:before {
+	content: "\e907";
+	color: rgb(230, 47, 33);
+}
+.icon_done .path2:before {
+	content: "\e908";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
 .icon_minus:before {
 	content: "\e900";
 	color: #888988;
@@ -175,12 +191,19 @@ img{
 }
 .total_block{
 	display: flex;
+	flex-flow: column;
 	justify-content: flex-end;
+    align-items: flex-end;
+	hr{
+		width: 100%;
+		margin:5px 0;
+	}
 }
 .total{
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: baseline;
+	margin:0 0 5px;
 }
 .dis,.total_t{
 	display: flex;
@@ -188,15 +211,25 @@ img{
 	align-items: baseline;
 	color:black;
 }
+.total_t{
+	min-width:65px;
+	text-align: justify;
+}
 .dis_price,.total_price{
 	margin:0 0 0 3px;
 	color:#d00;
-	font-size:1.3rem;
+	font-size:1.2rem;
 	&::first-letter{
-		font-size:1rem;
+		font-size:.9rem;
 	}
 }
-
+.total_price{
+	width:90px;
+	text-align: right;
+	&.nor{
+		color:#333;
+	}
+}
 .icon_track{
 	margin: 5px 0 0;
 }
@@ -214,23 +247,49 @@ img{
 	margin: 10px 0 5px;
 	font-size: .9rem;
 }
+.paydiv{
+	display: none;
+}
 .form{
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
-	margin: 0 0  10px;
+	margin: 0 0 10px;
 	input{
 		padding:5px;
 		border:none;
 		background: #eee;
 	}
-	&.addr{
+	&:last-child{
+		margin:0;
+	}
+	&.addr,&.expdate{
 		align-items: baseline;
 	}
+	&.expdate{
+		flex-flow: row wrap;
+		p{
+			margin: 0 5px 0 0;
+			font-size:.7rem;
+		}
+		input{
+			width: 23px;
+		}
+		.form_input{
+			display: flex;
+			align-items: center;
+		}
+		.select_b{
+			margin: 0;
+		}
+
+	}
 }
+
 .select_b{
 	margin: 0px 0 10px;
 	select{
+		margin-right:3px;
 		padding: 3px;
 		color:#555;
 	}
