@@ -17,24 +17,20 @@ html
 			.site-main.clearfix(role='main')
 				.container
 					.cate_main
+						.sort
+							.sort_check
+								input.sort_radio#sort1(type="radio", name="sort" checked="checked")
+								label.sort_lb(for="sort1") 暢銷排行
+							.sort_check
+								input.sort_radio#sort2(type="radio", name="sort")
+								label.sort_lb(for="sort2") 最新上架
+							.sort_check
+								input.sort_radio#sort3(type="radio", name="sort")
+								label.sort_lb(for="sort3") 價格由高到低
+							.sort_check
+								input.sort_radio#sort4(type="radio", name="sort")
+								label.sort_lb(for="sort4") 價格由低到高
 						.items
-							.sort
-								label(for="sort1")
-									input(type="radio", name="sort" ,value="1", id="sort1" ,checked="checked")
-									span.checkmark
-									p 暢銷排行
-								label(for="sort2")
-									input(type="radio", name="sort" ,value="2", id="sort2")
-									span.checkmark
-									p 最新上架
-								label(for="sort3")
-									input(type="radio", name="sort" ,value="3", id="sort3")
-									span.checkmark
-									p 價格由高到低
-								label(for="sort4")
-									input(type="radio", name="sort" ,value="4", id="sort4")
-									span.checkmark
-									p 價格由低到高
 							mixin cateimg(src,price)
 								.item
 									a.photo(href="#")

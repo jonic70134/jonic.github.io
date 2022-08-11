@@ -16,10 +16,10 @@
 	font-size:.8rem;
 }
 .sort_check{
-    border:1px solid #eee;
+    border:1px solid #ccc;
     border-right:0;
     &:last-child{
-        border-right:1px solid #eee;
+        border-right:1px solid #ccc;
     }
 }
 .sort_radio{
@@ -33,7 +33,7 @@
 .sort_lb{
 	display: block;
     width:100px;
-	padding: 8px;
+	padding: 9px;
 	font-size:.8rem;
     text-align: center;
 	cursor: pointer;

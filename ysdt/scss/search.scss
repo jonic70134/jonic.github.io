@@ -12,48 +12,31 @@
 .sort{
 	display: flex;
 	flex-flow: row nowrap;
-	padding:0;
-    margin:20px 0 0 160px;
+    margin:10px 0 20px 220px;
 	font-size:.8rem;
-	label{
-		position: relative;
-		display: flex;
-		flex-flow: row nowrap;
-		align-items: flex-end;
-		width:99px;height:28px;
-		margin: 0;
-        border:1px solid #ccc;
-        border-right:none;
-		text-align: center;
-		cursor: pointer;
-		color:black;
-		&:last-child{
-			margin:0;
-            border-right:1px solid #ccc;
-		}
+}
+.sort_check{
+    border:1px solid #ccc;
+    border-right:0;
+    &:last-child{
+        border-right:1px solid #ccc;
+    }
+}
+.sort_radio{
+	display: none;
+	&:checked + .sort_lb{
+		border:none;
+        color:white;
+        background-color:#06c;
 	}
-	p{
-		width:100px;
-		line-height: 28px;
-	}
-	input{
-		display: none;
-		&:checked{
-			~.checkmark{
-				border:none;
-				background-color:#06c;
-			}
-			~p{
-				color:white;
-				position: absolute;left:0;top:0;
-			}
-		}
-	}
-	.checkmark{
-		width:100px;height:28px;
-		position: absolute;left:0;top:0;
-		cursor: pointer;
-	}
+}
+.sort_lb{
+	display: block;
+    width:100px;
+	padding: 9px;
+	font-size:.8rem;
+    text-align: center;
+	cursor: pointer;
 }
 .site-main{
     width: 1220px;
