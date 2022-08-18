@@ -3,16 +3,22 @@
 @import "partials/mixin";
 @import "partials/color";
 @import "partials/page";
-
+@import "partials/relate";
 .sub_head{
     .container{
         justify-content: flex-start;
     }
 }
+.func_top{
+    display: flex;
+	flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 0 20px 220px;
+}
 .sort{
 	display: flex;
 	flex-flow: row nowrap;
-    margin:0 0 20px 220px;
 	font-size:.8rem;
 }
 .sort_check{
@@ -38,11 +44,53 @@
     text-align: center;
 	cursor: pointer;
 }
-
+.icon_pictxt{
+    width: 30px;
+}
+.cate_main{
+    display: flex;
+    flex-flow:row nowrap ;
+    align-items: flex-start;
+    justify-content: space-between;
+}
 .cate_items{
     display:flex;
     flex-flow:row wrap;
     margin:0 0 10px;
+}
+.cate_items_txt{
+    flex-flow:column;
+    margin:0 0 10px 60px;
+    .item{
+        flex-flow:row nowrap;
+        width: 100%;
+        margin:0 0 10px;
+    }
+    .per_r_info{
+        display:flex;
+        flex-flow:column;
+        justify-content: space-between;
+        width: 700px;
+        margin:0 0 0 10px;
+        padding:10px 10px 20px;
+        border-bottom:1px solid #ccc;
+    }
+    .photo{
+        width:120px;height:120px;
+        margin:0 0 10px;
+        overflow: hidden;
+        border-radius: 10px;
+        img{
+            width:120px;
+        }
+    }
+    .name{
+        font-size: 1rem;
+        color:#333;
+    }
+    .price{
+        font-size:1.15rem;
+    }
 }
 .item{
     display:flex;
@@ -67,22 +115,13 @@
         display: block;
     }
 }
-.info{
-    display: flex;
-    flex-flow:column nowrap;
-    justify-content: space-between;
-    width:700px;
-    margin: 0 50px 0 20px;
-    padding: 17px 0 15px;
-    border-bottom:1px solid #ccc;
-}
 .name{
     margin: 10px 0 5px;
-    height: 30px;
     color: #888;
     font-size: 0.8rem;
     line-height: 1.2;
     overflow: hidden;
+    white-space: nowrap;
 }
 .price{
     font-size:1rem;
@@ -143,4 +182,7 @@
 }
 .page_next{
     border-radius:0 5px 5px 0;
+}
+.relate_prod{
+    display: none;
 }

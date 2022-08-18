@@ -11,11 +11,33 @@
 }
 .site-main{
     .container{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
         width:1130px;
-        margin: 20px auto;
+        margin: 25px auto;
+    }
+}
+.cupn_top{
+    margin:0 0 15px;
+    align-items: flex-end;
+}
+.cupn_des{
+    font-size:1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.cupn_chg{
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    padding:8px 10px;
+	font-size: 1.5rem;
+    color:#ff0;
+    background:black;
+}
+.icon_refresh{
+    margin:0 0 0 3px;
+    &:before{
+        color:white;
+        font-size:1.2rem;
     }
 }
 .cupn_item{

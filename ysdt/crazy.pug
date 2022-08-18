@@ -65,31 +65,27 @@ html
 								p 更多商品
 								i.icon.icon_refresh
 					// 相關商品
-					.pc-item-related
-						.related-title 推薦給您：
-						.items
-						mixin item(prod_pic)
-							a.item(href='item.html')
-								p.photo
-									span.float
-									img(src='img/sample/'+ prod_pic+'.jpg', alt='商品名稱', title='商品名稱')
-								.info
-									h3.name(itemprop='name') 環繞音響家庭劇院
-									.relative_price 
-										.currency $
-										.price 999,999
-						+item('05_01_182')
-						+item('05_02_182x240')
-						+item('05_03_182')
-						+item('05_04_182x240')
-						+item('05_05_182')
-						+item('05_06_182x240')
-						+item('05_07_182')
-						+item('05_08_182x240')
-						+item('05_09_182x240')
-						+item('05_10_182')
-						+item('05_11_182x240')
-						
+					.relate_prod
+						.relate_title 推薦給您：
+						.relate_items
+							mixin item(prod_pic)
+								a.relate_item(href='item.html')
+									.relate_photo
+										img.relate_img(src='img/sample/'+ prod_pic+'.jpg', alt='商品名稱', title='商品名稱')
+									.relate_info
+										h3.relate_name 環繞音響家庭劇院
+										.relate_price $999,999
+							+item('05_01_182')
+							+item('05_02_182x240')
+							+item('05_03_182')
+							+item('05_04_182x240')
+							+item('05_05_182')
+							+item('05_06_182x240')
+							+item('05_07_182')
+							+item('05_08_182x240')
+							+item('05_09_182x240')
+							+item('05_10_182')
+							+item('05_11_182x240')
 			include src/_foot.pug
 			script(src='js/3rd-party/jquery-3.6.0.min.js')
 			script(src='js/crazy.js')

@@ -16,30 +16,55 @@ html
 			// 分類
 			.site-main
 				.container
-					.sort
-						.sort_check
-							input.sort_radio#sort1(type="radio", name="sort" checked="checked")
-							label.sort_lb(for="sort1") 暢銷排行
-						.sort_check
-							input.sort_radio#sort2(type="radio", name="sort")
-							label.sort_lb(for="sort2") 最新上架
-						.sort_check
-							input.sort_radio#sort3(type="radio", name="sort")
-							label.sort_lb(for="sort3") 價格由高到低
-						.sort_check
-							input.sort_radio#sort4(type="radio", name="sort")
-							label.sort_lb(for="sort4") 價格由低到高
-					.cate_items
-						- var j = 31;
-						- for (var i = 1; i < j; i++)
-							a.item(href="item.html")
-								.photo
-									img(src='img/sample/cate/180_'+ i+'.jpg', alt='商品名稱', title='商品名稱')
-								.per_r_info
-									h3.name 大開口短柄活動扳手大活口衛浴扳手8寸6寸短把迷你扳手工具
-									.per_price
-										.price $999,900
-										p.rush(href="#") 搶購
+					.func_top
+						.sort
+							.sort_check
+								input.sort_radio#sort1(type="radio", name="sort" checked="checked")
+								label.sort_lb(for="sort1") 暢銷排行
+							.sort_check
+								input.sort_radio#sort2(type="radio", name="sort")
+								label.sort_lb(for="sort2") 最新上架
+							.sort_check
+								input.sort_radio#sort3(type="radio", name="sort")
+								label.sort_lb(for="sort3") 價格由高到低
+							.sort_check
+								input.sort_radio#sort4(type="radio", name="sort")
+								label.sort_lb(for="sort4") 價格由低到高
+						a.icon.icon_pictxt(href="#")
+					.cate_main
+						.cate_items
+							- var j = 31;
+							- for (var i = 1; i < j; i++)
+								a.item(href="item.html")
+									.photo
+										img(src='img/sample/cate/180_'+ i+'.jpg', alt='商品名稱', title='商品名稱')
+									.per_r_info
+										h3.name 大開口短柄活動扳手大活口衛浴扳手8寸6寸短把迷你扳手工具
+										.per_price
+											.price $999,900
+											p.rush(href="#") 搶購
+						// 相關商品
+						.relate_prod
+							.relate_title 推薦給您：
+							.relate_items
+								mixin item(prod_pic)
+									a.relate_item(href='item.html')
+										.relate_photo
+											img.relate_img(src='img/sample/'+ prod_pic+'.jpg', alt='商品名稱', title='商品名稱')
+										.relate_info
+											h3.relate_name 環繞音響家庭劇院
+											.relate_price $999,999
+								+item('05_01_182')
+								+item('05_02_182x240')
+								+item('05_03_182')
+								+item('05_04_182x240')
+								+item('05_05_182')
+								+item('05_06_182x240')
+								+item('05_07_182')
+								+item('05_08_182x240')
+								+item('05_09_182x240')
+								+item('05_10_182')
+								+item('05_11_182x240')
 					.pagenav
 						a(href="#").nav.page_head.active 第一頁
 						a(href="#").nav.page_ten_up 上10頁
@@ -61,4 +86,4 @@ html
 						
 			include src/_foot.pug
 			script(src='js/3rd-party/jquery-3.6.0.min.js')
-			script(src='js/crazy.js')
+			script(src='js/cate.js')

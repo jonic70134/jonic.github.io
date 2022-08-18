@@ -7,6 +7,33 @@
 		left: 0;
 	}
 }
+.cupn_top{
+	display: flex;
+    flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	margin:0 0 8px;
+}
+.cupn_des{
+	font-size: 1.15rem;
+	font-weight: 700;
+}
+.cupn_time{
+	color:#d00;
+}
+.cupn_more{
+	padding: 5px 17px;
+    font-size: 1.15rem;
+	color:#ff0;
+	background:$primary-color;
+	text-decoration: underline;
+	border-radius: 5px;
+}
+.cupn_items{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
 .cupn_item{
 	display: flex;
     flex-flow: row nowrap;

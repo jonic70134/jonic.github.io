@@ -19,7 +19,14 @@
     }
     .icon{
         margin-bottom: 25px;
-        font-size:1.5rem;
+        font-size:3rem;
+    }
+    .icon_track_plus{
+        font-size:2rem;
+        line-height: 1.4;
+        &::before{
+            color:#f9d0d7;  
+        }
     }
     img{
         display: block;

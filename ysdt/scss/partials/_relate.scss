@@ -1,0 +1,54 @@
+// 相關商品
+.relate_prod{
+    width:160px;
+    padding:10px 30px;
+    border-left:1px solid #ccc;
+    background-color:#f5f5f5;
+}
+.relate_title{
+    margin:0 0 10px;
+    color:#666;
+    letter-spacing: 1px;
+}
+.relate_item{
+    display: block;
+    width: 100%;
+    margin-bottom:10px;
+}
+.relate_photo{
+    display: block;
+    width: 160px;
+    height: 160px;
+}
+.relate_img{
+    display: block;
+    width:100%;
+    border-radius:8px;
+}
+.relate_info{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin:5px 0;
+    padding-top: 5px;
+    border: 0;
+}
+.relate_name{
+    margin:0;
+    width:96px;
+    color: black;
+    font-size:.7rem;
+}
+.relate_price{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    margin: 0 0 0 5px;
+    font-size:.8rem;
+    color:$primary-color;
+    &::first-letter{
+        font-size:.7rem;
+    }
+}

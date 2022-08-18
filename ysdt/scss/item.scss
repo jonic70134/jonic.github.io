@@ -27,12 +27,11 @@
 }
 .icon_track_plus:before{
     margin-right:3px;
-    font-size:.7rem;
+    font-size:.8rem;
 }
 .btn-fav{
     display: flex;
-    align-items: flex-start;
-    font-size:.85rem;
+    align-items: center;
     color:#666;
     &.icon_track_plus{
         color:#d00;
@@ -58,7 +57,7 @@
 .icon_track:before{
     margin-right:3px;
     color:#666;
-    font-size:1rem;
+    font-size:1.5rem;
 }
 .icon_plus:before,.icon_minus:before{
     font-size: .7rem;
@@ -196,7 +195,7 @@
             position: relative;
             z-index: 0;
             .icon_check::before{
-                position: absolute;bottom: -2px;right: -5px;z-index: 20;
+                position: absolute;bottom: -2px;right: -3px;z-index: 20;
                 transform: scale(0.5);
             }
             > li {
