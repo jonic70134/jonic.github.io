@@ -189,6 +189,7 @@ img {
 }
 
 .line {
+  position: relative;
   margin: 10px 10px 0;
   padding: 10px;
   background-color: white;
@@ -364,7 +365,7 @@ img {
   font-size: 0.9rem;
 }
 
-.paydiv {
+.paydiv, .invo_credit {
   display: none;
 }
 
@@ -419,6 +420,18 @@ img {
   margin: 0;
 }
 
+.red {
+  color: #d00;
+}
+
+.red_alert {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  font-size: 0.9rem;
+  color: #d00;
+}
+
 .select_b {
   margin: 0px 0 10px;
 }
@@ -429,7 +442,7 @@ img {
 }
 
 .form_t {
-  min-width: 72px;
+  min-width: 80px;
   margin: 0 5px 0 0;
   text-align: right;
   font-size: 0.9rem;
@@ -478,7 +491,7 @@ img {
 
 .remind {
   color: #d00;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .alert {

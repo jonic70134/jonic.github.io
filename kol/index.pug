@@ -11,173 +11,20 @@ html
 
         
     body
-        .kol_slide.swiper
-            .swiper-wrapper
-                mixin slider(src)
-                    .swiper-slide
-                        img(src='img/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
-                +slider('720main')
-                +slider('720main')
-                +slider('720main')
-                +slider('720main')
-                +slider('720main')
-                +slider('720main')
-                +slider('720main')
-                +slider('720main')
-                +slider('720main')
-                +slider('720main')
-            //- .swiper-button-prev
-            //- .swiper-button-next
-            .swiper-pagination
-        .kol
-            .line
-                .prod_info
-                    h1.name Miss Hana花娜小姐 妝素顏透亮霜 (素顏霜  / 玫瑰素顏霜) 30ml
-                    i.icon.icon_track
-                .pay_info
-                    .pay_block
-                        .nor
-                            .nor_t 市價
-                            .nor_price $999,999
-                        .dis
-                            .dis_t 網路價
-                            .dis_price $888,888
-                    a(href="#spec").btn_pay 去付款
-            .line
-                .add_t 加購品
-                .add_block
-                    mixin add_prod(src)
-                        a(href="#addpop").add_prod
-                            img.add_prod_img(src='img/'+ src+'.jpg', alt='加購品名稱')
-                            .add_price $9,999
-                    +add_prod('120_1')
-                    +add_prod('120_2')
-                    +add_prod('120_3')
-            .line
-                .gift 
-                    .gift_t 贈品
-                    .gift_con 贈品名稱贈品名稱 (不挑款)
-                    a.gift_chk(href="#giftpop") 查看
-                .gift 
-                    .gift_t 贈品
-                    .gift_con 贈品名稱贈品名稱 (不挑款)
-                    a.gift_chk(href="#giftpop") 查看
-                .gift 
-                    .gift_t 贈品
-                    .gift_con 贈品名稱贈品名稱 (不挑款)
-                    a.gift_chk(href="#giftpop") 查看
-            .line
-                .des_t 商品詳細說明
-                .des_photo
-                    img.des_img(src="img/descript.jpg", alt="商品說明圖")
-            .line
-                a.replace_t(href="#") 退換貨說明
-            .bot_line
-                a.btn_bot_pay(href="chk.html") 去付款
-
-        .lightbox-target#spec
-            .light_box
-                .spec_t
-                    img.spec_img(src="img/720main.jpg", alt="商品圖")
-                    .pay_box
-                        .dis
-                            .dis_t 網路價
-                            .dis_price $888,888
-                        .more_dis
-                            .more_dis_t 再折扣
-                            .more_dis_price $888
-                .spec_chos
-                    .spec_chos_t 選規格
-                    .spec_line
-                        .spec_opt
-                            input.spec_radio#size1(type="radio", name="size" checked="checked")
-                            label.spec_lb(for="size1") 玫瑰素顏霜30ml
-                        .spec_opt
-                            input.spec_radio#size2(type="radio", name="size")
-                            label.spec_lb(for="size2") 30ml x 2組
-                        .spec_opt
-                            input.spec_radio#size3(type="radio", name="size")
-                            label.spec_lb(for="size3") 50ml
-                        .spec_opt
-                            input.spec_radio#size4(type="radio", name="size")
-                            label.spec_lb(for="size4") 50ml x 2組
-                .spec_chos
-                    .spec_chos_t 選顏色
-                    .spec_line
-                        .spec_opt
-                            input.spec_radio#color1(type="radio", name="color" checked="checked")
-                            label.spec_lb(for="color1") 黑色
-                        .spec_opt
-                            input.spec_radio#color2(type="radio", name="color")
-                            label.spec_lb(for="color2") 紅色
-                        .spec_opt
-                            input.spec_radio#color3(type="radio", name="color")
-                            label.spec_lb(for="color3") 藍色
-                        .spec_opt
-                            input.spec_radio#color4(type="radio", name="color")
-                            label.spec_lb(for="color4") 白色
-                .buy_num
-                    .buy_num_t 購買數量
-                    .quantity
-                        .quantity-decrease
-                            i.icon.icon_minus
-                        input.quantity-input(type='text', value='1', max='99', title='請輸入購買量')
-                        .quantity-increase
-                            i.icon.icon_plus
-                .add_list
-                    .add_list_t 加購品
-                    mixin add_list(src)
-                        .add_list_block
-                            .add_list_photo
-                                img.add_list_img(src='img/'+ src+'.jpg', alt='加購品')
-                            .add_list_info
-                                .add_list_name 加購品名稱加購品名稱加購品名稱加購品名稱
-                                .add_list_price
-                                    .add_nor_price $9,999
-                                    .add_dis_price $8,888
-                            .quantity
-                                .quantity-decrease
-                                    i.icon.icon_minus
-                                input.quantity-input(type='text', value='1', max='99', title='請輸入購買量')
-                                .quantity-increase
-                                    i.icon.icon_plus
-                    +add_list('120_1')
-                    +add_list('120_2')
-                    +add_list('120_3')
-                a(href="#").lightbox-close
-                a(href="chk.html").btn_bot_pay 確定
-        .lightbox-target#addpop
-            .addpop
-                .addpop_t 加購品
-                .addpop_photo
-                    img.addpop_img(src="img/120_1.jpg", alt="加購品名稱")
-                .addpop_info
-                    .add_list_name 加購品名稱加購品名稱加購品名稱加購品名稱加購品名稱加購品名稱加購品名稱加購品名稱加購品名稱加購品名稱
-                    .addpop_price
-                        .addpop_nor_t 原價
-                        .addpop_nor_price $9,999
-                        .addpop_dis_t 加購價
-                        .addpop_dis_price $8,888
-                hr
-                .addpop_intro_t 商品簡介
-                .addpop_intro 商品簡介商品簡介商品簡介商品簡介商品簡介商品簡介商品簡介商品簡介商品簡介商品簡介
-                a(href="#").lightbox-close
-        .lightbox-target#giftpop
-            .giftpop
-                .giftpop_t 贈品
-                .giftpop_sub_t 贈品送完為止 ，請依結帳頁面為準
-                .add_list
-                    .add_list_t 買就送
-                    .add_list_block
-                        .add_list_photo
-                            img.add_list_img(src='img/120_1.jpg', alt='加購品')
-                        .add_list_info
-                            .add_list_name 加購品名稱加購品名稱加購品名稱加購品名稱
-                        .add_list_num x1
-                hr
-                .giftpop_intro_t 活動注意事項
-                .giftpop_intro 行銷活動限同一筆訂單且同一種配送方式。 參與行銷活動之商品如欲退貨需全數一併退回，恕不接受單一商 品辦理退貨。
-                a(href="#").lightbox-close
+        header.site-header
+            .header_l
+                img.logo(src="img/logo.svg", alt="網紅logo")
+                a.btn_pay(href="chk.html") 查訂單
+            .header_r
+                img.qrcode(src="img/qrcode.svg", alt="QRcode")
+        .items
+            - var j = 7;
+            - for (var i = 1; i < j; i++)
+                a.item(href="item.html")
+                    .photo
+                        img.kol_img(src="img/330_0"+i+".jpg", alt="商品名稱")
+                    .name ABC商品名稱商品名稱商品名稱商品名稱商品名稱商品名稱
+                    .dis_price $999,999
         script(src='js/3rd-party/jquery-3.6.0.min.js')
         script(src='js/3rd-party/swiper-bundle.min.js')
         script(src='js/index.js')

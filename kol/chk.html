@@ -93,27 +93,30 @@
         </div>
       </div>
       <div class="line">
+        <div class="red_alert">* 必填</div>
                 <div class="form">
-                  <div class="form_t">訂購人姓名</div>
+                  <div class="form_t"><span class="red">*</span>訂購人姓名
+                  </div>
                   <div class="form_input">
-                    <input type="text" placeholder="請輸入姓名">
+                    <input type="text" placeholder="請輸入">
                   </div>
                 </div>
                 <div class="form">
-                  <div class="form_t">手機</div>
+                  <div class="form_t"><span class="red">*</span>手機
+                  </div>
                   <div class="form_input">
-                    <input type="text" placeholder="請輸入手機號碼">
+                    <input type="text" placeholder="請輸入">
                   </div>
                 </div>
-                <div class="form">
-                  <div class="form_t">Email</div>
-                  <div class="form_input">
-                    <input type="text" placeholder="請輸入Email">
-                  </div>
-                </div>
+        <div class="form">
+          <div class="form_t">Email</div>
+          <div class="form_input">
+            <input type="text" placeholder="請輸入">
+          </div>
+        </div>
         <hr>
         <div class="form same">
-          <div class="form_t">收貨人姓名</div>
+          <div class="form_t"> <span class="red">*</span>收貨人姓名</div>
           <div class="form_input">
             <input type="text" placeholder="請輸入姓名">
           </div>
@@ -122,19 +125,21 @@
           </div>
         </div>
                 <div class="form">
-                  <div class="form_t">手機</div>
+                  <div class="form_t"><span class="red">*</span>手機
+                  </div>
                   <div class="form_input">
                     <input type="text" placeholder="請輸入手機號碼">
                   </div>
                 </div>
                 <div class="form">
-                  <div class="form_t">Email</div>
+                  <div class="form_t"><span class="red">*</span>Email
+                  </div>
                   <div class="form_input">
-                    <input type="text" placeholder="請輸入Email">
+                    <input type="text" placeholder="請輸入">
                   </div>
                 </div>
         <div class="form addr">
-          <div class="form_t">收貨地址</div>
+          <div class="form_t"> <span class="red">*</span>收貨地址</div>
           <div class="form_input">
             <div class="select_b">
               <select id="county" name="">
@@ -144,7 +149,7 @@
                 <option value="1">內湖區</option>
               </select>
             </div>
-            <input type="text" placeholder="請輸入收貨地址">
+            <input type="text" placeholder="請輸入">
           </div>
         </div>
       </div>
@@ -152,10 +157,10 @@
         <div class="title inv_t">發票資訊</div>
         <div class="invo_b">
           <div class="invo_per">
-            <input id="personal" type="radio" name="invo">
-            <label for="personal">個人電子發票(<a class="perbox" href="#perbox">說明</a></label>)
+            <input id="personal" type="radio" name="invo" value="1">
+            <label for="personal">個人電子發票(<a class="perbox" href="#perbox">說明</a>)</label>
+            <p class="remind">中獎會主動寄出</p>
           </div>
-          <p class="remind">中獎會主動寄出</p>
           <p class="nortxt">如欲使用手機號碼載具，請於輸入框輸入驗證</p>
           <input class="phone_invo_input" type="text" placeholder="/大寫英數字7碼 (共8個字元)" style="border: 1px solid #d00;">
           <p class="alert">手機號碼載具有誤，請重新輸入</p>
@@ -163,27 +168,29 @@
         <hr>
         <div class="invo_b">
           <div class="invo_per">
-            <input id="donate" type="radio" name="invo">
-            <label for="donate">發票捐贈(<a class="donatbox" href="#donatbox">說明</a></label>)
+            <input id="donate" type="radio" name="invo" value="2">
+            <label for="donate">發票捐贈(<a class="donatbox" href="#donatbox">說明</a>)</label>
+            <p class="nortxt">伊甸基金會</p>
           </div>
-          <p class="nortxt">伊甸基金會</p>
         </div>
         <hr>
         <div class="invo_b">
           <div class="invo_per">
-            <input id="company" type="radio" name="invo">
-            <label for="company">公司電子發票 (<a class="combox" href="#combox">說明</a></label>)
+            <input id="company" type="radio" name="invo" value="3">
+            <label for="company">公司電子發票 (<a class="combox" href="#combox">說明</a>)</label>
           </div>
-          <div class="form">
-            <div class="form_t">統一編號</div>
-            <div class="form_input">
-              <input type="text" placeholder="請輸入統一編號共8碼">
+          <div class="invo_credit" id="invo3">
+            <div class="form">
+              <div class="form_t">統一編號</div>
+              <div class="form_input">
+                <input type="text" placeholder="請輸入統一編號共8碼">
+              </div>
             </div>
-          </div>
-          <div class="form">
-            <div class="form_t">公司名稱</div>
-            <div class="form_input">
-              <input type="text" placeholder="請輸入公司完整名稱">
+            <div class="form">
+              <div class="form_t">公司名稱</div>
+              <div class="form_input">
+                <input type="text" placeholder="請輸入公司完整名稱">
+              </div>
             </div>
           </div>
         </div>
@@ -196,7 +203,7 @@
       </div>
       <div class="agree">
         <input id="agree_box" type="checkbox">
-        <label for="agree_box">我已閱讀並同意《<a href="#agreebox">購物約定條款</a></label>》
+        <label for="agree_box">我已閱讀並同意《<a href="#agreebox">購物約定條款</a>》</label>
       </div>
       <div class="bot_line"><a class="btn_bot_pay" href="confirm.html">確認購買</a></div>
     </div>
