@@ -3,6 +3,7 @@
 @import "partials/mixin";
 @import "partials/color";
 @import "partials/page";
+@import "partials/relate";
 
 @import "3rd-party/_swiper.scss";
 @import "3rd-party/_lity.scss";
@@ -1218,132 +1219,9 @@
     }
 }
 // 相關商品
-.pc-item-related{
-    width:180px;
-    height:auto;
-    position: absolute;right:0;top: -60px;z-index: 1;
-    padding:10px;
-    border-left:1px solid #ccc;
-    background-color:#f5f5f5;
-    .related-title{
-        margin:0 0 10px;
-        color:#666;
-        letter-spacing: 1px;
-    }
-    .items{
-        padding:0 10px;
-    }
-    .item{
-        display: block;
-        margin-bottom:10px;
-    }
-    .photo{
-		display: block;
-		width: 100%;
-	    background: #FFF;
-		img{
-            display: block;
-            width:100%;
-            @include border-radius(8px);
-		}
-    }
-    .info{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-        margin:5px 0;
-        padding-top: 5px;
-    }
-    .name{
-        width:155px;
-        color: #999;
-        font-size:.7rem;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-    .price{
-        margin-left:5px;
-        color:#d00;
-        font-size:.8rem;
-        font-family: sans-serif;
-    }
-}
 
-
-//單品頁bibi鳥fancybox
-.bird_box{
-	display: none;
-	width:300px;
-	padding:10px;
-	.bird_box_title{
-		font-size:20px;
-		padding:10px;
-		text-align: center;
-		color:#e7668b;
-		background-color:#feedf3;
-	}
-	.compare_block{
-		display:inline-block;
-		vertical-align: middle;
-		.compare_img{
-			display: block;
-			width:120px;
-		}
-		.compare_txt{
-			display:block;
-			padding-left:20px;
-			text-align: center;
-			font-size:14px;
-			color:#f73375;
-			b{
-				font-size:24px;
-				font-weight:500;
-			}
-		}
-		&.pk{
-			font-size:20px;
-			margin:0 5px;
-		}
-		&.else{
-			padding-top:28px;
-			position: relative;
-			.else_txt{
-				position: absolute;
-				top:63px;left:25px;
-				color:#666;
-				font-size:24px;
-				letter-spacing: 5px
-			}
-			.compare_img{
-				width:100px;
-			}
-			.compare_txt{
-				padding:5px 0 0 4px;
-				color:#333;
-				b{
-					font-size:16px;
-					font-weight:500;
-				}
-			}
-		}
-	}
-	.bird_box_time{
-		margin:50px auto 10px;
-		text-align: center;
-		font-size:14px;
-	}
-	.bird_box_confirm{
-		width:100%;
-		font-size:20px;
-		font-weight:700;
-		color:white;
-		background-color:#f73375;
-		letter-spacing: 10px;
-        cursor: pointer;
-        border: none;
-	}
+.relate_prod {
+    position: absolute;top: 0;right: 0;
 }
 
 @-moz-document url-prefix() {
