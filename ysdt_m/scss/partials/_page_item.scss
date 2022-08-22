@@ -1,9 +1,10 @@
 .items_bg{
-    margin:15px 0 0;
-    padding:20px;
+    padding:20px 2%;
     background-color: #eee;
 }
 .items{
+    display: flex;
+    flex-flow:row wrap;
     .photo{
         position: relative;
         display: block;
@@ -48,7 +49,12 @@
     }
 }
 .item{
+    width: 32%;
+    margin:0 2% 2% 0;
     @include border-radius(10px); 
+    &:nth-child(3n){
+        margin:0;
+    }
     &:hover{
         .photo{
             .float{
