@@ -2632,6 +2632,8 @@ button.swiper-pagination-bullet {
   margin-right: 10px;
 }
 .spec_prod img {
+  width: 240px;
+  height: 240px;
   border: 5px solid #ddd5cc;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
@@ -2685,6 +2687,10 @@ button.swiper-pagination-bullet {
 }
 .spec_prod .spec_r_block .per_price {
   padding: 6px 0 10px;
+}
+.spec_prod .spec_r_block img {
+  width: 100px;
+  height: 100px;
 }
 
 .item_t {
