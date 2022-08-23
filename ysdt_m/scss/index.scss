@@ -67,6 +67,21 @@
     display: flex;
     flex-flow: row nowrap;
     background-color: #ece8df;
+    width: 400px !important;
+}
+.per_r{
+    width: 180px !important;
+    padding: 10px 0 0;
+    img{
+        max-height: 160px;
+        max-width: 160px;
+    }
+    .name{
+        margin:10px 0 5px;
+        height:30px;
+        color:#888;
+        font-size:.8rem;
+    }
 }
 .per_price{
     display: flex;
@@ -90,16 +105,13 @@
 .per_duoslide{
     margin:15px 0 0;
     position: relative;
-    .per_l{
-        padding: 10px;
-    }
     .per_img{
         display: block;
+        max-height:240px;
         background-color: white;
     }
     .name{
         height: 70px;
-        margin:0 0 20px;
         font-size:1.2rem;
         color:#000;
         line-height: 1.2;
@@ -127,19 +139,9 @@
         width:160px;
         margin:0 10px 15px;
     }
-    .per_r{
-        padding:15px 28px 0;
-        img{
-            max-height: 160px;
-            max-width: 160px;
-        }
-        .name{
-            margin:10px 0 5px;
-            height:30px;
-            color:#888;
-            font-size:.8rem;
-        }
-    }
+}
+.duo_2{
+    background-color: #ece8df;
 }
 .per_r_info{
     .per_price{
@@ -157,6 +159,9 @@
         width: 100%;
         display: block;
     }
+}
+.spec_slide .swiper-slide{
+    max-width: 400px;
 }
 .spec_prod{
     margin:15px 0 0;
@@ -214,7 +219,45 @@
         }
     }
 }
-
+.tag-cloud {
+    position: relative;
+    padding:12px 0;
+    background-color: #ccc;
+    a{
+        display: block;
+        margin: 0 5px 8px;
+        padding: 8px 10px;
+        color: #333;
+        font-size: 1.2rem;
+        text-align: center;
+        background-color: white;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+    }
+    .icon_search{
+        &::before{
+            font-size:1.2rem;
+        }
+    }
+}
+.hot_slide{
+    display: flex;
+    flex-flow: row wrap;
+    height: 80px;
+    margin: 0 0 0 40px;
+    overflow: hidden;
+}
+.hot_t{
+    position: absolute; left:0; top:50%;z-index: 10;transform: translateY(-50%);
+    width:30px;
+    padding: 15px 3px;
+    font-size:1.2rem;
+    color:white;
+    background: black;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+}
 .icon_func{
     display: flex;
     flex-flow: row nowrap;

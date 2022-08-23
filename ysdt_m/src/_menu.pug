@@ -1,36 +1,35 @@
-nav.md_nav_menu
+nav.menu
 	.container
-		.left
-			.nav
+		.menu_l
+			.menu_l_tab
 				ul
 				li.click 全球
 				- var j = 10;
 				- for (var i = 0; i < j; i++)
 					li 家電
 				
-		.right
-			a.enter_cate(href='#') 進入XX館→
+		.menu_r
+			a.menu_cate_tab(href='#') 活動專區
 			- var j = 5;
 			- for (var i = 0; i < j; i++)
-				.items
-					h3.title
-						span 品牌專區
-					.cate_center
-					.item
-						a(href='catelist.html')
-							h4 索尼 SONY
-					.item
-						a(href='catelist.html')
-							h4 國際牌 Panasonic
-					.item
-						a(href='catelist.html')
-							h4 智慧電視盒
-					.item
-						a(href='catelist.html')
-							h4 索尼 SONY
-					.item
-						a(href='catelist.html')
-							h4 國際牌 Panasonic
-					.item
-						a(href='catelist.html')
-							h4 智慧電視盒
+				.menu_items
+					h3.menu_t 活動專區文字
+					.menu_cate
+						a.menu_cate_item(href='catelist.html')
+							img.menu_img(src="../img/mobile/sample/04_01_80.jpg", alt="")
+							h4.menu_sub_t iphone 13
+						a.menu_cate_item(href='catelist.html')
+							img.menu_img(src="../img/mobile/sample/04_02_80.jpg", alt="")
+							h4.menu_sub_t SAMSUNG
+						a.menu_cate_item(href='catelist.html')
+							img.menu_img(src="../img/mobile/sample/04_03_80.jpg", alt="")
+							h4.menu_sub_t 小米
+						a.menu_cate_item(href='catelist.html')
+							img.menu_img(src="../img/mobile/sample/04_04_80.jpg", alt="")
+							h4.menu_sub_t SONY
+						a.menu_cate_item(href='catelist.html')
+							img.menu_img(src="../img/mobile/sample/04_01_80.jpg", alt="")
+							h4.menu_sub_t Panasonic
+						a.menu_cate_item(href='catelist.html')
+							img.menu_img(src="../img/mobile/sample/04_02_80.jpg", alt="")
+							h4.menu_sub_t 智慧電視盒

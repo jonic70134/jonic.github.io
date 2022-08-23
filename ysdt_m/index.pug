@@ -33,7 +33,7 @@ html
                                         .price $195,900
                                     button.button.btn-imd 立即購買
                         mixin slider(src)
-                            a.swiper-slide(href='item.html')
+                            a.swiper-slide.per_r(href='item.html')
                                 .per_block
                                     .per_dur
                                         img(src='../img/mobile/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
@@ -46,14 +46,12 @@ html
                         +slider('01_03_160')
                         +slider('01_04_160')
                         +slider('01_05_160')
-
             .per_duoslide.duo_2
                 .per_info.swiper
                     .swiper-wrapper
-                        a.per_l(href='item.html')
+                        a.per_l.swiper-slide(href='item.html')
                             .per_dur
                                 img.per_img(src='../img/mobile/sample/02_01_250.jpg', alt='商品名稱', title='商品名稱')
-                                .restock 補貨中
                             .per_buy
                                 h2.name APPLE iPhone 13 Pro Max 128G 防水智慧手機
                                 .per_price
@@ -61,26 +59,24 @@ html
                                         .price $195,900
                                     button.button.btn-imd 立即購買
                         mixin slider(src)
-                            a.swiper-slide(href='item.html')
+                            a.swiper-slide.per_r(href='item.html')
                                 .per_block
                                     .per_dur
                                         img(src='../img/mobile/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
-                                        .restock 補貨中
                                     .per_r_info
                                         h3.name Grivel 分力盤/系統架設/ Grivel Four 四孔分力盤 RTFOUR 義大利製
                                         .per_price
                                             .price $999,900
                                             p.rush(href="#") 搶購 
-                        +slider('05_01_182')
-                        +slider('05_03_182')
-                        +slider('05_05_182')
-                        +slider('05_07_182')
-
+                        +slider('01_04_160')
+                        +slider('01_03_160')
+                        +slider('01_04_160')
+                        +slider('01_05_160')
             .cupn_slide.swiper
                 .swiper-wrapper
                     mixin cupnimg(src)
                         .swiper-slide
-                            a.cupn_item(href='#')
+                            .cupn_item(href='#')
                                 .cupn_photo
                                     img.cupnimg(src='img/mobile/sample/'+ src +'.jpg', alt='商品名稱', title='商品名稱')
                                 .cupn_info
@@ -154,6 +150,23 @@ html
                         +slider('03_07_240','03_08_100','03_09_100')
                         +slider('03_01_240','03_02_100','03_03_100')
                         +slider('03_04_240','03_05_100','03_06_100')
+            .tag-cloud
+                .hot_t
+                    .icon.icon_search
+                    p 熱搜
+                .hot_slide
+                    a(href="#") AirPods
+                    a(href="#") 音響
+                    a(href="#") 筆電
+                    a(href="#") iPhone XS
+                    a(href="#") 4k 電視
+                    a(href="#") 咖啡機
+                    a(href="#") 家庭劇院
+                    a(href="#") 藍芽音響
+                    a(href="#") 音響
+                    a(href="#") 筆電
+                    a(href="#") iPhone XS
+                    a(href="#") 4k 電視
             .ad_banner
                 img(src='../img/mobile/sample/AD_720x120.jpg', alt='廣告圖')
             .items_bg
