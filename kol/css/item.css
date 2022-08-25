@@ -1123,7 +1123,59 @@ img {
   white-space: nowrap;
 }
 
-.add_t, .des_t {
+.combo_t span {
+  margin: 0 0 0 5px;
+  font-size: 0.7rem;
+  color: #f5281d;
+}
+
+.combo_prod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.combo_name {
+  max-width: 93%;
+  height: 16px;
+  overflow: hidden;
+}
+
+.combo_chos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+}
+
+.combo_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.combo_link a {
+  color: #06c;
+  text-decoration: underline;
+}
+
+.add_t, .des_t, .combo_t {
   margin: 5px 0 15px;
 }
 
@@ -1154,7 +1206,7 @@ img {
   margin: 0;
 }
 
-.add_prod_img {
+.add_prod_img, .combo_img {
   max-width: 80px;
 }
 
@@ -1435,6 +1487,14 @@ img {
   appearance: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.combo_list {
+  margin: 20px 0 0;
+}
+
+#combopop .combo_prod {
+  border: 0;
 }
 
 .add_list_t {

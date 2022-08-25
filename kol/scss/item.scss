@@ -228,9 +228,41 @@ img{
 	letter-spacing: 4px;
 	white-space: nowrap;
 }
-
+.combo_t{
+	span{
+		margin:0 0 0 5px;
+		font-size:.7rem;
+		color:#f5281d;
+	}
+}
+.combo_prod{
+	display: flex;
+	flex-flow: row nowrap;
+	padding:8px 0;
+	border-bottom: 1px solid #ddd;
+}
+.combo_name{
+	max-width: 93%;
+	height: 16px;
+    overflow: hidden;
+}
+.combo_chos{
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	padding: 15px 10px;
+	font-size:.9rem;
+}
+.combo_link{
+	display: flex;
+	justify-content: space-between;
+	a{
+		color:#06c;
+		text-decoration: underline;
+	}
+}
 // 加購
-.add_t,.des_t{
+.add_t,.des_t,.combo_t{
 	margin: 5px 0 15px;
 }
 .add_block{
@@ -247,7 +279,7 @@ img{
 		margin: 0;
 	}
 }
-.add_prod_img{
+.add_prod_img,.combo_img{
 	max-width: 80px;
 }
 .add_price{
@@ -468,7 +500,14 @@ img{
         box-sizing: border-box;
 	}
 }
-
+.combo_list{
+	margin:20px 0 0;
+}
+#combopop{
+	.combo_prod{
+		border: 0;
+	}
+}
 .add_list_t{
 	margin: 30px 0 10px;
 }

@@ -44,6 +44,21 @@ html
                             .dis_price $888,888
                     a(href="#spec").btn_pay 去付款
             .line
+                .combo_t 組合商品
+                    span 組合商品無法單一退換貨,詳細說明請參考退換貨說明
+                .combo_block
+                    mixin combo_prod(src)
+                        .combo_prod
+                            img.combo_img(src='img/'+ src+'.jpg', alt='加購品名稱')
+                            .combo_chos
+                                .combo_name 組合商品名稱組合商品名稱組合商品名稱組合商品名稱
+                                .combo_link
+                                    a(href="#combopop") 請選擇商品規格
+                                    span x1
+                    +combo_prod('120_1')
+                    +combo_prod('120_2')
+                    +combo_prod('120_3')
+            .line
                 .add_t 加購品
                 .add_block
                     mixin add_prod(src)
@@ -74,7 +89,33 @@ html
                 a.replace_t(href="#") 退換貨說明
             .bot_line
                 a.btn_bot_pay(href="chk.html") 去付款
-
+<!-- lightbox -->
+        .lightbox-target#combopop
+            .light_box
+                .combo_t 組合商品
+                .combo_block
+                    .combo_prod
+                        img.combo_img(src='img/120_1.jpg', alt='加購品名稱')
+                        .combo_chos
+                            .combo_name 組合商品名稱組合商品名稱組合商品名稱組合商品名稱
+                .spec_chos
+                    .spec_chos_t 規格
+                    .spec_line
+                        .spec_opt
+                            input.spec_radio#size1(type="radio", name="size" checked="checked")
+                            label.spec_lb(for="size1") 玫瑰素顏霜30ml
+                        .spec_opt
+                            input.spec_radio#size2(type="radio", name="size")
+                            label.spec_lb(for="size2") 30ml x 2組
+                        .spec_opt
+                            input.spec_radio#size3(type="radio", name="size")
+                            label.spec_lb(for="size3") 50ml
+                        .spec_opt.lack
+                            input.spec_radio#size4(type="radio", name="size" readonly)
+                            label.spec_lb(for="size4") 50ml x 2組
+                a(href="#spec").btn_bot_pay 確定
+                
+                a(href="#").lightbox-close
         .lightbox-target#spec
             .light_box
                 .spec_t
@@ -124,6 +165,21 @@ html
                         input.quantity-input(type='text', value='1', max='99', title='請輸入購買量')
                         .quantity-increase
                             i.icon.icon_plus
+                .combo_list
+                    .combo_t 組合商品
+                        span 組合商品無法單一退換貨,詳細說明請參考退換貨說明
+                    .combo_block
+                        mixin combo_prod(src)
+                            .combo_prod
+                                img.combo_img(src='img/'+ src+'.jpg', alt='加購品名稱')
+                                .combo_chos
+                                    .combo_name 組合商品名稱組合商品名稱組合商品名稱組合商品名稱
+                                    .combo_link
+                                        a(href="#combopop") 請選擇商品規格
+                                        span x1
+                        +combo_prod('120_1')
+                        +combo_prod('120_2')
+                        +combo_prod('120_3')            
                 .add_list
                     .add_list_t 加購品
                     mixin add_list(src)
