@@ -444,7 +444,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .site-search .input-search {
   width: 100%;
-  padding: 12px 70px 12px 10px;
+  padding: 12px 35px 12px 40px;
   background: white;
   color: #aaa;
   font-size: 0.9rem;
@@ -457,27 +457,22 @@ h1, h2, h3, h4, h5, h6 {
 .site-search .input-search:focus {
   color: black;
 }
-.site-search .btn-cancel {
+.site-search .icon_clear {
   position: absolute;
-  right: 33px;
+  right: 10px;
   top: 50%;
-  margin-top: -10px;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-.site-search .btn-cancel img {
-  width: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .site-search .search {
   position: absolute;
-  right: 7px;
+  left: 10px;
   top: 50%;
   margin-top: -10px;
 }
-.site-search .search img {
-  width: 20px;
+.site-search .icon_search::before {
+  color: #999;
+  font-size: 1.2rem;
 }
 
 .cart {

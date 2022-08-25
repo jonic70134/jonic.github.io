@@ -1,4 +1,10 @@
+$(".icon_search").click(function(){
+    $(".site-search").toggle();
+});
 
+$(".icon_clear").click(function(){
+    $(this).parents("div").find(".input-search").val("");
+});
 //menu
 $('.btn-menu').click(function(e) {
     e.preventDefault();

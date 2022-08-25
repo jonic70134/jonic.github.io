@@ -281,7 +281,7 @@
 
 	.input-search {
 		width: 100%;
-		padding: 12px 70px 12px 10px;
+		padding: 12px 35px 12px 40px;
 		background: white;
 		color: #aaa;
 		font-size: .9rem;
@@ -296,29 +296,23 @@
 		}
 	}
 
-	.btn-cancel {
+	.icon_clear {
 		position: absolute;
-		right: 33px;
+		right: 10px;
 		top: 50%;
-		margin-top: -10px;
-		background: none;
-		border: none;
-		outline: none;
-		cursor: pointer;
-
-		img {
-			width: 20px;
-		}
+		transform: translateY(-50%);
 	}
 
 	.search {
 		position: absolute;
-		right: 7px;
+		left: 10px;
 		top: 50%;
 		margin-top: -10px;
-
-		img {
-			width: 20px;
+	}
+	.icon_search{
+		&::before{
+			color:#999;
+			font-size:1.2rem;
 		}
 	}
 }
