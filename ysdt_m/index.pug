@@ -3,22 +3,8 @@ html
         include src/_meta.pug
         link(href='css/mobile/index.css', rel='stylesheet')
     body.body_container
-        header.site-header
-            .head_con
-                .head_l
-                    a.icon.icon_menu(href='#')
-                    a.icon.icon_logo(href='index.html')
-                .head_r
-                    a.icon.icon_search(href='#')
-                    a.icon.icon_cart(href='#', title='查看購物車')
-                        span.icon.icon_check
-                .site-search
-                    input.input-search(type='text', autocomplete='off', placeholder='請輸入商品名稱')
-                    button.btn-cancel
-                        img(src='../img/mobile/clear.svg', alt='search icon')
-                    a.search(href='#')
-                        img(src='../img/mobile/search_gray.svg', alt='搜尋')
-            include src/_menu.pug
+        include src/_header.pug
+        include src/_menu.pug
         .site-main
             .per_duoslide.duo_1
                 .per_info.swiper
@@ -128,21 +114,21 @@ html
                     .swiper-wrapper
                         mixin slider(big,small_top,small_bot)
                             .swiper-slide(href='item.html')
-                                h2.title 特賣主題
+                                h2.spec_prod_t 特賣主題
                                 .spec_block
                                     a(href="item.html").spec_l
-                                        img(src='../img/mobile/sample/'+ big+'.jpg', alt='商品名稱', title='商品名稱')
+                                        img.spec_img(src='../img/mobile/sample/'+ big+'.jpg', alt='商品名稱', title='商品名稱')
                                         .spec_info
-                                            h3.name 商品名稱商品名稱商品名稱商品名稱
+                                            h3.spec_name 商品名稱商品名稱商品名稱商品名稱
                                             .per_price
                                                 .price $999,900
                                     .spec_r 
                                         a(href="item.html").spec_r_block
-                                            img(src='../img/mobile/sample/'+ small_top+'.jpg', alt='商品名稱', title='商品名稱')
+                                            img.spec_img(src='../img/mobile/sample/'+ small_top+'.jpg', alt='商品名稱', title='商品名稱')
                                             .per_price
                                                 .price $999,900
                                         a(href="item.html").spec_r_block
-                                            img(src='../img/mobile/sample/'+ small_bot+'.jpg', alt='商品名稱', title='商品名稱')
+                                            img.spec_img(src='../img/mobile/sample/'+ small_bot+'.jpg', alt='商品名稱', title='商品名稱')
                                             .per_price
                                                 .price $999,900
                         +slider('03_01_240','03_02_100','03_03_100')
@@ -150,7 +136,7 @@ html
                         +slider('03_07_240','03_08_100','03_09_100')
                         +slider('03_01_240','03_02_100','03_03_100')
                         +slider('03_04_240','03_05_100','03_06_100')
-            .tag-cloud
+            .tag_cloud
                 .hot_t
                     .icon.icon_search
                     p 熱搜
@@ -169,41 +155,18 @@ html
                     a(href="#") 4k 電視
             .ad_banner
                 img(src='../img/mobile/sample/AD_720x120.jpg', alt='廣告圖')
-            .items_bg
-                .items
-                    - var j = 9;
-                    - for (var i = 1; i < j; i++)
-                        a.item(href='item.html')
-                            .photo
-                                .float
-                                    i.icon.icon_same
-                                    i.icon.icon_track
-                                img(src='img/mobile/sample/03_0'+ i +'_214.jpg', alt='商品名稱', title='商品名稱')
-                            .info
-                                h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
-                                .price $999,999
-                    - var j = 9;
-                    - for (var i = 1; i < j; i++)
-                        a.item(href='item.html')
-                            .photo
-                                .float
-                                    i.icon.icon_same
-                                    i.icon.icon_track
-                                img(src='img/mobile/sample/03_0'+ i +'_214.jpg', alt='商品名稱', title='商品名稱')
-                            .info
-                                h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
-                                .price $999,999
-                    - var j = 9;
-                    - for (var i = 1; i < j; i++)
-                        a.item(href='item.html')
-                            .photo
-                                .float
-                                    i.icon.icon_same
-                                    i.icon.icon_track
-                                img(src='img/mobile/sample/03_0'+ i +'_214.jpg', alt='商品名稱', title='商品名稱')
-                            .info
-                                h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
-                                .price $999,999
+            .items
+                - var j = 25;
+                - for (var i = 1; i < j; i++)
+                    a.item(href='item.html')
+                        .photo
+                            .float
+                                i.icon.icon_same
+                                i.icon.icon_track
+                            img(src='img/mobile/sample/03_0'+ i +'_214.jpg', alt='商品名稱', title='商品名稱')
+                        .info
+                            h3.name 商品名稱商品名稱商品商品名稱商品名稱商品
+                            .price $999,999
         script(src='js/3rd-party/jquery-3.6.0.min.js')
         script(src='js/3rd-party/swiper-bundle.min.js')
         script(src='js/mobile/index.js')

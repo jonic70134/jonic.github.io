@@ -1,31 +1,15 @@
 header.site-header
-	.container
-		.main_head
-			.header_l
-				a.logo(href='index.html')
-					i.icon.icon_friday_logo
-				.site_search
-					input.input_search(type='search', maxlength='128', placeholder='請輸入商品名稱')
-					a(href="search.html").btn-search
-						i.icon.icon_search
-			.header_r
-				ul.head_link
-					li
-						a(href='per.html') 專屬品
-					li
-						a(href='crazy.html') 瘋最夯
-					li
-						a(href='#') 新降價
-					li
-						a(href='#') 新到貨
-					li
-						a(href='coupon.html') 折價券
-				ul.head_func
-					li
-						a.my_account(href='#')
-							i.icon.icon_account
-							span 我的
-					li
-						a.cart(href='cart/orderlist.html')
-							i.icon.icon_cart
-							i.icon.icon_check
+	.head_con
+		.head_l
+			a.icon.icon_menu(href='#')
+			a.icon.icon_logo(href='index.html')
+		.head_r
+			a.icon.icon_search(href='#')
+			a.icon.icon_cart(href='#', title='查看購物車')
+				span.icon.icon_check
+		.site-search
+			input.input-search(type='text', autocomplete='off', placeholder='請輸入商品名稱')
+			button.btn-cancel
+				img(src='../img/mobile/clear.svg', alt='search icon')
+			a.search(href='#')
+				img(src='../img/mobile/search_gray.svg', alt='搜尋')

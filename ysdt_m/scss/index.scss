@@ -1,6 +1,5 @@
 // 首頁
 @import "partials/base";
-@import "partials/mixin";
 @import "partials/color";
 @import "partials/page";
 @import "partials/cupn";
@@ -153,6 +152,8 @@
         margin:0 0 5px;
     }
 }
+
+// banner
 .ad_banner{
     margin-top:15px;
     img{
@@ -160,38 +161,16 @@
         display: block;
     }
 }
+
+
+// 特賣主題
 .spec_slide .swiper-slide{
     max-width: 400px;
 }
 .spec_prod{
     margin:15px 0 0;
     background-color:#ece8df;
-    @include border-radius(10px);
-    .swiper-container{
-        padding: 7px 25px;
-    }
-    .title{
-        padding: 8px 0 8px 10px;
-        font-size:1.25rem;
-    }
-    .spec_block{
-        display: flex;
-        flex-flow: row nowrap;
-    }
-    .spec_l{
-        margin-right: 10px;
-    }
-    img{
-        border:5px solid #ddd5cc;
-        @include border-radius(10px)
-    }
-    .spec_info{
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: flex-end;
-        justify-content: space-between;
-        padding:5px 10px 15px;
-    }
+    border-radius:10px;
     .per_price{
         display: flex;
         flex-flow: row nowrap;
@@ -199,27 +178,49 @@
         font-size:.9rem;
         font-weight: 500;
     }
-    .currency{
-        font-size: .7rem;
-    }
-    .name{
-        width:154px;
-        font-size:.8rem;
-        color: black;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-    .spec_r_block{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        .per_price{
-            padding: 6px 0 10px;
-        }
+    
+}
+.spec_img{
+    border:5px solid #ddd5cc;
+    border-radius:10px;
+}
+.spec_info{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding:5px 10px 15px;
+}
+.spec_prod_t{
+    padding: 8px 0 8px 10px;
+    font-size:1.25rem;
+}
+.spec_block{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.spec_l{
+    margin-right: 10px;
+}
+.spec_name{
+    width:154px;
+    font-size:.8rem;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.spec_r_block{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    .per_price{
+        padding: 6px 0 10px;
     }
 }
-.tag-cloud {
+
+// 標籤雲
+.tag_cloud {
     position: relative;
     padding:12px 0;
     background-color: #ccc;
@@ -231,8 +232,6 @@
         font-size: 1.2rem;
         text-align: center;
         background-color: white;
-        -moz-border-radius: 15px;
-        -webkit-border-radius: 15px;
         border-radius: 15px;
     }
     .icon_search{
@@ -304,4 +303,72 @@
     font-size: 1rem;
     color:black;
     letter-spacing: 1px;
+}
+
+
+.items{
+    display: flex;
+    flex-flow:row wrap;
+    padding:20px 2%;
+    background-color: #eee;
+    .photo{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    .float{
+        display: none;
+        position: absolute;left: 0;top: 0;
+        width: 100%;height:100%;
+        color:white;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        border-radius:10px;
+    }
+    .icon{
+        margin-bottom: 25px;
+        font-size:1.5rem;
+    }
+    img{
+        display: block;
+        width: 100%;
+        border-radius:10px;
+    }
+    .info{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin:5px 0;
+        padding-top: 5px;
+    }
+    .name{
+        width:120px;
+        color: black;
+        font-size:.7rem;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .price{
+        margin-left:5px;
+        color:$price;
+        font-size:.8rem;
+    }
+}
+.item{
+    width: 32%;
+    margin:0 2% 2% 0;
+    border-radius:10px;
+    &:nth-child(3n){
+        margin:0;
+    }
+    &:hover{
+        .photo{
+            .float{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+                align-items: flex-end;
+            }
+        }
+    }
 }

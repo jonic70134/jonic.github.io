@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .body_container {
   width: 100%;
-  padding: 50px 0;
+  padding: 50px 0 0;
 }
 
 .container {
@@ -410,9 +410,6 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   background: #d00;
   border: 2px solid white;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
   border-radius: 50%;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
@@ -614,8 +611,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu_r {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
+  -ms-flex-preferred-size: 71%;
+      flex-basis: 71%;
   overflow-y: auto;
   max-height: 100vh;
   -webkit-overflow-scrolling: touch;
@@ -956,11 +953,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.7rem;
 }
 
-.items_bg {
-  padding: 20px 2%;
-  background-color: #eee;
-}
-
 .items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -969,6 +961,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  padding: 20px 2%;
+  background-color: #eee;
 }
 .items .photo {
   position: relative;
@@ -984,9 +978,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
   border-radius: 10px;
 }
 .items .icon {
@@ -996,9 +987,6 @@ h1, h2, h3, h4, h5, h6 {
 .items img {
   display: block;
   width: 100%;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
   border-radius: 10px;
 }
 .items .info {
@@ -1034,9 +1022,6 @@ h1, h2, h3, h4, h5, h6 {
 .item {
   width: 32%;
   margin: 0 2% 2% 0;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
   border-radius: 10px;
 }
 .item:nth-child(3n) {

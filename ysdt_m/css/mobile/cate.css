@@ -701,20 +701,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 6px;
 }
 
-.cupn_slide .swiper-slide {
-  max-width: 370px;
-}
-
-.cupn_con {
-  position: relative;
-  margin: 15px 0 0;
-  padding: 0 20px;
-}
-.cupn_con .swiper-button-prev {
-  left: 0;
-}
-
-.cupn_top {
+.func_top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,41 +715,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0 8px;
 }
 
-.cupn_des {
-  font-size: 1.15rem;
-  font-weight: 700;
-}
-
-.cupn_time {
-  color: #d00;
-}
-
-.cupn_more {
-  padding: 5px 17px;
-  font-size: 1.15rem;
-  color: #ff0;
-  background: #f5281e;
-  text-decoration: underline;
-  border-radius: 5px;
-}
-
-.cupn_items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.cupn_item {
+.sort {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -770,31 +725,45 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  padding: 8px;
-  background-color: #333;
+  width: 93%;
+  font-size: 0.8rem;
+}
+
+.sort_check {
+  width: 25%;
+  border: 1px solid #ccc;
+  border-right: 0;
+  border-bottom: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
-.info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 0 0 8px;
+.sort_check:last-child {
+  border-right: 1px solid #ccc;
 }
 
-.cupn_photo {
+.sort_radio {
+  display: none;
+}
+.sort_radio:checked + .sort_lb {
+  border: none;
+  font-weight: 700;
+  color: #f5281e;
+}
+
+.sort_lb {
   display: block;
+  padding: 9px;
+  font-size: 0.8rem;
+  text-align: center;
+  cursor: pointer;
 }
 
-.cupn {
+.icon_pictxt, .icon_picview {
+  width: 7%;
+  text-align: center;
+}
+
+.cate_main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -805,95 +774,150 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 5px 0 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.cupn_info {
-  margin: 0 0 0 5px;
+.cate_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 2% 0 0;
+  padding: 2% 0;
+  background: #eee;
 }
 
-.cupnimg {
+.cate_items_txt {
+  margin: 0 0 10px;
+}
+.cate_items_txt .item {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 10px;
+  border-radius: 0;
+}
+.cate_items_txt .per_r_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 0 0 0 10px;
+  padding: 0 10px;
+}
+.cate_items_txt .photo {
+  width: 120px;
+  height: auto;
+  padding: 0;
+  border-radius: 10px;
+}
+.cate_items_txt .photo img {
+  position: relative;
+}
+.cate_items_txt .name {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+.cate_items_txt .price {
+  font-size: 1.15rem;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 45.5%;
+  margin: 0 3% 3%;
+  padding: 10px 0;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.item:nth-child(2n) {
+  margin-left: 0;
+}
+
+.photo {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.photo img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   display: block;
-  width: 90px;
-  border: 2px solid white;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
-.cupn_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.cupn_t {
-  margin: 0 0 6px;
-  color: #f5c5c5;
-  font-size: 0.7rem;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.cupn_ticket {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 91px;
-  height: 39px;
-  font-size: 0.7rem;
-  background: #f5c5c5 url("../../img/mobile/cupn_frame.svg") no-repeat center center;
-  border: 2px solid #f5c5c5;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.cupn_dur {
-  color: #555;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.cupn_price {
-  margin: 2px 0 0;
-  color: #ee6262;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-.cupn_price::first-letter {
-  font-size: 0.7rem;
-}
-
-.cupn_name {
-  height: 51px;
-  margin: 0 15px 0 0;
-  font-size: 0.9rem;
-  color: white;
+.name {
+  height: 38px;
+  margin: 10px 0;
+  color: #333;
+  font-size: 1rem;
   line-height: 1.2;
-  word-break: break-word;
   overflow: hidden;
 }
 
-.cupn_nor, .cupn_dis {
+.per_r_info {
+  padding: 0 10px;
+}
+
+.per_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #d00;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.price {
+  font-size: 1.2rem;
+}
+.price::first-letter {
+  font-size: 0.7rem;
+}
+
+.func {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -905,70 +929,28 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-.cupn_nor .nor_t, .cupn_nor .dis_t, .cupn_dis .nor_t, .cupn_dis .dis_t {
-  margin: 0 5px 0 0;
+.func .icon_cart, .func .icon_track {
+  position: relative;
+}
+.func .icon_cart::before, .func .icon_track::before {
   color: #888;
-  font-size: 0.7rem;
+  font-size: 1.4rem;
 }
-
-.cupn_nor {
-  margin: 0 0 -2px;
+.func .icon_track, .func .icon_track_plus {
+  margin: 0 0 0 10px;
 }
-.cupn_nor .nor_price {
-  text-decoration: line-through;
-}
-.cupn_nor .nor_price {
-  margin: 0 8px 0 0;
-  font-size: 0.8rem;
-  color: #888;
-  text-decoration: line-through;
-}
-.cupn_nor .nor_price::first-letter {
-  font-size: 0.7rem;
-}
-
-.cupn_dis {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.cupn_dis .dis_net {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-.cupn_dis .dis_price {
-  color: #f77;
+.func .icon_track::before, .func .icon_track_plus::before {
   font-size: 1rem;
 }
-.cupn_dis .dis_price::first-letter {
+.func .cupn_arrow {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  padding: 6px 3px;
   font-size: 0.7rem;
-}
-.cupn_dis .dis_af {
   color: white;
-  font-size: 0.8rem;
-}
-.cupn_dis .dis_af_price {
-  color: #ff0;
-  font-size: 1.2rem;
-}
-.cupn_dis .dis_af_price::first-letter {
-  font-size: 0.7rem;
-}
-
-.cupn_arrow::before {
-  font-size: 0.7rem;
-}
-
-.sub_head .container {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.site-main .container {
-  width: 1110px;
+  background: #d00;
+  border-radius: 50%;
+  -webkit-transform: scale(0.7) rotate(90deg);
+          transform: scale(0.7) rotate(90deg);
 }
