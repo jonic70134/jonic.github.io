@@ -106,13 +106,17 @@
 	}
 }
 .cupn_name{
-	height:51px;
 	margin: 0 15px 0 0;
 	font-size:.9rem;
 	color:white;
 	line-height: 1.2;
 	word-break: break-word;
 	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3; /* number of lines to show */
+			line-clamp: 3; 
+	-webkit-box-orient: vertical;
 }
 .cupn_nor,.cupn_dis{
 	display: flex;
