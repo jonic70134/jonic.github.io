@@ -242,9 +242,15 @@ img{
 	border-bottom: 1px solid #ddd;
 }
 .combo_name{
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+			line-clamp: 2; 
+	-webkit-box-orient: vertical;
 	max-width: 93%;
-	height: 16px;
-    overflow: hidden;
+	margin:0 0 10px;
+	line-height: 1.2;
+	overflow: hidden;
+	
 }
 .combo_chos{
 	display: flex;
