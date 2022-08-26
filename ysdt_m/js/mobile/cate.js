@@ -6,7 +6,7 @@ $(".icon_clear").click(function(){
     $(this).parents("div").find(".input-search").val("");
 });
 //menu
-$('.btn-menu').click(function(e) {
+$('.icon_menu').click(function(e) {
     e.preventDefault();
     $('.menu').stop(true,false).toggleClass("active");
     $(".body_container").toggleClass("fixed");

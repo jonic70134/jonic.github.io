@@ -1,33 +1,33 @@
 html
     head
         include src/_meta.pug
-        link(href='css/mobile/cate.css', rel='stylesheet')
+        link(href='css/mobile/search.css', rel='stylesheet')
     body.body_container
         include src/_header.pug
         include src/_menu.pug
         .site-main
-            a(href="index.html").cate_back
-                .icon.icon_Arrow
-                p APPLE
-            .cate_select
-                .cate_select_t
-                    input.cate_input#catemenu(type="checkbox", name="catemenu")
-                    label.catemenu_lb(for="catemenu") iPhone 13 Pro Max 512G
-                    .cate_option 
-                        a.active(href="cate.html") iPhone 13 Pro Max 512G
-                        a(href="cate.html") iPhone 13 Pro Max 256G
-                        a(href="cate.html") iPhone 13 Pro Max 128G
-                        a(href="cate.html") iPhone 13 Pro Max 1TB
-                        a(href="cate.html") iPhone 13 Pro 128G
-                        a(href="cate.html") iPhone 13 Pro Max 256G
-                        a(href="cate.html") iPhone 13 Pro Max 128G
-                        a(href="cate.html") iPhone 13 Pro Max 1TB
-                        a(href="cate.html") iPhone 13 Pro 128G
-                        a(href="cate.html") iPhone 13 Pro Max 256G
-                        a(href="cate.html") iPhone 13 Pro Max 128G
-                        a(href="cate.html") iPhone 13 Pro Max 1TB
-                        a(href="cate.html") iPhone 13 Pro 128G
-                
+            .search_func
+                input.input-search(type='text', autocomplete='off', placeholder='請輸入商品名稱' value='3C家電')
+                .icon.icon_clear
+                .search
+                    .icon.icon_arrow
+                    a(href="search.html").icon.icon_search
+            .tag_cloud
+                .hot_t
+                    p 熱搜
+                .hot_slide
+                    a(href="#") AirPods
+                    a(href="#") 音響
+                    a(href="#") 筆電
+                    a(href="#") iPhone XS
+                    a(href="#") 4k 電視
+                    a(href="#") 咖啡機
+                    a(href="#") 家庭劇院
+                    a(href="#") 藍芽音響
+                    a(href="#") 音響
+                    a(href="#") 筆電
+                    a(href="#") iPhone XS
+                    a(href="#") 4k 電視
             .func_top
                 .sort
                     .sort_check
@@ -44,7 +44,7 @@ html
                         label.sort_lb(for="sort4") 價格最高
                 a.icon.icon_pictxt(href="#")
             .cate_main
-                .cate_items
+                .cate_items.cate_items_txt
                     - var j = 31;
                     - for (var i = 1; i < j; i++)
                         a.item(href="item.html")

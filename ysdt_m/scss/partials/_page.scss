@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:  url('../../fonts/icomoon.eot?rtfapr');
-	src:  url('../../fonts/icomoon.eot?rtfapr#iefix') format('embedded-opentype'),
-	url('../../fonts/icomoon.ttf?rtfapr') format('truetype'),
-	url('../../fonts/icomoon.woff?rtfapr') format('woff'),
-	url('../../fonts/icomoon.svg?rtfapr#icomoon') format('svg');
+	src:  url('../../fonts/icomoon.eot?6crbf1');
+	src:  url('../../fonts/icomoon.eot?6crbf1#iefix') format('embedded-opentype'),
+	url('../../fonts/icomoon.ttf?6crbf1') format('truetype'),
+	url('../../fonts/icomoon.woff?6crbf1') format('woff'),
+	url('../../fonts/icomoon.svg?6crbf1#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -25,13 +25,17 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon_track_plus:before {
-	content: "\e902";
-	color: #de1715;
+.icon_refresh:before {
+	content: "\e92f";
+	color: #1079be;
 }
-.icon_track:before {
-	content: "\e903";
-	color: #fff;
+.icon_star2:before {
+	content: "\e937";
+	color: #cf141b;
+}
+.icon_arrow:before {
+	content: "\e93f";
+	color: #bcbbbb;
 }
 .cupn_frame:before {
 	content: "\e912";
@@ -52,12 +56,10 @@
 .icon_search:before {
 	content: "\e910";
 	color: #fff;
-	font-size:1.6rem;
 }
 .icon_cart:before {
 	content: "\e911";
 	color: #fff;
-	font-size:1.6rem;
 }
 .icon_pictxt:before {
 	content: "\e907";
@@ -78,7 +80,6 @@
 .icon_coupon:before {
 	content: "\e904";
 	color: #fff;
-	font-size:1.5rem;
 }
 .icon_dis:before {
 	content: "\e90d";
@@ -95,9 +96,6 @@
 .icon_logo:before {
 	content: "\e906";
 	color: #e62f21;
-	background-color: white;
-	border-radius: 50%;
-	font-size:2.5rem;
 }
 .icon_menu:before {
 	content: "\e908";
@@ -118,6 +116,47 @@
 .icon_vip:before {
 	content: "\e90c";
 	color: #fff;
+}
+.icon_minus:before {
+	content: "\e918";
+	color: #888988;
+}
+.icon_plus:before {
+	content: "\e917";
+	color: #888988;
+}
+.icon_track_plus:before {
+	content: "\e902";
+	color: #f9d0d7;
+}
+.icon_track:before {
+	content: "\e903";
+	color: #fff;
+}
+.icon_trash:before {
+	content: "\e916";
+	color: #888988;
+}
+
+
+
+// 
+.icon_track_plus:before {
+	color: #de1715;
+}
+.icon_search:before {
+	font-size:1.6rem;
+}
+.icon_cart:before {
+	font-size:1.6rem;
+}
+.icon_coupon:before {
+	font-size:1.5rem;
+}
+.icon_logo:before {
+	background-color: white;
+	border-radius: 50%;
+	font-size:2.5rem;
 }
 
   
@@ -192,6 +231,13 @@
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
+	.icon_arrow{
+		margin: 0 10px 0 0;
+		transform: rotate(180deg);
+		&::before{
+			color:white;
+		}
+	}
 }
 
 .profile {
@@ -271,7 +317,7 @@
 	align-self: center;
 }
 
-.site-search {
+.site-search,.search_func{
 	display: none;
 	width: 100%;
 	position: absolute;
