@@ -344,10 +344,8 @@
     }
 
     .info {
-        float: left;
         position: relative;
-        width: 64%;
-        padding: 0 10px 30px 20px;
+        padding: 0 0 30px 20px;
     }
     .act_bulletin{
         font-size:12px;
@@ -893,7 +891,6 @@
 // A+B
 .ABblock{
     border: 1px solid #ccc;
-    border-bottom:1px dashed #ccc;
     .title{
         padding: 3px 10px;
         background: #efefef;
@@ -917,7 +914,7 @@
 .AB_items{
     display: flex;
     flex-flow:row wrap ;
-    padding: 2% 0;
+    padding: 2% 0 0;
 }
 .AB_item{
     display: flex;
