@@ -42,6 +42,11 @@
     flex-flow: row nowrap;
     margin: 0 0 0 30px;
     overflow-x: auto;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
 }
 .hot_t{
     position: absolute; left:0; top:50%;z-index: 10;transform: translateY(-50%);
