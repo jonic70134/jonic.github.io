@@ -12,19 +12,19 @@ html
 			"url": "https://baichian.com.tw/item.html",
 			"image": "img/sample/XRred.jpg",
 			"offers": {
-			"@type": "AggregateOffer",
-			"lowPrice": "195.000",
-			"highPrice": "199.000",
-			"priceCurrency": "TWD",
-			"seller": {
-			"@context": "http://schema.org",
-			"@type": "Organization",
-			"name": "APPLE",
-			"url": "https://www.apple.com/tw",
-			"image": ""
-			},
-			"availability": "http://schema.org/InStock"
-			},
+				"@type": "AggregateOffer",
+				"lowPrice": "195.000",
+				"highPrice": "199.000",
+				"priceCurrency": "TWD",
+				"seller": {
+					"@context": "http://schema.org",
+					"@type": "Organization",
+					"name": "APPLE",
+					"url": "https://www.apple.com/tw",
+					"image": ""
+				},
+				"availability": "http://schema.org/InStock"
+				},
 			}
 	body
 		.body_container
@@ -61,26 +61,27 @@ html
 									.ABblock
 										.title 規格
 										.AB_items
-											.AB_item
-												img(src='img/sample/ab01.jpg', alt='')
-												p.AB_title 法國STAUB迴力釘點燉煮鑄鐵鍋24cm(3.6L)
-												select(name='', id='')
-													option(value='1') 紅色24cm(3.6L)
-													option(value='2') 藍色24cm(3.6L)
-											.AB_item
-												img(src='img/sample/ab02.jpg', alt='')
-												p.AB_title 法國STAUB迴力釘點燉煮鑄鐵鍋24cm(3.6L)
-												select(name='', id='')
-													option(value='1') 紅色24cm(3.6L)
-													option(value='2') 藍色24cm(3.6L)
-											.AB_item
-												img(src='img/sample/ab03.jpg', alt='')
-												p.AB_title 法國STAUB迴力釘點燉煮鑄鐵鍋24cm(3.6L)
-												select(name='', id='')
-													option(value='1') 紅色24cm(3.6L)
-													option(value='2') 藍色24cm(3.6L)
+											mixin slider(src)
+												.AB_item
+													img(src='img/sample/'+ src +'.jpg', alt='')
+													.AB_title 法國STAUB迴力釘點燉煮鑄鐵鍋法國STAUB迴力釘點燉煮鑄鐵鍋
+													select(name='aaa', id='')
+														option(value='1') 紅色
+														option(value='2') 藍色
+													select(name='bbb', id='')
+														option(value='1') 26cm(3.6L)
+														option(value='2') 24cm(3.6L)
+				
+											+slider('ab01')
+											+slider('ab02')
+											+slider('ab03')
+											+slider('ab01')
+											+slider('ab02')
+											+slider('ab03')
+											+slider('ab01')
+											+slider('ab02')
 									// A+B 數量
-									.ABblock
+									.ABnum
 										.title 數量
 										.quantity
 											span.quantity-decrease
