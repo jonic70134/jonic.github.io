@@ -13,10 +13,13 @@ html
     body
         header.site-header
             .header_l
-                img.logo(src="img/logo.svg", alt="網紅logo")
-                a.btn_pay(href="chk.html") 查訂單
+                .avatar_b
+                    img.avatar(src="img/avatar.jpg", alt="avatar")
+                    a(href="#").avarar_edit
+                        img.edit_ava(src="img/no_avatar.svg", alt="edit")
+                p SUNNY的首頁
             .header_r
-                img.qrcode(src="img/qrcode.svg", alt="QRcode")
+                a.btn_pay(href="chk.html") 查訂單
         .items
             - var j = 7;
             - for (var i = 1; i < j; i++)

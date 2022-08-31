@@ -154,6 +154,7 @@ img{
 	display: flex;
 	flex-flow:row nowrap;
 	justify-content: space-between;
+	align-items: center;
 	margin: 0 0 20px;
 	padding:5px 3%;
 	background: white;
@@ -162,10 +163,31 @@ img{
 	display: flex;
 	flex-flow:row nowrap;
 	align-items: center;
+	justify-content: center;
+	p{
+		margin:  0 0 0 20px;
+		color:#666;
+	}
 }
 .logo{
 	width: 120px;
 	margin: 0 10px 0 0;
+}
+.avatar_b{
+	position: relative;
+}
+.avatar{
+	width:80px;
+	border-radius: 50%;
+}
+.avarar_edit{
+	position: absolute;bottom:0; right:0;
+	padding: 5px;
+	background: #aaa;
+	border-radius:50% ;
+}
+.edit_ava{
+	width: 15px;
 }
 .qrcode{
 	max-width: 120px;
