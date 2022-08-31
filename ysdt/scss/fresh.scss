@@ -8,7 +8,6 @@
 @import "partials/relate";
 @import "partials/pagenav";
 @import "partials/functop";
-
 .sub_head{
     .container{
         justify-content: flex-start;
@@ -18,6 +17,7 @@
     width: 100%;
     margin:0 auto;
     padding: 20px 0 0;
+    background: #eee;
     .container{
         display: flex;
         flex-flow: row nowrap;

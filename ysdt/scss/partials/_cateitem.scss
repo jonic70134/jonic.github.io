@@ -1,0 +1,98 @@
+// 分類+推薦＋瘋最夯 商品css
+
+.cate_items{
+    display:flex;
+    flex-flow:row wrap;
+    margin:0 0 50px;
+}
+.item{
+    display:flex;
+    flex-flow:column nowrap;
+    width:180px;
+    margin: 0 24px 30px 0;
+    &:nth-child(5n){
+        margin:0 0 30px;
+    }
+}
+.photo{
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+    .float{
+        display: none;
+    }
+    img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+    }
+}
+.name{
+    margin: 10px 0 5px;
+    color: #888;
+    font-size: .8rem;
+    line-height: 1.2;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.price{
+    font-size:1rem;
+    &::first-letter{
+        font-size:.7rem;
+    }
+}
+.per_price{
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: baseline;
+    color:#d00;
+    font-size:.9rem;
+    font-weight: 700;
+    .rush{
+        margin-left:5px;
+        color:#06c;
+        font-size:.8rem;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+
+.cate_items_txt{
+    flex-flow:column;
+    margin:0 0 20px 60px;
+    .item{
+        flex-flow:row nowrap;
+        width: 100%;
+        margin:0 0 10px;
+    }
+    .per_r_info{
+        display:flex;
+        flex-flow:column;
+        justify-content: space-between;
+        width: 780px;
+        margin:0 0 0 10px;
+        padding:10px 10px 20px;
+        border-bottom:1px solid #ccc;
+    }
+    .photo{
+        width:120px;
+        padding-top: 120px;
+        border-radius: 10px;
+    }
+    .name{
+        font-size: 1rem;
+        color:#333;
+    }
+    .price{
+        font-size:1.15rem;
+    }
+}
