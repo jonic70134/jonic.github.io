@@ -2673,11 +2673,7 @@ button.swiper-pagination-bullet {
   border: 1px solid #999;
 }
 .pc-item-main .coupon a {
-  color: #999;
-  text-decoration: underline;
-}
-.pc-item-main .coupon .cole00 {
-  color: #e00;
+  color: #555;
 }
 .pc-item-main .sale_time {
   padding: 0 7px;

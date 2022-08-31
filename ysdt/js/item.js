@@ -11,8 +11,8 @@ var tagslide = new Swiper('.tag-slide .swiper-container', {
 });
 
 // 智慧分類menu開合
-$('.nav-menu > a').click(function() {
-    $('.menu-one').slideToggle();
+$('.nav-menu').hover(function() {
+    $('.menu-one').stop(true,true).slideToggle();
 });
 
 //item main 選規格
