@@ -1029,6 +1029,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 10px;
 }
 
+.cate_main {
+  margin: 0 0 50px;
+}
+
 .cate_items {
   display: -webkit-box;
   display: -ms-flexbox;
