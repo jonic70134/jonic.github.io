@@ -23,24 +23,25 @@ html
                     img.logo(src="img/friday_logo.svg", alt="friDay logo")
                     p 的服務
                 a.btn_pay(href="chk.html") 查訂單
-        .tag_cloud
-            .tag_block
-                a.tag_link(href="#") iPhone 14
-                a.tag_link(href="#") 筆電
-                a.tag_link(href="#") 除濕機
-                a.tag_link(href="#") 禮盒
-                a.tag_link(href="#") 4K電視
-                a.tag_link(href="#") Airpods
-                a.tag_link(href="#") 醫用口罩
-                a.tag_link(href="#") iPhone 14
-                a.tag_link(href="#") 筆電
-                a.tag_link(href="#") 除濕機
-                a.tag_link(href="#") 禮盒
-                a.tag_link(href="#") 4K電視
-                a.tag_link(href="#") Airpods
-                a.tag_link(href="#") 醫用口罩
-            a.search(href="#")
-                img.icon_search(src="img/search.svg", alt="搜尋")
+        .tag_main
+            .tag_cloud
+                .tag_block
+                    a.tag_link(href="#") iPhone 14
+                    a.tag_link(href="#") 筆電
+                    a.tag_link(href="#") 除濕機
+                    a.tag_link(href="#") 禮盒
+                    a.tag_link(href="#") 4K電視
+                    a.tag_link(href="#") Airpods
+                    a.tag_link(href="#") 醫用口罩
+                    a.tag_link(href="#") iPhone 14
+                    a.tag_link(href="#") 筆電
+                    a.tag_link(href="#") 除濕機
+                    a.tag_link(href="#") 禮盒
+                    a.tag_link(href="#") 4K電視
+                    a.tag_link(href="#") Airpods
+                    a.tag_link(href="#") 醫用口罩
+                a.search(href="#searchbox")
+                    img.icon_search(src="img/search.svg", alt="搜尋")
         .items
             - var j = 7;
             - for (var i = 1; i < j; i++)
@@ -49,6 +50,27 @@ html
                         img.kol_img(src="img/330_0"+i+".jpg", alt="商品名稱")
                     .name ABC商品名稱商品名稱商品名稱商品名稱商品名稱商品名稱
                     .dis_price $999,999
+        .lightbox-target#searchbox
+            .content
+                .tag_cloud_t
+                    p 關鍵字
+                    a(href="#")
+                        img.arrow(src="img/arrow.svg", alt="back")
+                .tag_cloud_con
+                    a.tag_con_link(href="#") iPhone 14
+                    a.tag_con_link(href="#") 筆電
+                    a.tag_con_link(href="#") 除濕機
+                    a.tag_con_link(href="#") 禮盒
+                    a.tag_con_link(href="#") 4K電視
+                    a.tag_con_link(href="#") Airpods
+                    a.tag_con_link(href="#") 醫用口罩
+                    a.tag_con_link(href="#") iPhone 14
+                    a.tag_con_link(href="#") 筆電
+                    a.tag_con_link(href="#") 除濕機
+                    a.tag_con_link(href="#") 禮盒
+                    a.tag_con_link(href="#") 4K電視
+                    a.tag_con_link(href="#") Airpods
+                    a.tag_con_link(href="#") 醫用口罩
         script(src='js/3rd-party/jquery-3.6.0.min.js')
         script(src='js/3rd-party/swiper-bundle.min.js')
         script(src='js/index.js')

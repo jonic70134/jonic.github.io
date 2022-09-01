@@ -1111,6 +1111,10 @@ img {
           box-sizing: border-box;
 }
 
+.tag_main {
+  position: relative;
+}
+
 .tag_cloud {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1127,7 +1131,30 @@ img {
   padding: 8px 35px 8px 15px;
   background: #888;
 }
-.tag_cloud .tag_link {
+.tag_cloud .icon_search {
+  width: 20px;
+  padding: 10px 5px 10px 10px;
+  background: #888;
+}
+
+.tag_cloud_t {
+  position: relative;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: white;
+  background: #888;
+  text-align: center;
+}
+.tag_cloud_t a {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.tag_link, .tag_con_link {
   display: block;
   margin: 0 10px 0 0;
   padding: 10px;
@@ -1137,10 +1164,22 @@ img {
   border-radius: 20px;
   white-space: nowrap;
 }
-.tag_cloud .icon_search {
-  width: 20px;
-  padding: 10px 5px 10px 10px;
-  background: #888;
+
+.tag_con_link {
+  margin: 0 10px 10px 0;
+  background: #eee;
+}
+
+.tag_cloud_con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 15px;
+  background: white;
 }
 
 .search {
@@ -1217,4 +1256,78 @@ img {
   color: #06c;
   white-space: nowrap;
   text-decoration: underline;
+}
+
+.arrow {
+  width: 12px;
+  margin: 0 0 0 10px;
+}
+
+.lightbox-target {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  overflow: hidden;
+  z-index: 50;
+}
+.lightbox-target .con_t {
+  font-size: 1rem;
+  text-align: center;
+}
+.lightbox-target .content {
+  position: absolute;
+  top: 88px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  color: #333;
+  margin: auto;
+  max-height: 0%;
+  max-width: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.4;
+}
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  left: 0;
+}
+.lightbox-target:target .content {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.lightbox-close {
+  display: block;
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #139dd7;
+  color: #fff;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+.lightbox-close:before, .lightbox-close:after {
+  content: " ";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: #fff;
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.lightbox-close:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
