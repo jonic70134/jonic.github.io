@@ -1,0 +1,60 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/index.css', rel='stylesheet')
+	body
+		.cupn_top
+			.container
+				img.cupn_qr(src="img/sample/qrcode.svg", alt="qrcode")
+				.topic
+					.icon.icon_friday_logo
+					img(src="img/sample/dtype.svg", alt="")
+				a.cupn_chg(href="#")
+					span 再轉
+					img(src="img/sample/turn.svg", alt="")
+		.container
+			.cupn_items
+				mixin cupnimg(src)
+					a.cupn_item(href='#')
+						.photo
+							img.cupnimg(src='img/sample/'+ src +'.jpg', alt='商品名稱', title='商品名稱')
+						.info
+							.cupn
+								h3.name 商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品
+								.cupn_block
+									.cupn_t 個人對品折價券
+									.cupn_ticket
+										.cupn_dur 07/13 23:59止
+										.cupn_price $1,000 
+							.nor
+								.nor_t 市價
+								.nor_price $999,999
+							.dis
+								.dis_net
+									.dis_t 網路價
+									.dis_price $299,999
+								img(src="img/cupn_arrow.svg")
+								.dis_net
+									.dis_af 折後
+									.dis_af_price $298,999
+				+cupnimg('04_01_80')
+				+cupnimg('04_02_80')
+				+cupnimg('04_03_80')
+				+cupnimg('04_04_80')
+				+cupnimg('04_01_80')
+				+cupnimg('04_02_80')
+				+cupnimg('04_03_80')
+				+cupnimg('04_04_80')
+				+cupnimg('04_01_80')
+				+cupnimg('04_02_80')
+				+cupnimg('04_03_80')
+				+cupnimg('04_04_80')
+		footer.copyright
+			.container
+				small
+					| Copyright © friDay Corporation All rights reserved.
+					a(href='#') 隱私權政策
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/coupon.js')
+
