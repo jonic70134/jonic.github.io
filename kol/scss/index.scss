@@ -155,7 +155,6 @@ img{
 	flex-flow:row nowrap;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 0 20px;
 	padding:5px 3%;
 	background: white;
 }
@@ -175,6 +174,11 @@ img{
 }
 .avatar_b{
 	position: relative;
+	width: 80px;
+    height: 80px;
+	background: #ddd url(../img/404.svg) no-repeat 12px 15px;
+	background-size: 60px 60px;
+    border-radius: 50%;
 }
 .avatar{
 	width:80px;
@@ -195,6 +199,45 @@ img{
 	padding: 5px;
 	border:1px solid black;
 	box-sizing: border-box;
+}
+
+.tag_cloud{
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content: space-between;
+	position: relative;
+	margin: 0 0 20px;
+	padding:5px 30px 5px 10px ;
+	background: #888;
+	.tag_link{
+		display: block;
+		margin: 0 10px 0 0;
+		padding: 10px;
+		font-size: .9rem;
+		color:#333;
+		background: white;
+		border-radius: 20px;
+		white-space: nowrap;
+	}
+	.icon_search{
+		width: 20px;
+		padding: 10px 5px 10px 10px;
+		background: #888;
+	}
+}
+.search{
+	position: absolute;right:0;top:50%;transform: translateY(-50%);
+	display: block;
+}
+.tag_block{
+	display: flex;
+	flex-flow:row nowrap;
+	overflow-x: auto;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+	&::-webkit-scrollbar{
+		display: none;
+	}
 }
 .items{
 	display: flex;
