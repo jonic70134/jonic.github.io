@@ -253,14 +253,15 @@ img{
 	white-space: nowrap;
 }
 .tag_con_link{
+	display: inline-block;
 	margin: 0 10px 10px 0;
 	background: #eee;
 }
 .tag_cloud_con{
-	display: flex;
-	flex-flow:row wrap;
+	height: 100vh;
 	padding:15px;
 	background: white;
+	overflow-y: auto;
 }
 .search{
 	position: absolute;right:0;top:50%;transform: translateY(-50%);

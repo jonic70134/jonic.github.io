@@ -251,19 +251,6 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
 }
 
-.cupn_items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .cupn_item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -383,13 +370,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cupn .name {
-  height: 51px;
+  display: -webkit-box;
   margin: 0 15px 0 0;
   font-size: 0.9rem;
   color: white;
   line-height: 1.2;
   word-break: break-word;
   overflow: hidden;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 .cupn .price {
   display: -webkit-box;
