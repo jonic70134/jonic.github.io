@@ -373,7 +373,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .cupn_item{
     margin: var(--gap) 0 0 var(--gap);
-    max-width: 360px;
+    max-width: 380px;
 }
 
 
@@ -420,17 +420,24 @@ h1, h2, h3, h4, h5, h6{
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	margin:20px 11px;
+	margin:20px 0;
 	.more{
+		font-size: .8rem;
 		color:#06c;
         text-decoration: underline;
 	}
 }
 @media(max-width:380px){
+	.cupn_item{
+		max-width: 360px;
+	}
     .container{
         padding: 10px 0;
     }
 	.cupn_top .container{
 		min-width: 340px;
+	}
+	.foot_link{
+		margin:20px 11px;
 	}
 }
