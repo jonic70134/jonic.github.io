@@ -992,31 +992,6 @@ h1, h2, h3, h4, h5, h6 {
   word-break: break-word;
   word-wrap: break-word;
 }
-.copyright .foot_link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 1220px;
-  margin: 0 auto;
-  padding: 15px;
-}
-.copyright .foot_link a {
-  color: #333;
-  text-decoration: none;
-}
-.copyright .foot_link a.active {
-  color: #06c;
-}
 .copyright small {
   display: block;
   padding: 8px;

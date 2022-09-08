@@ -712,23 +712,6 @@
     font-size: 0.75em;
     word-break: break-word;
 	word-wrap: break-word;
-	.foot_link{
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-		align-items: center;
-		width: 1220px;
-		margin:0 auto;
-		padding:15px;
-		
-		a{
-			color:#333;
-			text-decoration: none;
-			&.active{
-				color:#06c;
-			}
-		}
-	}
 	small{
 		display: block;
 		padding:8px;
