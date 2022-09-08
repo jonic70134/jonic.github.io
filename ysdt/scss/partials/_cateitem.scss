@@ -98,3 +98,10 @@
         font-size:1.15rem;
     }
 }
+.search_item{
+    .price{
+        &::first-letter{
+            font-size:1.15rem;
+        }
+    }
+}

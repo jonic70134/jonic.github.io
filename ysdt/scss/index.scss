@@ -114,7 +114,10 @@
         background-color: white;
     }
     .name{
-        height: 46px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
         margin:0 0 20px;
         font-size:1.2rem;
         color:#000;
@@ -185,6 +188,10 @@
         }
     }
     .tab{
+        max-width: 140px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         cursor: pointer;
     }
     .per_img{
@@ -202,7 +209,10 @@
         flex-flow: row nowrap;
     }
     .name{
-        height: 68px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
         margin:20px 0;
         font-size:1.2rem;
         color:#000;
@@ -232,8 +242,9 @@
             max-width: 160px;
         }
         .name{
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
             margin:10px 0 5px;
-            height:30px;
             color:#888;
             font-size:.8rem;
         }
@@ -258,7 +269,8 @@
                 flex-flow: row nowrap;
             }
             .name{
-                height: 48px;
+                -webkit-line-clamp: 3;
+                line-clamp: 3;
             }
         }
         .swiper-button-prev{

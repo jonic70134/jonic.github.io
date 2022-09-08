@@ -50,6 +50,9 @@
     width:96px;
     color: black;
     font-size:.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .relate_price{
     display: flex;

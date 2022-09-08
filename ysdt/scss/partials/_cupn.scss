@@ -105,7 +105,10 @@
 }
 .cupn{
 	.name{
-		height:51px;
+		display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
 		margin: 0 15px 0 0;
 		font-size:.9rem;
 		color:white;

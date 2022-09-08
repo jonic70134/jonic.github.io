@@ -1070,6 +1070,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 96px;
   color: black;
   font-size: 0.7rem;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .relate_price {

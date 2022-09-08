@@ -11,83 +11,30 @@ html
 				.container
 					include src/_menu.pug
 					include src/_tagcloud.pug
-			// 各品牌分類
-			.site-main.clearfix(role='main')
+			.container
+				include src/_functop.pug
+			.site-main
 				.container
 					.cate_main
-						.sort
-							.sort_check
-								input.sort_radio#sort1(type="radio", name="sort" checked="checked")
-								label.sort_lb(for="sort1") 暢銷排行
-							.sort_check
-								input.sort_radio#sort2(type="radio", name="sort")
-								label.sort_lb(for="sort2") 最新上架
-							.sort_check
-								input.sort_radio#sort3(type="radio", name="sort")
-								label.sort_lb(for="sort3") 價格由高到低
-							.sort_check
-								input.sort_radio#sort4(type="radio", name="sort")
-								label.sort_lb(for="sort4") 價格由低到高
-						.items
-							mixin cateimg(src,price)
-								.item
-									a.photo(href="#")
-										img(src='img/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
-									.info
-										a(href="#")
-											h3.name SONY 3.1聲道 Dolby Atmos環繞音響 Soundbar 家庭劇院 HT-G700
-										.oth-info
-											.price=price
-											a.cart(href='#')
-												i.icon.icon_cart
-												i.icon.icon_cart_arrow
-											a.track(href='#')
-												i.icon.icon_track
-							+cateimg('item_019','99,999')
-							+cateimg('item_01','999,999')
-							+cateimg('item_02','999,999')
-							+cateimg('item_03','9,999')
-							+cateimg('item_04','999,999')
-							+cateimg('item_019','99,999')
-							+cateimg('item_01','999,999')
-							+cateimg('item_02','999,999')
-							+cateimg('item_03','9,999')
-							+cateimg('item_04','999,999')
-							+cateimg('item_019','99,999')
-							+cateimg('item_01','999,999')
-							+cateimg('item_02','999,999')
-							+cateimg('item_03','9,999')
-							+cateimg('item_04','999,999')
+						.cate_items.cate_items_txt
+							- var j = 31;
+							- for (var i = 1; i < j; i++)
+								.item.search_item
+									a.photo(href="item.html")
+										img(src='img/sample/cate/180_'+ i+'.jpg', alt='商品名稱', title='商品名稱')
+									.per_r_info
+										a(href="item.html")
+											h2.name 大開口短柄活動扳手大活口衛浴扳手8寸6寸短把迷你扳手工具
+										.per_price
+											.price 799,090
+											a.icon.icon_cart(href='#')
+												span.icon.icon_cart_arrow
+											a.icon.icon_track(href='#')
 						.loader
 							a.btn-load(href="#")
 								p 更多商品
 								i.icon.icon_refresh
-					// 相關商品
-					.pc-item-related
-						.related-title 推薦給您：
-						.items
-						mixin item(prod_pic)
-							a.item(href='item.html')
-								p.photo
-									span.float
-									img(src='img/sample/'+ prod_pic+'.jpg', alt='商品名稱', title='商品名稱')
-								.info
-									h3.name(itemprop='name') 環繞音響家庭劇院
-									.relative_price 
-										.currency $
-										.price 999,999
-						+item('05_01_182')
-						+item('05_02_182x240')
-						+item('05_03_182')
-						+item('05_04_182x240')
-						+item('05_05_182')
-						+item('05_06_182x240')
-						+item('05_07_182')
-						+item('05_08_182x240')
-						+item('05_09_182x240')
-						+item('05_10_182')
-						+item('05_11_182x240')
-						
+					include src/_item_relative.pug
 			include src/_foot.pug
 			script(src='js/3rd-party/jquery-3.6.0.min.js')
 			script(src='js/search.js')
