@@ -39,8 +39,11 @@ html
                         .nor
                             .nor_t 市價
                             .nor_price $999,999
+                        .nor
+                            .nor_t 網路價
+                            .nor_price $889,999
                         .dis
-                            .dis_t 網路價
+                            .dis_t 折扣後價格
                             .dis_price $888,888
                     a(href="#spec").btn_pay 去付款
             .line
@@ -120,13 +123,17 @@ html
             .light_box
                 .spec_t
                     img.spec_img(src="img/720main.jpg", alt="商品圖")
-                    .pay_box
-                        .dis
-                            .dis_t 網路價
-                            .dis_price $888,888
-                        .more_dis
-                            .more_dis_t 再折扣
-                            .more_dis_price $888
+                    .pay_info
+                        .pay_block
+                            .nor
+                                .nor_t 市價
+                                .nor_price $999,999
+                            .nor
+                                .nor_t 網路價
+                                .nor_price $889,999
+                            .dis
+                                .dis_t 折扣後價格
+                                .dis_price $888,888
                 .spec_chos
                     .spec_chos_t 選規格
                     .spec_line
@@ -201,8 +208,9 @@ html
                     +add_list('120_2')
                     +add_list('120_3')
                 a(href="#").lightbox-close
-                a(href="chk.html").btn_bot_pay 確定
-                a(href="#").btn_bot_lack 補貨中
+                .lightbox_float_btn
+                    a(href="chk.html").btn_bot_pay 確定
+                    <!--a(href="#").btn_bot_lack 補貨中-->
         .lightbox-target#addpop
             .addpop
                 .addpop_t 加購品

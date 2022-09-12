@@ -1072,9 +1072,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .nor, .dis, .pay_block {
@@ -1094,20 +1094,27 @@ img {
 
 .nor_price {
   margin: 0 10px 0 0;
-  font-size: 1.1rem;
   text-decoration: line-through;
 }
 .nor_price::first-letter {
   font-size: 0.8rem;
 }
 
+.nor:nth-child(2) .nor_price {
+  font-size: 1.2rem;
+}
+
 .dis {
+  width: 100%;
+  margin: 5px 0 0;
   color: black;
+  font-size: 1.1rem;
 }
 
 .dis_price {
+  margin: 0 0 0 5px;
   color: #d00;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 .dis_price::first-letter {
   font-size: 1rem;
@@ -1275,8 +1282,9 @@ img {
 }
 
 .btn_bot_pay, .btn_bot_lack {
-  display: inline-block;
-  margin: 20px 0 5px;
+  display: block;
+  width: auto;
+  margin: 10px;
   padding: 10px 30px;
   color: white;
   background-color: #f5281d;
@@ -1304,6 +1312,14 @@ img {
 }
 .lightbox-target:target .lightbox-close {
   top: 10px;
+}
+
+.lightbox_float_btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
 }
 
 .box_btn {
@@ -1350,17 +1366,23 @@ img {
   left: 0;
   width: 100%;
   max-height: 80vh;
-  padding: 10px;
+  padding: 10px 10px 0;
   background-color: white;
   overflow-y: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 .light_box .btn_bot_pay, .light_box .btn_bot_lack, .addpop .btn_bot_pay, .addpop .btn_bot_lack, .giftpop .btn_bot_pay, .giftpop .btn_bot_lack {
-  width: 100%;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+.light_box .pay_info, .addpop .pay_info, .giftpop .pay_info {
+  margin: 0 0 0 10px;
+}
+
+#spec .light_box {
+  padding: 20px 15px 65px;
 }
 
 .spec_t {
@@ -1371,9 +1393,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .spec_img {
