@@ -6,13 +6,14 @@ html
 	body
 		.cupn_top
 			.container
-				img.cupn_qr(src="img/sample/qrcode.svg", alt="qrcode")
+				a.cupn_qr(href="#download")
+					img(src="img/sample/qrcode.svg", alt="qrcode")
+					span 下載APP
 				.topic
-					.icon.icon_friday_logo
-					img(src="img/sample/dtype.svg", alt="")
+					img(src="img/dtype.svg", alt="")
 				a.cupn_chg(href="#")
-					span 再轉
 					img(src="img/sample/turn.svg", alt="")
+					span 再轉
 		.container
 			.cupn_items
 				mixin cupnimg(src)
@@ -25,7 +26,7 @@ html
 								.cupn_block
 									.cupn_t 個人對品折價券
 									.cupn_ticket
-										.cupn_dur 07/13 23:59止
+										<!--.cupn_dur 07/13 23:59止-->
 										.cupn_price $1,000 
 							.nor
 								.nor_t 市價
@@ -59,6 +60,12 @@ html
 				small
 					| Copyright © friDay Corporation All rights reserved.
 					a(href='#') 隱私權政策
+		.lightbox-target#download
+			.light_box
+				a.down(href="#") 前往下載APP>
+				a.scan(href="#") 或直接掃描QR Code進入網頁
+				img(src="img/sample/qrcode.svg", alt="qrcode")
+				a(href="#").lightbox-close
 		script(src='js/3rd-party/jquery-3.6.0.min.js')
 		script(src='js/coupon.js')
 
