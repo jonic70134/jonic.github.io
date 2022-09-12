@@ -215,6 +215,9 @@ img{
 		}
 	}
 }
+.nor_t{
+	font-size:.9rem;
+}
 .dis{
 	width:100%;
 	margin: 5px 0 0;
@@ -345,7 +348,7 @@ img{
 	text-align: right;
 }
 .btn_bot_pay,.btn_bot_lack{
-	display: block;
+	display: inline-block;
 	width: auto;
 	margin: 10px;
 	padding:10px 30px;
@@ -375,10 +378,13 @@ img{
 		.lightbox-close {
 			top:10px;
 		}
+		.lightbox_float_btn{
+			bottom: 0;
+		}
 	}
 }
 .lightbox_float_btn{
-	position: fixed;bottom: 0;left: 0;
+	position: fixed;bottom: -100%;left: 0;
 	width: 100%;
 	background: white;
 }
@@ -425,6 +431,7 @@ img{
 	overflow-y: auto;
 	box-sizing: border-box;
 	.btn_bot_pay,.btn_bot_lack{
+		display: block;
 		text-align: center;
 		box-sizing: border-box;
 	}

@@ -1104,6 +1104,10 @@ img {
   font-size: 1.2rem;
 }
 
+.nor_t {
+  font-size: 0.9rem;
+}
+
 .dis {
   width: 100%;
   margin: 5px 0 0;
@@ -1282,7 +1286,7 @@ img {
 }
 
 .btn_bot_pay, .btn_bot_lack {
-  display: block;
+  display: inline-block;
   width: auto;
   margin: 10px;
   padding: 10px 30px;
@@ -1313,10 +1317,13 @@ img {
 .lightbox-target:target .lightbox-close {
   top: 10px;
 }
+.lightbox-target:target .lightbox_float_btn {
+  bottom: 0;
+}
 
 .lightbox_float_btn {
   position: fixed;
-  bottom: 0;
+  bottom: -100%;
   left: 0;
   width: 100%;
   background: white;
@@ -1373,6 +1380,7 @@ img {
           box-sizing: border-box;
 }
 .light_box .btn_bot_pay, .light_box .btn_bot_lack, .addpop .btn_bot_pay, .addpop .btn_bot_lack, .giftpop .btn_bot_pay, .giftpop .btn_bot_lack {
+  display: block;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
