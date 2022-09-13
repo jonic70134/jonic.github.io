@@ -478,7 +478,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  padding: 15px;
+  padding: 15px 15px 0;
 }
 
 .cupn_items {
@@ -501,7 +501,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .copyright {
-  margin: 0px 0;
+  margin: 0 0 10px;
   text-align: center;
   color: #888;
   font-size: 0.7rem;
@@ -556,9 +556,10 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 .foot_link .more {
+  margin: 0 0 10px;
   font-size: 0.8rem;
   color: #06c;
   text-decoration: underline;
