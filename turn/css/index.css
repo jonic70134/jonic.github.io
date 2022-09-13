@@ -579,7 +579,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .container {
-    padding: 10px 0;
+    padding: 15px 0 0;
   }
 
   .cupn_top .container {
@@ -587,7 +587,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .foot_link {
-    margin: 20px 11px;
+    margin: 15px 11px 0;
   }
 }
 .lightbox-target {
