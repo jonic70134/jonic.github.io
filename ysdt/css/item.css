@@ -2558,6 +2558,7 @@ button.swiper-pagination-bullet {
 .pc-item-main .info {
   position: relative;
   padding: 0 0 30px 20px;
+  width: 640px;
 }
 .pc-item-main .act_bulletin {
   font-size: 12px;

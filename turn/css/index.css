@@ -210,18 +210,18 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 56px;
+  width: 90px;
   color: white;
   font-size: 0.7rem;
   text-decoration: underline;
 }
 .cupn_qr img {
-  width: 45px;
+  width: 100%;
   background: white;
 }
 
 .topic {
-  margin: 0 5px;
+  margin: 0 8px 5px;
 }
 .topic img {
   display: block;
@@ -260,20 +260,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #d00;
   text-decoration: underline;
   border-radius: 5px;
-}
-
-.cupn_item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  padding: 8px;
-  background-color: #333;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .info {
@@ -496,8 +482,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cupn_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  max-width: 360px;
+  padding: 8px;
+  background-color: #333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: var(--gap) 0 0 var(--gap);
-  max-width: 380px;
 }
 
 .copyright {
@@ -565,31 +562,6 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 
-@media (max-width: 380px) {
-  .cupn_qr {
-    width: 60px;
-  }
-
-  .cupn_chg img {
-    width: 45px;
-  }
-
-  .cupn_item {
-    max-width: 360px;
-  }
-
-  .container {
-    padding: 15px 0 0;
-  }
-
-  .cupn_top .container {
-    min-width: 340px;
-  }
-
-  .foot_link {
-    margin: 15px 11px 0;
-  }
-}
 .lightbox-target {
   position: fixed;
   top: -100%;
@@ -656,9 +628,39 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   color: #06c;
 }
+.light_box img {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 .down {
-  margin: 10px 0 30px;
-  font-size: 1.5rem;
+  margin: 20px 0 30px;
+  font-size: 1.3rem;
   text-decoration: underline;
+}
+
+@media (max-width: 380px) {
+  .cupn_qr {
+    width: 65px;
+  }
+
+  .cupn_chg img {
+    width: 45px;
+  }
+
+  .container {
+    padding: 15px 0 0;
+  }
+
+  .cupn_top .container {
+    min-width: 340px;
+  }
+
+  .foot_link {
+    margin: 15px 11px 0;
+  }
 }
