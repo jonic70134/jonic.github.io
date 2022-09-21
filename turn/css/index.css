@@ -841,3 +841,33 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
   }
 }
+.rotate-in-hor {
+  -webkit-animation: rotate-in-hor 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: rotate-in-hor 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes rotate-in-hor {
+  0% {
+    -webkit-transform: rotateX(360deg) scale(0.5);
+            transform: rotateX(360deg) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg) scale(1);
+            transform: rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-in-hor {
+  0% {
+    -webkit-transform: rotateX(360deg) scale(0.5);
+            transform: rotateX(360deg) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg) scale(1);
+            transform: rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+}
