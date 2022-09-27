@@ -103,10 +103,13 @@ img{
 	padding:0 10px 15px;
 	text-align: center;
 	color:black;
-	font-size:.8rem;
+	font-size:1rem;
 	line-height: 1.4;
 	letter-spacing: 1px;
 	background-color: white;
+	strong{
+		font-size:1.5rem;
+	}
 }
 .saletime{
 	padding:10px;
@@ -145,7 +148,10 @@ img{
 	border-radius: 10px;
 }
 .name{
-	height:62px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp:3;
+	line-clamp: 3;
 	margin:15px 0;
 	font-size:1.6rem;
 	color:black;
@@ -204,7 +210,6 @@ img{
 		flex:2 1 50%;
 	}
 	.name{
-		height:48px;
 		margin:20px 0 0;
 		font-size:1.2rem;
 	}
@@ -241,8 +246,15 @@ img{
 	line-height: 1.4;
 	color:#888;
 	font-size:.7rem;
+	box-sizing: border-box;
 }
 @media (max-width: 830px) {
+	.sub_txt{
+		font-size:.8rem;
+		strong{
+			font-size:1rem;
+		}
+	}
 	.nor_price{
 		font-size:1.5rem;
 	}
@@ -261,7 +273,6 @@ img{
 }
 @media (max-width: 767px) {
 	.name{
-		height:58px;
 		font-size:1.5rem;
 	}
 	.btn-imd{
@@ -270,7 +281,6 @@ img{
 	}
 	.item.sm{
 		.name{
-			height:40px;
 			margin: 0 0 15px;
 			font-size:1rem;
 		}
@@ -299,12 +309,8 @@ img{
 				font-size: .7rem;
 			}
 		}
-		.btn-imd{
-			padding:5px;
-			font-size:.8rem;
-		}
 		.info{
-			padding:0 0 0 10px;
+			padding:0 0 0 8px;
 		}
 	}
 }
@@ -313,7 +319,6 @@ img{
 		padding:10px;
 	}
 	.name{
-		height:46px;
 		font-size:1.2rem;
 	}
 	.dis_price{
@@ -327,7 +332,7 @@ img{
 		letter-spacing: 2px;
 	}
 	.item.sm{
-		padding:10px;
+		padding:7px;
 		.nor_price{
 			font-size:.7rem;
 		}
@@ -335,7 +340,6 @@ img{
 			font-size:.95rem;
 		}
 		.name{
-			height:32px;
 			margin:0 0 10px;
 			font-size:.8rem;
 		}
@@ -369,11 +373,6 @@ img{
 			font-size: .7rem;
 		}
 	}
-	.btn-imd{
-		padding:5px;
-		font-size:1rem;
-		letter-spacing: 1px;
-	}
 	.item.sm{
 		.photo{
 			flex:2 1 40%;
@@ -382,11 +381,10 @@ img{
 			flex:2 1 60%;
 		}
 		.name{
-			height:28px;
 			font-size:.7rem;
 		}
 		.nor_price{
-			margin:0 -8px 0 -8px;
+			margin:0 -6px 0 -9px;
 			transform: scale(.6);
 		}
 	}

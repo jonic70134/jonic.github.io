@@ -118,10 +118,13 @@ img {
   padding: 0 10px 15px;
   text-align: center;
   color: black;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.4;
   letter-spacing: 1px;
   background-color: white;
+}
+.sub_txt strong {
+  font-size: 1.5rem;
 }
 
 .saletime {
@@ -174,7 +177,10 @@ img {
 }
 
 .name {
-  height: 62px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   margin: 15px 0;
   font-size: 1.6rem;
   color: black;
@@ -264,7 +270,6 @@ img {
           flex: 2 1 50%;
 }
 .item.sm .name {
-  height: 48px;
   margin: 20px 0 0;
   font-size: 1.2rem;
 }
@@ -307,9 +312,18 @@ img {
   line-height: 1.4;
   color: #888;
   font-size: 0.7rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (max-width: 830px) {
+  .sub_txt {
+    font-size: 0.8rem;
+  }
+  .sub_txt strong {
+    font-size: 1rem;
+  }
+
   .nor_price {
     font-size: 1.5rem;
   }
@@ -327,7 +341,6 @@ img {
 }
 @media (max-width: 767px) {
   .name {
-    height: 58px;
     font-size: 1.5rem;
   }
 
@@ -337,7 +350,6 @@ img {
   }
 
   .item.sm .name {
-    height: 40px;
     margin: 0 0 15px;
     font-size: 1rem;
   }
@@ -364,12 +376,8 @@ img {
   .item.sm .dis_price::first-letter {
     font-size: 0.7rem;
   }
-  .item.sm .btn-imd {
-    padding: 5px;
-    font-size: 0.8rem;
-  }
   .item.sm .info {
-    padding: 0 0 0 10px;
+    padding: 0 0 0 8px;
   }
 }
 @media (max-width: 580px) {
@@ -378,7 +386,6 @@ img {
   }
 
   .name {
-    height: 46px;
     font-size: 1.2rem;
   }
 
@@ -395,7 +402,7 @@ img {
   }
 
   .item.sm {
-    padding: 10px;
+    padding: 7px;
   }
   .item.sm .nor_price {
     font-size: 0.7rem;
@@ -404,7 +411,6 @@ img {
     font-size: 0.95rem;
   }
   .item.sm .name {
-    height: 32px;
     margin: 0 0 10px;
     font-size: 0.8rem;
   }
@@ -441,12 +447,6 @@ img {
     font-size: 0.7rem;
   }
 
-  .btn-imd {
-    padding: 5px;
-    font-size: 1rem;
-    letter-spacing: 1px;
-  }
-
   .item.sm .photo {
     -webkit-box-flex: 2;
         -ms-flex: 2 1 40%;
@@ -458,11 +458,10 @@ img {
             flex: 2 1 60%;
   }
   .item.sm .name {
-    height: 28px;
     font-size: 0.7rem;
   }
   .item.sm .nor_price {
-    margin: 0 -8px 0 -8px;
+    margin: 0 -6px 0 -9px;
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
   }
