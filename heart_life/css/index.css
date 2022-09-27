@@ -280,6 +280,7 @@ img {
           flex-flow: row wrap;
 }
 .item.sm .dis_price {
+  margin-left: 3px;
   font-size: 1.8rem;
 }
 .item.sm .dis_price::first-letter {
