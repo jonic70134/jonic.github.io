@@ -5,52 +5,8 @@
 @import "partials/page";
 @import "partials/page_item";
 @import "partials/relate";
+@import "partials/catemenu";
 
-.site-main{
-    display:flex;
-    flex: row nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-.cate_menu{
-    width: 200px;
-    border:1px solid #ddd;
-    border-top:0;
-    box-sizing: border-box;
-    a{
-        display: block;
-        box-sizing: border-box;
-        word-break: break-word;
-    }
-}
-.cate_b{
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-    &:last-child{
-        border:none;
-    }
-}
-.cate_one_t{
-    padding: 10px;
-    color:white;
-    background: #999;
-}
-.cate_two_t{
-    padding:10px;
-    font-size:1.15rem;
-    font-weight: 700;
-}
-.cate_three_t{
-    padding: 10px 10px 10px 22px;
-    color:#666;
-    line-height: 1.2;
-}
-.cate_more{
-    width: 100%;
-    padding: 10px;
-    text-align: right;
-    color:#68f;
-}
 .cate_r{
     width: 1000px;
 }
@@ -58,6 +14,7 @@
     display:flex;
     flex-flow:column nowrap;
     align-items: baseline;
+    width: 100%;
     color:$primary-color;
     font-size:.9rem;
     .price{

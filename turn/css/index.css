@@ -512,6 +512,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #333;
   margin: var(--gap) 0 0 var(--gap);
   border-radius: 10px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 .cupn_item.purple {
   border: 5px solid #e6b;

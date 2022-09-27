@@ -1226,19 +1226,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 .cate_b:last-child {
   border: none;
-  padding: 10px 0 0;
 }
 
 .cate_one_t {
   padding: 10px;
-  color: white;
   background: #999;
+}
+.cate_one_t a {
+  color: white;
 }
 
 .cate_two_t {
   padding: 10px;
   font-size: 1.15rem;
   font-weight: 700;
+}
+.cate_two_t a {
   color: black;
 }
 
