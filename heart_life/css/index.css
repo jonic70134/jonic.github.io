@@ -179,8 +179,8 @@ img {
 .name {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
   margin: 15px 0;
   font-size: 1.6rem;
   color: black;
@@ -270,6 +270,8 @@ img {
           flex: 2 1 50%;
 }
 .item.sm .name {
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   margin: 20px 0 0;
   font-size: 1.2rem;
 }
