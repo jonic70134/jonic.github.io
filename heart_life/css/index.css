@@ -110,8 +110,9 @@ img {
   text-align: center;
   color: black;
   background-color: white;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   letter-spacing: 2px;
+  font-weight: 700;
 }
 
 .sub_txt {
@@ -122,9 +123,6 @@ img {
   line-height: 1.4;
   letter-spacing: 1px;
   background-color: white;
-}
-.sub_txt strong {
-  font-size: 1.5rem;
 }
 
 .saletime {
