@@ -621,7 +621,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 100%;
   position: relative;
-  top: 0;
 }
 .menu .container {
   display: -webkit-box;
@@ -750,8 +749,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 6px;
 }
 
-.cupn_slide .swiper-slide {
-  max-width: 370px;
+.cupn_slide {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -ms-grid-rows: 110px 5px 110px;
+  grid-template-rows: repeat(2, 110px);
+  grid-template-columns: repeat(auto-fill, 360px);
+  grid-gap: 5px;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .cupn_con {
@@ -819,6 +826,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  width: 360px;
   padding: 8px;
   background-color: #333;
   -webkit-box-sizing: border-box;

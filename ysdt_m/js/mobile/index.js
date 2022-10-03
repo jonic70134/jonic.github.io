@@ -1,11 +1,11 @@
-var duo1slide = new Swiper('.duo_1 .swiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 10,
-});
-var duo2slide = new Swiper('.duo_2 .swiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 10,
-});
+// var duo1slide = new Swiper('.duo_1 .swiper', {
+//     slidesPerView: 'auto',
+//     spaceBetween: 10,
+// });
+// var duo2slide = new Swiper('.duo_2 .swiper', {
+//     slidesPerView: 'auto',
+//     spaceBetween: 10,
+// });
 
 //menu
 $('.icon_menu').click(function(e) {
@@ -18,20 +18,20 @@ $('.icon_menu').click(function(e) {
 
 
 // 折價券slider
-var cupnslide = new Swiper('.cupn_slide.swiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 10,
-    grid: {
-        rows: 2,
-        fill: 'row',
-    },
+// var cupnslide = new Swiper('.cupn_slide.swiper', {
+//     slidesPerView: 'auto',
+//     spaceBetween: 10,
+//     grid: {
+//         rows: 2,
+//         fill: 'row',
+//     },
     
-});
+// });
 // 特賣主題 slider
-var specslide = new Swiper('.spec_slide', {
-    slidesPerView: 1.2,
-    spaceBetween: 10,
-});
+// var specslide = new Swiper('.spec_slide', {
+//     slidesPerView: 1.2,
+//     spaceBetween: 10,
+// });
 
 // // 熱搜 slider
 // var hotslide = new Swiper('.hot_slide', {

@@ -1,6 +1,12 @@
 @import "partials/color";
-.cupn_slide .swiper-slide{
-	max-width: 370px;
+.cupn_slide{
+	display:grid;   
+	grid-auto-flow:column;  
+	grid-template-rows: repeat(2, 110px);
+	grid-template-columns: repeat(auto-fill, 360px);
+	grid-gap:5px; 
+	width:100%;
+	overflow-x: auto;
 }
 .cupn_con{
 	position: relative;
@@ -40,6 +46,7 @@
 .cupn_item{
 	display: flex;
     flex-flow: row nowrap;
+	width: 360px;
 	padding: 8px;
     background-color: #333;
 	box-sizing: border-box;

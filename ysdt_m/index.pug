@@ -6,93 +6,89 @@ html
         include src/_header.pug
         include src/_menu.pug
         .site-main
-            .per_duoslide.duo_1
-                .per_info.swiper
-                    .swiper-wrapper
-                        a.per_l.swiper-slide(href='item.html')
-                            .per_dur
-                                img.per_img(src='../img/mobile/sample/item_019.jpg', alt='商品名稱', title='商品名稱')
-                            .per_buy
-                                h2.name APPLE iPhone 13 Pro Max 128G 防水智慧手機
-                                .per_price
-                                    .pay_dis
-                                        .price $195,900
-                                    button.button.btn-imd 立即購買
-                        mixin slider(src)
-                            a.swiper-slide.per_r(href='item.html')
-                                .per_block
-                                    .per_dur
-                                        img(src='../img/mobile/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
-                                    .per_r_info
-                                        h3.name Grivel 分力盤/系統架設/ Grivel Four 四孔分力盤 RTFOUR 義大利製
-                                        .per_price
-                                            .price $999,900
-                                            p.rush(href="#") 搶購 
-                        +slider('01_02_160')
-                        +slider('01_03_160')
-                        +slider('01_04_160')
-                        +slider('01_05_160')
+            .per_duoslide
+                .per_info
+                    a.per_l(href='item.html')
+                        .per_dur
+                            img.per_img(src='../img/mobile/sample/item_019.jpg', alt='商品名稱', title='商品名稱')
+                        .per_buy
+                            h2.name APPLE iPhone 13 Pro Max 128G 防水智慧手機
+                            .per_price
+                                .pay_dis
+                                    .price $195,900
+                                button.button.btn-imd 立即購買
+                    mixin slider(src)
+                        a.per_r(href='item.html')
+                            .per_block
+                                .per_dur
+                                    img(src='../img/mobile/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
+                                .per_r_info
+                                    h3.name Grivel 分力盤/系統架設/ Grivel Four 四孔分力盤 RTFOUR 義大利製
+                                    .per_price
+                                        .price $999,900
+                                        p.rush(href="#") 搶購 
+                    +slider('01_02_160')
+                    +slider('01_03_160')
+                    +slider('01_04_160')
+                    +slider('01_05_160')
             .per_duoslide.duo_2
-                .per_info.swiper
-                    .swiper-wrapper
-                        a.per_l.swiper-slide(href='item.html')
-                            .per_dur
-                                img.per_img(src='../img/mobile/sample/02_01_250.jpg', alt='商品名稱', title='商品名稱')
-                            .per_buy
-                                h2.name APPLE iPhone 13 Pro Max 128G 防水智慧手機
-                                .per_price
-                                    .pay_dis
-                                        .price $195,900
-                                    button.button.btn-imd 立即購買
-                        mixin slider(src)
-                            a.swiper-slide.per_r(href='item.html')
-                                .per_block
-                                    .per_dur
-                                        img(src='../img/mobile/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
-                                    .per_r_info
-                                        h3.name Grivel 分力盤/系統架設/ Grivel Four 四孔分力盤 RTFOUR 義大利製
-                                        .per_price
-                                            .price $999,900
-                                            p.rush(href="#") 搶購 
-                        +slider('01_04_160')
-                        +slider('01_03_160')
-                        +slider('01_04_160')
-                        +slider('01_05_160')
-            .cupn_slide.swiper
-                .swiper-wrapper
-                    mixin cupnimg(src)
-                        .swiper-slide
-                            .cupn_item(href='#')
-                                .cupn_photo
-                                    img.cupnimg(src='img/mobile/sample/'+ src +'.jpg', alt='商品名稱', title='商品名稱')
-                                .cupn_info
-                                    .cupn
-                                        h3.cupn_name 商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品
-                                        .cupn_block
-                                            .cupn_t 個人對品折價券
-                                            .cupn_ticket
-                                                .cupn_dur 07/13 23:59止
-                                                .cupn_price $1,000 
-                                    .cupn_nor
-                                        .nor_t 市價
-                                        .nor_price $999,999
-                                    .cupn_dis
-                                        .dis_net
-                                            .dis_t 網路價
-                                            .dis_price $299,999
-                                        .icon.cupn_arrow
-                                        .dis_net
-                                            .dis_af 折後
-                                            .dis_af_price $298,999
-                    +cupnimg('01_03_200')
-                    +cupnimg('01_04_200')
-                    +cupnimg('02_01_250')
-                    +cupnimg('01_04_200')
-                    +cupnimg('02_01_250')
-                    +cupnimg('01_03_200')
-                    +cupnimg('02_01_250')
-                    +cupnimg('01_04_200')
-                    +cupnimg('02_01_250')
+                .per_info
+                    a.per_l(href='item.html')
+                        .per_dur
+                            img.per_img(src='../img/mobile/sample/02_01_250.jpg', alt='商品名稱', title='商品名稱')
+                        .per_buy
+                            h2.name APPLE iPhone 13 Pro Max 128G 防水智慧手機
+                            .per_price
+                                .pay_dis
+                                    .price $195,900
+                                button.button.btn-imd 立即購買
+                    mixin slider(src)
+                        a.per_r(href='item.html')
+                            .per_block
+                                .per_dur
+                                    img(src='../img/mobile/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
+                                .per_r_info
+                                    h3.name Grivel 分力盤/系統架設/ Grivel Four 四孔分力盤 RTFOUR 義大利製
+                                    .per_price
+                                        .price $999,900
+                                        p.rush(href="#") 搶購 
+                    +slider('01_04_160')
+                    +slider('01_03_160')
+                    +slider('01_04_160')
+                    +slider('01_05_160')
+            .cupn_slide
+                mixin cupnimg(src)
+                    .cupn_item(href='#')
+                        .cupn_photo
+                            img.cupnimg(src='img/mobile/sample/'+ src +'.jpg', alt='商品名稱', title='商品名稱')
+                        .cupn_info
+                            .cupn
+                                h3.cupn_name 商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品
+                                .cupn_block
+                                    .cupn_t 個人對品折價券
+                                    .cupn_ticket
+                                        .cupn_dur 07/13 23:59止
+                                        .cupn_price $1,000 
+                            .cupn_nor
+                                .nor_t 市價
+                                .nor_price $999,999
+                            .cupn_dis
+                                .dis_net
+                                    .dis_t 網路價
+                                    .dis_price $299,999
+                                .icon.cupn_arrow
+                                .dis_net
+                                    .dis_af 折後
+                                    .dis_af_price $298,999
+                +cupnimg('01_03_200')
+                +cupnimg('01_04_200')
+                +cupnimg('02_01_250')
+                +cupnimg('01_04_200')
+                +cupnimg('02_01_250')
+                +cupnimg('01_03_200')
+                +cupnimg('02_01_250')
+                +cupnimg('01_04_200')
+                +cupnimg('02_01_250')
             .icon_func
                 a.icon_func_block(href="#")
                     p.icon.icon_vip
@@ -110,49 +106,47 @@ html
                     p.icon.icon_coupon
                     span.icon_txt 折價券
             .spec_prod
-                .spec_slide.swiper
-                    .swiper-wrapper
-                        mixin slider(big,small_top,small_bot)
-                            .swiper-slide(href='item.html')
-                                h2.spec_prod_t 特賣主題
-                                .spec_block
-                                    a(href="item.html").spec_l
-                                        img.spec_img(src='../img/mobile/sample/'+ big+'.jpg', alt='商品名稱', title='商品名稱')
-                                        .spec_info
-                                            h3.spec_name 商品名稱商品名稱商品名稱商品名稱
-                                            .per_price
-                                                .price $999,900
-                                    .spec_r 
-                                        a(href="item.html").spec_r_block
-                                            img.spec_img(src='../img/mobile/sample/'+ small_top+'.jpg', alt='商品名稱', title='商品名稱')
-                                            .per_price
-                                                .price $999,900
-                                        a(href="item.html").spec_r_block
-                                            img.spec_img(src='../img/mobile/sample/'+ small_bot+'.jpg', alt='商品名稱', title='商品名稱')
-                                            .per_price
-                                                .price $999,900
-                        +slider('03_01_240','03_02_100','03_03_100')
-                        +slider('03_04_240','03_05_100','03_06_100')
-                        +slider('03_07_240','03_08_100','03_09_100')
-                        +slider('03_01_240','03_02_100','03_03_100')
-                        +slider('03_04_240','03_05_100','03_06_100')
+                mixin slider(big,small_top,small_bot)
+                    .spec_slide
+                        h2.spec_prod_t 特賣主題
+                        .spec_block
+                            a(href="item.html").spec_l
+                                img.spec_img(src='../img/mobile/sample/'+ big+'.jpg', alt='商品名稱', title='商品名稱')
+                                .spec_info
+                                    h3.spec_name 商品名稱商品名稱商品名稱商品名稱
+                                    .per_price
+                                        .price $999,900
+                            .spec_r 
+                                a(href="item.html").spec_r_block
+                                    img.spec_img(src='../img/mobile/sample/'+ small_top+'.jpg', alt='商品名稱', title='商品名稱')
+                                    .per_price
+                                        .price $999,900
+                                a(href="item.html").spec_r_block
+                                    img.spec_img(src='../img/mobile/sample/'+ small_bot+'.jpg', alt='商品名稱', title='商品名稱')
+                                    .per_price
+                                        .price $999,900
+                +slider('03_01_240','03_02_100','03_03_100')
+                +slider('03_04_240','03_05_100','03_06_100')
+                +slider('03_07_240','03_08_100','03_09_100')
+                +slider('03_01_240','03_02_100','03_03_100')
+                +slider('03_04_240','03_05_100','03_06_100')
             .tag_cloud
                 .hot_t
                     .icon.icon_search
                     p 熱搜
                 .hot_slide
-                    a(href="#") AirPods
-                    a(href="#") 音響
-                    a(href="#") 筆電
-                    a(href="#") iPhone XS
-                    a(href="#") 4k 電視
-                    a(href="#") 咖啡機
-                    a(href="#") 家庭劇院
-                    a(href="#") 藍芽音響
-                    a(href="#") 音響
-                    a(href="#") 筆電
-                    a(href="#") iPhone XS
-                    a(href="#") 4k 電視
+                    a.hot_tag(href="#") AirPods
+                    a.hot_tag(href="#") 音響
+                    a.hot_tag(href="#") 筆電
+                    a.hot_tag(href="#") iPhone XS
+                    a.hot_tag(href="#") 4k 電視
+                    a.hot_tag(href="#") 咖啡機
+                    a.hot_tag(href="#") 家庭劇院
+                    a.hot_tag(href="#") 藍芽音響
+                    a.hot_tag(href="#") 音響
+                    a.hot_tag(href="#") 筆電
+                    a.hot_tag(href="#") iPhone XS
+                    a.hot_tag(href="#") 4k 電視
             .ad_banner
                 img(src='../img/mobile/sample/AD_720x120.jpg', alt='廣告圖')
             .items

@@ -621,7 +621,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 100%;
   position: relative;
-  top: 0;
 }
 .menu .container {
   display: -webkit-box;
@@ -750,8 +749,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 6px;
 }
 
-.cupn_slide .swiper-slide {
-  max-width: 370px;
+.cupn_slide {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -ms-grid-rows: 110px 5px 110px;
+  grid-template-rows: repeat(2, 110px);
+  grid-template-columns: repeat(auto-fill, 360px);
+  grid-gap: 5px;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .cupn_con {
@@ -819,6 +826,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  width: 360px;
   padding: 8px;
   background-color: #333;
   -webkit-box-sizing: border-box;
@@ -1926,10 +1934,6 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  position: relative;
-  width: 100%;
-  border-top: 1px solid #ccc;
-  border-bottom: 2px solid #ccc;
 }
 
 .per_l {
@@ -1941,20 +1945,36 @@ button.swiper-pagination-bullet {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   background-color: #ece8df;
-  width: 400px !important;
+  border-top: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+.per_l .name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  font-size: 1.2rem;
+  color: #000;
+  line-height: 1.2;
+  word-break: break-word;
+  overflow: hidden;
 }
 
 .per_r {
-  width: 180px !important;
-  padding: 10px 0 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
 }
 .per_r img {
   max-height: 160px;
   max-width: 160px;
 }
 .per_r .name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
   margin: 10px 0 5px;
-  height: 30px;
   color: #888;
   font-size: 0.8rem;
 }
@@ -1986,21 +2006,15 @@ button.swiper-pagination-bullet {
 }
 
 .per_duoslide {
+  width: 100%;
   margin: 15px 0 0;
   position: relative;
+  overflow-x: auto;
 }
 .per_duoslide .per_img {
   display: block;
   max-height: 240px;
   background-color: white;
-}
-.per_duoslide .name {
-  height: 70px;
-  font-size: 1.2rem;
-  color: #000;
-  line-height: 1.2;
-  word-break: break-word;
-  overflow: hidden;
 }
 .per_duoslide .per_buy {
   display: -webkit-box;
@@ -2027,8 +2041,7 @@ button.swiper-pagination-bullet {
   font-size: 0.7rem;
 }
 .per_duoslide .per_block {
-  width: 160px;
-  margin: 0 10px 15px;
+  margin: 10px;
 }
 
 .duo_2 {
@@ -2044,10 +2057,6 @@ button.swiper-pagination-bullet {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
 }
-.per_r_info .name {
-  height: 45px;
-  margin: 0 0 5px;
-}
 
 .ad_banner {
   margin-top: 15px;
@@ -2057,8 +2066,20 @@ button.swiper-pagination-bullet {
   display: block;
 }
 
-.spec_slide .swiper-slide {
-  max-width: 400px;
+.spec_prod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.spec_slide {
+  margin: 0 10px 0 0;
 }
 
 .spec_prod {
@@ -2144,15 +2165,30 @@ button.swiper-pagination-bullet {
           align-items: center;
 }
 .spec_r_block .per_price {
-  padding: 6px 0 10px;
+  padding: 6px 0 8px;
 }
 
 .tag_cloud {
   position: relative;
-  padding: 12px 0;
+  padding: 12px 0 0 40px;
   background-color: #ccc;
 }
-.tag_cloud a {
+.tag_cloud .icon_search::before {
+  font-size: 1.2rem;
+}
+
+.hot_slide {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.hot_tag {
   display: block;
   margin: 0 5px 8px;
   padding: 8px 10px;
@@ -2161,22 +2197,7 @@ button.swiper-pagination-bullet {
   text-align: center;
   background-color: white;
   border-radius: 15px;
-}
-.tag_cloud .icon_search::before {
-  font-size: 1.2rem;
-}
-
-.hot_slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  height: 80px;
-  margin: 0 0 0 40px;
-  overflow: hidden;
+  white-space: nowrap;
 }
 
 .hot_t {
@@ -2355,4 +2376,15 @@ button.swiper-pagination-bullet {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media (max-width: 400px) {
+  .per_duoslide .per_img {
+    max-height: 200px;
+  }
+
+  .per_r img {
+    max-height: 120px;
+    max-width: 120px;
+  }
 }
