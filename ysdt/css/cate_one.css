@@ -386,17 +386,6 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #eee;
   background-color: #f5281e;
 }
-.site-header {
-  zoom: 1;
-}
-.site-header:after {
-  content: ".";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-}
 .site-header.bg_profile {
   background: white;
 }
@@ -406,30 +395,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .site-header.bg_profile .main_head .site_search .input_search {
   border: 1px solid #ccc;
-}
-.site-header.bg_555 {
-  background: #555;
-}
-.site-header.bg_555 .main_head {
-  background: #555;
-}
-.site-header.bg_08c {
-  background: #0080cc;
-}
-.site-header.bg_08c .main_head {
-  background: #0080cc;
-}
-.site-header.bg_e90 {
-  background: #ee99b0;
-}
-.site-header.bg_e90 .main_head {
-  background: #ee99b0;
-}
-.site-header.bg_black {
-  background: black;
-}
-.site-header.bg_black .main_head {
-  background: black;
 }
 .site-header.bg_pic {
   background-color: white;
@@ -513,7 +478,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  padding: 35px 0;
+  height: 120px;
   font-size: 0;
 }
 .main_head .container {
@@ -521,9 +486,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site_search {
-  display: inline-block;
   position: relative;
   z-index: 3;
+  margin: 0 0 0 50px;
 }
 .site_search .icon_search {
   font-size: 1.1rem;
@@ -586,8 +551,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  width: 250px;
+  max-width: 200px;
+  max-height: 120px;
   font-size: 2rem;
+}
+.logo img {
+  display: block;
+  width: 100%;
 }
 
 .avatar {
