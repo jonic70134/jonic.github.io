@@ -15,6 +15,15 @@
     &:nth-child(5n){
         margin:0 0 30px;
     }
+    .name{
+        margin: 10px 0 5px;
+        color: #888;
+        font-size: .8rem;
+        line-height: 1.2;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
 }
 .photo{
     width: 100%;
@@ -37,15 +46,7 @@
         display: block;
     }
 }
-.name{
-    margin: 10px 0 5px;
-    color: #888;
-    font-size: .8rem;
-    line-height: 1.2;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
+
 .price{
     font-size:1rem;
     &::first-letter{

@@ -12,7 +12,45 @@ html
 					include src/_menu.pug
 					include src/_tagcloud.pug
 			.container
-					include src/_functop.pug
+				.grad_t
+					p 新到貨 #[span 最新人氣商品推薦！]
+				.per
+					.per_info
+						a.per_l(href='item.html')
+							.per_dur
+								img.per_img(src='img/sample/item_b_250.jpg', alt='商品名稱', title='商品名稱')
+							.per_buy
+								h2.name APPLE iPhone 13 Pro Max 128G 防水智慧手機
+								.per_price
+									.pay_dis
+										.price $195,900
+										button.button.large.btn-imd 立即購買
+						.per_r.swiper.swiper-container
+							.swiper-wrapper
+								mixin slider(src)
+									a.swiper-slide(href='item.html')
+										.per_block
+											img(src='img/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
+											.per_r_info
+												h3.name 商品名稱商品名稱商品名稱商品名稱
+												.per_price
+													.price $999,900
+								+slider('02_07_100')
+								+slider('02_08_100')
+								+slider('02_09_100')
+								+slider('02_02_100')
+								+slider('02_03_100')
+								+slider('02_04_100')
+								+slider('02_05_100')
+								+slider('02_02_100')
+								+slider('02_03_100')
+								+slider('02_04_100')
+								+slider('02_05_100')
+								+slider('02_06_100')
+								
+							.swiper-button-next
+							.swiper-button-prev
+				include src/_functop.pug
 			.site-main
 				.container
 					.cate_main
@@ -23,5 +61,6 @@ html
 						//-  相關商品
 					include src/_item_relative.pug
 					
-			script(src='js/3rd-party/jquery-3.6.0.min.js')
-			script(src='js/fresh.js')
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/fresh.js')
