@@ -1,496 +1,379 @@
-<!DOCTYPE html>
+
+<html>
   <head>
     <meta charset="utf-8"/>
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=yes">
-    <title>白昌</title>
-    <meta content="白昌首頁" name="description"/>
+    <title>friDay </title>
+    <meta content="friDay" name="description"/>
     <meta content="Orange" name="author"/>
-	<link rel="icon" href="../img/baichain.ico"/>
-    <link href='../css/baichian_m/coupon.css' rel='stylesheet'/>
-	<script src="../js/3rd-party/jquery-1.9.1.min.js"></script>
-	<script src="../js/3rd-party/swiper.min.js"></script>
-	<script src="../js/3rd-party/jquery.fancybox.pack.js"></script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link rel="icon" href="img/baichain.ico"/>
+    <link href="css/mobile/coupon.css" rel="stylesheet"/>
   </head>
-  <body>
-    <div class="body_container">
-		<header class="site-header" role="banner">
-    <div class="container">
-        <div class="head_con">
-            <div class="head_l">
-                <a href="#" class="btn-menu"><img src="../img/baichian_m/dept.svg"/></a>
-                <a href="index.html" class="logo"><img src="../img/asap40w.png" alt="logo"/></a>
-            </div>  
-            <div class="head_r">
-                <a href="#" class="search"><img src="../img/baichian_m/search.svg" alt="搜尋"/></a>
-                <a href="../cart/orderlist.html" class="cart" title="查看購物車"><img src="../img/baichian_m/cart_white.svg" class="img-cart"/></a>
-            </div>
-            <!--<a href="../OBtest.html" class="OB">公測說明!</a> 
-            <style>
-                a.OB{
-                    position:fixed;top:20px;right:102px;
-                    display:block;
-                    width:105px;padding:8px 0;
-                    text-align:center;
-                    color:#ff0;
-                    font-size:1.2rem;
-                    text-decoration:none;
-                    background: #d00;
-                    background: -moz-linear-gradient(top,  #d00 30%, #800 70%); 
-                    background: -webkit-linear-gradient(top,  #d00 30%,#800 70%); 
-                    background: linear-gradient(to bottom,  #d00 30%,#800 70%);
-                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d00', endColorstr='#800',GradientType=0 );
-                    z-index:12;
-                }
-                @media only screen and (max-width: 320px) {
-                    a.OB{
-                        width: auto;
-                        top: 26px;right:89px;
-                        padding: 5px 10px;
-                        font-size: 1rem;
-                    }
-                }
-            </style>-->
-            <div class="site-search">
-                <input type="text" class="input-search" autocomplete="off" placeholder="請輸入商品名稱"/>
-                <button class="btn-cancel"><img src="../img/baichian_m/clear.svg" alt="search icon"/></button>
-                <a href="#" class="search"><img src="../img/baichian_m/search_gray.svg" alt="搜尋"/></a>
-            </div>
+  <body class="body_container">
+    <header class="site-header">
+      <div class="head_con">
+        <div class="head_l"><a class="icon icon_menu" href="#"></a><a class="icon icon_logo" href="index.html"></a></div>
+        <div class="head_r"><a class="icon icon_search" href="#"></a><a class="icon icon_cart" href="#" title="查看購物車"><span class="icon icon_check"></span></a></div>
+        <div class="site-search">
+          <input class="input-search" type="text" autocomplete="off" placeholder="請輸入商品名稱"/>
+          <div class="icon icon_clear"></div>
+          <div class="search"><a class="icon icon_search" href="search.html"></a></div>
         </div>
-
-        <nav class="md_nav_menu">
-            <div class="container">
-                <div class="left">
-                    <div class="nav">
-                        <ul>
-                            <li class="click">全球</li>
-                            
-                           <li>家電</li>
-                            
-                           <li>家電</li>
-                            
-                           <li>家電</li>
-                            
-                           <li>家電</li>
-                            
-                           <li>家電</li>
-                            
-                           <li>家電</li>
-                            
-                           <li>家電</li>
-                            
-                           <li>家電</li>
-                            
-                           <li>家電</li>
-                            
-                           <li>家電</li>
-                            
-                        </ul>
-                    </div>
-                </div>
-                <div class="right">
-                    <a class="enter_cate" href="#">進入XX館→</a>
-                    
-                    <div class="items">
-                        <h3 class="title"><span>品牌專區</span></h3>
-                        <div class="cate_center">
-                            
-                            <div class="item"><a href="catelist.html"><h4>索尼 SONY</h4></a></div>
-                            <div class="item"><a href="catelist.html"><h4>國際牌 Panasonic</h4></a></div>
-                             <div class="item"><a href="catelist.html"><h4>智慧電視盒</h4></a></div>
-                            
-                            <div class="item"><a href="catelist.html"><h4>索尼 SONY</h4></a></div>
-                            <div class="item"><a href="catelist.html"><h4>國際牌 Panasonic</h4></a></div>
-                             <div class="item"><a href="catelist.html"><h4>智慧電視盒</h4></a></div>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="items">
-                        <h3 class="title"><span>品牌專區</span></h3>
-                        <div class="cate_center">
-                            
-                            <div class="item"><a href="catelist.html"><h4>索尼 SONY</h4></a></div>
-                            <div class="item"><a href="catelist.html"><h4>國際牌 Panasonic</h4></a></div>
-                             <div class="item"><a href="catelist.html"><h4>智慧電視盒</h4></a></div>
-                            
-                            <div class="item"><a href="catelist.html"><h4>索尼 SONY</h4></a></div>
-                            <div class="item"><a href="catelist.html"><h4>國際牌 Panasonic</h4></a></div>
-                             <div class="item"><a href="catelist.html"><h4>智慧電視盒</h4></a></div>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="items">
-                        <h3 class="title"><span>品牌專區</span></h3>
-                        <div class="cate_center">
-                            
-                            <div class="item"><a href="catelist.html"><h4>索尼 SONY</h4></a></div>
-                            <div class="item"><a href="catelist.html"><h4>國際牌 Panasonic</h4></a></div>
-                             <div class="item"><a href="catelist.html"><h4>智慧電視盒</h4></a></div>
-                            
-                            <div class="item"><a href="catelist.html"><h4>索尼 SONY</h4></a></div>
-                            <div class="item"><a href="catelist.html"><h4>國際牌 Panasonic</h4></a></div>
-                             <div class="item"><a href="catelist.html"><h4>智慧電視盒</h4></a></div>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="items">
-                        <h3 class="title"><span>品牌專區</span></h3>
-                        <div class="cate_center">
-                            
-                            <div class="item"><a href="catelist.html"><h4>索尼 SONY</h4></a></div>
-                            <div class="item"><a href="catelist.html"><h4>國際牌 Panasonic</h4></a></div>
-                             <div class="item"><a href="catelist.html"><h4>智慧電視盒</h4></a></div>
-                            
-                            <div class="item"><a href="catelist.html"><h4>索尼 SONY</h4></a></div>
-                            <div class="item"><a href="catelist.html"><h4>國際牌 Panasonic</h4></a></div>
-                             <div class="item"><a href="catelist.html"><h4>智慧電視盒</h4></a></div>
-                            
-                        </div>
-                    </div>
-                    
-
-                </div>
+      </div>
+    </header>
+    <nav class="menu">
+      <div class="container">
+        <div class="menu_l">
+          <div class="menu_l_tab">
+            <ul></ul>
+            <li class="click">全球</li>
+            <li>家電</li>
+            <li>家電</li>
+            <li>家電</li>
+            <li>家電</li>
+            <li>家電</li>
+            <li>家電</li>
+            <li>家電</li>
+            <li>家電</li>
+            <li>家電</li>
+            <li>家電</li>
           </div>
-           
-        </nav>
+        </div>
+        <div class="menu_r"><a class="menu_cate_tab" href="#">活動專區</a>
+          <div class="menu_items">
+            <h3 class="menu_t">活動專區文字</h3>
+            <div class="menu_cate"><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_01_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">iphone 13</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_02_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">SAMSUNG</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_03_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">小米</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_04_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">SONY</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_01_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">Panasonic</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_02_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">智慧電視盒</h4></a></div>
+          </div>
+          <div class="menu_items">
+            <h3 class="menu_t">活動專區文字</h3>
+            <div class="menu_cate"><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_01_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">iphone 13</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_02_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">SAMSUNG</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_03_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">小米</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_04_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">SONY</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_01_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">Panasonic</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_02_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">智慧電視盒</h4></a></div>
+          </div>
+          <div class="menu_items">
+            <h3 class="menu_t">活動專區文字</h3>
+            <div class="menu_cate"><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_01_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">iphone 13</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_02_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">SAMSUNG</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_03_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">小米</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_04_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">SONY</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_01_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">Panasonic</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_02_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">智慧電視盒</h4></a></div>
+          </div>
+          <div class="menu_items">
+            <h3 class="menu_t">活動專區文字</h3>
+            <div class="menu_cate"><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_01_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">iphone 13</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_02_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">SAMSUNG</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_03_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">小米</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_04_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">SONY</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_01_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">Panasonic</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_02_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">智慧電視盒</h4></a></div>
+          </div>
+          <div class="menu_items">
+            <h3 class="menu_t">活動專區文字</h3>
+            <div class="menu_cate"><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_01_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">iphone 13</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_02_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">SAMSUNG</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_03_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">小米</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_04_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">SONY</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_01_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">Panasonic</h4></a><a class="menu_cate_item" href="cate.html"><img class="menu_img" src="img/mobile/sample/04_02_80.jpg" alt=""/>
+                <h4 class="menu_sub_t">智慧電視盒</h4></a></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="site-main">
+      <div class="bread">
+        <p> <a href="index.html">首頁</a><span>></span></p>
+        <p>對品折價券 </p>
+      </div>
+      <div class="cupn_items">
+                <div class="cupn_item" href="item.html">
+                  <div class="cupn_photo"><img class="cupnimg" src="img/mobile/sample/01_03_200.jpg" alt="商品名稱" title="商品名稱"/></div>
+                  <div class="cupn_info">
+                    <div class="cupn">
+                      <h3 class="cupn_name">商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品</h3>
+                      <div class="cupn_block">
+                        <div class="cupn_t">個人對品折價券</div>
+                        <div class="cupn_ticket">
+                          <div class="cupn_dur">07/13 23:59止</div>
+                          <div class="cupn_price">$1,000 </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cupn_nor">
+                      <div class="nor_t">市價</div>
+                      <div class="nor_price">$999,999</div>
+                    </div>
+                    <div class="cupn_dis">
+                      <div class="dis_net">
+                        <div class="dis_t">網路價</div>
+                        <div class="dis_price">$299,999</div>
+                      </div>
+                      <div class="icon cupn_arrow"></div>
+                      <div class="dis_net">
+                        <div class="dis_af">折後</div>
+                        <div class="dis_af_price">$298,999</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cupn_item" href="item.html">
+                  <div class="cupn_photo"><img class="cupnimg" src="img/mobile/sample/01_04_200.jpg" alt="商品名稱" title="商品名稱"/></div>
+                  <div class="cupn_info">
+                    <div class="cupn">
+                      <h3 class="cupn_name">商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品</h3>
+                      <div class="cupn_block">
+                        <div class="cupn_t">個人對品折價券</div>
+                        <div class="cupn_ticket">
+                          <div class="cupn_dur">07/13 23:59止</div>
+                          <div class="cupn_price">$1,000 </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cupn_nor">
+                      <div class="nor_t">市價</div>
+                      <div class="nor_price">$999,999</div>
+                    </div>
+                    <div class="cupn_dis">
+                      <div class="dis_net">
+                        <div class="dis_t">網路價</div>
+                        <div class="dis_price">$299,999</div>
+                      </div>
+                      <div class="icon cupn_arrow"></div>
+                      <div class="dis_net">
+                        <div class="dis_af">折後</div>
+                        <div class="dis_af_price">$298,999</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cupn_item" href="item.html">
+                  <div class="cupn_photo"><img class="cupnimg" src="img/mobile/sample/02_01_250.jpg" alt="商品名稱" title="商品名稱"/></div>
+                  <div class="cupn_info">
+                    <div class="cupn">
+                      <h3 class="cupn_name">商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品</h3>
+                      <div class="cupn_block">
+                        <div class="cupn_t">個人對品折價券</div>
+                        <div class="cupn_ticket">
+                          <div class="cupn_dur">07/13 23:59止</div>
+                          <div class="cupn_price">$1,000 </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cupn_nor">
+                      <div class="nor_t">市價</div>
+                      <div class="nor_price">$999,999</div>
+                    </div>
+                    <div class="cupn_dis">
+                      <div class="dis_net">
+                        <div class="dis_t">網路價</div>
+                        <div class="dis_price">$299,999</div>
+                      </div>
+                      <div class="icon cupn_arrow"></div>
+                      <div class="dis_net">
+                        <div class="dis_af">折後</div>
+                        <div class="dis_af_price">$298,999</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cupn_item" href="item.html">
+                  <div class="cupn_photo"><img class="cupnimg" src="img/mobile/sample/01_04_200.jpg" alt="商品名稱" title="商品名稱"/></div>
+                  <div class="cupn_info">
+                    <div class="cupn">
+                      <h3 class="cupn_name">商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品</h3>
+                      <div class="cupn_block">
+                        <div class="cupn_t">個人對品折價券</div>
+                        <div class="cupn_ticket">
+                          <div class="cupn_dur">07/13 23:59止</div>
+                          <div class="cupn_price">$1,000 </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cupn_nor">
+                      <div class="nor_t">市價</div>
+                      <div class="nor_price">$999,999</div>
+                    </div>
+                    <div class="cupn_dis">
+                      <div class="dis_net">
+                        <div class="dis_t">網路價</div>
+                        <div class="dis_price">$299,999</div>
+                      </div>
+                      <div class="icon cupn_arrow"></div>
+                      <div class="dis_net">
+                        <div class="dis_af">折後</div>
+                        <div class="dis_af_price">$298,999</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cupn_item" href="item.html">
+                  <div class="cupn_photo"><img class="cupnimg" src="img/mobile/sample/02_01_250.jpg" alt="商品名稱" title="商品名稱"/></div>
+                  <div class="cupn_info">
+                    <div class="cupn">
+                      <h3 class="cupn_name">商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品</h3>
+                      <div class="cupn_block">
+                        <div class="cupn_t">個人對品折價券</div>
+                        <div class="cupn_ticket">
+                          <div class="cupn_dur">07/13 23:59止</div>
+                          <div class="cupn_price">$1,000 </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cupn_nor">
+                      <div class="nor_t">市價</div>
+                      <div class="nor_price">$999,999</div>
+                    </div>
+                    <div class="cupn_dis">
+                      <div class="dis_net">
+                        <div class="dis_t">網路價</div>
+                        <div class="dis_price">$299,999</div>
+                      </div>
+                      <div class="icon cupn_arrow"></div>
+                      <div class="dis_net">
+                        <div class="dis_af">折後</div>
+                        <div class="dis_af_price">$298,999</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cupn_item" href="item.html">
+                  <div class="cupn_photo"><img class="cupnimg" src="img/mobile/sample/01_03_200.jpg" alt="商品名稱" title="商品名稱"/></div>
+                  <div class="cupn_info">
+                    <div class="cupn">
+                      <h3 class="cupn_name">商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品</h3>
+                      <div class="cupn_block">
+                        <div class="cupn_t">個人對品折價券</div>
+                        <div class="cupn_ticket">
+                          <div class="cupn_dur">07/13 23:59止</div>
+                          <div class="cupn_price">$1,000 </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cupn_nor">
+                      <div class="nor_t">市價</div>
+                      <div class="nor_price">$999,999</div>
+                    </div>
+                    <div class="cupn_dis">
+                      <div class="dis_net">
+                        <div class="dis_t">網路價</div>
+                        <div class="dis_price">$299,999</div>
+                      </div>
+                      <div class="icon cupn_arrow"></div>
+                      <div class="dis_net">
+                        <div class="dis_af">折後</div>
+                        <div class="dis_af_price">$298,999</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cupn_item" href="item.html">
+                  <div class="cupn_photo"><img class="cupnimg" src="img/mobile/sample/02_01_250.jpg" alt="商品名稱" title="商品名稱"/></div>
+                  <div class="cupn_info">
+                    <div class="cupn">
+                      <h3 class="cupn_name">商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品</h3>
+                      <div class="cupn_block">
+                        <div class="cupn_t">個人對品折價券</div>
+                        <div class="cupn_ticket">
+                          <div class="cupn_dur">07/13 23:59止</div>
+                          <div class="cupn_price">$1,000 </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cupn_nor">
+                      <div class="nor_t">市價</div>
+                      <div class="nor_price">$999,999</div>
+                    </div>
+                    <div class="cupn_dis">
+                      <div class="dis_net">
+                        <div class="dis_t">網路價</div>
+                        <div class="dis_price">$299,999</div>
+                      </div>
+                      <div class="icon cupn_arrow"></div>
+                      <div class="dis_net">
+                        <div class="dis_af">折後</div>
+                        <div class="dis_af_price">$298,999</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cupn_item" href="item.html">
+                  <div class="cupn_photo"><img class="cupnimg" src="img/mobile/sample/01_04_200.jpg" alt="商品名稱" title="商品名稱"/></div>
+                  <div class="cupn_info">
+                    <div class="cupn">
+                      <h3 class="cupn_name">商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品</h3>
+                      <div class="cupn_block">
+                        <div class="cupn_t">個人對品折價券</div>
+                        <div class="cupn_ticket">
+                          <div class="cupn_dur">07/13 23:59止</div>
+                          <div class="cupn_price">$1,000 </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cupn_nor">
+                      <div class="nor_t">市價</div>
+                      <div class="nor_price">$999,999</div>
+                    </div>
+                    <div class="cupn_dis">
+                      <div class="dis_net">
+                        <div class="dis_t">網路價</div>
+                        <div class="dis_price">$299,999</div>
+                      </div>
+                      <div class="icon cupn_arrow"></div>
+                      <div class="dis_net">
+                        <div class="dis_af">折後</div>
+                        <div class="dis_af_price">$298,999</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cupn_item" href="item.html">
+                  <div class="cupn_photo"><img class="cupnimg" src="img/mobile/sample/02_01_250.jpg" alt="商品名稱" title="商品名稱"/></div>
+                  <div class="cupn_info">
+                    <div class="cupn">
+                      <h3 class="cupn_name">商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品</h3>
+                      <div class="cupn_block">
+                        <div class="cupn_t">個人對品折價券</div>
+                        <div class="cupn_ticket">
+                          <div class="cupn_dur">07/13 23:59止</div>
+                          <div class="cupn_price">$1,000 </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cupn_nor">
+                      <div class="nor_t">市價</div>
+                      <div class="nor_price">$999,999</div>
+                    </div>
+                    <div class="cupn_dis">
+                      <div class="dis_net">
+                        <div class="dis_t">網路價</div>
+                        <div class="dis_price">$299,999</div>
+                      </div>
+                      <div class="icon cupn_arrow"></div>
+                      <div class="dis_net">
+                        <div class="dis_af">折後</div>
+                        <div class="dis_af_price">$298,999</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      </div>
     </div>
-</header>
-		<div class="site-body">
-			<div class="site-main">
-				<div class="container">
-					<div class="cupn">
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<div class="expired">
-									<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-									<div class="fog"></div>
-									<div class="expired_bg"><span>已過期</span></div>
-								</div>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						  
-						<div class="cupn_block">
-							<a href="item.html" class="cupn_bg">
-								<img src="../img/sample/item_011.jpg" alt="商品名稱" title="商品名稱"/>
-								<div class="cupn_info">
-									<div class="cupn_num">禮券編號:AB1234567890</div>
-									<h3 class="name">鋁合金裝備掛環工具環座帶勾環 C5 M</h3>
-									<div class="cupn_dur">對品禮券&nbsp;期間：<br/><span>5/20 14:00 ~ 5/22 14:00</span></div>
-									<div class="cupn_price"><span class="title">限時特價</span><p class="price"> 99,900</p></div>
-								</div>
-							</a>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		
-		</div>
-       <footer class="site-footer">
-	<div class="container">
-		<ul>
-            <li class="footer-home"><a href="index.html"><img src="../img/baichian_m/f01_home.svg" class="img-coin"><span class="icon_txt">首頁</span></a></li>
-            <li class="footer-best"><a href="coupon.html"><img src="../img/baichian_m/f02_coupon.svg" class="img-bird"><span class="icon_txt">折價券</span></a></li>
-            <li class="footer-account"><a href="per.html" title="我的帳戶"><img src="../img/baichian_m/f03_vip.svg" class="img-account"><span class="icon_txt">專屬品</span></a></li>
-            <li class="footer-notice"><a href="notice.php" title="查看購物車" class="cart"><img src="../img/baichian_m/f04_notice.svg" class="img-cart"><span class="number">999</span><span class="icon_txt">通知</span></a></li>
-            <li class="footer-account"><a href="../asap_login_register/login.html" title="我的帳戶"><img src="../img/baichian_m/f05_account.svg" class="img-account"><span class="icon_txt">會員</span></a></li>
-         </ul>   
-        <div class="clearfix"></div>
-    </div>
-</footer>
-
-<div class="chg_block">
-	<div class="chg_btn">
-		<p><i class="fa fa-sliders" aria-hidden="true"></i></p>
-		<div class="chg_st">
-            <a href="index.html">原始版本天</a>
-            <a href="index_white.html">白色天</a>
-            <a href="index_white_profile.html">白色天(網紅)</a>
-            <a href="index_white_profile_bg.html">底圖天(網紅)</a>
-		</div>
-	</div>    
-</div>
-
-<style>
-	.chg_block{
-			position:fixed;right:0;top:40%;
-			z-index:10;
-	}
-	.chg_btn{
-		position:relative;
-	}
-	.chg_btn p{
-		padding:10px 5px;
-		font-size:.85rem;
-		color:#333;
-		background:#ffda34;
-	}
-	.chg_btn:hover .chg_st{
-		display:flex;
-	}
-	.chg_st{    
-		display:none;
-		flex-flow:column wrap;
-		position:absolute;right:0;top: 100%;
-	}
-	.chg_st a{
-		display:block;
-		width:77px;
-		margin:2px;
-		padding:10px;
-		font-size:.85rem;
-		color:#333;
-		background-color:#eee;
-		text-decoration:none;
-		border-radius:8px;
-		box-shadow: -1px 1px 5px #aaa;
-	}
-	.chg_st a:hover{
-		color:#333;
-		background:#ffda34;
-	}
-</style>
-
-		
-		<script src='../js/baichian_m/item.js'></script>
-	</div>
-</body>  
+    <script src="js/3rd-party/jquery-3.6.0.min.js"></script>
+    <script src="js/3rd-party/swiper-bundle.min.js"></script>
+    <script src="js/mobile/index.js"></script>
+  </body>
 </html>
-	

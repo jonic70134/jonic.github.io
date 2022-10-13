@@ -9,8 +9,20 @@
         justify-content: flex-start;
     }
 }
-.site-main{
-    .container{
-        width:1110px;
-    }
+.cupn_items{
+    --gap: 15px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+    width: calc(100% + var(--gap));
+}
+.cupn_item{
+    display: flex;
+    flex-flow: row nowrap;
+	max-width: 360px;
+	padding: 8px;
+    background-color: #333;
+    margin: var(--gap) 0 0 var(--gap);
+	border-radius: 10px;
 }

@@ -1,0 +1,50 @@
+html
+    head
+        include src/_meta.pug
+        link(href='css/mobile/coupon.css', rel='stylesheet')
+    body.body_container
+        include src/_header.pug
+        include src/_menu.pug
+        .site-main
+            .bread
+                p 
+                    a(href="index.html") 首頁
+                    span >
+                p 對品折價券 
+            .cupn_items
+                mixin cupnimg(src)
+                    .cupn_item(href='item.html')
+                        .cupn_photo
+                            img.cupnimg(src='img/mobile/sample/'+ src +'.jpg', alt='商品名稱', title='商品名稱')
+                        .cupn_info
+                            .cupn
+                                h3.cupn_name 商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品
+                                .cupn_block
+                                    .cupn_t 個人對品折價券
+                                    .cupn_ticket
+                                        .cupn_dur 07/13 23:59止
+                                        .cupn_price $1,000 
+                            .cupn_nor
+                                .nor_t 市價
+                                .nor_price $999,999
+                            .cupn_dis
+                                .dis_net
+                                    .dis_t 網路價
+                                    .dis_price $299,999
+                                .icon.cupn_arrow
+                                .dis_net
+                                    .dis_af 折後
+                                    .dis_af_price $298,999
+                +cupnimg('01_03_200')
+                +cupnimg('01_04_200')
+                +cupnimg('02_01_250')
+                +cupnimg('01_04_200')
+                +cupnimg('02_01_250')
+                +cupnimg('01_03_200')
+                +cupnimg('02_01_250')
+                +cupnimg('01_04_200')
+                +cupnimg('02_01_250')
+            
+        script(src='js/3rd-party/jquery-3.6.0.min.js')
+        script(src='js/3rd-party/swiper-bundle.min.js')
+        script(src='js/mobile/index.js')
