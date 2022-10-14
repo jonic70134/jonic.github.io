@@ -198,7 +198,10 @@
     }
 }
 .name{
-    height: 38px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
     margin: 10px 0;
     color: #333;
     font-size: 1rem;

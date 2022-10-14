@@ -1,0 +1,42 @@
+html
+    head
+        include src/_meta.pug
+        link(href='css/mobile/follow.css', rel='stylesheet')
+    body.body_container
+        include src/_header.pug
+        include src/_menu.pug
+        .site-main
+            .bread
+                p 
+                    a(href="index.html") 首頁
+                    span >
+                p 追蹤清單
+            .cate_main
+                .cate_items.cate_items_txt
+                    .item
+                        .photo
+                            img(src='img/mobile/sample/cate/180_'+ i+'.jpg', alt='商品名稱', title='商品名稱')
+                        .per_r_info
+                            a(href="item.html")
+                                h3.name 大開口短柄活動扳手大活口衛浴扳手8寸6寸短把迷你扳手工具大開口短柄活動扳手大活口衛浴扳手8寸6寸短把迷你扳手工具
+                            .per_price
+                                .price $999,900
+                                .func
+                                    a(href="#").btn_notify 貨到通知 
+                                    .icon.icon_clear
+                    - var j = 12;
+                    - for (var i = 1; i < j; i++)
+                        .item
+                            .photo
+                                img(src='img/mobile/sample/cate/180_'+ i+'.jpg', alt='商品名稱', title='商品名稱')
+                            .per_r_info
+                                a(href="item.html")
+                                    h3.name 大開口短柄活動扳手大活口衛浴扳手8寸6寸短把迷你扳手工具
+                                .per_price
+                                    .price $999,900
+                                    .func
+                                        .icon.icon_cart
+                                            span.icon.cupn_arrow
+                                        .icon.icon_clear
+        script(src='js/3rd-party/jquery-3.6.0.min.js')
+        script(src='js/mobile/follow.js')

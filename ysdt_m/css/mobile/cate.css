@@ -1052,7 +1052,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .name {
-  height: 38px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
   margin: 10px 0;
   color: #333;
   font-size: 1rem;
