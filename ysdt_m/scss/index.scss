@@ -228,6 +228,7 @@
 // 標籤雲
 .tag_cloud {
     position: relative;
+    margin: 15px 0 0;
     padding:12px 0 0 40px;
     background-color: #ccc;
     .icon_search{
@@ -271,7 +272,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin:2%;
+    margin:15px 2% 0;
 }
 .icon_func_block{
     display: flex;
@@ -317,6 +318,7 @@
 .items{
     display: flex;
     flex-flow:row wrap;
+    margin:15px 0 0;
     padding:20px 2%;
     background-color: #eee;
     .photo{

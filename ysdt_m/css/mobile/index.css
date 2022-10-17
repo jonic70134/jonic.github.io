@@ -791,6 +791,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: repeat(auto-fill, 360px);
   grid-gap: 5px;
   width: 100%;
+  margin: 15px 0 0;
   overflow-x: auto;
 }
 
@@ -2203,6 +2204,7 @@ button.swiper-pagination-bullet {
 
 .tag_cloud {
   position: relative;
+  margin: 15px 0 0;
   padding: 12px 0 0 40px;
   background-color: #ccc;
 }
@@ -2264,7 +2266,7 @@ button.swiper-pagination-bullet {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 2%;
+  margin: 15px 2% 0;
 }
 
 .icon_func_block {
@@ -2329,6 +2331,7 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  margin: 15px 0 0;
   padding: 20px 2%;
   background-color: #eee;
 }
