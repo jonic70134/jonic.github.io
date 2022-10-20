@@ -622,6 +622,7 @@ h1, h2, h3, h4, h5, h6 {
   height: -webkit-fill-available;
   height: -moz-available;
   height: fill-available;
+  padding-bottom: 56px;
   background: #FFF;
 }
 .menu.active {

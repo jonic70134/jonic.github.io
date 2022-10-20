@@ -452,6 +452,7 @@
 	display: none;
 	position: fixed;top: 56px;left: 0;z-index: 30;
 	height: fill-available;
+	padding-bottom: 56px;
 	background: #FFF;
 	&.active {
 		display: block;
