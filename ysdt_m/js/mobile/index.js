@@ -6,7 +6,10 @@ $('.icon_menu').click(function(e) {
     $("body").toggleClass("o_hidden");
     return false;
 });
-
+$('.menu_cate_link a').click(function() {
+    $(this).siblings().removeClass();
+    $(this).addClass('active');
+});
 
 $(".site-header .icon_search").click(function(){
     $(".site-search").toggle();
