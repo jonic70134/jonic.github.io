@@ -451,7 +451,7 @@
 .menu {
 	display: none;
 	position: fixed;top: 56px;left: 0;z-index: 30;
-	height: 100vh;
+	height: fill-available;
 	background: #FFF;
 	&.active {
 		display: block;
@@ -461,7 +461,7 @@
 .menu_tabs{
 	margin-right: 10px;
 	overflow-y: auto;
-	max-height: 100vh;
+	height: fill-available;
 	-webkit-overflow-scrolling: touch;
 	background: #FFF;
 }
@@ -482,7 +482,7 @@
 .menu_tab{
 	display: none;
 	position: absolute;  top: 0; left: 25%;
-	width: 71%;height:93.3vh;
+	width: 71%;height:fill-available;
 	margin: 0 1%;
 	padding: 0 1%;
 	overflow-y: auto;

@@ -619,7 +619,9 @@ h1, h2, h3, h4, h5, h6 {
   top: 56px;
   left: 0;
   z-index: 30;
-  height: 100vh;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill-available;
   background: #FFF;
 }
 .menu.active {
@@ -630,7 +632,9 @@ h1, h2, h3, h4, h5, h6 {
 .menu_tabs {
   margin-right: 10px;
   overflow-y: auto;
-  max-height: 100vh;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill-available;
   -webkit-overflow-scrolling: touch;
   background: #FFF;
 }
@@ -657,7 +661,9 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 25%;
   width: 71%;
-  height: 93.3vh;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill-available;
   margin: 0 1%;
   padding: 0 1%;
   overflow-y: auto;
