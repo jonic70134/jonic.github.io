@@ -615,43 +615,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu {
   display: none;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  z-index: 30;
   height: 100vh;
+  background: #FFF;
 }
 .menu.active {
   display: block;
   width: 100%;
-  position: relative;
-}
-.menu .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  background: #FFF;
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
-.menu_l {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+.menu_tabs {
   margin-right: 10px;
   overflow-y: auto;
   max-height: 100vh;
-  padding-bottom: 191px;
   -webkit-overflow-scrolling: touch;
+  background: #FFF;
 }
 
-.menu_l_tab {
-  width: 100%;
-  height: auto;
-}
-.menu_l_tab li {
+.menu_label {
   display: block;
+  width: 25%;
   margin: 0 0 1px 0;
   padding: 25px 0;
   font-size: 1rem;
@@ -661,19 +647,39 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   background: #eee;
   border-bottom: 1px solid #ccc;
-}
-.menu_l_tab li.click {
-  color: #ee0000;
-  background: #FFF;
-  border-left: 5px solid #ee0000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.menu_r {
-  -ms-flex-preferred-size: 71%;
-      flex-basis: 71%;
+.menu_tab {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 71%;
+  height: 93.3vh;
+  margin: 0 1%;
+  padding: 0 1%;
   overflow-y: auto;
-  max-height: 100vh;
-  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.menu_tab::-webkit-scrollbar {
+  display: none;
+}
+
+.menu_tabs input[type=radio] {
+  display: none;
+}
+
+.menu_tabs input[type=radio]:checked + label {
+  color: #e00;
+  background: #FFF;
+  border-left: 5px solid #e00;
+}
+
+.menu_tabs input[type=radio]:checked + label + .menu_tab {
+  display: block;
 }
 
 .menu_cate_tab {
@@ -975,6 +981,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cupn_name {
+  width: 143px;
   margin: 0 15px 0 0;
   font-size: 0.9rem;
   color: white;

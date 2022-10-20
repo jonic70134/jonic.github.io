@@ -450,58 +450,58 @@
 
 .menu {
 	display: none;
+	position: fixed;top: 56px;left: 0;z-index: 30;
 	height: 100vh;
+	background: #FFF;
 	&.active {
 		display: block;
 		width: 100%;
-		position: relative;
 	}
-
-	.container {
-		display: flex;
-		flex-flow: row nowrap;
-		background: #FFF;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	}
-
 }
-.menu_l{
-	flex-basis: 25%;
+.menu_tabs{
 	margin-right: 10px;
 	overflow-y: auto;
 	max-height: 100vh;
-	padding-bottom: 191px;
 	-webkit-overflow-scrolling: touch;
+	background: #FFF;
 }
-.menu_l_tab {
-	width: 100%;
-	height: auto;
-	li {
-		display: block;
-		margin: 0 0 1px 0;
-		padding: 25px 0;
-		font-size: 1rem;
-		color: #888;
-		letter-spacing: 2px;
-		text-align: center;
-		text-decoration: none;
-		background: #eee;
-		border-bottom: 1px solid #ccc;
-
-		&.click {
-		color: #ee0000;
-		background: #FFF;
-		border-left: 5px solid #ee0000;
-		}
+.menu_label{
+	display: block;
+	width: 25%;
+	margin: 0 0 1px 0;
+	padding: 25px 0;
+	font-size: 1rem;
+	color: #888;
+	letter-spacing: 2px;
+	text-align: center;
+	text-decoration: none;
+	background: #eee;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.menu_tab{
+	display: none;
+	position: absolute;  top: 0; left: 25%;
+	width: 71%;height:93.3vh;
+	margin: 0 1%;
+	padding: 0 1%;
+	overflow-y: auto;
+	-ms-overflow-style: none;
+  	scrollbar-width: none;
+	&::-webkit-scrollbar {
+		display: none;
 	}
 }
-.menu_r {
-	flex-basis: 71%;
-	overflow-y: auto;
-	max-height: 100vh;
-	-webkit-overflow-scrolling: touch;
+.menu_tabs input[type="radio"] {
+	display: none;
+}
+.menu_tabs input[type="radio"]:checked + label {
+	color: #e00;
+	background: #FFF;
+	border-left: 5px solid #e00;
+}  
+.menu_tabs input[type="radio"]:checked + label + .menu_tab {
+	display: block;
 }
 .menu_cate_tab {
 	display: block;

@@ -1,16 +1,10 @@
 nav.menu
-	.container
-		.menu_l
-			.menu_l_tab
-				ul
-				li.click 全球
-				- var j = 10;
-				- for (var i = 0; i < j; i++)
-					li 家電
-				
-		.menu_r
+	.menu_tabs
+		input#tab1(type="radio" name="tabs" checked="checked")
+		label.menu_label(for="tab1") 熱賣
+		.menu_tab
 			a.menu_cate_tab(href='#') 活動專區
-			- var j = 5;
+			- var j = 3;
 			- for (var i = 0; i < j; i++)
 				.menu_items
 					h3.menu_t 活動專區文字
@@ -33,3 +27,88 @@ nav.menu
 						a.menu_cate_item(href='cate.html')
 							img.menu_img(src="img/mobile/sample/04_02_80.jpg", alt="")
 							h4.menu_sub_t 智慧電視盒
+		input#tab2(type="radio" name="tabs")
+		label.menu_label(for="tab2") 家電
+		.menu_tab
+			a.menu_cate_tab(href='#') 活動專區
+			- var j =1;
+			- for (var i = 0; i < j; i++)
+				.menu_items
+					h3.menu_t 活動專區文字
+					.menu_cate
+						a.menu_cate_item(href='cate.html')
+							img.menu_img(src="img/mobile/sample/04_03_80.jpg", alt="")
+							h4.menu_sub_t 小米
+						a.menu_cate_item(href='cate.html')
+							img.menu_img(src="img/mobile/sample/04_04_80.jpg", alt="")
+							h4.menu_sub_t SONY
+						a.menu_cate_item(href='cate.html')
+							img.menu_img(src="img/mobile/sample/04_01_80.jpg", alt="")
+							h4.menu_sub_t Panasonic
+						a.menu_cate_item(href='cate.html')
+							img.menu_img(src="img/mobile/sample/04_02_80.jpg", alt="")
+							h4.menu_sub_t 智慧電視盒
+						a.menu_cate_item(href='cate.html')
+							img.menu_img(src="img/mobile/sample/04_01_80.jpg", alt="")
+							h4.menu_sub_t iphone 13
+						a.menu_cate_item(href='cate.html')
+							img.menu_img(src="img/mobile/sample/04_02_80.jpg", alt="")
+							h4.menu_sub_t SAMSUNG
+		
+		input#tab3(type="radio" name="tabs")
+		label.menu_label(for="tab3") 手機
+
+		input#tab4(type="radio" name="tabs")
+		label.menu_label(for="tab4") 電腦
+
+		input#tab5(type="radio" name="tabs")
+		label.menu_label(for="tab5") 美食
+
+		input#tab6(type="radio" name="tabs")
+		label.menu_label(for="tab6") 日用
+
+		input#tab7(type="radio" name="tabs")
+		label.menu_label(for="tab7") 美食
+
+		input#tab8(type="radio" name="tabs")
+		label.menu_label(for="tab8") 手機
+
+		input#tab9(type="radio" name="tabs")
+		label.menu_label(for="tab9") 電腦
+
+		input#tab10(type="radio" name="tabs")
+		label.menu_label(for="tab10") 美食
+
+		input#tab11(type="radio" name="tabs")
+		label.menu_label(for="tab11") 日用
+
+		input#tab12(type="radio" name="tabs")
+		label.menu_label(for="tab12") 美食
+
+		input#tab13(type="radio" name="tabs")
+		label.menu_label(for="tab13") 電腦
+		//- .menu_r
+		//- 	a.menu_cate_tab(href='#') 活動專區
+		//- 	- var j = 5;
+		//- 	- for (var i = 0; i < j; i++)
+		//- 		.menu_items
+		//- 			h3.menu_t 活動專區文字
+		//- 			.menu_cate
+		//- 				a.menu_cate_item(href='cate.html')
+		//- 					img.menu_img(src="img/mobile/sample/04_01_80.jpg", alt="")
+		//- 					h4.menu_sub_t iphone 13
+		//- 				a.menu_cate_item(href='cate.html')
+		//- 					img.menu_img(src="img/mobile/sample/04_02_80.jpg", alt="")
+		//- 					h4.menu_sub_t SAMSUNG
+		//- 				a.menu_cate_item(href='cate.html')
+		//- 					img.menu_img(src="img/mobile/sample/04_03_80.jpg", alt="")
+		//- 					h4.menu_sub_t 小米
+		//- 				a.menu_cate_item(href='cate.html')
+		//- 					img.menu_img(src="img/mobile/sample/04_04_80.jpg", alt="")
+		//- 					h4.menu_sub_t SONY
+		//- 				a.menu_cate_item(href='cate.html')
+		//- 					img.menu_img(src="img/mobile/sample/04_01_80.jpg", alt="")
+		//- 					h4.menu_sub_t Panasonic
+		//- 				a.menu_cate_item(href='cate.html')
+		//- 					img.menu_img(src="img/mobile/sample/04_02_80.jpg", alt="")
+		//- 					h4.menu_sub_t 智慧電視盒
