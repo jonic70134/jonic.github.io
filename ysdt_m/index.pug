@@ -31,7 +31,7 @@ html
                     +slider('01_03_160')
                     +slider('01_04_160')
                     +slider('01_05_160')
-            .per_duoslide.duo_2
+            .per_duoslide
                 .per_info
                     a.per_l(href='item.html')
                         .per_dur
@@ -147,8 +147,60 @@ html
                     a.hot_tag(href="#") 筆電
                     a.hot_tag(href="#") iPhone XS
                     a.hot_tag(href="#") 4k 電視
+            .per_duoslide
+                .topic 熱賣特選
+                .per_info
+                    a.per_l(href='item.html')
+                        .per_dur
+                            img.per_img(src='img/mobile/sample/item_019.jpg', alt='商品名稱', title='商品名稱')
+                        .per_buy
+                            h2.name APPLE iPhone 13 Pro Max 128G 防水智慧手機
+                            .per_price
+                                .pay_dis
+                                    .price $195,900
+                                button.button.btn-imd 立即購買
+                    mixin slider(src)
+                        a.per_r(href='item.html')
+                            .per_block
+                                .per_dur
+                                    img(src='img/mobile/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
+                                .per_r_info
+                                    h3.name Grivel 分力盤/系統架設/ Grivel Four 四孔分力盤 RTFOUR 義大利製
+                                    .per_price
+                                        .price $999,900
+                                        p.rush(href="#") 搶購 
+                    +slider('01_02_160')
+                    +slider('01_03_160')
+                    +slider('01_04_160')
+                    +slider('01_05_160')
             .ad_banner
                 img(src='img/mobile/sample/AD_720x120.jpg', alt='廣告圖')
+            .per_duoslide
+                .topic 夯品推薦
+                .per_info
+                    a.per_l(href='item.html')
+                        .per_dur
+                            img.per_img(src='img/mobile/sample/item_019.jpg', alt='商品名稱', title='商品名稱')
+                        .per_buy
+                            h2.name APPLE iPhone 13 Pro Max 128G 防水智慧手機
+                            .per_price
+                                .pay_dis
+                                    .price $195,900
+                                button.button.btn-imd 立即購買
+                    mixin slider(src)
+                        a.per_r(href='item.html')
+                            .per_block
+                                .per_dur
+                                    img(src='img/mobile/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
+                                .per_r_info
+                                    h3.name Grivel 分力盤/系統架設/ Grivel Four 四孔分力盤 RTFOUR 義大利製
+                                    .per_price
+                                        .price $999,900
+                                        p.rush(href="#") 搶購 
+                    +slider('01_02_160')
+                    +slider('01_03_160')
+                    +slider('01_04_160')
+                    +slider('01_05_160')
             .items
                 - var j = 25;
                 - for (var i = 1; i < j; i++)

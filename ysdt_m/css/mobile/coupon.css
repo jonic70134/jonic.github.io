@@ -619,6 +619,8 @@ h1, h2, h3, h4, h5, h6 {
   top: 56px;
   left: 0;
   z-index: 30;
+  width: 100%;
+  max-width: 414px;
   height: -webkit-fill-available;
   height: -moz-available;
   height: fill-available;
@@ -632,7 +634,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .menu.active {
   display: block;
-  width: 100%;
 }
 
 .menu_tabs {
@@ -734,18 +735,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu_sub_t {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
   width: 100%;
   font-size: 0.9rem;
   line-height: 1.5;
-  white-space: nowrap;
+  overflow: hidden;
 }
 
 .menu_cate {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px 30px;
+  grid-gap: 20px;
 }
 
 .menu_cate_item {
@@ -760,6 +765,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  max-width: 80px;
   text-align: center;
   color: #333;
   word-break: break-word;
@@ -820,6 +826,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   margin: 15px 0 0;
   overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.cupn_slide::-webkit-scrollbar {
+  display: none;
 }
 
 .cupn_con {

@@ -451,6 +451,8 @@
 .menu {
 	display: none;
 	position: fixed;top: 56px;left: 0;z-index: 30;
+	width: 100%;
+	max-width: 414px;
 	height: fill-available;
 	padding-bottom: 56px;
 	background: #FFF;
@@ -461,7 +463,6 @@
 	}
 	&.active {
 		display: block;
-		width: 100%;
 	}
 }
 .menu_tabs{
@@ -542,21 +543,26 @@
 	letter-spacing: 1px;
 }
 .menu_sub_t{
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+	line-clamp:2;
 	width: 100%;
 	font-size: .9rem;
 	line-height: 1.5;
-	white-space: nowrap;
+	overflow: hidden;
 }
 .menu_cate{
 	display: grid;
   	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 20px 30px;
+	grid-gap: 20px;
 }
 .menu_cate_item {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
 	width: 100%;
+	max-width: 80px;
 	text-align: center;
 	color:#333;
 	word-break: break-word;
