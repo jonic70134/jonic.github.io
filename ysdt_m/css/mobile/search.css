@@ -314,7 +314,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 50;
   width: 100%;
   background-color: #f5281e;
   zoom: 1;
@@ -774,7 +774,7 @@ h1, h2, h3, h4, h5, h6 {
 .menu_items {
   background: #FFF;
   padding: 0;
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
 }
 
 .menu_img {
@@ -1110,9 +1110,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .func .icon_cart, .func .icon_track {
   position: relative;
@@ -1122,7 +1122,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.4rem;
 }
 .func .icon_track, .func .icon_track_plus {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 15px;
 }
 .func .icon_track::before, .func .icon_track_plus::before {
   font-size: 1rem;

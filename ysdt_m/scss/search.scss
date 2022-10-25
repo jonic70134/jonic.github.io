@@ -217,7 +217,7 @@
 .func{
     display: flex;
     flex-flow: row nowrap;
-    align-items: baseline;
+    align-items: center;
     .icon_cart,.icon_track{
         position: relative;
         &::before{
@@ -226,7 +226,7 @@
         }
     }
     .icon_track,.icon_track_plus{
-        margin:0 0 0 10px;
+        margin:0 0 0 15px;
         &::before{
             font-size:1rem;
         }
