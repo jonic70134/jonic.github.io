@@ -12,19 +12,18 @@ html
         .head
             .logo
                 img(src="img/logo.svg", alt="")
-            h1.title 個人對品折價券
-        .saletime
-            p 以下商品是專門為您特別挑選，有的商品會附有個人對品折價券
-            p 請於 #[span 23:59] 前完成購買，即可享有個人個人折價優惠
+            
         .items_bg
             .items
                 mixin item(prod_pic)
-                    a.item(href='#')
+                    a.item_head(href='#')
                         .photo
                             img(src='img/'+ prod_pic +'.jpg', alt='商品名稱', title='商品名稱')
                         .info
                             .cupn
-                                h3.name 商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品
+                                .name_block
+                                    h3.name 商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品
+                                    p.summary 簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介
                                 .cupn_block
                                     .cupn_t 個人對品折價券
                                     .cupn_ticket
@@ -43,8 +42,10 @@ html
                                     .dis_af 折後
                                     .dis_af_price $298,999
                             button.btn-imd 立即搶購
-                +item('580_03')
                 +item('580_02')
+            .saletime
+                p 以下商品是專門為您特別挑選，有的商品會附有個人對品折價券
+                p 請於 #[span 23:59] 前完成購買，即可享有個人個人折價優惠
             .items
                 a.item.sm(href='#')
                         .photo
