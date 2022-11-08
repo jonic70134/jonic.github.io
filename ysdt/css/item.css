@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -3599,4 +3600,125 @@ button.swiper-pagination-bullet {
 .hide_btn .button.btn-order {
   color: white;
   background-color: #e00;
+}
+
+.lightbox-target {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  overflow: hidden;
+  z-index: 100;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+.lightbox-target:target .split_box {
+  width: 400px;
+  height: auto;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: black;
+  -webkit-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.lightbox-close:before, .lightbox-close:after {
+  content: " ";
+  display: block;
+  height: 20px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 5px;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.lightbox-close:after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.split_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  max-height: 80vh;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.lightbox_t {
+  padding: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: white;
+  background: #e74343;
+}
+
+.split_table {
+  margin: 10px;
+}
+.split_table .split_row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55px 85px 95px 110px;
+  grid-template-columns: 55px 85px 95px 110px;
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.split_table .split_td {
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.split_table .rate, .split_table .money {
+  color: #d00;
+}
+.split_table .rate:after {
+  content: "利率";
+}
+.split_table .month:after {
+  content: "期";
+}
+.split_table .money:after {
+  content: "/期";
+  color: #333;
+}
+.tip {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #333;
+  background: #ffe2e1;
 }

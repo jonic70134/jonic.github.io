@@ -93,11 +93,13 @@ html
 										.shop_btn
 											button.button.large.btn-imd 立即結帳
 											button.button.large.btn-cart 加入購物車
-				// 商品說明
+				//- 商品說明
 				include src/_item_detail.pug
-				// 相關商品
+				//- 相關商品
 				include src/_item_relative.pug
 			include src/_foot.pug
+			//- lightbox
+			include src/_item_lightbox.pug
 			script(src='js/3rd-party/jquery-3.6.0.min.js')
 			script(src='js/3rd-party/swiper-bundle.min.js')
 			script(src='js/3rd-party/lity.min.js')

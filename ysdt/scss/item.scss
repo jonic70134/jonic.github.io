@@ -1373,3 +1373,104 @@
         }
     }
 }
+
+// css lightbox ---------------------------
+.lightbox-target {
+	position: fixed;top: 0;width: 100%;
+	background: rgba(0,0,0,.7);
+	opacity: 0;
+	overflow: hidden;
+	z-index: 100;
+    @include transition(.3s ease-in-out);
+	&:target {
+		opacity: 1;
+		top: 0;
+		bottom: 0;
+        .split_box{
+            width:400px;height:auto;
+        }
+	}
+}
+.lightbox-close {
+    position: absolute;top: 7px;right: 5px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	box-sizing: border-box;
+	color: black;
+    @include transition(.4s ease-in-out);
+	&:before, &:after {
+		content: " ";
+		display: block;
+		height: 20px;
+		width: 1px;
+		background: black;
+		position: absolute;
+		left: 5px;
+		top: 0;
+		transform:rotate(45deg);
+	}
+	&:after {
+		transform:rotate(-45deg);
+	}
+}
+.split_box{
+    position: absolute;top:50%;left:50%;
+    transform: translate(-50%,-50%);
+	width: 0;height:0;
+	max-height: 80vh;
+	background-color: white;
+	box-sizing: border-box;
+    @include transition(.4s ease-in-out);
+}
+.lightbox_t{
+    padding: 10px;
+    font-size: .9rem;
+    text-align: center;
+    color:white;
+    background: #e74343;
+}
+.split_table{
+    margin:10px;
+    .split_row{
+        display: grid;
+        grid-template-columns:55px 85px 95px 110px;
+        width: 100%;
+        padding: 10px;
+        font-size: .9rem;
+        box-sizing: border-box;
+    }
+    .split_td{
+        padding:0 10px;
+        box-sizing: border-box;
+    }
+    .rate,.money{
+        color:#d00;
+    }
+    .rate{
+        &:after{
+            content: '利率';
+        }
+    }
+    .month{
+        &:after{
+            content: '期';
+        }
+    }
+    .money{
+        &:after{
+            content: '/期';
+            color: #333;
+        }
+    }
+    .bank{
+
+    }
+}
+.tip{
+    padding: 10px;
+    text-align: center;
+    font-size: .8rem;
+    color:#333;
+    background:#ffe2e1;
+}
