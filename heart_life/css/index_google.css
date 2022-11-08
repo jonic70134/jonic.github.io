@@ -337,7 +337,7 @@ img {
   font-size: 1.6rem;
   color: white;
   line-height: 1.2;
-  word-break: break-word;
+  word-break: break-all;
   overflow: hidden;
 }
 
@@ -350,6 +350,7 @@ img {
   color: #999;
   line-height: 1.2;
   font-size: clamp(1rem, 2vw, 1.6rem);
+  word-break: break-all;
 }
 
 .price {
