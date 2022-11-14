@@ -1,0 +1,105 @@
+// 首頁
+@import "partials/base";
+@import "partials/mixin";
+@import "partials/color";
+@import "partials/page";
+
+
+.body_container{
+    background: #eee;
+}
+.site-main{
+    height: 100vh;
+}
+.red{
+    color:#d00;
+}
+.blue{
+    color:blue;
+    font-size:.9rem;
+}
+.mem_index{
+    display: grid;
+    grid-template-rows: 150px 75px 75px 75px 75px ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:10px;
+    margin:20px auto;
+}
+.mem_head{
+    grid-column: 1 / 13;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 20px;
+
+}
+.mem_avatar{
+    position: relative;
+    width: 60px;height: 60px;
+    display: flex;
+    justify-content: center;
+    background: black;
+    border-radius: 50%;
+    img{
+        width: 25px;
+    }
+}
+.mem_edit{
+    position: absolute;bottom:0;right:-2px;
+    background: #aaa;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 14px;
+    }
+}
+.mem_name{
+    margin: 10px 0 0;
+    font-size:1.4rem;
+}
+.mem_link_name{
+    color:#333;
+    font-size:1.4rem;
+}
+.mem_contact{
+    color:#666;
+    font-size:1rem;
+}
+.mem_btn{
+    grid-column: 1 / 7;
+    display: flex;flex-flow:row nowrap ;align-items: center;
+    padding: 20px;
+    color:#333;
+    background: white;
+    img{
+        width: 30px;
+        margin:0 10px 0 0;
+    }
+}
+.mem_web_order{
+    grid-column: 7 / 13;
+}
+.mem_3_1_block,.mem_3_2_block,.mem_3_3_block{
+    display: flex;flex-flow:row nowrap ;align-items: center;
+    padding: 20px;
+    color:#333;
+    background: white;
+    img{
+        width: 30px;
+        margin:0 10px 0 0;
+    }
+}
+.mem_3_1_block{
+    grid-column: 1 / 5;
+}
+.mem_3_2_block{
+    grid-column: 5 / 9;
+}
+.mem_3_3_block{
+    grid-column: 9 / 13;
+}
