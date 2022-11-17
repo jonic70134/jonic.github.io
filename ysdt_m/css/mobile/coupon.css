@@ -296,7 +296,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .body_container {
   width: 100%;
-  padding: 56px 0 0;
+  padding: 56px 0 40px;
 }
 
 .container {
@@ -813,6 +813,64 @@ h1, h2, h3, h4, h5, h6 {
 .bread span {
   margin: 0 5px;
   color: #666;
+}
+
+.foot_link {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  -ms-grid-columns: (20%)[5];
+  grid-template-columns: repeat(5, 20%);
+  padding: 5px 0;
+  background-color: #333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.foot_link > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.foot_link > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.foot_link > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.foot_link > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+
+.foot_link > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.foot_link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  font-size: 0.9rem;
+  color: white;
+}
+.foot_link a:before {
+  font-size: 1.6rem;
 }
 
 .cupn_slide {
