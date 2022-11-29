@@ -1,0 +1,78 @@
+@import "partials/base";
+@import "partials/color";
+@import "partials/page";
+
+.line{
+	margin:10px 10px 0;
+	padding: 10px;
+	background-color: white;
+}
+.icon_wrong,.icon_done{
+	margin:10px 0;
+	font-size:5rem;
+}
+.msg_top,.load{
+	margin:20px 0;
+	font-size:1.5rem;
+	text-align: center;
+}
+.order_num{
+	color:#06c;
+	text-decoration: underline;
+}
+.msg_done,.msg_wrong{
+	font-size:.95rem;
+	color:#555;
+	line-height: 2;
+}
+.msg_wrong{
+	text-align: center;
+}
+strong{
+	color:black;
+	font-weight: 700;
+}
+.load{
+	margin:40px 0;
+	font-size:1.1rem;
+	font-weight: 700;
+}
+.credit_fin{
+	color:#390;
+}
+.loading{
+	width:40px;
+	height: 40px;
+	margin: 20px auto;
+	border-radius: 50%;
+	border: .3rem solid rgba(#333, 0.3);
+	border-top-color: #333;
+	animation: 1.5s spin infinite linear;
+}
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+.btn_block{
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content: center;
+	align-items: center;
+	position: absolute;bottom: 100px;left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+.btn_chk,.btn_back{
+	display: block;
+	margin:0 10px 0 0;
+	padding:10px 40px;
+	font-size:.9rem;
+	color:white;
+	background:#e72f21;
+	border-radius:20px;
+	letter-spacing: 2px;
+}
+.btn_back{
+	background: black;
+}

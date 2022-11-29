@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
+        title KOL  
+        meta(content='KOL', name='description')
+        meta(content='width=device-width, initial-scale=1.0', name='viewport')
+
+        link(href='css/confirm.css', rel='stylesheet')
+
+    body
+        .line
+            //- 錯誤訊息
+            .msg_top
+                .icon.icon_wrong
+                    span.path1
+                    span.path2
+                p 錯誤訊息
+            .msg_wrong
+                p 目前系統出現異常訊號，請您稍後再試；
+                p 如有造成您的不便，我們深感抱歉
+        .btn_block
+            a.btn_chk(href="#") 查訂單
+            a.btn_back(href="#") 回首頁

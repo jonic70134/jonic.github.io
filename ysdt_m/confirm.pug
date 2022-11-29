@@ -1,0 +1,35 @@
+doctype html
+html
+    head
+        include src/_meta.pug
+        link(href='css/mobile/confirm.css', rel='stylesheet')
+    body.body_container
+        include src/_header.pug
+        include src/_menu.pug
+        .line
+            //- 已收訂單
+            .msg_top
+                .icon.icon_done
+                    span.path1
+                    span.path2
+                p 已經收到您的訂單
+            .msg_done
+                p 親愛的顧客您好，
+                p 感謝您訂購「
+                    strong 遠傳friDay購物
+                    | 」的商品
+                p 訂單編號：
+                    a.order_num(href="#") 20220123456789 
+                p 待本筆交易付款完成，將會儘快為您處理訂單並出貨。
+
+        .load 
+            p 自動前往LINE Pay付款...
+            p 自動前往街口付款...
+            p.credit_fin 您已完成信用卡付款
+            .loading
+        
+        .btn_block
+            a.btn_chk(href="#") 查訂單
+            a.btn_back(href="#") 回首頁
+        
+        include src/_foot.pug
