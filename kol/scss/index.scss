@@ -163,7 +163,7 @@ img{
 	flex-flow:row nowrap;
 	align-items: center;
 	justify-content: center;
-	p{
+	.home{
 		margin:  0 0 0 10px;
 		color:#666;
 	}
@@ -173,6 +173,13 @@ img{
 	flex-flow: column;
 	justify-content:space-between;
 	align-items: flex-end;
+	.btn_pay{
+		padding:10px 0;
+		color:#06f;
+		background: none;
+		letter-spacing: 0;
+		text-decoration: underline;
+	}
 }
 .logo_b{
 	display: flex;
@@ -231,7 +238,8 @@ img{
 	}
 }
 .tag_cloud_t{
-	position: relative;
+	position: absolute;top:0;left:0;
+	width: 100%;
 	padding:10px;
 	font-size:1.2rem;
 	color:white;
@@ -258,10 +266,11 @@ img{
 	background: #eee;
 }
 .tag_cloud_con{
-	height: 100vh;
-	padding:15px;
+	height: 80vh;
+	padding:60px 15px 15px;
 	background: white;
 	overflow-y: auto;
+	box-sizing: border-box;
 }
 .search{
 	position: absolute;right:0;top:50%;transform: translateY(-50%);
@@ -340,28 +349,18 @@ img{
     	top: 88px;
     	left: 0;
 		width: 100%;
-		height: auto;
+		height: 80vh;
 		background: #fff;
         color: #333;
-		margin: auto;
-		// position: absolute;
-		// top: 50%;
-		// left: 0;
-		// right: 0;
-		// transform: translateY(-50%);
-		max-height: 0%;
-		max-width: 0%;
 		box-sizing: border-box;
 		line-height: 1.4;
+		overflow: hidden;
+		overflow-y: auto;
 	}
 	&:target {
 		opacity: 1;
 		top: 0;
 		left: 0;
-		.content{
-			max-height: 100%;
-			max-width: 100%;
-		}
 	}
 }
 

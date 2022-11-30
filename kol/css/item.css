@@ -1003,6 +1003,118 @@ img {
   width: 100%;
 }
 
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  background: white;
+}
+
+.header_l {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header_l .home {
+  margin: 0 0 0 10px;
+  color: #666;
+}
+
+.header_r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.header_r .btn_pay {
+  padding: 10px 0;
+  color: #06f;
+  background: none;
+  letter-spacing: 0;
+  text-decoration: underline;
+}
+
+.logo_b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 30px;
+}
+.logo_b p {
+  font-size: 0.7rem;
+}
+
+.logo {
+  width: 90px;
+  margin: 0 3px 0 0;
+}
+
+.avatar_b {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #ddd url(../img/404.svg) no-repeat 12px 15px;
+  background-size: 60px 60px;
+  border-radius: 50%;
+}
+
+.avatar {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.avarar_edit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  background: #aaa;
+  border-radius: 50%;
+}
+
+.edit_ava {
+  width: 15px;
+}
+
+.qrcode {
+  max-width: 120px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .kol_slide {
   display: -webkit-box;
   display: -ms-flexbox;

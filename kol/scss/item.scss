@@ -148,6 +148,77 @@ img{
 	display: block;
 	width: 100%;
 }
+.site-header{
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding:10px;
+	background: white;
+}
+.header_l{
+	display: flex;
+	flex-flow:row nowrap;
+	align-items: center;
+	justify-content: center;
+	.home{
+		margin:  0 0 0 10px;
+		color:#666;
+	}
+}
+.header_r{
+	display: flex;
+	flex-flow: column;
+	justify-content:space-between;
+	align-items: flex-end;
+	.btn_pay{
+		padding:10px 0;
+		color:#06f;
+		background: none;
+		letter-spacing: 0;
+		text-decoration: underline;
+	}
+}
+.logo_b{
+	display: flex;
+	margin: 0 0 30px;
+	p{
+		font-size: .7rem;
+	}
+}
+.logo{
+	width: 90px;
+	margin: 0 3px 0 0;
+}
+.avatar_b{
+	position: relative;
+	width: 60px;
+    height: 60px;
+	background: #ddd url(../img/404.svg) no-repeat 12px 15px;
+	background-size: 60px 60px;
+    border-radius: 50%;
+}
+.avatar{
+	width:60px;
+	border-radius: 50%;
+}
+.avarar_edit{
+	position: absolute;bottom:0; right:0;
+	padding: 5px;
+	background: #aaa;
+	border-radius:50% ;
+}
+.edit_ava{
+	width: 15px;
+}
+.qrcode{
+	max-width: 120px;
+	width: 100%;
+	padding: 5px;
+	border:1px solid black;
+	box-sizing: border-box;
+}
+
 .kol_slide{
 	display: flex;
 }

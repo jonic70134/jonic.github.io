@@ -1039,7 +1039,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.header_l p {
+.header_l .home {
   margin: 0 0 0 10px;
   color: #666;
 }
@@ -1058,6 +1058,13 @@ img {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+.header_r .btn_pay {
+  padding: 10px 0;
+  color: #06f;
+  background: none;
+  letter-spacing: 0;
+  text-decoration: underline;
 }
 
 .logo_b {
@@ -1138,7 +1145,10 @@ img {
 }
 
 .tag_cloud_t {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 10px;
   font-size: 1.2rem;
   color: white;
@@ -1172,10 +1182,12 @@ img {
 }
 
 .tag_cloud_con {
-  height: 100vh;
-  padding: 15px;
+  height: 80vh;
+  padding: 60px 15px 15px;
   background: white;
   overflow-y: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .search {
@@ -1279,24 +1291,19 @@ img {
   top: 88px;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 80vh;
   background: #fff;
   color: #333;
-  margin: auto;
-  max-height: 0%;
-  max-width: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.4;
+  overflow: hidden;
+  overflow-y: auto;
 }
 .lightbox-target:target {
   opacity: 1;
   top: 0;
   left: 0;
-}
-.lightbox-target:target .content {
-  max-height: 100%;
-  max-width: 100%;
 }
 
 .lightbox-close {
