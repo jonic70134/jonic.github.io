@@ -15,3 +15,12 @@ $(".icon_track").click(function(e){
     e.preventDefault();
     $(this).toggleClass('icon_track icon_track_plus');
 });
+
+$('.search').click(function(){
+  $('body').removeClass();
+  $('body').addClass('scrollno');
+});
+$('.close').click(function(){
+  $('body').removeClass();
+  $('body').addClass('scrollyes');
+});
