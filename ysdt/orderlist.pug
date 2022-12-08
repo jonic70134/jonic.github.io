@@ -1,0 +1,98 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/orderlist.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug
+
+			.site-main(role='main')
+				.container
+					.order_all
+						.order_head
+							h3 購物車
+							.order_chk_all
+								input#order_chk_all.order_chk(type="checkbox", checked="checked")
+								label.order_chk_label(for="order_chk_all")
+							.order-title 全選
+							
+
+						mixin cartimg(i,src)
+							.cart_item
+								.order_chk_all.red
+									input(id='order_chk'+i).order_chk(type="checkbox", checked="checked")
+									label.order_chk_label(for='order_chk'+i)
+								.cart_img
+									img(src='../img/sample/'+ src+'.jpg', alt="商品圖片")
+								.cart_info
+									.cart_name
+										p 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g
+										.cart_size 白色 600ml
+									.cart-per 個人專屬特價期間07/10~07/13止
+									.cart_price_b
+										.cart_price
+											.ori_t 原價
+											.ori_price $990
+										.cart_price
+											.dis_t 網路價
+											.dis_price $999
+									.cart_quantity
+										.quantity-input
+											button.btn-decrease ‒
+											input.cart-num(type="text", value="1")
+											button.btn-increase +
+									.cart_gift
+										p 贈品
+										ul.cart_gift_item
+											li 3M百利爐具專用菜瓜布x1
+											li 室內芳香劑x1
+								.cart_last
+									a(href="#").btn-remove 移除
+						+cartimg(1,'05_10_182')
+						+cartimg(2,'05_18_182')
+						+cartimg(3,'05_03_182')
+						+cartimg(4,'05_12_182')
+						.cart_item.is-lack 
+							.order_chk_all.red
+								input(id='order_chk5').order_chk(type="checkbox", checked="checked")
+								label.order_chk_label(for='order_chk5')
+							.cart_img
+								img(src='../img/sample/05_01_182.jpg', alt="商品圖片")
+								.cart-lack-tag 補貨中
+							.cart_info
+								.cart_name
+									p 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g
+									.cart_size 白色 600ml
+								.cart-per 個人專屬特價期間07/10~07/13止
+								.cart_price_b
+									.cart_price
+										.ori_t 原價
+										.ori_price $990
+									.cart_price
+										.dis_t 網路價
+										.dis_price $999
+
+								.cart_gift
+									p 贈品
+									ul.cart_gift_item
+										li 3M百利爐具專用菜瓜布x1
+										li 室內芳香劑x1
+							.cart_last
+								a(href="#").btn-remove 移除
+
+
+						.cart_block.orderprice
+							.cart_sub_block
+								.cart_block_txt 總金額：
+								.cart_block_txt
+									.total_price $999,900
+							.addcart
+								a.btn-continue(href="index.html") 繼續選購
+								a.btn-confirm(href="confirm.html") 開始結帳
+	script(src='js/3rd-party/jquery-3.6.0.min.js')
+	script(src='js/cart.js')
+	include src/_foot.pug
+
+

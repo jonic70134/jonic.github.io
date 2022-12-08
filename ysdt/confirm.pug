@@ -1,0 +1,193 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/orderlist.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug
+
+			.site-main(role='main')
+				.container
+					.order_all
+						.order_head
+							h3 購物車
+						mixin cartimg(i,src)
+							.cart_item
+								.cart_img
+									img(src='../img/sample/'+ src+'.jpg', alt="商品圖片")
+								.cart_info
+									.cart_name
+										p 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g
+										.cart_size 白色 600ml
+									.cart-per 個人專屬特價期間07/10~07/13止
+									.cart_price_b
+										.cart_price
+											.ori_t 原價
+											.ori_price $990
+										.cart_price
+											.dis_t 網路價
+											.dis_price $999
+									.cart_gift
+										p 贈品
+										ul.cart_gift_item
+											li 3M百利爐具專用菜瓜布x1
+											li 室內芳香劑x1
+								.cart-count x99 
+						+cartimg(1,'05_10_182')
+						+cartimg(2,'05_18_182')
+
+						.cart_block.orderconfirm
+							.cart_sub_block
+								.cart_block_txt  收件方式：
+								.cart_block_txt
+									.deliver_way
+										label(for="deliver_home")
+											input(type="radio", name="deliver_way", id="deliver_home", value="1")
+											| 宅配到家
+										label(for="deliver_mart")
+											input(type="radio", name="deliver_way", id="deliver_mart", checked="checked", value="2")
+											| 超商取貨
+							.cart_sub_block
+								.cart_block_txt  商品金額：
+								.cart_block_txt
+									span.currency $
+									span.price 999,900
+							.cart_sub_block
+								.cart_block_txt
+									input.order_chk(type="checkbox", id="s_gold")
+									label.order_chk_label(for="s_gold")
+									| 我要使用購物金折抵：
+								.cart_block_txt
+									span.currency -$
+									span.price 90
+							.cart_sub_block
+								.cart_block_txt  運費：
+								.cart_block_txt
+									div
+										span.currency $
+										span.price 90
+									small (滿$490免運費，還差$100)
+							.cart_sub_block
+								.cart_block_txt  小計：
+								.cart_block_txt
+									.total_price $999,900
+						#deliver_block1.deliver_block
+							.cart_block.orderman
+								.cart_sub_block
+									.ordername
+										input(type="text", placeholder="訂購人姓名")
+										.sex
+											label(for="male")
+												input#male(type="radio", name="sex")
+											| 先生
+											label(for="female")
+												input#female(type="radio", name="sex")
+											| 小姐
+									input(type="email", placeholder="訂購人E-mail")
+									input(type="tel", placeholder="訂購人手機號碼")
+							.cart_block
+								.cart_sub_block.deliver_box
+									.deliver_info
+										p 宅配收件資訊：
+										p
+											span.cart_block_txt 收件人：
+											| 遠時數位科技
+										p
+											span.cart_block_txt 聯絡電話：
+											| 0912-245678
+										p
+											span.cart_block_txt 收件地址：
+											| 114台北市內湖區瑞光路468號7F
+									a(href="#").deliver_addr 新增/修改收件地址
+							.cart_block
+								.cart_sub_block.radio
+									.cart_block_txt 付款方式：
+									.cart_block_txt
+										.order_radio_all
+											input#radio1.radio_btn(type="radio", name="logistics", value="1", checked="checked")
+											label.radio-label(for="radio1") 信用卡一次付清
+										.order_radio_all
+											input#radio2.radio_btn(type="radio", name="logistics", value="2")
+											label.radio-label(for="radio2") 信用卡分期
+								.cart_sub_block.card_num
+									.card_line
+										input(type="text", placeholder="信用卡號")
+										p 請輸入信用卡卡號
+									.card_line_m
+										.card_fill
+											select
+												option 1月
+											p 請輸入信用卡截止月份
+										.card_fill
+											select
+												option 2020年
+											p 請輸入信用卡截止年份
+										.card_fill
+											input(type="text", placeholder="信用卡末三碼")
+											br
+											p 請輸入信用卡背後末三碼
+							.cart_block.orderman
+								.cart_sub_block
+									h3  持卡人資訊：
+										label(for="chk1")
+											input#chk1.chk_btn(type="checkbox", name="chkinfo", value="1", checked="checked")
+											| 同訂購人
+								.cart_sub_block
+									input(type="text", placeholder="持卡人姓名")
+									input(type="tel", placeholder="持卡人手機號碼")
+								.cart_sub_block.radio.stag
+									.cart_block_txt  分期方式：
+									.cart_block_txt
+										.order_radio_all
+											input#radio3.radio_btn(type="radio", name="sp", value="1", checked="checked")
+											label.radio-label(for="radio3") $163 x 3期0利率
+										.order_radio_all
+											input#radio4.radio_btn(type="radio", name="sp", value="2")
+											label.radio-label(for="radio4") $81 x 6期0利率	
+						#deliver_block2.deliver_block
+							.cart_block.orderman
+								.cart_sub_block
+									.ordername
+										input(type="text", placeholder="訂購人姓名")
+										.sex
+											label(for="male")
+												input#male(type="radio", name="sex")
+												| 先生
+											label(for="female")
+												input#female(type="radio", name="sex")
+												| 小姐
+									input(type="email", placeholder="訂購人E-mail")
+									input(type="tel", placeholder="訂購人手機號碼")
+							.cart_block
+								div(class="cart_sub_block deliver_box")
+									div(class="deliver_info")
+										p
+											span.cart_block_txt 選擇門市：
+											label(for="mart")
+												input#mart(type="radio", name="mart")
+												| 7-11超商
+										p
+											span.cart_block_txt 門市店名：
+											| 中坡
+										p
+											span.cart_block_txt 門市地址：
+											| 台北市南港區忠孝東路六段21號13F-1
+									a(href="#").deliver_addr 新增/修改超商門市
+							.cart_block
+								div(class="cart_sub_block deliver_box")
+									div(class="deliver_info")
+										p
+											span.cart_block_txt 付款方式：
+											label(for="payment")
+												input#payment(type="radio", name="payment")
+												| 超商取貨付款
+							.addcart
+								a.btn-continue(href="index.html") 上一頁
+								a.btn-confirm(href="confirm.html") 結帳
+	script(src='js/3rd-party/jquery-3.6.0.min.js')
+	script(src='js/cart.js')
+	include src/_foot.pug
+
+

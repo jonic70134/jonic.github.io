@@ -2087,7 +2087,7 @@ button.swiper-pagination-bullet {
   width: 130px;
   font-size: 1.2rem;
   color: #000;
-  line-height: 1.2;
+  line-height: 1.25;
   word-break: break-word;
   overflow: hidden;
 }
@@ -2106,9 +2106,10 @@ button.swiper-pagination-bullet {
   -webkit-line-clamp: 2;
   line-clamp: 2;
   overflow: hidden;
-  margin: 10px 0 5px;
+  margin: 5px 0;
   color: #888;
   font-size: 0.8rem;
+  line-height: 1.25;
 }
 
 .per_price {
