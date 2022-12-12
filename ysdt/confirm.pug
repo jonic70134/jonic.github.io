@@ -73,7 +73,7 @@ html
 								.cart_block_txt  小計：
 								.cart_block_txt
 									.total_price $999,900
-						#deliver_block1.deliver_block
+						#deliver_block1.deliver_block(style='display: none;')
 							.cart_block.orderman
 								.cart_sub_block
 									.ordername
@@ -154,10 +154,10 @@ html
 										.sex
 											label(for="male")
 												input#male(type="radio", name="sex")
-												| 先生
+											| 先生
 											label(for="female")
 												input#female(type="radio", name="sex")
-												| 小姐
+											| 小姐
 									input(type="email", placeholder="訂購人E-mail")
 									input(type="tel", placeholder="訂購人手機號碼")
 							.cart_block
@@ -173,7 +173,7 @@ html
 											| 中坡
 										p
 											span.cart_block_txt 門市地址：
-											| 台北市南港區忠孝東路六段21號13F-1
+											| 台北市南港區忠孝東路六段21號
 									a(href="#").deliver_addr 新增/修改超商門市
 							.cart_block
 								div(class="cart_sub_block deliver_box")
@@ -183,9 +183,9 @@ html
 											label(for="payment")
 												input#payment(type="radio", name="payment")
 												| 超商取貨付款
-							.addcart
-								a.btn-continue(href="index.html") 上一頁
-								a.btn-confirm(href="confirm.html") 結帳
+						.addcart
+							a.btn-continue(href="orderlist.html") 上一頁
+							a.btn-confirm(href="confirm.html") 結帳
 	script(src='js/3rd-party/jquery-3.6.0.min.js')
 	script(src='js/cart.js')
 	include src/_foot.pug

@@ -1758,14 +1758,14 @@ button.is-disabled {
       align-self: flex-start;
   margin: 10px 0;
 }
-.cart_block .cart_sub_block.radio {
+.cart_block .cart_sub_block.radio.stag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 10px;
   border: none;
 }
-.cart_block .cart_sub_block.radio .cart_block_txt {
+.cart_block .cart_sub_block.radio.stag .cart_block_txt {
   min-width: auto;
   font-size: 1rem;
 }
