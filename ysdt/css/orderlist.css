@@ -979,6 +979,20 @@ body {
   background: #eee;
 }
 
+.body_container {
+  padding: 0;
+}
+
+.cart_head {
+  padding: 10px 0;
+  background: #e00;
+  text-align: center;
+}
+
+.site-main, .container {
+  width: 100%;
+}
+
 input[type=radio] {
   -webkit-appearance: radio;
      -moz-appearance: radio;
