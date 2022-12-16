@@ -6,8 +6,12 @@ html
 	body
 		.body_container
 			.cart_head
-				a.logo(href="index.html", title="回到friDay")
-					i(class="icon icon_friday_logo")
+				.container
+					a.back(href="index.html")
+						i.icon.icon_swiper_prev
+						| 回首頁
+					a.logo(href="index.html", title="回到friDay")
+						i.icon.icon_friday_logo
 			.site-main
 				.container
 					.order_all
@@ -28,7 +32,7 @@ html
 									img(src='../img/sample/'+ src+'.jpg', alt="商品圖片")
 								.cart_info
 									.cart_name
-										p 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g
+										a.cart_name_link(href="item.html") 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g
 										.cart_size 白色 600ml
 									.cart-per 個人專屬特價期間07/10~07/13止
 									.cart_price_b
@@ -63,7 +67,7 @@ html
 								.cart-lack-tag 補貨中
 							.cart_info
 								.cart_name
-									p 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g
+									a.cart_name_link(href="item.html") 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g
 									.cart_size 白色 600ml
 								.cart-per 個人專屬特價期間07/10~07/13止
 								.cart_price_b
@@ -84,12 +88,13 @@ html
 
 
 						.cart_block.orderprice
-							.cart_sub_block
-								.cart_block_txt 總金額：
-								.cart_block_txt
-									.total_price $999,900
+							//- .cart_sub_block
+							//- 	.cart_block_txt 總金額：
+							//- 	.cart_block_txt
+							//- 		.total_price $999,900
 							.addcart
-								a.btn-continue(href="index.html") 繼續選購
+								a.btn-continue(href="index.html") 再購物
+								a.btn-continue(href="confirm.html") 離開暫記
 								a.btn-confirm(href="confirm.html") 開始結帳
 	script(src='js/3rd-party/jquery-3.6.0.min.js')
 	script(src='js/cart.js')
