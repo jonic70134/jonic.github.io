@@ -102,71 +102,6 @@
                   </div><a class="deliver_addr" href="#">新增/修改收件地址</a>
                 </div>
               </div>
-              <div class="cart_block">
-                <div class="cart_sub_block radio">
-                  <div class="cart_block_txt">付款方式：</div>
-                  <div class="cart_block_txt">
-                    <div class="order_radio_all">
-                      <input class="radio_btn" id="radio1" type="radio" name="logistics" value="1" checked="checked">
-                      <label class="radio-label" for="radio1">信用卡一次付清</label>
-                    </div>
-                    <div class="order_radio_all">
-                      <input class="radio_btn" id="radio2" type="radio" name="logistics" value="2">
-                      <label class="radio-label" for="radio2">信用卡分期</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="cart_sub_block card_num">
-                  <div class="card_line">
-                    <input type="text" placeholder="信用卡號">
-                    <p>請輸入信用卡卡號</p>
-                  </div>
-                  <div class="card_line_m">
-                    <div class="card_fill">
-                      <select>
-                        <option>1月</option>
-                      </select>
-                      <p>請輸入信用卡截止月份</p>
-                    </div>
-                    <div class="card_fill">
-                      <select>
-                        <option>2020年</option>
-                      </select>
-                      <p>請輸入信用卡截止年份</p>
-                    </div>
-                    <div class="card_fill">
-                      <input type="text" placeholder="信用卡末三碼"><br>
-                      <p>請輸入信用卡背後末三碼</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cart_block orderman">
-                <div class="cart_sub_block">
-                  <h3> 持卡人資訊：
-                    <label for="chk1">
-                      <input class="chk_btn" id="chk1" type="checkbox" name="chkinfo" value="1" checked="checked">同訂購人
-                    </label>
-                  </h3>
-                </div>
-                <div class="cart_sub_block">
-                  <input type="text" placeholder="持卡人姓名">
-                  <input type="tel" placeholder="持卡人手機號碼">
-                </div>
-                <div class="cart_sub_block radio stag">
-                  <div class="cart_block_txt"> 分期方式：</div>
-                  <div class="cart_block_txt">
-                    <div class="order_radio_all">
-                      <input class="radio_btn" id="radio3" type="radio" name="sp" value="1" checked="checked">
-                      <label class="radio-label" for="radio3">$163 x 3期0利率</label>
-                    </div>
-                    <div class="order_radio_all">
-                      <input class="radio_btn" id="radio4" type="radio" name="sp" value="2">
-                      <label class="radio-label" for="radio4">$81 x 6期0利率	</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="deliver_block" id="deliver_block2">
               <div class="cart_block orderman">
@@ -199,41 +134,97 @@
                   </div><a class="deliver_addr" href="#">新增/修改超商門市</a>
                 </div>
               </div>
-              <div class="cart_block payway_b">
-                <div class="payway_t">付款方式：</div>
-                <div class="payway">
-                  <label class="pay_label" for="payment1">
-                    <input class="pay_radio" id="payment1" type="radio" name="payment" checked>
-                    <p class="pay_t">Line Pay</p>
+            </div>
+            <div class="cart_block payway_b">
+              <div class="payway_t">付款方式：</div>
+              <div class="payway">
+                <label class="pay_label" for="payment5">
+                  <input class="pay_radio" id="payment5" type="radio" name="payment" checked>
+                  <p class="pay_t">信用卡一次付清</p>
+                </label>
+                <label class="pay_label" for="payment9">
+                  <input class="pay_radio" id="payment9" type="radio" name="payment" checked>
+                  <p class="pay_t">信用卡分期付款</p>
+                </label>
+                <label class="pay_label" for="payment6">
+                  <input class="pay_radio" id="payment6" type="radio" name="payment">
+                  <p class="pay_t">信用卡紅利折抵</p>
+                </label>
+                <label class="pay_label" for="payment1">
+                  <input class="pay_radio" id="payment1" type="radio" name="payment">
+                  <p class="pay_t">Line Pay</p>
+                </label>
+                <label class="pay_label" for="payment2">
+                  <input class="pay_radio" id="payment2" type="radio" name="payment">
+                  <p class="pay_t">街口支付</p>
+                </label>
+                <label class="pay_label" for="payment3">
+                  <input class="pay_radio" id="payment3" type="radio" name="payment">
+                  <p class="pay_t">悠遊付</p>
+                </label>
+                <label class="pay_label" for="payment4">
+                  <input class="pay_radio" id="payment4" type="radio" name="payment">
+                  <p class="pay_t">HAPPY GO Pay</p>
+                </label>
+                <label class="pay_label" for="payment7">
+                  <input class="pay_radio" id="payment7" type="radio" name="payment">
+                  <p class="pay_t">ATM</p>
+                </label>
+                <label class="pay_label" for="payment8">
+                  <input class="pay_radio" id="payment8" type="radio" name="payment">
+                  <p class="pay_t">web-ATM</p>
+                </label>
+              </div>
+            </div>
+            <div class="cart_block">
+              <div class="cart_sub_block card_num">
+                <div class="card_line">
+                  <input type="text" placeholder="信用卡號">
+                  <p>請輸入信用卡卡號</p>
+                </div>
+                <div class="card_line_m">
+                  <div class="card_fill">
+                    <select>
+                      <option>1月</option>
+                    </select>
+                    <p>請輸入信用卡截止月份</p>
+                  </div>
+                  <div class="card_fill">
+                    <select>
+                      <option>2020年</option>
+                    </select>
+                    <p>請輸入信用卡截止年份</p>
+                  </div>
+                  <div class="card_fill">
+                    <input type="text" placeholder="信用卡末三碼"><br>
+                    <p>請輸入信用卡背後末三碼</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart_block orderman">
+              <div class="cart_sub_block">
+                <h3> 持卡人資訊：
+                  <label for="chk1">
+                    <input class="chk_btn" id="chk1" type="checkbox" name="chkinfo" value="1" checked="checked">同訂購人
                   </label>
-                  <label class="pay_label" for="payment2">
-                    <input class="pay_radio" id="payment2" type="radio" name="payment">
-                    <p class="pay_t">街口支付</p>
-                  </label>
-                  <label class="pay_label" for="payment3">
-                    <input class="pay_radio" id="payment3" type="radio" name="payment">
-                    <p class="pay_t">悠遊付</p>
-                  </label>
-                  <label class="pay_label" for="payment4">
-                    <input class="pay_radio" id="payment4" type="radio" name="payment">
-                    <p class="pay_t">HAPPY GO Pay</p>
-                  </label>
-                  <label class="pay_label" for="payment5">
-                    <input class="pay_radio" id="payment5" type="radio" name="payment">
-                    <p class="pay_t">信用卡一次付清</p>
-                  </label>
-                  <label class="pay_label" for="payment6">
-                    <input class="pay_radio" id="payment6" type="radio" name="payment">
-                    <p class="pay_t">信用卡紅利折抵</p>
-                  </label>
-                  <label class="pay_label" for="payment7">
-                    <input class="pay_radio" id="payment7" type="radio" name="payment">
-                    <p class="pay_t">ATM</p>
-                  </label>
-                  <label class="pay_label" for="payment8">
-                    <input class="pay_radio" id="payment8" type="radio" name="payment">
-                    <p class="pay_t">web-ATM</p>
-                  </label>
+                </h3>
+              </div>
+              <div class="cart_sub_block">
+                <input type="text" placeholder="持卡人姓名">
+                <input type="tel" placeholder="持卡人手機號碼">
+              </div>
+              <div class="cart_sub_block radio stag">
+                <div class="cart_block_txt"> 分期方式：</div>
+                <div class="cart_block_txt">
+                  <div class="order_radio_all">
+                    <input class="radio_btn" id="radio3" type="radio" name="sp" value="1" checked="checked">
+                    <label class="radio-label" for="radio3">$163 x 3期0利率</label>
+                  </div>
+                  <div class="order_radio_all">
+                    <input class="radio_btn" id="radio4" type="radio" name="sp" value="2">
+                    <label class="radio-label" for="radio4">$81 x 6期0利率</label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -246,11 +237,12 @@
               </div>
               <div class="cart_sub_block">
                 <div class="cart_block_txt">
-                  <input class="order_chk" type="checkbox" id="s_gold">
+                  <input class="order_chk" type="checkbox" id="s_gold" checked>
                   <label class="order_chk_label" for="s_gold"></label>使用遠傳幣折抵：
+                  <input class="coin_input" type="text" name="" value="0">
                 </div>
                 <div class="cart_block_txt">
-                  <div class="price">$90</div>
+                  <div class="price">$-90</div>
                 </div>
               </div>
               <div class="cart_sub_block">

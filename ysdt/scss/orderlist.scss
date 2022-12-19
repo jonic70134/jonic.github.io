@@ -1001,7 +1001,7 @@ button.is-disabled {
     box-shadow: 0px -5px 5px #eee;
 	.cart_sub_block {
 		justify-content: flex-end;
-		padding: 10px 5px 10px 10px;
+		padding: 8px 5px 8px 10px;
         border-color:#ddd ;
 	}
     .addcart{
@@ -1010,6 +1010,18 @@ button.is-disabled {
     [class*="btn-"] {
         flex-basis: 100%;
         margin: 0;
+    }
+    .coin_input{
+        width: 30px;
+        padding: 3px 8px;
+        font-size:1.2rem;
+        font-weight: 700;
+        color:#e00;
+        border:1px solid #ccc;
+        text-align: center;
+    }
+    .price{
+        margin:0 0 0 20px;
     }
 }
 .addcart {
