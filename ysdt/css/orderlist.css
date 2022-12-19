@@ -476,6 +476,9 @@ input[type=checkbox] {
   font-size: 1.2rem;
   color: #e00;
 }
+.price::first-letter {
+  font-size: 0.7rem;
+}
 
 ::-webkit-input-placeholder {
   color: #aaa;
@@ -648,8 +651,6 @@ h3 {
 
 .cart_img {
   padding: 0 5px;
-  -ms-flex-preferred-size: 205px;
-      flex-basis: 205px;
 }
 .cart_img img {
   display: block;
@@ -677,6 +678,10 @@ h3 {
   background: #3a0;
 }
 
+.confirm .cart_img img {
+  width: 120px;
+}
+
 .cart_info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -694,7 +699,7 @@ h3 {
 }
 
 .cart_gift {
-  margin: 10px 0;
+  margin: 5px 0 0;
 }
 .cart_gift p {
   display: inline-block;
@@ -823,6 +828,10 @@ h3 {
           align-items: baseline;
   margin: 0 5px 10px 0;
   font-size: 0.9rem;
+  color: #e00;
+}
+
+.unit_price {
   color: #e00;
 }
 
@@ -1220,8 +1229,9 @@ button.is-disabled {
 .cart_block .cart_block_txt .price {
   color: #e00;
 }
-.cart_block .cart_block_txt .currency {
-  color: #e00;
+.cart_block .cart_block_txt small {
+  color: #888;
+  font-size: 0.8rem;
 }
 .cart_block .cart_block_txt.main-color {
   color: #e00;
@@ -1251,6 +1261,52 @@ button.is-disabled {
   font-size: 0.9rem;
   padding: 5px;
   border: 1px solid #ccc;
+}
+
+.payway_b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 70px 15px 10px;
+  background-color: white;
+}
+.payway_b .pay_radio {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: none;
+}
+
+.payway {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.payway_t {
+  min-width: 85px;
+}
+
+.pay_label {
+  cursor: pointer;
+}
+
+.pay_t {
+  margin: 0 10px 10px 0;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+}
+
+.pay_radio:checked + .pay_t {
+  color: #e00;
+  border: 1px solid #e00;
 }
 
 .cart_block.discode .discode-enter input {

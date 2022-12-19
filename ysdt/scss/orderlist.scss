@@ -2,6 +2,8 @@
 @import "partials/base";
 @import "partials/mixin";
 @import "partials/color";
+
+
 @font-face {
 	font-family: 'icomoon';
 	src:  url('../fonts/icomoon.eot?9fk6lu');
@@ -312,6 +314,9 @@ input[type="checkbox"] {
 .price {
 	font-size: 1.2rem;
 	color: #e00;
+    &::first-letter{
+        font-size:.7rem;
+    }
 }
 ::placeholder {
 	color: #aaa;
@@ -432,7 +437,6 @@ h3{
 }
 .cart_img {
 	padding: 0 5px;
-	flex-basis: 205px;
 	img {
 		display: block;
 		width: 160px;
@@ -459,6 +463,13 @@ h3{
 		background: #3a0;
 	}
 }
+.confirm{
+    .cart_img{
+        img{
+            width: 120px;
+        }
+    }
+}
 .cart_info {
 	display: flex;
 	flex-flow: column nowrap;
@@ -467,7 +478,7 @@ h3{
 	padding: 0px 5px;
 }
 .cart_gift {
-	margin: 10px 0;
+	margin: 5px 0 0;
 	p {
         display: inline-block;
 		padding: 3px 5px;
@@ -560,6 +571,9 @@ h3{
     align-items: baseline;
     margin: 0 5px 10px 0;
     font-size: .9rem;
+    color: #e00;
+}
+.unit_price{
     color: #e00;
 }
 .ori_t {
@@ -900,9 +914,10 @@ button.is-disabled {
 		.price {
 			color: #e00;
 		}
-		.currency {
-			color: #e00;
-		}
+        small{
+            color:#888;
+            font-size:.8rem;
+        }
 	}
 	.cart_block_txt.main-color {
 		color: #e00;
@@ -930,6 +945,35 @@ button.is-disabled {
 			border: 1px solid #ccc;
 		}
 	}
+}
+.payway_b{
+    display: flex;
+    align-items: center;
+    padding:15px 70px 15px 10px;
+    background-color: white;
+    .pay_radio{
+        appearance: none;
+        display: none;
+    }
+}
+.payway{
+    display: flex;
+    flex-flow: row wrap;
+}
+.payway_t{
+    min-width: 85px;
+}
+.pay_label{
+    cursor: pointer;
+}
+.pay_t{
+    margin:0 10px 10px 0;
+    padding:10px 20px;
+    border:1px solid #ddd;
+}
+.pay_radio:checked+.pay_t{
+    color:#e00;
+    border:1px solid #e00;
 }
 .cart_block.discode {
 	.discode-enter {

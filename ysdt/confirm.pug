@@ -14,7 +14,7 @@ html
 						i.icon.icon_friday_logo
 			.site-main
 				.container
-					.order_all
+					.order_all.confirm
 						.order_head
 							h3 購物車
 						mixin cartimg(i,src)
@@ -25,16 +25,15 @@ html
 									.cart_name
 										a.cart_name_link(href="item.html") 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g
 										.cart_size 白色 600ml
-									.cart_price_b
-										.cart_price
-											.dis_t 網路價
-											.dis_price $999
 									.cart_gift
 										p 贈品
 										ul.cart_gift_item
 											li 3M百利爐具專用菜瓜布x1
 											li 室內芳香劑x1
 								.cart-count x99 
+								.unit_price
+									//- .dis_t 單價
+									.dis_price $99,999
 						+cartimg(1,'05_10_182')
 						+cartimg(2,'05_18_182')
 
@@ -49,30 +48,7 @@ html
 										label(for="deliver_mart")
 											input(type="radio", name="deliver_way", id="deliver_mart", checked="checked", value="2")
 											| 超商取貨
-							.cart_sub_block
-								.cart_block_txt  商品金額：
-								.cart_block_txt
-									span.currency $
-									span.price 999,900
-							.cart_sub_block
-								.cart_block_txt
-									input.order_chk(type="checkbox", id="s_gold")
-									label.order_chk_label(for="s_gold")
-									| 我要使用購物金折抵：
-								.cart_block_txt
-									span.currency -$
-									span.price 90
-							.cart_sub_block
-								.cart_block_txt  運費：
-								.cart_block_txt
-									div
-										span.currency $
-										span.price 90
-									small (滿$490免運費，還差$100)
-							.cart_sub_block
-								.cart_block_txt  小計：
-								.cart_block_txt
-									.total_price $999,900
+							
 						#deliver_block1.deliver_block(style='display: none;')
 							.cart_block.orderman
 								.cart_sub_block
@@ -175,15 +151,57 @@ html
 											span.cart_block_txt 門市地址：
 											| 台北市南港區忠孝東路六段21號
 									a(href="#").deliver_addr 新增/修改超商門市
-							.cart_block
-								div(class="cart_sub_block deliver_box")
-									div(class="deliver_info")
-										p
-											span.cart_block_txt 付款方式：
-											label(for="payment")
-												input#payment(type="radio", name="payment")
-												| 超商取貨付款
+							.cart_block.payway_b
+								.payway_t 付款方式：
+								.payway
+									label.pay_label(for="payment1")
+										input.pay_radio#payment1(type="radio", name="payment" checked)
+										p.pay_t Line Pay
+									label.pay_label(for="payment2")
+										input.pay_radio#payment2(type="radio", name="payment")
+										p.pay_t 街口支付
+									label.pay_label(for="payment3")
+										input.pay_radio#payment3(type="radio", name="payment")
+										p.pay_t 悠遊付
+									label.pay_label(for="payment4")
+										input.pay_radio#payment4(type="radio", name="payment")
+										p.pay_t HAPPY GO Pay
+									label.pay_label(for="payment5")
+										input.pay_radio#payment5(type="radio", name="payment")
+										p.pay_t 信用卡一次付清
+									label.pay_label(for="payment6")
+										input.pay_radio#payment6(type="radio", name="payment")
+										p.pay_t 信用卡紅利折抵
+									label.pay_label(for="payment7")
+										input.pay_radio#payment7(type="radio", name="payment")
+										p.pay_t ATM
+									label.pay_label(for="payment8")
+										input.pay_radio#payment8(type="radio", name="payment")
+										p.pay_t web-ATM
+
+
+
+
+
+										
+
 						.cart_block.orderprice
+							.cart_sub_block
+								.cart_block_txt  商品金額：
+								.cart_block_txt
+									.price $999,900
+							.cart_sub_block
+								.cart_block_txt
+									input.order_chk(type="checkbox", id="s_gold")
+									label.order_chk_label(for="s_gold")
+									| 使用遠傳幣折抵：
+								.cart_block_txt
+									.price $90
+							.cart_sub_block
+								.cart_block_txt  運費：
+								.cart_block_txt
+									.price $90
+									small (滿$490免運費，還差$100)
 							.cart_sub_block
 								.cart_block_txt 總金額：
 								.cart_block_txt

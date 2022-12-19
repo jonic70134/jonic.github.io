@@ -17,7 +17,7 @@
       </div>
       <div class="site-main">
         <div class="container">
-          <div class="order_all">
+          <div class="order_all confirm">
             <div class="order_head">
               <h3>購物車</h3>
             </div>
@@ -27,12 +27,6 @@
                             <div class="cart_name"><a class="cart_name_link" href="item.html">韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g</a>
                               <div class="cart_size">白色 600ml</div>
                             </div>
-                            <div class="cart_price_b">
-                              <div class="cart_price">
-                                <div class="dis_t">網路價</div>
-                                <div class="dis_price">$999</div>
-                              </div>
-                            </div>
                             <div class="cart_gift">
                               <p>贈品</p>
                               <ul class="cart_gift_item">
@@ -42,6 +36,9 @@
                             </div>
                           </div>
                           <div class="cart-count">x99 </div>
+                          <div class="unit_price">
+                            <div class="dis_price">$99,999</div>
+                          </div>
                         </div>
                         <div class="cart_item">
                           <div class="cart_img"><img src="../img/sample/05_18_182.jpg" alt="商品圖片"></div>
@@ -49,12 +46,6 @@
                             <div class="cart_name"><a class="cart_name_link" href="item.html">韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g</a>
                               <div class="cart_size">白色 600ml</div>
                             </div>
-                            <div class="cart_price_b">
-                              <div class="cart_price">
-                                <div class="dis_t">網路價</div>
-                                <div class="dis_price">$999</div>
-                              </div>
-                            </div>
                             <div class="cart_gift">
                               <p>贈品</p>
                               <ul class="cart_gift_item">
@@ -64,6 +55,9 @@
                             </div>
                           </div>
                           <div class="cart-count">x99 </div>
+                          <div class="unit_price">
+                            <div class="dis_price">$99,999</div>
+                          </div>
                         </div>
             <div class="cart_block orderconfirm">
               <div class="cart_sub_block">
@@ -77,29 +71,6 @@
                       <input type="radio" name="deliver_way" id="deliver_mart" checked="checked" value="2">超商取貨
                     </label>
                   </div>
-                </div>
-              </div>
-              <div class="cart_sub_block">
-                <div class="cart_block_txt"> 商品金額：</div>
-                <div class="cart_block_txt"><span class="currency">$</span><span class="price">999,900</span></div>
-              </div>
-              <div class="cart_sub_block">
-                <div class="cart_block_txt">
-                  <input class="order_chk" type="checkbox" id="s_gold">
-                  <label class="order_chk_label" for="s_gold"></label>我要使用購物金折抵：
-                </div>
-                <div class="cart_block_txt"><span class="currency">-$</span><span class="price">90</span></div>
-              </div>
-              <div class="cart_sub_block">
-                <div class="cart_block_txt"> 運費：</div>
-                <div class="cart_block_txt">
-                  <div><span class="currency">$</span><span class="price">90</span></div><small>(滿$490免運費，還差$100)</small>
-                </div>
-              </div>
-              <div class="cart_sub_block">
-                <div class="cart_block_txt"> 小計：</div>
-                <div class="cart_block_txt">
-                  <div class="total_price">$999,900</div>
                 </div>
               </div>
             </div>
@@ -228,19 +199,66 @@
                   </div><a class="deliver_addr" href="#">新增/修改超商門市</a>
                 </div>
               </div>
-              <div class="cart_block">
-                <div class="cart_sub_block deliver_box">
-                  <div class="deliver_info">
-                    <p><span class="cart_block_txt">付款方式：</span>
-                      <label for="payment">
-                        <input id="payment" type="radio" name="payment">超商取貨付款
-                      </label>
-                    </p>
-                  </div>
+              <div class="cart_block payway_b">
+                <div class="payway_t">付款方式：</div>
+                <div class="payway">
+                  <label class="pay_label" for="payment1">
+                    <input class="pay_radio" id="payment1" type="radio" name="payment" checked>
+                    <p class="pay_t">Line Pay</p>
+                  </label>
+                  <label class="pay_label" for="payment2">
+                    <input class="pay_radio" id="payment2" type="radio" name="payment">
+                    <p class="pay_t">街口支付</p>
+                  </label>
+                  <label class="pay_label" for="payment3">
+                    <input class="pay_radio" id="payment3" type="radio" name="payment">
+                    <p class="pay_t">悠遊付</p>
+                  </label>
+                  <label class="pay_label" for="payment4">
+                    <input class="pay_radio" id="payment4" type="radio" name="payment">
+                    <p class="pay_t">HAPPY GO Pay</p>
+                  </label>
+                  <label class="pay_label" for="payment5">
+                    <input class="pay_radio" id="payment5" type="radio" name="payment">
+                    <p class="pay_t">信用卡一次付清</p>
+                  </label>
+                  <label class="pay_label" for="payment6">
+                    <input class="pay_radio" id="payment6" type="radio" name="payment">
+                    <p class="pay_t">信用卡紅利折抵</p>
+                  </label>
+                  <label class="pay_label" for="payment7">
+                    <input class="pay_radio" id="payment7" type="radio" name="payment">
+                    <p class="pay_t">ATM</p>
+                  </label>
+                  <label class="pay_label" for="payment8">
+                    <input class="pay_radio" id="payment8" type="radio" name="payment">
+                    <p class="pay_t">web-ATM</p>
+                  </label>
                 </div>
               </div>
             </div>
             <div class="cart_block orderprice">
+              <div class="cart_sub_block">
+                <div class="cart_block_txt"> 商品金額：</div>
+                <div class="cart_block_txt">
+                  <div class="price">$999,900</div>
+                </div>
+              </div>
+              <div class="cart_sub_block">
+                <div class="cart_block_txt">
+                  <input class="order_chk" type="checkbox" id="s_gold">
+                  <label class="order_chk_label" for="s_gold"></label>使用遠傳幣折抵：
+                </div>
+                <div class="cart_block_txt">
+                  <div class="price">$90</div>
+                </div>
+              </div>
+              <div class="cart_sub_block">
+                <div class="cart_block_txt"> 運費：</div>
+                <div class="cart_block_txt">
+                  <div class="price">$90</div><small>(滿$490免運費，還差$100)</small>
+                </div>
+              </div>
               <div class="cart_sub_block">
                 <div class="cart_block_txt">總金額：</div>
                 <div class="cart_block_txt">
