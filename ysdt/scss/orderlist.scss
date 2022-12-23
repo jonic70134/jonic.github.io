@@ -280,7 +280,6 @@ input[type="checkbox"] {
 	background-color: #333;
 }
 .btn-cancel {
-	flex-basis: 50%;
 	padding: 15px 10px;
 	font-size: 1rem;
 	background-color: #888;
@@ -439,7 +438,7 @@ h3{
 	padding: 0 5px;
 	img {
 		display: block;
-		width: 160px;
+		width: 130px;
 		border: 1px solid #ccc;
 	}
 	.cart-lack-tag {
@@ -535,7 +534,7 @@ h3{
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin-bottom: 10px;
-    color: #666;
+    color: #333;
     font-size: 1rem;
     line-height: 1.4;
 }
@@ -547,29 +546,34 @@ h3{
 }
 .cart_size {
 	margin-bottom: 10px;
-	color: #999;
+	color: #333;
 	font-size: .85rem;
 	line-height: 1.4;
 }
-.cart-per {
-	font-size: .9rem;
+.cart_per {
+	font-size: .8rem;
 	color: #e00;
-	margin: 0 0 10px;
+	margin: 0 0 5px;
 }
 .cart_quantity {
-	display: flex;
-	flex-flow: column nowrap;
+	margin: 0 0 10px;
 }
 .cart_price_b{
     display: flex;
     flex-flow: row nowrap;
     align-items: baseline;
+    margin: 0 0 10px;
+}
+.cart_coupon_lb{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
 }
 .cart_price{
     display: flex;
     flex-flow: row nowrap;
     align-items: baseline;
-    margin: 0 5px 10px 0;
+    margin: 0 8px 0 0;
     font-size: .9rem;
     color: #e00;
 }
@@ -1008,7 +1012,7 @@ button.is-disabled {
         padding: 0;
     }
     [class*="btn-"] {
-        flex-basis: 100%;
+        width:100px;
         margin: 0;
     }
     .coin_input{
@@ -1027,7 +1031,7 @@ button.is-disabled {
 .addcart {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding:10px 0;
     background: white;

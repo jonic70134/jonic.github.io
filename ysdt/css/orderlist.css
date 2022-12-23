@@ -433,8 +433,6 @@ input[type=checkbox] {
 }
 
 .btn-cancel {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   padding: 15px 10px;
   font-size: 1rem;
   background-color: #888;
@@ -654,7 +652,7 @@ h3 {
 }
 .cart_img img {
   display: block;
-  width: 160px;
+  width: 130px;
   border: 1px solid #ccc;
 }
 .cart_img .cart-lack-tag {
@@ -766,7 +764,7 @@ h3 {
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin-bottom: 10px;
-  color: #666;
+  color: #333;
   font-size: 1rem;
   line-height: 1.4;
 }
@@ -781,25 +779,19 @@ h3 {
 
 .cart_size {
   margin-bottom: 10px;
-  color: #999;
+  color: #333;
   font-size: 0.85rem;
   line-height: 1.4;
 }
 
-.cart-per {
-  font-size: 0.9rem;
+.cart_per {
+  font-size: 0.8rem;
   color: #e00;
-  margin: 0 0 10px;
+  margin: 0 0 5px;
 }
 
 .cart_quantity {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  margin: 0 0 10px;
 }
 
 .cart_price_b {
@@ -813,6 +805,20 @@ h3 {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  margin: 0 0 10px;
+}
+
+.cart_coupon_lb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cart_price {
@@ -826,7 +832,7 @@ h3 {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  margin: 0 5px 10px 0;
+  margin: 0 8px 0 0;
   font-size: 0.9rem;
   color: #e00;
 }
@@ -1345,8 +1351,7 @@ button.is-disabled {
   padding: 0;
 }
 .cart_block.orderprice [class*=btn-] {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  width: 100px;
   margin: 0;
 }
 .cart_block.orderprice .coin_input {
@@ -1370,9 +1375,9 @@ button.is-disabled {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

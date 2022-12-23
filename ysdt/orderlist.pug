@@ -33,27 +33,44 @@ html
 								.cart_info
 									.cart_name
 										a.cart_name_link(href="item.html") 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g
-										.cart_size 白色 600ml
-									.cart-per 個人專屬特價期間07/10~07/13止
+										.cart_size 規格：白色 600ml
+									.cart_per 特價期間07/10~07/13止
 									.cart_price_b
 										.cart_price
 											.ori_t 原價
 											.ori_price $990
 										.cart_price
-											.dis_t 網路價
+											.ori_t 網路價
+											.ori_price $990
+										.cart_price
+											.dis_t 折扣後價格
 											.dis_price $999
 									.cart_quantity
-										.quantity-input
-											button.btn-decrease ‒
-											input.cart-num(type="text", value="1")
-											button.btn-increase +
+										| 數量：1
 									.cart_gift
 										p 贈品
 										ul.cart_gift_item
 											li 3M百利爐具專用菜瓜布x1
 											li 室內芳香劑x1
+									hr
+									.cart_coupon_b
+										label.cart_coupon_lb(for="coupon1") 
+											input#coupon1(type="radio", name="coupon")
+											p 活動折抵
+										label.cart_coupon_lb(for="coupon2") 
+											input#coupon2(type="radio", name="coupon")
+											p 個人對品折價券 
+												small (當日有效)
+										label.cart_coupon_lb(for="coupon3") 
+											input#coupon3(type="radio", name="coupon")
+											p 使用折價券折抵 
+											select
+												option(value="1") 請選擇  
+										
+
+
 								.cart_last
-									a(href="#").btn-remove 移除
+									a(href="#").btn-remove 刪除
 						+cartimg(1,'05_10_182')
 						+cartimg(2,'05_18_182')
 						+cartimg(3,'05_03_182')
