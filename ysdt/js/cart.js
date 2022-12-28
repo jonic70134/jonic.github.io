@@ -3,14 +3,17 @@ $("#order_chk_all").click(function(){
     $('input:checkbox').not(this).prop('checked', this.checked);
 });
 
-// confirm
+// chk
 
-$(document).ready(function() {
-    $("input[name$='deliver_way']").click(function() {
-        var deliverbox = $(this).val();
-
-        $(".deliver_block").hide();
-        $("#deliver_block" + deliverbox).show();
-    });
+$("input[name$='payway']").click(function() {
+    var paydiv = $(this).val();
+    $(".paydiv").hide();
+    $("#paydiv" + paydiv).show();
 });
-
+  
+  
+$("input[name$='invo']").click(function() {
+    var invo = $(this).val();
+    $(".invo_credit").hide();
+    $("#invo" + invo).show();
+});
