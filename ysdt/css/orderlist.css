@@ -705,14 +705,13 @@ input[type=checkbox] {
 }
 
 .order_chk_all {
-  padding: 0 0 10px 10px;
+  padding: 0 0 10px 3px;
 }
 .order_chk_all p {
   font-size: 0.8rem;
 }
 
 .order_chk_label {
-  display: inline-block;
   width: 20px;
   height: 20px;
   margin: 0 3px;
@@ -722,7 +721,6 @@ input[type=checkbox] {
       align-self: center;
   position: relative;
   border: 1px solid #ccc;
-  vertical-align: middle;
 }
 .order_chk_label:after {
   content: "";
@@ -749,8 +747,7 @@ input[type=checkbox] {
 }
 
 .order_all {
-  margin: 0 5px 90px;
-  padding-bottom: 20px;
+  margin: 0 5px 10px;
   border-bottom: 1px solid #ccc;
 }
 .order_all:last-child {
@@ -825,7 +822,7 @@ h3 {
 }
 
 .cart_img {
-  padding: 0 5px;
+  padding: 0 2px;
 }
 .cart_img img {
   display: block;
@@ -1190,7 +1187,7 @@ button.is-disabled {
 .cart_last {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  padding-right: 10px;
+  margin: 0 2px;
   text-align: right;
   color: #e00;
   font-size: 1.2rem;
@@ -1421,10 +1418,6 @@ button.is-disabled {
   border: #e00;
   background: #e00;
 }
-.cart_block .order_chk_label:after {
-  top: 4px;
-  left: 4px;
-}
 .cart_block .discode-enter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1442,6 +1435,11 @@ button.is-disabled {
   font-size: 0.9rem;
   padding: 5px;
   border: 1px solid #ccc;
+}
+
+.order_chk_label:after {
+  top: 4px;
+  left: 4px;
 }
 
 .payway_b {
@@ -1734,7 +1732,7 @@ button.is-disabled {
   min-width: 80px;
   margin: 0 5px 0 0;
   text-align: right;
-  font-size: 0.9rem;
+  font-size: 1vw;
 }
 
 .form_same {
@@ -1744,7 +1742,7 @@ button.is-disabled {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 0.8rem;
+  font-size: 1vw;
 }
 
 .invo_b {
@@ -1842,10 +1840,11 @@ button.is-disabled {
           box-shadow: 0px -5px 5px #eee;
 }
 
-.chkout {
+.line.chkout {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0;
 }
 
 .lightbox-target {
@@ -2004,11 +2003,53 @@ button.is-disabled {
     padding: 10px 0;
   }
 
+  .order_chk_label {
+    width: 15px;
+    height: 15px;
+  }
+  .order_chk_label:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    height: 3px;
+    width: 7px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+  }
+
+  .line {
+    padding: 5px;
+  }
+
   .price {
     font-size: 0.9rem;
   }
 
   .cart_cupn {
+    font-size: 0.8rem;
+  }
+
+  .cart_b_t_l {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .coin_input {
+    width: 35px;
+    font-size: 0.8rem;
+  }
+
+  .pay_label {
+    width: 45%;
+    font-size: 0.8rem;
+  }
+
+  .payway_t {
+    min-width: 65px;
     font-size: 0.8rem;
   }
 
@@ -2028,6 +2069,10 @@ button.is-disabled {
 
   .cart_select {
     width: 70px;
+  }
+
+  .red_alert {
+    margin: 0 0 0 5px;
   }
 }
 @media only screen and (max-width: 414px) {

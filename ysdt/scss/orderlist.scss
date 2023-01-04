@@ -499,13 +499,12 @@ input[type="checkbox"] {
 }
 
 .order_chk_all {
-	padding: 0 0 10px 10px;
+	padding: 0 0 10px 3px;
 	p {
 		font-size: .8rem;
 	}
 }
 .order_chk_label {
-	display: inline-block;
 	width: 20px;
 	height: 20px;
     margin: 0 3px;
@@ -513,7 +512,6 @@ input[type="checkbox"] {
 	align-self: center;
 	position: relative;
 	border: 1px solid #ccc;
-	vertical-align: middle;
 	&:after {
 		content: "";
 		position: absolute;
@@ -537,8 +535,7 @@ input[type="checkbox"] {
 	}
 }
 .order_all {
-    margin: 0 5px 90px;
-	padding-bottom: 20px;
+    margin: 0 5px 10px;
 	border-bottom: 1px solid #ccc;
    
 	&:last-child {
@@ -594,7 +591,7 @@ h3{
 	}
 }
 .cart_img {
-	padding: 0 5px;
+	padding: 0 2px;
 	img {
 		display: block;
 		width: 130px;
@@ -878,7 +875,7 @@ button.is-disabled {
 }
 .cart_last {
 	align-self: flex-start;
-	padding-right: 10px;
+	margin:0 2px;
 	text-align: right;
 	color: #e00;
 	font-size: 1.2rem;
@@ -1084,12 +1081,6 @@ button.is-disabled {
 			background: #e00;
 		}
 	}
-	.order_chk_label {
-		&:after {
-			top: 4px;
-			left: 4px;
-		}
-	}
 	.discode-enter {
 		display: flex;
 		flex-flow: row nowrap;
@@ -1100,6 +1091,12 @@ button.is-disabled {
 			padding: 5px;
 			border: 1px solid #ccc;
 		}
+	}
+}
+.order_chk_label {
+	&:after {
+		top: 4px;
+		left: 4px;
 	}
 }
 .payway_b{
@@ -1322,12 +1319,12 @@ button.is-disabled {
 	min-width: 80px;
 	margin: 0 5px 0 0;
 	text-align: right;
-	font-size:.9rem;
+	font-size:1vw;
 }
 .form_same{
 	display: flex;
 	align-items: center;
-	font-size:.8rem;
+	font-size:1vw;
 }
 .invo_b{
 	margin: 10px 0 0;
@@ -1400,8 +1397,9 @@ button.is-disabled {
     padding:0;
     box-shadow: 0px -5px 5px #eee;
 }
-.chkout{
+.line.chkout{
     justify-content: center;
+	padding:0;
 }
 // css lightbox
 .lightbox-target {
@@ -1547,10 +1545,43 @@ button.is-disabled {
 		font-size:1rem;
 		padding: 10px 0;
 	}
+	.order_chk_label {
+		width: 15px;
+		height: 15px;
+		&:after {
+			content: "";
+			position: absolute;top: 4px;left: 3px;
+			height: 3px;
+			width: 7px;
+			border-left: 3px solid #fff;
+			border-bottom: 3px solid #fff;
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+		}
+	}
+	.line{
+		padding:5px;
+	}
 	.price{
 		font-size:.9rem;
 	}
 	.cart_cupn{
+		font-size:.8rem;
+	}
+	.cart_b_t_l{
+		font-size:.8rem;
+		line-height: 1.4;
+	}
+	.coin_input{
+		width:35px;
+		font-size:.8rem;
+	}
+	.pay_label{
+		width: 45%;
+		font-size: .8rem;
+	}
+	.payway_t{
+		min-width:65px ;
 		font-size:.8rem;
 	}
 	.cart_img {
@@ -1569,61 +1600,64 @@ button.is-disabled {
 	.cart_select{
 		width: 70px;
 	}
+	.red_alert{
+		margin:0 0 0 5px;
+	}
 	
 }
 @media only screen and (max-width: 414px) {
 	.order_all {
-	.cart_img {
-		.cart-lack-tag {
-			font-size: .7rem;
-		}
-	}
-	.cart_gift_item {
-		li {
-			max-width: 145px;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: nowrap;
-		}
-	}
-	.cart_gift.addprod {
-		li {
-			max-width: 200px;
-			.cart_gift_item_l {
-				max-width: 140px;
+		.cart_img {
+			.cart-lack-tag {
+				font-size: .7rem;
 			}
 		}
-	}
-	.cart-add {
-		.cart-add-name {
-			margin: 8px 0;
-			line-height: 1.2;
+		.cart_gift_item {
+			li {
+				max-width: 145px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
 		}
-	}
-	.cart_block {
-		.cart_sub_b.card_num {
-			input {
-				&::placeholder {
+		.cart_gift.addprod {
+			li {
+				max-width: 200px;
+				.cart_gift_item_l {
+					max-width: 140px;
+				}
+			}
+		}
+		.cart-add {
+			.cart-add-name {
+				margin: 8px 0;
+				line-height: 1.2;
+			}
+		}
+		.cart_block {
+			.cart_sub_b.card_num {
+				input {
+					&::placeholder {
+						font-size: 1rem;
+					}
+				}
+			}
+			.cart_b_t {
+				font-size: .85rem;
+			}
+		}
+		.cart_block.orderprice {
+			.addcart {
+				[class*="btn-"] {
+					flex-basis: 112px;
+					padding: 10px 15px;
+					font-size: 1rem;
+				}
+				i {
 					font-size: 1rem;
 				}
 			}
 		}
-		.cart_b_t {
-			font-size: .85rem;
-		}
-	}
-	.cart_block.orderprice {
-		.addcart {
-			[class*="btn-"] {
-				flex-basis: 112px;
-				padding: 10px 15px;
-				font-size: 1rem;
-			}
-			i {
-				font-size: 1rem;
-			}
-		}
-	}
 }
 @media only screen and (max-width: 320px) {
 	.order-list {
