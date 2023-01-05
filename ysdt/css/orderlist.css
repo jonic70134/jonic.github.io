@@ -712,6 +712,7 @@ input[type=checkbox] {
 }
 
 .order_chk_label {
+  display: block;
   width: 20px;
   height: 20px;
   margin: 0 3px;
@@ -740,8 +741,6 @@ input[type=checkbox] {
   display: none;
 }
 .order_chk:checked + .order_chk_label {
-  border: 1px solid #e00;
-  background: #e00;
   border: 1px solid #e00;
   background: #e00;
 }
@@ -829,7 +828,8 @@ h3 {
   width: 130px;
   border: 1px solid #ccc;
 }
-.cart_img .cart-lack-tag {
+
+.cart-lack-tag {
   width: 100%;
   margin: 0;
   padding: 3px 0 5px;
@@ -837,17 +837,6 @@ h3 {
   text-align: center;
   color: #fefefe;
   background: #555;
-}
-.cart_img .tag-conv {
-  width: 100%;
-  margin: 0;
-  padding: 3px 0 5px;
-  font-size: 0.9rem;
-  text-align: center;
-  color: #fefefe;
-  background: #555;
-  color: white;
-  background: #3a0;
 }
 
 .cart_info {
@@ -1840,7 +1829,7 @@ button.is-disabled {
           box-shadow: 0px -5px 5px #eee;
 }
 
-.line.chkout {
+.line.chkout, .line.orderchk {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2043,6 +2032,10 @@ button.is-disabled {
     font-size: 0.8rem;
   }
 
+  .code_btn {
+    padding: 2px 8px;
+  }
+
   .pay_label {
     width: 45%;
     font-size: 0.8rem;
@@ -2076,55 +2069,23 @@ button.is-disabled {
   }
 }
 @media only screen and (max-width: 414px) {
-  .order_all .cart_img .cart-lack-tag {
+  .cart-lack-tag {
     font-size: 0.7rem;
   }
-  .order_all .cart_gift_item li {
+
+  .cart_gift_item li {
     max-width: 145px;
     overflow: hidden;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .order_all .cart_gift.addprod li {
-    max-width: 200px;
-  }
-  .order_all .cart_gift.addprod li .cart_gift_item_l {
-    max-width: 140px;
-  }
-  .order_all .cart-add .cart-add-name {
-    margin: 8px 0;
-    line-height: 1.2;
-  }
-  .order_all .cart_block .cart_sub_b.card_num input::-webkit-input-placeholder {
-    font-size: 1rem;
-  }
-  .order_all .cart_block .cart_sub_b.card_num input::-moz-placeholder {
-    font-size: 1rem;
-  }
-  .order_all .cart_block .cart_sub_b.card_num input:-ms-input-placeholder {
-    font-size: 1rem;
-  }
-  .order_all .cart_block .cart_sub_b.card_num input::-ms-input-placeholder {
-    font-size: 1rem;
-  }
-  .order_all .cart_block .cart_sub_b.card_num input::placeholder {
-    font-size: 1rem;
-  }
-  .order_all .cart_block .cart_b_t {
+
+  .cart_b_t {
     font-size: 0.85rem;
   }
-  .order_all .cart_block.orderprice .addcart [class*=btn-] {
-    -ms-flex-preferred-size: 112px;
-        flex-basis: 112px;
-    padding: 10px 15px;
-    font-size: 1rem;
-  }
-  .order_all .cart_block.orderprice .addcart i {
-    font-size: 1rem;
-  }
 }
-@media only screen and (max-width: 414px) and (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   .order-list .cart_info {
     width: 140px;
   }
@@ -2165,12 +2126,5 @@ button.is-disabled {
   }
   .price del {
     font-size: 0.9rem;
-  }
-
-  .cart_gift.addprod li {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
   }
 }
