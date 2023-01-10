@@ -1,2 +1,3 @@
-qmomo_m/prepros.config
-qmomo/prepros.config
+prepros.config
+.DS_Store
+.p10k.zsh
