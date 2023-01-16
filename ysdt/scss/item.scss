@@ -163,6 +163,101 @@
     background-color: #88c533;
     @include border-radius(0 0 10px 10px);
 }
+
+.item_slider{
+    position: relative;
+    width: 360px;
+    margin:0 0 20px;
+    .gallery-top .swiper-slide {
+        width: 100%;
+        height: 0;
+        padding-top: 100%;
+        position: relative;
+        overflow: hidden;
+        float: left;
+        position: relative;
+    }
+    .gallery-top img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        max-width: 360px;
+        max-height: 360px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+//產品圖
+.swiper-thumbs{
+    position: relative;
+}
+.nextBtn,.prevBtn{
+    position: absolute;left:0;top:50%;
+    transform: translateY(-50%);
+    font-size:1rem;
+    color:#666;
+    z-index:30;
+    cursor: pointer;
+}
+.prevBtn{
+    transform:rotate(-180deg);
+}
+.nextBtn{
+    left:auto;right:0;
+}
+.gallery-thumbs {
+    margin:5px 15px;
+    padding:0;
+    .swiper-slide {
+        width: 60px;
+        height: 60px;
+        border: solid 1px #ccc;
+        cursor: pointer;
+        img {
+            display: block;
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .swiper-slide-active {
+        border: solid 1px #e00;
+    }
+}
+.oth_item{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    a{
+        display: flex;
+        align-items: baseline;
+        padding: 0 5px;
+        color:#666;
+        border:1px solid #ccc;
+        &:hover{
+            color:black;
+        }
+    }
+    .item_next{
+        &::after{
+            font-family: 'icomoon' !important;
+            content: "\e93f";
+	        color: #1079be;
+            font-size: .8rem;
+        }
+    }
+    .item_prev{
+        &::before{
+            font-family: 'icomoon' !important;
+            content: "\e93f";
+	        color: #1079be;
+            font-size: .8rem;
+            transform: rotate(-180deg);
+        }
+    }
+}
 .pc-item-main {
     line-height: 1.9;
     font-size: .85rem;
@@ -276,71 +371,6 @@
                 color: #d00;
                 letter-spacing: 1px;
             }
-        }
-    }
-
-
-    .item_slider{
-        position: relative;
-        width: 360px;
-        height:440px;
-        .gallery-top .swiper-slide {
-            width: 100%;
-            height: 0;
-            padding-top: 100%;
-            position: relative;
-            overflow: hidden;
-            float: left;
-            position: relative;
-        }
-        .gallery-top img {
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            margin: auto;
-            max-width: 360px;
-            max-height: 360px;
-            display: block;
-            margin: 0 auto;
-        }
-    }
-    //產品圖
-    .swiper-thumbs{
-        position: relative;
-    }
-    .nextBtn,.prevBtn{
-        position: absolute;left:0;bottom:30px;
-        transform: translateY(-50%);
-        font-size:1rem;
-        color:#666;
-        z-index:30;
-        cursor: pointer;
-    }
-    .prevBtn{
-        bottom: 35px;
-        transform: rotate(-180deg);
-    }
-    .nextBtn{
-        left:auto;right:0;
-    }
-    .gallery-thumbs {
-        margin:5px 15px;
-        padding:0;
-        .swiper-slide {
-            width: 60px;
-            height: 60px;
-            border: solid 1px #ccc;
-            cursor: pointer;
-            img {
-                display: block;
-                width: 60px;
-                height: 60px;
-            }
-        }
-        .swiper-slide-active {
-            border: solid 1px #e00;
         }
     }
 

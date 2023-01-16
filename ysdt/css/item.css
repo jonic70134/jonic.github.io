@@ -2336,6 +2336,119 @@ button.swiper-pagination-bullet {
   border-radius: 0 0 10px 10px;
 }
 
+.item_slider {
+  position: relative;
+  width: 360px;
+  margin: 0 0 20px;
+}
+.item_slider .gallery-top .swiper-slide {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+.item_slider .gallery-top img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 360px;
+  max-height: 360px;
+  display: block;
+  margin: 0 auto;
+}
+
+.swiper-thumbs {
+  position: relative;
+}
+
+.nextBtn, .prevBtn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1rem;
+  color: #666;
+  z-index: 30;
+  cursor: pointer;
+}
+
+.prevBtn {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.nextBtn {
+  left: auto;
+  right: 0;
+}
+
+.gallery-thumbs {
+  margin: 5px 15px;
+  padding: 0;
+}
+.gallery-thumbs .swiper-slide {
+  width: 60px;
+  height: 60px;
+  border: solid 1px #ccc;
+  cursor: pointer;
+}
+.gallery-thumbs .swiper-slide img {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+.gallery-thumbs .swiper-slide-active {
+  border: solid 1px #e00;
+}
+
+.oth_item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.oth_item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 0 5px;
+  color: #666;
+  border: 1px solid #ccc;
+}
+.oth_item a:hover {
+  color: black;
+}
+.oth_item .item_next::after {
+  font-family: "icomoon" !important;
+  content: "\e93f";
+  color: #1079be;
+  font-size: 0.8rem;
+}
+.oth_item .item_prev::before {
+  font-family: "icomoon" !important;
+  content: "\e93f";
+  color: #1079be;
+  font-size: 0.8rem;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
 .pc-item-main {
   line-height: 1.9;
   font-size: 0.85rem;
@@ -2459,75 +2572,6 @@ button.swiper-pagination-bullet {
   font-size: 1rem;
   color: #d00;
   letter-spacing: 1px;
-}
-.pc-item-main .item_slider {
-  position: relative;
-  width: 360px;
-  height: 440px;
-}
-.pc-item-main .item_slider .gallery-top .swiper-slide {
-  width: 100%;
-  height: 0;
-  padding-top: 100%;
-  position: relative;
-  overflow: hidden;
-  float: left;
-  position: relative;
-}
-.pc-item-main .item_slider .gallery-top img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  max-width: 360px;
-  max-height: 360px;
-  display: block;
-  margin: 0 auto;
-}
-.pc-item-main .swiper-thumbs {
-  position: relative;
-}
-.pc-item-main .nextBtn, .pc-item-main .prevBtn {
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-size: 1rem;
-  color: #666;
-  z-index: 30;
-  cursor: pointer;
-}
-.pc-item-main .prevBtn {
-  bottom: 35px;
-  -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-}
-.pc-item-main .nextBtn {
-  left: auto;
-  right: 0;
-}
-.pc-item-main .gallery-thumbs {
-  margin: 5px 15px;
-  padding: 0;
-}
-.pc-item-main .gallery-thumbs .swiper-slide {
-  width: 60px;
-  height: 60px;
-  border: solid 1px #ccc;
-  cursor: pointer;
-}
-.pc-item-main .gallery-thumbs .swiper-slide img {
-  display: block;
-  width: 60px;
-  height: 60px;
-}
-.pc-item-main .gallery-thumbs .swiper-slide-active {
-  border: solid 1px #e00;
 }
 .pc-item-main .info {
   position: relative;
