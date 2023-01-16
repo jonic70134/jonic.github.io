@@ -66,7 +66,7 @@ var recslide = new Swiper('.hot_rec .per_r', {
 
 // 特賣主題 slider
 var specslide = new Swiper('.spec_slide', {
-    slidesPerView: 3,
+    slidesPerView: 2,
     spaceBetween: 25,
     navigation: {
         nextEl: ".spec_prod .swiper-button-next",
@@ -124,4 +124,8 @@ var masonry = new Macy({
 $(".icon_track").click(function(e){
     e.preventDefault();
     $(this).toggleClass('icon_track icon_track_plus');
+});
+
+$.get('https://turn.shopping.friday.tw/', function(data) {
+    $('.turn_body').html(data);
 });

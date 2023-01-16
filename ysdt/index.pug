@@ -104,35 +104,66 @@ html
 								.swiper-button-next
 								.swiper-button-prev
 					include src/_cupn.pug
-					.spec_prod 
-						.spec_slide.swiper-container
-							.swiper-wrapper
-								mixin slider(big,small_top,small_bot)
-									.swiper-slide(href='item.html')
-										h2.title 特賣主題
-										.spec_block
-											a(href="item.html").spec_l
-												img(src='img/sample/'+ big+'.jpg', alt='商品名稱', title='商品名稱')
-												.spec_info
-													h3.name 商品名稱商品名稱商品名稱商品名稱
-													.per_price
-														.price $999,900
-											.spec_r 
-												a(href="item.html").spec_r_block
-													img(src='img/sample/'+ small_top+'.jpg', alt='商品名稱', title='商品名稱')
-													.per_price
-														.price $999,900
-												a(href="item.html").spec_r_block
-													img(src='img/sample/'+ small_bot+'.jpg', alt='商品名稱', title='商品名稱')
-													.per_price
-														.price $999,900
-								+slider('03_01_240','03_02_100','03_03_100')
-								+slider('03_04_240','03_05_100','03_06_100')
-								+slider('03_07_240','03_08_100','03_09_100')
-								+slider('03_01_240','03_02_100','03_03_100')
-								+slider('03_04_240','03_05_100','03_06_100')
-							.swiper-button-next
-							.swiper-button-prev
+					.spec_area
+						.spec_duo
+							.spec_prod 
+								.spec_slide.swiper-container
+									.swiper-wrapper
+										mixin slider(big,small_top,small_bot)
+											.swiper-slide(href='item.html')
+												h2.title 特賣主題文字標題
+												.spec_block
+													a(href="item.html").spec_l
+														img(src='img/sample/'+ big+'.jpg', alt='商品名稱', title='商品名稱')
+														.spec_info
+															h3.name 商品名稱商品名稱商品名稱商品名稱
+															.per_price
+																.price $999,900
+													.spec_r 
+														a(href="item.html").spec_r_block
+															img(src='img/sample/'+ small_top+'.jpg', alt='商品名稱', title='商品名稱')
+															.per_price
+																.price $999,900
+														a(href="item.html").spec_r_block
+															img(src='img/sample/'+ small_bot+'.jpg', alt='商品名稱', title='商品名稱')
+															.per_price
+																.price $999,900
+										+slider('03_01_240','03_02_100','03_03_100')
+										+slider('03_04_240','03_05_100','03_06_100')
+										+slider('03_07_240','03_08_100','03_09_100')
+										+slider('03_01_240','03_02_100','03_03_100')
+									.swiper-button-next
+									.swiper-button-prev
+							.spec_prod 
+								.spec_slide.swiper-container
+									.swiper-wrapper
+										mixin slider(big,small_top,small_bot)
+											.swiper-slide(href='item.html')
+												h2.title 特賣主題文字標題
+												.spec_block
+													a(href="item.html").spec_l
+														img(src='img/sample/'+ big+'.jpg', alt='商品名稱', title='商品名稱')
+														.spec_info
+															h3.name 商品名稱商品名稱商品名稱商品名稱
+															.per_price
+																.price $999,900
+													.spec_r 
+														a(href="item.html").spec_r_block
+															img(src='img/sample/'+ small_top+'.jpg', alt='商品名稱', title='商品名稱')
+															.per_price
+																.price $999,900
+														a(href="item.html").spec_r_block
+															img(src='img/sample/'+ small_bot+'.jpg', alt='商品名稱', title='商品名稱')
+															.per_price
+																.price $999,900
+										+slider('03_07_240','03_08_100','03_09_100')
+										+slider('03_01_240','03_02_100','03_03_100')
+										+slider('03_04_240','03_05_100','03_06_100')
+										+slider('03_01_240','03_02_100','03_03_100')
+									.swiper-button-next
+									.swiper-button-prev
+						.turn_body
+							
 					//- 熱賣特選
 					.per.hot_cho
 						.topic
