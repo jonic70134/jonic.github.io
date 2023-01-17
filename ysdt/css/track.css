@@ -973,6 +973,31 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 10px;
 }
 
+a.gotop {
+  display: none;
+  position: fixed;
+  right: 3%;
+  bottom: 20px;
+  z-index: 50;
+  padding: 10px;
+  color: #eee;
+  background: #e00;
+  border: 1px solid #e00;
+  border-radius: 50%;
+  opacity: 0.8;
+  text-decoration: none;
+}
+a.gotop:after {
+  display: block;
+  content: "\e93f";
+  color: #eee;
+  font-family: "icomoon" !important;
+  font-size: 1rem;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 .pagenav {
   display: -webkit-box;
   display: -ms-flexbox;
