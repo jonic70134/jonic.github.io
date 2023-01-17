@@ -126,6 +126,6 @@ $(".icon_track").click(function(e){
     $(this).toggleClass('icon_track icon_track_plus');
 });
 
-$.get('https://turn.shopping.friday.tw/', function(data) {
-    $('.turn_body').html(data);
-});
+// $.get('https://turn.shopping.friday.tw/', function(data) {
+//     $('.turn_body').html(data);
+// });
