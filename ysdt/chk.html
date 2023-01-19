@@ -155,7 +155,7 @@
               <div class="form">
                 <div class="form_t">持卡人姓名</div>
                 <div class="form_input">
-                  <input type="text" placeholder="姓名">
+                  <input type="text" autocomplete="name" placeholder="姓名">
                 </div>
               </div>
               <div class="form">
@@ -167,12 +167,12 @@
               <div class="form expdate">
                 <div class="form_t">有效日期</div>
                 <div class="form_input">
-                  <input type="tel" inputmode="numeric" pattern="[0-9s]{13,19}" autocomplete="cc-number" maxlength="2" placeholder="xx">
-                  <input type="tel" inputmode="numeric" pattern="[0-9s]{13,19}" autocomplete="cc-number" maxlength="2" placeholder="xx">
+                  <input type="tel" inputmode="numeric" pattern="[0-9s]{13,19}" autocomplete="cc-exp-month" maxlength="2" placeholder="xx">
+                  <input type="tel" inputmode="numeric" pattern="[0-9s]{13,19}" autocomplete="cc-exp-year" maxlength="2" placeholder="xx">
                 </div>
                 <div class="form_input">
                   <p>信用卡背面末三碼</p>
-                  <input type="tel" inputmode="numeric" pattern="[0-9s]{13,19}" autocomplete="cc-number" maxlength="3" placeholder="xxx">
+                  <input type="tel" inputmode="numeric" pattern="[0-9s]{13,19}" autocomplete="cc-csc" maxlength="3" placeholder="xxx">
                 </div>
               </div>
             </div>
@@ -180,19 +180,19 @@
               <div class="form">
                 <div class="form_t"><span class="red">*</span>訂購人姓名</div>
                 <div class="form_input">
-                  <input type="text" placeholder="請輸入"><span class="red_alert">* 必填</span>
+                  <input type="text" autocomplete="name" placeholder="請輸入"><span class="red_alert">* 必填</span>
                 </div>
               </div>
               <div class="form">
                 <div class="form_t"><span class="red">*</span>手機</div>
                 <div class="form_input">
-                  <input type="tel" placeholder="請輸入">
+                  <input type="tel" autocomplete="tel" placeholder="請輸入">
                 </div>
               </div>
               <div class="form">
                 <div class="form_t">Email</div>
                 <div class="form_input">
-                  <input type="email" placeholder="請輸入">
+                  <input type="email" autocomplete="email" placeholder="請輸入">
                 </div>
               </div>
               <hr>
@@ -208,13 +208,13 @@
               <div class="form">
                 <div class="form_t"><span class="red">*</span>手機</div>
                 <div class="form_input">
-                  <input type="tel" placeholder="請輸入">
+                  <input type="tel" autocomplete="tel" placeholder="請輸入">
                 </div>
               </div>
               <div class="form">
                 <div class="form_t">Email</div>
                 <div class="form_input">
-                  <input type="email" placeholder="請輸入">
+                  <input type="email" autocomplete="email" placeholder="請輸入">
                 </div>
               </div>
               <div class="form addr">
@@ -228,7 +228,7 @@
                       <option value="1">內湖區</option>
                     </select>
                   </div>
-                  <input type="text" placeholder="請輸入">
+                  <input type="text" autocomplete="address-line1" placeholder="請輸入">
                 </div>
               </div>
             </div>

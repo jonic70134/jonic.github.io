@@ -120,7 +120,7 @@ html
 							.form
 								.form_t 持卡人姓名
 								.form_input
-									input(type="text" placeholder="姓名")
+									input(type="text" autocomplete="name" placeholder="姓名")
 							.form
 								.form_t 信用卡號
 								.form_input
@@ -128,11 +128,11 @@ html
 							.form.expdate
 								.form_t 有效日期
 								.form_input
-									input(type="tel",inputmode="numeric",pattern="[0-9\s]{13,19}",autocomplete="cc-number", maxlength="2", placeholder="xx")
-									input(type="tel",inputmode="numeric",pattern="[0-9\s]{13,19}",autocomplete="cc-number", maxlength="2", placeholder="xx")
+									input(type="tel",inputmode="numeric",pattern="[0-9\s]{13,19}",autocomplete="cc-exp-month", maxlength="2", placeholder="xx")
+									input(type="tel",inputmode="numeric",pattern="[0-9\s]{13,19}",autocomplete="cc-exp-year", maxlength="2", placeholder="xx")
 								.form_input
 									p 信用卡背面末三碼
-									input(type="tel",inputmode="numeric",pattern="[0-9\s]{13,19}",autocomplete="cc-number", maxlength="3", placeholder="xxx")
+									input(type="tel",inputmode="numeric",pattern="[0-9\s]{13,19}",autocomplete="cc-csc", maxlength="3", placeholder="xxx")
 									
 
 						.line
@@ -141,18 +141,18 @@ html
 									span.red *
 									| 訂購人姓名
 								.form_input
-									input(type="text" placeholder="請輸入")
+									input(type="text" autocomplete="name" placeholder="請輸入")
 									span.red_alert * 必填
 							.form
 								.form_t
 									span.red *
 									| 手機
 								.form_input
-									input(type="tel" placeholder="請輸入")
+									input(type="tel" autocomplete="tel" placeholder="請輸入")
 							.form
 								.form_t Email
 								.form_input
-									input(type="email" placeholder="請輸入")
+									input(type="email" autocomplete="email" placeholder="請輸入")
 							hr
 							.form.same
 								.form_t 
@@ -168,11 +168,11 @@ html
 									span.red *
 									| 手機
 								.form_input
-									input(type="tel" placeholder="請輸入")
+									input(type="tel" autocomplete="tel" placeholder="請輸入")
 							.form
 								.form_t Email
 								.form_input
-									input(type="email" placeholder="請輸入")
+									input(type="email" autocomplete="email" placeholder="請輸入")
 							.form.addr
 								.form_t 
 									span.red *
@@ -183,7 +183,7 @@ html
 											option(value="1") 台北市  
 										select#distric(name="") 
 											option(value="1") 內湖區
-									input(type="text" placeholder='請輸入')
+									input(type="text" autocomplete="address-line1" placeholder='請輸入')
 						.line.invoice
 							.title.inv_t 發票資訊
 							.invo_b
