@@ -1683,6 +1683,7 @@ button.is-disabled {
 }
 .form.expdate input {
   width: 40px;
+  margin: 0 5px 0 0;
 }
 .form.expdate .form_input {
   display: -webkit-box;
@@ -1721,7 +1722,7 @@ button.is-disabled {
   min-width: 80px;
   margin: 0 5px 0 0;
   text-align: right;
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 
 .form_same {
@@ -1731,7 +1732,7 @@ button.is-disabled {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 
 .invo_b {
@@ -1975,13 +1976,11 @@ button.is-disabled {
     padding: 2px;
     font-size: 0.7rem;
   }
-
   .cart_img img {
     width: 70px;
     -ms-flex-preferred-size: 70px;
         flex-basis: 70px;
   }
-
   .cart_name {
     font-size: 0.9rem;
   }
@@ -1991,7 +1990,6 @@ button.is-disabled {
     font-size: 1rem;
     padding: 10px 0;
   }
-
   .order_chk_label {
     width: 15px;
     height: 15px;
@@ -2009,61 +2007,48 @@ button.is-disabled {
     -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
   }
-
   .line {
     padding: 5px;
   }
-
   .price {
     font-size: 0.9rem;
   }
-
   .cart_cupn {
     font-size: 0.8rem;
   }
-
   .cart_b_t_l {
     font-size: 0.8rem;
     line-height: 1.4;
   }
-
   .coin_input {
     width: 35px;
     font-size: 0.8rem;
   }
-
   .code_btn {
     padding: 2px 8px;
   }
-
   .pay_label {
     width: 45%;
     font-size: 0.8rem;
   }
-
   .payway_t {
     min-width: 65px;
     font-size: 0.8rem;
   }
-
   .cart_img img {
     width: 50px;
   }
-
   .cart_name_link {
     margin-bottom: 5px;
     font-size: 0.8rem;
   }
-
   .btn-cancel {
     margin: 0 10px;
     background-color: #888;
   }
-
   .cart_select {
     width: 70px;
   }
-
   .red_alert {
     margin: 0 0 0 5px;
   }
@@ -2072,7 +2057,6 @@ button.is-disabled {
   .cart-lack-tag {
     font-size: 0.7rem;
   }
-
   .cart_gift_item li {
     max-width: 145px;
     overflow: hidden;
@@ -2080,7 +2064,6 @@ button.is-disabled {
        text-overflow: ellipsis;
     white-space: nowrap;
   }
-
   .cart_b_t {
     font-size: 0.85rem;
   }
@@ -2089,23 +2072,18 @@ button.is-disabled {
   .order-list .cart_info {
     width: 140px;
   }
-
   .cart_block .cart_sub_b {
     padding: 10px 5px;
   }
-
   .deliver_info p {
     width: 180px;
   }
-
   .cart_img img {
     width: 60px;
   }
-
   .cart_info {
     padding: 0;
   }
-
   .cart-count {
     min-width: 40px;
     font-size: 0.9rem;
@@ -2113,14 +2091,12 @@ button.is-disabled {
   .cart-count del {
     font-size: 0.9rem;
   }
-
   .cart_last {
     font-size: 0.9rem;
   }
   .cart_last del {
     font-size: 0.9rem;
   }
-
   .price {
     font-size: 0.9rem;
   }

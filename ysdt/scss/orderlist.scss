@@ -1266,6 +1266,7 @@ button.is-disabled {
 		}
 		input{
 			width: 40px;
+			margin:0 5px 0 0;
 		}
 		.form_input{
 			display: flex;
@@ -1300,12 +1301,12 @@ button.is-disabled {
 	min-width: 80px;
 	margin: 0 5px 0 0;
 	text-align: right;
-	font-size:1vw;
+	font-size:.8vw;
 }
 .form_same{
 	display: flex;
 	align-items: center;
-	font-size:1vw;
+	font-size:.8vw;
 }
 .invo_b{
 	margin: 10px 0 0;

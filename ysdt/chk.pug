@@ -128,11 +128,8 @@ html
 							.form.expdate
 								.form_t 有效日期
 								.form_input
-									.select_b
-										select#date1(name="")
-											option(value="1") 01  
-										select#date2(name="") 
-											option(value="1") 25
+									input(type="tel",inputmode="numeric",pattern="[0-9\s]{13,19}",autocomplete="cc-number", maxlength="2", placeholder="xx")
+									input(type="tel",inputmode="numeric",pattern="[0-9\s]{13,19}",autocomplete="cc-number", maxlength="2", placeholder="xx")
 								.form_input
 									p 信用卡背面末三碼
 									input(type="tel",inputmode="numeric",pattern="[0-9\s]{13,19}",autocomplete="cc-number", maxlength="3", placeholder="xxx")
