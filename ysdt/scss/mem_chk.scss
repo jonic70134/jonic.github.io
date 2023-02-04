@@ -3,13 +3,11 @@
 @import "partials/mixin";
 @import "partials/color";
 @import "partials/page";
+@import "partials/pagenav";
 
 
 .body_container{
     background: #eee;
-}
-.site-main{
-    height: 100vh;
 }
 .red{
     color:#d00;
@@ -18,92 +16,122 @@
     color:#06c;
     font-size:.9rem;
 }
-.mem_index{
-    display: grid;
-    grid-template-rows: 150px 75px 75px 75px 75px ;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap:10px;
-    margin:20px auto;
+.back{
+    display: flex;
+}
+.center{
+    display: flex;
+    justify-content: center;
 }
 
+.mem_order_detail{
+    margin:0 0 50px;
+}
+.mem_chk_t{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin:10px 0;
+    padding:25px 10px 10px;
+    font-size: 1.5rem;
+    background: white;
+    border-bottom:1px solid #ccc;
+    small{
+        font-size:.9rem;
+    }
+    .red{
+        margin: 0 15px 0 0 ;
+        font-size: .9rem;
+    }
+}
+
+.chk_order{
+    margin: 0 0 0 10px;
+    font-size: 1.5rem;
+    color:#333;
+}
+.mem_order_info{
+    margin: 15px 0;
+    padding: 10px;
+    background: white;
+    box-shadow: 1px 1px 10px #ccc;
+    a{
+        color:#06c;
+        text-decoration: underline;
+        &.cancel{
+            font-size:.8rem;
+            color:#aaa;
+        }
+    }
+}
+.is_cancel{
+    background: #ddd;
+    .mem_block{
+        background: #ddd;
+    }
+    .item_head{
+        background: #ccc;
+    }
+}
+.order_info_t{
+    display: flex;
+    flex-flow: row nowrap;
+    p{
+        color:#333;
+        margin:0 108px 0 12px;
+        font-size:.8rem;
+    }
+}
+.mem_chk{
+    display: grid;
+    grid-template-rows: 30px 90px;
+    grid-template-columns: 100px 400px 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:5px 0;
+    margin:10px auto;
+}
 [class*="mem_block"]{
-    display: flex;flex-flow:row nowrap ;align-items: center;
+    display: flex;flex-flow:row ;align-items: center;
     position: relative;
-    padding: 20px;
+    padding: 10px;
     color:#333;
     background: white;
-    &::after{
-        content:'';
-        position: absolute;top:50%;right:25px;transform: translateY(-50%);
-        width:12px;height:22px;
-        background: url('../img/icon_dept_arrow.svg') no-repeat center;
-    }
-    img{
-        width: 30px;
-        margin:0 10px 0 0;
-    }
+    line-height: 1.4;
+    box-sizing: border-box;
 }
-.mem_block1_1{
-    grid-column: 1 / 13;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    &:after{
-        display: none;
-    }
+.item_head{
+    padding:10px;
+    font-size:.8rem;
+    background: #f4f2e7;
 }
-.mem_avatar{
-    position: relative;
-    width: 60px;height: 60px;
+.item_img{
     display: flex;
-    justify-content: center;
-    background: black;
-    border-radius: 50%;
-    img{
-        width: 25px;
-        margin: 0;
-    }
-}
-.mem_edit{
-    position: absolute;bottom:0;right:-2px;
-    background: #aaa;
-    border-radius: 50%;
-    width: 22px;
-    height: 22px;
-    display: flex;
+    align-items: center;
     justify-content: center;
     img{
-        width: 14px;
-        margin: 0;
+        max-width: 80px;
+        max-height: 90px;
+    }
+}
+.item_invoice{
+    .blue{
+        font-size: 1rem;
+    }
+}
+.item_name{
+    display: flex;
+    align-items: center;
+    p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
     }
 }
 .mem_name{
     margin: 10px 0 0;
     font-size:1.4rem;
 }
-.mem_link_name{
-    color:#333;
-    font-size:1.4rem;
-}
-.mem_contact{
-    color:#666;
-    font-size:1rem;
-}
-.mem_block2_1{
-    grid-column: 1 / 7;
-}
-.mem_block2_2{
-    grid-column: 7 / 13;
-}
-.mem_block3_1{
-    grid-column: 1 / 5;
-}
-.mem_block3_2{
-    grid-column: 5 / 9;
-}
-.mem_block3_3{
-    grid-column: 9 / 13;
-}
+
 
 
 
@@ -188,7 +216,7 @@
         text-align: center;
     }
 }
-.box_btn_resend,.box_btn_send{
+.box_btn_grey,.box_btn_red{
 	display: inline-block;
     margin: 0 auto;
 	padding:10px 30px;
@@ -198,7 +226,7 @@
 	border-radius: 5px;
 	letter-spacing: 2px;
 }
-.box_btn_resend{
+.box_btn_grey{
     margin: 0 20px 0 0;
     background-color: #999;
 }
@@ -224,4 +252,7 @@
 	&:after {
 		transform:rotate(-45deg);
 	}
+}
+.copyright{
+    background: #eee;
 }

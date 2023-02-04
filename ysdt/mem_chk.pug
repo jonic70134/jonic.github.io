@@ -1,0 +1,110 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/mem_chk.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug 
+			.site-main
+				.container
+					.mem_chk_t
+						a.back(href="mem_index.html")
+							i.icon.icon_swiper_prev
+							p.chk_order 查訂單 
+								small (聯絡客服)
+						p.red 提醒您:本公司不會主動打電話告知您任何有付款修改的問題,若接到可疑電話請拒絕回應
+					
+					.mem_order_detail
+						.mem_order_info
+							.order_info_t
+								p.oredt_num 訂單編號：20230130123456
+								p.order_time 訂購時間：2023/01/30
+								p.order_st 訂單狀態：出貨準備中...
+							.mem_chk
+								.mem_block.item_head
+								.mem_block.item_head 商品名稱
+								.mem_block.item_head.center 實付金額
+								.mem_block.item_head.center 發票資訊
+								.mem_block.item_head
+								.mem_block.item_head
+								.mem_block.item_head
+
+								.mem_block.item_img
+									img(src="img/sample/item_09.jpg", alt="商品圖片")
+								.mem_block.item_name
+									| 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
+								.mem_block.item_price.center
+									| 999,999
+								.mem_block.item_invoice.center
+									| 處理中
+								.mem_block.detail.center
+									a(href="mem_order_detail.html") 看訂單明細
+								.mem_block.ask.center
+									a(href="#") 我要提問
+								.mem_block.cancel.center
+									a.cancel(href="#") 取消訂單
+						mixin mem_order(src,name)
+							.mem_order_info
+								.order_info_t
+									p.oredt_num 訂單編號：20230130123456
+									p.order_time 訂購時間：2023/01/30
+									p.order_st 訂單狀態：01/20已出貨 新竹物流 
+										a(href="#") 9999999999
+								.mem_chk
+									.mem_block.item_head
+									.mem_block.item_head 商品名稱
+									.mem_block.item_head.center 實付金額
+									.mem_block.item_head.center 發票資訊
+									.mem_block.item_head
+									.mem_block.item_head
+									.mem_block.item_head
+
+									.mem_block.item_img
+										img(src="img/sample/"+ src +".jpg", alt="商品圖片")
+									.mem_block.item_name
+										p=name
+									.mem_block.item_price.center
+										| 999,999
+									.mem_block.item_invoice.center
+										p.blue HK 93881829
+									.mem_block.detail.center
+										a(href="mem_order_detail.html") 看訂單明細
+									.mem_block.ask.center
+										a(href="#") 我要提問
+									.mem_block.cancel.center
+						.mem_order_info.is_cancel
+							.order_info_t
+								p.oredt_num 訂單編號：20230130123456
+								p.order_time 訂購時間：2023/01/30
+								p.order_st 訂單狀態：取消訂單成功
+							.mem_chk
+								.mem_block.item_head
+								.mem_block.item_head 商品名稱
+								.mem_block.item_head.center 實付金額
+								.mem_block.item_head.center 發票資訊
+								.mem_block.item_head
+								.mem_block.item_head
+								.mem_block.item_head
+
+								.mem_block.item_img
+									img(src="img/sample/item_017.jpg", alt="商品圖片")
+								.mem_block.item_name
+									| 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
+								.mem_block.item_price.center
+									| 999,999
+								.mem_block.item_invoice.center
+									| 處理中
+								.mem_block.detail.center
+									a(href="mem_order_detail.html") 看訂單明細
+								.mem_block.ask.center
+									a(href="#") 我要提問
+								.mem_block.cancel.center
+						+mem_order('item_019','Apple iPhone 14 Plus 256G (5G) 6.7吋螢幕 智慧型手機')
+						+mem_order('item_020','北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅')
+						+mem_order('item_018','(friDay限定)《HOPMA》日式單門三層櫃 收納櫃 儲藏櫃 書櫃 置物櫃 玄關櫃 門櫃 櫥櫃')
+						+mem_order('item_015','【The North Face】 防水透氣連帽 男款衝鋒衣-黑-NF0A4UAUJK3')
+					include src/_pagenav.pug
+	include src/_foot.pug
+

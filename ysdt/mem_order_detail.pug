@@ -1,0 +1,112 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/mem_order_detail.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug 
+			.site-main
+				.container
+					.mem_chk_t
+						a.back(href="mem_index.html")
+							i.icon.icon_swiper_prev
+							p.chk_order 訂單明細 
+
+					.mem_order_detail
+						.order_info_t
+								p.oredt_num 訂單編號：20230130123456
+								p.order_time 訂購時間：2023/01/30
+						mixin cartimg(i,src)
+							.cart_item
+								.cart_img
+									img(src='../img/sample/'+ src+'.jpg', alt="商品圖片")
+								.cart_info
+									.cart_name
+										a.cart_name_link(href="item.html") Apple iPhone 14 Plus 256G (5G) 6.7吋螢幕 智慧型手機
+										.cart_size 規格：紫色
+									.cart_per 特價期間07/10~07/13止
+									.cart_price_b
+										.cart_price_b
+											.cart_price
+												.ori_t 原價
+												.ori_price $9,999
+											.cart_price
+												.ori_t 網路價
+												.ori_price $9,900
+										.cart_price
+											.dis_t 折扣後價格
+											.dis_price $999,800
+									.cart_quantity
+										| 數量：1
+									.cart_gift
+										ul.cart_gift_item
+											li
+												p 贈品
+												| 3M百利爐具專用菜瓜布x1
+											li
+												p 贈品
+												| 室內芳香劑x1
+									.cart_cupn_b
+										.cart_cupn
+											label.cart_cupn_lb(for="coupon1") 
+												p 活動折抵
+											.price $50
+						+cartimg(1,'05_10_182')
+						.cart_block
+							.cart_sub_b
+								.cart_b_l  商品總金額：
+								.cart_b_r
+									.total_price $999,900
+							.cart_sub_b.align_l
+								.cart_b_l
+									p 遠傳幣折抵
+								.cart_b_r
+									.price $100
+							.cart_sub_b.align_l
+								.cart_b_l
+									p HappyGo點數折抵
+								.cart_b_r
+									.price $100
+							.cart_sub_b.align_l
+								.cart_b_l
+									p 使用折扣碼折抵
+								.cart_b_r
+									.price $50
+							.cart_sub_b
+								.cart_b_l  運費：#[small (滿$490免運費$80，還差 #[span.trans_fee $100])]
+								.cart_b_r
+									.price $0
+							.cart_sub_b
+								.cart_b_l 結帳總金額：
+								.cart_b_r
+									.total_price $999,900
+						.cart_payway
+							p 付款方式：信用卡一次付清(已付款)
+						.cart_deliver
+							.deli_b
+								.deli_l 收貨人姓名：
+								.deli_r 宮美村掐
+							.deli_b
+								.deli_l 手機：
+								.deli_r 0912345678
+							.deli_b
+								.deli_l 收貨人地址：
+								.deli_r 台北市內湖區瑞光路468號7樓
+						.cart_btn
+							a.btn_grey(href="mem_index.html") 回首頁
+							a.btn_red(href="mem_chk.html") 查訂單
+						.mem_notice
+							.con_t 注意事項
+							ul.con_list
+								li 查詢訂單詳情及處理進度(如商品明細/配送狀況/付款方式等等...如有任何問題請點選訂單[我要提問]，我們將盡速回覆予您。
+								li 提款機轉帳(ATM查詢:完成轉帳24小时後才出現「完付款」的息(但不包含五、六、日及國定假日·即週五、六、日轉帳要下週一入帳)。
+								li 站已採電子發票,發票開立後將E-MAIL通知您·請您至 
+									a(href="mem_chk.html") 『訂單查詢』
+									|查詢發票資料·如您已使用手機條碼或自然人憑證條碼作為電子發票載具,請您至電子發票整合服務平台『載具查詢消費發票』查詢發票資料,有關電子發票作業可參見電子發票整合服務平台。
+								li 若您選擇個人/公司用(郵寄)紙本發票,發票將於商品出貨後7-14工作天行寄出,如國定假日將順延寄送若您選擇公司用(線上列印)發票,可於商品出貨後自訂單查詢中自行列印。
+								li 在「我的帳戶」中,您所有資料將受到與銀行同級之SSL認證安全電子交易機制保障·您可以安心地查看、管理。
+								li 註:當訂單付款總金額為0時,將不會開立發票。
+	include src/_foot.pug
+

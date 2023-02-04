@@ -1,0 +1,49 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/mem_track.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug 
+			.site-main
+				.container
+					.mem_chk_t
+						a.back(href="mem_index.html")
+							i.icon.icon_swiper_prev
+							p.chk_order 我的追蹤商品清單
+
+					.mem_track
+						.mem_track_td.pic.center
+							img(src="img/sample/img100_03.jpg", alt="")
+						.mem_track_td.name
+							p #[span.tag 滿額送贈品] #[span.tag 折扣碼]
+							a(href="item.html") bakkarat 黑盾家用型電動跑步機 BK-1805
+						.mem_track_td.right.price
+							p.price $32,898
+						.mem_track_td.center.st
+							p.lack 售完補貨中
+						.mem_track_td.center.cancel
+							a.icon.icon_del(href="#")
+						- var j = 5;
+						- for (var i = 0; i < j; i++)
+							mixin track(src,name,price)
+								.mem_track_td.pic.center
+									img(src="img/sample/"+src+".jpg", alt="")
+								.mem_track_td.name
+									p #[span.tag 滿1件享9折] #[span.tag 折價券]
+									a(href="item.html")=name
+								.mem_track_td.right.price
+									p.price=price
+								.mem_track_td.center.st
+									a.icon.icon_cart(href="#") 
+								.mem_track_td.center.cancel
+									a.icon.icon_del(href="#")
+							+track('img100_01','(快速到貨) LANCOME 超未來肌因賦活露 100ML 小黑瓶(國際航空版)','$88,999')
+							+track('img100_02','Tefal法國特福 巴洛克系列30CM不沾深平底鍋 SE-B2240795','$999,999')
+							+track('img100_05','【MONT-BELL 日本】UL TREKKING 超輕量晴雨傘(僅128g).折疊傘.遮陽傘/1128551 板栗','$999')
+
+					include src/_pagenav.pug
+	include src/_foot.pug
+
