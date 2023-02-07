@@ -8,7 +8,7 @@
     <meta content="Orange" name="author">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="icon" href="img/baichain.ico">
-    <link href="css/orderlist.css" rel="stylesheet">
+    <link href="css/mem_login.css" rel="stylesheet">
   </head>
   <body>
     <div class="body_container">
@@ -17,21 +17,28 @@
       </div>
       <div class="site-main login">
         <div class="mid_title">會員登入</div>
-        <div class="login_body">
+        <form class="login_body" action="mem_index.html">
           <div class="login_line">
-            <input type="email" placeholder="Email / 手機號碼">
+            <input type="text" placeholder="帳號" inputmode="email" autocomplete autofocus required>
           </div>
           <div class="login_line">
-            <input type="password" placeholder="密碼">
+            <input type="password" placeholder="密碼" required>
             <p class="red">請輸入正確的帳號 & 密碼</p>
-          </div><a class="nor_login" href="mem_index.html">登入</a>
-          <div class="login_btn"> <a class="nor_login fb" href="orderlist.html"></a><a class="nor_login gle" href="orderlist.html"></a><a class="nor_login yahoo" href="orderlist.html"></a><a class="not_login apple"></a></div>
-          <div class="login_btn"> <a class="nor_login fet" href="orderlist.html">遠傳心生活會員登入 </a></div>
-          <div class="login_reg"><a class="reg" href="reg.html">註冊新會員</a><a class="guest" href="orderlist.html">訪客結帳</a><a class="forgot_pas" href="forgot.html">忘記密碼</a></div>
-        </div>
+          </div>
+          <div class="login_captcha">
+            <div class="slidercaptcha card">
+              <div class="card-body">
+                <div id="captcha"></div>
+              </div>
+            </div>
+          </div>
+          <input class="btn_black" type="submit" value="登入">
+          <div class="login_reg"><a class="reg" href="mem_reg.html">註冊新會員</a><a class="forgot_pas" href="mem_forgot.html">忘記密碼</a></div>
+        </form>
       </div>
     </div>
   </body>
   <script src="js/3rd-party/jquery-3.6.0.min.js"></script>
-  <script src="js/cart.js"></script>
+  <script src="js/3rd-party/longbow.slidercaptcha.min.js"></script>
+  <script src="js/mem_login.js"></script>
 </html>

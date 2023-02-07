@@ -1,0 +1,248 @@
+// 首頁
+@import "partials/base";
+@import "partials/mixin";
+@import "partials/color";
+@import "3rd-party/_slidercaptcha.scss";
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../mem/fonts/icomoon.eot?vmzyff');
+    src:  url('../mem/fonts/icomoon.eot?vmzyff#iefix') format('embedded-opentype'),
+    url('../mem/fonts/icomoon.ttf?vmzyff') format('truetype'),
+    url('../mem/fonts/icomoon.woff?vmzyff') format('woff'),
+    url('../mem/fonts/icomoon.svg?vmzyff#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+[class^="icon_"], [class*=" icon_"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+  .icon_eye:before {
+    content: "\e9ce";
+  }
+  .icon_eye_block:before {
+    content: "\e9d1";
+  }
+
+body{
+    background: #eee;
+}
+.body_container{
+    padding:0;
+}
+form{
+    width: 100%;
+}
+input[type="radio"] {
+	appearance: radio;
+	margin-top: -1px;
+	vertical-align: middle;
+}
+input[type="checkbox"] {
+	appearance: checkbox;
+}
+
+.site-main,.container{
+    position: relative;
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+.copyright{
+    padding-top: 30px;
+    text-align: right;
+    color:#888;
+    font-size: 0.75em;
+    word-break: break-word;
+	word-wrap: break-word;
+	small{
+		display: block;
+		padding:8px;
+		color:#333;
+		text-align: right;
+	}
+    a{
+        color:#06c;
+        text-decoration: underline;
+        margin-left: 10px;
+    }
+}
+// head
+.cart_head{
+    padding:10px 0; 
+    background:#e00 ;
+    text-align: center;
+}
+.back{
+    position: absolute;left: 15px;top: 50%;
+    transform: translateY(-50%);
+    font-size:.9rem;
+    color:white;
+}
+.logo{
+	max-width:200px;
+	max-height: 120px;
+	font-size:1.8rem;
+}
+::placeholder{
+	font-size:.85rem;
+	color:#666;
+}
+.red{
+	font-size: .85rem;
+    color: #d00;
+    margin: 0 0 5px;
+}
+.time{
+    text-align: center;
+    .red{
+        font-size:1rem;
+    }
+}
+.red_mid{
+    font-size: .85rem;
+    color: #d00;
+    margin: 5px 0;
+    text-align: center;
+}
+.red_alert{
+    margin: 0 0 0 30px;
+	font-size:.9rem;
+	color:#d00;
+}
+
+// 
+.sub_t{
+    font-size: 1.1rem;
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+.login{
+	padding:10px;
+    box-sizing: border-box;
+	.mid_title{
+		margin:30px 0 20px;
+		padding:10px;
+        font-size:1.5rem;
+		text-align: center;
+	}
+	.subtitle{
+		margin:5px 0;
+		font-size:.85rem;
+	}
+}
+.login_body{
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 20px auto 50px;
+    input{
+        width:100%;
+        margin: 0 0 10px;
+        padding:10px;
+        font-size:.9rem;
+        border:1px solid #ccc; 
+        box-sizing: border-box;
+        &.verify{
+            text-align: center;
+            font-size: 1.4rem;
+            letter-spacing: 5px;
+        }
+    }
+}
+.login_line{
+    width:100%;
+    margin:0 0 15px;
+}
+.login_reg{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 10px 0;
+    font-size: .8rem;
+    a{
+        margin:10px;
+        color:#06c;
+        text-decoration: underline
+    }
+}
+.login_btn{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin:10px 0 0;
+    box-sizing: border-box;
+}
+[class*="btn_"]{
+    width:100%;
+    padding:15px 10px;
+    text-align: center;
+    color:white;
+    background-color: black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.login_bot{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    [class*="btn_"]{
+        width: 40%;
+        margin: 0;
+    }
+}
+.btn_black{
+    &.resend{
+        margin:10px 0 0;
+    }
+}
+.btn_red{
+    background: red;
+}
+.login_remind{
+    margin:20px 0 0;
+    text-align: center;
+    p{
+        display: inline-block;
+        padding:10px;
+        text-align: left;
+        color:#999;
+        font-size:.7rem;
+        line-height: 1.8;
+    }
+    span{
+        color:red;
+    }
+}
+.login_label{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    padding:10px;
+    background-color: #eee;
+    cursor: pointer;
+    input{
+        width:auto;
+    }
+}
+

@@ -1207,6 +1207,10 @@ body, .body_container, .copyright {
   border-bottom: 1px solid #ccc;
 }
 
+.value {
+  font-size: 1.2rem;
+}
+
 .open_cate_lb {
   display: block;
   height: auto;

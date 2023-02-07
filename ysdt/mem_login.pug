@@ -1,0 +1,36 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/mem_login.css', rel='stylesheet')
+	body
+		.body_container
+			.cart_head
+				.container
+					a.back(href="index.html")
+						i.icon.icon_swiper_prev
+						| 回首頁
+					a.logo(href="index.html", title="回到friDay")
+						i.icon.icon_friday_logo
+			.site-main.login
+				.mid_title 會員登入
+				form.login_body(action="mem_index.html")
+					.login_line
+						input(type='text' placeholder='帳號' inputmode="email" autocomplete autofocus required)
+					.login_line
+						input(type='password' placeholder='密碼' required)
+						p.red 請輸入正確的帳號 & 密碼
+					.login_captcha
+						.slidercaptcha.card
+							.card-body
+								#captcha
+					input.btn_black(type="submit", value="登入")
+					.login_reg
+						a.reg(href="mem_reg.html") 註冊新會員
+						a.forgot_pas(href="mem_forgot.html") 忘記密碼
+					
+	script(src='js/3rd-party/jquery-3.6.0.min.js')
+	script(src='js/3rd-party/longbow.slidercaptcha.min.js')
+	script(src='js/mem_login.js')
+
+
