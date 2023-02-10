@@ -1,13 +1,12 @@
 
-var captcha = sliderCaptcha({
-    id: 'captcha',
-    width:'400',
-    height:'100',
-    onSuccess: function () {
-        var handler = setTimeout(function () {
-            window.clearTimeout(handler);
-            captcha.reset();
-        }, 500)
+
+$(".toggle-pass").click(function() {
+    $(this).toggleClass("icon-eye icon-eye-b");
+    var input = $($(this).attr("toggle"));
+    if (input.attr("type") == "password") {
+        input.attr("type", "text");
+    } else {
+        input.attr("type", "password");
     }
 });
 // gotop

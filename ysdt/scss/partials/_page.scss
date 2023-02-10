@@ -154,33 +154,6 @@
 :focus{
 	outline:0;
 }
-//header_layout
-.body_container{
-    padding-top: 30px;
-}
-.site-topbar{
-    padding: 5px 0;
-    border-bottom: 1px solid #eee;
-    width: 100%;
-    height: 20px;
-    position: fixed;
-    top: 0;
-    z-index: 99;
-	background-image: linear-gradient(to bottom, #ffffff 0%,#dae0ed 100%);
-	.container{
-		display: flex;
-        flex-flow: row nowrap;
-		justify-content: space-between;
-		position: relative;	
-		content:""
-	}
-	.suplier{
-		padding:3px 8px 3px 0;
-	}
-	.grey{
-		color:#555;
-	}
-}
 .nav-other,.nav-user{
 	display: flex;
 	flex-flow: row nowrap;
@@ -222,18 +195,6 @@
     position: relative;
     border-bottom: 1px solid #eee;
     background-color: $primary-color;
-	// &.bg_white{
-	// 	background:white;
-	// 	.main_head{
-	// 		background:white;
-	// 		.site_search{
-	// 			.input_search{
-	// 				border: 1px solid #ccc;
-	// 			}
-	// 		}
-	// 	}
-	// }
-	//個人
     &.bg_profile{
 		background:white;
 		.main_head{

@@ -77,6 +77,19 @@
         margin: 0;
     }
 }
+.mem_login_link{
+    margin:10px 0 0;
+    font-size:1.35rem;
+}
+.login_btn,.reg_btn{
+    color:#06c;
+    text-decoration: underline;
+}
+.login_btn{
+    &::after{
+        content:'/';
+    }
+}
 .mem_name{
     margin: 10px 0 0;
     font-size:1.4rem;
@@ -156,6 +169,10 @@
 	}
     .con_m{
         margin:20px 0;
+        .sendphone,.time{
+            text-align: center;
+            font-size: .8rem; 
+        }
     }
     .con_m_t{
         font-size:1.1rem;
@@ -163,6 +180,7 @@
         letter-spacing: 1px;
     }
     .con_input{
+        width: 100%;
         margin:10px 0;
         padding:5px;
         text-align: center;

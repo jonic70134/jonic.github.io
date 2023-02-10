@@ -291,43 +291,6 @@ h1, h2, h3, h4, h5, h6 {
   outline: 0;
 }
 
-.body_container {
-  padding-top: 30px;
-}
-
-.site-topbar {
-  padding: 5px 0;
-  border-bottom: 1px solid #eee;
-  width: 100%;
-  height: 20px;
-  position: fixed;
-  top: 0;
-  z-index: 99;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dae0ed));
-  background-image: -o-linear-gradient(top, #ffffff 0%, #dae0ed 100%);
-  background-image: linear-gradient(to bottom, #ffffff 0%, #dae0ed 100%);
-}
-.site-topbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-  content: "";
-}
-.site-topbar .suplier {
-  padding: 3px 8px 3px 0;
-}
-.site-topbar .grey {
-  color: #555;
-}
-
 .nav-other, .nav-user {
   display: -webkit-box;
   display: -ms-flexbox;

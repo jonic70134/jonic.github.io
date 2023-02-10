@@ -46,15 +46,7 @@ $color_3: #6c757d;
 	border: 1px solid #e6e8eb;
 }
 .sliderIcon{
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?9fk6lu');
-  src:  url('../fonts/icomoon.eot?9fk6lu#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?9fk6lu') format('truetype'),
-    url('../fonts/icomoon.woff?9fk6lu') format('woff'),
-    url('../fonts/icomoon.svg?9fk6lu#icomoon') format('svg');
   font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   &:before {
     content: "→";
   }
@@ -84,7 +76,7 @@ $color_3: #6c757d;
 	}
 	.sliderIcon {
 		&:before {
-			content: "\e933";
+			content: "✔";
 		}
 	}
 	.sliderText {
