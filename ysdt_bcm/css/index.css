@@ -210,7 +210,6 @@ button[class*=btn-]:hover {
 }
 
 #container {
-  width: 96%;
   height: auto;
   margin: 10px auto 0;
   color: #333;
@@ -460,7 +459,6 @@ button[class*=btn-]:hover {
   border-right-width: 1px;
 }
 .user .btn-group:hover {
-  background: #0081b1;
   background: rgba(0, 0, 0, 0.1);
 }
 .user .btn-group.open {
@@ -639,7 +637,7 @@ button[class*=btn-]:hover {
 }
 #nav > ul > li > a:hover, #nav > ul > li > span:hover {
   color: #fff;
-  background: #e00;
+  background: #777;
 }
 #nav > ul > li > a:hover:after, #nav > ul > li > span:hover:after {
   color: #fff;
@@ -684,7 +682,7 @@ button[class*=btn-]:hover {
 }
 #nav > ul > li ul a:hover {
   color: #fff;
-  background: #e43d3d;
+  background: #777;
 }
 #nav > ul > li ul a:hover:before {
   color: #fff;
