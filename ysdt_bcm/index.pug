@@ -1,0 +1,32 @@
+doctype html
+html
+	head
+		include ./src/_meta.pug
+		
+		link(href='css/index.css', rel='stylesheet')
+	body
+		#wrapper
+			include src/_header.pug
+			include src/_nav.pug
+			#container
+				dl.annoucement
+					dt.title
+						i.fa.fa-bomb
+						| 重要公告
+					dd
+						span.annouce-highlight <系統維護公告>
+						| 目前廠商服務平台維護中，部分功能暫時無法使用，特此公告
+					//- <a href="annoucement-list.php" class="more">more...</a>
+				.index-catagory
+					dl.c-common
+						dt
+							i.fa.fa-archive
+							| 商品管理
+						dd.highlight
+							a(href='product/add-product.html') 新增商品
+
+	script(src='js/3rd-party/jquery-3.6.0.min.js')
+	script(src='js/3rd-party/jquery.fancybox.min.js')
+	script(src='js/3rd-party/bootstrap-dropdown.js')
+	
+	script(src='js/common.js')

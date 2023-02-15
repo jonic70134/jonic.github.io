@@ -1,0 +1,24 @@
+//breadcrumb
+.breadcrumb {
+	list-style: none;
+	& > li { 
+		display: inline-block;    
+		& > a { 
+			color: #08c; 
+		}
+		& > .divider {  
+			padding: 0 5px;  
+			color: #999; 
+		}
+		& > a:hover { 
+			color: #333; 
+		}
+	}
+	& > .active {  
+		color: #e00; 
+		font-size: 1.2em; 
+	}
+	& > .link {  
+		color: #08c; 
+	}
+}

@@ -1,0 +1,220 @@
+@import "_variables.scss";
+@import "_mixin.scss";
+
+@import "plugin/jquery.fancybox.min.css";
+@import "all.min.css";
+@import "layout.scss";
+
+
+.annoucement, .annoucement {
+  width: 100%;
+  margin: 20px 0 40px;
+  padding: 15px 20px 10px;
+  background: mix($main-green-color,#fff,10);
+  border: mix($main-green-color,#fff,30) 1px solid;
+  border-radius:3px;
+  box-sizing:border-box;;
+  dt {
+    color: $main-green-color;
+    margin-bottom: 10px;
+  }
+  dd {
+    color: #333;
+    margin: 10px 5px;
+    position: relative;
+    a {
+      color: $main-color;
+      &:hover {
+        color: $main-red-color;
+      }
+    }
+    .annouce-highlight {
+      color: #f00;
+    }
+    .annouce-subtitle {
+      color: darken($main-green-color,10);
+      font-weight: bold;
+    }
+    .annouce-platform {
+      color: #fff;
+      font-family: $font-heiti;
+      margin-right: 15px;
+      padding: 0 10px;
+      background: mix($main-green-color,#fff,50);
+      position: relative;
+      &:after {
+        content: "\0020";
+        top: 0;
+        left: 100%;
+        border: transparent 9px solid;
+        border-left-color: mix($main-green-color,#fff,50);
+        position: absolute;
+      }
+    }
+    .annouce-date {
+      color: mix($main-green-color,#ccc,20);
+      font-size: 0.95em;
+      margin: 0 5px;
+    }
+  }
+  .more {
+    display: block;
+    float: right;
+  }
+}
+.annoucement {
+  margin-bottom: 20px;
+  border-color: mix($main-red-color,#ddd,10);
+  background: mix($main-red-color,#fff,10);
+  dt {
+    color: mix($main-red-color,#666,10);
+  }
+  dd {
+    margin-left: 15px;
+    &:before {
+      @include list-arrow(mix($main-red-color,#eee,30),1.333em,10px);
+    }
+    .annouce-subtitle {
+      color: darken($main-red-color,20);
+    }
+  }
+}
+.check-third-pay {
+  width: 100%;
+  margin: 20px 0;
+  padding: 15px 20px 10px;
+  text-align: center;
+  background: lighten(adjust_hue($main-red-color,50),50);
+  border: mix(adjust_hue($main-red-color,50),#ccc,10) 1px solid;
+  border-radius:3px;
+  box-sizing:border-box;;
+}
+.index-catagory {
+  width: 32.3%;
+  vertical-align: top;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  & + .index-catagory {
+    margin-left: 1%;
+  }
+  .index-infr {
+    color: darken(desaturate(adjust_hue($main-red-color,50),40),10);
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: $font-heiti;
+    text-align: center;
+    margin-bottom: 15px;
+    a {
+      font-weight: normal;
+    }
+  }
+  & > dl {
+    margin-bottom: 20px;
+    padding: 0 15px 15px;
+    border: $main-grey-color 1px solid;
+    //border-top-width: 5px;
+    //border-top-color: mix($main-blue-color,#fefefe,60);
+    background: lighten($main-lighten-color,11);
+    border-radius:3px;
+    box-sizing:border-box;;
+    &.c-transfer {
+      $color: #e99486;
+      background: mix($color,#fff,4);
+      .title {
+        color: $color;
+      }
+      dt {
+        color: darken(mix($color,#fff,20),40);
+        i {
+          background: darken(mix($color,#fff,20),25);
+        }
+      }
+      dd {
+        &:before {
+          @include list-arrow(darken(mix($color,#fff,20),20),1em,12px);
+        }
+      }
+    }
+    &.c-stock {
+      $color: #a7cf78;
+      background: mix($color,#fff,5);
+      .title {
+        color: $color;
+      }
+      dt {
+        color: darken(mix($color,#fff,20),45);
+        i {
+          background: darken(mix($color,#fff,20),35);
+        }
+      }
+      dd {
+        &:before {
+          @include list-arrow(darken(mix($color,#fff,20),30),1em,12px);
+        }
+      }
+    }
+  }
+  .title {
+    color: mix($main-blue-color,#fefefe,60);
+    font-size: 1.15em;
+    font-family: $font-heiti;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: $main-grey-color 1px solid;
+    border-bottom-color: rgba(black,0.15);
+  }
+  dt {
+    color: darken($main-lighten-color,30);
+    font-size: 1.15em;
+    font-family: $font-heiti;
+    margin: 20px 0 10px;
+    i {
+      color: #fff;
+      font-size: 0.95em;
+      text-align: center;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      padding-top: 3px;
+      background: darken($main-lighten-color,25);
+      border-radius:100%;
+      box-sizing:border-box;;
+    }
+  }
+  dd {
+    font-size: 1.25em;
+    font-family: $font-heiti;
+    margin: 5px 0 10px 25px;
+    vertical-align: top;
+    position: relative;
+    &:before {
+      @include list-arrow(darken($main-lighten-color,30),1em,12px);
+    }
+    &.grey {
+      font-size: 1.15em;
+      &:before {
+        color: darken($main-grey-color,5);
+      }
+    }
+    a {
+      color: #666;
+      &:hover {
+        color: $main-red-color;
+      }
+    }
+    dd {
+      font-size: 1em;
+      &:before {
+        @include list-arrow(darken($main-lighten-color,10),1em,15px);
+      }
+    }
+  }
+  .more {
+    font-size: 1.15em;
+    font-family: $font-heiti;
+    margin: 0 15px;
+    display: block;
+  }
+}
