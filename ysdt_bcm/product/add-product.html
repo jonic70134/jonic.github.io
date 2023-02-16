@@ -50,79 +50,137 @@
             <li class="active">新增商品 (單筆/大量)</li>
           </ul>
         </div>
-        <section class="template-content">
-          <div class="add-product-detail">
-            <div class="form-element add-product-detail-form">
-              <div class="form-line">
-                <div class="img-product img-product-medium">
-                  <input class="input-img-file" type="file" accept="image/*">
-                  <p class="t-img-file-comment"><span class="link-tiny"><i class="fa fa-image"></i> 新增圖片</span><br></p>
-                </div><span class="t-grey">建議比例1:1 / 限JPG、GIF/<br>尺寸1000x1000px內 / 檔案大小1MB以下<br>最多上傳10張</span>
+        <div class="add-product-detail-form">
+          <div class="form-line">
+            <div class="form-label">商品圖片</div>
+            <div class="form-content">
+              <div class="img-product img-product-medium">
+                <input class="input-img-file" type="file" accept="image/*"><img src="http://placehold.it/130x130/999999/cccccc"><span class="t-edit-img">封面</span>
+                <button class="btn-delete-image" title="刪除"><i class="fa fa-times-circle"></i></button>
               </div>
-              <div class="form-line">
-                <div class="img-product img-product-medium">
-                  <input class="input-img-file" type="file" accept="image/*">
-                  <p class="t-img-file-comment"><span class="link-tiny"><i class="fa-brands fa-youtube"></i> 新增影片</span><br></p>
-                </div><span class="t-grey">僅支援 Youtube 連結</span>
+              <div class="img-product img-product-medium">
+                <input class="input-img-file" type="file" accept="image/*"><img src="http://placehold.it/130x130/999999/cccccc">
+                <button class="btn-delete-image" title="刪除"><i class="fa fa-times-circle"></i></button>
               </div>
-              <div class="form-line">
-                <div class="form-label"><span class="highlight">*</span> 商品名稱</div>
-                <div class="form-content">
-                  <input type="text" size="60" placeholder="限60字，請勿填寫括號以外的特殊符號">
-                </div>
+              <div class="img-product img-product-medium">
+                <input class="input-img-file" type="file" accept="image/*"><img src="http://placehold.it/130x130/999999/cccccc">
+                <button class="btn-delete-image" title="刪除"><i class="fa fa-times-circle"></i></button>
               </div>
-              <div class="form-line">
-                <div class="form-label">廠商商品料號</div>
-                <div class="form-content">
-                  <input type="text" size="30">
-                </div>
-              </div>
-              <div class="form-line">
-                <div class="form-label">EAN碼</div>
-                <div class="form-content">
-                  <input class="input-price t-crossline" type="number" size="10">
-                </div>
-                <div class="form-label"><span class="t-grey t-crossline">ISBN碼	</span></div>
-                <div class="form-content">
-                  <input class="input-price t-crossline" type="number" size="10">
-                </div>
-              </div>
-              <div class="form-line">
-                <div class="form-label"><span class="highlight">*</span>網路價</div>
-                <div class="form-content">
-                  <input class="input-price t-crossline" type="number" size="10">
-                </div>
-                <div class="form-label"><span class="highlight">*</span><span class="t-grey t-crossline">進貨價	</span></div>
-                <div class="form-content">
-                  <input class="input-price t-crossline" type="number" size="10">
-                </div>
-              </div>
-              <div class="form-line">
-                <div class="form-label"><span class="highlight">*</span><span class="t-bold">稅率%</span></div>
-                <div class="form-content">
-                  <input class="input-price input-sale-price t-bold" type="number">
-                  <label class="input-check">
-                    <input class="input-check" type="checkbox" name="">本商品預設營業稅5%，如果要改成0%請把勾拿掉
-                  </label>
-                </div>
-              </div>
-              <div class="form-label-full">
-                <div class="form-line-head">
-                  <div class="form-head-t">商品說明</div>
-                </div>
-                <div class="product-editor">
-                  <div class="form-line">
-                    <div class="form-label">用文字介紹</div>
-                    <div class="form-content">
-                      <textarea class="textarea-editor" name="" cols="100" rows="5" placeholder="請輸入商品說明..."> </textarea>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-bot"><a class="btn-g" href="#"> </a></div>
+              <div class="img-product img-product-medium">
+                <input class="input-img-file" type="file" accept="image/*">
+                <div class="t-img-file-comment"><span class="link-tiny"><i class="fa fa-image"></i> 新增圖片</span></div>
+                <div class="from-alert">請上傳圖片</div>
+              </div><span class="t-grey">建議比例1:1 / 限JPG、GIF/<br>尺寸1000x1000px內 / 檔案大小1MB以下</span>
             </div>
           </div>
-        </section>
+          <div class="form-line">
+            <div class="form-label">商品影片</div>
+            <div class="form-content">
+              <input type="text" size="50" placeholder="http://"><!--.from-alert 請輸入正確的 Youtube 網址--><span class="t-grey">僅支援 Youtube 連結</span>
+            </div>
+          </div>
+          <div class="form-line">
+            <div class="form-label"><span class="highlight">*</span> 商品名稱</div>
+            <div class="form-content">
+              <input type="text" size="50" maxlength="60" placeholder="限60字，請勿填寫括號以外的特殊符號"><!--.from-alert 請填寫商品名稱-->
+            </div>
+            <div class="form-label">廠商商品料號</div>
+            <div class="form-content">
+              <input type="text" size="33">
+            </div>
+          </div>
+          <div class="form-line">
+            <div class="form-label"><span class="highlight">*</span>網路價</div>
+            <div class="form-content">
+              <input class="input-price" type="number" inputmode="numeric" min="0" max="999999" size="10">
+            </div>
+            <div class="form-label"><span class="highlight">*</span>進貨價	</div>
+            <div class="form-content">
+              <input class="input-price" type="number" readonly>
+            </div>
+            <div class="form-label"><span class="highlight">*</span><span class="t-bold">稅率%</span></div>
+            <div class="form-content">
+              <input class="input-price" type="number" readonly>
+              <label class="input-check">
+                <input class="input-check" type="checkbox" name="">本商品預設營業稅5%，如果要改成0%請把勾拿掉
+              </label>
+            </div>
+          </div>
+          <div class="form-line">
+            <div class="form-label">商品說明</div>
+            <div class="form-content prod-content">
+              <textarea class="textarea-editor" name="" cols="100" rows="5" placeholder="請輸入商品說明..."></textarea>
+              <div class="form-content upload-content">
+                <input class="input-img-file" type="file" accept="image/*">
+                <div class="t-img-file-comment"><span class="link-tiny"><i class="fa fa-image"></i> 新增圖片</span></div>
+                <div class="t-textnum">0/3000</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-line">
+            <div class="form-label"><span class="highlight">*</span><span>商品上架後，系統會預設 3 個數量可銷售，您隨時可以在我要查商品依據各種庫存狀況修改數量。</span></div>
+          </div>
+          <div class="form-line">
+            <div class="form-content">
+              <label class="multi-chk-label" for="multi-chk">
+                <input id="multi-chk" type="checkbox" name="multi-chk">
+                <p>如果本商品有多種規格，請打勾展開</p>
+              </label>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-grid-td thead">規格編號</div>
+            <div class="form-grid-td thead"><span class="highlight">*</span>
+              <input type="text" placeholder="請輸入規格一名稱">
+            </div>
+            <div class="form-grid-td thead">
+              <input type="text" placeholder="請輸入規格二名稱">
+            </div>
+            <div class="form-grid-td thead">廠商商品料號</div>
+            <div class="form-grid-td thead">設定</div>
+            <div class="form-grid-td">
+              <input type="text" placeholder="" readonly>
+            </div>
+            <div class="form-grid-td"><span class="highlight">*</span>
+              <input type="text" placeholder="請輸入">
+            </div>
+            <div class="form-grid-td">
+              <input type="text" placeholder="請輸入">
+            </div>
+            <div class="form-grid-td">
+              <input type="text" placeholder="" value="SB001">
+            </div>
+            <div class="form-grid-td"><a class="form-grid-href" href="#"> <i class="fa fa-circle-plus"></i></a><a class="form-grid-href" href="#"><i class="fa-solid fa-trash-can"></i></a></div>
+            <div class="form-grid-td">
+              <input type="text" placeholder="" readonly>
+            </div>
+            <div class="form-grid-td"><span class="highlight">*</span>
+              <input type="text" placeholder="請輸入">
+            </div>
+            <div class="form-grid-td">
+              <input type="text" placeholder="請輸入">
+            </div>
+            <div class="form-grid-td">
+              <input type="text" placeholder="請輸入">
+            </div>
+            <div class="form-grid-td"><a class="form-grid-href" href="#"> <i class="fa fa-circle-plus"></i></a><a class="form-grid-href" href="#"><i class="fa-solid fa-trash-can"></i></a></div>
+          </div>
+          <div class="form-line form-bot"><a class="btn-grey" href="#">暫存草稿</a><a class="btn-red" href="#">確認上架</a></div>
+          <div class="form-alert-msg add-prod-success">
+            <div class="msg-t"><i class="fa-solid fa-circle-check"></i><span>新增商品</span></div>
+            <div class="msg-con">
+              <p>商品上架成功</p>
+            </div>
+            <div class="msg-close"><i class="fa-regular fa-circle-xmark"></i></div>
+          </div>
+          <div class="form-alert-msg add-save-success">
+            <div class="msg-t"><i class="fa-solid fa-circle-check"></i><span>新增商品</span></div>
+            <div class="msg-con">
+              <p>暫存商品草稿成功</p>
+            </div>
+            <div class="msg-close"><i class="fa-regular fa-circle-xmark"></i></div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

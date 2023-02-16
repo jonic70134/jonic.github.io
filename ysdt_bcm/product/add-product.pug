@@ -18,85 +18,158 @@ html
 							| 商品管理
 							span.divider  > 
 						li.active 新增商品 (單筆/大量)
-				section.template-content
-					.add-product-detail
-						.form-element.add-product-detail-form
-							.form-line
+				.add-product-detail-form
+					.form-line
+						.form-label 商品圖片
+						.form-content
+							.img-product.img-product-medium
+								input.input-img-file(type='file' accept='image/*')
+								img(src='http://placehold.it/130x130/999999/cccccc')
+								span.t-edit-img 封面
+								button.btn-delete-image(title='刪除')
+									i.fa.fa-times-circle
+							- var j = 2;
+							- for (var i = 0; i < j; i++)
 								.img-product.img-product-medium
 									input.input-img-file(type='file' accept='image/*')
-									p.t-img-file-comment
-										span.link-tiny
-											i.fa.fa-image
-											|  新增圖片
-										br
-								span.t-grey
-									| 建議比例1:1 / 限JPG、GIF/
-									br
-									|尺寸1000x1000px內 / 檔案大小1MB以下
-									br
-									| 最多上傳10張
-							.form-line
-								.img-product.img-product-medium
-									input.input-img-file(type='file' accept='image/*')
-									p.t-img-file-comment
-										span.link-tiny
-											i.fa-brands.fa-youtube
-											|  新增影片
-										br
-								span.t-grey
-									| 僅支援 Youtube 連結
-							.form-line
-								.form-label
-									span.highlight *
-									|  商品名稱
-								.form-content
-									input(type='text' size='60' placeholder='限60字，請勿填寫括號以外的特殊符號')
-							.form-line
-								.form-label
-									| 廠商商品料號
-								.form-content
-									input(type='text' size='30')
-							.form-line
-								.form-label
-									| EAN碼
-								.form-content
-									input.input-price.t-crossline(type='number' size='10')
-								.form-label
-									span.t-grey.t-crossline ISBN碼	
-								.form-content
-									input.input-price.t-crossline(type='number' size='10')
-							.form-line
-								.form-label
-									span.highlight *
-									| 網路價
-								.form-content
-									input.input-price.t-crossline(type='number' size='10')
-								.form-label
-									span.highlight *
-									span.t-grey.t-crossline 進貨價	
-								.form-content
-									input.input-price.t-crossline(type='number' size='10')
-							.form-line
-								.form-label
-									span.highlight *
-									span.t-bold 稅率%
-								.form-content
-									input.input-price.input-sale-price.t-bold(type='number')
-									label.input-check
-										input.input-check(type="checkbox", name="")
-										| 本商品預設營業稅5%，如果要改成0%請把勾拿掉
-							.form-label-full
-								.form-line-head
-									.form-head-t 商品說明
-								.product-editor
-									.form-line
-										.form-label 用文字介紹
-										.form-content
-											textarea.textarea-editor(name="", cols="100", rows="5" placeholder="請輸入商品說明...") 
-	
-												
-							.form-bot
-								a.btn-g(href="#") 
+									img(src='http://placehold.it/130x130/999999/cccccc')
+									button.btn-delete-image(title='刪除')
+										i.fa.fa-times-circle
+							.img-product.img-product-medium
+								input.input-img-file(type='file' accept='image/*')
+								.t-img-file-comment
+									span.link-tiny
+										i.fa.fa-image
+										|  新增圖片
+								.from-alert 請上傳圖片
+							span.t-grey
+								| 建議比例1:1 / 限JPG、GIF/
+								br
+								|尺寸1000x1000px內 / 檔案大小1MB以下
+					
+					.form-line
+						.form-label 商品影片
+						.form-content
+							input(type="text" size='50' placeholder='http://')
+							<!--.from-alert 請輸入正確的 Youtube 網址-->
+							//- .img-product.img-product-medium
+							//- 	input.input-img-file(type='file' accept='video/*')
+							//- 	.t-img-file-comment
+							//- 		span.link-tiny
+							//- 			i.fa-brands.fa-youtube
+							//- 			|  新增影片
+							//- 	.from-alert 請上傳影片
+							span.t-grey
+								| 僅支援 Youtube 連結
+					.form-line
+						.form-label
+							span.highlight *
+							|  商品名稱
+						.form-content
+							input(type='text' size='50' maxlength='60' placeholder='限60字，請勿填寫括號以外的特殊符號')
+							<!--.from-alert 請填寫商品名稱-->
+						.form-label
+							| 廠商商品料號
+						.form-content
+							input(type='text' size='33')
+					.form-line
+						.form-label
+							span.highlight *
+							| 網路價
+						.form-content
+							input.input-price(type='number' inputmode='numeric' min='0' max='999999' size='10')
+						.form-label
+							span.highlight *
+							| 進貨價	
+						.form-content
+							input.input-price(type='number' readonly)
+						.form-label
+							span.highlight *
+							span.t-bold 稅率%
+						.form-content
+							input.input-price(type='number' readonly)
+							label.input-check
+								input.input-check(type='checkbox', name='')
+								| 本商品預設營業稅5%，如果要改成0%請把勾拿掉
+					.form-line
+						.form-label 商品說明
+						.form-content.prod-content
+							textarea.textarea-editor(name='', cols='100', rows='5' placeholder='請輸入商品說明...')
+							.form-content.upload-content
+								input.input-img-file(type='file' accept='image/*')
+								.t-img-file-comment
+									span.link-tiny
+										i.fa.fa-image
+										|  新增圖片
+								.t-textnum 0/3000
+					.form-line
+						.form-label
+							span.highlight *
+							span 商品上架後，系統會預設 3 個數量可銷售，您隨時可以在我要查商品依據各種庫存狀況修改數量。
+					.form-line
+						.form-content
+							label.multi-chk-label(for='multi-chk')
+								input#multi-chk(type='checkbox' name='multi-chk')
+								p 如果本商品有多種規格，請打勾展開
+					.form-grid
+						.form-grid-td.thead 規格編號
+						.form-grid-td.thead
+							span.highlight *
+							input(type="text" placeholder='請輸入規格一名稱')
+						.form-grid-td.thead
+							input(type="text" placeholder='請輸入規格二名稱')
+						.form-grid-td.thead 廠商商品料號
+						.form-grid-td.thead 設定
+
+						.form-grid-td
+							input(type="text" placeholder='' readonly)
+						.form-grid-td
+							span.highlight *
+							input(type="text" placeholder='請輸入')
+						.form-grid-td
+							input(type="text" placeholder='請輸入')
+						.form-grid-td
+							input(type="text" placeholder='' value='SB001')
+						.form-grid-td
+							a.form-grid-href(href="#") 
+								i.fa.fa-circle-plus
+							a.form-grid-href(href="#")
+								i.fa-solid.fa-trash-can
+						
+						.form-grid-td
+							input(type="text" placeholder='' readonly)
+						.form-grid-td
+							span.highlight *
+							input(type="text" placeholder='請輸入')
+						.form-grid-td
+							input(type="text" placeholder='請輸入')
+						.form-grid-td
+							input(type="text" placeholder='請輸入')
+						.form-grid-td
+							a.form-grid-href(href="#") 
+								i.fa.fa-circle-plus
+							a.form-grid-href(href="#")
+								i.fa-solid.fa-trash-can
+
+					.form-line.form-bot
+						a.btn-grey(href='#') 暫存草稿
+						a.btn-red(href='#') 確認上架
+					.form-alert-msg.add-prod-success
+						.msg-t
+							i.fa-solid.fa-circle-check
+							span 新增商品
+						.msg-con
+							p 商品上架成功
+						.msg-close
+							i.fa-regular.fa-circle-xmark
+					.form-alert-msg.add-save-success
+						.msg-t
+							i.fa-solid.fa-circle-check
+							span 新增商品
+						.msg-con
+							p 暫存商品草稿成功
+						.msg-close
+							i.fa-regular.fa-circle-xmark
 	script(src='../js/3rd-party/jquery-3.6.0.min.js')
 	script(src='../js/3rd-party/jquery.fancybox.min.js')
 	script(src='../js/3rd-party/bootstrap-dropdown.js')

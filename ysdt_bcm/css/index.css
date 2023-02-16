@@ -206,7 +206,7 @@ button[class*=btn-]:hover {
 
 #wrapper {
   height: auto;
-  margin: 70px 40px 0 60px;
+  margin: 70px 20px 0 80px;
 }
 
 #container {
@@ -278,6 +278,10 @@ button[class*=btn-]:hover {
 }
 .comment .fa {
   margin-right: 3px;
+}
+
+label {
+  cursor: pointer;
 }
 
 .highlight {
@@ -399,6 +403,41 @@ button[class*=btn-]:hover {
 }
 .related-searches dd:hover {
   background: #d5dbe0;
+}
+
+.hide {
+  display: none !important;
+}
+
+.word-wrap {
+  white-space: normal !important;
+}
+
+.input-single-number {
+  width: 10px;
+}
+
+.input-tiny-number {
+  width: 20px;
+}
+
+.input-price {
+  width: 60px;
+}
+
+input[readonly] {
+  border: none;
+  background-color: #eee;
+}
+
+input.input-size {
+  margin: 0 3px 5px 0;
+}
+
+.t-grey {
+  margin: 0 0 0 10px;
+  color: #999;
+  font-size: 0.85rem;
 }
 
 .header {
