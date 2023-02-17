@@ -1,3 +1,6 @@
+// dropzone
+$("#dropzone").dropzone({ url: "img/path" });
+Dropzone.autoDiscover = false;
 // 切換字功能
 $.fn.extend({
     toggleText: function(a, b){

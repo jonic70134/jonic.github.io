@@ -90,23 +90,39 @@ html
 										.pay_dis
 											.price $195,900
 										button.button.btn-imd 立即購買
-							.per_r
-								mixin slider(src)
-									a.swiper-slide(href='item.html')
-										.per_block
-											.per_dur
-												img(src='img/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
-											.per_r_info
-												h3.name Grivel 分力盤/系統架設/ Grivel Four 四孔分力盤 RTFOUR 義大利製
-												.per_price
-													.price $999,900
-													p.rush(href="#") 搶購 
-								+slider('01_02_160')
-								+slider('01_03_160')
-								+slider('01_04_160')
-								+slider('01_05_160')
-								+slider('01_02_160')
-								+slider('01_03_160')
+							.per_r.swiper-container
+								.swiper-wrapper
+									mixin slider(src)
+										a.swiper-slide(href='item.html')
+											.per_block
+												.per_dur
+													img(src='img/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
+												.per_r_info
+													h3.name Grivel 分力盤/系統架設/ Grivel Four 四孔分力盤 RTFOUR 義大利製
+													.per_price
+														.price $999,900
+														p.rush(href="#") 搶購 
+									+slider('01_02_160')
+									+slider('01_03_160')
+									+slider('01_04_160')
+									+slider('01_05_160')
+
+									+slider('01_02_160')
+									+slider('01_03_160')
+									+slider('01_04_160')
+									+slider('01_05_160')
+
+									+slider('05_03_182')
+									+slider('05_05_182')
+									+slider('05_07_182')
+									+slider('05_01_182')
+
+									+slider('05_03_182')
+									+slider('05_05_182')
+									+slider('05_07_182')
+									+slider('05_01_182')
+								.swiper-button-next
+								.swiper-button-prev
 								
 					//- 熱賣特選
 					.per.hot_cho
@@ -171,7 +187,7 @@ html
 					.spec_prod 
 						.spec_slide
 							mixin slider(big,small_top,small_bot)
-								.swiper-slide(href='item.html')
+								.swiper(href='item.html')
 									h2.title 特賣主題
 									.spec_block
 										a(href="item.html").spec_l

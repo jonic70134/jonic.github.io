@@ -1,5 +1,19 @@
+// cate one slider
+var duo1slide = new Swiper('.duo_1 .per_r', {
+    slidesPerView: 3,
+    slidesPerGroup: 6,
+    spaceBetween: 40,
+    grid: {
+        rows: 2,
+        fill: 'row',
+    },
+    navigation: {
+        nextEl: ".duo_1 .swiper-button-next",
+        prevEl: ".duo_1 .swiper-button-prev",
+    },
+});
 
-
+//活動 tab 切換
 $('.cho_tab').click(function(){
     var cho_tab_id = $(this).attr('data-chotab');
     $('.cho_tab').removeClass('active');

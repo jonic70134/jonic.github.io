@@ -8,6 +8,7 @@ html
 			include ../src/_header.pug
 			include ../src/_nav.pug
 			#container
+			
 				.add-product-detail-form
 					.form-head-t 新增商品
 						span.red *必填
@@ -16,6 +17,9 @@ html
 							span.red *
 							| 商品主圖
 							span.t-grey (限尺寸1000x1000px內，規格JPG、GIF，檔案大小1MB以下)
+						.form-content-col
+							.dropzone#dropzone
+								
 						.form-content-col
 							//- .img-product.img-product-medium
 							//- 	input.input-img-file(type='file' accept='image/*')
@@ -84,14 +88,16 @@ html
 					.form-head-t 商品描述、介紹說明
 						span.t-grey (非必填)
 					.form-line
-						.form-content.prod-content
-							textarea.textarea-editor(name='', cols='100', rows='5' placeholder='商品說明')
+						.form-content
+							.prod-content
+								textarea.textarea-editor(name='', cols='100', rows='5' placeholder='商品說明')
+								small ※ 商品上架後，系統會預設 3 個數量可銷售，您隨時可以在我要查商品依據各種庫存狀況修改數量。
 							.form-content.upload-content
 								input.input-img-file(type='file' accept='image/*')
 								.t-img-file-comment
 									span 上傳
-					.form-line
-						span.t-grey ※ 商品上架後，系統會預設 3 個數量可銷售，您隨時可以在我要查商品依據各種庫存狀況修改數量。
+							
+						
 					.form-head-t 我要建立多規格選項
 						span.t-grey (非必填)
 						a.multi-chk(href="#") 
@@ -166,8 +172,7 @@ html
 					a.box_btn_resend(href="#") 取消
 					a.box_btn_send(href="#") 確認送出
 				a.lightbox-close(href="#")
-	script(src='../js/3rd-party/jquery-3.6.0.min.js')
-	script(src='../js/3rd-party/bootstrap-dropdown.js')
-	
-	script(src='../js/common.js')
-	script(src='../js/product.js')
+script(src='../js/3rd-party/jquery-3.6.0.min.js')
+script(src='../js/3rd-party/dropzone.min.js')
+script(src='../js/common.js')
+script(src='../js/product.js')
