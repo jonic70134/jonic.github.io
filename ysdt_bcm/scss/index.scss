@@ -8,10 +8,12 @@
 
 .annoucement, .annoucement {
   width: 100%;
-  margin: 20px 0 40px;
+  margin: 0 0 40px;
   padding: 15px 20px 10px;
   background: mix($main-green-color,#fff,10);
-  border: mix($main-green-color,#fff,30) 1px solid;
+  border: 1px solid #aaa;
+  border-right:0;
+  border-left:0;
   border-radius:3px;
   box-sizing:border-box;;
   dt {
@@ -57,10 +59,6 @@
       margin: 0 5px;
     }
   }
-  .more {
-    display: block;
-    float: right;
-  }
 }
 .annoucement {
   margin-bottom: 20px;
@@ -91,10 +89,8 @@
 }
 .index-catagory {
   width: 32.3%;
-  vertical-align: top;
   overflow: hidden;
   position: relative;
-  display: inline-block;
   & + .index-catagory {
     margin-left: 1%;
   }

@@ -1,15 +1,11 @@
-// header 藍色Bar部分
+//-  header
 header.header
 	.logo
 		a(href='../index.html' title='回到首頁')
-			span 供應商後台管理系統
+			span 平台管理系統
 	.user
 		.btn-group
 			a.btn-group-user(href='#')
-				i.fa.fa-cogs
-				| 網站設定
-		.btn-group
-			a.dropdown-toggle.btn-group-user(data-toggle='dropdown' href='#')
 				i.fa.fa-user
 				| userName
 				span.caret
@@ -18,3 +14,5 @@ header.header
 					a(href='#') 個人資料修改
 				li
 					a(href='#') 登出
+		.btn-group
+			a.btn-group-user(href="#") 登出
