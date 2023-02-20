@@ -18,43 +18,20 @@ html
 							| 商品主圖
 							span.t-grey (限尺寸1000x1000px內，規格JPG、GIF，檔案大小1MB以下)
 						.form-content-col
-							.dropzone#dropzone
-								
-						.form-content-col
-							//- .img-product.img-product-medium
-							//- 	input.input-img-file(type='file' accept='image/*')
-							//- 	img(src='http://placehold.it/130x130/999999/cccccc')
-							//- 	span.t-edit-img 封面
-							//- 	button.btn-delete-image(title='刪除')
-							//- 		i.fa.fa-times-circle
-							//- - var j = 1;
-							//- - for (var i = 0; i < j; i++)
-							//- 	.img-product.img-product-medium
-							//- 		input.input-img-file(type='file' accept='image/*')
-							//- 		img(src='http://placehold.it/130x130/999999/cccccc')
-							//- 		button.btn-delete-image(title='刪除')
-							//- 			i.fa.fa-times-circle
-							.img-product.img-product-medium
-								input.input-img-file(type='file' accept='image/*')
-								.t-img-file-comment
-									span.link-tiny
-										i.fa.fa-plus
+							#file-upload
+								.preview
+								.chos-file
+									input#file-input(type='file' accept='image/jpeg,image/gif' multiple='')
+									label.image-upload.fa.fa-plus(for='file-input') 
 										p 新增圖片
-								.from-alert 請上傳圖片
-					
 					.form-line-col
 						.form-label
 							| 商品影片
 							span.t-grey
 								| 僅支援 Youtube 連結
 						.form-content-col
-							//- input(type="text" size='50' placeholder='http://')
-							<!--.from-alert 請輸入正確的 Youtube 網址-->
-							a(href="#video_pop").img-product.img-product-medium
-								.t-img-file-comment
-									span.link-tiny
-										i.fa-brands.fa-youtube
-										|  新增影片
+							a(href="#video_pop").video-upload.fa-brands.fa-youtube
+								p 新增影片
 								.from-alert 請上傳影片
 					.form-line
 						.form-label 商品名稱

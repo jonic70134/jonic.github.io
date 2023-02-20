@@ -1,6 +1,52 @@
-// dropzone
-$("#dropzone").dropzone({ url: "img/path" });
-Dropzone.autoDiscover = false;
+// 上傳圖片
+
+
+// 拖放事件
+const dropzone = $('#file-input');
+const dropframe = $('.chos-file');
+dropzone.on('dragover', function(e) {
+    e.preventDefault();
+    dropzone.addClass('dragover');
+});
+
+dropzone.on('drop', function(e) {
+    e.preventDefault();
+    dropzone.removeClass('dragover');
+    handleFiles(e.originalEvent.dataTransfer.files);
+});
+$('#file-input').on('change', function() {
+    handleFiles($('#file-input').prop('files'));
+});
+
+
+// 選擇檔案按鈕被選擇時觸發
+function handleFiles(files) {
+    for (let i = 0; i < files.length; i++) {
+    const file = files[i];
+        if (file.type === 'image/jpeg' || file.type === 'image/gif') {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = $('<img class="preview-image"/>').attr('src', e.target.result);
+                const name = $('<div class="preview-image-name"/>').text(file.name);
+                const delBtn = $('<button class="preview-image-delete fa-solid fa-circle-xmark"/>');
+                const wrapper = $('<div class="preview-image-wrapper"/>').append(img, delBtn);
+                // 將預覽圖片包裝器添加到預覽區域
+                $('.preview').append(wrapper);
+                    // 當刪除按鈕被點擊時，刪除對應的預覽圖片包裝器
+                    delBtn.on('click', function() {
+                    wrapper.remove();
+                });
+            };
+            // 讀取選中的檔案
+            reader.readAsDataURL(file);
+        } else {
+            dropframe.addClass('error_type');
+            setTimeout(function() {dropframe.removeClass('error_type')}, 5000);
+        }
+    }
+    
+}
+
 // 切換字功能
 $.fn.extend({
     toggleText: function(a, b){
@@ -34,5 +80,4 @@ $(".fa-circle-plus").click( function(e){
 
 $(".fa-trash-can").click( function(e){
     e.preventDefault();
-    
 });

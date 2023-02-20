@@ -102,10 +102,16 @@
 }
 // slider
 .per_duoslide{
-    margin:15px 0 0;
+    margin:7px 0 0;
     position: relative;
     .per_l{
         padding: 15px;
+    }
+    .per_cate_name{
+        padding: 5px 10px;
+        font-size: 1.2rem;
+        color: black;
+        background: #e9e9e9;
     }
     .per_img{
         display: block;

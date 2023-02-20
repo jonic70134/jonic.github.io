@@ -40,6 +40,143 @@ small{
   position: relative;
   font-size:1rem;
 }
+
+#file-upload {
+	display: flex;
+	flex-flow: row wrap;
+  margin: 10px 0 0 0;
+}
+.chos-file {
+  position: relative;
+	width: 130px;
+	height: 130px;
+  line-height: 1.8;
+	box-sizing: border-box;
+}
+#file-input {
+	position: absolute;top: 0;right: 0;bottom: 0;left: 0;z-index: 10;
+  padding: 0;
+  opacity: 0;
+  cursor: pointer;
+  &:hover{
+    ~.image-upload{
+      color:red;
+    }
+  }
+}
+.dragover{
+  ~.image-upload{
+    color:red;
+    border: 2px red dashed;
+  }
+}
+.image-upload,.video-upload {
+	position: absolute;top: 0;right: 0;bottom: 0;left: 0;
+	display: flex;
+  flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	color: #06c;
+	border: 2px dashed #ccc;
+	background-color: #f7f7f7;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: all 0.2s;
+  cursor: pointer;
+	&:hover {
+		color: red;
+	}
+  p{
+    margin: 3px 0;
+    font-size: 1rem;
+  }
+}
+.video-upload {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  margin: 10px 0 0 0;
+  text-align: center;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.preview {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.preview-image-wrapper {
+	position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	width: 130px;
+	height: 130px;
+	margin: 0 10px 10px 0;
+  border:1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+  &:first-child{
+    &::after{
+      position: absolute;bottom: 0;left: 0;
+      content: '商品主圖';
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: .9rem;
+      color:white;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+.preview-image {
+	width: 100%;
+  border:1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.preview-image-name {
+	position: absolute;bottom: 0;left: 0;right: 0;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	font-size: 1rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.preview-image-delete {
+	position: absolute;top:-2px;right: -2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	color: #999;
+  background: white;
+	font-size: 1.4rem;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+.error_type,.error_count{
+  &::after{
+    content:'請上傳JPG或GIF檔';
+    position: absolute;top:50%;left:0;transform: translateY(-50%);  z-index: 20;
+    width: 100%;
+    padding: 5px;
+    font-size: .7rem;
+    text-align: center;
+    color:white;
+    background: red;
+    box-sizing: border-box;
+  }
+}
+.error_count{
+  &:after{
+    content:'請上傳圖片';
+  }
+}
+
 .form-line-head{
   display: flex;
   flex-flow:row nowrap;
@@ -242,97 +379,6 @@ small{
   margin: 0;
 }
 
-.input-img-file {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0 !important;
-  padding: 0 !important;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  cursor: pointer;
-  position: absolute;
-  z-index: 10;
-}
-.img-product {
-  position: relative;
-  text-align: center;
-  border: #d4dbdf 1px solid;
-  background: #f1f3f5;
-  box-sizing: border-box;
-  &.img-product-large {
-    width: 360px;
-    height: 360px;
-    margin-bottom: 10px;
-  }
-  &.img-product-medium {
-    width: 130px;
-    height: 130px;
-    margin: 10px 10px 10px 0;
-    display: inline-block;
-  }
-  &.img-product-small {
-    width: 70px;
-    height: 70px;
-    margin: 5px 1px 0 0;
-  }
-  &.img-product-tiny {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-  }
-  img {
-    width: auto;
-    height: auto;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
-    margin: auto;
-    line-height: 0;
-    position: absolute;
-  }
-  .t-img-file-comment {
-    position: absolute;top: 50%;left:0;transform: translateY(-50%);
-    width: 100%;
-    font-size: .85rem;
-    padding: 0 10px;
-    box-sizing: border-box;
-
-    .link-tiny {
-      margin: 5px;
-      font-size:1rem;
-    }
-  }
-  .t-edit-img {
-    position: absolute;left: 0;right: 0;bottom: 0;z-index: 1;
-    padding: 3px;
-    font-size: .8rem;
-    color: #fff;
-    background: #0068b6;
-    background: rgba(0, 104, 182, 0.5);
-  }
-  .btn-delete-image {
-    position: absolute;top: 0;right: 0; z-index: 20;
-    padding: 0 5px;
-    background: none;
-    color: #fff;
-    text-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
-    box-shadow: none;
-    opacity: 0.8;
-    &:hover {
-      background: none;
-      opacity: 1;
-      box-shadow: none;
-    }
-    .fa {
-      margin: 0;
-    }
-  }
-}
 .t-textnum{
   position: absolute;right:10px;
   color:#999;
