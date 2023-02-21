@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import "plugin/jquery.fancybox.min.css";
-@import "all.min.css";
+@import "plugin/all.min.css";
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, button, pre,
 abbr, address, cite, code,

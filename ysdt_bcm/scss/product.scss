@@ -1,8 +1,9 @@
 @import "_variables.scss";
 @import "_mixin.scss";
 
-@import "../css/plugin/dropzone.min.css";
 @import "../css/plugin/all.min.css";
+@import "../css/plugin/quill.core.css";
+@import "../css/plugin/quill.snow.css";
 @import "layout.scss";
 
 
@@ -91,6 +92,20 @@ small{
     font-size: 1rem;
   }
 }
+.video-container{
+  display: none;
+  position: relative;
+  width: 130px;
+	height: 130px;
+  margin:10px 10px 0 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  iframe{
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+}
 .video-upload {
   position: relative;
   width: 130px;
@@ -131,6 +146,7 @@ small{
 }
 .preview-image {
 	width: 100%;
+  max-height: 130px;
   border:1px solid #ccc;
   box-sizing: border-box;
   border-radius: 5px;
@@ -145,7 +161,8 @@ small{
 	white-space: nowrap;
 	overflow: hidden;
 }
-.preview-image-delete {
+.preview-image-delete,.preview-video-delete {
+  display: none;
 	position: absolute;top:-2px;right: -2px;
   display: flex;
   align-items: center;
@@ -176,7 +193,14 @@ small{
     content:'請上傳圖片';
   }
 }
-
+.error_link{
+  &:after{
+    position: absolute;bottom:-13px;left:125px;
+    content:'請輸入正確的 youtube 網址';
+    font-size: .9rem;
+    color:red;
+  }
+}
 .form-line-head{
   display: flex;
   flex-flow:row nowrap;
@@ -201,6 +225,8 @@ small{
 
 }
 .form-content-col{
+  display: flex;
+  align-items: center;
   margin:0 0 15px 85px;
 }
 .form-line-top{
@@ -258,6 +284,17 @@ small{
       text-align: center;
     }
   }
+  &.warning{
+    input{
+      border:1px solid red;
+    }
+    &::after{
+      content: '此欄位必填';
+      position: absolute;right:10px;top:50%;transform: translateY(-50%);
+      font-size: .8rem;
+      color:red;
+    }
+  }
 }
 .prod-content{
   display: flex;
@@ -267,6 +304,29 @@ small{
     margin: 5px 0 0;
   }
 }
+.editor-container{
+  width: 950px;
+
+}
+#toolbar{
+  .ql-image{
+    display: flex;
+    align-items: center;
+    width:100px;
+    &::after{
+      display: block;
+      content:'新增圖片'
+    }
+  }
+  input{
+    display: none !important;
+  }
+}
+#editor{
+  height: 150px;
+}
+
+
 .form-grid-template{
   display: none;
 }
@@ -311,17 +371,12 @@ small{
 .from-alert{
   position: absolute;top: 100%;left:50%;transform: translateX(-50%);z-index: 50;
   width:100%;
-  padding:3px 10px;
+  padding:3px 0;
   font-size:.8rem;
-  color:white;
-  background: red;
+  color:red;
+
   box-sizing: border-box;
-  &:after{
-    content: '▲';
-    display: block;
-    position: absolute;top: -8px;left:50%;transform: translateX(-50%);
-    color:red;
-  }
+
 }
 .form-alert-msg{
   display: none;
@@ -376,7 +431,6 @@ small{
 }
 .fa,.fa-brands{
   font-size: 1.2rem;
-  margin: 0;
 }
 
 .t-textnum{
@@ -484,6 +538,7 @@ small{
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
+    position: relative;
   }
   .con_m_t{
     font-size:1.1rem;
