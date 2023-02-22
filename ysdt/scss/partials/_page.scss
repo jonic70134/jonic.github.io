@@ -272,7 +272,6 @@ label{
 	justify-content: space-between;
 	position: relative;
 	height: 120px;
-	font-size:0;
 	.container{
 		width: 100%;
 	}
@@ -390,6 +389,7 @@ label{
 	}
 	.my_account{
 		margin: 0 5px;
+		text-align: center;
 		span{
 			display: block;
 			font-size:.8rem;
@@ -420,6 +420,23 @@ label{
 		@include border-radius(50%);
 		transform: scale(.8);
 	}
+	.icon_track_plus{
+		font-size:1.35rem;
+		&:before{
+			color:white;
+		}
+	}
+}
+.head_login{
+	position: absolute;bottom:8px;right:0;z-index: 30;
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+	color:white;
+}
+.logout{
+	color:white;
+	text-decoration: underline;
 }
 .sub_head{
 	.container{

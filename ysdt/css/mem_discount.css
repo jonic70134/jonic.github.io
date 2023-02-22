@@ -446,7 +446,6 @@ label {
           justify-content: space-between;
   position: relative;
   height: 120px;
-  font-size: 0;
 }
 .main_head .container {
   width: 100%;
@@ -605,6 +604,7 @@ label {
 }
 .head_func .my_account {
   margin: 0 5px;
+  text-align: center;
 }
 .head_func .my_account span {
   display: block;
@@ -641,6 +641,32 @@ label {
   -webkit-transform: scale(0.8);
       -ms-transform: scale(0.8);
           transform: scale(0.8);
+}
+.head_func .icon_track_plus {
+  font-size: 1.35rem;
+}
+.head_func .icon_track_plus:before {
+  color: white;
+}
+
+.head_login {
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+  z-index: 30;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 200px;
+  color: white;
+}
+
+.logout {
+  color: white;
+  text-decoration: underline;
 }
 
 .sub_head .container {
