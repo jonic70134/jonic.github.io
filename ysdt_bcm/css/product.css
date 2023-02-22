@@ -1192,6 +1192,7 @@ small {
 
 .editor-container {
   width: 950px;
+  position: relative;
 }
 
 #toolbar .ql-image {
@@ -1213,6 +1214,14 @@ small {
 
 #editor {
   height: 150px;
+}
+
+#counter {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 10px;
+  border-left: 1px solid #ccc;
 }
 
 .form-grid-template {

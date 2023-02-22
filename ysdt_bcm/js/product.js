@@ -109,8 +109,67 @@ $(".fa-trash-can").click( function(e){
 
 
 //商品介紹 wysihtml
+class Counter {
+    constructor(quill, options) {
+        this.quill = quill;
+        this.options = options;
+        this.container = document.querySelector(options.container);
+        quill.on('text-change', this.update.bind(this));
+        this.update();  // Account for initial contents
+    }
+    calculate() {
+        let text = this.quill.getText();
+        if (this.options.unit === 'character') {
+            text = text.trim();
+            // Splitting empty text returns a non-empty array
+            return text.length > 0 ? text.split(/\s/).length : 0;
+        } else {
+            return text.length;
+        }
+    }
+    update() {
+        var length = this.calculate()-1;
+        var label = this.options.unit;
+        // if (length !== 1) {
+        //     label += 's';
+        // }
+        this.container.innerText = length + ' ' + label;
+    }
+}
+Quill.register('modules/counter', Counter);
+
 var editor = new Quill('#editor', {
-    modules: { toolbar: '#toolbar' },
+    modules: {
+        toolbar: '#toolbar', 
+        counter: {
+            container: '#counter',
+            unit: '/ 3000'
+        },
+    },
     theme: 'snow',
     placeholder: '請輸入商品說明',
+});
+
+var sizehtml = 
+'<div class=form-grid-td>' +
+'<input type="text" placeholder="" readonly>'+
+'</div>'+
+'<div class=form-grid-td>' +
+'<input type="text" placeholder="請輸入">'+
+'</div>'+
+'<div class=form-grid-td>' +
+'<input type="text" placeholder="請輸入">'+
+'</div>'+
+'<div class=form-grid-td>' +
+'<a class="form-grid-href" href="#"> <i class="fa fa-circle-plus"></i></a><a class="form-grid-href" href="#"><i class="fa-solid fa-trash-can"></i></a>'+
+'</div>';
+
+
+// 新增規格
+$(".fa-circle-plus").click(function(){
+    $(".form-grid").append("sizehtml");
+});
+// 刪除規格
+$(".fa-trash-can").click(function(){
+    $(this).parents(".form-grid-td").remove();
 });

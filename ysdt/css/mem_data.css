@@ -1071,8 +1071,6 @@ body, .body_container, .copyright {
   margin: 10px 0 0;
   padding: 25px 10px 10px;
   font-size: 1.5rem;
-  background: white;
-  border-bottom: 1px solid #ccc;
 }
 
 .chk_order {
@@ -1129,7 +1127,8 @@ body, .body_container, .copyright {
 }
 
 .mem_data_sub_t {
-  margin: 0 0 0 30px;
+  margin: 0 0 0 25px;
+  font-weight: 700;
 }
 
 .mem_data_lb {
@@ -1169,8 +1168,10 @@ body, .body_container, .copyright {
 }
 
 .modify_btn {
+  display: block;
+  margin: 0 0 20px 50px;
   padding: 4px 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #999;
   text-decoration: underline;
 }

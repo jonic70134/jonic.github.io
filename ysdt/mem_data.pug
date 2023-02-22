@@ -12,9 +12,10 @@ html
 					.mem_chk_t
 						a.back(href="mem_index.html")
 							i.icon.icon_swiper_prev
-							p.chk_order 我的基本資料與修改
+							p.chk_order 回到 我的
 
 					form.mem_data_b(action="")
+						.mem_data_sub_t 查看我的資料
 						.mem_data
 							.mem_data_td.right 手機帳號
 							.mem_data_td 0912*****2
@@ -23,10 +24,10 @@ html
 								input.data_input(type="text" autocomplete="name" value="陳小軒")
 								label.mem_data_lb(for="sex_male")
 									input#sex_male(type="radio", name="sex")
-									p 男
+									p 先生
 								label.mem_data_lb(for="sex_female")
 									input#sex_female(type="radio", name="sex")
-									p 女							
+									p 女士							
 							.mem_data_td.right 生日
 							.mem_data_td
 								input.data_input(type='date' name="bday" value='2005-01-01' autocomplete="on")
@@ -37,8 +38,7 @@ html
 							.mem_data_td
 								.form_input
 									input.data_input.addr(type="text" autocomplete="address-line1" value="台北市內湖區瑞光路468號7樓")
-							.mem_data_td.gold
-								a.modify_btn(href="#") 修改黃金密碼
+						a.modify_btn(href="#") 修改黃金密碼
 							//- .mem_data_td.gold
 							//- 	a.modify_btn(href="#") 修改黃金密碼
 								
