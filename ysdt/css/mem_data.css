@@ -661,6 +661,7 @@ label {
           justify-content: space-between;
   width: 200px;
   color: white;
+  display: none;
 }
 
 .logout {
@@ -1168,7 +1169,7 @@ body, .body_container, .copyright {
 }
 
 .modify_btn {
-  padding: 4px 7px;
+  padding: 4px 0;
   font-size: 1rem;
   color: #999;
   text-decoration: underline;
