@@ -39,15 +39,24 @@
               <p class="chk_order">我的基本資料與修改</p></a></div>
           <form class="mem_data_b" action="">
             <div class="mem_data">
-              <div class="mem_data_td right">會員帳號</div>
+              <div class="mem_data_td right">手機帳號</div>
               <div class="mem_data_td">0912*****2</div>
               <div class="mem_data_td right">姓名</div>
               <div class="mem_data_td">
                 <input class="data_input" type="text" autocomplete="name" value="陳小軒">
+                <div class="mem_data_sub_t">性別</div>
+                <label class="mem_data_lb" for="sex_male">
+                  <input id="sex_male" type="radio" name="sex">
+                  <p>男</p>
+                </label>
+                <label class="mem_data_lb" for="sex_female">
+                  <input id="sex_female" type="radio" name="sex">
+                  <p>女							</p>
+                </label>
               </div>
-              <div class="mem_data_td right">手機</div>
+              <div class="mem_data_td right">生日</div>
               <div class="mem_data_td">
-                <input class="data_input" type="tel" autocomplete="tel" value="0912345678">
+                <input class="data_input" type="date" name="bday" value="2005-01-01" autocomplete="on">
               </div>
               <div class="mem_data_td right">Email</div>
               <div class="mem_data_td">
@@ -56,32 +65,15 @@
               <div class="mem_data_td right">地址</div>
               <div class="mem_data_td">
                 <div class="form_input">
-                  <div class="select_b">
-                    <select id="county" name="">
-                      <option value="1">台北市  </option>
-                    </select>
-                    <select id="distric" name=""> 
-                      <option value="1">內湖區</option>
-                    </select>
-                  </div>
-                  <input class="data_input" type="text" autocomplete="address-line1" value="瑞光路468號7樓">
+                  <input class="data_input addr" type="text" autocomplete="address-line1" value="台北市內湖區瑞光路468號7樓">
                 </div>
               </div>
-              <div class="mem_data_td right">黃金密碼</div>
-              <div class="mem_data_td gold">
-                <input class="data_input" type="password" value=""><a class="modify_btn" href="#">設定</a>
-              </div>
-              <div class="mem_data_td"></div>
-              <div class="mem_data_td">
-                <div class="gold_des red">(初次註冊的會員.請設定黃金密碼;之後查看會員資料時,需輸入黃金密碼)</div>
-              </div>
+              <div class="mem_data_td right"></div>
+              <div class="mem_data_td gold"><a class="modify_btn" href="#">修改黃金密碼</a></div>
             </div>
             <div class="news">
               <label class="news_lb" for="news1"> 
-                <input id="news1" type="checkbox" name="news1"><span>我願意收到本網站優惠訊息電子報</span>
-              </label>
-              <label class="news_lb" for="news2"> 
-                <input id="news2" type="checkbox" name="news2"><span>我願意收到本網站各項簡訊及電話通知</span>
+                <input id="news1" type="checkbox" name="news1"><span>我願意收到本系統簡訊及優惠訊息電子報</span>
               </label>
             </div>
             <div class="data_bot">
@@ -92,91 +84,6 @@
       </div>
     </div>
   </body>
-  <div class="lightbox-target" id="set_pass">
-    <form class="content" action="#pass_send">
-      <div class="con_t">設定黃金密碼</div>
-      <div class="con_m">
-        <input class="con_input" type="tel" autocomplete="tel" placeholder="手機號碼">
-      </div>
-      <div class="con_bot">
-        <input class="box_btn_send" type="submit" value="取得驗證碼" required autofocus>
-      </div><a class="lightbox-close" href="#"></a>
-    </form>
-  </div>
-  <div class="lightbox-target" id="pass_send">
-    <form class="content" action="#set_addr">
-      <div class="con_t">設定黃金密碼</div>
-      <div class="con_m">
-        <div class="con_line">
-          <div class="sub_t">認證碼已用簡訊發送至 09*****987</div>
-        </div>
-        <div class="con_line">
-          <input class="con_input" type="unmber" placeholder="驗證碼" inputmode="numeric" required autofocus>
-          <P class="time">請於3分鐘內輸入驗證碼，剩餘時間<span class="red">02:59</span></P>
-        </div>
-        <div class="con_bot"><a class="box_btn_resend" href="#">重發</a>
-          <input class="box_btn_send" type="submit" value="下一步">
-        </div>
-      </div><a class="lightbox-close" href="#"></a>
-    </form>
-  </div>
-  <div class="lightbox-target" id="set_addr">
-    <form class="content" action="#pass_done">
-      <div class="con_t">設定黃金密碼</div>
-      <div class="con_m">
-        <div class="con_line">
-          <div class="sub_t">帳號：0912345869</div>
-        </div>
-        <div class="con_line">
-          <div class="addr_t">請選擇此帳號的收貨地址：</div>
-          <div class="addr_b">
-            <div class="addr_line">
-              <label class="con_lb" for="addr1"> 
-                <input id="addr1" type="checkbox" name="addrlist" checked>
-                <p>114台北市內湖區瑞光路***號7F</p>
-              </label>
-            </div>
-            <div class="addr_line">
-              <label class="con_lb" for="addr2"> 
-                <input id="addr2" type="checkbox" name="addrlist">
-                <p>114台北市信義區**路11號</p>
-              </label>
-            </div>
-            <div class="addr_line">
-              <label class="con_lb" for="addr3"> 
-                <input id="addr3" type="checkbox" name="addrlist">
-                <p>114台北市大安區**東路八段68號		</p>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="con_bot">
-          <input class="box_btn_send" type="submit" value="確定">
-        </div>
-      </div><a class="lightbox-close" href="#"></a>
-    </form>
-  </div>
-  <div class="lightbox-target" id="pass_done">
-    <form class="content" action="mem_data_reset.html">
-      <div class="con_t">設定黃金密碼</div>
-      <div class="con_m">
-        <div class="con_line">
-          <div class="sub_t">帳號：0912345869</div>
-        </div>
-        <div class="con_line">
-          <div class="pass_b">
-            <input class="con_input" id="pass-b1" type="unmber" placeholder="設定黃金密碼(6碼英文數字)" maxlenght="6" inputmode="numeric" required autofocus><i class="icon icon-eye toggle-pass" toggle="#pass-b1"></i>
-          </div>
-          <div class="pass_b">
-            <input class="con_input" id="pass-b2" type="unmber" placeholder="確認黃金密碼" maxlenght="6" inputmode="numeric" required autofocus><i class="icon icon-eye toggle-pass" toggle="#pass-b2"></i>
-          </div>
-        </div>
-        <div class="con_bot">
-          <input class="box_btn_send" type="submit" value="確定">
-        </div>
-      </div><a class="lightbox-close" href="#"></a>
-    </form>
-  </div>
   <footer class="copyright">
     <div class="container"><small>Copyright © friDay Corporation All rights reserved.<a href="#">隱私權政策</a></small></div><a class="gotop" href="#"></a>
     <!-- 狀態列 僅作為切換版面使用-->

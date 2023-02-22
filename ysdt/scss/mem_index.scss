@@ -18,12 +18,28 @@
     color:#06c;
     font-size:.9rem;
 }
+.mem_chk_t{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin:20px 0 0;
+    padding:25px 10px 10px;
+    font-size: 1.5rem;
+    background: white;
+    border-bottom:1px solid #ccc;
+}
+.chk_order{
+    margin: 0 0 0 10px;
+    font-size: 1.5rem;
+    color:#333;
+}
 .mem_index{
     display: grid;
-    grid-template-rows: 150px 75px 75px 75px 75px ;
+    // grid-template-rows: 150px 75px 75px 75px 75px ;
+    grid-template-rows: 75px 75px 75px 75px 75px ;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap:10px;
-    margin:20px auto;
+    margin:10px auto;
 }
 
 [class*="mem_block"]{

@@ -343,6 +343,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+label {
+  cursor: pointer;
+}
+
 .site-header {
   position: relative;
   border-bottom: 1px solid #eee;
@@ -978,15 +982,38 @@ a.gotop:after {
   font-size: 0.9rem;
 }
 
+.mem_chk_t {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0 0;
+  padding: 25px 10px 10px;
+  font-size: 1.5rem;
+  background: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.chk_order {
+  margin: 0 0 0 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
 .mem_index {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 150px 10px 75px 10px 75px 10px 75px 10px 75px;
-  grid-template-rows: 150px 75px 75px 75px 75px;
+  -ms-grid-rows: 75px 10px 75px 10px 75px 10px 75px 10px 75px;
+  grid-template-rows: 75px 75px 75px 75px 75px;
   -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .mem_index > *:nth-child(1) {

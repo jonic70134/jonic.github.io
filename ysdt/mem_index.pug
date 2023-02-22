@@ -9,44 +9,52 @@ html
 			include src/_header.pug 
 			.site-main
 				.container
+					.mem_chk_t
+						.back(href="mem_index.html")
+							p.chk_order 我的
 					.mem_index
-						.mem_block1_1
-							.mem_avatar
-								img(src="img/mem_avatar.svg")
-								a(href="#").mem_edit
-									img(src="img/mem_edit.svg")
-							.mem_login_link
-								a.login_btn(href="mem_login.html") 登入
-								a.reg_btn(href="mem_reg.html") 註冊 
-							<!--//- 登入後顯示會員名稱 p.mem_name 張xx 你好-->
+						
+						//- .mem_block1_1
+						//- 	.mem_avatar
+						//- 		img(src="img/mem_avatar.svg")
+						//- 		a(href="#").mem_edit
+						//- 			img(src="img/mem_edit.svg")
+						//- 	.mem_login_link
+						//- 		a.login_btn(href="mem_login.html") 登入
+						//- 		a.reg_btn(href="mem_reg.html") 註冊 
+						//- 	<!--//- 登入後顯示會員名稱 p.mem_name 張xx 你好-->
 
-						a(href="#mem_phone_order").mem_block2_1.mem_phone_order
-							img(src="img/mem_order.svg")
-							.mem_link_name 手機號碼查訂單 
-							.mem_contact (聯絡客服)
-						a(href="mem_chk.html").mem_block2_2.mem_web_order
+						//- a(href="#mem_phone_order").mem_block2_1.mem_phone_order
+						//- 	img(src="img/mem_order.svg")
+						//- 	.mem_link_name 手機號碼查訂單 
+						//- 	.mem_contact (聯絡客服)
+						a(href="mem_chk.html").mem_block2_1.mem_web_order
 							img(src="img/mem_order.svg")
 							.mem_link_name 查訂單 
 							.mem_contact (聯絡客服)
+						a(href="mem_track.html").mem_block2_2.mem_phone_order
+							img(src="img/mem_track.svg")
+							.mem_link_name 追蹤清單
+						
 
-						a(href="mem_coin.html").mem_block3_1.mem_coin
-							img(src="img/mem_coin.svg")
-							.mem_link_name 我的遠傳幣 
-								span.red 9999
-						a(href="mem_discount.html").mem_block3_2.mem_coupon
-							img(src="img/mem_coupon.svg")
-							.mem_link_name 我的折價券
-								span.red 9999
-								| 張
+						//- a(href="mem_coin.html").mem_block3_1.mem_coin
+						//- 	img(src="img/mem_coin.svg")
+						//- 	.mem_link_name 我的遠傳幣 
+						//- 		span.red 9999
+						//- a(href="mem_discount.html").mem_block3_2.mem_coupon
+						//- 	img(src="img/mem_coupon.svg")
+						//- 	.mem_link_name 我的折價券
+						//- 		span.red 9999
+						//- 		| 張
 						//- a(href="#").mem_block3_3.mem_coin
 						//- 	img(src="img/mem_happygo.svg")
 						//- 	.mem_link_name HAPPY GO 
 						//- 		span.blue 綁定卡片
 
-						a(href="mem_track.html").mem_block3_3.mem_track
-							img(src="img/mem_track.svg")
-							.mem_link_name 追蹤清單
-						a(href="mem_data.html#set_pass").mem_block3_1.mem_data
+						//- a(href="mem_track.html").mem_block3_3.mem_track
+						//- 	img(src="img/mem_track.svg")
+						//- 	.mem_link_name 追蹤清單
+						a(href="mem_data.html").mem_block3_1.mem_data
 							img(src="img/mem_data.svg")
 							.mem_link_name 我的基本資料與修改
 						//- a(href="#").mem_block3_3.mem_exp
