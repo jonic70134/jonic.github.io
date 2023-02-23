@@ -1,3 +1,20 @@
+// top slider single
+var spec1area = new Swiper('.sepc_single .sepc_single_slide', {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: ".slide_btn_r",
+        prevEl: ".slide_btn_l",
+      },
+});
+// top slider
+var spec2area = new Swiper('.spec_area .spec_slide', {
+    slidesPerView: 2,
+    spaceBetween: 25,
+    navigation: {
+        nextEl: ".spec_prod .swiper-button-next",
+        prevEl: ".spec_prod .swiper-button-prev",
+      },
+});
 var duo1slide = new Swiper('.duo_1 .per_r', {
     slidesPerView: 4,
     slidesPerGroup: 8,

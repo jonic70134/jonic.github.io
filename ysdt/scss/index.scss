@@ -5,6 +5,7 @@
 @import "partials/page";
 // @import "partials/cupn";
 @import "partials/page_item";
+@import "partials/cupn";
 @import "3rd-party/_swiper.scss";
 .swiper-container{
     height: 100%; 
@@ -16,6 +17,29 @@
 }
 .swiper-button-next{
     right: 0;
+}
+.img-mask{
+    position: absolute;top:0;bottom:0;right:0;left:0;
+    background: radial-gradient(circle at 50% 60%,transparent, transparent,rgba(0,0,0,0.3));
+}
+.slide_btn_r,.slide_btn_l{
+    position: absolute;top:50%;right: 0; transform: translateY(-50%);z-index: 10;
+    padding: 15px 3px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    &::before{
+        font-size: 1.6rem;
+        color:white;
+    }
+    &.swiper-button-disabled{
+        background: rgba(0,0,0,0.2);
+    }
+}
+.slide_btn_l{
+    left: 0;
+    right: auto;
+    transform: rotate(180deg) translateY(50%);
 }
 .pay_dis{
     display:flex;
@@ -295,14 +319,34 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin: 10px 0 20px;
 }
 .spec_duo{
-    width: 810px;
+    width: 820px;
+    .spec_prod{
+        height: 280px;
+        .swiper-container{
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .spec_l{
+            img{
+                width: 230px;
+                height: 230px;
+            }
+        }
+        .spec_r_block{
+            margin: 0 0 20px;
+            img{
+                
+            }
+        }
+    }
 }
 .turn_body{
-    width:390px ;
-    margin:15px 0 0;
+    width:380px ;
     border:1px solid #ccc;
+    box-sizing: border-box;
 }
 .turn_iframe{
     width: 100%;
