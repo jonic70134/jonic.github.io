@@ -5,6 +5,9 @@ var spec1area = new Swiper('.sepc_single .sepc_single_slide', {
         nextEl: ".slide_btn_r",
         prevEl: ".slide_btn_l",
       },
+    autoplay: {
+        delay: 5000,
+    },
 });
 // top slider
 var spec2area = new Swiper('.spec_area .spec_slide', {

@@ -34,12 +34,46 @@
     }
     &.swiper-button-disabled{
         background: rgba(0,0,0,0.2);
+        &::before{
+            font-size: 1.6rem;
+            color:#999;
+        }
     }
 }
 .slide_btn_l{
     left: 0;
     right: auto;
     transform: rotate(180deg) translateY(50%);
+}
+.sepc_two_block{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    .spec_l,.spec_r{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+    img{
+        display: block;
+        max-width: 340px;
+        max-height: 340px;
+    }
+}
+.faded{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-collapse: separate;
+        box-shadow:inset 0 0 40px 16px
+    }
 }
 .pay_dis{
     display:flex;
