@@ -176,7 +176,7 @@ img {
 .item_head .cupn_ticket {
   width: 200px;
   height: 90px;
-  font-size: clamp(0.7rem, 2vw, 1.5rem);
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
 }
 .item_head .cupn_price {
   font-size: 2rem;
@@ -326,6 +326,10 @@ img {
 
 .name_block {
   margin: 0 20px 20px 0;
+}
+.name_block div {
+  color: #999;
+  line-height: 1.4;
 }
 
 .name {
@@ -520,7 +524,7 @@ img {
   margin: 5px 0 10px;
 }
 .item.sm .cupn_ticket {
-  font-size: 1.5vw;
+  font-size: clamp(0.9rem, 1.5vw, 1.3rem);
 }
 .item.sm .name {
   display: -webkit-box;
@@ -570,7 +574,6 @@ img {
   .items {
     margin: 0 20px;
   }
-
   .item.sm .name {
     margin: 0 20px 15px 0;
   }
@@ -607,7 +610,6 @@ img {
   .name {
     margin: 0 10px 15px 0;
   }
-
   .item.sm {
     padding: 15px;
   }
@@ -643,12 +645,10 @@ img {
     margin: 0 0 5px;
     font-size: 0.9rem;
   }
-
   .cupn_ticket {
     width: 130px;
     height: 55px;
   }
-
   .cupn_price {
     font-size: 1.1rem;
   }
@@ -660,7 +660,6 @@ img {
   .item {
     padding: 10px;
   }
-
   .item.sm {
     padding: 10px;
   }
@@ -673,12 +672,10 @@ img {
     width: 18px;
     height: auto;
   }
-
   .summary {
     line-clamp: 2;
     -webkit-line-clamp: 2;
   }
-
   .item.sm .dis_af {
     font-size: 0.75rem;
   }
@@ -700,19 +697,16 @@ img {
     margin: 0 0 5px;
     font-size: 0.7rem;
   }
-
   .cupn_ticket {
     width: 100px;
     height: 42px;
   }
-
   .cupn_price {
     font-size: 0.9rem;
   }
   .cupn_price::first-letter {
     font-size: 0.7rem;
   }
-
   .item.sm .cupn {
     margin: 0;
   }
@@ -727,7 +721,6 @@ img {
   .dis img {
     width: 15px;
   }
-
   .item.sm .dis img {
     width: 10px;
   }
@@ -739,7 +732,6 @@ img {
   .logo img {
     margin: 0 auto;
   }
-
   .title {
     padding: 0 0 10px;
   }
@@ -748,11 +740,9 @@ img {
   .title {
     font-size: 2.5rem;
   }
-
   .items {
     margin: 0 20px;
   }
-
   .item_head {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -775,21 +765,17 @@ img {
     width: 170px;
     height: 65px;
   }
-
   .summary {
     line-clamp: 2;
     -webkit-line-clamp: 2;
   }
-
   .item.sm {
     width: 100%;
     margin: 0 0 20px;
   }
-
   .cupn_dur {
     margin: 0 0 -2px;
   }
-
   .btn-imd {
     width: 100%;
   }
@@ -801,11 +787,9 @@ img {
   .saletime p {
     display: inline;
   }
-
   .name {
     margin: 0 15px 15px 0;
   }
-
   .item.sm .name {
     margin: 0 15px 15px 0;
   }
@@ -823,7 +807,6 @@ img {
   .item {
     padding: 10px;
   }
-
   .item_head .name_block {
     margin: 0 10px 10px 0;
   }
@@ -834,29 +817,24 @@ img {
   .item_head .cupn_price {
     font-size: 1.2rem;
   }
-
   .cupn_t {
     margin: 0 0 5px;
     font-size: 0.7rem;
   }
-
   .cupn_ticket {
     width: 110px;
     height: 52px;
   }
-
   .cupn_price {
     font-size: 1.2rem;
   }
   .cupn_price::first-letter {
     font-size: 0.7rem;
   }
-
   .dis img {
     width: 18px;
     height: auto;
   }
-
   .item.sm {
     padding: 10px;
   }
@@ -891,24 +869,20 @@ img {
   .title {
     font-size: 1.5rem;
   }
-
   .cupn_ticket {
     width: 100px;
     height: 42px;
   }
-
   .cupn_price {
     font-size: 1rem;
   }
   .cupn_price::first-letter {
     font-size: 0.7rem;
   }
-
   .dis img {
     width: 15px;
     height: auto;
   }
-
   .item.sm .info {
     margin: 0 0 0 5px;
   }
@@ -936,11 +910,9 @@ img {
     width: 12px;
     height: auto;
   }
-
   .nor {
     margin: 0 0 -5px;
   }
-
   .item.sm .name {
     font-size: 0.8rem;
   }
