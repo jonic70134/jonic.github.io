@@ -63,28 +63,28 @@
         max-height: 340px;
     }
 }
-.faded{
-    position: relative;
-    &::after{
-        content: "";
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-collapse: separate;
-        box-shadow:inset 0 0 40px 16px
-    }
-}
-.mask{
-    mask-size:300px 300px;
-    mask-composite: source-in;  
-    mask: 
-        linear-gradient(to top,  transparent 0%, #fff 8% 85%, transparent 100%),
-        linear-gradient(to left, transparent 0%, #fff 8% 85%, transparent 100%);
-    mask-size:  300px 300px;
-}
+// .faded{
+//     position: relative;
+//     &::after{
+//         content: "";
+//         position: absolute;
+//         display: block;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         border-collapse: separate;
+//         box-shadow:inset 0 0 40px 16px
+//     }
+// }
+// .mask{
+//     mask-size:300px 300px;
+//     mask-composite: source-in;  
+//     mask: 
+//         linear-gradient(to top,  transparent 0%, #fff 8% 85%, transparent 100%),
+//         linear-gradient(to left, transparent 0%, #fff 8% 85%, transparent 100%);
+//     mask-size:  300px 300px;
+// }
 .pay_dis{
     display:flex;
     flex-flow:column nowrap;
