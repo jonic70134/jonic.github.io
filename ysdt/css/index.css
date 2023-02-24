@@ -2329,6 +2329,18 @@ button.swiper-pagination-bullet {
   max-height: 340px;
 }
 
+.mask {
+  -webkit-mask-size: 300px 300px;
+          mask-size: 300px 300px;
+  -webkit-mask-composite: source-in;
+          mask-composite: source-in;
+  -webkit-mask: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(8%, #fff), to(transparent)), -webkit-gradient(linear, right top, left top, from(transparent), color-stop(8%, #fff), to(transparent));
+  -webkit-mask: linear-gradient(to top, transparent 0%, #fff 8% 85%, transparent 100%), linear-gradient(to left, transparent 0%, #fff 8% 85%, transparent 100%);
+          mask: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(8%, #fff), to(transparent)), -webkit-gradient(linear, right top, left top, from(transparent), color-stop(8%, #fff), to(transparent));
+          mask: linear-gradient(to top, transparent 0%, #fff 8% 85%, transparent 100%), linear-gradient(to left, transparent 0%, #fff 8% 85%, transparent 100%);
+  mask-size: 300px 300px;
+}
+
 .pay_dis {
   display: -webkit-box;
   display: -ms-flexbox;
