@@ -1,0 +1,26 @@
+//menu: filter
+.modify-filter {
+	padding: 0;
+	background: none !important;
+	.btn-submit, .btn-cancel {
+		font-size: 1em;
+		padding: 3px 10px;
+		@include btn-color($main-red-color);
+	}
+	.btn-submit {
+		margin-left: 10px;
+	}
+	.btn-cancel {
+		@include btn-color(darken($main-grey-color,20));
+	}
+}
+.filter-infr {
+	margin-top: 20px;
+	padding: 15px;
+	background: lighten($main-lighten-color,8);
+	@include border-radius(3px);
+	.title {
+		color: darken($main-grey-color,30);
+		margin-bottom: 10px;
+	}
+}

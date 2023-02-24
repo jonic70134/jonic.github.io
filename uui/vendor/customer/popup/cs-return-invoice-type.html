@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox vendor</title>
+<link href="/css/plugin/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/css/customer.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="/js/lib/html5.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ie.css">
+<![endif]--></head>
+<body>
+<div class="cs-popup-content">
+  <h1 class="title"><i class="fa fa-ticket"></i>憑證類型</h1>
+  <dl class="form-element invoice-form check-group">
+  	<dd>請選擇憑證類型</dd>
+    <dd><label for="typeInvoice"><input type="radio" id="typeInvoice" name="invoiceType">發票</label></dd>
+    <dd><label for="typeDebitnote"><input type="radio" id="typeDebitnote" name="invoiceType">折讓單</label></dd>
+  </dl>
+  <div class="cs-button">
+    <button class="btn-cancel" onclick="parent.$.fancybox.close();"><i class="fa fa-times"></i>取消</button>
+    <button class="btn-submit"><i class="fa fa-check"></i>確認送出</button>
+  </div>
+</div><script src="/js/lib/jquery-1.9.1.js" ></script>
+<script src="/js/lib/bootstrap-dropdown.js"></script>
+<script src="/js/nav-action.js"></script>
+<script src="/js/customer-action.js"></script>
+<script src="/js/update-fancybox.js"></script>
+<script>
+(function($){
+	$('.cs-button .btn-submit').click(function() {
+		if($('#typeInvoice').prop('checked')) {
+      		reOpenPopup(400,'/customer/popup/cs-return-invoice-confirm.html');
+		}
+		else if ($('#typeDebitnote').prop('checked')) {
+			reOpenPopup(1000,'/customer/popup/cs-return-debitnote.html');
+		}
+		else {
+			alert('請選擇憑證類型');
+		}
+	});
+})(jQuery);
+</script>
+</body>
+</html>

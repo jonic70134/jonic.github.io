@@ -1,0 +1,113 @@
+//additional purchase
+.md-additional {
+	.md-addition-products {
+		padding: 20px 15px; 
+		& > dd { 
+			width: 130px;
+			margin: 20px; 
+			line-height: $font-small-line-height; 
+			vertical-align: top; 
+			overflow: hidden; 
+			display: inline-block; 
+			position: relative;
+			@extend .clearfix;
+			@include RWD(desktop) {
+				margin: 20px 10px;
+				display: none;
+				&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+					display: inline-block;
+				}
+			}
+			@include RWD(pad) {
+				width: 45%;
+			}
+			@include RWD(mobile) {
+				width: 100%;
+				height: auto;
+				margin: 10px 0;
+				&:nth-child(4), &:nth-child(5), &:nth-child(6) {
+					display: none;
+				}
+			}
+			&.is-imported {
+				&:before {
+					content: attr(data-imported);
+					width: 130px;
+					height: 20px;
+					left: 0;
+					top: 110px;
+					color: #fff;
+					font-size: 0.9em;
+					text-align: center;
+					@include text-shadow(rgba(black,0.2) -1px -1px);
+					background: mix($c-green,$c-yellow,60);
+					@include box-shadow(rgba(black,0.2) 0 -1px 2px);
+					position: absolute;
+				}
+			}
+			.img-product {
+				width: 130px;
+				height: 130px;
+				@include RWD(pad) {
+					margin-right: 10px;
+					float: left;
+				}
+			}
+			.md-content {
+				@include RWD(pad) {
+					margin-left: 140px;
+				}
+			}
+			.t-name {
+				height: 40px;
+				margin-top: 5px;
+				overflow: hidden;
+				display: block;
+				@include RWD(desktop) {
+					height: auto;
+				}
+			}
+			.t-price { 
+				color: lighten($font-color,40);
+				margin-top: 5px; 
+				.t-sale-price { 
+					color: #f00; 
+					font-weight: bold; 
+					margin-right: 5px; 
+				}
+				.t-origin-price { 
+					text-decoration: line-through; 
+				}
+			}
+			select {
+				width: 130px;
+				margin: 5px 0;
+				@include RWD(pad) {
+					width: 100%;
+				}
+			}
+			.btn-buy {
+				color: #fff;
+				font-size: 1.1em;
+				@include btn-color($sub-color,4);
+				margin-top: 5px;
+				@include opacity(0);
+				&.is-disabled { 
+					color: darken($main-grey,20);
+					background: lighten($main-grey,5);
+					@include box-shadow(none);
+					@include opacity(1);
+				}
+				@include RWD(desktop) {
+					@include opacity(1);
+				}
+				@include RWD(pad) {
+					width: 100%;
+				}
+			}
+			&:hover .btn-buy {
+				@include opacity(1);
+			}
+		}
+	}
+}

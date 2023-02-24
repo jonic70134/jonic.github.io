@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+        <link href="../css/buy.css" rel="stylesheet" type="text/css">
+        <link href="../css/tinybox_style.css" rel="stylesheet" type="text/css">
+        <link href="../css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/tinybox.js"></script>
+        <script type="text/javascript" src="../js/jquery.selectboxes.js"></script>
+        <script type="text/javascript" src="../js/jquery.blockUI.js"></script>
+        <script type="text/javascript" src="../js/buy_list.js"></script>
+        <script type="text/javascript" src="../js/buy_list_add.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="../js/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="../js/jquery.livequery.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.lazyload.min.js"></script>
+        <style type="text/css">
+            body{ overflow: scroll; _overflow:auto; *overflow:auto !important }
+        </style>
+    </head>
+    <body cz-shortcut-listen="true">
+        <div id="sgbuy_weap">
+            <div id="sgbuy_header">
+                <a href="#"><img src="../img/1418123335_AWC000164.jpg"></a>&nbsp;
+                <span class="backlink pattop"><a href="#">Back to US</a></span>
+            </div><!-- header -->
+            <div id="sgbuy_content" class="pricelist">
+                <p class="text16 sgShopCart">Your Shopping Cart</p>
+                <div id="youritem" class="tablist clearfix">
+                    <div class="listr title clearfix">
+                        <div class="column1">Your Items</div>
+                        <div class="column2">Qty</div>
+                        <div class="column3">Unit Price</div>
+                        <div class="column4">Subtotal</div>
+                        <div class="column5">&nbsp;</div>
+                    </div><!-- title -->
+                    <hr class="listline">
+                    <!-- Product List Region -->
+                    <div id="set_list">
+                        <div class="listr center clearfix">
+                            <div class="column1 undefined">
+                                <span class="tag-status is-odd">大材積</span>
+                                <a href="#" target="_blank">us-大材積01</a>
+                                <span class="tag-status is-vendor-delivery">廠商直送</span><span class="tag-status is-uitox-delivery">uitox運送</span><span class="tag-status is-separate-delivery">分開到貨</span><span class="tag-status is-imported">日本直送</span>
+                                <p class="colff0"></p>
+                            </div>
+                            <div class="column2 undefined">
+                                <input type="button" class="shopcut" value="-">
+                                <input type="text" class="shoinput" value="1">
+                                <input type="button" class="shopsuh" value="+">
+                            </div>
+                            <div class="column3 undefined">US$50.00</div>
+                            <div class="column4 undefined">US$50.00</div>
+                            <div class="column5">
+                                <input type="button" class="submit" name="cancel" value="Remove">
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="totalline">
+
+                    <!-- Activity Region -->
+                    <div id="act_list"></div>
+
+                    <!-- Fee Region -->
+                    <div id="fee_list" class="listr center clearfix">
+                        <div id="fee_list_name" class="column1">日本處理費 (配送到府) <span class="go-tip">說明<span class="md-tip">處理費包含配送到府運費及商品關稅</span></span></div>
+                        <div class="column2"></div>
+                        <div class="column3"></div>
+                        <div class="column4">US$<span id="fee_list_val"></span></div>
+                        <div class="column5"></div>
+                    </div>
+
+                    <!-- Shopping Gold Region -->
+                    <div id="point" class="listr center clearfix">
+                        <div class="column1">
+                            <label for="checkbox_bonus1">
+                                <input name="checkbox_bonus1" type="checkbox" class="goldcheck">
+                                <span class="itemname">Use Shopping Credits US$<span name="point_title_val">6</span></span>
+                            </label>
+                        </div>
+                        <div class="column2">&nbsp;</div>
+                        <div class="column3">&nbsp;</div>
+                        <div class="column4"><span name="currency_sign">- US$</span><span name="point_val">5</span></div>
+                        <div class="column5">&nbsp;</div>
+                    </div>
+
+                    <!-- Shopping Gold2 Region -->
+                    <div id="point2" class="listr center clearfix hide">
+                        <div class="column1">
+                            <label for="checkbox_bonus2">
+                                <input name="checkbox_bonus2" type="checkbox" class="goldcheck">
+                                <span class="itemname">Use Voucher US$<span name="point2_title_val">6</span></span>
+                            </label>
+                        </div>
+                        <div class="column2">&nbsp;</div>
+                        <div class="column3">&nbsp;</div>
+                        <div class="column4"><span name="currency_sign2">- US$</span><span name="point2_val">3</span></div>
+                        <div class="column5">&nbsp;</div>
+                    </div>
+
+                    <div class="listr center clearfix">
+                        <div class="columnfee"><div class="goldtxt"><span class="text12 colff0"></span></div></div>
+                        <div class="column4_2"><span class="totaltxt">Total</span><span class="colred">US$ </span><span id="total_price" class="text16 colred">50.00</span></div>
+                        <div class="column5">&nbsp;</div>
+                    </div>
+
+                    <div id="act_conform"></div>
+
+                </div>
+                <div id="btn_block" class="">
+                    <div class="text13 marbtm8 clearfix" align="center">
+                        <a class="col66cc" href="#"><u>Continue Shopping</u></a>
+                    </div>
+                    <div class="lineblock" id="pay_1"></div>
+                    <div class="lineblock" id="pay_2"></div>
+                    <div class="lineblock" id="pay_3"></div>
+                    <div class="lineblock" id="pay_4"></div>
+                    <div class="lineblock" id="pay_5"></div>
+                    <div class="lineblock" id="pay_6"></div>
+                    <div class="lineblock" id="pay_7"></div>
+                    <div class="lineblock" id="pay_14"></div>
+                    <div class="lineblock" id="pay_17"></div>
+                        <input type="submit" name="sendbtn" id="btn_17" value="Credit Card/Paypal" class="submit2">
+                    </div>
+                    <div class="lineblock" id="pay_18"></div>
+                    <div class="lineblock"></div>
+                </div>
+                <div id="deliver_explain_block" class="hide deliver_explain"></div>
+                <div class="sg_pankimg">
+                    <img src="../img/img_credit_vbv.gif" border="0" class="img1"> 
+                    <img src="../img/img_credit_mcsc.gif" border="0"> 
+                </div>
+
+                <!-- 購物車加購 -->
+                <div id="additional" class="additional-purchase" style="">
+                    <dl class="tabs">
+                        <dd class="active">Add-on below products with discount price</dd>
+                    </dl>
+                    <dl id="prod_list" class="prod-lists">
+                        <dd itemscope="" itemtype="http://data-vocabulary.org/Product" class="clearfix">
+                            <a itemprop="offerURL" href="javascript:void(0)" title="Become Prettier(賣場名稱)"><img id="cartadd_photo_0" class="lazy" itemprop="image" data-original="#" src="../img/201411AM140000064_141595752085019_80x80.jpg" width="60" height="60" alt="Become Prettier(賣場名稱)" style="display: block;">
+                            </a>
+                            <div class="prod-content">
+                                <a itemprop="offerURL" href="javascript:void(0)" title="Become Prettier(賣場名稱)">
+                                    <span itemprop="name" class="sale-name">Become Prettier(賣場名稱)</span>
+                                </a>
+                                <p class="price">
+                                    <span itemprop="lowPrice" class="sale-price"><b itemprop="currency">$</b>5.00</span>
+                                    <span itemprop="highPrice" class="origin-price"><b itemprop="currency">$</b>19.95</span>
+                                </p>
+                                <button id="cartadd_url_0" class="btn-buy" onmouseover="eneter=false">Add to Cart</button>
+                                <p id="button_msg0" class="sold-out" style="display:none">-Out of Stock</p>
+                            </div>
+                        </dd>
+                        <dd itemscope="" itemtype="http://data-vocabulary.org/Product" class="clearfix">
+                            <a itemprop="offerURL" href="javascript:void(0)" title="AW000126 購物車加購品001(無回收稅)_20141017 - 藍色">
+                                <img id="cartadd_photo_1" class="lazy" itemprop="image" data-original="#" src="../img/201410AM200000003_141377198383749_80x80.jpg" width="60" height="60" alt="AW000126 購物車加購品001(無回收稅)_20141017 - 藍色" style="display: block;">
+                            </a>
+                            <div class="prod-content">
+                                <a itemprop="offerURL" href="javascript:void(0)" title="AW000126 購物車加購品001(無回收稅)_20141017 - 藍色">
+                                    <span itemprop="name" class="sale-name">AW000126 購物車加購品001(無回收稅)_20141017 - 藍色</span>
+                                </a>
+                                <p class="price">
+                                    <span itemprop="lowPrice" class="sale-price"><b itemprop="currency">$</b>180.00</span>
+                                    <span itemprop="highPrice" class="origin-price"><b itemprop="currency">$</b>200.00</span>
+                                </p>
+                                <button id="cartadd_url_1" class="btn-buy" onmouseover="eneter=false" style="display:none">Add to Cart</button>
+                                <p id="button_msg1" class="sold-out">-Out of Stock</p>
+                            </div>
+                        </dd>
+                        <dd itemscope="" itemtype="http://data-vocabulary.org/Product" class="clearfix">
+                            <a itemprop="offerURL" href="javascript:void(0)" title="AW000126 購物車加購品002(5元回收稅)_多顏多尺_20141017">
+                                <img id="cartadd_photo_2" class="lazy" itemprop="image" data-original="#" src="../img/201410AM200000007_141377204037033_80x80.jpg" width="60" height="60" alt="AW000126 購物車加購品002(5元回收稅)_多顏多尺_20141017" style="display: block;">
+                            </a>
+                            <div class="prod-content">
+                                <a itemprop="offerURL" href="javascript:void(0)" title="AW000126 購物車加購品002(5元回收稅)_多顏多尺_20141017">
+                                <span itemprop="name" class="sale-name">AW000126 購物車加購品002(5元回收稅)_多顏多尺_20141017</span>
+                                </a>
+                                <p class="price">
+                                    <span itemprop="lowPrice" class="sale-price"><b itemprop="currency">$</b>299.98</span>
+                                    <span itemprop="highPrice" class="origin-price"><b itemprop="currency">$</b>300.00</span>
+                                </p>
+                                <select id="cartadd2" style="max-width: 120px;">
+                                    <option value="0">Select</option>
+                                    <option value="2">橘色-A</option>
+                                    <option value="2">橘色-B</option>
+                                    <option value="2">藍色-C</option>
+                                    <option value="2">藍色-D</option>
+                                </select>
+                                <button id="cartadd_url_2" class="btn-buy">Add to Cart</button>
+                                <p id="button_msg2" class="sold-out" style="display:none">-Out of Stock</p></div>
+                            </dd>
+                        </dl>
+                </div>
+            </div><!-- sgbuy_content -->
+
+<div id="sgbuy_footer">
+    <div class="foterleft">  </div>
+    <div class="foterright">
+    	<span class="col666">© 2014 <a href="#" target="_blank" class="col66bb">Privacy Policy</a> and Terms of use ©AsusTek Computer Inc. All rights reserved.</span> 
+        <a href="#" target="_blank" class="col66bb"></a>
+    </div>
+</div>
+</div>
+</body>
+</html>

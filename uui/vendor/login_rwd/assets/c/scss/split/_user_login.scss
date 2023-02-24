@@ -1,0 +1,43 @@
+//login
+.md-login {
+	padding: 20px;
+	@include RWD(mobile){
+		padding: 10px;
+		border-width: 0;
+	}
+}
+.t-description {
+	color: lighten($font-color,40);
+	text-align: center;
+	margin: 10px 0;
+	&.align-left {
+		text-align: left;
+	}
+	&.t-highlight {
+		color: $c-red;
+	}
+}
+.t-forgot-pwd {
+	&:before {
+		margin-right: 3px;
+		@include icon-font("\f059");
+	}
+}
+.input-verify {
+	display: none;
+}
+.btn-mobile-verify {
+	padding-top: 9px;
+	padding-bottom: 10px;
+	@include RWD(mobile) {
+		padding: 7px 10px;
+	}
+}
+.page-comment {
+	color: lighten($font-color,40);
+	line-height: 1.6;
+	margin: 10px;
+	@include RWD(mobile){
+		margin: 10px 0;
+	}
+}

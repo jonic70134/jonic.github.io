@@ -1,0 +1,67 @@
+//theme color
+$bg_file:         "../../../../../../c/img/sth_adi/asus_icon.png";
+$bg_file_hpd:     "../../../../../../c/img/sth_adi/asus_icon_retina.png";
+
+//主題色
+$primary:			#00a8ff;
+$button:			$primary;
+$button_text:		white;
+
+$text:				#5a5a5a;
+$text_hover:		#90c8f2;
+$link:				black;
+$border:			$light_gray;
+$price:				#dc2020;
+$price2:			#000000;
+$hover_text:		black;
+$hover_bk:			#FAFAFA;
+$active_text:		white;
+$active_bk:			$primary;
+$disabled:			gray;
+$background:		white;
+$title_h3:			black;
+$icon_color:		black;
+
+//header
+$header_border:		#efefef;
+$header_bk:			white;
+$nav_bk:			white;
+$nav_border:        $light_gray;
+$nav_text: 			#6b6b6b;
+
+// component
+$current:           #d00;
+
+//item
+$item_hover:		#b3e5fe;
+$item_name:			black;
+
+//footer
+$footer_bk:			#F5F5F5;
+$footer_title:		#474747;
+$footer_link:		#6c6c6c;
+$footer_hover:		$primary;
+
+//form
+$input_text:		black;
+$input_bk:			white;
+$input_border:		$border;
+
+//site-search
+$search_bk:			white;
+$search_text:		#555;
+$search_border:		$border;
+$search_btn:		$border;
+$recommend_link:	black;
+$ui_menu_border:	#ccc;
+$ui_menu_bk:		#f7f7f7;
+
+//site-cart
+$count_bg:          $primary;
+$count:				white;
+$cart_bk:			white;
+
+//aside
+$aside_title:       #504f47;
+$aside_title2:      $primary;
+$aside_bg:      	#F7F7F7;

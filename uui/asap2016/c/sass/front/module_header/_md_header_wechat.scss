@@ -1,0 +1,186 @@
+.site-body {
+    padding-top: 90px;
+}
+.site-header {
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid #fff;
+    background: rgba(white, 0.9);
+    @include box-shadow(rgba(black,0.3) 0 5px 20px);
+    @include transition(all 0.25s ease-in-out);
+    position: fixed;
+    z-index: 100;
+    &.is-hide {
+        @include box-shadow(none);
+        @include transform(translateY(-100%));
+    }
+    .container {
+        text-align: center;
+        padding: 9px 0;
+    }
+    .logo {
+        display: inline-block;
+        font-size: 0;
+        margin: 3px 10px 0 0;
+        .img-logo {
+            max-width: 140px;
+            max-height: 30px;
+            vertical-align: middle;
+        }
+        h1 {
+            display: none;
+        }
+    }
+    .btn-menu {
+        top: 13px;
+        left: 13px;
+        padding: 0;
+        font-size: 1.55rem;
+        cursor: pointer;
+        position: absolute;
+    }
+    .btn-cart, .btn-user {
+        display: inline-block;
+        position: absolute;
+        top: 6px;
+        padding: 6px 12px;
+        cursor: pointer;
+        font-size: 1.6rem;
+    }
+    .btn-cart {
+        right: 0;
+    }
+    .btn-user {
+        right: 40px;
+    }
+    .fa-bars, .fa-shopping-cart, .fa-user {
+        color: $text;
+    }
+    .fa-bars span{
+        font-size: 0.7em;
+        vertical-align: 4px;
+        margin-left: 4px;
+        color: black;
+    }
+    .fa-shopping-cart {
+        &.is-animate {
+            -webkit-animation: animate-rubberBand 1s ease;
+            -moz-animation: animate-rubberBand 1s ease;
+            -ms-animation: animate-rubberBand 1s ease;
+            -o-animation: animate-rubberBand 1s ease;
+            animation: animate-rubberBand 1s ease;
+        }
+    }
+    .number {
+        position: absolute;
+        right: 7px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        background: $primary;
+        color: #fff;
+        font-size: 0.85rem;
+        line-height: 1.4;
+        text-align: center;
+        @include border-radius(50%);
+        &.is-animate {
+            -webkit-animation: animate-pulse 1s ease;
+            -moz-animation: animate-pulse 1s ease;
+            -ms-animation: animate-pulse 1s ease;
+            -o-animation: animate-pulse 1s ease;
+            animation: animate-pulse 1s ease;
+        }
+    }
+    .md_nav_menu_collapse{
+        position: absolute;
+        top: 53px;
+        left:-100px;
+        width: 0;
+        @include box-shadow(1px 5px 20px #999);
+        background-color: white;
+        &.active{
+            -webkit-transition: 250ms all;   
+            transition: 250ms all;
+            width: 80%;
+            left: 0;
+        }
+        .md_nav_menu{
+            overflow: auto;
+            max-height: 480px;
+        }
+    }
+
+}
+.search-bar {
+    width: 100%;
+    position: relative;
+    padding: 0px 12px;
+    margin: 8px 0 2px;
+    .input-search {
+        width: 100%;
+        padding: 5px 15px;
+        padding-right: 40px;
+        font-size: 0.95rem;
+        color: darken($text,20);
+        background: rgba(lighten($text,45),0.8);
+        border: none;
+        @include border-radius(25px);
+        @include box-shadow(rgba(black,0.1) 0 0 10px inset);
+    }
+    @include placeholder {
+        color: lighten($text,25);
+        opacity: 1;
+    }
+    .btn-submit {
+        font-size: 1.2rem;
+        color: lighten($text,20);
+        position: absolute;
+        right: 20px;
+        top: -1px;
+        padding: 3px 5px;
+        background: none;
+    }
+}
+//number animate
+@mixin animate-pulse {
+    0%, 75% {transform: scale(0);}
+    87% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+}
+@-webkit-keyframes animate-pulse {
+    @include animate-pulse;
+}
+@-moz-keyframes animate-pulse {
+    @include animate-pulse;
+}
+@-ms-keyframes animate-pulse {
+    @include animate-pulse;
+}
+@-o-keyframes animate-pulse {
+    @include animate-pulse;
+}
+@keyframes animate-pulse {
+    @include animate-pulse;
+}
+//cart animate
+@mixin animate-rubberBand {
+    0%, 50%, 100% {transform: scale3d(1, 1, 1);}
+    75% {transform: scale3d(1.25, 0.75, 1);}
+    87% {transform: scale3d(0.75, 1.25, 1);}
+}
+@-webkit-keyframes animate-rubberBand {
+    @include animate-rubberBand;
+}
+@-moz-keyframes animate-rubberBand {
+    @include animate-rubberBand;
+}
+@-ms-keyframes animate-rubberBand {
+    @include animate-rubberBand;
+}
+@-o-keyframes animate-rubberBand {
+    @include animate-rubberBand;
+}
+@keyframes animate-rubberBand {
+    @include animate-rubberBand;
+}

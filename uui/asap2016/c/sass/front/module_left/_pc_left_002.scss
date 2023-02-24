@@ -1,0 +1,141 @@
+.pc_left_002{
+	//margin-top: 15px;
+	margin-bottom: 10px;
+	.index{
+		background: $aside_title;
+		padding: 10px;
+		display: block;
+		color: white;
+	}
+	.trans-btn{
+		background: #013da4;
+		padding: 11px 10px 8px 32px;
+		display: block;
+		color: white;
+		border-top: 1px solid $border;
+		vertical-align: middle;
+		position: relative;
+		font-size: 15px;
+		.trans-icon{
+			width: 15px;
+			position: absolute;
+			top: 11px;
+			left: 10px;
+		}
+		&:hover{
+			background: #002767;
+		}
+	}	
+	.title-h3{
+		background: white;
+		// border-top: 1px solid $border;
+		color: white;
+		font-size: 13px;
+		// font-weight: bold;
+		margin: 0;
+		padding: 0;
+		line-height: 26px;
+		word-break: break-word;
+		word-wrap: break-word;
+		position: relative;
+		a{
+			color: $link;
+			background: $background2;
+			display: block;
+			text-align: center;		
+			&:hover{
+				color: $primary;
+			}
+		}
+	}
+	.title-h3-active{
+		a{
+			color:  white;
+			background: $aside_title2;
+		}
+	}
+	.fa{
+		margin-right: 6px;
+	}
+	.side-menu{
+		border: 1px solid $border;
+		border-top: none;
+		font-size: 13px;
+		line-height: 140%;		
+		li:first-child{
+			h4{
+				border-top: 1px solid $border;
+			}			
+		}
+		h4 {
+			border-bottom: 1px dotted #eee;
+			background: white;
+			// cursor: pointer;
+			font-size: 13px;
+			// font-weight: bold;
+			overflow: hidden;
+			padding: 10px 0 10px 8px;
+			@include clearfix;
+			//@include one-line;
+			.fa {
+				float: left;
+				// display: block;
+				display: none;
+				margin-top: 1px;			
+			}
+			a {
+				float: left;
+				display: block;
+				width: 150px;
+				color: $link;
+				margin-top: -2px;
+			}
+		}
+		a{
+			color: $link;
+			// display: block;
+			overflow: hidden;	
+  			//text-overflow : ellipsis;
+  			//white-space : nowrap;
+  			// width: 153px;
+  			// line-height: 1.4;
+  			// max-height: 40px;
+  			&:hover{
+				color: $hover_text;
+			}
+		}
+		.sec-menu {
+			li {
+				border-bottom: 1px dotted #eee;
+				font-size: 13px;
+			}
+			a {
+				display: block;
+				color: #888;
+				padding: 10px 0 10px 23px;
+				&:hover {
+					background-color: #faeaed;
+					color: $hover_text;
+				}
+			}
+			.active{
+				color: $active_bk;
+				font-weight: bold;
+			}
+		}
+		> li {
+			&:last-child {
+				.sec-menu {
+					border-bottom: 0;	
+				}
+			}			
+		}
+	}
+	// .market-link{
+	// 	display: inline-block!important;
+	// 	margin-bottom: -10px;
+	// 	&:hover{
+	// 		color: $hover_text;
+	// 	}
+	// }
+}

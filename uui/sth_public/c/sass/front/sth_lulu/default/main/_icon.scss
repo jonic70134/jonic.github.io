@@ -1,0 +1,33 @@
+.icon-sale{
+	@include background2(37px, 37px, 0px, 0px, 0px, -2px);
+}
+.icon-hb{
+	@include background2(37px, 37px, -37px, 0px, 0px, -2px);
+}
+.icon-clutch{
+	@include background2(37px, 37px, -74px, 0px, 0px, -2px);
+}
+.icon-pur{
+	@include background2(37px, 37px, -111px, 0px, 0px, -2px);
+}
+.icon-lug{
+	@include background2(37px, 37px, -148px, 0px, 0px, -2px);
+}
+.icon-acc{
+	@include background2(37px, 37px, -185px, 0px, 0px, -2px);
+}
+.icon-coll{
+	@include background2(37px, 37px, -222px, 0px, 0px, -2px);
+}
+.icon-cart{
+	@include background2(37px, 31px, -263px, 0px, 0px, 0px);
+}
+.icon-menu{
+	@include background2(37px, 37px, -297px, 0px, 0px, 0px);
+}
+//[class^="icon-"]:before,
+[class*="icon-"]:before{
+	content: "";
+	position: relative;
+	@include inline-block;
+}

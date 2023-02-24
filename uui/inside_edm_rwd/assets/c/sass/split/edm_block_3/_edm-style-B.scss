@@ -1,0 +1,181 @@
+	.item-B{
+    	display: block;
+		width: 100%;
+	    text-align: center;
+		padding: 5px 0 0;
+		background-color: #f8efe1;
+		li{
+			width: 20%;
+    		float: left;
+			margin: 0;
+			padding: 5px 0 0;
+			vertical-align: top;
+			a{
+				display: block;
+			}
+		}
+		.top-left{
+			position: absolute;
+			top: 6px;
+			left: 6px;
+		}
+		.top-right{
+			position: absolute;
+			top: 6px;
+			right: 6px;
+		}
+		.bottom-left{
+			position: absolute;
+			bottom: 6px;
+			left: 6px;
+		}
+		.bottom-right{
+			position: absolute;
+			bottom: 6px;
+			right: 6px;
+		}
+		.photo-block{
+			position: relative;
+			display: block;
+			width: 215px;
+			height: 215px;
+			font-size: 0;
+			margin: 0 auto;
+			border: #dae0e5 1px solid;
+			background: #FFF;
+			.photo{
+			    display: block;
+			    width: 100%;
+			    height: 0;
+			    overflow: hidden;
+			    padding-top: 100%;
+			    position: relative;
+			}
+			img{
+				position: absolute;
+			    left: 0;
+			    top: 0;
+			    bottom: 0;
+			    right: 0;
+			    margin: auto;
+			    max-width: 100%;
+			    max-height: 100%;
+			}
+			.info-photo{
+				width: 86px;
+				height: 86px;
+				background-image: url("../img/edm_block_3/edm-style-B/circle_mark.png");
+				background-repeat: no-repeat;
+			    background-position: center;
+			    background-size: contain;
+				p{
+					font-size: 16px;
+				    line-height: 130%;
+					color: #404040;
+				    text-align: center;
+				    padding: 23px 10px 19px 13px;
+				    font-family: "微軟正黑體";
+				}
+			}
+		}
+		.info-block{
+			display: block;
+			width: 100%;
+			padding: 10px 0 0;
+		}
+		.info-txt{
+			margin: 0;
+			h3{
+				display: block;
+			    width: 215px;
+			    height: 35px;
+			    overflow: hidden;
+			    color: #000;
+			    font-size: 13px;
+			    line-height: 18px;
+			    margin: 0 auto 8px;
+			    text-align: center;
+			}
+		}
+		.price-block{
+			background: #e1d5c1;
+			padding: 8px 0 10px;
+			del{
+			    display: none;
+		    	text-align: left;
+			    padding: 4px 1px 6px 0;
+		        font-size: 12px;
+			    color: #6c6c6c;
+			    height: auto;
+			    span{
+			    	float: left;
+			    	max-width: 55px;
+		    	 	overflow: hidden;
+			    }
+			    &:after {   
+					content: ".";   
+					display: block; 
+					height: 0;  visibility: hidden; clear: both; 
+				}
+			}
+			p{
+			    display: block;
+				color: #FFF;
+				padding: 0 18px 4px;
+				text-align: center;
+				color: #a40000;
+				.currency{
+					display: inline-block;
+					position: relative;
+			        bottom: 3px;
+    				right: 3px;
+				    vertical-align: bottom;
+				}
+				.price{
+					display: inline-block;
+			    	max-width: 176px;
+		    	 	overflow: hidden;
+					font-size: 32px;
+				    position: relative;
+    				top: 0;
+				    vertical-align: bottom;
+				}
+				&:after {   
+					content: ".";   
+					display: block; 
+					height: 0;  visibility: hidden; clear: both; 
+				}
+			}
+			.currency{
+				font-size: 12px;
+			}
+		}
+		.item-btn{
+			display: block;
+    		width: 217px;
+		    height: 37px;
+		    margin: 0 auto;
+			background: #222222;
+			font-size: 15px;
+			color: #e1d5c1;
+			letter-spacing: 1px;
+		    cursor: pointer;
+		    border: none;
+		}
+		&:after {   
+			content: ".";   
+			display: block; 
+			height: 0;  visibility: hidden; clear: both; 
+		}
+	}
+
+/* IE6 */
+* html 
+	.item-B {
+  		height: 1%;
+  	}
+/* IE7 */ 
+*:first-child+html 
+	.item-B { 
+		min-height: 1px;
+	}

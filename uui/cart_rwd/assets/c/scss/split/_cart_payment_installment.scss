@@ -1,0 +1,48 @@
+//payment: installment
+.md-installment {
+	dd {
+		font-size: 1.1em;
+		@extend .clearfix;
+		@include RWD(desktop) {
+			font-size: 1em;
+		}
+		.t-type {
+			width: 200px;
+			vertical-align: top;
+			float: left;
+			@include RWD(pad){
+				width: auto;
+				float: none;
+			}
+		}
+		.go-bank {
+			@extend .t-comment;
+			color: lighten($font-color,60);
+			top: 9px;
+			right: 0;
+			position: absolute;
+			display: none;
+			&:before {
+				margin-right: 3px;
+				@include icon-font("\f059");
+			}
+			@include RWD(pad){
+				display: inline-block;
+			}
+		}
+		.t-bank {
+			color: #888;
+			font-size: 0.85em;
+			margin-left: 210px;
+			@include RWD(pad){
+				line-height: $font-small-line-height;
+				max-height: 0;
+				margin: 0;
+				overflow: hidden;
+				&.is-expand {
+					max-height: 10000px;
+				}
+			}
+		}
+	}
+}

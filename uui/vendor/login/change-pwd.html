@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox vendor</title>
+<link href="/css/plugin/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/css/plugin/jquery.fancybox.css?v=2.1.4" rel="stylesheet" type="text/css" media="screen" />
+<link href="/css/login.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="/js/lib/html5.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ie.css">
+<![endif]--></head>
+<body id="login-body">
+<!--div id="wrapper">
+<!--%= render :partial => "header" %-->
+<h1 class="slogan">請重設您的密碼</h1>
+<dl class="form-element login change-pwd">
+  <dd><label>請輸入新密碼</label><input type="password" onkeyup="pwStrength(this.value)" placeholder="6~16碼，限用 a-z、A-Z、0-9、-_"></dd>
+  <dd>
+  	<dl class="pwd-check">
+  		<dd id="strength_L"></dd>
+  		<dd id="strength_M"></dd>
+  		<dd id="strength_H"></dd>
+  		<span id="strength_status" class="status"></span>
+  	</dl>
+  	<div class="pwd-infr">請勿使用常態、辨識度太高及容易被猜到的密碼</div>
+  	<div class="pwd-infr comment"><i class="fa fa-exclamation-circle"></i> 密碼強度不足會有風險，請確認！</div>
+  </dd>
+  <dd><label>再輸入一次新密碼</label><input type="password" placeholder="請再輸入一次新密碼"></dd>
+  <dd><label>請輸入右方數字</label><input type="text" class="input-captcha"><img src="/img/captcha.gif" class="img-captcha"><a href="" class="reload-captcha"><i class="fa fa-refresh"></i>重新產生</a></dd>
+  <dd class="login-button"><button class="btn-submit" onclick="location.href='/login/login-supplier.html'"><i class="fa fa-check"></i>確認修改</button></dd>
+</dl><!--/div><!-- wrapper /-->
+<script src="/js/lib/jquery-1.9.1.js" ></script>
+<script src="/js/lib/bootstrap-dropdown.js"></script>
+<script src="/js/nav-action.js"></script>
+<script src="/js/lib/jquery.fancybox.pack.js?v=2.1.4"></script>
+<script src="/js/login-action.js"></script>
+<script src="/js/check-passwd.js"></script>
+</body>
+</html>

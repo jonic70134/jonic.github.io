@@ -1,0 +1,101 @@
+@import "../../../../define/__init.scss";
+
+@import "../../../module_item/_rwd_item_layout.scss";
+@import "../../../module_component/_nav_breadcrumbs.scss";
+@import "../../../../3rd-party/_idangerous.swiper.scss";
+@import "../../../module_item/_item_main.scss";
+@import "../../../module_item/_item_add.scss";
+@import "../../../module_item/_item_related.scss";
+@import "../../../module_item/_item_detail.scss";
+@import "../../../module_item/_item_spec.scss";
+@import "../../../module_item/_item_buy.scss";
+@import "../../../../3rd-party/_wysihtml5-editor.scss";
+//客製化
+.item-main{	
+	h1.name{
+		font-size: 28px;
+  		line-height: 32px;
+		font-weight: 400;
+	}
+	.feature{
+		list-style: disc inside;
+		li{
+			font-size: 12px;
+			margin: 2px 0;
+			color: $items_name!important;
+		}
+	}
+	.value{
+		>li{
+			padding: 6px 8px;
+			margin-top: 3px;
+			height: 28px;
+			img{
+				width:24px;
+			}
+		}
+		.active{
+			border: 1px solid black!important;
+			color: black!important;
+			&:after{
+				border-color: transparent transparent black transparent!important;
+	        }
+		}
+	}
+	del{
+		color: black;
+	}
+	.currency{
+		font-size: 20px;
+		line-height: 1;
+		font-weight: 600;
+		margin-bottom: 11px;
+	}
+	.price{
+		font-size: 25px;
+		line-height: 1;
+		font-weight: 600;
+		margin-bottom: 9px;
+	}
+}
+.item-detail{
+	.desc{
+		text-align: center;
+		line-height: 1.8;
+	}
+}
+
+.item-add{
+	label{
+		color: black;
+	}
+	.currency{
+		font-size: 13px;
+		vertical-align: 1px;
+	}
+	.price{
+		font-size: 16px;
+	}
+}
+@include RWD(pad-mobile) {
+.item-main{	
+	.name{
+		font-size: 22px;
+	}
+}
+.item-buy{
+	.btn-addcart,.btn-rush{
+		//border: 1px solid white;
+	}
+	.highlight,.red-text{
+		//color: white;
+	}
+}
+}
+@media screen and (max-width: 519px) {
+.item-main{	
+	.currency{
+		margin-bottom: 2px;
+	}
+}
+}

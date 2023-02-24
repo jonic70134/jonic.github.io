@@ -1,0 +1,73 @@
+.rwd_left_003{
+	//border: 1px solid $border;
+	margin-bottom:15px;
+	//background: $background2;
+	.photo{
+		font-size: 0;
+		display: block;
+		float: left;
+		@include crop(80px, white);
+	}
+	.title-h3{
+		color: white;
+		//background: $aside_title;
+		font-size: 1em;
+		padding: 10px;
+		font-weight: bold;
+		margin: 0px;
+		line-height: 1.3;
+		word-break: break-word;
+		word-wrap: break-word;
+	}
+	.item{
+		padding: 5px;
+		@include clearfix;
+	}
+	.name{
+		font-size: 12px;
+		height: 30px;
+		overflow: hidden;
+		word-break: break-word;
+		word-wrap: break-word;
+		a{
+			color: $text;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	.info{
+		float: left;
+		width: 100px;
+		line-height: 1.3;
+		margin-left: 5px;
+		padding-top: 30px;
+	}
+	.events-list{
+		list-style-type: disc;
+		list-style-type: disc;
+		padding: 10px 5px 10px 21px;
+		padding-left: 21px;
+		li{
+			margin: 5px 0 5px 0;
+			font-size: 12px;
+			line-height: 1.5;
+			word-break: break-word;
+			word-wrap: break-word;
+		}
+		a{
+			color: $text;
+			&:hover{
+				color: $text_hover;
+			}
+		}
+	}
+}
+
+@include RWD(desktop-normal) {
+.rwd_left_003{
+	.info{
+		width: 95px;
+	}
+}
+}

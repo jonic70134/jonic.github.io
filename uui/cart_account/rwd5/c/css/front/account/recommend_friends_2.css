@@ -1,0 +1,44 @@
+.l-container.re-tiny{
+	max-width: 700px;
+}
+.re-action{ 
+	display:block; 
+	text-align: right; 
+	border-top: #d5dbe1 1px solid;
+	padding-top: 16px;
+	margin-top: -1px;
+}
+.re-action button {
+    font-size: 1.05em;
+}
+.re-list > dt {
+	color: #0066cc;
+    font-weight: bold;
+    padding-top: 8px;
+    zoom: 1;
+}
+.form-item.captcha{
+	border-bottom: #f3f4f6 1px solid;
+}
+.re-list > dd{
+	padding-bottom: 10px;
+}
+.form-block{
+	margin-bottom: 1px;
+	border-bottom: #ddd 1px dotted;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+.name,.email{
+	padding: 0 2px 0 6px;
+	color: #0066cc;
+}
+.number-icon{
+    background: #999;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    border-radius: 50%;
+}

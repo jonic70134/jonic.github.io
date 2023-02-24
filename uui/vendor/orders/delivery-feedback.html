@@ -1,0 +1,465 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox vendor</title>
+<link href="/css/plugin/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/css/plugin/jquery.fancybox.css?v=2.1.4" rel="stylesheet" type="text/css" media="screen" />
+<link href="/css/orders.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="/js/lib/html5.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ie.css">
+<![endif]--></head>
+<body>
+<div id="wrapper">
+    <!-- Header  -->
+    <header id="header" class="clearfix">
+      <div class="logo"><a href="#" title="回到首頁"><span>平台管理系統</span></a></div>
+      <!-- User -->
+      <div class="user">
+        <div class="btn-group">
+          <a class="btn-group-user" href="/data/site-setting.html"><i class="fa fa-cogs"></i>平台設定</a>
+        </div>
+        <div class="btn-group">
+          <!-- if annoucement -->
+          <a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bullhorn animate-rubberBand animated"></i><span class="quantity">99</span><span class="caret"></span></a>
+          <!-- if no annoucement -->
+          <!--a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bullhorn"></i><span class="quantity quantity-zero">0</span><span class="caret"></span></a-->
+          <ul class="dropdown-menu">
+            <li><a href="#">系統公告<span class="quantity">55</span></a></li>
+            <li><a href="#">ASAP<span class="quantity">99+</span></a></li>
+            <li><a href="#">ADI<span class="quantity">99+</span></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <!-- if notification -->
+          <!--a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bell animate-swing animated"></i><span class="quantity">99</span><span class="caret"></span></a-->
+          <!-- if no notification -->
+          <a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bell"></i><span class="quantity quantity-zero">0</span><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><span class="notification-summary"><i class="fa fa-exclamation-triangle"></i>99 項新通知</span></li>
+            <li><a href="#">新品尚未開單<span class="quantity">55</span></a></li>
+            <li><a href="#">新品尚未開單新品尚未開單<span class="quantity">99+</span></a></li>
+            <li><a href="#" class="more-notification">更多通知<i class="fa fa-arrow-circle-right"></i></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-user"></i>userName<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/user/my-account.html">個人資料修改</a></li>
+            <li><a href="#">登出</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- User /-->
+    </header>
+    <!--Header /-->    <!-- BEGIN Menu -->
+    <div class="nav-bg"></div>
+    <nav id="nav">
+     <ul>
+      <li class="dis-dropdown"><a href="/" ><i class="fa fa-home"></i>首頁</a></li>
+      <li><span ><i class="fa fa-archive"></i>商品管理</span>
+          <ul>
+            <li><a href="#">新增商品(看所有商品)</a></li>
+            <li><a href="/product/import-data.html">批次匯入商品</a></li>
+            <li><a href="#">商品有可賣量不能賣清單</a></li>
+            <li><a href="#">前台可賣量已缺貨清單</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-th"></i>前端賣場佈置/管理</span>
+          <ul>
+            <li><a href="/inside/modify-theme.html">網站風格設定(選版型)</a></li>
+            <li><a href="/inside/modify-homepage.html">首頁佈置</a></li>
+            <li><a href="/inside/modify-asap-homepage.html">ASAP首頁佈置</a></li>
+            <li><a href="/inside/modify-menu.html">新增區館(分類)/列表</a></li>
+            <li><a href="#">維護各賣場商品</a></li>
+            <li><a href="#">活動品變價管理</a></li>
+            <li><a href="/search/search-keywords.html">站內熱門字搜尋設定</a></li>
+            <li><a href="#">網站設定(購買上限/公告等)</a></li>
+            <li><a href="/inside/modify-terms.html">自訂購物需知
+</a></li>
+            <li><a href="/inside/modify-privacy.html">自訂隱私權</a></li>
+            <li><a href="/inside/modify-custom.html">自訂頁面管理</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-briefcase"></i>行銷活動管理</span>
+          <ul>
+            <li><a href="/campaign/campaign-list.html">行銷活動設定/查詢</a></li>
+            <li><a href="/campaign/additional-purchase.html">結帳頁下加購商品</a></li>
+            <li><a href="/campaign/edm-list.html">eDM編輯/發送</a></li>
+            <li><a href="/campaign/coupon-apply-list.html">購物金申請</a></li>
+            <li><a href="/campaign/coupon-list.html">購物金使用報表</a></li>
+            <li><a href="/campaign/sale-ontime-list.html">整點特賣</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-tasks"></i>業績報表</span>
+          <ul>
+            <li><a href="/achievement/achievement.html">平台即時業績查詢</a></li>
+            <li><a href="/achievement/orders-charts.html">訂單魚群</a></li>
+            <li><a href="#">訂單查詢</a></li>
+            <li><a href="#">平台退訂明細查詢</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-exchange"></i>進還貨管理</span>
+          <ul>
+            <li><a href="#">申請/刪除寄倉單</a></li>
+            <li><a href="#">申請/刪除退倉單</a></li>
+            <li><a href="#">列印寄倉單→進貨到uitox</a></li>
+            <li><a href="#">新品未開單列表</a></li>
+            <li><a href="#">進貨被驗退商品</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-cubes"></i>庫存報表</span>
+          <ul>
+            <li><a href="#">商品即時庫存</a></li>
+            <li><a href="#">商品區間進銷存</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-paste"></i>訂單出貨狀況</span>
+          <ul>
+            <li><a href="#">全部未出訂單</a></li>
+            <li><a href="#">超過24H未出貨訂單</a></li>
+            <li><a href="#">已出貨回填異常訂單</a></li>
+            <li><a href="#">查所有訂單</a></li>
+          </ul>
+      </li>
+      <li><span class="active"><i class="fa fa-share"></i>訂單出貨</span>
+          <ul>
+            <li><a href="">下載匯入範例</a></li>
+            <li><a href="">下載匯入範例 - 宅配</a></li>
+            <li><a href="">下載匯入範例 - 超取</a></li>
+            <li><a href="/orders/delivery.html">匯入訂單</a></li>
+            <li><a href="">查詢訂單匯入結果</a></li>
+            <li><a href="/orders/delivery-feedback.html">查看訂單出貨狀態</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-reply"></i>訂單退訂</span>
+          <ul>
+            <li><a href="">下載退訂範例</a></li>
+            <li><a href="/orders/returns.html">匯入退訂</a></li>
+            <li><a href="">查詢退訂匯入結果</a></li>
+            <li><a href="">查看退訂收回狀態</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa u-icon-u"></i>對uitox帳款</span>
+          <ul>
+            <li><a href="#">即時對帳</a></li>
+            <li><a href="#">已請款歷史帳款明細</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-puzzle-piece"></i>與供應商對帳</span>
+          <ul>
+            <li><a href="/account/table.html">即時對帳</a></li>
+            <li><a href="#">已請款歷史帳款明細</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-phone"></i>營管/客服</span>
+          <ul>
+            <li><a href="">審訂單價格</a></li>
+            <li><a href="/customer/cs-orders.html">訂單查詢</a></li>
+            <li><a href="/customer/cs-returns.html">退訂查詢</a></li>
+            <li><a href="">購物金查詢</a></li>
+            <li><a href="">購物金審核</a></li>
+            <li><a href="/data/table.html">簡訊及e-mail設定</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-building"></i>供應商管理</span>
+          <ul>
+            <li><a href="#">供應商資料與合約</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-user"></i>會員管理</span>
+          <ul>
+            <li><a href="#">會員資料修改/補發帳密</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-lock"></i>權限設定</span>
+          <ul>
+            <li><a href="/user/user-list.html">新增人員權限/查詢</a></li>
+            <li><a href="/user/user-group-list.html">看所有權限列表</a></li>
+            <li><a href="">從系統匯出資料紀錄</a></li>
+            <li><a href="">對uitox窗口資料維護</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-envelope"></i>聯絡uitox</span>
+          <ul>
+            <li><a href="#">聯絡uitox</a></li>
+          </ul>
+      </li>     
+     </ul>
+    </nav>
+    <!-- END Menu -->    <!-- container -->
+    <div id="container">
+      <div class="breadcrumb_top">
+  <ul class="breadcrumb"><li><a href="/">首頁</a><span class="divider"> &gt; </span></li> <li class="link">訂單處理<span class="divider"> &gt; </span></li> <li class="active">出貨回填</li></ul>
+</div>
+<section class="template-content">
+  <a href="/orders/delivery-feedback-list.html" class="go-list">查詢已回填訂單</a>
+  <dl class="list-summary">
+    <dd>未回填訂單數 888,888,888</dd>
+  </dl>
+  <section class="table-container double-scroll-bottom">
+    <table class="template-table">
+      <thead>
+        <tr class="function">
+          <td class="txt">找訂單編號：<br><input type="text" size="16" class="form-feedback"><button class="btn-red" onclick="alert('查無資料');"><i class="fa fa-search"></i></button></td>
+          <td colspan="2">&nbsp;</td>
+          <td><button class="btn-action" onclick="alert('狀態回填成功');">送出</button></td>
+          <td colspan="14">&nbsp;</td>
+        </tr>
+        <tr>
+          <th>訂單編號</th>
+          <th>序號</th>
+          <th>物流商</th>
+          <th>宅配單號</th>
+          <th>數量</th>
+          <th>實際出貨數</th>
+          <th>收貨人</th>
+          <th>不出貨</th>
+          <th>退訂狀態</th>
+          <th>料號</th>
+          <th>商品名稱</th>
+          <th>顏色</th>
+          <th>尺寸</th>
+          <th>接單時間</th>
+          <th>匯出時間</th>
+          <th>商品ID</th>
+          <th>平台名稱</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="highlight line-through">201407AP02002245</span></td>
+          <td><span class="highlight line-through">1</span></td>
+          <td><select name="" id="" class="form-feedback"><option value="">請選擇</option></select></td>
+          <td class="txt"><input type="text" size="16" class="form-feedback"></td>
+          <td>99</td>
+          <td><span class="show-quantity"><span class="o-quantity">3</span><a class="go-edit-quantity">修</a></span><span class="edit-quantity" style="display:none;"><select name="" id="" class="form-feedback select-quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></span></td>
+          <td><span class="highlight line-through">孫士</span></td>
+          <td><input type="checkbox" id="checkbox1"><label for="checkbox1">不出貨</label></td>
+          <td><span class="highlight">出貨前取消</span></td>
+          <td><span class="highlight line-through">AAA-0001</span></td>
+          <td class="txt"><span class="highlight line-through">啦醉來快人相憑去只成</span></td>
+          <td><span class="highlight line-through">土耳其藍</span></td>
+          <td><span class="highlight line-through">99</span></td>
+          <td>12/12 20:59</td>
+          <td>01/08 20:59</td>
+          <td><span class="highlight line-through">201405AG220000753</span></td>
+          <td><span class="highlight line-through">ASAP</span></td>
+        </tr>
+        
+        <tr>
+          <td>201407AP02002245</td>
+          <td>2</td>
+          <td><select name="" id="" class="form-feedback"><option value="">請選擇</option></select></td>
+          <td class="txt"><input type="text" size="16" class="form-feedback"><a href="">同上</a></td>
+          <td>99</td>
+          <td><span class="show-quantity"><span class="o-quantity">2</span><a class="go-edit-quantity">修</a></span><span class="edit-quantity" style="display:none;"><select name="" id="" class="form-feedback select-quantity"><option value="1">1</option><option value="2">2</option></select></span></td>
+          <td>蔡永</td>
+          <td><input type="checkbox" id="checkbox2"><label for="checkbox2">不出貨</label></td>
+          <td>還沒出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">麼要有去年的和新地和舖啊</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>03/14 20:59</td>
+          <td>05/14 20:59</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td>201407AP02002245</td>
+          <td>3</td>
+          <td><select name="" id="" class="form-feedback"><option value="">請選擇</option></select></td>
+          <td class="txt"><input type="text" size="16" class="form-feedback"><a href="">同上</a></td>
+          <td>99</td>
+          <td><span class="show-quantity"><span class="o-quantity">2</span><a class="go-edit-quantity">修</a></span><span class="edit-quantity" style="display:none;"><select name="" id="" class="form-feedback select-quantity"><option value="1">1</option><option value="2">2</option></select></span></td>
+          <td>萬維彬</td>
+          <td><input type="checkbox" id="checkbox3"><label for="checkbox3">不出貨</label></td>
+          <td>還沒出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">去蛋他訓不冷戒短是本</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>04/18 20:59</td>
+          <td>09/08 20:59</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td>201407AP02002245</td>
+          <td>4</td>
+          <td><select name="" id="" class="form-feedback"><option value="">請選擇</option></select></td>
+          <td class="txt"><input type="text" size="16" class="form-feedback"><a href="">同上</a></td>
+          <td>99</td>
+          <td><span class="show-quantity"><span class="o-quantity">2</span><a class="go-edit-quantity">修</a></span><span class="edit-quantity" style="display:none;"><select name="" id="" class="form-feedback select-quantity"><option value="1">1</option><option value="2">2</option></select></span></td>
+          <td>何儀</td>
+          <td><input type="checkbox" id="checkbox4"><label for="checkbox4">不出貨</label></td>
+          <td>還沒出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">好劑就進險狗個前的難上一禮</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>11/06 20:59</td>
+          <td>10/20 20:59</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td>201407AP02002245</td>
+          <td>5</td>
+          <td><select name="" id="" class="form-feedback"><option value="">請選擇</option></select></td>
+          <td class="txt"><input type="text" size="16" class="form-feedback"><a href="">同上</a></td>
+          <td>99</td>
+          <td><span class="show-quantity"><span class="o-quantity">2</span><a class="go-edit-quantity">修</a></span><span class="edit-quantity" style="display:none;"><select name="" id="" class="form-feedback select-quantity"><option value="1">1</option><option value="2">2</option></select></span></td>
+          <td>邵維</td>
+          <td><input type="checkbox" id="checkbox5"><label for="checkbox5">不出貨</label></td>
+          <td>還沒出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">不同不奮到的前光義啡那發不</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>02/06 20:59</td>
+          <td>08/11 20:59</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td>201407AP02002245</td>
+          <td>6</td>
+          <td><select name="" id="" class="form-feedback"><option value="">請選擇</option></select></td>
+          <td class="txt"><input type="text" size="16" class="form-feedback"><a href="">同上</a></td>
+          <td>99</td>
+          <td><span class="show-quantity"><span class="o-quantity">2</span><a class="go-edit-quantity">修</a></span><span class="edit-quantity" style="display:none;"><select name="" id="" class="form-feedback select-quantity"><option value="1">1</option><option value="2">2</option></select></span></td>
+          <td>龔冠彥</td>
+          <td><input type="checkbox" id="checkbox6"><label for="checkbox6">不出貨</label></td>
+          <td>還沒出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">將捐啡這說讓疲他禮火前要</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>09/13 20:59</td>
+          <td>08/14 20:59</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td>201407AP02002245</td>
+          <td>7</td>
+          <td><select name="" id="" class="form-feedback"><option value="">請選擇</option></select></td>
+          <td class="txt"><input type="text" size="16" class="form-feedback"><a href="">同上</a></td>
+          <td>99</td>
+          <td><span class="show-quantity"><span class="o-quantity">2</span><a class="go-edit-quantity">修</a></span><span class="edit-quantity" style="display:none;"><select name="" id="" class="form-feedback select-quantity"><option value="1">1</option><option value="2">2</option></select></span></td>
+          <td>雷郁</td>
+          <td><input type="checkbox" id="checkbox7"><label for="checkbox7">不出貨</label></td>
+          <td>還沒出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">利檢們心下後啡還真去團何</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>01/02 20:59</td>
+          <td>10/25 20:59</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td>201407AP02002245</td>
+          <td>8</td>
+          <td><select name="" id="" class="form-feedback"><option value="">請選擇</option></select></td>
+          <td class="txt"><input type="text" size="16" class="form-feedback"><a href="">同上</a></td>
+          <td>99</td>
+          <td><span class="show-quantity"><span class="o-quantity">2</span><a class="go-edit-quantity">修</a></span><span class="edit-quantity" style="display:none;"><select name="" id="" class="form-feedback select-quantity"><option value="1">1</option><option value="2">2</option></select></span></td>
+          <td>趙韻豪</td>
+          <td><input type="checkbox" id="checkbox8"><label for="checkbox8">不出貨</label></td>
+          <td>還沒出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">似捨你侶無-家平著啡</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>01/26 20:59</td>
+          <td>03/28 20:59</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td>201407AP02002245</td>
+          <td>9</td>
+          <td><select name="" id="" class="form-feedback"><option value="">請選擇</option></select></td>
+          <td class="txt"><input type="text" size="16" class="form-feedback"><a href="">同上</a></td>
+          <td>99</td>
+          <td><span class="show-quantity"><span class="o-quantity">2</span><a class="go-edit-quantity">修</a></span><span class="edit-quantity" style="display:none;"><select name="" id="" class="form-feedback select-quantity"><option value="1">1</option><option value="2">2</option></select></span></td>
+          <td>錢華昌</td>
+          <td><input type="checkbox" id="checkbox9"><label for="checkbox9">不出貨</label></td>
+          <td>還沒出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">老出入解纔繞拚盡一狗月將溪無</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>10/30 20:59</td>
+          <td>02/07 20:59</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td>201407AP02002245</td>
+          <td>10</td>
+          <td><select name="" id="" class="form-feedback"><option value="">請選擇</option></select></td>
+          <td class="txt"><input type="text" size="16" class="form-feedback"><a href="">同上</a></td>
+          <td>99</td>
+          <td><span class="show-quantity"><span class="o-quantity">2</span><a class="go-edit-quantity">修</a></span><span class="edit-quantity" style="display:none;"><select name="" id="" class="form-feedback select-quantity"><option value="1">1</option><option value="2">2</option></select></span></td>
+          <td>韓秋珮</td>
+          <td><input type="checkbox" id="checkbox10"><label for="checkbox10">不出貨</label></td>
+          <td>還沒出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">的水己方謂趁點且個身驗</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>03/08 20:59</td>
+          <td>10/02 20:59</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr class="function">
+          <td colspan="3">&nbsp;</td>
+          <td><button class="btn-action go-popup" data-width="300" data-href="/orders/popup/delivery-feedback-error.html">送出</button></td>
+          <td colspan="14">&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <div class="pages">
+    <a class="prev-page disable">上一頁</a>
+    <span class="current-page">1/255</span>
+    <a href="#" class="next-page">下一頁</a>
+    <select class="select-page"><option>第1頁</option></select>
+  </div>
+</section>
+    </div>
+    <!-- container /-->
+<!--%= render :partial => "footer" %-->
+</div><!-- wrapper /-->
+<script src="/js/lib/jquery-1.9.1.js" ></script>
+<script src="/js/lib/bootstrap-dropdown.js"></script>
+<script src="/js/nav-action.js"></script>
+<script src="/js/lib/jquery.fancybox.pack.js?v=2.1.4"></script>
+<script src="/js/template-action.js"></script>
+<script>
+//edit quantity
+$('.go-edit-quantity').click(function() {
+  var oQuantity = $(this).parents('td').find('.o-quantity').text();
+  $(this).parents('td').find('.edit-quantity').show().find('.select-quantity').val(oQuantity);
+  $(this).parents('td').find('.show-quantity').hide();
+});
+</script>
+</body>
+</html>

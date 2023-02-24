@@ -1,0 +1,26 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_lulu.scss";
+@import "../../../module_extract/_extract_1.scss";
+.site-search{
+	.input-search{
+		color:#eee;
+	}
+	.recommend{        
+        a{
+            &:hover{
+                color: #E5E5E5;
+            }
+        }
+    }
+}
+.item-main{
+    .value{
+        .active{
+            border-color: $primary;
+            color: $primary;
+            &:after{
+                border-color: transparent transparent $primary transparent;
+            }
+        }      
+    }
+}

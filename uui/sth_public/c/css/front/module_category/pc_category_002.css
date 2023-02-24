@@ -1,0 +1,121 @@
+.pc-category-002 {
+  zoom: 1;
+}
+.pc-category-002:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.pc-category-002 .items {
+  margin: 10px 0px 0;
+}
+.pc-category-002 .items {
+  zoom: 1;
+}
+.pc-category-002 .items:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.pc-category-002 .item {
+  float: left;
+  width: 50%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+.pc-category-002 .item:hover {
+  border: 1px solid #cccccc;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  -ms-transition: 0.6s;
+  transition: 0.6s;
+}
+.pc-category-002 .item:hover .photo {
+  opacity: 0.75;
+}
+.pc-category-002 .photo {
+  display: block;
+  margin-bottom: 7px;
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+}
+.pc-category-002 .photo img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.pc-category-002 .photo img {
+  max-width: 360px;
+}
+.pc-category-002 .info {
+  min-height: 151px;
+}
+.pc-category-002 .name {
+  font-size: 17px;
+  height: 46px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+  overflow: hidden;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.pc-category-002 .type {
+  font-size: 15px;
+  color: #6c6c6c;
+}
+.pc-category-002 .currency {
+  font-size: 14px;
+  color: #e00517;
+  display: inline-block;
+  margin-left: 3px;
+}
+.pc-category-002 .price {
+  font-size: 22px;
+  color: #e00517;
+  display: inline-block;
+  margin-right: 5px;
+}
+.pc-category-002 .buy-actions {
+  margin-top: 10px;
+  text-align: right;
+}
+.pc-category-002 .quantity {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.pc-category-002 .highlight {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 5px;
+  text-align: right;
+}
+.pc-category-002 .large {
+  font-size: 13px;
+  padding: 0 10px;
+  line-height: 21px;
+  height: 22px;
+}
+.pc-category-002 .tag-status {
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+  z-index: 9;
+}

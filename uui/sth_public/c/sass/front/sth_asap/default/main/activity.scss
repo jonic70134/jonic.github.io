@@ -1,0 +1,28 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_asap.scss";
+
+@import "../../../../3rd-party/_idangerous.swiper.scss";
+@import "../../../module_component/_nav_breadcrumbs.scss";
+@import "../../../module_component/_pc_site_activity.scss";
+@import "../../../module_category/_pc_category_list.scss";
+@import "../../../module_component/_site_search_answer.scss";
+@import "../../../module_component/_nav_pagination.scss";
+@import "../../../module_component/_pc_site_sort.scss";
+@import "../../../module_component/_pc_site_filter.scss";
+
+//_pc_layout
+.site-filter{
+	.container{
+		width: 100%;
+	}	
+}
+.pc_category_list{
+	.item{
+		height:450px;
+	}
+}
+.pc_category_list.item-list-3{
+	.item{
+		height:530px;
+	}
+}

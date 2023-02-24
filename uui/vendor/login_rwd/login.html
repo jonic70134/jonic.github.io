@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox account</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link href="assets/c/css/vendor/font-awesome.min.css" rel="stylesheet">
+<link href="assets/c/css/common.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="assets/c/js/vendor/html5.js"></script>
+<script src="assets/c/js/ie.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/c/css/ie.css">
+<![endif]--></head>
+<body>
+    <!-- header  -->
+    <div class="l-container">
+        <header class="l-header">
+            <div class="logo"><a href="http://www.asap.com.tw/" class="icon-asap" title="返回ASAP首頁"><img src="assets/c/img/asap-logo.png" alt="ASAP閃電購物網"></a></div>
+            <a href="javascript:history.back()" class="t-back">回上一頁</a>
+        </header>
+    </div>
+    <!--header /--><div class="l-container l-tiny">
+<!-- login -->
+<h1 class="t-card-title">登入</h1>
+<div class="md-login l-card">    
+    <div class="md-form">
+        <p class="t-description t-highlight align-left">帳號或密碼輸入錯誤！您還剩餘 9 次機會</p>
+        <ul class="form-content">
+            <li class="form-item">
+                <input type="email" tabindex="1" class="input-text input-id" id="input_id" data-error="請輸入手機號碼或e-mail" placeholder="手機號碼 / e-mail">
+                <label for="input_id" class="place-label"></label>
+            </li>
+            <li class="form-item">
+                <input type="password" tabindex="2" class="input-text" id="input_pwd" autocomplete="off" data-error="請輸入密碼" placeholder="您的密碼">
+                <label for="input_pwd" class="place-label"></label>
+                <a href="forgot-pwd.html" class="t-forgot-pwd">忘記密碼？</a>
+            </li>
+            <li class="form-item captcha align-left">
+                <input type="text" tabindex="3" class="input-text" id="input_captcha" size="8" inputmode="numeric" pattern="[0-9]*" placeholder="圖片數字"><img src="http://placehold.it/80x30/" class="img-captcha"><a href="" class="t-reload">換張圖</a>
+            </li>
+            <li class="md-form-btn">
+                <button class="btn-submit" tabindex="4">登入</button>
+            </li>
+        </ul>
+        <p class="t-description">{平台設定} 還沒有註冊過？ <a href="register.html">點此註冊</a></p>
+    </div>
+</div></div>
+	<!-- footer -->
+	<div class="l-container">
+		<footer class="l-footer">
+			<div class="service">ASAP 使用<span class="icon-uitox-s"></span>金物流服務</div>
+		    	<div class="copyright">
+		       	&copy; <?php echo date('Y'); ?> <a href="http://www.uitox.com/" target="_blank">uitox Corporation</a> or its affiliates.
+		       	<a href="privacy.html" target="_blank" class="go-privacy">隱私權政策</a>
+			</div>
+		</footer>
+	</div><a class="go-top" title="Back to top"></a>
+<script src="assets/c/js/vendor/jquery.min.js" ></script>
+<script src="assets/c/js/common.js"></script>
+<script>
+//Taiwan mobile policy
+window.regexMobile = /^(09)\d{8}$/;
+</script>
+</body>
+</html>

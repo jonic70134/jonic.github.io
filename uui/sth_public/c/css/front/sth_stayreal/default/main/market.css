@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* index共用區塊 開始 */
+.site-body {
+  padding-bottom: 40px;
+}
+.site-body .container {
+  padding: 0 0 20px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.site-main .feature li {
+  width: 100%;
+  word-break: break-all;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.site-main .name {
+  font-size: 1.2em;
+  height: 53px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-weight: 700;
+  line-height: 1.4;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.site-main .buy .currency {
+  display: inline-block;
+  vertical-align: -3px;
+}
+.site-main .buy .price {
+  display: inline-block;
+  vertical-align: middle;
+}
+.site-main .buy .button {
+  margin: 5px 0;
+}
+
+@media (max-width: 999px) {
+  .site-body {
+    padding: 0;
+  }
+  .site-body .container {
+    padding: 0;
+  }
+}
+@media (max-width: 999px) {
+  .site-main .feature li {
+    width: 330px;
+  }
+}
+@media (max-width: 767px) {
+  .site-main .feature li {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .site-main .feature li {
+    width: 130px;
+  }
+}
+.item .photo {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+.item .photo img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* index共用區塊 結束 */
+.nav-breadcrumbs .container {
+  padding: 15px 0;
+}
+.nav-breadcrumbs .fa {
+  margin-right: 8px;
+}
+.nav-breadcrumbs .index {
+  position: relative;
+  font-weight: bold;
+}
+.nav-breadcrumbs .cate {
+  display: inline-block;
+}
+.nav-breadcrumbs .locate {
+  margin-left: 20px;
+}
+.nav-breadcrumbs .bread-item-name {
+  font-size: 1.12em;
+  font-weight: bold;
+  color: black;
+}
+
+@media (max-width: 999px) {
+  .nav-breadcrumbs {
+    margin: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .nav-breadcrumbs {
+    margin: 20px 0 10px 10px;
+  }
+}
+.rwd_index_009 .item, .rwd_index_004 .item, .rwd-index-002 .item {
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  -ms-transition: 0.6s;
+  transition: 0.6s;
+}
+.rwd_index_009 .item:hover, .rwd_index_004 .item:hover, .rwd-index-002 .item:hover {
+  -webkit-box-shadow: 0px 0px 15px #ff0077;
+  -moz-box-shadow: 0px 0px 15px #ff0077;
+  box-shadow: 0px 0px 15px #ff0077;
+}
+
+.rwd-index-002 .item {
+  width: 49.5% !important;
+  margin-right: 0.5%;
+}
+
+@media (min-width: 1000px) {
+  .rwd_index_004 .info {
+    padding: 0 5px !important;
+  }
+
+  .rwd_index_009 .button {
+    display: inline-block !important;
+  }
+}
+@media (max-width: 999px) {
+  .rwd-index-002 .item {
+    width: 100% !important;
+    margin-right: 0;
+    margin-bottom: 20px !important;
+    padding: 1% 0 1% !important;
+  }
+}

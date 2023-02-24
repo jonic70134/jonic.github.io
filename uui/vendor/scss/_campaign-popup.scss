@@ -1,0 +1,21 @@
+//popup style
+.popup-content {
+	.search-filter {
+		.input-search-related {
+			width: 150px;
+		}
+		.adv-search {
+			display: none;
+		}
+	}
+	.list-in-form {
+		margin: -15px 0 0 105px;
+		display: inline-block;
+	}
+	.btn-select {
+		font-size: 1em;
+		margin: 0 5px;
+		padding: 3px 10px;
+		@include btn-color(darken($main-grey-color,20));
+	}
+}

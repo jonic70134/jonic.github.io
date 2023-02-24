@@ -1,0 +1,37 @@
+//user permission
+.permission-type {
+	margin: 30px 10px 0;
+}
+.user-group {
+	margin: 20px 0;
+	padding: 20px;
+	background: mix($main-color,#fff,20);
+	@include border-radius(3px);
+	dd {
+		width: 200px;
+		margin: 10px;
+		vertical-align: top;
+		display: inline-block;
+	}
+}
+.permission-list {
+	td {
+		white-space: normal;
+	}
+	.col-select-all {
+		width: 10px;
+		background: mix($main-red-color,#fff,20) !important;
+	}
+	.col-option-name {
+		width: 100px;
+		font-weight: bold;
+		background: mix($main-blue-color,#fff,30) !important;
+	}
+	.col-sub-option {
+		width: 120px;
+	}
+	label {
+		margin-right: 10px;
+		display: inline-block;
+	}
+}

@@ -1,0 +1,807 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox shopping cart</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/c/css/vendor/font-awesome.min.css" rel="stylesheet">
+<link href="assets/c/css/vendor/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<link href="assets/c/css/common.css" rel="stylesheet" type="text/css">
+<link href="assets/c/css/vendor/intlTelInput.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="assets/c/js/vendor/html5.js"></script>
+<script src="assets/c/js/ie.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/c/css/ie.css">
+<![endif]--></head>
+<body>
+<div class="l-container">
+    <!-- banner -->
+    
+    <div class="banner"><a href=""><img src="http://placehold.it/1100x60" alt="廣告詞廣告詞廣告詞"></a></div>
+    
+    <!-- header  -->
+    <header class="l-header">
+        <div class="logo"><a href="http://www.asap.com.tw/" class="icon-asap" title="返回ASAP首頁"><img src="assets/c/img/asap-logo.png" alt="ASAP閃電購物網"></a></div>
+        <a href="javascript:history.back()" class="t-back">回上一頁</a>
+        
+        
+        <dl class="md-annoucement">
+            
+            <dd>Credit Card Center system maintenance, credit card checkout again temporarily unavailable <a href="#annouce1" class="go-popup">...more</a></dd>
+            
+        </dl>
+        
+        <article id="annouce1" class="md-annouce-detail md-dialog">
+            <div class="t-title">Credit Card Center system maintenance 1</div>
+            <div class="t-date">2015/01/30 12:59:59</div>
+            <div class="t-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet ex viverra, scelerisque eros et, fermentum arcu. Integer aliquet, dolor ac cursus semper, elit sapien elementum velit, ut molestie erat nibh at dui. Aliquam commodo bibendum libero nec dignissim. Maecenas ut placerat nisi, at lacinia lorem.</div>
+            <div class="md-form-btn">
+                <button class="btn-cancel" style="display:inline-block;" tabindex="1" onclick="$.fancybox.close();">關閉</button>
+            </div>
+        </article>
+        
+        
+    </header>
+    <!--header /--><!-- summary bar -->
+<div class="md-summary is-merge">
+    本次消費總計<span class="t-price"><span class="currency">NT$</span>999,999,999.00</span>
+    <button class="btn-expand-list" data-expand-text="看購物清單" data-merge-text="收起購物清單">看購物清單</button>
+</div><!-- product list -->
+<div class="md-product-list in-payment l-card">
+    <div class="row row-liner row-head">
+        <h3 class="col-name">商品名稱</h3>
+        <ul class="col-content">
+            <li class="col-subtotal">小計</li>
+            <li class="col-unitprice">單價</li>
+            <li class="col-quantity">數量</li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-image"><a href="" target="_blank" class="img-product"><img src="http://placehold.it/60x60/f1f1f1/666666" alt="YAMASAKI 山崎 優賞16吋遙控型涼風立扇"></a></div>
+        <h3 class="col-name">
+            <a href="" target="_blank">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</a>
+        </h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-unitprice">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-image"><a href="" target="_blank" class="img-product"><img src="http://placehold.it/60x60/f1f1f1/666666" alt="YAMASAKI 山崎 優賞16吋遙控型涼風立扇"></a></div>
+        <h3 class="col-name">
+            <a href="" target="_blank">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶) 白蘭氏 傳統雞精手提盒裝 (70g x 20瓶) 白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</a>
+        </h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-unitprice">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+        <div class="row-status">
+            <span class="tag-status is-odd">Odd size</span>
+            <span class="tag-status is-preorder">Pre-order Item(s)</span>
+            <span class="tag-status is-imported">Japan delivery</span>
+            <span class="tag-status is-uitox-delivery">uitox delivery</span>
+            <span class="tag-status is-vendor-delivery">Vendor delivery</span>
+            <span class="tag-status is-separate-delivery">Separate delivery</span>
+            <span class="tag-status is-max-purchase">Maximum purchase per account is 9</span>
+        </div>
+        <div class="row-add row-buy-discount">
+            <h3 class="col-name">買立折折扣</h3>
+            <ul class="col-content">
+                <li>-NT$100</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-image"><a href="" target="_blank" class="img-product"><img src="http://placehold.it/60x60/f1f1f1/666666" alt="YAMASAKI 山崎 優賞16吋遙控型涼風立扇"></a></div>
+        <h3 class="col-name">
+            <a href="" target="_blank">ASICS Women's GEL-Venture 4 Trail Running Shoe ASICS Women's GEL-Venture 4 Trail Running Shoe ASICS Women's GEL-Venture 4 Trail Running Shoe ASICS Women's GEL-Venture 4 Trail Running Shoe</a>
+        </h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-unitprice">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+        <div class="row-add">
+            <h3 class="col-name t-include">開學分享組合包含以下商品：</h3>
+            <h3 class="col-name"><a href="" target="_blank">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</a></h3>
+            <h3 class="col-name"><a href="" target="_blank">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</a></h3>
+            <h3 class="col-name"><a href="" target="_blank">配件 - 白蘭氏 五味子芝麻錠 20錠</a></h3>
+        </div>
+        <div class="row-status">
+            <span class="tag-status is-qualified">已符合</span>
+            <span class="t-promote"><a href="">冬季特惠滿1000折100活動</a></span>
+        </div>
+        <div class="row-add">
+            <h3 class="col-name"><a href="" target="_blank"><span class="tag-status is-odd">Odd size</span>贈品 - 白蘭氏 五味子芝麻錠 20錠</a></h3>
+            <ul class="col-content">
+                <li class="col-subtotal">NT$0</li>
+                <li class="col-unitprice">NT$0</li>
+                <li class="col-quantity">1</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-image"><a href="" target="_blank" class="img-product"><img src="http://placehold.it/60x60/f1f1f1/666666" alt="YAMASAKI 山崎 優賞16吋遙控型涼風立扇"></a></div>
+        <h3 class="col-name"><a href="" target="_blank"><span class="tag-status is-odd">Odd size</span>加購品 - 白蘭氏 五味子芝麻錠 20錠</a></h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-unitprice">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-image"><a href="" target="_blank" class="img-product"><img src="http://placehold.it/60x60/f1f1f1/666666" alt="YAMASAKI 山崎 優賞16吋遙控型涼風立扇"></a></div>
+        <h3 class="col-name"><a href="" target="_blank">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</a></h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-unitprice">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+        <div class="row-status">
+            <span class="tag-status is-not-qualified">未符合</span>
+            <span class="t-promote is-not-qualified">冬季特惠滿1000折100活動 - 再湊 $9999.99，可享有 <a href="" target="_blank">2015 Happy New Year</a></span>
+        </div>
+        <div class="row-add row-additional">
+            <h3 class="col-name"><a href="" target="_blank"><span class="tag-status is-odd">Odd size</span>加購品 - 白蘭氏 五味子芝麻錠 20錠</a></h3>
+            <ul class="col-content">
+                <li class="col-subtotal">NT$9,999,999.00</li>
+                <li class="col-unitprice">NT$9,999,999.00</li>
+                <li class="col-quantity">9999</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-image"><a href="" target="_blank" class="img-product"><img src="http://placehold.it/60x60/f1f1f1/666666" alt="YAMASAKI 山崎 優賞16吋遙控型涼風立扇"></a></div>
+        <h3 class="col-name"><a href="" target="_blank">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</a></h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-unitprice">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+        <div class="row-status">
+            <span class="tag-status is-max-purchase">此商品會員限購買 1 個</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-image"><a href="" target="_blank" class="img-product"><img src="http://placehold.it/60x60/f1f1f1/666666" alt="YAMASAKI 山崎 優賞16吋遙控型涼風立扇"></a></div>
+        <h3 class="col-name"><a href="" target="_blank">購物車加購 - 白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</a></h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-unitprice">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+    </div>
+    <div class="row row-liner row-subsummary">
+        <h3 class="col-name">Total amount of Items</h3>
+        <ul class="col-content">
+            <li>NT$999,999,999.00</li>
+        </ul>
+        <h3 class="col-name">
+            日本處理費 (運費+稅金)
+            <span class="t-exclamation go-imported-tip go-tip">
+                <div class="md-tip" id="tip">
+                    <p class="t-title">Shipping</p>
+                    <p class="t-content"><span class="t-bold">$24.01 (approx. NT$ 756)</span><br>International Priority Shipping to Taiwan via the Global Shipping Program</p>
+                    <p class="t-title">Import charges</p>
+                    <p class="t-content"><span class="t-bold">$15.35</span> (amount confirmed at checkout)<br>No additional import charges on delivery</p>
+                    <button class="btn-close" onclick="$.fancybox.close();">關閉說明</button>
+                </div>
+            </span>
+        </h3>
+        <ul class="col-content">
+            <li>NT$999.00</li>
+        </ul>
+        <h3 class="col-name">活動折扣 - 冬季特惠滿1000折100活動</h3>
+        <ul class="col-content t-minus">
+            <li>-NT$999.00</li>
+        </ul>
+        <h3 class="col-name">活動折扣 - 少女服飾滿千送百</h3>
+        <ul class="col-content t-minus">
+            <li>-NT$999.00</li>
+        </ul>
+        <h3 class="col-name">Shopping Credits</h3>
+        <ul class="col-content t-minus">
+            <li>-NT$999.00</li>
+        </ul>
+        <h3 class="col-name">Estimated Tax</h3>
+        <ul class="col-content">
+            <li>NT$999.00</li>
+        </ul>
+        <h3 class="col-name">Merchandise Fees</h3>
+        <ul class="col-content">
+            <li>NT$999.00</li>
+        </ul>
+        <h3 class="col-name">Shipping Fee <span class="t-comment">- Standard Shipping (3-7 business days)</span></h3>
+        <ul class="col-content">
+            <li>NT$999.00</li>
+        </ul>
+    </div>
+    <div class="row row-liner row-summary">
+        <h3 class="t-bold">訂單總計<span class="t-price"><span class="t-currency">NT$</span>999,999,999.00</span></h3>
+    </div>
+</div><!--//////////// New customer ////////////-->
+<!-- Purchaser Infr -->
+<div class="t-cart-title">購買人資訊</div>
+<div class="md-add-address l-card">
+    <dl class="md-form">
+        <dd>
+            <label for="input_purchaser" class="label-title">購買人姓名</label>
+            <input type="text" tabindex="51" id="input_purchaser" size="20" placeholder="購買人姓名">
+        </dd>    
+        <dd>
+            <label for="input_purchaser_mobile" class="label-title">手機</label>
+            <input type="tel" tabindex="55" id="input_purchaser_mobile" size="20" placeholder="購買人手機">
+        </dd>
+        <dd>
+            <label for="input_purchaser_phone" class="label-title">市話 (可不填)</label>
+            <input type="tel" tabindex="56" id="input_purchaser_phone" class="not-required" size="20" placeholder="購買人市話 (可不填)">
+        </dd>
+        <dd>
+            <label for="input_recipient_phone" class="label-title">Phone Number</label>
+            <input type="tel" tabindex="60" id="input_recipient_phone" class="input-intl-phone" size="30" placeholder="Phone Number">
+        </dd>
+        <dd>
+            <label for="input_recipient_mobile" class="label-title">Mobile phone (optional)</label>
+            <input type="tel" tabindex="61" id="input_recipient_mobile" class="input-intl-phone not-required" size="30" placeholder="Mobile phone (optional)">
+        </dd>
+    </dl>
+</div>
+<!-- Recipient Infr -->
+<section id="add_new_address">
+    <div class="t-cart-title">Add a new address <span class="t-comment t-highlight">注意：便利商店取貨不接受貨到付款，若您選擇便利商店取貨，請於付款方式選擇其他付款方式</span></div>
+    <div class="md-add-address l-card">
+        <dl class="md-form md-new-local-address is-show">
+                    <dd>
+            <label for="input_recipient" class="label-title">收貨人姓名</label>
+            <input type="text" tabindex="51" id="input_recipient" size="20" placeholder="收貨人姓名">
+        </dd>
+        <dd>
+            <label class="label-title">收貨地址</label>
+            <select tabindex="52" name="" id="" class="width-half"><option value="">請選擇縣市</option></select>
+            <select tabindex="53" name="" id="" class="width-half"><option value="">請選擇鄉鎮市區</option></select>
+        </dd>
+        <dd>
+            <label for="input_shipping_address1" class="label-title"></label>
+            <input type="text" tabindex="54" id="input_shipping_address1" class="input-address" size="45" placeholder="收貨地址">
+            <br>
+            <label class="label-title"></label>
+            <a href="hk_sf.html" class="go-pickup go-popup" data-fancybox-type="iframe">配送至順豐站</a>
+            <a href="hk_cs.html" class="go-pickup go-popup" data-fancybox-type="iframe">配送至7-11或OK</a>
+        </dd>
+        <dd>
+            <label class="label-title">郵便番号</label>
+            <input type="text" tabindex="54" id="input_shipping_zip" size="10" placeholder="郵便番号">
+        </dd>
+        <dd>
+            <label class="label-title">住所</label>
+            <select tabindex="52" name="" id=""><option value="">都道府県</option></select>
+            <input type="text" tabindex="54" id="input_shipping_address" class="input-address" size="45" placeholder="市区町村">
+        </dd>
+        <dd>
+            <label for="input_recipient_mobile" class="label-title">手機</label>
+            <input type="tel" tabindex="55" id="input_recipient_mobile" size="20" placeholder="收貨人手機">
+        </dd>
+        <dd>
+            <label for="input_recipient_phone" class="label-title">市話 (可不填)</label>
+            <input type="tel" tabindex="56" id="input_recipient_phone" class="not-required" size="20" placeholder="收貨人市話 (可不填)">
+        </dd>
+        <dd>
+            <label class="label-title"></label>
+            <span class="t-comment">* We do not send to PO Boxes/APO/DPO/FPO. No shipping fees will be refunded for orders that have been rerouted.</span>
+        </dd>
+            <dd>
+                <label for="input_recipient" class="label-title"></label>
+                <a class="t-address-switch go-new-foreign-address">寄送到海外地址</a>
+            </dd>
+        </dl>
+        <dl class="md-form md-new-foreign-address">
+                    <dd>
+            <label for="input_recipient" class="label-title">Full name</label>
+            <input type="text" tabindex="51" id="input_recipient" size="20" placeholder="Full name">
+        </dd>
+        <dd>
+            <label for="input_shipping_address1" class="label-title">Address line 1</label>
+            <input type="text" tabindex="52" id="input_shipping_address1" class="input-address" size="50" placeholder="Street address, P.O. box, company name, c/o">
+        </dd>
+        <dd>
+            <label for="input_shipping_address2" class="label-title">Address line 2</label>
+            <input type="text" tabindex="53" id="input_shipping_address2" class="input-address" size="50" placeholder="Apartment, suite, unit, building, floor, etc.">
+        </dd>
+        <dd>
+            <label for="input_shipping_address3" class="label-title">Address line 3</label>
+            <input type="text" tabindex="54" id="input_shipping_address3" class="input-address" size="50" placeholder="Address line 3">
+        </dd>
+        <dd>
+            <label class="label-title">State / counties / town</label>
+            <select tabindex="55" name="" id="" class="width-half"><option value="">Select state</option></select>
+            <select tabindex="56" name="" id="" class="width-half"><option value="">Select counties</option></select>
+            <select tabindex="57" name="" id="" class="width-half"><option value="">Select town</option></select>
+        </dd>
+        <dd>
+            <label class="label-title">Country</label>
+            <select name="" id="" tabindex="58"><option value="">Select country</option></select>
+        </dd>
+        <dd>
+            <label for="input_zip" class="label-title">ZIP code</label>
+            <input type="number" tabindex="59" id="input_zip" class="input-zip width-half" size="10" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="ZIP code">
+        </dd>
+        <dd>
+            <label for="input_recipient_phone" class="label-title">Phone Number</label>
+            <input type="tel" tabindex="60" id="input_recipient_phone" class="input-intl-phone" size="30" placeholder="Phone Number">
+        </dd>
+        <dd>
+            <label for="input_recipient_mobile" class="label-title">Mobile phone (optional)</label>
+            <input type="tel" tabindex="61" id="input_recipient_mobile" class="input-intl-phone not-required" size="30" placeholder="Mobile phone (optional)">
+        </dd>
+            <dd>
+                <label for="input_recipient" class="label-title"></label>
+                <a class="t-address-switch go-new-local-address">寄送到本國地址</a>
+            </dd>
+        </dl>
+    </div>
+</section>
+<!--//////////// Old customer ////////////-->
+<!-- Purchaser Infr -->
+<div class="t-cart-title">Purchaser Information</div>
+<div class="md-purchaser-infr l-card">
+    <dl class="">
+        <dd>秦凱倫</dd>
+        <dd>0919******</dd>
+        <dd>0226******</dd>
+        <dd><a class="go-purchaser-form"><i class="fa fa-pencil"></i> 修改購買人資訊</a></dd>
+    </dl>
+</div>
+<div class="md-purchaser-form md-add-address l-card">
+    <dl class="md-form">
+        <dd>
+            <label for="input_purchaser" class="label-title">購買人姓名</label>
+            <input type="text" tabindex="51" id="input_purchaser" size="20" value="李豪元" placeholder="購買人姓名">
+        </dd>    
+        <dd>
+            <label for="input_purchaser_mobile" class="label-title">手機</label>
+            <input type="tel" tabindex="55" id="input_purchaser_mobile" size="20" value="0919******" placeholder="購買人手機">
+        </dd>
+        <dd>
+            <label for="input_purchaser_phone" class="label-title">市話 (可不填)</label>
+            <input type="tel" tabindex="56" id="input_purchaser_phone" class="not-required" size="20" value="0226******" placeholder="購買人市話 (可不填)">
+        </dd>
+    </dl>
+</div>
+
+<div class="t-cart-title">報關資訊</div>
+<div class="md-purchaser-identify l-card">
+    <dl class="md-form md-new-local-address is-show">
+        <dd>
+            <label for="input_identify" class="label-title">身分證字號</label>
+            <input type="" tabindex="60" id="input_identify" class="input" size="30" placeholder="身分證字號">
+        </dd>
+    </dl>
+</div>
+<!-- Recipient Infr -->
+<section class="md-address-book is-show" id="address_book">
+    <div class="t-cart-title">選擇收貨地址</div>
+    <dl class="md-recipient-infr l-card">
+        <dd class="md-user-address is-active">
+            <label for="radio_address1">
+                <input type="radio" id="radio_address1" name="radio_address" checked>
+                <ul>
+                    <li>Sadie Heller</li>
+                    <li class="t-address">Manhattan Mall 901 Ave of the Americas Suite 137 New York, NY</li>
+                    <li>10001-3511</li>
+                    <li>United States</li>
+                    <li>+886-919283600</li>
+                    <li>+1 (212) 295-6120</li>
+                    <li class="t-active"><a class="go-edit-address go-popup" href="#edit_foreign_address">Edit</a><a class="go-delete-address">Delete</a></li>
+                </ul>
+            </label>
+        </dd>
+        
+        <dd class="md-user-address">  
+            <label for="radio_address2">
+                <input type="radio" id="radio_address2" name="radio_address">     
+                <ul>
+                    <li>鄧芬</li>
+                    <li class="t-address">台北市信義區忠孝東路路2段100巷100弄1000號10樓</li>
+                    <li>Taiwan</li>
+                    <li>0919283600</li>
+                    <li>02-23456789</li>
+                    <li class="t-active"><a class="go-edit-address go-popup" href="#edit_local_address">Edit</a><a class="go-delete-address">Delete</a></li>
+                </ul>
+            </label>
+        </dd>
+        
+        <dd class="md-user-address">  
+            <label for="radio_address3">
+                <input type="radio" id="radio_address3" name="radio_address">     
+                <ul>
+                    <li>閻柏</li>
+                    <li class="t-address">台北市信義區忠孝東路路2段100巷100弄1000號10樓</li>
+                    <li>Taiwan</li>
+                    <li>0919283600</li>
+                    <li>02-23456789</li>
+                    <li class="t-active"><a class="go-edit-address go-popup" href="#edit_local_address">Edit</a><a class="go-delete-address">Delete</a></li>
+                </ul>
+            </label>
+        </dd>
+        
+        <dd class="md-user-address">  
+            <label for="radio_address4">
+                <input type="radio" id="radio_address4" name="radio_address">     
+                <ul>
+                    <li>常惠</li>
+                    <li class="t-address">台北市信義區忠孝東路路2段100巷100弄1000號10樓</li>
+                    <li>Taiwan</li>
+                    <li>0919283600</li>
+                    <li>02-23456789</li>
+                    <li class="t-active"><a class="go-edit-address go-popup" href="#edit_local_address">Edit</a><a class="go-delete-address">Delete</a></li>
+                </ul>
+            </label>
+        </dd>
+        
+        <div class="clearfix"></div>
+        <button class="btn-add-address go-popup" href="#add_address">新增本國收貨地址</button>
+        <button class="btn-add-address go-foreign-address">寄送到海外地址</button>
+    </dl>
+</section>
+<!-- Add Foreign Address -->
+<section class="md-foreign-address" id="foreign_address">
+    <div class="t-cart-title">寄送到海外地址</div>
+    <div class="md-add-address l-card">
+        <dl class="md-form md-new-foreign-address is-show">
+                    <dd>
+            <label for="input_recipient" class="label-title">Full name</label>
+            <input type="text" tabindex="51" id="input_recipient" size="20" placeholder="Full name">
+        </dd>
+        <dd>
+            <label for="input_shipping_address1" class="label-title">Address line 1</label>
+            <input type="text" tabindex="52" id="input_shipping_address1" class="input-address" size="50" placeholder="Street address, P.O. box, company name, c/o">
+        </dd>
+        <dd>
+            <label for="input_shipping_address2" class="label-title">Address line 2</label>
+            <input type="text" tabindex="53" id="input_shipping_address2" class="input-address" size="50" placeholder="Apartment, suite, unit, building, floor, etc.">
+        </dd>
+        <dd>
+            <label for="input_shipping_address3" class="label-title">Address line 3</label>
+            <input type="text" tabindex="54" id="input_shipping_address3" class="input-address" size="50" placeholder="Address line 3">
+        </dd>
+        <dd>
+            <label class="label-title">State / counties / town</label>
+            <select tabindex="55" name="" id="" class="width-half"><option value="">Select state</option></select>
+            <select tabindex="56" name="" id="" class="width-half"><option value="">Select counties</option></select>
+            <select tabindex="57" name="" id="" class="width-half"><option value="">Select town</option></select>
+        </dd>
+        <dd>
+            <label class="label-title">Country</label>
+            <select name="" id="" tabindex="58"><option value="">Select country</option></select>
+        </dd>
+        <dd>
+            <label for="input_zip" class="label-title">ZIP code</label>
+            <input type="number" tabindex="59" id="input_zip" class="input-zip width-half" size="10" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="ZIP code">
+        </dd>
+        <dd>
+            <label for="input_recipient_phone" class="label-title">Phone Number</label>
+            <input type="tel" tabindex="60" id="input_recipient_phone" class="input-intl-phone" size="30" placeholder="Phone Number">
+        </dd>
+        <dd>
+            <label for="input_recipient_mobile" class="label-title">Mobile phone (optional)</label>
+            <input type="tel" tabindex="61" id="input_recipient_mobile" class="input-intl-phone not-required" size="30" placeholder="Mobile phone (optional)">
+        </dd>
+            <dd>
+                <label for="input_recipient" class="label-title"></label>
+                <button class="btn-add-address go-address-book">從已儲存的本國收貨地址中選擇</button>
+            </dd>
+        </dl>
+    </div>
+</section>
+<!-- add address -->
+<div id="add_address" class="md-add-address md-dialog">
+    <h3 class="t-title">新增本國收貨地址</h3>
+    <dl class="md-form">
+                <dd>
+            <label for="input_recipient" class="label-title">收貨人姓名</label>
+            <input type="text" tabindex="51" id="input_recipient" size="20" placeholder="收貨人姓名">
+        </dd>
+        <dd>
+            <label class="label-title">收貨地址</label>
+            <select tabindex="52" name="" id="" class="width-half"><option value="">請選擇縣市</option></select>
+            <select tabindex="53" name="" id="" class="width-half"><option value="">請選擇鄉鎮市區</option></select>
+        </dd>
+        <dd>
+            <label for="input_shipping_address1" class="label-title"></label>
+            <input type="text" tabindex="54" id="input_shipping_address1" class="input-address" size="45" placeholder="收貨地址">
+            <br>
+            <label class="label-title"></label>
+            <a href="hk_sf.html" class="go-pickup go-popup" data-fancybox-type="iframe">配送至順豐站</a>
+            <a href="hk_cs.html" class="go-pickup go-popup" data-fancybox-type="iframe">配送至7-11或OK</a>
+        </dd>
+        <dd>
+            <label class="label-title">郵便番号</label>
+            <input type="text" tabindex="54" id="input_shipping_zip" size="10" placeholder="郵便番号">
+        </dd>
+        <dd>
+            <label class="label-title">住所</label>
+            <select tabindex="52" name="" id=""><option value="">都道府県</option></select>
+            <input type="text" tabindex="54" id="input_shipping_address" class="input-address" size="45" placeholder="市区町村">
+        </dd>
+        <dd>
+            <label for="input_recipient_mobile" class="label-title">手機</label>
+            <input type="tel" tabindex="55" id="input_recipient_mobile" size="20" placeholder="收貨人手機">
+        </dd>
+        <dd>
+            <label for="input_recipient_phone" class="label-title">市話 (可不填)</label>
+            <input type="tel" tabindex="56" id="input_recipient_phone" class="not-required" size="20" placeholder="收貨人市話 (可不填)">
+        </dd>
+        <dd>
+            <label class="label-title"></label>
+            <span class="t-comment">* We do not send to PO Boxes/APO/DPO/FPO. No shipping fees will be refunded for orders that have been rerouted.</span>
+        </dd>
+    </dl>
+    <div class="md-form-btn">
+        <button class="btn-cancel" onclick="$.fancybox.close();">Cancel</button>
+        <button class="btn-submit" onclick="location.href='shipping.html'">Ship to this address</button>
+        <button class="btn-cancel" onclick="$.fancybox.close();">Cancel</button>
+    </div>
+</div>
+<!-- edit local address -->
+<div id="edit_local_address" class="md-add-address md-dialog">
+    <h3 class="t-title">修改收貨地址</h3>
+    <dl class="md-form">
+                <dd>
+            <label for="input_recipient" class="label-title">收貨人姓名</label>
+            <input type="text" tabindex="51" id="input_recipient" size="20" placeholder="收貨人姓名">
+        </dd>
+        <dd>
+            <label class="label-title">收貨地址</label>
+            <select tabindex="52" name="" id="" class="width-half"><option value="">請選擇縣市</option></select>
+            <select tabindex="53" name="" id="" class="width-half"><option value="">請選擇鄉鎮市區</option></select>
+        </dd>
+        <dd>
+            <label for="input_shipping_address1" class="label-title"></label>
+            <input type="text" tabindex="54" id="input_shipping_address1" class="input-address" size="45" placeholder="收貨地址">
+            <br>
+            <label class="label-title"></label>
+            <a href="hk_sf.html" class="go-pickup go-popup" data-fancybox-type="iframe">配送至順豐站</a>
+            <a href="hk_cs.html" class="go-pickup go-popup" data-fancybox-type="iframe">配送至7-11或OK</a>
+        </dd>
+        <dd>
+            <label class="label-title">郵便番号</label>
+            <input type="text" tabindex="54" id="input_shipping_zip" size="10" placeholder="郵便番号">
+        </dd>
+        <dd>
+            <label class="label-title">住所</label>
+            <select tabindex="52" name="" id=""><option value="">都道府県</option></select>
+            <input type="text" tabindex="54" id="input_shipping_address" class="input-address" size="45" placeholder="市区町村">
+        </dd>
+        <dd>
+            <label for="input_recipient_mobile" class="label-title">手機</label>
+            <input type="tel" tabindex="55" id="input_recipient_mobile" size="20" placeholder="收貨人手機">
+        </dd>
+        <dd>
+            <label for="input_recipient_phone" class="label-title">市話 (可不填)</label>
+            <input type="tel" tabindex="56" id="input_recipient_phone" class="not-required" size="20" placeholder="收貨人市話 (可不填)">
+        </dd>
+        <dd>
+            <label class="label-title"></label>
+            <span class="t-comment">* We do not send to PO Boxes/APO/DPO/FPO. No shipping fees will be refunded for orders that have been rerouted.</span>
+        </dd>
+    </dl>
+    <div class="md-form-btn">
+        <button class="btn-cancel" onclick="$.fancybox.close();">取消</button>
+        <button class="btn-submit" onclick="location.href='shipping.html'">寄送到此地址</button>
+        <button class="btn-cancel" onclick="$.fancybox.close();">取消</button>
+    </div>
+</div>
+<!-- edit foreign address -->
+<div id="edit_foreign_address" class="md-add-address md-dialog">
+    <h3 class="t-title">修改收貨地址</h3>
+    <dl class="md-form">
+                <dd>
+            <label for="input_recipient" class="label-title">Full name</label>
+            <input type="text" tabindex="51" id="input_recipient" size="20" placeholder="Full name">
+        </dd>
+        <dd>
+            <label for="input_shipping_address1" class="label-title">Address line 1</label>
+            <input type="text" tabindex="52" id="input_shipping_address1" class="input-address" size="50" placeholder="Street address, P.O. box, company name, c/o">
+        </dd>
+        <dd>
+            <label for="input_shipping_address2" class="label-title">Address line 2</label>
+            <input type="text" tabindex="53" id="input_shipping_address2" class="input-address" size="50" placeholder="Apartment, suite, unit, building, floor, etc.">
+        </dd>
+        <dd>
+            <label for="input_shipping_address3" class="label-title">Address line 3</label>
+            <input type="text" tabindex="54" id="input_shipping_address3" class="input-address" size="50" placeholder="Address line 3">
+        </dd>
+        <dd>
+            <label class="label-title">State / counties / town</label>
+            <select tabindex="55" name="" id="" class="width-half"><option value="">Select state</option></select>
+            <select tabindex="56" name="" id="" class="width-half"><option value="">Select counties</option></select>
+            <select tabindex="57" name="" id="" class="width-half"><option value="">Select town</option></select>
+        </dd>
+        <dd>
+            <label class="label-title">Country</label>
+            <select name="" id="" tabindex="58"><option value="">Select country</option></select>
+        </dd>
+        <dd>
+            <label for="input_zip" class="label-title">ZIP code</label>
+            <input type="number" tabindex="59" id="input_zip" class="input-zip width-half" size="10" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="ZIP code">
+        </dd>
+        <dd>
+            <label for="input_recipient_phone" class="label-title">Phone Number</label>
+            <input type="tel" tabindex="60" id="input_recipient_phone" class="input-intl-phone" size="30" placeholder="Phone Number">
+        </dd>
+        <dd>
+            <label for="input_recipient_mobile" class="label-title">Mobile phone (optional)</label>
+            <input type="tel" tabindex="61" id="input_recipient_mobile" class="input-intl-phone not-required" size="30" placeholder="Mobile phone (optional)">
+        </dd>
+    </dl>
+    <div class="md-form-btn">
+        <button class="btn-cancel" onclick="$.fancybox.close();">Cancel</button>
+        <button class="btn-submit" onclick="location.href='shipping.html'">Ship to this address</button>
+        <button class="btn-cancel" onclick="$.fancybox.close();">Cancel</button>
+    </div>
+</div>
+
+<div class="t-cart-title">發票索取</div>
+<div class="md-purchaser-identify l-card">
+    <dl class="md-form md-invoice-take">
+        <dd>
+<!--            <label class="label-title">發票索取</label>-->
+            <label for="radio_invoice_personal">
+                <input type="radio" id="radio_invoice_personal" name="radio_invoice" value="2" checked="checked"/>个人
+                <input type="text" name="personal_invoice" class="input-name" maxlength="5" size="10" placeholder="购买人姓名" value=""/>
+            </label>
+            <label for="radio_invoice_company">
+                <input type="radio" id="radio_invoice_company" name="radio_invoice" value="3"/>单位
+                <input type="text" name="company_invoice" class="input-name" maxlength="15" size="10" placeholder="单位名称"/>
+            </label>
+        </dd>
+    </dl>
+</div>
+
+<!--//////////// No CVS saved ////////////-->
+<div class="t-cart-title">新增收貨門市</div>
+<div class="md-add-address l-card">
+    <dl class="md-form">
+        <dd>
+            <label for="input_recipient" class="label-title">取貨人姓名</label>
+            <input type="text" tabindex="1" id="input_recipient" size="20" placeholder="取貨人姓名">
+        </dd>
+        <dd>
+            <label for="input_recipient_mobile" class="label-title">取貨人手機</label>
+            <input type="tel" tabindex="2" id="input_recipient_mobile" size="20" placeholder="取貨人手機">
+        </dd>
+    </dl>
+</div>
+<div class="md-payment-buttons">
+    <button class="btn-payment btn-submit">選擇7-11門市</button>
+    <button class="btn-payment btn-submit">選擇全家門市</button>
+</div>
+<!--//////////// Have CVS saved ////////////-->
+<div class="t-cart-title">選擇取貨門市</div>
+<dl class="md-recipient-infr l-card">
+    <dd class="md-user-address in-cvs is-active">
+        <label for="radio_address1">
+            <input type="radio" id="radio_address1" name="radio_address" checked>
+            <ul>
+                <li>顧賢青</li>
+                <li><span class="icon-cs-logo seven"></span> 7-11宏禧門市</li>
+                <li class="t-address">新北市中和區景平路429號1樓</li>
+                <li>0919283600</li>
+                <li class="t-active"><a class="go-edit-address go-popup" href="#edit_cvs">Edit</a><a class="go-delete-address">Delete</a></li>
+            </ul>
+        </label>
+    </dd>
+    
+    <dd class="md-user-address in-cvs">  
+        <label for="radio_cvs2">
+            <input type="radio" id="radio_cvs2" name="radio_address">     
+            <ul>
+                <li>嚴榮珮</li>
+                <li><span class="icon-cs-logo fami"></span> 7-11宏禧門市</li>
+                <li class="t-address">新北市中和區景平路429號1樓</li>
+                <li>0919283600</li>
+                <li class="t-active"><a class="go-edit-address go-popup" href="#edit_cvs">Edit</a><a class="go-delete-address">Delete</a></li>
+            </ul>
+        </label>
+    </dd>
+    
+    <dd class="md-user-address in-cvs">  
+        <label for="radio_cvs3">
+            <input type="radio" id="radio_cvs3" name="radio_address">     
+            <ul>
+                <li>侯敏立</li>
+                <li><span class="icon-cs-logo fami"></span> 7-11宏禧門市</li>
+                <li class="t-address">新北市中和區景平路429號1樓</li>
+                <li>0919283600</li>
+                <li class="t-active"><a class="go-edit-address go-popup" href="#edit_cvs">Edit</a><a class="go-delete-address">Delete</a></li>
+            </ul>
+        </label>
+    </dd>
+    
+    <dd class="md-user-address in-cvs">  
+        <label for="radio_cvs4">
+            <input type="radio" id="radio_cvs4" name="radio_address">     
+            <ul>
+                <li>葉銘賢</li>
+                <li><span class="icon-cs-logo fami"></span> 7-11宏禧門市</li>
+                <li class="t-address">新北市中和區景平路429號1樓</li>
+                <li>0919283600</li>
+                <li class="t-active"><a class="go-edit-address go-popup" href="#edit_cvs">Edit</a><a class="go-delete-address">Delete</a></li>
+            </ul>
+        </label>
+    </dd>
+    
+    <div class="clearfix"></div>
+    <button class="btn-add-address go-popup" href="#add_cvs">新增取貨門市</button>
+</dl>
+<!-- add cvs -->
+<div id="add_cvs" class="md-add-cvs md-dialog">
+    <h3 class="t-title">取貨人資訊</h3>
+    <dl class="md-form">
+        <dd>
+            <label for="input_recipient" class="label-title">取貨人姓名</label>
+            <input type="text" tabindex="3" id="input_recipient" size="20" placeholder="取貨人姓名">
+        </dd>
+        <dd>
+            <label for="input_recipient_mobile" class="label-title">取貨人手機</label>
+            <input type="tel" tabindex="4" id="input_recipient_mobile" size="20" placeholder="取貨人手機">
+        </dd>
+    </dl>
+    <div class="md-form-btn">
+        <button class="btn-cancel" onclick="$.fancybox.close();">取消</button>
+        <button class="btn-submit">選擇7-11門市</button>
+        <button class="btn-submit">選擇全家門市</button>
+        <button class="btn-cancel" onclick="$.fancybox.close();">取消</button>
+    </div>
+</div>
+<!-- edit cvs -->
+<div id="edit_cvs" class="md-add-cvs md-dialog">
+    <h3 class="t-title">修改取貨門市</h3>
+    <dl class="md-form">
+        <dd>
+            <label for="input_recipient" class="label-title">取貨人姓名</label>
+            <input type="text" tabindex="5" id="input_recipient" size="20" placeholder="取貨人姓名">
+        </dd>
+        <dd>
+            <label for="input_recipient_mobile" class="label-title">取貨人手機</label>
+            <input type="tel" tabindex="6" id="input_recipient_mobile" size="20" placeholder="取貨人手機">
+        </dd>
+        <dd>
+            <label class="label-title is-show">取貨門市</label>
+            <span>宏禧門市 (地址：新北市中和區景平路429號1樓)</span>
+        </dd>
+        <dd>
+            <label class="label-title"></label>
+            <button class="btn-cvs">重選門市</button>
+        </dd>
+    </dl>
+    <div class="md-form-btn">
+        <button class="btn-cancel" onclick="$.fancybox.close();">取消</button>
+        <button class="btn-submit" onclick="location.href='shipping.html'">寄送到此門市</button>
+        <button class="btn-cancel" onclick="$.fancybox.close();">取消</button>
+    </div>
+</div>
+<!-- button -->
+<div class="md-payment-buttons">
+    <button class="btn-payment btn-submit" onclick="location.href='shipping.html'">Ship to this address</button>
+</div>	<!-- footer -->
+	<footer class="l-footer">
+		<div class="service">ASAP 使用<span class="icon-uitox-s"></span>金物流服務</div>
+	    	<div class="copyright">
+	       	&copy; <?php echo date('Y'); ?> <a href="http://www.uitox.com/" target="_blank">uitox Corporation</a> or its affiliates.
+	       	<a href="privacy.html" target="_blank" class="go-privacy">隱私權政策</a>
+		</div>
+	</footer></div>
+<a class="go-top" title="Back to top"></a>
+<script src="assets/c/js/vendor/jquery.min.js" ></script>
+<script src="assets/c/js/vendor/jquery.fancybox.pack.js"></script>
+<script src="assets/c/js/common.js"></script>
+<script src="assets/c/js/vendor/intlTelInput.min.js"></script>
+<script src="assets/c/js/init_intlTelInput.js"></script>
+<script src="assets/c/js/p_address.js"></script>
+</body>
+</html>

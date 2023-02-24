@@ -1,0 +1,63 @@
+//additional purchase
+.additional-purchase {
+	& > dd {
+		width: 24%;
+		height: 450px;
+		margin: 10px 0;
+		padding: 15px;
+		word-break: break-all;
+		background: lighten($main-lighten-color,8);
+		border: $main-grey-color 1px solid;
+		@include border-radius(3px);
+		@include box-sizing(border-box);
+		vertical-align: top;
+		display: inline-block;
+		position: relative;
+		&.hide {
+			color: #999;
+			background: $main-grey-color;
+		}
+		.product-image {
+			text-align: center;
+			img {
+				width: 100%;
+				max-width: 160px;
+				border: #fff 1px solid;
+			}
+		}
+		.product {
+			margin: 15px 0;
+			dd {
+				margin: 5px 0;
+				b {
+					font-weight: bold;
+				}
+			}
+		}
+		.button {
+			left: 50%;
+			bottom: 15px;
+			margin-left: -60px;
+			text-align: center;
+			position: absolute;
+			.btn-edit, .btn-delete {
+				font-size: 0.9em;
+				padding: 3px 10px;
+				@include btn-color(mix($main-green-color,#fff,60));
+			}
+			.btn-delete {
+				@include btn-color(mix($main-red-color,#fff,40));
+			}
+		}
+	}
+}
+.additional-purchase-edit {
+	.comment {
+		margin-left: 5px;
+		display: inline-block;
+	}
+	.btn-sync-item {
+		font-size: 0.9em;
+		padding: 3px 10px;
+	}
+}

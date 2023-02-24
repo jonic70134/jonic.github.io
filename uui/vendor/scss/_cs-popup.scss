@@ -1,0 +1,149 @@
+//popup
+.cs-popup-content {
+	padding: 20px 30px;
+	@include background-image(linear-gradient(lighten($main-lighten-color,10), white));
+	.cs-button {
+		margin: 20px 0 0;
+		button {
+	        font-size: 1.1em;
+	        margin: 0;
+	        padding: 5px 15px;
+	    }
+	}
+	.orders-table {
+		width: 100%;
+		& > tbody > tr td {
+			background: #fff;
+		}
+		tr:nth-child(even) td {
+			background: lighten($main-grey-color,10);
+		}
+		tr.summary td {
+			font-weight: bold;
+			background: mix($main-red-color,#fff,20) !important;
+			border-right-color: mix($main-red-color,#fff,20);
+			border-bottom-color: mix($main-red-color,#ccc,20);
+		}
+		.pcs {
+			float: right;
+		}
+	}
+}
+.cs-dialog-content {
+	padding: 20px;
+	.title {
+		font-size: 1.2em;
+	}
+	p {
+		margin: 20px 30px;
+		text-align: center;
+		&.align-left {
+			text-align: left;
+		}
+	}
+	.cs-button {
+		margin-top: 30px;
+	}
+}
+.purchaser-infr, .remarks-infr {
+	margin: 20px 0;
+	dt {
+		width: 25%;
+		margin: 5px 0;
+		text-align: right;
+		vertical-align: top;
+		display: inline-block;
+	}
+	dd {
+		width: 75%;
+		margin: 5px 0;
+		display: inline-block;
+	}
+}
+.go-back {
+	margin-top: -10px;
+	cursor: pointer;
+	float: right;
+	.fa {
+		margin-right: 5px;
+	}
+}
+.return-form {
+	margin: 20px 0;
+	padding: 15px 20px;
+	background: lighten($main-grey-color,8);
+	@include border-radius(3px);
+	.title {
+		color: darken($main-grey-color,30);
+		font-size: 1.25em;
+		margin-bottom: 10px;
+	}
+	dd {
+		margin: 5px 0;
+		padding-right: 30px;
+		display: inline-block;
+	}
+}
+.recipient-form {
+	dd {
+		margin: 5px 0;
+		padding-right: 30px;
+		display: inline-block;
+	}
+}
+.invoive-preview {
+	text-align: center;
+	.comment {
+		margin: 30px 0 10px;
+	}
+}
+.add-remarks-form {
+	.textarea-add-remarks {
+		width: 96%;
+		height: 100px;
+	}
+}
+.order-function-form {
+	dd {
+		margin-bottom: 5px;
+	}
+	label {
+		width: 20%;
+		text-align: right;
+		display: inline-block;
+		&.label-content-title {
+			vertical-align: top;
+		}
+	}
+	.select-order-function {
+		width: 75%;
+	}
+	.input-order-function {
+		width: 72%;
+	}
+	.textarea-order-function {
+		width: 72%;
+		height: 100px;
+	}
+	.sms-caculate {
+		padding-left: 170px;
+		.txt-length {
+			color: $main-red-color;
+			margin: 0 5px;
+		}
+	}
+}
+.invoice-form {
+	&.check-group {
+		margin-left: 70px;
+	}
+	dd {
+		margin: 10px 0;
+	}
+	.input-date {
+		width: 30px;
+	}
+	.select-date {
+		width: 50px;
+	}
+}

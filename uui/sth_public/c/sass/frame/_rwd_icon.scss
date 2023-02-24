@@ -1,0 +1,33 @@
+.icon-menu{
+	@include background2(25px, 25px, 0px, 0px, 0px, 0px);
+}
+.icon-search{
+	@include background2(25px, 25px, -25px, 0px, 0px, 0px);
+}
+.icon-account{
+	@include background2(25px, 25px, -50px, 0px, 0px, 0px);
+}
+.icon-cart{
+	@include background2(25px, 25px, -75px, 0px, 0px, 0px);
+}
+.icon-close{
+	@include background2(25px, 25px, -100px, 0px, 0px, 0px);
+}
+.icon-go-top{
+	@include background2(25px, 25px, -125px, 0px, 0px, 0px);
+}
+.icon-arrow-down{
+	@include background2(25px, 25px, -250px, 0px, 3px, 0px);
+}
+.icon-tag{
+	@include background2(166px, 42px, 0px, -200px, 0px, 0px);
+}
+.icon-tag-gray{
+	@include background2(166px, 42px, -167px, -200px, 0px, 0px);
+}
+//[class^="icon-"]:before,
+[class*="icon-"]:before{
+	content: "";
+	position: relative;
+	@include inline-block;
+}

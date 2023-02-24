@@ -1,0 +1,104 @@
+@import "compass";
+@import "compass/css3";
+@import "compass/utilities/general/hacks";
+@import "_variables.scss";
+@import "_mixin.scss";
+
+@import "_breadcrumb.scss";
+@import "_template-base.scss";
+@import "_template-table.scss";
+@import "_template-popup.scss";
+
+/* billing */
+.billing {
+	margin: 30px 0 20px;
+	.title {
+		font-weight: bold;
+		text-align: center;
+	}
+	.plateform-name {
+		width: 100px;
+		color: #999;
+		float: left;
+	}
+	.billing-num {
+		width: 180px;
+		color: #999;
+		text-align: right;
+		float: right;
+	}
+	.barcode {
+		margin: 10px 0;
+		text-align: center;
+	}
+	.subtitle {
+		color: $main-color;
+		font-size: 1.15em;
+		font-family: $font-heiti;
+		.fa {
+			font-size: 1.1em;
+			margin-right: 5px;
+		}
+	}
+	.template-table {
+		margin: 10px 0 40px;
+		th, td {
+			height: auto;
+			padding: 10px;
+		}
+		.col-white {
+			background: none;
+		}
+		.col-high {
+			background: mix($main-blue-color,#fff,50);
+		}
+		.col-dark {
+			background: darken($main-grey-color,10);
+		}
+		.col-border-bold {
+			border-right-color: #fff;
+			border-right-width: 2px;
+		}
+		.row-summary {
+			font-weight: bold;
+		}
+		.tax td {
+			color: $main-red-color;
+			background: mix($main-red-color,#eee,5) !important;
+		}
+	}
+	.account-summary {
+		margin: 30px 0;
+		color: darken($main-red-color,10);
+		font-size: 1.333em;
+		font-weight: bold;
+		font-family: $font-heiti;
+		text-align: right;
+	}
+	.sign-column {
+		letter-spacing: -0.32em;
+		dd {
+			width: 25%;
+			padding: 0 10px;
+			letter-spacing: normal;
+			@include box-sizing(border-box);
+			display: inline-block;
+		}
+	}
+}
+.billing-summary {
+	.billing-num {
+		width: 350px;
+		color: #999;
+		text-align: right;
+		float: right;
+	}
+	.barcode {
+		margin: 0 10px;
+		float: left;
+	}
+	.template-table {
+		width: auto;
+		min-width: 0;
+	}
+}

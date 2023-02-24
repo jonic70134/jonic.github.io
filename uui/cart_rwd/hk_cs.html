@@ -1,0 +1,1500 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox shopping cart</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/c/css/vendor/font-awesome.min.css" rel="stylesheet">
+<link href="assets/c/css/vendor/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<link href="assets/c/css/common.css" rel="stylesheet" type="text/css">
+<link href="assets/c/css/pickup.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="assets/c/js/vendor/html5.js"></script>
+<script src="assets/c/js/ie.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/c/css/ie.css">
+<![endif]--></head>
+<body>
+<div class="pickup-index">
+	<a href="#cs_seven"><span class="icon-cs-logo seven"></span> 7-11便利店</a>
+	<a href="#cs_ok"><span class="icon-cs-logo ok"></span> OK便利店</a>
+</div>
+<div class="md-form-btn with-index">
+    <button class="btn-cancel" onclick="parent.$.fancybox.close();">關閉視窗</button>
+</div>
+<h1 class="t-title large" id="cs_seven">7-11便利店</h1>
+<h1 class="t-title"><span class="icon-cs-logo seven"></span> 港島區</h1>
+<table class="pickup-table">
+	<tr>
+		<th width="60" class="col-head">區域</th>
+		<th>地址</th>
+		<th width="145">服務時間<br>(週一至日及公眾假期)</th>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">上環</td>
+		<td><a href="" lang="zh">香港上環荷李活道123號荷李活華庭地下3號鋪 (852M1007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港半山西摩道 1 號輝煌台 7 號鋪 (852M1006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">大坑</td>
+		<td><a href="" lang="zh">香港大坑勵德邨第 6 座26號鋪 (852P1003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="3">中環</td>
+		<td><a href="" lang="zh">香港中環伊利近街 40 號地下鋪位 (852M1005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港中環堅道 27 號地下 (852M1004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港中環堅道 89 號地下 (852M1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">太古</td>
+		<td><a href="" lang="zh">香港太古城第 5 期甯安閣 G506至G507 號鋪 (852PA1005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="3">北角</td>
+		<td><a href="" lang="zh">香港北角七姊妹道 180-182 號健康村地下 A 鋪 (852PA1004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港北角渣華道 92 號地下 (852P1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港北角港鐵北角站 NOP1 號鋪 (852P1002)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-24:00</td>
+	</tr>
+	<tr>
+		<td class="col-head">西環</td>
+		<td><a href="" lang="zh">香港西環高街 88 號地下 (852M1003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="4">香港仔</td>
+		<td><a href="" lang="zh">香港香港仔中心 25 號鋪南寧街 7-11號 (852TB1007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港香港仔田灣村田灣商場 102 號鋪位 (852TB1006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港香港仔華富村第二期商業中心第 S24A 鋪 (852TB1004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港香港仔華貴村華貴商場地下 6 號鋪 (852TB1005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">柴灣</td>
+		<td><a href="" lang="zh">香港柴灣峰華邨曉峰樓地下 8 號鋪位 (852PB1004)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-23:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港柴灣環翠村街市鋪位 MS1 號鋪位 (852PB1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">堅尼地城</td>
+		<td><a href="" lang="zh">香港堅尼地城觀龍樓電梯穿梭大樓地下 1 號鋪位 (852MA1001)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-23:00</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="3">筲箕灣</td>
+		<td><a href="" lang="zh">香港筲箕灣東大街 62-74 號太安閣地下 23-28 號鋪 (852PA1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港筲箕灣道 15-31 號興祥大廈地下 E 鋪 (852PA1002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港筲箕灣耀東村耀東商場中心地下一號鋪位 (852PA1003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="3">鴨脷洲</td>
+		<td><a href="" lang="zh">香港鴨脷洲大街 25-31 號年豐大廈地下 6-9 號鋪 (852TB1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港鴨利洲村多層停車場地下 6 號鋪 (852TB1002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港鴨脷洲利東村商業中心一期 102 號鋪 (852TB1003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+</table>
+<h1 class="t-title"><span class="icon-cs-logo seven"></span> 九龍區</h1>
+<table class="pickup-table">
+	<tr>
+		<th width="60" class="col-head">區域</th>
+		<th>地址</th>
+		<th width="145">服務時間<br>(週一至日及公眾假期)</th>
+	</tr>
+	<tr>
+		<td class="col-head">九龍城</td>
+		<td><a href="" lang="zh">九龍九龍城獅子石道 87 號地下 (852K1002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">樂富</td>
+		<td><a href="" lang="zh">九龍橫頭磡村宏輝中心第三層單位 5,6,7,8 (852J1007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">大角咀</td>
+		<td><a href="" lang="zh">九龍大角咀道 79 號興旺大廈地下 7 號舖 (852B1006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">牛頭角</td>
+		<td><a href="" lang="zh">九龍牛頭角定安街 37-43 號立興大廈地下 D 舖 (852C1012)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">土瓜灣</td>
+		<td><a href="" lang="zh">九龍土瓜灣美景街 87-89 號偉恆昌新村昌景閣地下 23-24 號 (852K1005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">佐敦</td>
+		<td><a href="" lang="zh">九龍九龍站(東涌線)88號鋪 (近機場快線月臺) (852E1002)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-24:00</td>
+	</tr>
+	<tr>
+		<td class="col-head">九龍塘</td>
+		<td><a href="" lang="zh">九龍九龍塘又一村達之路 28 號又發樓地下 9 號鋪 (852B1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">牛池灣</td>
+		<td><a href="" lang="zh">九龍牛池灣瓊東街8號嘉峰臺地下2號鋪 (852J1004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">石硤尾</td>
+		<td><a href="" lang="zh">九龍石硤尾白田村第九座地下 15-17 號鋪 (852B1003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">南昌</td>
+		<td><a href="" lang="zh">九龍西鐵線南昌站19 及 20 號鋪 (繳費區) (852B1002)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-24:00</td>
+	</tr>
+	<tr>
+		<td class="col-head">油麻地</td>
+		<td><a href="" lang="zh">九龍油麻地眾方街 3 號駿發花園戲院大樓地下 H1 鋪 (852BB1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="4">紅磡</td>
+		<td><a href="" lang="zh">九龍紅磡育才道香港理工學院邵逸夫綜合大樓二字樓 C210 室 (852E1001)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-23:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍紅磡差館裡 17-19 號聚賢大廈地下 2A-2B 鋪位 (852K1003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍紅磡黃埔新村民泰街 2-32 永華及達華樓地下 B2A-B2B (852K1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍紅磡福至街 38 至 42 號紅磡灣中心地下 5 號鋪位 (852K1004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">美孚</td>
+		<td><a href="" lang="zh">九龍美孚新村恒柏街 2 號 N32 地鋪 (852D1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">荔枝角</td>
+		<td><a href="" lang="zh">九龍荔枝角海麗邨海麗商場地下 8 號鋪位 (852D1002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">彩虹</td>
+		<td><a href="" lang="zh">九龍彩虹邨金華樓地下 6 號鋪位 (852J1003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">黃大仙</td>
+		<td><a href="" lang="zh">九龍黃大仙下邨二期龍樂樓地下 1 號鋪 (852J1005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍黃大仙竹園村竹園商場 S4 號鋪 (852J1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">慈雲山</td>
+		<td><a href="" lang="zh">九龍慈雲山毓華街 23 號慈雲山中心商場 3 樓 324-325 號 (852J1002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">藍田</td>
+		<td><a href="" lang="zh">九龍藍田啟田邨啟田商場地下 7 號鋪位 (852C1003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">鯉魚門</td>
+		<td><a href="" lang="zh">九龍鯉魚門祟信街8號鯉灣天下地下3A號鋪 (852C1005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="3">觀塘</td>
+		<td><a href="" lang="zh">九龍觀塘協和街 143-167 號協和樓地下 7 號鋪 (852C1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍觀塘順利邨利溢樓 B01 號鋪位 (852C1006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍觀塘翠屏北邨翠屏北商場翠柳樓 M2 樓 102 號鋪 (852C1004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+</table>
+<h1 class="t-title"><span class="icon-cs-logo seven"></span> 新界區</h1>
+<table class="pickup-table">
+	<tr>
+		<th width="60" class="col-head">區域</th>
+		<th>地址</th>
+		<th width="145">服務時間<br>(週一至日及公眾假期)</th>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="5">上水</td>
+		<td><a href="" lang="zh">新界上水新財街 25-27 號新財樓地下 (852FD1010)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界上水龍琛路 76-86 號地下 B 鋪 (852FD1012)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界上水天平邨購物商場 116 號鋪 (852FD1024)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界上水太平邨平熙樓地下 110A 號鋪 (852FD1025)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界上水馬會道 182 號地下及閣樓鋪位 (852FD1026)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="6">大埔</td>
+		<td><a href="" lang="zh">新界大埔運頭塘村運頭塘商場地下 11 號鋪 (852FD1006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界大埔廣福道 148 號同福樓地下 (852FD1011)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界大埔翠怡街 3 號翠怡花園地下 1 號鋪位 (852FD1013)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界大埔富善村商場 G10 鋪 (852FD1021)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界大埔大元村商場 101-109 號鋪 (852FD1022)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界大埔廣福村商場 P 102-103 鋪 (852FD1023)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">大圍</td>
+		<td><a href="" lang="zh">新界大圍積輝街2-18 號金禧花園地下 15 號鋪 (852F1002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="6">元朗</td>
+		<td><a href="" lang="zh">新界元朗洪水橋第 4280 號地段麗珊園地下 2 號鋪 (852U1016)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗加洲花園商場第 36-38 號鋪地下 (852UA1004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗合益路 31 號合益中心地下 57 鋪 (852UA1002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗青山公路 239-247A 號萬昌樓地下 E 鋪 (852UA1009)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界錦田錦田公路84 號地下 (852UA1018)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗康景街 3-19 號利景樓及部份 G 鋪地下 (852UA1005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="4">天水圍</td>
+		<td><a href="" lang="zh">新界天水圍天恩路12至18號置富嘉湖1期地下G73B號鋪 (852UA1015)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界天水圍天慈村天慈商場 8 號鋪 (852UA1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界天水圍天澤村天澤商場地下 11 號鋪位 (852UA1007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界天水圍天耀村天耀商場地下L048及L050號鋪 (852UA1014)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="7">屯門</td>
+		<td><a href="" lang="zh">新界屯門井財街 15 號金銘大廈地下 21 號鋪位 (852U1012)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門仁愛堂圍 42-58 號金滿閣地下 A &amp; B 鋪 (852U1011)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門石排頭路 11 號康得花園地下 4 號部份鋪位 (852U1013)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門良運街 3號 建生商場地下113及114舗 (852U1010)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門湖翠路 2 號美樂花園地下 71 號鋪位 (852U1008)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門藍地福亨村路 8 號豫豐花園 S &amp; R 號鋪 (852U1017)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門海旁街交界巴黎倫敦紐約戲院購物中心地下 2-3 號鋪 (852U1019)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">西貢</td>
+		<td><a href="" lang="zh">新界西貢萬年街 118 號地下 (852C1002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="6">沙田</td>
+		<td><a href="" lang="zh">新界沙田沙角村漁鷹樓地下 14-15 號鋪 (852F1004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界沙田新田圍村新田圍商場 11-12 號鋪位 (852F1007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界沙田禾輋商場 2 樓 CC01-CC02 號鋪 (852F1014)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界沙田顯徑村商場 114 號鋪 (852F1016)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界沙田河畔花園一期地下 36 號鋪 (852F1020)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界沙田廣源村商場第四座 7 號鋪 (852F1027)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="3">青衣</td>
+		<td><a href="" lang="zh">新界青衣長亨邨商場地下 1 號鋪 (852G1006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界青衣美景花園中座第 3-4 &amp; 17-20 號鋪 (852G1007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界青衣長青邨長青商場平臺 2 樓 9 &amp; 9A 鋪位 (852G1008)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="3">粉嶺</td>
+		<td><a href="" lang="zh">新界粉嶺祥華邨商場 108-110 號地下 (852FD1009)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界粉嶺聯安街 9 號聯發大廈地下 B 鋪 (852FD1015)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界粉嶺一鳴路15號碧湖商場地下 G31 號鋪 (852FD1019)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="6">荃灣</td>
+		<td><a href="" lang="zh">新界荃灣西鐵線荃灣西站18 號鋪 (852G1001)</a></td>
+		<td class="col-time" data-name="服務時間">06:30-24:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界荃灣大窩口村購物中心第二期 1 號鋪 (852G1004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界荃灣荃景圍94-98號荃灣中心2期15-17座高層地下10-17號 (852G1011)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界荃灣楊屋道 138 號樂悠居地下 6C 鋪位 (852GA1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界荃灣怡樂街 1-5 號海濱花園 E 座地下 101 號鋪位 (852GA1002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界荃灣大廈街 15-17 號仁雅大廈地下 A 鋪及閣樓 (852G1014)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="3">馬鞍山</td>
+		<td><a href="" lang="zh">新界馬鞍山新港城中心2樓2150、2152及2153號鋪 (852F1003)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-23:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界馬鞍山恒安邨商場商業中心二層 235 號鋪 (852F1017)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界馬鞍山利安邨商場 G3 鋪位 (852F1018)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="6">將軍澳</td>
+		<td><a href="" lang="zh">新界將軍澳景林邨景林商場第 2 號鋪 (852C1007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳寶林邨寶林購物中心 2 樓 206 號鋪 (852C1008)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳線將軍澳站 TKO18 號鋪(近將軍澳中心) (852C1009)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-01:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳線康城站LHP 1號鋪 (852C1010)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-19:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳善明邨善智樓地下1號鋪位 (852C1011)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界清水灣道大埔仔村1號地下鋪及1樓 (852C1013)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">深井</td>
+		<td><a href="" lang="zh">新界深井麗都花園地下 2 號鋪 (852G1003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">葵芳</td>
+		<td><a href="" lang="zh">新界葵涌葵芳邨葵健樓第 1-2 及 12-13 號鋪位 (852LB1002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="3">葵涌</td>
+		<td><a href="" lang="zh">新界葵涌石蔭路 78至84 及 88至96 號天安樓地下 2 號 鋪位 (852LA1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界葵涌葵涌商場地下 1 號鋪位 (852LB1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界葵涌葵盛東邨葵盛東商場地下 1 號鋪 (852LB1003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">梅窩</td>
+		<td><a href="" lang="zh">香港大嶼山梅窩銀運路 3 號梅窩中心地下 13 號鋪 (852Q1001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">愉景灣</td>
+		<td><a href="" lang="zh">香港大嶼山愉景灣愉景灣廣場C座地下G38B及G39號鋪 (852G1002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">東涌</td>
+		<td><a href="" lang="zh">香港東涌東堤灣畔第六座地下 13 號鋪位 (852G1013)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">長洲</td>
+		<td><a href="" lang="zh">香港長洲海傍道 36 號地下及二樓 (852Q1002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+</table>
+<h1 class="t-title large" id="cs_ok">OK 便利店</h1>
+<h1 class="t-title"><span class="icon-cs-logo ok"></span> 港島區</h1>
+<table class="pickup-table">
+	<tr>
+		<th width="60" class="col-head">區域</th>
+		<th>地址</th>
+		<th width="145">服務時間<br>(週一至日及公眾假期)</th>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="6">上環</td>
+		<td><a href="" lang="zh">香港上環永樂街泰達大廈地下7-10號舖 (852M2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港上環皇后大道中368號偉利大廈地下3號舖 (852M2007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港上環皇后大道西476, 478, 480 &amp; 482號永興樓地下D號舖 (852MA2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港上環干諾道西82,83,84,86,87號修打蘭街21,23,25,27號海景大廈地下D及H號舖 (852MA2006)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-22:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港上環德輔道中323號西港城地下11,12及13號舖 (852M2009)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港干諾道西 188 號香港商業中心地下 2 號舖 (852MA2011)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="3">小西灣</td>
+		<td><a href="" lang="zh">香港小西灣邨小西灣商場四樓401號舖 (852PB2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港小西灣道28號藍灣半島地下18號舖 (852PB2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港小西灣商場地下6A號舖 (852PB2006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="6">中環</td>
+		<td><a href="" lang="zh">香港中環閣麟街10-16號致發大廈地下1號舖 (852M2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港中環民光街11號3號碼頭A,B及C舖 (852M2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港中環花園道3號萬國寶通廣場地下一號舖 (852M2004)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-21:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港中環夏愨道十二號美國銀行中心一樓香港中文大學 (852M2005)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-22:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港金鐘道95號統一中心1樓1002B舖 (852TA2005)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-21:00 </td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港皇后大道中 142-146 號金利商業大廈高層地下 A 號舖 (852M2010)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">天后</td>
+		<td><a href="" lang="zh">香港天后威非路2-10B號金都洋樓9及9A號舖 (852P2007)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-23:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港天后英皇道14號僑興大廈地下1H號舖 (852P2008)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">太古</td>
+		<td><a href="" lang="zh">香港太古康山花園第一座地下H1-H2號舖 (852PA2004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港太古康怡廣場南翼4樓1至2號舖 (852PA2005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="5">北角</td>
+		<td><a href="" lang="zh">香港北角七姊妹道2,4,6,8及8A昌苑大廈地下4號舖 (852P2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港北角電器道233號城市花園一、二及三座平台地下5號舖 (852P2004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港北角英皇道193-209號英皇中心地下25-27號 (852P2005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港北角堡壘街22號地下 (852P2006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港琴行街 6 及 6A, 七姊妹道 25, 27及31號嘉蘭大廈地下 C 號舖 (852P2009)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">半山</td>
+		<td><a href="" lang="zh">香港般咸道63B-F號興漢大廈三樓3號舖 (852M2006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="9">西環</td>
+		<td><a href="" lang="zh">香港西環堅尼地城吉席街2號海怡花園二期三座地下 (852MA2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港西環德輔道西333及335號地下 (852MA2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港西環士美菲路12F-12G號文光閣地下B號舖 (852MA2004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港西環德輔道西390號地下A舖 (852MA2005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港西環德輔道西232號地下 (852MA2007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港西環卑路乍街136, 138, 140 &amp; 142號及爹核士街7號聯威新樓地下B2及C號舖 (852MA2008)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港西環卑路乍街 144-148 號金豪閣地下 2B 號舖 (852MA2009)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港西環北街 14 號地下 (852MA2010)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港皇后大道西522-530號再發大廈地下3號舖 (852MA2012)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">西灣河</td>
+		<td><a href="" lang="zh">香港西灣河太安街 25 號鯉景灣 D 段 GD28 號舖 (852PA2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">杏花邨</td>
+		<td><a href="" lang="zh">香港杏花邨地鐵站HFC5及6號舖 (852PB2005)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-24:00</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="8">香港仔</td>
+		<td><a href="" lang="zh">香港香港仔華富商業中心7號舖 (852TB2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港香港仔中心第五期地下7號舖 (852TB2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港香港仔石排灣道81號兆輝大廈地下3及4號舖 (852TB2004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港香港仔華富村華安樓116號舖 (852TB2005)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-23:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港香港仔石排灣商場7號舖 (852TB2007)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-24:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港香港仔黃竹坑道125號葛量洪醫院主樓地下 (852TB2008)</a></td>
+		<td class="col-time" data-name="服務時間">08:00-20:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港香港仔東勝道23號地下 (852TB2009)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港仔華富(二)邨華富(二)商場 30 號舖 (852TB2010)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">柴灣</td>
+		<td><a href="" lang="zh">香港柴灣興華邨和興樓209至210號舖 (852PB2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">香港柴灣泰民街16號康翠臺商場L5樓3A號舖及3B號舖 (852PB2004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">跑馬地</td>
+		<td><a href="" lang="zh">香港跑馬地黃泥涌道21-23號浩利大廈地下B號舖 (852T2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+</table>
+<h1 class="t-title"><span class="icon-cs-logo ok"></span> 九龍區</h1>
+<table class="pickup-table">
+	<tr>
+		<th width="60" class="col-head">區域</th>
+		<th>地址</th>
+		<th width="145">服務時間<br>(週一至日及公眾假期)</th>
+	</tr>
+	<tr>
+		<td class="col-head">九龍城</td>
+		<td><a href="" lang="zh">九龍九龍城衙前圍道47號地下C單位 (852K2008)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="5">九龍灣</td>
+		<td><a href="" lang="zh">九龍九龍灣淘大花園第一期商場27-30號舖 (852H2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍九龍灣臨興街 19 號同力工業中心地下 B1 (852H2002)</a></td>
+		<td class="col-time" data-name="服務時間">06:30-22:30</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍九龍灣常悅道13號瑞興中心地下A號單 (852H2003)</a></td>
+		<td class="col-time" data-name="服務時間">06:30-22:30</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍九龍灣德福商場1期P40號舖 (852H2004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍宏開道18號德福大廈1樓3C舖 (852H2005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">土瓜灣</td>
+		<td><a href="" lang="zh">九龍土瓜灣機利士路669號昌盛金舖大廈地下 (852K2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍土瓜灣道273號地下 (852K2004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">大角咀</td>
+		<td><a href="" lang="zh">九龍大角咀港灣豪庭地下G10 (852B2006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍大角咀中匯街13號中和樓地下10號舖 (852B2010)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">太子</td>
+		<td><a href="" lang="zh">九龍太子水渠道22,24,28號安豪樓地下A舖 (852B2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍太子道西96-100號地下C及D舖 (852B2011)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="3">牛頭角</td>
+		<td><a href="" lang="zh">九龍牛頭角道305-325及325A號觀塘立成大廈地下K號舖 (852C2021)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍牛頭角彩盈邨彩盈坊3號舖 (852H2006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍牛頭角彩德商場地下G04號舖 (852H2007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head">石硤尾</td>
+		<td><a href="" lang="zh">九龍石硤尾南山村南山商場大廈地下 (852B2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">尖沙咀</td>
+		<td><a href="" lang="zh">九龍尖沙咀寶勒巷1號玫瑰大廈地下A及B號舖 (852E2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍尖沙咀加連威老道94號尖東廣場地下G08鋪 (852EB2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">佐敦</td>
+		<td><a href="" lang="zh">九龍佐敦道9-11號高基大廈地下4號舖 (852EA2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍佐敦道34號道興樓地下B舖 (852EA2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="6">旺角</td>
+		<td><a href="" lang="zh">九龍旺角西海泓道富榮花園地下32-33號舖 (852B2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍旺角西洋菜南街 166 號地下及閣樓 (852B2007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍弼街43號地下及閣樓 (852B2012)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍旺角洗衣街92號地下 (852BB2004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍豉油街15號萬利商業大廈地下1號舖 (852BB2005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍上海街 150 號地下 A 號舖 (852BB2006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="4">油麻地</td>
+		<td><a href="" lang="zh">九龍油麻地窩打老道69號B地下 (852B2004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍油麻地文明里4-6號地下2號舖 (852BB2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍油麻地碧街50號地下 (852BB2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍油麻地砵蘭街68號東南商業大廈地下 (852BB2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="4">油塘</td>
+		<td><a href="" lang="zh">九龍油塘邨鯉魚門廣場地下一號舖 (852C2011)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍油塘高俊苑停車場大廈一號舖 (852C2027)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍油塘油麗商場7號舖 (852C2031)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍油塘大本型港鐵樓層M05號舖 (852C2032)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">長沙灣</td>
+		<td><a href="" lang="zh">九龍長沙灣道868號利豐大廈地下 (852D2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍長沙灣幸福邨商場地下17號舖 (852DA2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="11">紅磡</td>
+		<td><a href="" lang="zh">九龍紅磡家維邨家義樓3-4號舖 (852K2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍紅磡馬頭圍道37-39號紅磡商業廣場地下43-44號舖 (852K2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍紅磡鶴園街2G號恆豐工業大廈第一期地下CD1號舖 (852K2005)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-22:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍紅磡湖光街1-7號聯盛大廈地下18號舖 (852K2006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍紅磡馬頭圍邨洋葵樓地下 111 號 (852K2007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍紅磡愛景街8號海濱南岸1樓商場3A號舖 (852K2009)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍馬頭圍道356號地下 (852K2011)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍紅磡站大堂H3及H12號舖 (港鐵-東鐵綫) (852K2012)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍馬頭涌道52號地下 (852K2013)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍馬頭角新馬頭街38號翔龍灣廣場地下G06舖 (852K2014)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍馬頭圍道450號及天光道50號悅輝大廈地下A及B舖 (852K2015)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="3">荔枝角</td>
+		<td><a href="" lang="zh">九龍荔枝角道 176 號地下 (852BA2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍荔枝角長沙灣道800號香港紗廠工業大廈一及二期地下 (852D2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">九龍荔枝角道833號昇悅商場一樓126號舖 (852DA2002)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-23:00</td>
+	</tr>
+</table>
+<h1 class="t-title"><span class="icon-cs-logo ok"></span> 新界區</h1>
+<table class="pickup-table">
+	<tr>
+		<th width="60" class="col-head">區域</th>
+		<th>地址</th>
+		<th width="145">服務時間<br>(週一至日及公眾假期)</th>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="3">上水</td>
+		<td><a href="" lang="zh">新界上水彩園邨彩華樓地下301至302號舖 (852FD2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界上水中心商場地下1005-1006號舖 (852FD2007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界上水清河邨商場13號舖 (852FD2012)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="8">大埔</td>
+		<td><a href="" lang="zh">新界大埔墟大榮裡26號地下 (852FD2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界大埔富亨邨富亨商場中心23-24號舖 (852FD2004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界大埔運頭塘邨商場1號舖 (852FD2005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界大埔安邦路9號大埔超級城E區三樓355A號舖 (852FD2009)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-24:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界大埔廣福裡23號正發樓地下A1舖 (852FD2013)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界大埔富善邨富善商場地下G19A及G20號舖 (852FD2014)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界大埔南運路1-7號富雅花園地下4號舖, 10B號舖, 10C及10D號舖 (852FD2015)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界大埔安泰路1號大埔廣場地下11號舖 (852FD2016)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="3">大圍</td>
+		<td><a href="" lang="zh">新界大圍新翠村新翠商場地下6號舖 (852F2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界大圍田心街10-18號雲疊花園地下10A-C,19A舖 (852F2008)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界大圍火車站大堂30號舖 (852F2012)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-24:00</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="14">元朗</td>
+		<td><a href="" lang="zh">新界元朗水邊圍村康水樓地下103至105號舖 (852UA2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗錦繡花園商業中心C座地下4號舖 (852UA2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗穀亭街1號傑文樓地下 (852UA2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗大棠路11號光華廣場地下4號舖 (852UA2006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗青山道218, 222, 226-230號富興大廈地下A舖 (852UA2007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗又新街7-25號元新大廈地下4號及11號舖 (852UA2009)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗朗屏邨鏡屏樓M009號舖 (852UA2010)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-24:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗鳳琴街18號玉龍樓地下4號舖 (852UA2012)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗青山公路49-63號金豪大廈地下E號舖 (852UA2013)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗青山公路99-109號元朗貿易中心地下7號舖 (852UA2014)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗大棠路35/39 號紅棉洋樓地下A號舖 (852UA2016)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗西菁街9號富盛大廈地下13A及13E號舖 (852UA2017)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗朗屏邨玉屏樓地下1號 (852UA2018)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界元朗青山公路 32 號地下 (852UA2019)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="4">天水圍</td>
+		<td><a href="" lang="zh">新界天水圍頌富商場地下35號舖 (852UA2005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界天水圍天恩商場109-110號 (852UA2008)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-24:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界天水圍Town Lot 28號俊宏軒俊宏廣場地下L30號舖 (852UA2011)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界天水圍天瑞路9號天瑞廣場地下 L026號舖 (852UA2015)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="20">屯門</td>
+		<td><a href="" lang="zh">新界屯門友愛邨愛勇樓地下105至106號舖 (852U2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門安定邨定祥樓217至218號舖 (852U2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門蝴蝶邨熟食市場13至16 (852U2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門大興邨大興商場1樓54號舖 (852U2004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門山景邨山景商場地下122號舖 (852U2005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門美樂花園商場地下81至82號舖 (852U2006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門兆康苑商場中心104號舖 (852U2007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門青翠徑南光樓高層地下D舖 (852U2008)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門建生邨建生商場102號舖 (852U2009)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門翠寧花園地下12-13號舖 (852U2010)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門寶怡花園商場地下23-23A舖 (852U2011)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門置樂花園商場地下129號舖 (852U2012)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門富泰商場地下6號舖 (852U2013)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門海珠路2號海典軒地下16-17號舖 (852U2015)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門啟發徑15及19號德政圍31/33,37/43號柏苑地下2號 (852U2016)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門龍門路45號富健花園地下87號舖 (852U2017)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門寶田商場地下6號舖 (852U2018)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門良景商場213B-213C號舖 (852U2019)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-23:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門良景商場 L106 號鋪 (852U2020)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界屯門悅湖商場53-57及81-85號鋪 (852U2021)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">火炭</td>
+		<td><a href="" lang="zh">新界火炭禾寮坑路2-16號安盛工業大廈地下部份B地廠單位 (852F2014)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-24:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界火炭山尾街19-25號字宙工業中心地下I號單位 (852F2017)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-22:00</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">西貢</td>
+		<td><a href="" lang="zh">新界西貢海傍廣場金寶閣地下12號舖 (852C2007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界西貢西貢大廈地下23號舖 (852C2029)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="7">沙田</td>
+		<td><a href="" lang="zh">新界沙田穗禾苑商場中心地下G6舖 (852F2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界沙田乙明邨明耀樓地下7至9號舖 (852F2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界沙田白石角香港科學園科技大道東1號1座地下5-8號舖 (852F2016)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-21:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界沙田大圍道55-65號積輝街14-18號金禧花園地下6號舖 (852F2018)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界沙田美田美全樓地下 2 號舖 (852F2019)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界沙田第一城置富第一城樂薈地下33及89號舖(銀城) (852F2020)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界沙田小瀝源安平街2號利豐中心地下 (852FB2001)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-22:00</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="4">青衣</td>
+		<td><a href="" lang="zh">新界青衣青華苑停車場地下舖 (852G2006)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-24:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界青衣港鐵站TSY306號舖 (852G2008)</a></td>
+		<td class="col-time" data-name="服務時間">06:30-24:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界青衣村一期停車場大廈地下6號 (852G2009)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界青衣港鐵站TSY 211號舖 (852G2013)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="6">粉嶺</td>
+		<td><a href="" lang="zh">新界粉嶺華明邨華明商場112號舖 (852FD2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界粉嶺嘉福邨商場中心6號舖 (852FD2006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界粉嶺雍盛苑雍盛商場地下12號舖 (852FD2008)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界粉嶺車站路18號粉嶺名都商場2樓39A號舖 (852FD2010)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-24:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界粉嶺欣盛苑停車場大廈地下1號舖 (852FD2011)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-24:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界粉嶺粉嶺中心商場1樓233E號鋪 (852FD2017)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="9">荃灣</td>
+		<td><a href="" lang="zh">新界荃灣中心第一期高層平臺C8,C10,C12舖 (852G2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界荃灣麗城花園第三期麗城商場地下2號舖 (852G2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界荃灣海壩街18號舖 (852G2004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界荃灣圓墩圍59-61號地下A舖 (852G2005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界荃灣青山道185-187號荃勝大廈地下A2舖 (852GA2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界荃灣兆和街2至4A號周氏大廈地下4號舖 (852G2010)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界荃灣大窩口村商場C9-10號 (852G2011)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界荃灣鹹田街61至75號石壁新村遊樂場C座地下C6號舖 (852G2012)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界荃灣海壩街102B號卓明大廈地下地舖 (852G2014)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="7">馬鞍山</td>
+		<td><a href="" lang="zh">新界馬鞍山富安花園商場中心22號舖 (852F2004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界馬鞍山耀安邨耀安商場116號舖 (852F2006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界馬鞍山錦英苑商場中心低層地下2號舖 (852F2007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界馬鞍山頌安邨頌安商場1號舖 (852F2009)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界馬鞍山錦泰苑錦泰商場地下2號舖 (852F2010)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界烏溪沙火車站大堂2號舖 (852F2013)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界馬鞍山新港城2樓2221-22號舖 (852F2015)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-23:00</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="13">將軍澳</td>
+		<td><a href="" lang="zh">新界將軍澳翠琳購物中心105號舖 (852C2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳寶林邨寶勤樓110-112號舖 (852C2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳欣明苑停車場大廈地下1號舖 (852C2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳明德邨明德商場19號舖 (852C2005)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳尚德邨尚德商場地下8號舖 (852C2006)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳唐德街將軍澳中心地下B04號舖 (852C2010)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳新都城中心三期都會豪庭商場2樓209號舖 (852C2013)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-23:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳景嶺路八號都會駅商場地下16號舖 (852C2016)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-23:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳景嶺路八號都會駅商場2樓39及40號舖 (852C2017)</a></td>
+		<td class="col-time" data-name="服務時間">07:00-23:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳厚德邨商場(西翼)地下G11及G12號舖 (852C2018)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳寶寧路25號富寧花園商場地下10及11A號舖 (852C2022)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-23:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳彩明商場擴展部份二樓244號舖 (852C2028)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界將軍澳新都城中心二期商場1樓1076-1078號舖 (852C2030)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="10">葵涌</td>
+		<td><a href="" lang="zh">新界葵涌景荔徑8號盈暉薈地下G-04號舖 (852D2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界葵涌華星街1至7號，美華工業大廈地下B號 (852L2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界葵涌安蔭邨安蔭商場1號舖 (852LA2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界葵涌梨木樹村梨木商場LG1號舖 (852LA2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界葵涌石蔭東邨蔭興樓1及2號舖 (852LA2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界葵涌屏麗徑青山公路456/458號葵豐樓地下部份 A-A1 號舖 (852LA2004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界葵涌邨第一期秋葵樓地下6號舖 (852LB2001)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界葵涌盛芳街15號運芳樓地下2號舖 (852LB2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界葵涌貨櫃碼頭路大鴻輝(葵涌)中心第一期77-81 號舖 (852LB2004)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-22:00</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界葵涌貨櫃碼頭亞洲貨運大廈第三期A座7樓 (852Q2001)</a></td>
+		<td class="col-time" data-name="服務時間">06:00-22:00</td>
+	</tr>
+	<tr>
+		<td class="col-head">馬灣</td>
+		<td><a href="" lang="zh">新界馬灣珀林路 23 號地下 (852G2015)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">大嶼山</td>
+		<td><a href="" lang="zh">新界大嶼山香港國際機場二號客運大樓翔天廊3P111 (852Q2003)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">新界大嶼山東涌健東路1號映灣園映灣薈地面1號舖 (852G2007)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td class="col-head" rowspan="2">長洲</td>
+		<td><a href="" lang="zh">長洲海傍街34-5號地下及閣樓 (852Q2002)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+	<tr>
+		<td><a href="" lang="zh">長洲新興街107號地下 (852Q2004)</a></td>
+		<td class="col-time" data-name="服務時間">24小時</td>
+	</tr>
+</table>
+<div class="md-form-btn">
+    <button class="btn-cancel" onclick="parent.$.fancybox.close();">關閉視窗</button>
+</div><script src="assets/c/js/vendor/jquery.min.js" ></script>
+<script src="assets/c/js/vendor/jquery.fancybox.pack.js"></script>
+<script src="assets/c/js/common.js"></script>
+<script src="assets/c/js/p_pickup.js"></script>
+</body>
+</html>

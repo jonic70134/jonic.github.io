@@ -1,0 +1,294 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_asap.scss";
+@import "../../../../frame/_pc_layout_two_column.scss";
+
+@import "../../../module_left/_pc_left_001.scss";
+@import "../../../module_market/_pc_market_list.scss";
+
+@import "../../../module_component/_pc_nav_pagination.scss";
+@import "../../../module_component/_nav_breadcrumbs.scss";
+@import "../../../module_component/_pc_site_sort.scss";
+
+.pc_left_001 .menu-one > li.active{
+	background-color:#434040;
+	> h3 > a{
+		color:white;
+	}
+}
+.pc_left_001 .title:after{
+	display: inline-block;
+	content: " 看全部 >";
+	background: #FFE739;
+	background: #fcf4a9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fcf4a9 0%, #ffe739 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #fcf4a9 0%,#ffe739 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #fcf4a9 0%,#ffe739 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf4a9', endColorstr='#ffe739',GradientType=0 ); /* IE6-9 */
+	color: #000;
+	margin-left: 11px;
+	padding: 3px 5px 3px 8px;
+	font-size: 13px;
+	border-radius: 5px;
+	font-family: monospace;
+	vertical-align: 2px;
+}
+.site-main.groupbuy-single{
+	width: 100%;
+}
+.groupbuy-top-banner{
+	margin-bottom: 10px;
+	a,img{
+		display: block;
+	}
+}
+.nav-breadcrumbs .container{
+	padding: 8px 0 14px;
+}
+
+.site-sort{
+	margin-bottom: 20px;
+}
+.groupbuy-04{
+	margin: 10px 0;
+	.items{
+		@include clearfix;
+	}
+	.item{
+		display: inline-block;
+		width: 49.35%;
+		min-height: 310px;
+		vertical-align: top;
+		margin: 2px;
+		margin-bottom:5px;
+		padding: 10px;
+		background-color: #F5FBFF;
+		border: 1px solid #eee;
+	}
+	.time{
+		width: 165px;
+		font-weight: bold;
+		background: #1ba7fc;
+		color: #fff;
+		font-size: 13px;
+		padding: 5px;
+		text-align: center;
+		display: inline-block;
+		// @include border-radius(10px 10px 0 0);
+		li{
+			display: inline-block;
+		}
+		div{
+			display:inline-block;
+			height:17px;
+			vertical-align:top;
+			line-height:1.2;
+			overflow: hidden;
+		}
+		&.is-come-end{
+			background: #f96;
+		}
+		&.is-gone{
+			background: #ccc;
+		}
+	}
+	.photo{
+		display: inline-block;
+		width: 49%;
+		vertical-align: top;
+		position: relative;
+		img{
+			width: 100%;
+			display: block;
+		}
+		.discount_tip{
+			position: absolute; top: 5px; right: 5px;
+			width:45px;height:45px;
+			// background-color: #fff;
+			// border: 5px solid $primary;
+			// padding:10px;
+			color:$primary;
+			font-weight: 700;
+			text-align: center;
+			background-image: url('../../../../../../c/img/frame/2hr_icon_45x45.png');
+			// &.is-txt{
+			// 	background-image: url('../../../../../../c/img/frame/2hr_icon_45x45.png');
+			// }
+		}
+	}
+	.info{
+		display: inline-block;
+		width: 49%;
+	}
+	.name{
+		display:block;
+		font-size: 16px;
+		height: 32px;
+		line-height: 32px;
+		margin:-10px;
+		margin-bottom: 15px;
+		padding-left: 10px;
+		// color: $items_name;
+		font-weight: bold;
+		overflow: hidden;
+		background-color: $primary;
+		word-break:break-word;
+		word-wrap: break-word;
+		@include box-shadow(1px 1px 5px #aaa);
+		position: relative;
+		a,a:hover{
+			color:white !important;
+		}
+		// &:after{
+		// 	position: absolute;
+		// 	content:"";
+		// 	top: 0;
+		// 	right: 5px;
+		// 	border-left: 15px solid transparent;
+		// 	border-top: 15px solid white;
+		// 	border-right: 15px solid transparent;
+		// 	display: inline-block;
+		// }
+	}
+	.feature{
+		ul{
+			margin: 10px 0;
+		}
+		li{
+			margin-bottom: 5px;
+			font-size: 14px;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+	}
+	.type{
+		font-size: 8px;
+		color: $gray;
+	}
+	.buy-actions{
+		margin-top: 10px;
+		text-align: right;
+	}
+	.quantity{
+		margin-right: 5px;
+		vertical-align: middle;
+	}
+	.buy{
+		margin-top: 5px;
+		color: $price;
+		span.discount{
+			font-size: 12px;
+			color:#aaa;
+		}
+		.discount-sale-num{
+			font-size: 12px;
+			color:#0092EB;
+		}
+		.start{
+			font-size:12px;
+			font-weight: 500;
+			color:#333;
+		}
+	}
+	.currency{
+		font-size: 10px;
+		color: $price;
+		vertical-align: bottom;
+		display: inline-block;
+		margin-bottom: 2px;
+	}
+	.buy.is-old{
+		.currency,.price{
+			color:#333;
+			text-decoration: line-through;
+		}
+		.price{
+			font-size:14px;
+		}
+	}
+	.price{
+		font-size: 22px;
+		color: $price;
+		margin-right: 5px;
+		vertical-align: bottom;
+		display: inline-block;
+	}
+	.btn{
+		// float: right;
+		// margin-top: 3px;
+		// font-size: 15px;
+		color: $price;
+		float: right;
+		margin-top: 30px;
+		padding: 8px 10px;
+		font-size: 15px;
+		border:1px solid $primary;
+		// color: white;
+		// background: $primary;
+		@include border-radius(8px);
+	}
+	.fa{
+		margin-left: 4px;
+	}
+	.highlight{
+		font-size: 12px;
+		line-height: 1.4;
+		margin-top: 5px;
+		text-align: right;
+	}
+	.tag-status {
+		position: absolute;
+		bottom: 7px;
+		right: 7px;
+		z-index: 9;
+	}
+}
+.groupbuy-single{
+	.pc_market_list{
+		.item{
+			min-height:390px;
+		}
+	}
+}
+.pc_market_list{
+	h3{
+		display: none;
+	}
+	// .item{
+	// 	width: 19.70%;
+	// }
+	.item{
+		min-height:335px;
+	}
+	.buy.is-old{
+		.currency,.price{
+			color:#0092EB;
+			text-decoration: line-through;
+		}
+		.price{
+			font-size:14px;
+		}
+	}
+	.start{
+		font-size:12px;
+		font-weight: 500;
+		color:#333;
+	}
+}
+
+
+//客製化
+.site-header{
+    border-bottom: none;
+}
+.site-left{
+	margin-top: 0px;
+}
+.result{
+	font-size: 1.8em;
+	line-height: 140%;
+	text-align: center;
+	color: #000;
+	margin: 2em 0;
+	padding: 0 10px;
+}

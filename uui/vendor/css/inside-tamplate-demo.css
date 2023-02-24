@@ -1,0 +1,122 @@
+@charset "UTF-8";
+.btn-cancel {
+  background: #9aa9b3;
+}
+.btn-cancel:hover {
+  background: #7d919d;
+}
+
+body {
+  padding: 20px;
+}
+
+.demo-title {
+  color: #0068b6;
+  font-size: 1.333em;
+  font-family: "微軟正黑體", "Microsoft Jhenghei", "Heiti TC", "LiHei Pro", sans-serif;
+}
+.demo-title i {
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+
+.demo-tabs {
+  margin: 20px auto;
+  letter-spacing: -0.32em;
+}
+.demo-tabs dd {
+  padding-left: 30px;
+  letter-spacing: normal;
+  background: #eee;
+  display: inline-block;
+  position: relative;
+}
+.demo-tabs dd:before, .demo-tabs dd:after {
+  content: "\0020";
+  left: 0;
+  top: 50%;
+  border: transparent solid;
+  position: absolute;
+}
+.demo-tabs dd:before {
+  border-left-color: #fff;
+  border-width: 25px;
+  margin-top: -25px;
+}
+.demo-tabs dd:after {
+  border-left-color: #eee;
+  border-width: 20px;
+  margin-top: -20px;
+}
+.demo-tabs dd:first-child {
+  -moz-border-radius-topleft: 60px;
+  -webkit-border-top-left-radius: 60px;
+  border-top-left-radius: 60px;
+  -moz-border-radius-bottomleft: 60px;
+  -webkit-border-bottom-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+.demo-tabs dd:first-child:before, .demo-tabs dd:first-child:after {
+  content: "";
+  display: none;
+}
+.demo-tabs dd:last-child {
+  -moz-border-radius-topright: 60px;
+  -webkit-border-top-right-radius: 60px;
+  border-top-right-radius: 60px;
+  -moz-border-radius-bottomright: 60px;
+  -webkit-border-bottom-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+.demo-tabs dd a {
+  color: #333;
+  height: 30px;
+  margin: 0 5px;
+  padding: 10px 20px 0;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+.demo-tabs dd a:hover, .demo-tabs dd a:hover:before, .demo-tabs dd a.active, .demo-tabs dd a.active:before {
+  color: #e00;
+}
+.demo-tabs dd a:before {
+  content: "\f0da";
+  color: #666;
+  font-size: 1.2em;
+  line-height: 1em;
+  font-family: FontAwesome;
+  left: -0;
+  margin-top: 2px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  margin-right: 5px;
+}
+
+.demo-content {
+  width: 1220px;
+  min-height: 500px;
+}
+.demo-content iframe {
+  width: 100%;
+  border: none;
+}
+
+.demo-mobile {
+  width: 320px;
+  height: 480px;
+  margin: 0 auto;
+  padding: 135px 35px;
+  background: url(/img/mobile.png) no-repeat;
+}
+.demo-mobile .scroll {
+  height: 100%;
+}
+.demo-mobile iframe {
+  width: 100%;
+  border: none;
+}

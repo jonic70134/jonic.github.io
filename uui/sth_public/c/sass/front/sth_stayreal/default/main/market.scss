@@ -1,0 +1,43 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_stayreal.scss";
+
+@import "../../../module_index/_rwd_index_layout.scss";
+@import "../../../module_component/_nav_breadcrumbs.scss";
+
+.rwd_index_009,.rwd_index_004,.rwd-index-002 {
+    .item {
+    	@include transition(0.6s);
+        &:hover {
+        	@include box-shadow(0px 0px 15px $primary)
+        }
+    }
+}
+.rwd-index-002{ 
+	.item {
+		width: 49.5%!important;
+		margin-right: 0.5%;
+	}
+}
+
+@include RWD(desktop-all) {
+	.rwd_index_004 {
+		.info{
+			padding: 0 5px!important;
+		}
+	}
+	.rwd_index_009 {        
+        .button {
+            display: inline-block!important;
+        }
+    }
+}
+@include RWD(pad-mobile) {
+	.rwd-index-002{
+		.item {
+			width: 100%!important;
+			margin-right: 0;		
+			margin-bottom: 20px!important;
+			padding: 1% 0 1%!important;
+		}
+	}		
+ }

@@ -1,0 +1,143 @@
+.pc-market-009 {
+	margin: 0 0 20px;
+	.ad-left-box {
+		float: left;
+		width: 200px;
+		margin-right: 20px;
+		@include clearfix;
+		.item {
+			background-color: #faeaed;
+			margin: 0 0 10px;
+			&:last-child {
+				margin: 0;
+			}
+		}
+		a {
+			display: block;
+			width: 200px;
+			height: 200px;
+			position: relative;
+			&:hover {
+				.buy {
+					color: #e00;
+				}
+				.name {
+					display: block;
+				}
+			}
+		}
+		img {
+			width: 160px;
+			height: 160px;
+			margin: 10px 20px 0;
+		}
+		.name {
+			display: none;
+			width: 200px;
+			background-color: rgba(255, 255,255, .95);
+			color: #000;
+			font-size: 13px;
+			line-height: 1.6;
+			padding: 8px 20px 25px;
+			overflow: hidden;
+			white-space: pre-wrap;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			z-index: 2;
+		}
+		.info {
+			padding: 5px 20px 0;
+			font-size: 12px;
+			position: relative;
+			z-index: 3;
+			.price {
+				color: #d00;
+				font-size: 16px;
+			}
+			.buy {
+				color: #06c;
+				font-style: normal;
+				text-decoration: underline;
+			}
+		}
+	}
+	
+	// 大圖輪播
+	.col-left {
+        float: left;
+        width: 1220px - 220;
+        height: 410px;
+        overflow: hidden;
+    }
+    // 輪播區塊
+	.swiper-container-box {
+		position: relative;
+		.info {
+			height: 380px;
+			display: none;
+			&.on {
+				display: block;
+			}
+			.large-img {
+				display: inline-block;
+				width: 800px;
+			}
+		}
+		img {
+			width: 100%;
+		}
+		.action {
+			width: 100%;
+			cursor: auto;
+			margin: 0 auto;
+			text-align: left;
+			position: absolute;
+			bottom: -30px;
+		}
+		.pagination {
+			@include clearfix;
+		}
+		.swiper-pagination-switch {
+			float: left;
+			background: #f5f5f5; /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+			background: -webkit-linear-gradient(#fff 0%, #f5f5f5 100%);
+			background: -o-linear-gradient(#fff 0%, #f5f5f5 100%);
+			background: linear-gradient(#fff 0%, #f5f5f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+			width: calc(800px / 6);
+			height: 30px;
+			line-height: 30px;
+			cursor: pointer;
+			font-size: 12px;
+			overflow: hidden;
+			text-align: center;
+			a {
+				color: #aaa;
+			}
+			&.on {
+				background: #faeaed;
+				a {
+					color: #c00;
+				}
+			}
+		}
+	}
+
+	// 右側廣告
+	.col-right{
+		float: right;
+		width: 180px;
+		>a{ 
+			margin-bottom: 10px;
+			&:last-child{ margin: 0; }
+		}
+	}
+	.photo {
+        display: inline-block;
+        height: 130px;
+        img {
+            width: 100%;
+        }
+    }
+}

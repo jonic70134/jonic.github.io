@@ -1,0 +1,258 @@
+@charset "UTF-8";
+[class*="icon-"]:before {
+  background-repeat: no-repeat;
+  content: "\0020";
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  zoom: 1;
+  background-image: url("../img/icon-global.svg");
+  *background-image: url("../img/icon-global.png");
+}
+
+.icon-uitox-s:before {
+  width: 47px;
+  height: 15px;
+  margin: 0 5px 7px;
+  vertical-align: middle;
+  background-position: 0 0;
+}
+
+.credit-card-icon span:before {
+  width: 35px;
+  height: 25px;
+}
+
+.icon-visa-g:before {
+  background-position: 0 -15px;
+}
+
+.icon-mastercard-g:before {
+  background-position: -35px -15px;
+}
+
+.icon-jcb-g:before {
+  background-position: -70px -15px;
+}
+
+.icon-unionpay-g:before {
+  background-position: -105px -15px;
+}
+
+.icon-visaelectron-g:before {
+  background-position: -140px -15px;
+}
+
+.icon-amex-g:before {
+  background-position: -175px -15px;
+}
+
+.icon-discover-g:before {
+  background-position: -210px -15px;
+}
+
+.icon-dinersclub-g:before {
+  background-position: -245px -15px;
+}
+
+.icon-dankort-g:before {
+  background-position: -280px -15px;
+}
+
+.icon-maestro-g:before {
+  background-position: -315px -15px;
+}
+
+.icon-forbrugsforeningen-g:before {
+  background-position: -350px -15px;
+}
+
+.icon-visa:before {
+  background-position: 0 -40px;
+}
+
+.icon-mastercard:before {
+  background-position: -35px -40px;
+}
+
+.icon-jcb:before {
+  background-position: -70px -40px;
+}
+
+.icon-unionpay:before {
+  background-position: -105px -40px;
+}
+
+.icon-visaelectron:before {
+  background-position: -140px -40px;
+}
+
+.icon-amex:before {
+  background-position: -175px -40px;
+}
+
+.icon-discover:before {
+  background-position: -210px -40px;
+}
+
+.icon-dinersclub:before {
+  background-position: -245px -40px;
+}
+
+.icon-dankort:before {
+  background-position: -280px -40px;
+}
+
+.icon-maestro:before {
+  background-position: -315px -40px;
+}
+
+.icon-forbrugsforeningen:before {
+  background-position: -350px -40px;
+}
+
+.icon-cvv:before {
+  background-position: 0 -65px;
+}
+
+.icon-cs-logo:before {
+  width: 20px;
+  height: 20px;
+  background: url("../img/cs.png") no-repeat;
+}
+.icon-cs-logo.seven:before {
+  background-position: 0 0;
+}
+.icon-cs-logo.ok:before {
+  background-position: -20px 0;
+}
+.icon-cs-logo.fami:before {
+  background-position: -40px 0;
+}
+
+body {
+  padding: 10px;
+}
+
+.pickup-index {
+  top: 0;
+  right: 0;
+  padding: 5px;
+  font-size: 1.2em;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: fixed;
+}
+.pickup-index a {
+  padding: 0 10px;
+  text-decoration: none;
+  border-right: #ccc 1px solid;
+}
+.pickup-index a:last-child {
+  border: none;
+}
+
+.t-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+.t-title.large {
+  font-size: 1.8em;
+  margin-top: 30px;
+}
+
+.pickup-table {
+  width: 750px;
+  border-collapse: collapse;
+}
+@media only screen and (max-width: 768px) {
+  .pickup-table {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .pickup-table {
+    border-bottom: #d5dbe1 1px solid;
+  }
+}
+.pickup-table th, .pickup-table td {
+  padding: 5px 10px;
+  color: #333;
+  vertical-align: middle;
+  background: #fff;
+  border: #d5dbe1 1px solid;
+}
+@media only screen and (max-width: 568px) {
+  .pickup-table th, .pickup-table td {
+    border-bottom-width: 0;
+  }
+}
+.pickup-table th, .pickup-table .col-head {
+  color: #fff;
+  text-align: center;
+  background: #003366;
+}
+.pickup-table .col-time {
+  text-align: center;
+}
+@media only screen and (max-width: 568px) {
+  .pickup-table .col-time {
+    text-align: left;
+    border-top-width: 0;
+  }
+  .pickup-table .col-time:before {
+    content: attr(data-name) ": ";
+  }
+}
+.pickup-table a {
+  color: #333;
+  text-decoration: none;
+}
+.pickup-table a:hover {
+  color: #e00;
+}
+.pickup-table a:hover:after {
+  background: #ee4747;
+}
+.pickup-table a:after {
+  color: #fff;
+  font-size: 0.8em;
+  margin-left: 3px;
+  padding: 0 5px;
+  background: #ee7777;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.pickup-table a:after:hover, .pickup-table a:after:active {
+  background: #e84a4a;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 0 inset;
+}
+.pickup-table a:lang(en):after {
+  content: "Send to";
+}
+.pickup-table a:lang(zh):after {
+  content: "選擇配送";
+}
+
+.md-form-btn {
+  margin: 10px 0;
+}
+@media only screen and (max-width: 568px) {
+  .md-form-btn.with-index {
+    margin-top: 50px;
+  }
+}
+.md-form-btn button {
+  font-size: 1.1em;
+}

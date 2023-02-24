@@ -1,0 +1,13 @@
+[class*="icon-"]:before {
+	@include icon-style;
+	background-image: url($icon-cart);
+	*background-image: url($icon-cart-png);
+}
+//uitox logo
+.icon-uitox-s:before {
+	width: 47px;
+	height: 15px;
+	margin: 0 5px 7px;
+	vertical-align: middle;
+	background-position: 0 0;
+}

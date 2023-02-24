@@ -1,0 +1,67 @@
+//theme color
+$bg_file:         "../../../../../../c/img/sth_asap_m/icon_white.png";
+$bg_file_hpd:     "../../../../../../c/img/sth_asap_m/icon_retina_white.png";
+
+//主題色
+$primary:			#e00517;
+$button:			$primary;
+$button_text:		white;
+$sub:				#06c;
+
+$text:				#666;
+$text_hover:		gray;
+$link:			$sub;
+$border:			#e2e0e0;
+$border2:			#e9e9e9;
+$price:				$primary;
+$hover_text:		$primary;
+$hover_bk:			#efefef;
+$active_text:		white;
+$active_bk:			$primary;
+$disabled:			gray;
+$background:		#efefef;
+$background2: 		white;
+$title_h3:			black;
+$hlight:			$primary;
+
+//header
+$header_border:		#efefef;
+$header_bk:			#f7f7f7;
+$nav_bk:			$gray;
+$nav_border:        none;
+$nav_text: 			black;
+
+// component
+$current:           $primary;
+
+//item
+$item_hover:		#b3e5fe;
+$item_name:			#6e6e6e;
+
+//footer
+$footer_bk:			#F5F5F5;
+$footer_title:		#474747;
+$footer_link:		#6c6c6c;
+$footer_hover:		$primary;
+
+//form
+$input_text:		black;
+$input_bk:			white;
+$input_border:		$border;
+
+//site-search
+$search_bk:			#f5f4f4;
+$search_text:		#555;
+$search_border:		$primary;
+$search_btn:		$primary;
+$recommend_link:	#ccc;
+$ui_menu_border:    #ccc;
+$ui_menu_bk:        #f7f7f7;
+
+//site-cart
+$count_bg:          $primary;
+$count:				white;
+$cart_bk:			white;
+
+//aside
+$aside_title:       #504f47;       

@@ -1,0 +1,604 @@
+//product list
+.md-product-list {
+	@include RWD(mobile){
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.row {
+		min-height: 60px;
+		padding: 12px 5px 12px 75px;
+		border: lighten($border-color,5) 0 solid;
+		border-bottom-width: 1px;
+		letter-spacing: -0.32em;
+		position: relative;
+		@extend .clearfix;
+		* {
+			letter-spacing: normal;
+		}
+		@include RWD(mobile){
+			min-height: 85px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	//row
+	.row-liner {
+		min-height: 0;
+	}
+	.row-head {
+		color: #aaa;
+		border-color: $border-color;
+		.col-content {
+			li {
+				text-align: center;
+				@include RWD(pad) {
+					text-align: right;
+					&.col-quantity {
+						text-align: left;
+					}
+				}
+			}
+		}
+		@include RWD(mobile){
+			display: none !important;
+		}
+	}
+	.row-subsummary {
+		padding-left: 5px;
+		border-top-width: 1px;
+		line-height: 2;
+		.t-minus, .t-coupon {
+			color: $c-red;
+		}
+		@include RWD(pad){
+			.col-name {
+				width: 74%;
+				padding-right: 0;
+			}
+			.col-content {
+				width: 25%;
+				margin: 0;
+				padding-left: 0;
+				li {
+					width: 100%;
+				}
+			}
+		}
+		@include RWD(mobile){
+			padding-left: 10px;
+		}
+	}
+	.row-shipping {
+		padding: 0;
+		border-width: 0;
+		.col-name {
+			width: 100%;
+			height: auto;
+			padding-right: 40px;
+			white-space: normal;
+			text-align: right;
+			overflow: visible;
+			@include RWD(pad){
+				padding-right: 5px;
+			}
+			@include RWD(mobile){
+				padding-right: 10px;
+			}
+		}
+		.col-content {
+			display: none;
+			&.is-show {
+				display: inline-block;
+			}
+		}
+		.is-disabled {
+			color: $main-grey;
+			cursor: no-drop;
+		}
+	}
+	.row-summary {
+		padding-right: 40px;
+		color: $c-red;
+		font-size: 1.1em;
+		text-align: right;
+		border-top-width: 1px;
+		border-bottom-width: 0;
+		@include RWD(pad){
+			padding-right: 5px;
+		}
+		@include RWD(mobile){
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.t-price {
+			font-size: 1.3em;
+			margin-left: 10px;
+			@include RWD(mobile){
+				display: inline-block;
+			}
+			.t-currency {
+				font-size: 0.7em;
+			}
+		}
+	}
+	.row-status {
+		margin-top: 10px;
+		letter-spacing: -0.32em;
+		.t-infr {
+			@extend .t-comment;
+		}
+	}
+	.row-add {
+		margin-top: 10px;
+		letter-spacing: -0.32em;
+		position: relative;
+		.t-include {
+			color: lighten($font-color,40);
+			font-size: 0.9em;
+			font-weight: bold;
+		}
+		.col-name {
+			width: 54%;
+			@include ellipsis(nowrap);
+			overflow: hidden;
+			@include RWD(mobile) {
+				width: 100%;
+			}
+		}
+		.col-action {
+			top: 0;
+			right: 0;
+		}
+	}
+	.row-buy-discount {
+		color: $c-red;
+		@include RWD(pad){
+			.col-name {
+				width: 54%;
+				padding-right: 0;
+			}
+			.col-content {
+				width: 45%;
+				margin: 0;
+				padding-left: 0;
+				color: $c-red;
+			}
+		}
+	}
+	//col
+	.col-image {
+		top: 12px;
+		left: 0;
+		position: absolute;
+		.img-product {
+			width: 60px;
+			height: 60px;
+		}
+		@include RWD(mobile){
+			top: 35px;
+			left: 10px;
+		}
+	}
+	.col-name {
+		width: 54%;
+		line-height: $font-small-line-height;
+		vertical-align: top;
+		@include box-sizing(border-box);
+		display: inline-block;
+		@include RWD(pad){
+			width: auto;
+			padding-right: 30px;
+			float: none;
+		}
+		@include RWD(mobile){
+			width: 100%;
+			height: 25px;
+			@include ellipsis(nowrap);
+			overflow: hidden;
+		}
+		a {
+			color: $font-color;
+			&:hover {
+				color: darken($main-grey,20);
+			}
+		}
+	}
+	.col-action {
+		top: 12px;
+		right: 5px;
+		position: absolute;
+		@include RWD(mobile){
+			right: 10px;
+		}
+		.btn-delete {
+			color: lighten($font-color,40);
+			font-size: 1.1em;
+			padding: 0 4px 3px;
+			&:before {
+				@include icon-font("\f00d");
+			}
+		}
+	}
+	.col-content {
+		width: 45%;
+		padding-right: 40px;
+		vertical-align: top;
+		@include box-sizing(border-box);
+		display: inline-block;
+		@include RWD(pad){
+			width: 100%;
+			color: #999;
+			font-size: 0.9em;
+			margin: 5px 0;
+			padding-right: 0;
+			float: none;
+		}
+		@include RWD(mobile){
+			padding-left: 75px;
+		}
+		li {
+			width: 33.3%;
+			text-align: right;
+			vertical-align: middle;
+			float: right;
+			@include RWD(mobile) {
+				width: 100%;
+			}
+			&.col-unitprice {
+				@include RWD(mobile) {
+					display: none;
+				}
+			}
+			&.col-quantity {
+				text-align: center;
+				@include RWD(mobile) {
+					text-align: right;
+				}
+				&.no-spin {
+					@include RWD(pad){
+						text-align: left;
+						&:before {
+							content: "x";
+							margin-right: 1px;
+						}
+					}
+					@include RWD(mobile) {
+						text-align: right;
+					}
+				}
+			}
+		}
+		.md-spin {
+			text-align: center;
+			position: relative;
+			@include RWD(pad){
+				margin-left: 5px;
+				text-align: left;
+			}
+			@include RWD(mobile) {
+				margin-right: 5px;
+				float: right;
+			}
+			.input-quantity {
+				width: 25px;
+				height: 21px;
+				padding: 1px 2px;
+				border: darken($border-color,10) 1px solid;
+				letter-spacing: normal;
+				text-align: center;
+				vertical-align: middle;
+			}
+		}
+		.btn-quantity {
+			color: darken($main-grey,20);
+			font-size: 0.8em;
+			width: 25px;
+			height: 25px;
+			margin: 0 -5px;
+			padding: 0;
+			vertical-align: middle;
+			border: darken($border-color,10) 1px solid;
+			@include btn-color(#fff,0);
+			&.btn-decrease {
+				&:before {
+					@include icon-font("\f068");
+				}
+			}
+			&.btn-increase {
+				&:before {
+					@include icon-font("\f067");
+				}
+			}
+			&.is-disabled, &.is-disabled:hover {
+				color: $main-grey;
+				background: lighten($main-grey,10);
+				cursor: default;
+			}
+		}
+	}
+	//marketing
+	.t-promote {
+		color: darken($c-red,5);
+		font-size: 0.9em;
+		a {
+			color: darken($c-red,5);
+			&:hover {
+				color: lighten($c-red,10);
+			}
+		}
+		&.is-not-qualified {
+			a {
+				color: $anchor-color;
+				&:hover {
+					color: $anchor-hover-color;
+				}
+			}
+		}
+	}
+	&.in-fee {
+		padding: 0;
+		border: none;
+		@include box-shadow(none);
+		.row {
+			min-height: 0;
+			padding-left: 5px;
+		}
+		.row-subsummary {
+			border-top-width: 0;
+		}
+		.row-summary {
+			padding-right: 5px;
+		}
+		.col-name {
+			height: auto;
+			padding: 0;
+			line-height: $font-line-height;
+			overflow: visible;
+			@include RWD(pad) {
+				width: 48%;
+				display: inline-block;
+			}
+			&.t-comment {
+				width: 100%;
+				padding-right: 0;
+				white-space: normal;
+				display: block;
+			}
+		}
+		.col-content {
+			margin: 0;
+			padding: 0;
+			@include RWD(pad) {
+				width: 50%;
+				display: inline-block;
+			}
+			li {
+				width: 100%;
+			}
+		}
+	}
+	&.in-payment {
+		max-height: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		border-top-width: 0;
+		border-bottom-width: 0;
+		@include box-shadow(none);
+		overflow: hidden;
+		&.is-expand {
+			max-height: 10000px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border: $card-border-color 1px solid;
+			@include box-shadow(rgba(black,0.2) 0 1px 2px);
+			overflow: visible;
+		}
+		.row-subsummary {
+			@include RWD(pad){
+				.col-name {
+					width: 59%;
+				}
+				.col-content {
+					width: 40%;
+				}
+			}
+		}
+		.row-summary {
+			padding-right: 5px;
+			@include RWD(mobile){
+				padding-right: 10px;
+			}
+		}
+		.row-add {
+			&.row-additional {
+				@include RWD(pad){
+					.col-name {
+						padding-right: 0;
+					}
+				}
+				@include RWD(mobile){
+					.col-name {
+						width: 54%;
+					}
+					.col-content {
+						width: 45%;
+						margin: 0;
+						padding-left: 0;
+					}
+				}
+			}
+		}
+		.col-content {
+			padding-right: 0;
+			.col-quantity {
+				@include RWD(pad){
+					text-align: left;
+					&:before {
+						content: "x";
+						margin-right: 1px;
+					}
+				}
+				@include RWD(mobile) {
+					text-align: right;
+				}
+			}
+		}
+	}
+	// &.in-confirm {
+	// 	@extend .md-product-list.in-payment.is-expand;
+	// 	.row {
+	// 		display: none;
+	// 	}
+	// 	.row-subsummary, .row-summary {
+	// 		display: block;
+	// 	}
+	// 	.row-subsummary {
+	// 		border-top-width: 0;
+	// 	}
+	// 	&.is-expand {
+	// 		.row {
+	// 			display: block;
+	// 		}
+	// 		.row-subsummary {
+	// 			border-top-width: 1px;
+	// 		}
+	// 	}
+	// }
+	&.in-final {
+		.row {
+			min-height: 0;
+			padding-left: 5px;
+		}
+		.row-subsummary {
+			@include RWD(pad){
+				.col-name {
+					width: 59%;
+				}
+				.col-content {
+					width: 40%;
+				}
+			}
+		}
+		.row-summary {
+			padding-right: 0;
+			color: $font-color;
+			@include RWD(mobile){
+				padding-right: 10px;
+			}
+		}
+		.col-content {
+			padding-left: 0;
+			padding-right: 0;
+			.col-quantity {
+				@include RWD(pad){
+					&:before {
+						content: "x";
+						margin-right: 1px;
+					}
+				}
+			}
+		}
+	}
+}
+.discount_list{
+	.discount_item{
+		margin-bottom: 10px;
+		&.nouse{
+			color: #ccc;
+		}
+	}
+	.discount_item_chk{
+		display: inline-block;
+		width: 300px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		vertical-align: top;
+		@include RWD(mobile){
+			width: 245px;
+			min-width: 245px;
+		}
+	}
+	.discount_price{
+		float: right;
+		margin-left: 16px;
+		color: #d00;
+		font-weight: 700;
+		@include RWD(mobile){
+			display: inline-block;
+			float: none;
+		}
+	}
+	.discount_date{
+		font-size: 0.75em;
+		margin-left: 17px;
+		color: #aaa;
+		.discount_tip{
+			font-weight: 700;
+			color: #F49A9A;
+		}
+	}
+	.discount_item{
+		&.nouse{
+			color: #ccc;
+			.discount_price, .discount_tip{
+				color: #ccc;
+			}
+		}
+	}
+	.notice{
+		display: inline-block;
+		margin-top: 10px;
+		padding: 0 5px;
+		background: #ff5b5b;
+		color: white;
+	}
+	.notice_txt{
+		max-width: 390px;
+		padding: 5px 0 0 5px;
+		color: #666;
+		font-size: 0.95em;
+		line-height: 1.5;
+	}
+	
+}
+
+.cart_tag{
+	display:block;
+	@include clearfix;
+	li{
+		float: left;
+		width: 49%;
+		margin-bottom: 5px;
+		margin: 0.5%;
+		background: #fff;
+		// border-bottom:1px solid #06c;
+		@include box-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+		@include border-radius(10px 10px 0 0);
+		@media only screen and (min-width: 768px){
+			width:170px;
+		}
+		@include RWD(mobile){
+			@include border-radius(0);
+		}
+		&.active{
+			background-color: #FFE599;
+			@include box-shadow(1px 2px 5px rgba(0, 0, 0, 0.3));
+			a{
+				color: #06c;
+			}
+		}
+		i{
+			font-size: 1.3em;
+			margin-right: 5px;
+		}
+		a{
+			display: block;
+			padding: 5px 8px;
+			font-size: 1em;
+			color:#999;
+			text-align: center;
+
+		}
+	}
+}

@@ -1,0 +1,102 @@
+/* rwd_index_002 開始 */
+.rwd-index-002{
+	@include clearfix;
+	.item{
+		width: 50%;
+		float: left;
+		display: table;
+	}
+	.photo{
+		display: table-cell;
+//		vertical-align: middle;
+//		width: 50%;
+//		img{
+//			width: 100%;
+//		}
+	}
+    &.trans-002{
+        .photo{
+            padding-top:50%;
+        }
+    }
+	.info{
+		display: table-cell;
+		vertical-align: middle;
+		width: 50%;
+		padding: 0 10px;
+	}
+	// .name{
+	// 	margin-bottom: 10px;
+	// 	//color: $items_name;
+	// 	font-size: 18px;
+	// 	height: 45px;
+	// 	overflow: hidden;
+	// 	font-weight: bold;
+	// 	line-height: 1.3;
+	// }
+	.feature{
+		margin-bottom: 20px;
+		font-size: 14px;
+		line-height: 1.4;
+		height: 60px;
+		overflow: hidden;
+	}
+	del{
+		color: $text;
+	}
+	.currency{
+		font-size: 12px;
+		//color: $price;
+		display: inline-block;
+	}
+	.price{
+		font-size: 18px;
+		margin-right: 5px;
+		//color: $price;
+		display: inline-block;
+	}
+}
+@include RWD(desktop-extra) {
+.rwd-index-002{
+	.feature li{
+		width: 285px;
+		@include one-line;
+	}
+}
+}
+@include RWD(desktop-normal) {
+.rwd-index-002{
+	.feature li{
+		width: 220px;
+		@include one-line;
+	}	
+}
+}
+
+@include RWD(pad-mobile) {
+.rwd-index-002{
+	padding: 0 1%;
+	.item{
+		padding: 1% 0 3%;
+		width: 100%;
+		margin: 0;
+		display: table;
+	}
+	.photo{
+		display: table-cell;
+//		vertical-align: middle;
+//		width: 50%;
+//		img{
+//			width: 100%;
+//		}
+	}
+	.info{
+		display: table-cell;
+		vertical-align: middle;
+		width: 50%;
+		padding: 0 10px;
+	}
+}
+}
+
+/* rwd_index_002 結束 */

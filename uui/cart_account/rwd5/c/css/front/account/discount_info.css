@@ -1,0 +1,415 @@
+.discount_info_001 a {
+  color: #2290c6;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  transition: 0.4s;
+}
+.discount_info_001 a:active, .discount_info_001 a.on-touch {
+  color: #7fbee5;
+}
+.discount_info_001 .account-title {
+  color: #999999;
+  font-size: 1.2em;
+  margin: 10px 0px;
+}
+.discount_info_001 .text-focus {
+  color: #dd0000;
+}
+.discount_info_001 .discount-info-block{
+  position: relative;
+  width: 100%;
+  height: auto;
+  color: #666666;
+  text-align: left;
+  line-height: 1.7;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  background: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 2px 1px #dddddd;
+  -moz-box-shadow: 0 1px 2px 1px #dddddd;
+  box-shadow: 0 1px 2px 1px #dddddd;
+}
+.discount_info_001 .discount-info-block{
+  zoom: 1;
+}
+.discount_info_001 .discount-info-block:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.discount-info-table{
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 5px 1px #dddddd;
+  -moz-box-shadow: 0 1px 5px 1px #dddddd;
+  box-shadow: 0 1px 5px 1px #dddddd;
+}
+/*.discount-info-table tr{
+  border-bottom: 1px solid #2290c6;
+}*/
+.discount-info-table tr:nth-child(even) {
+  background: #deedf7;
+}
+.discount-info-table tr:last-child{
+  border: none; 
+}
+.discount-info-table th,.discount-info-table td{
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  min-height: 20px;
+  line-height: 1.5;
+    font-size: 0.85em;
+}
+.discount-info-table th{
+  white-space: nowrap;
+  background: #2290c6;
+  color: white;
+}
+.discount-info-table td.discount-info-price{
+  color: red;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1000px) {
+  .discount-info-source, .discount-info-num{
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .discount-info-start{
+    display: none;
+  }
+}
+@media only screen and (max-width: 568px){
+  .discount-info-come-name,.discount-info-end, .discount-info-detail{
+    display: none;
+  }
+}
+
+
+
+
+
+.discount_info_001 .discount_info_blockh1 {
+  width: 100%;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #dddddd;
+  color: #2290c6;
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: bold;
+}
+.discount_info_001 .discount_info_blockp {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  font-size: 0.95em;
+}
+.discount_info_001 .bonus-info-content li {
+  margin-bottom: 25px;
+}
+.discount_info_001 .bonus-info-content h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+.discount_info_001 .bonus-info-content p {
+  margin-bottom: 0;
+}
+.discount_info_001 .bonus-example {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin-top: 15px;
+  border: 2px solid #dddddd;
+}
+.discount_info_001 .bonus-example {
+  zoom: 1;
+}
+.discount_info_001 .bonus-example:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.discount_info_001 .bonus-example .order-list-content {
+  padding: 0 55px 15px 65px;
+  position: relative;
+}
+.discount_info_001 .bonus-example .order-list-content {
+  zoom: 1;
+}
+.discount_info_001 .bonus-example .order-list-content:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.discount_info_001 .bonus-example .order-list-content:first-child {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 15px;
+}
+.discount_info_001 .bonus-example .order-list-content.top {
+  font-weight: bold;
+}
+.discount_info_001 .bonus-example .order-list-content.top .order-name, .discount_info_001 .bonus-example .order-list-content.top .order-quantity, .discount_info_001 .bonus-example .order-list-content.top .order-price, .discount_info_001 .bonus-example .order-list-content.top .order-total-s {
+  font-size: 0.9em;
+  margin-top: 0;
+}
+.discount_info_001 .bonus-example .order-list-content.fee {
+  border-bottom: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+.discount_info_001 .bonus-example .order-list-content.fee .order-name {
+  margin-top: 0;
+}
+.discount_info_001 .bonus-example .order-list-content.fee .order-total-s {
+  float: right;
+  margin-top: 0px;
+}
+.discount_info_001 .bonus-example .order-list-content.shipping-fee {
+  border-top: 1px solid #dddddd;
+  padding-top: 13px;
+}
+.discount_info_001 .bonus-example .order-list-content.bonus-fee {
+  color: #dd0000;
+}
+.discount_info_001 .bonus-example .order-list-content.bonus-fee .order-name {
+  overflow: initial;
+  white-space: normal;
+  text-overflow: clip;
+}
+.discount_info_001 .bonus-example .order-list-content.bonus-fee .order-name label {
+  padding: 5px 10px;
+  border: 2px solid #dd0000;
+  display: inline-block;
+}
+.discount_info_001 .bonus-example .order-list-content.bonus-fee .order-name label span {
+  display: inline-block;
+  margin-top: 0px;
+  font-size: 1em;
+}
+.discount_info_001 .bonus-example .order-list-content.bonus-fee .order-name span {
+  margin-top: 10px;
+  display: block;
+  font-size: 0.9em;
+}
+.discount_info_001 .bonus-example .order-list-content.total-fee {
+  border-top: 2px solid #dddddd;
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+.discount_info_001 .bonus-example .order-list-content.total-fee .order-list-r {
+  width: 100% !important;
+}
+.discount_info_001 .bonus-example .order-list-content.total-fee .order-total-s {
+  width: 100%;
+  color: #dd0000;
+  font-weight: bold;
+  font-size: 1em;
+}
+.discount_info_001 .bonus-example .order-name, .discount_info_001 .bonus-example .order-list-r li {
+  float: left;
+  min-height: 20px;
+  line-height: 1.5;
+  font-size: 0.85em;
+}
+.discount_info_001 .bonus-example .order-images {
+  top: -9px;
+  left: 0;
+  position: absolute;
+}
+.discount_info_001 .bonus-example .order-images img {
+  width: 50px;
+}
+.discount_info_001 .bonus-example .order-name {
+  width: 45%;
+  margin-right: 2%;
+  margin-top: 9px;
+  font-weight: bold;
+  font-size: 0.93em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.discount_info_001 .bonus-example .order-list-r {
+  width: 50%;
+  float: right;
+}
+.discount_info_001 .bonus-example .order-list-r {
+  zoom: 1;
+}
+.discount_info_001 .bonus-example .order-list-r:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.discount_info_001 .bonus-example .order-list-r li {
+  margin-right: 2.2%;
+  margin-bottom: 0px;
+}
+.discount_info_001 .bonus-example .order-list-r li:last-child {
+  margin-right: 0;
+}
+.discount_info_001 .bonus-example .order-quantity {
+  width: 35%;
+  text-align: center;
+  margin-top: 4px;
+}
+.discount_info_001 .bonus-example .quantity-input {
+  line-height: 32px;
+}
+.discount_info_001 .bonus-example .order-price {
+  width: 30%;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 9px;
+}
+.discount_info_001 .bonus-example .order-total-s {
+  width: 30%;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 9px;
+  margin-right: 0 !important;
+}
+.discount_info_001 .bonus-example .order-delete {
+  position: absolute;
+  right: 15px;
+  top: -1px;
+  font-size: 20px !important;
+  cursor: pointer;
+}
+.discount_info_001 .bonus-example .order-delete:before {
+  content: "\f00d";
+  line-height: 1;
+  font-family: FontAwesome;
+  vertical-align: middle;
+  display: inline-block;
+}
+.discount_info_001 .bonus-example .order-delete:hover {
+  color: #333333;
+}
+.discount_info_001 .tip {
+  width: 100%;
+  border-top: 1px solid #dddddd;
+  padding-top: 25px;
+  margin-top: 25px;
+  font-size: 0.85em !important;
+}
+@media only screen and (max-width: 1241px) {
+  .discount_info_001 {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .discount_info_001 .bonus-example .order-name {
+    width: 45%;
+  }
+  .discount_info_001 .bonus-example .order-list-r {
+    width: 53%;
+  }
+  .discount_info_001 .bonus-example .order-quantity {
+    width: 34%;
+  }
+  .discount_info_001 .bonus-example .order-price {
+    width: 38%;
+  }
+  .discount_info_001 .bonus-example .order-total-s {
+    width: 23%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .discount_info_001 .bonus-example .order-list-content.fee .order-name {
+    width: 45%;
+  }
+  .discount_info_001 .bonus-example .order-list-content.fee .order-list-r {
+    width: 53%;
+  }
+  .discount_info_001 .bonus-example .order-images {
+    top: 2px;
+  }
+  .discount_info_001 .bonus-example .order-name {
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .discount_info_001 .bonus-example .order-list-r {
+    width: 100%;
+  }
+  .discount_info_001 .bonus-example .order-quantity {
+    width: 35%;
+    text-align: left;
+  }
+  .discount_info_001 .bonus-example .order-price {
+    width: 30%;
+  }
+  .discount_info_001 .bonus-example .order-total-s {
+    width: 30%;
+  }
+  .discount_info_001 .bonus-example .order-delete {
+    top: -5px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .discount_info_001 .bonus-example .order-list-content {
+    padding: 0 0px 15px 0px;
+  }
+  .discount_info_001 .bonus-example .order-list-content.top {
+    display: none;
+  }
+  .discount_info_001 .bonus-example .order-list-content.bonus-fee .order-name {
+    width: 100%;
+  }
+  .discount_info_001 .bonus-example .order-images {
+    top: 30px;
+  }
+  .discount_info_001 .bonus-example .order-name {
+    margin-bottom: 10px;
+    padding-right: 25px;
+  }
+  .discount_info_001 .bonus-example .order-quantity {
+    width: 100%;
+    text-align: right;
+  }
+  .discount_info_001 .bonus-example .order-price {
+    width: 100%;
+    display: none;
+  }
+  .discount_info_001 .bonus-example .order-total-s {
+    width: 100%;
+  }
+  .discount_info_001 .bonus-example .order-delete {
+    top: -9px;
+    right: 0;
+  }
+}

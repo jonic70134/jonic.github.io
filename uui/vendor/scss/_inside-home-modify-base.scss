@@ -1,0 +1,66 @@
+//homepage modify: base
+.modify-tabs {
+  @include page-tabs;
+}
+.modify-content {
+  @include page-content;
+}
+.modify-button {
+  @include page-button;
+  margin: 20px 0;
+  @media screen and (max-width: 850px) {
+    margin-bottom: 0;
+    button {
+      font-size: 1.1em;
+      margin: 0;
+      padding: 5px 15px;
+    }
+  }
+}
+.modify-detail {
+  max-width: 1240px;
+  margin: 30px auto;
+}
+.modify-infr {
+  color: mix($main-red-color,#c90,10);
+  margin-top: 20px;
+}
+.modify-form {
+  margin: 30px 0;
+}
+.colpick, .ui-datepicker {
+  @include box-shadow(rgba(black,0.2) 3px 3px 5px);
+}
+.color-picker {
+  width: 70px;
+  margin-left: 5px;
+}
+.color-picked {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  background: #fff;
+  border: #ddd 1px solid;
+  @include border-radius(3px);
+  vertical-align: middle;
+  display: inline-block;
+}
+.wysieditor {
+  margin-top: 10px;
+  margin-left: 0;
+}
+.input-logo-img {
+  .input-logo-file {
+    margin: 5px 0;
+  }
+  .input-logo-url {
+    margin-bottom: 10px;
+    vertical-align: top;
+  }
+  .btn-delete {
+    margin-left: 3px;
+    padding: 3px 5px 5px;
+    font-size: 1em;
+    @include btn-color(darken($main-grey-color,20));
+  }
+}

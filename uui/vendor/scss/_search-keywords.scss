@@ -1,0 +1,27 @@
+//search keywords
+.menu-keywords {
+	margin: 20px 40px 0 0;
+	.modify-menu-content {
+		& > dd {
+			cursor: default;
+			.menu-content {
+				padding-top: 0;
+			}
+			.menu-content-button {
+				padding: 5px 0;
+				text-align: left;
+				button[class*="btn-"] {
+					font-size: 1.1em;
+					margin-right: 5px;
+					padding: 4px 10px;
+				}
+				.btn-hot {
+					@include btn-color(mix($main-red-color,#fff,50));
+				}
+				.btn-default {
+					@include btn-color(mix($main-blue-color,#fff,60));
+				}
+			}
+		}
+	}
+}

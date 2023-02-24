@@ -1,0 +1,68 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_lulu.scss";
+
+@import "../../../module_category/_rwd_category_layout.scss";
+@import "../../../module_category/_rwd_category_001.scss";
+@import "../../../module_component/_nav_breadcrumbs.scss";
+@import "../../../module_component/_item_list.scss";
+@import "../../../module_component/_item_list_four.scss";
+@import "../../../module_component/_nav_pagination.scss";
+@import "../../../module_component/_site_sort.scss";
+@import "../../../module_component/_site_filter.scss";
+
+
+//item-list-four
+.item-list-four{
+	.item{
+		width: 23.32%;
+	}
+	.info{
+		text-align: center;
+	}
+	.name {
+		height: 40px;
+		font-size: 0.95em;
+		line-height: 1.4;
+	}
+	.price {
+		font-size: 15px;
+	}
+	.currency {
+		vertical-align: 1px;
+	}
+	.quantity{
+		margin-bottom: 10px;
+	}
+	.button{
+		margin-bottom: 10px;
+	}
+	.highlight{
+		margin-top: 0;
+	}
+	@include RWD(desktop-normal) {
+		.item{
+			width: 22.91%;
+		}
+	}
+	@include RWD(pad) {
+		.item{
+			width: 33.3%;
+			padding: 7px;
+		}
+	}
+	@media screen and (max-width: 800px){
+		.item{
+			width: 50%;
+			padding: 7px;
+		}
+	}
+	@media screen and (max-width: 568px){
+		.item{
+			width: 100%;
+			padding: 7px;
+		}
+	}
+}
+.item-list .container,.item-list-four .container{
+	border: none
+}

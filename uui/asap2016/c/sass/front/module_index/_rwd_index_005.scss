@@ -1,0 +1,109 @@
+/* rwd_index_005 開始 */
+
+.rwd_index_005 {
+    @include clearfix;
+    .item-one {
+        width: 50%;
+        float: left;
+        display: table;
+        margin-right: 6%;
+        .photo {
+            display: table-cell;
+            vertical-align: middle;
+//            width: 55%;
+        }
+        .info {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0 10px;
+            width: 30%;
+        }
+        .name {
+            font-size: 1.2em;
+            height: 52px;
+            line-height: 1.4;
+        }
+        li{
+            max-width:180px;
+        }
+    }
+    .items{
+        float:left;
+        width:44%;
+    }
+    .item {
+        width: 50%;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        float: left;
+    }
+    .photo {
+        margin-bottom: 5px;
+        display: inline-block;
+        min-height: 165px;
+        img {
+            width: 100%;
+        }
+    }
+    .info {
+        clear:left;
+    } 
+    .name {
+            height:38px;
+            margin-bottom: 5px;
+            font-size:.95em;
+    }
+    .feature {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.6;
+        height: 65px;
+        overflow: hidden;
+    }
+    del{
+        color: $text;
+    }
+    .currency {
+        font-size: 12px;
+        //color: $price;
+    }
+    .price {
+        font-size: 18px;
+        margin-right: 5px;
+        //color: $price;
+    }
+}
+@include RWD(pad-mobile) {
+    .rwd_index_005 {
+        padding: 0 1%;
+        .items{
+                width:100%;
+        }
+        .item, .item-one {
+            padding: 1% 0 3%;
+            width: 100%;
+            margin: 0;
+            display: table;
+        }
+        .item-one {
+            .info {
+                width: 50%;
+            }
+        }
+        .photo {
+            display: table-cell;
+            vertical-align: middle;
+//            width: 50%;
+//            img {
+//                width: 100%;
+//            }
+        }
+        .info {
+            display: table-cell;
+            vertical-align: middle;
+            width: 50%;
+            padding: 0 10px;
+        }
+    }
+}
+/* rwd_index_005 開始 */

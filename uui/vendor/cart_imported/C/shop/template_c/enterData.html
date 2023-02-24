@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">       
+        <title></title>
+        <link href="../css/buy.css" rel="stylesheet" type="text/css">
+        <link href="../css/tinybox_style.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/buy.js"></script>
+        <script type="text/javascript" src="../js/jquery.blockUI.js"></script>
+        <script type="text/javascript" src="../js/buy_list.js"></script>
+        <script type="text/javascript" src="../js/tinybox.js"></script>
+        <script type="text/javascript" src="../js/consignee_sg.js"></script>
+        <script type="text/javascript" src="../js/zip_code_all.js"></script>
+        <script type="text/javascript" src="../js/enterdata.js"></script>
+        <style type="text/css">
+            body{ overflow: scroll; _overflow:auto; *overflow:auto !important }
+        </style>
+    </head>
+    <body cz-shortcut-listen="true">
+        <div id="sgbuy_weap">
+            <div id="sgbuy_header">
+                <a href="#"><img src="../img/1418123335_AWC000164.jpg"></a>&nbsp;
+                <span class="backlink pattop"><a href="#">Back</a></span>
+            </div><!-- header -->
+    <div class="buy_brembox text13">
+        <span class="fontb">Total for This Order</span>
+        <span id="total_price_banner" class="fontb colred">US$ <span class="pricenum">50.00</span></span>
+        <a href="#" id="detail_switch" class="opwnlist">Close details&gt;</a>
+    </div><!-- sgbuy_brembox -->
+
+<!-- sg_list Start -->
+<div id="detail_list" class="pricebar" style="display: block;">
+    <div class="tablist clearfix">
+        <div class="listr title clearfix">
+            <div class="column1">Your Items</div>
+            <div class="column2">Qty</div>
+            <div class="column3">Unit Price</div>
+            <div class="column4">Subtotal</div>
+            <div class="column5"></div>
+        </div><!-- title -->
+
+        <!-- Product List Region -->
+        <div id="set_list">
+            <div class="listr center clearfix">
+                <div class="column1 undefined">
+                    <span class="tag-status is-odd">大材積</span>
+                    <a href="#" target="_blank">us-大材積01</a>
+                    <span class="tag-status is-vendor-delivery">廠商直送</span><span class="tag-status is-uitox-delivery">uitox運送</span><span class="tag-status is-separate-delivery">分開到貨</span><span class="tag-status is-imported">日本直送</span>
+                    <p class="colff0"></p>
+                </div>
+                <div class="column2 undefined">1</div>
+                <div class="column3 undefined">US$50.00</div>
+                <div class="column4 undefined">US$50.00</div>
+                <div class="column5"></div>
+            </div>
+        </div>
+
+        <hr class="listline">
+
+        <hr class="listline">
+
+        <!-- Activity List Region -->
+        <div id="act_list"></div>
+
+        <!-- Fee Region -->
+        <div id="fee_list" class="listr center clearfix">
+            <div id="fee_list_name" class="column1">日本處理費 (配送到府) <span class="go-tip">說明<span class="md-tip">處理費包含配送到府運費及商品關稅</span></span></div>
+            <div class="column2"></div>
+            <div class="column3"></div>
+            <div class="column4">US$<span id="fee_list_val"></span></div>
+            <div class="column5"></div>
+        </div>
+
+        <!-- Point Region -->
+        <div id="point" class="listr center clearfix hide">
+            <div class="column1"> Shopping Credits</div>
+            <div class="column2">&nbsp;</div>
+            <div class="column3">&nbsp;</div>
+            <div class="column4">- US$<span name="point_val">5</span></div>
+            <div class="column5"></div>
+        </div>
+
+        <!-- Point2 Region -->
+        <div id="point2" class="listr center clearfix hide">
+            <div class="column1"> Voucher</div>
+            <div class="column2">&nbsp;</div>
+            <div class="column3">&nbsp;</div>
+            <div class="column4">- US$<span name="point2_val">6</span></div>
+            <div class="column5"></div>
+        </div>
+
+        <div class="listr center clearfix">
+            <div class="columnfee">&nbsp;</div>
+            <div class="column4_2"> 
+                <span class="colred">Total &nbsp;&nbsp;&nbsp; US$ </span>
+                <span id="total_price" class="text16 colred">50.00</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- sg_list End -->
+<div class="sgtab enterdta_pad">
+    <div class="sgtr text12 clearfix" id="buyer_field">
+        <div class="columnleft">
+            <span>Customer’s Name</span>
+        </div>
+        <div class="columnright">  
+            <input type="text" id="buyerName" name="buyerName" size="15" maxlength="32" class="input-text1" value="nancy">
+            <span class="marleft32">Phone Number</span>  
+            <input type="text" id="buyerCellPhone" name="buyerCellPhone" size="15" maxlength="10" class="input-text1" value="0911******">  
+            <input type="hidden" id="temp_buyerCellPhone" name="temp_buyerCellPhone" value="0911******">  
+            <input type="hidden" id="ency_buyerCellPhone" name="ency_buyerCellPhone" value="RHYpiRMSa7dd1bRY/BsnFA==">
+        </div>
+    </div>
+    <div class="addrs_top clearfix">
+        <span class="choceadr">Select a delivery address</span>
+    </div>
+    <div id="firstConsignee" class="firstcosaddr">
+        <div class="first_tab">  
+            <ol class="tabtr clearfix">      
+                <li class="columnleft">Full Name</li>      
+                <li class="columnright">
+                    <input type="text" name="getName" id="getName" size="20" maxlength="200" value="nancy" class="input-text1 iptwid">
+                </li>  
+            </ol>  
+            <ol class="tabtr clearfix">      
+                <li class="columnleft">Phone Number</li>      
+                <li class="columnright">			
+                    <input type="text" name="getCellPhone" id="getCellPhone" size="20" maxlength="10" value="0911******" class="input-text1 iptwid">			
+                    <input type="hidden" name="temp_getCellPhone" id="temp_getCellPhone" size="20" maxlength="10" value="0911******" class="input-text1 iptwid">			
+                </li>  
+            </ol>  
+            <ol class="tabtr clearfix">      
+                <li class="columnleft">Address line 1</li>      
+                <li class="columnright">          
+                    <div id="add_zipcode" class="left"></div>          
+                    <div class="addrsblock">
+                        <input type="text" name="getAddress" id="getAddress" value="401 W Greenlawn" size="50" maxlength="35" class="input-text1 iptwidadd">
+                        <div name="myPosition_add" class="addrscity"></div>
+                    </div>      
+                </li>  
+            </ol>  
+            <ol class="tabtr clearfix">      
+                <li class="columnleft">Address line 2</li>      
+                <li class="columnright">          
+                    <div id="add_zipcode" class="left"></div>          
+                    <div class="addrsblock">
+                        <input type="text" name="getAddress2" id="getAddress2" value="" size="50" maxlength="35" class="input-text1 iptwidadd">
+                        <div name="myPosition_add" class="addrscity"></div>
+                    </div>      
+                </li>  
+            </ol>  
+            <ol class="tabtr clearfix">      
+                <li class="columnleft">City</li>      
+                <li class="columnright">			
+                    <input type="text" name="getCity" id="getCity" size="20" maxlength="35" value="********" class="input-text1 iptwid">			
+                </li>  
+            </ol>  
+            <ol class="tabtr clearfix">      
+                <li class="columnleft">State</li>      
+                <li class="columnright"><input type="text" name="getProvince" id="getProvince" size="20" maxlength="2" value="MI" class="input-text1 iptwid"></li>  
+            </ol>  
+            <ol class="tabtr clearfix">      
+                <li class="columnleft">ZIP Code</li>      
+                <li class="columnright">			
+                    <input type="text" name="getPostCode" id="getPostCode" size="20" maxlength="5" value="*****" class="input-text1 iptwid">			
+                </li>  
+            </ol>
+        </div>
+    </div>
+
+<input type="hidden" id="invoice_type" name="invoice_type" value="2">
+<div id="invoice_3div" class="sgtr text12 clearfix" style="display: none;">
+    <div class="columnleft"><span>GST Registration No.</span></div>
+    <div class="columnright"><input type="text" name="vat_number" id="vat_number" value="" size="11" maxlength="10" class="input-text1"></div>
+</div>
+<!-- 訂閱電子報 -->
+<div class="subscribe_edm"><input type="checkbox" id="subscribe_edm" name="subscribe_edm" value="Y" checked="checked">
+    <label for="subscribe_edm">Subscribe to Newsletter</label>
+</div>
+<div class="sgcheckoutbtn sent-btn-pad">
+    <div class="read_privacy">
+        <label for="read_privacy">
+            <input type="checkbox" id="read_privacy" name="read_privacy">I have read and accept US和時區主測 
+        </label>
+        <a href="#" target="_blank">Privacy Policy</a>
+    </div>
+    <input type="submit" id="validate_submit" name="validate_submit" value="Continue" class="submit">
+</div>
+</form>
+
+<div id="secondConsignee" class="addreslist secondcosaddr">
+    <div class="addrestab clearfix">
+        <div id="consignee">
+            <div class="list_tr clearfix">    
+                <label for="radio_1">
+                    <div class="column1">        
+                        <input type="radio" name="consignee_select" id="radio_1" value="1">        
+                        <span class="pratxt">TO: </span>
+                        <span>gwargareg</span>        
+                        <p class="adrestxt">401 W Greenlawn, ********, MI *****</p>    
+                    </div>    
+                    <div class="column2">0911******</div>    
+                    <div class="column3"></div>
+                </label>    
+                <div class="column4"><a name="edit_consignee" href="javascript:void(0);">Change</a></div>
+            </div>
+            <div name="modify_tab" class="add_tab">    
+                <ol class="tabtr clearfix">        
+                    <li class="columnleft">Full Name：</li>        
+                    <li class="columnright">            
+                        <input type="text" name="name_1" size="20" maxlength="200" value="gwargareg" class="input-text1 iptwid">            
+                    </li>    
+                </ol>    
+                <ol class="tabtr clearfix">        
+                    <li class="columnleft">Phone Number：</li>        
+                    <li class="columnright">            
+                        <input type="text" name="cellphone_1" size="20" maxlength="10" value="0911******" class="input-text1 iptwid">            
+                    </li>    
+                </ol>    
+                <ol class="tabtr clearfix">        
+                    <li class="columnleft">Address line 1：</li>        
+                    <li class="columnright">            
+                        <input type="text" name="addr_1" value="401 W Greenlawn" size="50" maxlength="35" class="input-text1 iptwidadd">            
+                    </li>    
+                </ol>    
+                <ol class="tabtr clearfix">        
+                    <li class="columnleft">Address line 2：</li>        
+                    <li class="columnright">            
+                        <input type="text" name="addr2_1" value="" size="50" maxlength="35" class="input-text1 iptwidadd">            
+                    </li>    
+                </ol>    
+                <ol class="tabtr clearfix">        
+                    <li class="columnleft">City：</li>        
+                    <li class="columnright">            
+                        <input type="text" name="city_1" size="20" maxlength="35" value="********" class="input-text1 iptwid">            
+                    </li>    
+                </ol>    
+                <ol class="tabtr clearfix">        
+                    <li class="columnleft">State：</li>        
+                    <li class="columnright">            
+                        <input type="text" name="province_1" size="20" maxlength="2" value="MI" class="input-text1 iptwid">            
+                    </li>    
+                </ol>    
+                <ol class="tabtr clearfix">        
+                    <li class="columnleft">ZIP Code：</li>        
+                    <li class="columnright">            
+                        <input type="text" name="postcode_1" size="20" maxlength="5" value="*****" class="input-text1 iptwid">            
+                    </li>    
+                </ol>    
+                <div class="btn">        
+                    <input type="button" name="cancel_edit_consignee" value="Cancel">        
+                    <input type="button" name="submit_edit_consignee" value="Save">    
+                </div>
+            </div>
+            <div class="borbtm"></div>
+            <div class="list_tr clearfix">    
+                <label for="radio_2"><div class="column1">        
+                    <input type="radio" name="consignee_select" id="radio_2" value="2">        
+                    <span class="pratxt">TO: </span>
+                    <span>nancy</span>        
+                    <p class="adrestxt">401 W Greenlawn, ********, MI *****</p>    
+                </div>    
+                <div class="column2">0911******</div>    
+                <div class="column3"></div>
+            </label>    
+            <div class="column4">
+                <a name="edit_consignee" href="javascript:void(0);">Change</a>
+            </div>
+        </div>
+        <div id="EFB7FC58-AFE0-CCC1-70CC-C8C6093BDAFB" name="modify_tab" class="add_tab">    
+            <ol class="tabtr clearfix">        
+                <li class="columnleft">Full Name：</li>        
+                <li class="columnright">            
+                    <input type="text" name="name_2" size="20" maxlength="200" value="nancy" class="input-text1 iptwid">            
+                </li>    
+            </ol>    
+            <ol class="tabtr clearfix">        
+                <li class="columnleft">Phone Number：</li>        
+                <li class="columnright">            
+                    <input type="text" name="cellphone_2" size="20" maxlength="10" value="0911******" class="input-text1 iptwid">            
+                </li>    
+            </ol>    
+            <ol class="tabtr clearfix">        
+                <li class="columnleft">Address line 1：</li>        
+                <li class="columnright">            
+                    <input type="text" name="addr_2" value="401 W Greenlawn" size="50" maxlength="35" class="input-text1 iptwidadd">            
+                </li>    
+            </ol>    
+            <ol class="tabtr clearfix">        
+                <li class="columnleft">Address line 2：</li>        
+                <li class="columnright">            
+                    <input type="text" name="addr2_2" value="" size="50" maxlength="35" class="input-text1 iptwidadd">            
+                </li>    
+            </ol>    
+            <ol class="tabtr clearfix">        
+                <li class="columnleft">City：</li>        
+                <li class="columnright">            
+                    <input type="text" name="city_2" size="20" maxlength="35" value="********" class="input-text1 iptwid">                  
+                </li>    
+            </ol>    
+            <ol class="tabtr clearfix">        
+                <li class="columnleft">State：</li>        
+                <li class="columnright">            
+                    <input type="text" name="province_2" size="20" maxlength="2" value="MI" class="input-text1 iptwid">            
+                </li>    
+            </ol>    
+            <ol class="tabtr clearfix">        
+                <li class="columnleft">ZIP Code：</li>        
+                <li class="columnright">            
+                    <input type="text" name="postcode_2" size="20" maxlength="5" value="*****" class="input-text1 iptwid">            
+                </li>    
+            </ol>    
+            <div class="btn">        
+                <input type="button" name="cancel_edit_consignee" value="Cancel">        
+                <input type="button" name="submit_edit_consignee" value="Save">    
+            </div>
+        </div>
+        <div class="borbtm"></div>
+        <div class="list_tr clearfix">    
+            <label for="radio_3">
+                <div class="column1">        
+                    <input type="radio" name="consignee_select" id="radio_3" value="3">        
+                    <span class="pratxt">TO: </span>
+                    <span>nancy</span>        
+                    <p class="adrestxt">800 Corporate Way, ********, CA *****</p>    
+                </div>    
+                <div class="column2">0911******</div>    
+                <div class="column3"></div>
+            </label>    
+            <div class="column4">
+                <a name="edit_consignee" href="javascript:void(0);">Change</a>
+            </div>
+        </div>
+        <div name="modify_tab" class="add_tab" style="display: none;">    
+            <ol class="tabtr clearfix">        
+                <li class="columnleft">Full Name：</li>        
+                <li class="columnright">            
+                    <input type="text" name="name_3" size="20" maxlength="200" value="nancy" class="input-text1 iptwid">            
+                </li>    
+            </ol>    
+            <ol class="tabtr clearfix">        
+                <li class="columnleft">Phone Number：</li>        
+                <li class="columnright">            
+                    <input type="text" name="cellphone_3" size="20" maxlength="10" value="0911******" class="input-text1 iptwid">            
+                </li>    
+            </ol>    
+            <ol class="tabtr clearfix">        
+                <li class="columnleft">Address line 1：</li>        
+                <li class="columnright">            
+                    <input type="text" name="addr_3" value="800 Corporate Way" size="50" maxlength="35" class="input-text1 iptwidadd">            
+                </li>    
+            </ol>    
+            <ol class="tabtr clearfix">        
+                <li class="columnleft">Address line 2：</li>        
+                <li class="columnright">            
+                    <input type="text" name="addr2_3" value="" size="50" maxlength="35" class="input-text1 iptwidadd">            
+                </li>    
+            </ol>    
+            <ol class="tabtr clearfix">        
+                <li class="columnleft">City：</li>        
+                <li class="columnright">            
+                    <input type="text" name="city_3" size="20" maxlength="35" value="********" class="input-text1 iptwid">            
+                </li>    
+            </ol>    
+            <ol class="tabtr clearfix">        
+                <li class="columnleft">State：</li>        
+                <li class="columnright">            
+                    <input type="text" name="province_3" size="20" maxlength="2" value="CA" class="input-text1 iptwid">            
+                </li>    
+            </ol>    
+            <ol class="tabtr clearfix">        
+                <li class="columnleft">ZIP Code：</li>        
+                <li class="columnright">            
+                    <input type="text" name="postcode_3" size="20" maxlength="5" value="*****" class="input-text1 iptwid">            
+                </li>    
+            </ol>    
+            <div class="btn">        
+                <input type="button" name="cancel_edit_consignee" value="Cancel">        
+                <input type="button" name="submit_edit_consignee" value="Save">    
+            </div>
+        </div>
+        <div class="borbtm"></div>
+    </div>
+
+        <div class="list_tr clearfix">
+            <div class="column1">
+                <p>
+                    <label for="addads">
+                        <input type="radio" id="addads" name="consignee_select" value="add_new_consignee"><span>Add a new address</span>
+                    </label>
+                </p>
+            </div>
+            <div class="column2">&nbsp;</div>
+            <div class="column3">&nbsp;</div>
+            <div class="column4">&nbsp;</div>
+        </div>
+
+        <div id="add_tab" class="add_tab">
+            <ol class="tabtr clearfix"> 
+                <li class="columnleft">Full Name：</li> 
+                <li class="columnright">
+                    <input type="text" name="addName" id="addName" size="20" maxlength="200" value="" class="input-text1 iptwid">
+                </li>
+            </ol>
+            <ol class="tabtr clearfix"> 
+                <li class="columnleft">Phone Number：</li> 
+                <li class="columnright">
+                    <input type="text" name="addCellPhone" id="addCellPhone" size="20" maxlength="10" value="" class="input-text1 iptwid">
+                </li>
+            </ol>
+            <ol class="tabtr clearfix"> 
+                <li class="columnleft">Address line 1：</li> 
+                <li class="columnright">     
+                    <div id="add_zipcode" class="left"></div>     
+                    <div class="addrsblock">
+                        <input type="text" name="addAddress" id="addAddress" value="" size="50" maxlength="35" class="input-text1 iptwidadd">
+                        <div name="myPosition_add" class="addrscity"></div>
+                    </div> 
+                </li>
+            </ol>
+            <ol class="tabtr clearfix"> 
+                <li class="columnleft">Address line 2：</li> 
+                <li class="columnright">     
+                    <div id="add_zipcode" class="left"></div>     
+                    <div class="addrsblock">
+                        <input type="text" name="addAddress2" id="addAddress2" value="" size="50" maxlength="35" class="input-text1 iptwidadd">
+                        <div name="myPosition_add" class="addrscity"></div>
+                    </div> 
+                </li>
+            </ol>
+            <ol class="tabtr clearfix"> 
+                <li class="columnleft">City：</li> 
+                <li class="columnright">     
+                    <input type="text" name="addCity" id="addCity" size="20" maxlength="35" value="" class="input-text1 iptwid"> 
+                </li>
+            </ol>
+            <ol class="tabtr clearfix"> 
+                <li class="columnleft">State：</li> 
+                <li class="columnright">
+                    <input type="text" name="addProvince" id="addProvince" size="20" maxlength="2" value="" class="input-text1 iptwid">
+                </li>
+            </ol>
+            <ol class="tabtr clearfix"> 
+                <li class="columnleft">ZIP Code：</li> 
+                <li class="columnright">
+                    <input type="text" name="addPostCode" id="addPostCode" size="20" maxlength="5" value="" class="input-text1 iptwid">
+                </li>
+            </ol>
+            <div class="btn"> 
+                <input type="button" name="cancel_add_consignee" value="Cancel"> 
+                <input type="button" name="submit_add_consignee" value="Save">
+            </div>
+        </div>      
+        <div class="moreadd"><a id="more_consignee_btn" href="javascript:void(0);">view more</a></div>
+    </div>
+</div>
+
+</div>
+
+<div class="sgcheckoutlink">
+    <a href="#" class="text12 col66bb">Back</a>
+</div>
+<div id="sgbuy_footer">
+    <div class="foterleft">  </div>
+    <div class="foterright">
+    	<span class="col666">© 2014 <a href="#" target="_blank" class="col66bb">Privacy Policy</a> and Terms of use ©AsusTek Computer Inc. All rights reserved.</span> <a href="#" target="_blank" class="col66bb"></a>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+.pwd-check {
+  width: 150px; 
+  height: 20px; 
+  letter-spacing: -0.32em; 
+  @include border-radius(20px);
+  overflow: hidden; 
+  position: relative;
+  & > dd {
+    width: 33%; 
+    height: 20px; 
+    margin: 0;
+    background: #ddd;
+    letter-spacing: normal;
+    display: inline-block;
+  }
+  .status {
+    color: #fff; 
+    font-size: 0.8em;
+    letter-spacing: normal;
+    width: 147px;
+    left: 0; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    padding-left: 7px; 
+    @include box-sizing(border-box);
+    position: absolute; 
+    z-index: 1;
+    &:after {
+      content: "\0020"; 
+      top: 0; 
+      left: 0; 
+      bottom: 0; 
+      right: 0; 
+      overflow: hidden; 
+      position: absolute; 
+      z-index: 1; 
+      @include border-radius(20px);
+      @include background-image(
+        linear-gradient(
+          -45deg,
+          rgba(255, 255, 255, .2) 25%, 
+          transparent 25%, 
+          transparent 50%, 
+          rgba(255, 255, 255, .2) 50%, 
+          rgba(255, 255, 255, .2) 75%, 
+          transparent 75%, 
+          transparent
+        )
+      );
+      @include background-size(50px 50px);
+      -webkit-animation: move 2s linear infinite;
+      animation: move 2s linear infinite;
+    }
+  }
+  #strength_L {
+    @include border-left-radius(20px);
+  }
+  #strength_H {
+    @include border-right-radius(20px);
+  }
+}
+@-webkit-keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}

@@ -1,0 +1,60 @@
+body { color: #333; font: 14px/1.6 "Helvetica Neue", Roboto, sans-serif; background: #efefef; }
+@media only screen and (max-width: 568px) { body { overflow: auto; overflow-x: hidden; overflow-y: auto; } }
+
+a { color: #0068b6; text-decoration: none; cursor: pointer; }
+a:hover { color: #ee0000; }
+
+*:focus { outline: 0; }
+
+input:not([type="radio"]), input:not([type="checkbox"]), textarea, select { color: #666; font-size: 14px; line-height: 1.6; font-family: "Helvetica Neue", Roboto, sans-serif; vertical-align: middle; background: #fff; }
+
+input[type="radio"], input[type="checkbox"] { cursor: pointer; }
+
+.clearfix { zoom: 1; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+
+.t-wrap { white-space: normal !important; }
+
+.bar .title { font-size: 1.3em; font-weight: bold; }
+.bar .button.back-button { padding-left: 5px; }
+.bar .back-text { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+
+.md-search .icon { color: #ccc; font-size: 1.3em; margin-right: 7px; }
+
+.md-msglist { padding: 0; }
+.md-msglist .md-msgline { padding: 16px 60px 16px 70px; display: block; }
+.md-msglist .md-msgline.active, .md-msglist .md-msgline.activated { background: #eee; }
+.md-msglist .icon-read { color: #fff; width: 46px; height: 46px; top: 18px; padding: 7px; text-align: center; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; background: #bbb; }
+.md-msglist .item-title { color: #555; }
+.md-msglist .item-txt { color: #aaa; }
+.md-msglist .item-note { color: #ccc; font-size: 0.8em; top: 16px; right: 10px; position: absolute; }
+.md-msglist .badge { top: auto; right: 8px; bottom: 16px; }
+.md-msglist .btn-option { font-size: 1.5em; text-align: center; padding-left: 18px; -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 5px inset; -moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 5px inset; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 5px inset; }
+.md-msglist.is-home .md-msgline { padding-left: 16px; }
+.md-msglist.is-home .item-title { color: #0094c9; font-weight: bold; }
+.md-msglist.is-home .item-txt { color: #777; }
+.md-msglist.item-complex .item-content { padding: 0; }
+.md-msglist.is-unread .icon-read { background: #69a4d3; }
+.md-msglist.is-unread .item-title { color: #0094c9; font-weight: bold; }
+.md-msglist.is-unread .item-txt { color: #777; }
+.md-msglist.is-todo .icon-read { background: #e56e6e; }
+.md-msglist.is-todo .item-title { color: #ee0000; font-weight: bold; }
+.md-msglist.is-todo .item-txt { color: #777; }
+.md-msglist.is-done .item-content { background: #f6f6f6; }
+.md-msglist.is-done .icon-read { background: #cad6ca; }
+.md-msglist.is-done .item-title { color: #888; }
+.md-msglist.is-done .item-txt { color: #bbb; }
+
+.l-article { padding: 20px 10px; }
+.l-article .item-title { color: #0094c9; font-size: 1.2em; font-weight: bold; text-align: left; margin: 0 5px; }
+.l-article .item-note { color: #ccc; text-align: right; margin: 0 -15px; padding: 10px 20px; border-bottom: #d4dbdf 1px solid; float: none; display: block; }
+.l-article .item-txt { margin: 20px 5px; }
+
+.l-verify .item-txt { color: #999; text-align: center; margin: 30px 0; }
+
+.l-empty { width: 100%; margin-top: -100px; text-align: center; align-items: center; justify-content: center; display: flex; }
+.l-empty > * { flex: none; }
+.l-empty.is-error { background: #eee; }
+.l-empty .md-emote { color: #ccc; font-size: 8em; }
+.l-empty .item-txt { color: #999; font-size: 1.1em; text-align: center; margin-top: -10px; }

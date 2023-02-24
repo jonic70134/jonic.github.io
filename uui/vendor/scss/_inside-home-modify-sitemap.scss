@@ -1,0 +1,69 @@
+//homepage modify: sitemap
+.sitemap-infr {
+	margin-bottom: 20px;
+	@include border-radius(3px);
+	.comment, .form-element-infr {
+		padding-left: 93px;
+	}
+}
+.edit-sitemap {
+	.edit-sitemap-title {
+		margin: 0 15px 5px;
+		padding: 5px 10px;
+		background: mix($main-blue-color,#fff,20);
+		@include border-radius(3px);
+	}
+	.edit-sitemap-content {
+		margin-bottom: 1px;
+		padding-left: 30px;
+		letter-spacing: -0.32em;
+		* {
+			letter-spacing: normal;
+		}
+		&:before {
+			content: "\00b7";
+			color: #999;
+			font-size: 1.5em;
+			line-height: 0;
+			font-weight: bold;
+			letter-spacing: normal;
+			vertical-align: middle;
+		}
+	}
+	.input-sitemap-title {
+		width: 20%;
+		margin: 0 5px;
+	}
+	.input-sitemap-url {
+		width: 60%;
+	}
+	.btn-delete-line {
+		margin: 0 5px;
+		padding: 3px 1px 3px 5px;
+		font-size: 0.9em;
+		@include btn-color(darken($main-grey-color,20));
+		@include border-radius(100%);
+	}
+	.btn-create-line {
+		font-size: 0.9em;
+		margin: 1px 0 0 40px;
+		padding: 3px 7px;
+		@include btn-color(darken($main-grey-color,20));
+	}
+	.btn-create-block {
+		font-size: 0.9em;
+		right: 130px;
+		bottom: 10px;
+		padding: 5px 10px;
+		@include btn-color(mix($main-green-color,#fff,50));
+		position: absolute;
+	}
+	.btn-delete-block {
+		font-size: 0.9em;
+		right: 15px;
+		bottom: 10px;
+		padding: 5px 10px;
+		@include btn-color(mix($main-color,#fff,50));
+		position: absolute;
+	}
+}

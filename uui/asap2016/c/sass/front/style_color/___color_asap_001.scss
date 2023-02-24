@@ -1,0 +1,85 @@
+//theme color
+$bg_file:         "../../../../../../c/img/sth_asap/icon_asap.png";
+$bg_file_hpd:     "../../../../../../c/img/sth_asap/icon_retina_asap.png";
+$bank_file:       "../../../../../../c/img/sth_asap/icon_bank.png";
+$bank_file_hpd:   "../../../../../../c/img/sth_asap/icon_retina_bank.png";
+
+//主題色
+$primary:			#e00517;
+$button:			#d00;
+$button_text:		white;
+
+$text:				#383838;
+$text_hover:		gray;
+$link:				#333;
+$link2:				#4498c8;
+$link3:				#4498c8;
+$link4:				#006fae;
+$border:			$light_gray;
+$border2:			#e9e9e9;
+$border3:			#ffc1b9;
+$price:				$primary;
+$hover_text:		$primary;
+$hover_bk:			#efefef;
+$active_text:		white;
+$active_bk:			$primary;
+$disabled:			#d7d7d7;
+$background:		white;
+$background2: 		#f7f7f7;
+$background3: 		#fffaf9;
+$background4: 		#ffe4e1;
+$title_h3:			black;
+$tip:				#ffeaec;
+$hlight:			$primary;
+
+//header
+$header_border:		#efefef;
+$header_bk:			#f7f7f7;
+$nav_bk:			$gray;
+$nav_border:        none;
+$nav_text: 			black;
+$function_btn_bk:   #ffe99e;
+$function_btn_bk2:  #ffce39;
+$function_btn_bk3:  #f31717;
+$function_btn_bk4:  #ca0005;
+$function_txt:  	black;
+$function_txt2:  	white;
+
+// component
+$current:           $primary;
+
+//item
+$item_hover:		#b3e5fe;
+$item_name:			black;
+
+//footer
+$footer_bk:			#F5F5F5;
+$footer_title:		#474747;
+$footer_link:		#6c6c6c;
+$footer_hover:		$primary;
+
+//form
+$input_text:		black;
+$input_bk:			$background;
+$input_border:		$border;
+
+//site-search
+$search_bk:			$input_bk;
+$search_text:		#555;
+$search_border:		#ccc;
+$search_btn:		$primary;
+$recommend_link:	#888;
+$ui_menu_border:	#ccc;
+$ui_menu_bk:		#f7f7f7;
+
+//site-cart
+$count_bg:          $primary;
+$count:				white;
+$cart_bk:			white;
+
+//aside
+$aside_title:       #504f47;
+$aside_title2:      $primary;
+
+//site-filter
+$special-filter:    $background3;

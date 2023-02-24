@@ -1,0 +1,116 @@
+/* form element */
+.md-form {
+	width: 300px;
+	margin: 0 auto;
+	position: relative;
+	@include RWD(mobile) {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.form-item {
+		margin: 10px 0;
+		position: relative;
+		&.form-checkbox {
+			line-height: 1.6;
+			label {
+				margin: 5px 0;
+				display: block;
+			}
+		}
+		&.item-email, &.item-mobile {
+			display: none;
+		}
+	}
+	input:not([type="radio"]), input:not([type="checkbox"]), select {
+		width: 100%;
+		@include box-sizing(border-box);
+	}
+	input[type="radio"], input[type="checkbox"] {
+		width: auto;
+	}
+}
+.form-item {
+	&.captcha {
+		.input-text {
+			width: auto;
+			@include RWD(mobile) {
+				width: 100%;
+			}
+		}
+		.img-captcha {
+			margin-left: 5px;
+			vertical-align: middle;
+			@include RWD(mobile) {
+				margin-left: 0;
+			}
+		}
+		.t-reload {
+			margin-left: 5px;
+			&:before {
+				margin-right: 3px;
+				@include icon-font("\f021");
+			}
+		}
+	}
+}
+.place-label {
+	color: lighten($font-color,50);
+	top: 9px;
+	left: 6px;
+	background: #fff;
+	cursor: text;
+	position: absolute;
+	&.is-focus, &.is-allow, &.is-error {
+		color: #fff;
+		font-size: 0.8em;
+		text-align: left;
+		background: $c-yellow;
+		top: -16px;
+		left: 0;
+		right: 0;
+		padding-left: 6px;
+		@include border-top-radius(5px);
+		@include box-shadow(rgba(black,0.1) 0 -3px 5px);
+		@include transition(none);
+		z-index: 5;
+	}
+	&.is-allow {
+		color: $c-green;
+		background: none;
+		top: 11px;
+		left: auto;
+		right: 6px;
+		@include box-shadow(none);
+		&:before {
+			@include icon-font("\f058");
+			margin-right: 5px;
+			vertical-align: baseline;
+		}
+	}
+	&.is-error {
+		background: $c-red;
+		&:before {
+			@include icon-font("\f06a");
+			margin-right: 5px;
+			vertical-align: baseline;
+		}
+	}
+}
+.md-form-btn {
+	margin: 30px 0 5px;
+	text-align: center;
+	@include RWD(mobile) {
+		margin-top: 10px;
+	}
+	button {
+		font-size: 1.2em;
+		margin: 0 5px;
+		padding: 5px 15px;
+		@include RWD(mobile) {
+			width: 100%;
+			margin: 5px 0;
+			padding: 7px 15px;
+		}
+	}
+}

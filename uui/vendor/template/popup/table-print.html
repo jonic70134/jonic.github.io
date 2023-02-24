@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox vendor</title>
+<link href="/css/plugin/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/css/template.css" rel="stylesheet" type="text/css">
+<style>
+@page {
+  size: A4 landscape;
+  /* A3 or A4; portrait(直印，或不寫) or landscape(橫印) */
+}
+@media print {
+  .title .fa, .template-button {display: none;}
+  .template-table {
+    color: #000;
+    width: initial;
+    min-height: initial;
+    margin: 0;
+    background: initial;
+    border-top: #000 1px solid;
+    border-left: #000 1px solid;
+  }
+  .template-table th, .template-table td {
+    border-right: #000 1px solid;
+    border-bottom: #000 1px solid;
+  }
+}
+</style>
+<!--[if lt IE 9]>
+<script src="/js/lib/html5.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ie.css">
+<![endif]--></head>
+<body>
+<div class="popup-content">
+  <h1 class="title"><i class="fa fa-search"></i>發票補印紀錄</h1>
+  <div class="template-button">
+    <button class="btn-submit" onclick="alert('請務必使用A4橫向列印');window.print();parent.$.fancybox.close();"><i class="fa fa-print"></i>列印本頁</button>
+  </div>
+  <table class="template-table">
+    <thead>
+      <tr>
+        <th>次數</th>
+        <th>申請日期</th>
+        <th>印出日期</th>
+        <th>印出人員</th>
+        <th>申請日期</th>
+        <th>印出日期</th>
+        <th>印出人員</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td>1</td>
+        <td>2013/02/12 20:59:59</td>
+        <td>2013/03/05 20:59:59</td>
+        <td>陸青</td>
+        <td>2013/04/03 20:59:59</td>
+        <td>2013/11/03 20:59:59</td>
+        <td>曾仁</td>
+      </tr>
+      
+      <tr>
+        <td>2</td>
+        <td>2013/09/20 20:59:59</td>
+        <td>2013/01/03 20:59:59</td>
+        <td>蘇貞孟</td>
+        <td>2013/02/14 20:59:59</td>
+        <td>2013/07/14 20:59:59</td>
+        <td>熊祥士</td>
+      </tr>
+      
+      <tr>
+        <td>3</td>
+        <td>2013/10/27 20:59:59</td>
+        <td>2013/06/16 20:59:59</td>
+        <td>傅正</td>
+        <td>2013/04/06 20:59:59</td>
+        <td>2013/06/06 20:59:59</td>
+        <td>唐惠</td>
+      </tr>
+      
+      <tr>
+        <td>4</td>
+        <td>2013/12/05 20:59:59</td>
+        <td>2013/01/10 20:59:59</td>
+        <td>許雯娟</td>
+        <td>2013/09/21 20:59:59</td>
+        <td>2013/02/23 20:59:59</td>
+        <td>段賢倫</td>
+      </tr>
+      
+      <tr>
+        <td>5</td>
+        <td>2013/06/23 20:59:59</td>
+        <td>2013/08/11 20:59:59</td>
+        <td>蕭政信</td>
+        <td>2013/01/03 20:59:59</td>
+        <td>2013/03/22 20:59:59</td>
+        <td>鄭心冠</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <div class="template-button">
+    <button class="btn-submit" onclick="window.print();parent.$.fancybox.close();"><i class="fa fa-print"></i>列印本頁</button>
+  </div>
+</div><script src="/js/lib/jquery-1.9.1.js" ></script>
+<script src="/js/lib/bootstrap-dropdown.js"></script>
+<script src="/js/nav-action.js"></script>
+<script src="/js/template-action.js"></script>
+</body>
+</html>

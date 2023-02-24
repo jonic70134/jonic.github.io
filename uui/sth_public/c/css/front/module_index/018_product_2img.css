@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* rwd_index_005 開始 */
+.rwd_index_005 {
+  zoom: 1;
+}
+.rwd_index_005:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.rwd_index_005 .item-one {
+  width: 50%;
+  float: left;
+  display: table;
+  margin-right: 6%;
+}
+.rwd_index_005 .item-one .photo {
+  display: table-cell;
+  vertical-align: middle;
+}
+.rwd_index_005 .item-one .info {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 10px;
+  width: 30%;
+}
+.rwd_index_005 .item-one .name {
+  font-size: 1.2em;
+  height: 52px;
+  line-height: 1.4;
+}
+.rwd_index_005 .item-one li {
+  max-width: 180px;
+}
+.rwd_index_005 .items {
+  float: left;
+  width: 44%;
+}
+.rwd_index_005 .item {
+  width: 50%;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  float: left;
+}
+.rwd_index_005 .photo {
+  margin-bottom: 5px;
+  display: inline-block;
+  min-height: 165px;
+}
+.rwd_index_005 .photo img {
+  width: 100%;
+}
+.rwd_index_005 .info {
+  clear: left;
+}
+.rwd_index_005 .name {
+  height: 38px;
+  margin-bottom: 5px;
+  font-size: .95em;
+}
+.rwd_index_005 .feature {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  height: 65px;
+  overflow: hidden;
+}
+.rwd_index_005 del {
+  color: #6c6c6c;
+}
+.rwd_index_005 .currency {
+  font-size: 12px;
+}
+.rwd_index_005 .price {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+@media (max-width: 999px) {
+  .rwd_index_005 {
+    padding: 0 1%;
+  }
+  .rwd_index_005 .items {
+    width: 100%;
+  }
+  .rwd_index_005 .item, .rwd_index_005 .item-one {
+    padding: 1% 0 3%;
+    width: 100%;
+    margin: 0;
+    display: table;
+  }
+  .rwd_index_005 .item-one .info {
+    width: 50%;
+  }
+  .rwd_index_005 .photo {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .rwd_index_005 .info {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    padding: 0 10px;
+  }
+}
+/* rwd_index_005 開始 */

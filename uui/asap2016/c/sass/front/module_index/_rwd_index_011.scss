@@ -1,0 +1,51 @@
+.rwd_index_011{
+	width: 105.15%;
+	height: 36px;
+	text-align: left;
+	font-size: 0;
+	margin: -15px 0 20px -35px;
+	padding-left: 20px;
+	background: $primary;
+	overflow: hidden;
+	@include clearfix;
+	.container{
+		padding: 0;
+	}
+	.menu{
+		display: inline-block;
+		overflow: hidden;		
+		color: white;
+		background: $primary;
+		line-height: 1.4;
+		@include clearfix;
+		>li{
+			float: left;			
+			overflow: hidden;
+			word-break: break-word;
+			word-wrap: break-word;			
+		}
+	}
+	a{
+		display: block;
+		color: white;		
+		padding: 8px 20px 6px 20px;
+		font-size: 16px;
+		&:hover{
+			background: $hover_bk;
+			color: black;
+		}
+	}
+}
+
+@include RWD(desktop-normal) {
+.rwd_index_011{
+	width: 107%;
+}
+}
+@include RWD(pad-mobile) {
+.rwd_index_011{
+	width: 100%;
+	margin-left: 0;
+	display: none;
+}
+}

@@ -1,0 +1,40 @@
+// translate-fix
+.cloud-translate-fix{
+	margin:10px;
+	dt{
+		width: 14%;
+		margin: 5px 0;
+		text-align: right;
+		vertical-align: top;
+		display: inline-block;
+		font-size: 1.12em;
+	}
+	dd{
+		width: 85%;
+		margin: 5px 0;
+		display: inline-block;
+		vertical-align: top;
+	}
+	textarea{
+		padding: 5px;
+	}
+	.tran-input{
+		margin-right:5px;
+		padding:5px;
+		vertical-align: middle;
+		font-size: 1em;
+	}
+	.search-translate{
+		vertical-align: middle;
+		margin-right:5px;
+	}
+	.tran-now{
+		display: inline-block;
+		vertical-align: bottom;
+		text-decoration: underline;
+	}
+	~.template-button{
+		margin-bottom: 30px;
+	}
+
+}

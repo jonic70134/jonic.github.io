@@ -1,0 +1,194 @@
+//homepage modify: form
+.form-element {
+	padding: 20px 0;
+	position: relative;
+	overflow: hidden;
+	&:nth-child(odd) {
+		background: lighten($main-lighten-color,8);
+	}
+	.form-element-name {
+		width: 25%;
+		padding: 3px 15px;
+		text-align: right;
+		@include box-sizing(border-box);
+		display: block;
+		float: left;
+		&.txt {
+			padding-top: 0;
+		}
+	}
+	.form-element-content {
+		width: 70%;
+		display: block;
+		float: left;
+	}
+	input, textarea {
+		padding: 3px 5px;
+	}
+	.input-text {
+		width: 90%;
+	}
+	.input-datepicker {
+		width: 110px;
+	}
+	.comment {
+		width: 70%;
+		margin: 0;
+		padding: 5px 0 5px 25%;
+		color: mix($main-red-color,#c90,10);
+		clear: both;
+		i {
+			margin-right: 5px;
+		}
+		a {
+			color: mix($main-red-color,#c90,10);
+		}
+	}
+	.form-element-infr {
+		width: 70%;
+		padding-left: 25%;
+		img {
+			border: #ddd 1px solid;
+		}
+		&.txt-infr {
+			width: 60%;
+			margin-left: 25%;
+			padding: 10px 20px;
+			background: mix($main-red-color,#fff,10);
+			border: mix($main-red-color,#ddd,10) 1px solid;
+			@include border-radius(5px);
+			dt {
+				margin: 5px 0;
+				font-weight: bold;
+			}
+			dd {
+				margin: 10px 0;
+			}
+			b {
+				color: mix($main-red-color,#ccc,30);
+			}
+		}
+	}
+	.btn-edit-sitemap {
+		font-size: 1.1em;
+	}
+	.input-analytics {
+		width: 200px;
+		margin-left: 5px;
+	}
+	.analytics-type {
+		margin: 5px 0 10px;
+		& > dd {
+			margin-bottom: 5px;
+		}
+		.analytics-content {
+			max-height: 0;
+			padding-left: 10px;
+			padding-right: 10px;
+			border: $main-grey-color 1px solid;
+			border-top-width: 0;
+			border-bottom-width: 0;
+			background: lighten($main-grey-color,10);
+			@include border-radius(3px);
+			@include transition(all,0.3s);
+			overflow: hidden;
+			&.active {
+				max-height: 10000px;
+				margin: 10px 0;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border-top-width: 1px;
+				border-bottom-width: 1px;
+			}
+			dd {
+				margin: 3px 0;
+			}
+			label {
+				width: 150px;
+				display: inline-block;
+			}
+		}
+	}
+	&.form-policy {
+		padding: 10px;
+		background: none !important;
+		text-align: center;
+		dd {
+			margin: 10px 0;
+		}
+		.input-title {
+			font-size: 1.4em;
+			text-align: center;
+		}
+		.input-subtitle {
+			text-align: center;
+		}
+		.textarea-policy {
+			width: 90%;
+			margin: 10px 0;
+		}
+	}
+}
+.switch-toggle {
+	width: 50px;
+	height: 20px;
+	margin-right: 5px;
+	border: #ccc 1px solid;
+	@include border-radius(20px);
+	@include box-shadow(rgba(black,0.2) 2px 2px 0 inset);
+	vertical-align: middle;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	&.disable {
+		@include opacity(0.7);
+		.input-switch {
+			cursor: no-drop;
+		}
+	}
+	.switch-wrapper {
+		width: 100px;
+		height: 25px;
+		letter-spacing: -0.32em;
+	}
+	.switch-on, .switch-off {
+		width: 40px;
+		height: 100%;
+		padding: 0 5px;
+		color: #999;
+		text-align: right;
+		letter-spacing: normal;
+		vertical-align: middle;
+		@include box-sizing(border-box);
+		display: inline-block;
+	}
+	.switch-on {
+		color: #fff;
+		text-align: left;
+		background: mix($main-green-color,#fff,70);
+	}
+	.switch-controller {
+		width: 20px;
+		height: 20px;
+		left: 30px;
+		top: -1px;
+		bottom: -1px;
+		background: #fff;
+		border: #aaa 1px solid;
+		@include border-radius(100%);
+		@include box-shadow(rgba(black,0.1) -3px -3px 0 inset);
+		position: absolute;
+	}
+	.input-switch {
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0;
+		padding: 0;
+		@include opacity(0);
+		position: absolute;
+	}
+}

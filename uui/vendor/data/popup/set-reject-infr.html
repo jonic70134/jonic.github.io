@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox vendor</title>
+<link href="/css/plugin/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/css/data.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="/js/lib/html5.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ie.css">
+<![endif]--></head>
+<body>
+<div class="popup-content">
+  	<h1 class="title"><i class="fa fa-info-circle"></i>進入清單設定範例</h1>
+	<div class="form-element">【例】在庫商品保存期限為30天，下架日為2014/11/30，依不同設定值計算進入即將到期倒數清單日期如下：</div>
+	<div class="form-element" style="background: none;">
+		設定I：<br>
+		進入即將到期倒數清單日 = 2014/11/30 - 90天 = 2014/9/2
+	</div>
+	<div class="form-element">
+		設定II：<br>
+		進入即將到期倒數清單日 = 2014/11/30 - (30*1/3)天 = 2014/11/20
+	</div>
+	<div class="template-button">
+		<button class="btn-cancel" onclick="parent.$.fancybox.close();"><i class="fa fa-times"></i>關閉</button>
+	</div>
+</div><script src="/js/lib/jquery-1.9.1.js" ></script>
+<script src="/js/lib/bootstrap-dropdown.js"></script>
+<script src="/js/nav-action.js"></script>
+<script src="/js/template-action.js"></script>
+</body>
+</html>

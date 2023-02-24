@@ -1,0 +1,121 @@
+.pc_left_002 {
+  margin-bottom: 10px;
+}
+.pc_left_002 .index {
+  background: #504f47;
+  padding: 10px;
+  display: block;
+  color: white;
+}
+.pc_left_002 .trans-btn {
+  background: #013da4;
+  padding: 11px 10px 8px 32px;
+  display: block;
+  color: white;
+  border-top: 1px solid #cccccc;
+  vertical-align: middle;
+  position: relative;
+  font-size: 15px;
+}
+.pc_left_002 .trans-btn .trans-icon {
+  width: 15px;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+}
+.pc_left_002 .trans-btn:hover {
+  background: #002767;
+}
+.pc_left_002 .title-h3 {
+  background: white;
+  color: white;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  line-height: 26px;
+  word-break: break-word;
+  word-wrap: break-word;
+  position: relative;
+}
+.pc_left_002 .title-h3 a {
+  color: #333;
+  background: #f7f7f7;
+  display: block;
+  text-align: center;
+}
+.pc_left_002 .title-h3 a:hover {
+  color: #e00517;
+}
+.pc_left_002 .title-h3-active a {
+  color: white;
+  background: #e00517;
+}
+.pc_left_002 .fa {
+  margin-right: 6px;
+}
+.pc_left_002 .side-menu {
+  border: 1px solid #cccccc;
+  border-top: none;
+  font-size: 13px;
+  line-height: 140%;
+}
+.pc_left_002 .side-menu li:first-child h4 {
+  border-top: 1px solid #cccccc;
+}
+.pc_left_002 .side-menu h4 {
+  border-bottom: 1px dotted #eee;
+  background: white;
+  font-size: 13px;
+  overflow: hidden;
+  padding: 10px 0 10px 8px;
+}
+.pc_left_002 .side-menu h4 {
+  zoom: 1;
+}
+.pc_left_002 .side-menu h4:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.pc_left_002 .side-menu h4 .fa {
+  float: left;
+  display: none;
+  margin-top: 1px;
+}
+.pc_left_002 .side-menu h4 a {
+  float: left;
+  display: block;
+  width: 150px;
+  color: #333;
+  margin-top: -2px;
+}
+.pc_left_002 .side-menu a {
+  color: #333;
+  overflow: hidden;
+}
+.pc_left_002 .side-menu a:hover {
+  color: #e00517;
+}
+.pc_left_002 .side-menu .sec-menu li {
+  border-bottom: 1px dotted #eee;
+  font-size: 13px;
+}
+.pc_left_002 .side-menu .sec-menu a {
+  display: block;
+  color: #888;
+  padding: 10px 0 10px 23px;
+}
+.pc_left_002 .side-menu .sec-menu a:hover {
+  background-color: #faeaed;
+  color: #e00517;
+}
+.pc_left_002 .side-menu .sec-menu .active {
+  color: #e00517;
+  font-weight: bold;
+}
+.pc_left_002 .side-menu > li:last-child .sec-menu {
+  border-bottom: 0;
+}

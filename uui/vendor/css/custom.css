@@ -1,0 +1,52 @@
+/* here you can put your own css to customize and override the theme */
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+button[class*="btn-"] {
+    font-size: inherit;
+}
+
+.breadcrumb {
+    margin-bottom: 10px;
+}
+.breadcrumb > .active {
+    color: #327e04;
+}
+
+.panel {
+    margin-bottom: 10px;
+}
+
+.form-inline .mt-checkbox {
+    margin-bottom: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.form-inline .mt-radio {
+    margin-bottom: 0;
+}
+
+.btn-toolbar {
+    margin-bottom: 10px;
+}
+
+.table {
+    margin-bottom: 10px;
+}
+.table>thead>tr>th {
+    padding: 3px;
+    vertical-align: middle;
+    text-align: center;
+    background: #b2deee;
+    font-size: 13px;
+}
+.table>tbody>tr>td {
+    vertical-align: middle;
+    font-size: 13px;
+    padding: 3px;
+}
+.right {
+    float: right;
+}

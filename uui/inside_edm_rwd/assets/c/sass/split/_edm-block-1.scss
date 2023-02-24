@@ -1,0 +1,53 @@
+.act-block-1 {
+	width: 100%;
+	margin: 0;
+	padding: 10px 0;
+	background-color: #f0efe0;
+	ul{
+    	display: block;
+		width: 100%;
+	    text-align: center;
+	    padding: 0 5px;
+		li{
+			display: inline-block;
+			margin: 5px;
+			vertical-align: top;
+		}	
+	}
+	.row-2{
+		li{
+			max-width: 580px;
+			img{
+				width: 100%;
+			}
+		}
+		
+	}
+	.row-3{
+		li{
+			max-width: 382px;
+			img{
+				width: 100%;
+			}
+		}
+		
+	}
+	.row-4{
+		li{
+			max-width: 283px;
+			img{
+				width: 100%;
+			}
+		}
+		
+	}
+	.row-5{
+		li{
+			max-width: 224px;
+			img{
+				width: 100%;
+			}
+		}
+		
+	}
+}

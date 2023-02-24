@@ -1,0 +1,45 @@
+.site-set{
+	position: relative;
+}
+.site-set-list{
+	display: none;
+	position: absolute;
+	padding-top: 5px;
+	background: #fff;
+	left: 0;
+	top: 29px;
+	border: 1px solid #08f;
+	@include box-shadow(#aaa 1px 1px 5px);
+	a{
+		display: inline-block;
+		padding-bottom: 5px;
+	}
+}
+.site-set{
+	&:hover{
+		.site-set-list{
+			display: block;
+		}
+	}
+}
+#price_confirm_area {
+ 	color:#ff4747;
+	input{
+		width:1em;
+		padding:2px;
+		color:#f00;
+		font-weight:700;
+		text-align:center;
+		border:1px solid #ff4747;
+	}
+	&.sign-up-popup{
+		margin-top: 10px;
+		text-align: center;
+	}
+}
+.float-top{
+	float: right;
+}
+.sign-up-tip{
+	text-align: right;
+}

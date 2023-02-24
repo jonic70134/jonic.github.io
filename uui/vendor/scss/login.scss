@@ -1,0 +1,300 @@
+@import "compass";
+@import "compass/css3";
+@import "compass/utilities/general/hacks";
+@import "_variables.scss";
+@import "_mixin.scss";
+@import "_pwd-check.scss";
+
+#login-body {
+  background: $main-blue-color;
+}
+//bg
+.backstretch {
+  background: #000;
+  img {
+    top: 50px !important;
+  }
+}
+//form
+.form-element {
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+  & > dd {
+    margin: 10px 0;
+    label {
+      width: 120px;
+      text-align: right;
+      display: inline-block;
+    }
+    input {
+      width: 200px;
+      margin: 0 5px;
+      padding: 3px 5px;
+      &.input-customer-num {
+        width: 100px;
+      }
+    }
+    .input-captcha {
+      width: 50px;
+    }
+    .img-captcha {
+      vertical-align: middle;
+    }
+    .reload-captcha {
+      margin: 0 10px;
+      .fa {
+        margin-right: 5px;
+      }
+    }
+    .hidden-captcha {
+      display: none;
+    }
+  }
+}
+//forgot pwd
+.login-button {
+  text-align: center;
+  button {
+    &.btn-cancel {
+      @include btn-color(darken($main-grey-color,20));
+    }
+    &.btn-submit {
+      @include btn-color($main-red-color);
+    }
+  }
+  &.is-query {
+    margin-top: 30px;
+  }
+}
+//title
+.slogan {
+  top: 120px;
+  color: #fff;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  font-family: $font-heiti;
+  text-align: center;
+  position: relative;
+}
+//login
+.login {
+  width: 355px;
+  top: 130px;
+  margin: 0 auto 20px;
+  padding: 25px 30px;
+  & > dd {
+    margin: 15px 0;
+    label {
+      color: #fff;
+      font-size: 1.1em;
+    }
+    input {
+      margin-left: 15px;
+      padding: 10px 5px;
+    }
+    .forgot-pwd {
+      margin-left: 140px;
+      font-size: 0.95em;
+      .fa {
+        margin-right: 3px;
+      }
+    }
+    button {
+      font-size: 1.25em;
+      margin: 5px;
+      padding: 8px 30px;
+    }
+  }
+  a {
+    color: darken($main-color,20);
+    &:hover {
+      color: lighten($main-red-color,10);
+    }
+  }
+}
+//footer
+.login-footer {
+  margin: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #ddd;
+  text-align: center;
+  position: fixed;
+  a {
+    color: #ddd;
+  }
+}
+//popup
+.login-popup-content {
+  padding: 20px 30px;
+  @include background-image(linear-gradient(lighten($main-lighten-color,10), white));
+  .comment {
+    margin: 10px 25px 0;
+    color: mix($main-red-color,#c90,10);
+  }
+}
+//supplier
+.supplier {
+  width: 1000px;
+  margin: 70px auto 0;
+  @include clearfix;
+  .slogan {
+    top: 0;
+    font-size: 2em;
+    margin-bottom: 40px;
+  }
+  .register {
+    width: 470px;
+    margin: 0 0 0 50px;
+    padding: 0 30px;
+    @include box-sizing(border-box);
+    float: left;
+    .subtitle {
+      color: mix($main-color,#fff,30);
+      font-size: 1.6em;
+      letter-spacing: 1px;
+      font-family: $font-heiti;
+      @include text-shadow(rgba(black,0.2) 1px 1px);
+      text-align: left;
+      position: relative;
+      .border {
+        width: 260px;
+        top: 15px;
+        right: 0;
+        border-top: mix($main-blue-color,#fff,70) 1px solid;
+        display: inline-block;
+        position: absolute;
+      }
+    }
+    .intro {
+      margin: 15px 0;
+    }
+    .point {
+      color: mix($main-blue-color,#fff,40);
+      font-size: 1.2em;
+      line-height: 1.6;
+      letter-spacing: 1px;
+      font-family: $font-heiti;
+      text-align: center;
+      margin: 10px 0;
+      a {
+        color: mix($main-red-color,#fff,20);
+      }
+    }
+    .about {
+      margin: 0 10px;
+      dt {
+        color: #fff;
+        font-size: 1.4em;
+        font-family: $font-heiti;
+        margin: 20px 0 5px 20px;
+        &:before {
+          @include icon-font("\f00c");
+          margin: 0 5px 0 -20px;
+        }
+      }
+      dd {
+        color: mix($main-blue-color,#fff,20);
+        font-size: 1.15em;
+        font-family: $font-heiti;
+        margin-left: 35px;
+        &:before {
+          @include icon-font("\f0da");
+          margin: 0 5px 0 -10px;
+        }
+      }
+      // dd {
+      //   width: 170px;
+      //   margin: 20px 20px 0 0;
+      //   vertical-align: top;
+      //   display: inline-block;
+      //   &:last-child {
+      //     margin-left: 20px;
+      //     margin-right: 0;
+      //   }
+      //   .photo {
+      //     width: 170px;
+      //     height: 120px;
+      //     background: #fff;
+      //     vertical-align: middle;
+      //     text-align: center;
+      //     @include border-radius(3px);
+      //     display: table-cell;
+      //   }
+      //   .subtitle {
+      //     color: mix($main-red-color,#fff,40);
+      //     font-size: 1.2em;
+      //     margin: 10px 0 5px;
+      //   }
+      // }
+    }
+    .btn-query {
+      font-size: 16px;
+      margin: 10px 10px 0;
+      padding: 8px 30px;
+      @include btn-color(darken($main-color,10));
+    }
+  }
+  .login {
+    top: 0;
+    margin: 15px 50px 0 0;
+    padding: 35px 30px 30px;
+    background: mix($main-blue-color,#fff,70);
+    background: rgba(white,0.3);
+    @include border-radius(5px);
+    float: right;
+    .slogan {
+      margin-bottom: 30px;
+    }
+  }
+}
+.query {
+  width: 1000px;
+  margin: 0 auto;
+  .slogan {
+    top: 80px;
+  }
+  .photo {
+    padding-top: 140px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    float: left;
+  }
+  figcaption {
+    margin-left: 480px;
+    p {
+      color: #fff;
+      line-height: 1.6;
+      width: 300px;
+      top: 100px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .login {
+      top: 90px;
+      label {
+        width: 100px;
+      }
+    }
+  }
+}
+.change-pwd {
+  width: 400px;
+  .login-button {
+    margin-top: 40px;
+  }
+  .pwd-check {
+    margin-left: 135px;
+  }
+}
+.pwd-infr {
+  color: #ccc; 
+  font-size: 0.85em;
+  margin: 5px 0 0 135px; 
+  &.comment {
+    color: lighten($main-red-color,10);
+  }
+}

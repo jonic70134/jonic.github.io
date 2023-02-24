@@ -1,0 +1,114 @@
+.pc_market_list {
+  zoom: 1;
+}
+.pc_market_list:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.pc_market_list .items {
+  margin: 0 -10px 0;
+}
+.pc_market_list .item {
+  float: left;
+  width: 24.76%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+.pc_market_list .item:hover {
+  border: 1px solid #cccccc;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  -ms-transition: 0.6s;
+  transition: 0.6s;
+}
+.pc_market_list .item:hover .photo {
+  opacity: 0.75;
+}
+.pc_market_list .photo {
+  display: block;
+  margin-bottom: 7px;
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+  position: relative;
+}
+.pc_market_list .photo img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.pc_market_list .name {
+  font-size: 13px;
+  height: 32px;
+  line-height: 1.3;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: bold;
+  overflow: hidden;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.pc_market_list .type {
+  font-size: 8px;
+  color: #6c6c6c;
+}
+.pc_market_list .buy-actions {
+  margin-top: 10px;
+  text-align: right;
+}
+.pc_market_list .quantity {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.pc_market_list .buy {
+  margin-top: 2px;
+  color: #e00517;
+}
+.pc_market_list .currency {
+  font-size: 10px;
+  color: #e00517;
+  vertical-align: bottom;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+.pc_market_list .price {
+  font-size: 16px;
+  color: #e00517;
+  margin-right: 5px;
+  vertical-align: bottom;
+  display: inline-block;
+}
+.pc_market_list .btn {
+  float: right;
+  margin-top: 3px;
+  font-size: 15px;
+  color: #e00517;
+}
+.pc_market_list .fa {
+  margin-left: 4px;
+}
+.pc_market_list .highlight {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-top: 5px;
+  text-align: right;
+}
+.pc_market_list .tag-status {
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+  z-index: 9;
+}

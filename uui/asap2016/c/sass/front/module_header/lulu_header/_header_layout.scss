@@ -1,0 +1,210 @@
+.site-header{
+    //text-align: center;
+    background: black;
+    .container {
+        max-width: 1100px;
+        padding: 1.4em 15px;
+    }
+    .logo {
+        margin: 2px 5% 0 5%;
+        float: left;
+        width: 26.7%;
+        display: block;
+        img{
+            width: 100%;
+        }
+    }
+    .site-name {
+        display: none;
+    }
+    .account {
+        float: left;
+        margin-top: 23px;
+        color: white;
+        width: 10%;
+        cursor: pointer;
+        padding-bottom: 20px;
+        position: relative;
+        &:hover{
+            .account-item{
+                display: block;
+            }
+        }
+    }
+    .account-item{
+        display: none;
+        border: 1px solid $light_gray;
+        width: 148px;
+        background: #fff;
+        position: absolute;
+        z-index: 2;
+        font-size: 0.813em;
+        right: -10px;
+        top: 30px;
+        li{
+            display: block;
+            float: none;
+            padding: 0;
+            border-bottom: 1px solid $light_gray;
+            &:first-child{
+                margin-right: 0;
+            }
+            &:last-child{
+                border-bottom: 0;
+            }
+            a{
+                display: block;
+                padding: 12px 20px;
+                color: $gray;
+                &:hover{
+                    background: $hover_bk;
+                    color: $hover_text;
+                }
+            }
+        }
+    }
+    .cart-btn{
+        position: relative;
+        float: left;
+        margin-top: 23px;
+        margin-left: 2%;
+        padding-bottom: 15px;
+        width: 15%;
+        display: block;
+        &:hover{
+            .icon-cart{
+                @include transition(0.3s);
+            }
+        }
+        >a span{
+            color: white;
+        }
+        .count{
+            position: relative;
+            color: black;
+            font-style: normal;
+            padding: 0 15px;
+            z-index: 3;
+            font-size: 12px;
+            margin-left: 5px;
+            background: white;
+            @include border-radius (0);
+            &:before{
+                position: absolute;
+                top: 4px;
+                left: -4px;
+                content:'';
+                border-style: solid;
+                border-width: 4px 4px 4px 0;
+                border-color: transparent white transparent transparent;
+                z-index: 11;
+            }
+        }
+        .cart-banner{
+            display: block;
+            margin-left: 10px;
+            font-size: 0.75em;
+        }
+        .focus{
+            color: $red;
+            display: inline-block;
+            padding: 0 3px;
+            font-weight: bold;
+        }
+        .fa-shopping-cart{
+            background: url('../../../../../../c/img/sth_lulu/site-cart.png');
+            width: 32px;
+            height: 18px;
+            font-size: 0;
+            vertical-align: middle;
+            &::before{
+                content:"";
+            }
+        }
+    }
+    .left-btn{
+        display: none;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        padding: 6px;
+        cursor: pointer;
+        font-size: 31px;
+        color: white;
+        z-index: 99;
+    }
+
+    @include RWD(pad-mobile) {        
+        .logo{
+            margin: 7px 3% 0 3%;
+            width: 28.7%;
+        }
+        .account{
+            width: 12%;
+        }        
+        .cart-btn{
+            width: 20%;
+        }
+    }   
+    @include RWD(mobile) {        
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        .container {
+            padding: 10px;
+        }
+        .logo {
+            width: 170px;
+            margin: 0 auto;
+            float: none;
+        }
+        .account {
+            display: none;
+        }        
+        .cart-btn{
+            float: none;
+            margin-top: 0;
+            margin-left: 0;
+            padding-bottom: 25px;
+            width: auto;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 5px;
+            padding: 6px;
+            cursor: pointer;
+            font-size: 25px;
+            text-align: center;
+            >a span{
+                font-size: 14px;
+                font-style: normal;
+                color: #fff;
+                display: block;
+            }
+            .count{
+                position: absolute;
+                left: 17px;
+                top: 13px;
+                width: auto;
+                padding: 0;
+                background: none;
+                color: white;
+                &:before{
+                    display: none;
+                }
+            }
+            .fa-shopping-cart{
+                margin-bottom: 5px;
+            }
+        }
+        .left-btn{
+            display: block;
+        }
+    }
+}
+
+    
+
+    

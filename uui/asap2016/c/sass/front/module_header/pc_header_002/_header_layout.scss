@@ -1,0 +1,277 @@
+body{
+    padding-top: 36px;
+}
+.site-header{
+    position: relative;
+    // border-bottom: 1px solid $border2;
+    @include clearfix;
+    &.imported-header{
+        .logo{
+            margin-top: 12px;
+        }
+        >.container{
+            margin-bottom: 5px;
+        }
+    }
+    >.container{
+        margin-bottom: 10px;
+        @include clearfix;
+    }
+    .logo{
+        float: left;
+        margin-top: 25px;
+        margin-right: 15px;
+        img{
+            max-width: 320px;
+            max-height: 45px;
+        }
+        h1{
+            display: none;
+        }
+    }
+    .get{
+        float: left;
+        margin-top: 15px;
+        margin-right: 10px;
+        font-size: 0;
+    }
+    .function-btn{
+        float: left;
+        margin-right: 5px;
+        margin-top: 33px;
+        background: $function_btn_bk;
+        color: $function_txt;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 26px;
+        height: 25px;
+        // display:none;
+        @include background-gradient($function_btn_bk,$function_btn_bk2);
+        @include border-radius(3px);
+        &:hover{
+            background: $function_btn_bk2;
+        }
+        .fa{
+            margin-right: 5px;
+        }
+        span{
+            font-family: arial;
+            font-weight: normal;
+        }
+    }
+    .function-btn2{
+        float: left;
+        margin-right: 5px;
+        margin-top: 33px;
+        background: $function_btn_bk3;
+        color: $function_txt2;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 26px;
+        height: 25px;
+        // display:none;
+        @include background-gradient($function_btn_bk3,$function_btn_bk4);
+        @include border-radius(3px);
+        &:hover{
+            background: $function_btn_bk4;
+        }
+        .fa{
+            margin-right: 5px;
+        }
+        span{
+            font-family: arial;
+            font-weight: normal;
+        }
+    }
+    .country-box {
+        float: left;
+        width: 370px;
+        height: 60px;
+        background-color: #f6f6f6;
+        margin: 15px 0 0 35px;
+        overflow: hidden;
+    }
+    .loca-country {
+        width: 1000px;
+        height: 60px - 10;
+        padding: 10px;
+        li[class*="fg-"] {
+            float: left;
+            font-size: 12px;
+            margin-right: 25px;
+            text-align: center;
+        }
+        a {
+            color: $item_name;
+        }
+    }
+}
+.site-topbar{
+    padding: 7px 0 0 0;
+    background: $header_bk;
+    border-bottom: 1px solid $light_gray;
+    width: 100%;
+    min-height: 36px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    .container{
+        max-width: 1220px;
+        width: 100%;
+    }
+    @include clearfix;
+    a{
+        &:hover{
+            color: $primary;
+            @include transition(0.3s);
+        }
+    }
+    .cart-btn-top{
+        position: relative;
+        float: right;
+        // display: none;
+        //font-size: 0.9em;
+        margin-top: -5px;
+        &:hover{
+            .icon-cart{
+                color: $primary;
+                @include transition(0.3s);
+            }
+        }
+        .count{
+            position: absolute;
+            top: 0px;
+            left: 4px;
+            background: $primary;
+            color: white;
+            font-style: normal;
+            padding: 2px 5px;
+            z-index: 3;
+            @include border-radius (50%);
+        }
+        .cart-banner{
+            display: inline-block;
+            margin-left: 2px;
+            font-size: 0.75em;
+        }
+        .focus{
+            color: $red;
+            display: inline-block;
+            padding: 0 3px;
+            font-weight: bold;
+        }
+    }
+    .nav-other{
+        float: left;
+        margin-top: 2px;
+        @include clearfix; 
+        >li{
+            float: left;
+            font-size: 0.75em;
+            padding: 3px 6px;
+            &:after{
+                content: "|";
+                margin-left: 10px;
+                color: $light_gray;
+            }
+            &:last-child{
+                &:after{
+                    content:"";
+                    margin-left: 0;
+                }
+            }
+        }          
+    }
+}
+.site-news{
+    float: left;
+    margin: 22px 0 0 8px;
+    @include clearfix;
+    >li{
+        float: left;
+        font-size: 12px;
+        line-height: 1.7;
+        font-weight: bold;
+        color:#e00517;
+        &:after{
+            content: "|";
+            margin-left: 10px;
+            color: $light_gray;
+        }
+        &:last-child{
+            &:after{
+                content:"";
+            }
+        }
+        &:first-child{
+            padding-left: 0;
+        }
+    }
+}
+.cart-btn{
+    position: relative;
+    float: right;
+    padding: 9px 0 9px;
+    font-size: 0.9em;
+    margin-top: 5px;
+    &:hover{
+        .icon-cart{
+            color: $primary;
+            @include transition(0.3s);
+        }
+    }
+    .count{
+        position: absolute;
+        top: 2px;
+        left: -5px;
+        width: 19px;
+        height: 19px;
+        background: $primary;
+        color: white;
+        font-style: normal;
+        font-size: 12px;
+        text-align: center;
+        line-height: 19px;
+        z-index: 3;
+        @include border-radius (50%);
+    }
+    .cart-banner{
+        display: inline-block;
+        margin-left: 2px;
+        font-size: 0.75em;
+    }
+    .focus{
+        color: $red;
+        display: inline-block;
+        padding: 0 3px;
+        font-weight: bold;
+    }
+}
+.asap-app{
+    margin-top: -2px;
+    position: relative;
+    span{
+        color: #d00;
+        font-weight: 700;
+    }
+    .fa-mobile{
+        font-size: 1.5em;
+        margin-right: 5px;
+        vertical-align: -2px;
+    }
+    .asap-top-app{
+        display: none;
+        position: absolute;
+        top: 24px;
+        right: 7px;
+        img{
+            display: block;
+            padding: 4px 0;
+        }
+    }
+    &:hover{
+        .asap-top-app{
+            display: block;
+        }
+    }
+}

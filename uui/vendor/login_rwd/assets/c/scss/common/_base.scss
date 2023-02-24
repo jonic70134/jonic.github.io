@@ -1,0 +1,35 @@
+body{
+	color: $font-color;
+	font: #{$font-size}/#{$font-line-height} $font-family;
+	background: $bg-color;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+a {
+	color: $anchor-color;
+	text-decoration: none;
+	cursor: pointer;
+	&:hover {
+		color: $anchor-hover-color;
+	}
+}
+ul, li {
+	list-style: none;
+}
+@include placeholder {
+	color: lighten($font-color,50);
+	opacity: 1;
+}
+*:focus {
+	outline: 0;
+}
+::-moz-selection {
+	color: #fff; 
+	background: darken($sub-color,10); 
+	text-shadow: none;
+}
+::selection {
+	color: #fff; 
+	background: darken($sub-color,10); 
+	text-shadow:none;
+}

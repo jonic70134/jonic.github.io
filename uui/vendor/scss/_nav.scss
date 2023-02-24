@@ -1,0 +1,113 @@
+//menu
+.nav-bg {
+  width: 35px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #efefef;
+  @include box-shadow(rgba(black,0.2) -3px 0 7px inset);
+  position: fixed;
+  z-index: 98;
+}
+#nav {
+  width: 45px;
+  height: 100%;
+  min-height: 100%;
+  top: 50px;
+  left: -10px;
+  bottom: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: 99;
+  & > ul {
+    top: 0;
+    margin-bottom: 100px;
+    border-bottom: rgba(white,0.7) 1px solid;
+    position: absolute;
+    & > li {
+      width: auto;
+      min-width: 200px;
+      border-top: #fff 1px solid;
+      border-top-color: rgba(white,0.8);
+      border-bottom: rgba(black,0.1) 1px solid;
+      &:first-child {
+        border-top: none;
+      }
+      & > a, & > span {
+        color: #000;
+        padding: 5px 10px;
+        @include transition(background 0.2s);
+        cursor: pointer;
+        display: block;
+        position: relative;
+        &.active {
+          color: #333;
+          background: #fff;
+          @include box-shadow(rgba(black,0.3) -5px 5px 10px -5px);
+          i {
+            color: #666;
+          }
+        }
+        i {
+          width: 35px;
+          margin-right: 10px;
+          color: #666;
+          font-size: 1.8em;
+          text-align: center;
+          vertical-align: middle;
+          @include text-shadow(rgba(white,0.8) 1px 1px 0);
+          &.active {
+            width: 20px;
+          }
+        }
+        &:after {
+          @include list-arrow(#999,1em,0);
+          content: "\f0d7";
+          top: 7px;
+          left: auto;
+          right: 15px;
+        }
+        &:hover {
+          color: #fff;
+          background: $main-green-color;
+          &:after {
+            color: #fff;
+          }
+          i {
+            color: #fff;
+            @include text-shadow(none);
+          }
+        }
+      }
+      &:first-child > a:after {
+        content: "\0020";
+      }
+      ul {
+        border-color: #aaa;
+        border-top: rgba(white,0.3) 1px solid;
+        background: #ddd;
+        background: rgba(black,0.1);
+        display: none;
+        a {
+          padding: 5px 15px;
+          color: #333;
+          @include transition(background 0.2s);
+          display: block;
+          position: relative;
+          &:before {
+            @include list-arrow(#999,1.05em,5px);
+            margin: 0 5px 0 0;
+            position: static;
+          }
+          &:hover {
+            color: #fff;
+            background: mix($main-green-color,#ccc,70);
+            &:before {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

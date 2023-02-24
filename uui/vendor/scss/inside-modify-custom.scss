@@ -1,0 +1,233 @@
+@import "compass";
+@import "compass/css3";
+@import "compass/utilities/general/hacks";
+@import "_variables.scss";
+@import "_mixin.scss";
+
+@import "_breadcrumb.scss";
+@import "_inside-form-element.scss";
+@import "_inside-home-modify-base.scss";
+@import "_inside-home-modify-sitemap.scss";
+@import "_template-base.scss";
+@import "_template-table.scss";
+
+.search-filter {
+	background: #eaefe5 !important;
+}
+//edit sidebar
+.edit-sitemap-content {
+	padding-left: 15px !important;
+	&:before {
+		margin-right: 5px;
+	}
+}
+.custom-sidenav-group {
+	margin: 10px 0 30px;
+	padding: 0;
+	background: none;
+	dd {
+		padding: 10px 30px;
+		@include border-radius(5px);
+		position: relative;
+		&:before {
+			@include list-arrow(darken($main-grey-color,10),1.2em,20px);
+			content: "\f147";
+			left: 10px;
+			margin-top: 5px;
+		}
+		&.active {
+			font-weight: bold;
+			background: lighten($main-grey-color,10);
+			&:before {
+				content: "\f0fe";
+				color: darken($main-grey-color,20);
+			}
+		}
+	}
+	.edit-sidenav-name {
+		display: none;
+	}
+	.btn-edit {
+		font-size: 0.9em;
+		margin-left: 3px;
+		padding: 3px 10px;
+		@include btn-color(mix($main-color,#fff,50));
+		&.btn-grey {
+			@include btn-color(darken($main-grey-color,10));
+		}
+		&.btn-red {
+			@include btn-color(mix($main-red-color,#fff,50));
+		}
+	}
+}
+.custom-sidenav-title {
+	margin: 30px 0 20px;
+	padding-top: 20px;
+	border-top: $main-grey-color 1px solid;
+}
+.custom-sidenav-content {
+	background: darken($main-grey-color,10);
+	position: relative;
+	@include clearfix;
+}
+.custom-sidenav {
+	width: 800px;
+	background: #fff;
+	float: left;
+}
+.custom-sidenav-right {
+	color: lighten($main-grey-color,10);
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	top: 50%;
+	margin: -10px 0 0 830px;
+	position: absolute;
+}
+//edit page
+.custom-page-setting {
+	padding: 0;
+	background: none !important;
+	dd {
+		margin: 10px 0;
+	}
+	.comment {
+		padding: 0;
+	}
+}
+.editor-sidebar {
+	width: 200px;
+	margin: 30px 0;
+	padding: 50px 10px 20px;
+	background: mix($main-green-color,#fff,5);
+	position: relative;
+	float: left;
+	.select-sidenav {
+		top: 0;
+		left: 0;
+		right: 0;
+		max-height: 31px;
+		background: #fff;
+		border: mix($main-color,#fff,10) 1px solid;
+		@include box-shadow(rgba(black,0.2) 0 3px 3px);
+		overflow: hidden;
+		cursor: pointer;
+		position: absolute;
+		dt {
+			color: darken($main-grey-color,50);
+			font-size: 1.2em;
+			font-weight: bold;
+			letter-spacing: 1px;
+			font-family: $font-heiti;
+			background: mix($main-color,#fff,10);
+			padding: 5px 10px;
+			position: relative;
+			&:after {
+				content: "\f0d7";
+				color: darken($main-grey-color,20);
+				font-size: 1.1em;
+				line-height: 1em;
+				font-family: FontAwesome;
+				right: 10px;
+				margin: 2px 0 0 5px;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				vertical-align: middle;
+				display: inline-block;
+				position: absolute;
+			}
+		}
+		dd {
+			padding: 5px 10px;
+			&:hover {
+				background: lighten($main-grey-color,10);
+			}
+			&.active {
+				background: $main-grey-color;
+			}
+		}
+		&.active {
+			max-height: 10000px;
+			@include transition(max-height 0.4s ease);
+			dt {
+				&:after {
+					content: "\f0d8";
+				}
+			}
+		}
+	}
+	.sidenav {
+		& + .sidenav {
+			margin-top: 20px;
+		}
+		dt {
+			font-size: 1.2em;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		dd {
+			padding: 3px 10px 3px 18px;
+			&.active {
+				background: mix($main-green-color,#fff,20);
+			}
+		}
+	}
+}
+.editor-content {
+	margin: 30px 0 30px 230px;
+	&.wide {
+		margin-left: 0;
+	}
+	.editor {
+		padding: 10px;
+		img {
+			max-width: 100%;
+		}
+	}
+	.toolbar {
+		margin-bottom: 10px;
+		color: #666;
+		font-size: 0.9em;
+		dd {
+			margin-right: 5px;
+			display: inline-block;
+		}
+		.btn-txt {
+			color: #666;
+			font-size: 1.2em;
+			text-align: center;
+			width: 20px;
+			padding: 1px 3px;
+			vertical-align: middle;
+			@include border-radius(2px);
+			cursor: pointer;
+			position: relative;
+			display: inline-block;
+			&.active {
+				color: #fff;
+				background: mix($main-green-color,#eee,50);
+			}
+			input {
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: 0;
+				@include opacity(0);
+				position: absolute;
+			}
+		}
+		.btn-delete {
+			padding: 3px 10px;
+			vertical-align: middle;
+			@include btn-color(darken($main-grey-color,20));
+			@include border-radius(2px);
+		}
+	}
+	.texterea-editor {
+		width: 100%;
+		@include box-sizing(border-box);
+	}
+}

@@ -1,0 +1,160 @@
+.item-add{
+	.container{
+		border:1px solid $border;
+		padding: 20px 20px 10px 20px;
+	}
+	.items{
+		@include clearfix;
+	}
+	.item{
+		float: left;
+		margin-bottom: 10px;
+		width: 50%;
+		height:110px;
+	}
+	label{
+		cursor: pointer;
+		color: $text;
+	}
+	.photo{
+		margin-right: 8px;
+		display: inline-block;
+		img{
+			max-width: 100px;
+		}
+	}
+	.info{
+		display: inline-block;
+	}
+	.checkbox{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.name{
+		margin-bottom: 10px;
+		//color: $item_name;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 1.2;
+		height: 32px;
+		word-wrap: break-word;
+		overflow: hidden;
+	}
+	.spec{
+		margin-right: 5px;
+	}
+	.buy{
+		margin-top: 5px;
+	}
+	.feature{
+		margin-bottom: 10px;
+		font-size: 0.85em;
+		line-height: 1.6;
+	}
+	.currency{
+		font-size: 12px;
+		//color: $price;
+		display: inline-block;
+	}
+	.price{
+		font-size: 1.125em;
+		//color: $price;
+		display: inline-block;
+		margin-right: 10px;
+	}
+	.button{
+		vertical-align: top;		
+	}
+	.spec{
+		padding: 2px 4px;
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+	.quantity{
+		vertical-align: middle;
+		margin-bottom: 5px;
+	}
+	.add-actions{
+		text-align: center;
+		.container{
+			border: none;
+			padding: 10px 0;
+		}
+		.highlight, .red-text{
+			font-size: 12px;
+			line-height: 1.5;
+			span{
+				margin: 0 10px;
+			}
+		}
+		.quantity{
+			vertical-align: bottom;
+			margin-right: 10px;
+		}
+		.button{
+			margin-bottom: 5px;
+		}
+	}
+}
+
+@include RWD(desktop-all) {
+.item-add{
+	.name{
+		overflow: hidden;
+	}
+	.info{
+		width: 50%;
+	}
+}
+}
+@include RWD(pad-mobile) {
+.item-add{
+	border-bottom: 1px solid $border;
+	.container{
+		border: 0;
+		padding: 0;
+	}
+	.items{
+		border: 1px solid $border;
+		margin: 0 10px 10px;
+		padding: 10px;
+	}
+	.item{
+		padding: 1% 0 1%;
+		margin: 0;
+		display: table;
+	}
+	.photo{
+		display: table-cell;
+		vertical-align: middle;
+		padding-right: 8px;
+	}
+	.info{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.add-actions{
+		//display: none;
+	}
+}
+}
+@include RWD(mobile) {
+.item-add{
+	.items{
+	}
+	.item{
+		width: 100%;
+		border-bottom: 1px solid $border;
+		&:last-child{
+			border-bottom: none;
+		}
+	}
+}
+}
+@media screen and (max-width:568px) {
+.item-add{
+	.item{
+		padding: 10px 0 ;
+	}
+}
+}

@@ -1,0 +1,51 @@
+.site-activity .act-cart .swiper-container .swiper-right {
+  left: 815px;
+}
+.site-activity .act-cart .swiper-container .quantity {
+  height: 24px;
+}
+.site-activity .act-cart .swiper-container .quantity .quantity-input {
+  line-height: 22px;
+}
+
+.item-list figcaption .quantity .quantity-input {
+  line-height: 22px;
+}
+
+.nav-user {
+  margin-top: 38px;
+}
+.nav-user ul > li.nav-account {
+  width: 25px;
+  height: 25px;
+}
+.nav-user .icon-cart .count {
+  top: 0;
+}
+.nav-user .account-item {
+  top: 20px;
+}
+.nav-user .main-cart {
+  width: 39px;
+  height: 25px;
+}
+.nav-user .main-cart .cart-item {
+  top: 20px;
+}
+
+.quantity.small .quantity-input {
+  line-height: 22px;
+}
+.quantity .quantity-input {
+  line-height: 32px;
+}
+
+.site-search {
+  padding: 5px\9\0;
+}
+.site-search input {
+  height: 20px\9\0;
+}
+.site-search .recommend {
+  margin-top: 10px;
+}

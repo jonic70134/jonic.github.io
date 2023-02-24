@@ -1,0 +1,125 @@
+.nav-menu{
+    background: $nav_bk;
+    color: black;
+    @include clearfix;
+    .icon-menu{
+        display: none;
+    }
+    li a:hover{
+        background: $hover_bk;
+        color: $hover_text;
+    }
+    .menu-one{
+        >li{
+            position: relative;
+            float: left;
+            border-right: 1px solid rgba(225, 225, 225, 0.2);
+            >a{
+                display: block;
+                padding: 16px 20px; 
+                color: $nav_text;
+                &:hover, &.active{
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    z-index: 4;
+                    background: $hover_bk;
+                    color: $hover_text;
+                    transition: all 0.3s ease-out 0s;
+                }
+                &.active, &:focus{
+                    background: #558b14;
+                    color:#fff;
+                }
+            }
+        }
+    }
+    .menu-two, .menu-three{
+        border: 1px solid #eee;
+        left: 0px;
+        position: absolute;
+        top: 48px;
+        z-index: 3;
+        background: #eee;
+        min-width: 160px;
+        >li{
+            position: relative;
+            >a{
+                padding: 10px 15px;
+                display: block;
+                white-space: nowrap;
+                border-bottom: 1px solid #f3f3f3;
+                background: #fff;
+                color: #1b1b1b;
+                font-size: 0.9em;
+                &:hover, &.active{
+                    background: #eee;
+                }
+            }
+            &:last-child{
+                >a{
+                    border-bottom: 3px solid #69b40f;
+                }
+            }
+        }
+    }
+    .menu-three{
+        position: absolute;
+        float: left;
+        top: 0;
+        left: 100%;
+        border: 1px solid $nav_border;
+        z-index: 5;
+        >li{
+            float: none;
+        }
+    }
+}
+@include RWD(pad-mobile) {
+    .nav-menu{
+        position: absolute;
+        top: 65px;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        .icon-menu{
+            padding: 10px;
+            margin-left: 14px;
+            display: inline-block;
+        }
+        .menu-one{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            z-index: 5;
+            border: 1px solid #888;
+            height: auto;
+            >li{
+                float: none;
+                a{
+                    border-bottom: 1px solid #e5e5e5;
+                    color: #1b1b1b;
+                    padding: 10px 15px;
+                    &.active{
+                        border: 0;
+                        border-bottom: 1px solid #e5e5e5;
+                        border-top: 1px solid #e5e5e5;
+                    }
+                    &:hover{
+                        background: #eee;
+                        color: #1b1b1b;
+                        border: 0;
+                    }    
+                }
+            }
+        }
+        .menu-two{
+            top: 0;
+            left: 100%;
+            >li>a{
+                min-width: 150px;
+            }
+        }
+    }
+}

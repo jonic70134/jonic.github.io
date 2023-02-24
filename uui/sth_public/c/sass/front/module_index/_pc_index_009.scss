@@ -1,0 +1,40 @@
+/* pc_index_009 開始 */
+.pc_index_009{
+	margin: 0px auto;
+	border-bottom: 2px solid $border;
+	@include clearfix;
+	.title-h3{
+		padding: 0;
+		float:left;
+		margin-bottom:0;
+		width:490px;
+		height: 18px;
+		overflow: hidden;
+	}
+	.top{
+		margin: 10px 0 0;
+		padding:5px 2px;
+		@include clearfix;
+	}
+	.links{
+		float: right;
+		width:490px;
+		height: 18px;
+		overflow: hidden;
+		text-align: right;
+		>li{
+			display: inline-block;
+			margin-left: 15px;
+			a{
+				font-weight: bold;
+				font-size: 13px;
+				color: $link3;
+				word-break: break-all;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+/* pc_index_009 結束 */

@@ -1,0 +1,109 @@
+@import "compass";
+@import "compass/css3";
+@import "compass/typography/text";
+@import "compass/utilities/general/hacks";
+@import "define/__mixin.scss";
+@import "define/__variables.scss";
+@import "define/_theme.scss";
+@import "common/_icon.scss";
+
+body {
+	padding: 10px;
+}
+.pickup-index {
+	top: 0;
+	right: 0;
+	padding: 5px;
+	font-size: 1.2em;
+	background: #fff;
+	background: rgba(white,0.7);
+	@include border-bottom-left-radius(10px);
+	position: fixed;
+	a {
+		padding: 0 10px;
+		text-decoration: none;
+		border-right: #ccc 1px solid;
+		&:last-child {
+			border: none;
+		}
+	}
+}
+.t-title {
+	font-size: 1.5em;
+	margin: 10px 0;
+	&.large {
+		font-size: 1.8em;
+		margin-top: 30px;
+	}
+}
+.pickup-table {
+	width: 750px;
+	border-collapse: collapse;
+	@include RWD(pad) {
+		width: 100%;
+	}
+	@include RWD(mobile) {
+		border-bottom: $main-grey 1px solid;
+	}
+	th, td {
+		padding: 5px 10px;
+		color: #333;
+		vertical-align: middle;
+		background: #fff;
+		border: $main-grey 1px solid;
+		@include RWD(mobile) {
+			border-bottom-width: 0;
+		}
+	}
+	th, .col-head {
+		color: #fff;
+		text-align: center;
+		background: darken($main-color,20);
+	}
+	.col-time {
+		text-align: center;
+		@include RWD(mobile) {
+			text-align: left;
+			border-top-width: 0;
+			&:before {
+				content: attr(data-name) ": ";
+			}
+		}
+	}
+	a {
+		color: #333;
+		text-decoration: none;
+		&:hover {
+			color: $sub-color;
+			&:after {
+				background: mix($sub-color,#eee,70);
+			}
+		}
+		&:after {
+			color: #fff;
+			font-size: 0.8em;
+			margin-left: 3px;
+			padding: 0 5px;
+			@include btn-color(mix($sub-color,#eee,50),3);
+			@include border-radius(3px);
+			display: inline-block;
+		}
+		&:lang(en):after {
+			content: "Send to";
+		}
+		&:lang(zh):after {
+			content: "選擇配送";
+		}
+	}
+}
+.md-form-btn {
+	margin: 10px 0;
+	&.with-index {
+		@include RWD(mobile) {
+			margin-top: 50px;
+		}
+	}
+	button {
+		font-size: 1.1em;
+	}
+}

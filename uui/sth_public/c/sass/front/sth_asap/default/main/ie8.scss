@@ -1,0 +1,68 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_asap.scss";
+
+.quantity{
+	.quantity-input{
+		line-height: 30px;
+	}
+}
+.quantity.small{
+	.quantity-input{
+		line-height: 22px;
+	}
+}
+.pc_category_list,.pc_category_list_row{
+	.quantity{
+		.quantity-input{
+			line-height: 22px;
+		}
+	}
+}
+
+.site-sort {
+    .sort {
+        li {
+            &+li+li+li+li {
+	            a {
+	                border-right: 1px solid $border;             
+	            }
+			}
+        }
+    }
+}
+.nav-pagination a{
+	border:1px solid $border;
+}
+.pc-item-main{
+	.value{
+		>li{
+			img{
+				z-index: -1;
+			}
+		}
+	}
+	.payinfo-left{
+    	width: 295px;
+	}
+	.credit-card{
+		.block{
+			padding: 0 0 0 5px;
+			&:first-child{
+				padding: 0 5px 0 0;
+			}
+		}
+	}
+	.item-fee{
+		.fa-question{
+			.fee-info{
+				visibility: visible;
+				display: none;
+			}
+			&:hover{
+				.fee-info{
+					display: block;
+				}
+			}
+		}
+	}
+}

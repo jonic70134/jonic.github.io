@@ -1,0 +1,98 @@
+@import "../module_header/_htc_header.scss";
+@import"../module_component/_site_ad_top.scss";
+@import "../module_index/_rwd_index_001.scss";
+@import "../module_index/_rwd_index_002.scss";
+@import "../module_index/_rwd_index_004.scss";
+@import "../module_index/_rwd_index_005.scss";
+@import "../module_index/_rwd_index_006.scss";
+@import "../module_index/_rwd_index_008.scss";
+@import "../module_index/_rwd_index_009.scss";
+@import "../../front/module_footer/_rwd_footer_001.scss";
+@import "../../front/module_footer/_rwd_copyright_001.scss";
+
+//以下放置客製化style
+.site-header{
+	margin-bottom: 0;
+}
+.site-body{
+	padding-bottom: 40px;
+}
+.rwd_index_001{
+	.swiper-container{
+		.pagination{
+			bottom: 10px;
+		}
+		.swiper-wrapper{
+			height: 500px;
+		}
+		.swiper-pagination-switch{
+			background: #000;
+			border: 1px solid #fff;
+			width: 13px;
+			height: 13px;
+			&.swiper-visible-switch, &.swiper-active-switch{
+				background: #69b40f;
+			}
+		}	
+	}
+	.container{
+		width: auto;
+	}
+}
+.rwd_index_004, .rwd_index_006 ,.rwd_index_009{
+	.item{
+        border: 1px solid #dfdfdf;
+        margin-bottom: 0;
+        margin-left: -1px;
+        margin-top: -1px;
+        position: relative;
+        &:hover{
+            z-index: 1;
+            border: 1px solid #69b40f;
+        }
+    }
+}
+.rwd_footer_001{
+    border-bottom: 1px solid #dfdfdf;
+    border-top: 1px solid #dfdfdf;
+    dt{
+    	border-bottom: 1px solid #dfdfdf;
+    	font-size: 1.125em;
+    	font-weight: 600;
+    	padding-bottom: 10px;
+    	line-height: 180%;
+    }
+    dl{
+    	padding: 20px 0;
+    	a{
+    		font-size: 0.9em;
+    	}
+    }
+
+}
+@include RWD(pad-mobile) {
+.rwd_index_001{
+	margin-top: 32px;
+}	
+.site-body{
+	padding: 0;
+	.container{
+		padding: 0;
+	}
+}
+.rwd_index_009{
+	.info {
+		.name{
+			color: #333;
+		}
+	}
+}
+.rwd_footer_001{
+	dl{
+		padding: 0;
+		a{
+			width: 100px;
+		}
+	}
+}
+}

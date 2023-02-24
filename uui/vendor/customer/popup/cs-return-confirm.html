@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox vendor</title>
+<link href="/css/plugin/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/css/customer.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="/js/lib/html5.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ie.css">
+<![endif]--></head>
+<body>
+<div class="cs-popup-content">
+  <h1 class="title"><i class="fa fa-undo"></i>商品退訂確認</h1>
+  <table class="orders-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>商品名稱-顏色-尺寸</th>
+        <th>單價</th>
+        <th>退訂數量</th>
+        <th>售出類型</th>
+        <th>退訂原因</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td>1</td>
+        <td class="txt">CLINIQUE 倩碧 新一代水磁場保濕凝膠 15ml X3 - 藍 - S</td>
+        <td class="num">$9,999</td>
+        <td>1</td>
+        <td>主商品</td>
+        <td class="txt">不符所需-訂錯貨了，想要重訂</td>
+      </tr>
+      
+      <tr>
+        <td>2</td>
+        <td class="txt">CLINIQUE 倩碧 新一代水磁場保濕凝膠 15ml X3 - 藍 - S</td>
+        <td class="num">$9,999</td>
+        <td>1</td>
+        <td>主商品</td>
+        <td class="txt">不符所需-訂錯貨了，想要重訂</td>
+      </tr>
+      
+      <tr>
+        <td>3</td>
+        <td class="txt">CLINIQUE 倩碧 新一代水磁場保濕凝膠 15ml X3 - 藍 - S</td>
+        <td class="num">$9,999</td>
+        <td>1</td>
+        <td>主商品</td>
+        <td class="txt">不符所需-訂錯貨了，想要重訂</td>
+      </tr>
+      
+      <tr>
+        <td>4</td>
+        <td class="txt">CLINIQUE 倩碧 新一代水磁場保濕凝膠 15ml X3 - 藍 - S</td>
+        <td class="num">$9,999</td>
+        <td>1</td>
+        <td>主商品</td>
+        <td class="txt">不符所需-訂錯貨了，想要重訂</td>
+      </tr>
+      
+      <tr>
+        <td>5</td>
+        <td class="txt">CLINIQUE 倩碧 新一代水磁場保濕凝膠 15ml X3 - 藍 - S</td>
+        <td class="num">$9,999</td>
+        <td>1</td>
+        <td>主商品</td>
+        <td class="txt">不符所需-訂錯貨了，想要重訂</td>
+      </tr>
+      
+      <tr>
+        <td>6</td>
+        <td class="txt">運費</td>
+        <td class="num">$9,999</td>
+        <td>1</td>
+        <td>宅配費</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr class="summary">
+        <td colspan="2" class="summary-name">退款總金額：</td>
+        <td class="num">$9,999</td>
+        <td colspan="3">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <a class="go-back" onclick="reOpenPopup(1000,'/customer/popup/cs-return.html');"><i class="fa fa-reply"></i>返回修改</a>
+  <div class="clearfix"></div>
+  <dl class="form-element return-form return-logistic">
+    <dt class="title">是否要派逆物流</dt>
+    <dd><label for="radioLogisticTrue"><input type="radio" id="radioLogisticTrue" name="logistic">派逆物流取貨</label></dd>
+    <dd><label for="radioLogisticFalse"><input type="radio" id="radioLogisticFalse" name="logistic">不委派逆物流</label></dd>
+  </dl>
+  <dl class="form-element return-form return-contact">
+    <dt class="title">退訂人資料</dt>
+    <dd><label>退訂人姓名：</label>朱元</dd>
+    <dd><label>退訂人電話：</label><input type="text" placeholder="請輸入退訂人電話"></dd>
+    <dd><label>退訂人e-mail：</label><input type="text" placeholder="請輸入退訂人e-mail"></dd><br>
+    <dd><label>取貨聯絡人：</label>康琪芬</dd>
+    <dd><label>取貨聯絡人電話：</label><input type="text" placeholder="請輸入取貨聯絡人電話"></dd>
+    <dd><label>取貨地址：</label><select><option>請選擇縣市</option></select><select><option>請選擇區域</option></select><input type="text" class="input-large" placeholder="請輸入取貨地址"></dd>
+  </dl>
+  <dl class="form-element return-form return-payment">
+    <dt class="title">退款資料</dt>
+    <dd><label>退款方式：</label>信用卡退款(永豐)</dd>
+    <dd><label>付款方式：</label>信用卡一次付清</dd>
+  </dl>
+  <dl class="form-element return-form return-payment">
+    <dt class="title">退款資料</dt>
+    <dd><label>退款方式：</label>匯款</dd>
+    <dd><label>付款方式：</label>ATM轉帳</dd><br>
+    <dd><label>銀行類型：</label><select><option>銀行</option></select></dd>
+    <dd><label>銀行名稱：</label><select><option>807 - 永豐商業銀行</option></select></dd><br>
+    <dd><label>戶名：</label><input type="text" placeholder="請輸入戶名"></dd>
+    <dd><label>帳號：</label><input type="text" placeholder="請輸入銀行帳號"></dd>
+  </dl>
+  <div class="cs-button">
+    <button class="btn-cancel" onclick="alert('退訂已取消，沒有商品被退訂');parent.$.fancybox.close();"><i class="fa fa-times"></i>取消</button>
+    <button class="btn-submit" onclick="alert('退訂成功');parent.$.fancybox.close();"><i class="fa fa-check"></i>確認送出</button>
+  </div>
+</div><script src="/js/lib/jquery-1.9.1.js" ></script>
+<script src="/js/lib/bootstrap-dropdown.js"></script>
+<script src="/js/nav-action.js"></script>
+<script src="/js/customer-action.js"></script>
+<script src="/js/update-fancybox.js"></script>
+</body>
+</html>

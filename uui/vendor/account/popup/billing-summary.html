@@ -1,0 +1,3816 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox vendor</title>
+<link href="/css/plugin/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/css/account.css" rel="stylesheet" type="text/css">
+<style>
+@media screen {
+  body {overflow-x: visible !important;}
+  .billing-summary {min-width: 4000px;}
+  .page-header, .page-footer {width: 950px;}
+  .template-table {display: inline-block;}
+  .template-table + .template-table {margin-left: -4px;}
+  .print-only {display: none;}
+}
+@page {
+  size: A3 landscape;
+}
+@media print {
+  * {color: #000 !important;}
+  .billing {margin-top: 0 !important;}
+  .template-button {display: none;}
+  .template-table {margin: 0 0 10px 0 !important; background: initial; border-top: #000 1px solid; border-left: #000 1px solid; page-break-inside: avoid; display: block !important;}
+  .template-table th, .template-table td {font-size: 0.75em; padding: 3px !important; border-color: #000 !important;}
+  .page-header, .page-footer {display: block !important;}
+}
+</style>
+<!--[if lt IE 9]>
+<script src="/js/lib/html5.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ie.css">
+<![endif]--></head>
+<body>
+<div class="popup-content" style="background: none;">
+  <div class="template-button" style="margin-top: 0;">
+    <button class="btn-submit" onclick="printControl();"><i class="fa fa-print"></i>列印本頁</button>
+  </div>
+  <section class="billing billing-summary">
+    <div class="page-header">
+      <h1 class="title">廠商請款彙總單-B2C(自營)</h1>
+      <div class="plateform-name">平台：ASAP</div>
+      <div class="billing-num"><div class="barcode"><img src="/img/barcode.gif" alt="條碼"></div>彙總單號：A1310220001<br>產生日期：2013/10/22</div>
+      <div class="clearfix"></div>
+    </div>
+    <table class="template-table">
+      <thead>
+        <tr>
+          <th colspan="4" rowspan="2">&nbsp;</th>
+          <th colspan="7">訂單貨款</th>
+          <th colspan="15">訂單費用</th>
+        </tr>
+        <tr>
+          <th colspan="3">進貨款</th>
+          <th colspan="3">退貨款</th>
+          <th rowspan="2">貨款<br>稅差</th>
+          <th colspan="3">出貨運費</th>
+          <th colspan="3">退貨運費</th>
+          <th colspan="3">行銷獎勵金</th>
+          <th colspan="3">服務費</th>
+          <th colspan="3">進出貨處理費</th>
+        </tr>
+        <tr>
+          <th>#</th>
+          <th>廠商名稱</th>
+          <th>廠商ID</th>
+          <th>請款單編號</th>
+          
+          <th>未稅</th>
+          <th>稅額</th>
+          <th>總計</th>
+          
+          <th>未稅</th>
+          <th>稅額</th>
+          <th>總計</th>
+          
+          <th>未稅</th>
+          <th>稅額</th>
+          <th>總計</th>
+          
+          <th>未稅</th>
+          <th>稅額</th>
+          <th>總計</th>
+          
+          <th>未稅</th>
+          <th>稅額</th>
+          <th>總計</th>
+          
+          <th>未稅</th>
+          <th>稅額</th>
+          <th>總計</th>
+          
+          <th>未稅</th>
+          <th>稅額</th>
+          <th>總計</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>1</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>2</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>3</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>4</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>5</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>6</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>7</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>8</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>9</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>10</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>11</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>12</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>13</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>14</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>15</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>16</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>17</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>18</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>19</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>20</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>21</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>22</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>23</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>24</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>25</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>26</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>27</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>28</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>29</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>30</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>31</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>32</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>33</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>34</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr>
+          <td>35</td>
+          <td class="txt">新詠國際貿易有限公司</td>
+          <td class="txt">AJ8001</td>
+          <td class="txt">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+        
+        <tr class="summary">
+          <td class="summary-name" colspan="4">總計</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <table class="template-table">
+      <thead>
+        <tr>
+          <th colspan="4" rowspan="2" class="print-only">&nbsp;</th>
+          <th colspan="12">訂單費用</th>
+          <th colspan="6">其他費用</th>
+          <th rowspan="3">系統金額總計</th>
+          <th rowspan="3">憑證金額總計</th>
+          <th rowspan="3">匯給廠商總金額</th>
+        </tr>
+        <tr>
+          <th colspan="3">紙箱費</th>
+          <th colspan="3">進出貨耗材費</th>
+          <th colspan="3">配送超商物流中心費</th>
+          <th colspan="3">退貨處理費</th>
+          <th colspan="3">還貨運費</th>
+          <th colspan="3">進貨驗退運費</th>
+        </tr>
+        <tr>
+          <th class="print-only">#</th>
+          <th class="print-only">廠商名稱</th>
+          <th class="print-only">廠商ID</th>
+          <th class="print-only">請款單編號</th>
+          
+          <th>未稅</th>
+          <th>稅額</th>
+          <th>總計</th>
+          
+          <th>未稅</th>
+          <th>稅額</th>
+          <th>總計</th>
+          
+          <th>未稅</th>
+          <th>稅額</th>
+          <th>總計</th>
+          
+          <th>未稅</th>
+          <th>稅額</th>
+          <th>總計</th>
+          
+          <th>未稅</th>
+          <th>稅額</th>
+          <th>總計</th>
+          
+          <th>未稅</th>
+          <th>稅額</th>
+          <th>總計</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td class="print-only">1</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">2</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">3</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">4</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">5</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">6</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">7</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">8</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">9</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">10</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">11</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">12</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">13</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">14</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">15</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">16</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">17</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">18</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">19</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">20</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">21</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">22</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">23</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">24</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">25</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">26</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">27</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">28</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">29</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">30</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">31</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">32</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">33</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">34</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr>
+          <td class="print-only">35</td>
+          <td class="txt print-only">新詠國際貿易有限公司</td>
+          <td class="txt print-only">AJ8001</td>
+          <td class="txt print-only">A1002201310A21000001</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+        
+        <tr class="summary">
+          <td class="summary-name print-only" colspan="4">總計</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num">8,888,888</td>
+          
+          <td class="num row-summary">8,888,888</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="clearfix"></div>
+    <div class="page-footer">
+      <dl class="sign-column">
+        <dd>對帳負責人：</dd>
+        <dd>部門主管：</dd>
+        <dd>財務長：</dd>
+        <dd>總經理：</dd>
+      </dl>
+    </div>
+  </section>
+  <div class="template-button">
+    <button class="btn-submit" onclick="printControl();"><i class="fa fa-print"></i>列印本頁</button>
+  </div>
+</div><script src="/js/lib/jquery-1.9.1.js" ></script>
+<script src="/js/lib/bootstrap-dropdown.js"></script>
+<script src="/js/nav-action.js"></script>
+<script src="/js/template-action.js"></script>
+<script>
+function printControl() {
+  var elems = [
+    $('.page-footer').clone(),
+    $('.page-header').clone()
+  ];
+  $('.template-table + .template-table').before(elems);
+  $('.page-header').not(':eq(0)').css('page-break-before','always');
+  alert('建議使用A3橫向列印');
+  window.print();
+  parent.$.fancybox.close();
+};
+</script>
+</body>
+</html>

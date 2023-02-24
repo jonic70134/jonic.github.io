@@ -1,0 +1,27 @@
+//hack for firefox
+@-moz-document url-prefix() {
+	.modify-menu .modify-menu-content > dd .menu-content-button button[class*="btn-"] {
+		padding: 1px 3px !important;
+	}
+	.orders-table {
+		.btn-edit, .btn-detail, .btn-delete {
+			padding-left: 3px !important;
+			i {
+				margin-right: 3px;
+			}
+		}
+	}
+	.user-table {
+		.btn-edit, .btn-detail, .btn-helper, .btn-permission, .btn-delete {
+			padding-left: 3px !important;
+			i {
+				margin-right: 3px;
+			}
+		}
+	}
+	.additional-purchase {
+		& > dd {
+			height: 470px !important;
+		}
+	}
+}

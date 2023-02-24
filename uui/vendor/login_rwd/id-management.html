@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox account</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link href="assets/c/css/vendor/font-awesome.min.css" rel="stylesheet">
+<link href="assets/c/css/common.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="assets/c/js/vendor/html5.js"></script>
+<script src="assets/c/js/ie.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/c/css/ie.css">
+<![endif]--></head>
+<body>
+    <!-- header  -->
+    <div class="l-container">
+        <header class="l-header">
+            <div class="logo"><a href="http://www.asap.com.tw/" class="icon-asap" title="返回ASAP首頁"><img src="assets/c/img/asap-logo.png" alt="ASAP閃電購物網"></a></div>
+            <a href="javascript:history.back()" class="t-back">回上一頁</a>
+        </header>
+    </div>
+    <!--header /--><div class="l-container l-tiny">
+<!-- id management -->
+<h1 class="t-card-title">登入帳號管理</h1>
+<div class="md-account l-card">    
+    <dl class="md-list">
+        <dt>可以使用的登入帳號：</dt>
+        <!-- mobile -->
+        <dd id="id-mobile" class="form-item">
+            <span class="t-user-id">0900 000 000</span>
+            <div class="md-action">
+                <button class="btn-edit btn-transparent" data-href="#edit-mobile" title="修改手機號碼"></button>
+                <button class="btn-delete btn-transparent" title="刪除手機號碼"></button>
+            </div>
+        </dd>
+        <!-- edit mobile -->
+        <dd id="edit-mobile" class="form-item is-hide">
+            <h3 class="t-title-form edit">修改手機號碼</h3>
+            <span class="md-input-item">
+                <input type="tel" tabindex="1" class="input-id input-text" id="input_mobile" size="20" inputmode="numeric" pattern="[0-9]*" value="0900000000" data-error="輸入格式有誤" placeholder="修改您的手機號碼">
+                <label for="input_mobile" class="place-label"></label>
+            </span>
+            <button class="btn-mobile-verify" tabindex="2">取得手機驗證碼</button>
+            <input type="text" tabindex="3" class="input-verify input-text" id="input_verify" size="8" inputmode="numeric" pattern="[0-9]*" placeholder="手機驗證碼">
+            <div class="md-edit-action">
+                <button class="btn-submit" tabindex="4">確認送出</button>
+                <button class="btn-cancel" tabindex="5" data-href="#id-mobile">取消</button>
+            </div>
+        </dd>
+        <!-- email -->
+        <dd id="id-email" class="form-item">
+            <span class="t-user-id">arturoterrell@fastmail.com</span>
+            <div class="md-action">
+                <button class="btn-edit btn-transparent" data-href="#edit-email" title="修改e-mail"></button>
+                <button class="btn-delete btn-transparent" title="刪除e-mail"></button>
+            </div>
+        </dd>
+        <!-- edit email -->
+        <dd id="edit-email" class="form-item captcha is-hide">
+            <h3 class="t-title-form edit">修改e-mail</h3>
+            <span class="md-input-item">
+                <input type="email" tabindex="6" class="input-id input-text" id="input_email" size="29" value="deana_west@gmail.com" data-error="輸入格式有誤！" placeholder="修改您的e-mail">
+                <label for="input_email" class="place-label"></label>
+            </span>
+            <span class="md-input-item">
+                <input type="email" tabindex="7" class="input-id input-text" id="input_email_confirm" size="29" data-error="輸入格式有誤！" placeholder="再輸入一次e-mail">
+                <label for="input_email_confirm" class="place-label"></label>
+            </span>
+            <br>
+            <input type="text" tabindex="8" class="input-text" id="input_captcha" size="8" inputmode="numeric" pattern="[0-9]*" placeholder="圖片數字"><img src="http://placehold.it/80x30/" class="img-captcha"><a href="" class="t-reload">換張圖</a>
+            <div class="md-edit-action">
+                <button class="btn-submit" tabindex="9">確認送出</button>
+                <button class="btn-cancel" tabindex="10" data-href="#id-email">取消</button>
+            </div>
+        </dd>
+        <!-- add mobile -->
+        <dd id="add-mobile" class="form-item is-hide">
+            <h3 class="t-title-form add">新增手機號碼</h3>
+            <span class="md-input-item">
+                <input type="tel" tabindex="11" class="input-id input-text" id="input_add_mobile" size="20" inputmode="numeric" pattern="[0-9]*" data-error="輸入格式有誤" placeholder="您的手機號碼">
+                <label for="input_add_mobile" class="place-label"></label>
+            </span>
+            <button class="btn-mobile-verify" tabindex="12">取得手機驗證碼</button>
+            <input type="text" tabindex="13" class="input-verify input-text" id="input_verify" size="8" inputmode="numeric" pattern="[0-9]*" placeholder="手機驗證碼">
+            <div class="md-edit-action">
+                <button class="btn-submit" tabindex="14">確認送出</button>
+                <button class="btn-cancel" tabindex="15">取消</button>
+            </div>
+        </dd>
+        <!-- add email -->
+        <dd id="add-email" class="form-item captcha is-hide">
+            <h3 class="t-title-form add">新增e-mail</h3>
+            <span class="md-input-item">
+                <input type="email" tabindex="16" class="input-id input-text" id="input_add_email" size="29" data-error="輸入格式有誤！" placeholder="您的e-mail">
+                <label for="input_add_email" class="place-label"></label>
+            </span>
+            <span class="md-input-item">
+                <input type="email" tabindex="17" class="input-id input-text" id="input_add_email_confirm" size="29" data-error="輸入格式有誤！" placeholder="再輸入一次e-mail">
+                <label for="input_add_email_confirm" class="place-label"></label>
+            </span>
+            <br>
+            <input type="text" tabindex="18" class="input-text" id="input_captcha" size="8" inputmode="numeric" pattern="[0-9]*" placeholder="圖片數字"><img src="http://placehold.it/80x30/" class="img-captcha"><a href="" class="t-reload">換張圖</a>
+            <div class="md-edit-action">
+                <button class="btn-submit" tabindex="19">確認送出</button>
+                <button class="btn-cancel" tabindex="20">取消</button>
+            </div>
+        </dd>
+        <!-- add buttons -->
+        <dd id="id-add" class="form-item button">
+            <button class="btn-add" data-href="#add-mobile">使用手機登入</button>
+            <button class="btn-add" data-href="#add-email">使用e-mail登入</button>
+        </dd>
+    </dl>
+</div>
+
+</div>
+	<!-- footer -->
+	<div class="l-container">
+		<footer class="l-footer">
+			<div class="service">ASAP 使用<span class="icon-uitox-s"></span>金物流服務</div>
+		    	<div class="copyright">
+		       	&copy; <?php echo date('Y'); ?> <a href="http://www.uitox.com/" target="_blank">uitox Corporation</a> or its affiliates.
+		       	<a href="privacy.html" target="_blank" class="go-privacy">隱私權政策</a>
+			</div>
+		</footer>
+	</div><a class="go-top" title="Back to top"></a>
+<script src="assets/c/js/vendor/jquery.min.js" ></script>
+<script src="assets/c/js/common.js"></script>
+<script>
+//Taiwan mobile policy
+window.regexMobile = /^(09)\d{8}$/;
+</script>
+</body>
+</html>

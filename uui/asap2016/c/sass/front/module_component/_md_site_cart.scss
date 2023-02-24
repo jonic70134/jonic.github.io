@@ -1,0 +1,152 @@
+.site-cart{
+    .container{
+        line-height: 1.5;
+    }
+    .title{
+        margin: 8px 8px 4px;
+        padding: 8px;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        border-bottom: 1px solid $border;
+        background: $background2;
+    }
+    .items{
+        overflow-y: auto;
+        max-height: 50%;
+        min-height: 18px;
+    }
+    .item{
+        position: relative;
+        margin: 0 8px;
+        padding: 8px;
+        background: $background2;
+        &::after{
+            content: "";
+            display: block;
+            margin-top: 10px;
+            border-bottom: 1px solid $border;
+        }
+        &:last-child{
+        }
+        &.add{
+            margin-top: -11px;
+        }
+    }
+    .main{
+        @include clearfix;
+    }
+    .photo{
+        display: inline-block;
+        float: left;
+        width: 20%;
+        margin-right: 8px;
+        img{
+            width: 100%;
+        }
+        //@include crop(20%, white);
+    }
+    .name{
+        font-size: 15px;
+        color: $item_name;
+        margin-right: 20px;
+    }
+    .attr{
+        font-size: 13px;
+        color: $light_gray;
+        margin-right: 20px;
+    }
+    .labels{
+        display: inline-block;
+        margin-top: 4px;
+        .tag-status{
+            margin-left: 0;
+            margin-right: 5px;
+        }        
+    }
+    .info{
+        position: relative;
+        font-size: 13px;
+    }
+    .line{
+    }
+    .combo{
+        .key{
+            display: block;
+        }
+        .value{
+            display: block;
+        }
+    }
+    .act{
+        margin-top: 4px;
+        background: #f0f0ee;
+        padding: 4px 8px;
+        .value{
+            float: right;
+        }
+    }
+    .key{
+        display: inline-block;
+    }
+    .value{
+        display: inline-block;
+    }
+    .price{
+        display: inline-block;
+        color: $price;
+    }
+    .fa-times{
+        position: absolute;
+        right: 8PX;
+        top: 8px;
+        color: $light_gray;
+    }
+    .block{
+        margin: 0 8px;
+        background: $background2;
+    }
+    .end{
+        margin: 0 8px;
+        background: $ad_yellow;
+        padding: 8px;
+        font-size: 13px;
+        .line{
+            margin-bottom: 8px;
+            @include clearfix;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        .value{
+            float: right;
+        }
+    }
+    .actions{
+        padding: 16px 8px;
+    }
+    .quantity{
+        float: right;
+        vertical-align: bottom;
+    }
+    .quantity-input {
+        height: 32px;
+        line-height: 32px;
+        border: 1px solid #e2e0e0;
+        border-left: none;
+        border-right: none;
+    }
+}
+.site-cart-empty{
+    padding: 8px;
+    text-align: center;
+    line-height: 1.5;
+    .container{
+        padding: 16px 8px 8px;
+        background: $background2;
+        border: 1px solid $border;
+    }
+    .button{
+        margin-top: 16px;
+    }
+}

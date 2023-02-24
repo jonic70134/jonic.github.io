@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox shopping cart</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/c/css/vendor/font-awesome.min.css" rel="stylesheet">
+<link href="assets/c/css/vendor/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<link href="assets/c/css/common.css" rel="stylesheet" type="text/css">
+<link href="assets/c/css/vendor/intlTelInput.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="assets/c/js/vendor/html5.js"></script>
+<script src="assets/c/js/ie.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/c/css/ie.css">
+<![endif]--></head>
+<body>
+<div class="l-container">
+    <!-- banner -->
+    
+    <div class="banner"><a href=""><img src="http://placehold.it/1100x60" alt="廣告詞廣告詞廣告詞"></a></div>
+    
+    <!-- header  -->
+    <header class="l-header">
+        <div class="logo"><a href="http://www.asap.com.tw/" class="icon-asap" title="返回ASAP首頁"><img src="assets/c/img/asap-logo.png" alt="ASAP閃電購物網"></a></div>
+        <a href="javascript:history.back()" class="t-back">回上一頁</a>
+        
+        
+        <dl class="md-annoucement">
+            
+            <dd>Credit Card Center system maintenance, credit card checkout again temporarily unavailable <a href="#annouce1" class="go-popup">...more</a></dd>
+            
+        </dl>
+        
+        <article id="annouce1" class="md-annouce-detail md-dialog">
+            <div class="t-title">Credit Card Center system maintenance 1</div>
+            <div class="t-date">2015/01/30 12:59:59</div>
+            <div class="t-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet ex viverra, scelerisque eros et, fermentum arcu. Integer aliquet, dolor ac cursus semper, elit sapien elementum velit, ut molestie erat nibh at dui. Aliquam commodo bibendum libero nec dignissim. Maecenas ut placerat nisi, at lacinia lorem.</div>
+            <div class="md-form-btn">
+                <button class="btn-cancel" style="display:inline-block;" tabindex="1" onclick="$.fancybox.close();">關閉</button>
+            </div>
+        </article>
+        
+        
+    </header>
+    <!--header /--><div class="t-cart-title">確認訂購資訊<button class="btn-expand-list" data-expand-text="看購物清單" data-merge-text="收起購物清單">看購物清單</button></div>
+<!-- product list -->
+<div class="md-product-list in-payment l-card">
+    <div class="row row-liner row-head">
+        <h3 class="col-name">商品名稱</h3>
+        <ul class="col-content">
+            <li class="col-subtotal">小計</li>
+            <li class="col-unitprice">單價</li>
+            <li class="col-quantity">數量</li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-image"><a href="" target="_blank" class="img-product"><img src="http://placehold.it/60x60/f1f1f1/666666" alt="YAMASAKI 山崎 優賞16吋遙控型涼風立扇"></a></div>
+        <h3 class="col-name">
+            <a href="" target="_blank">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</a>
+        </h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-unitprice">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-image"><a href="" target="_blank" class="img-product"><img src="http://placehold.it/60x60/f1f1f1/666666" alt="YAMASAKI 山崎 優賞16吋遙控型涼風立扇"></a></div>
+        <h3 class="col-name">
+            <a href="" target="_blank">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶) 白蘭氏 傳統雞精手提盒裝 (70g x 20瓶) 白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</a>
+        </h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-unitprice">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+        <div class="row-status">
+            <span class="tag-status is-odd">Odd size</span>
+            <span class="tag-status is-preorder">Pre-order Item(s)</span>
+            <span class="tag-status is-imported">Japan delivery</span>
+            <span class="tag-status is-uitox-delivery">uitox delivery</span>
+            <span class="tag-status is-vendor-delivery">Vendor delivery</span>
+            <span class="tag-status is-separate-delivery">Separate delivery</span>
+            <span class="tag-status is-max-purchase">Maximum purchase per account is 9</span>
+        </div>
+        <div class="row-add row-buy-discount">
+            <h3 class="col-name">買立折折扣</h3>
+            <ul class="col-content">
+                <li>-NT$100</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-image"><a href="" target="_blank" class="img-product"><img src="http://placehold.it/60x60/f1f1f1/666666" alt="YAMASAKI 山崎 優賞16吋遙控型涼風立扇"></a></div>
+        <h3 class="col-name">
+            <a href="" target="_blank">ASICS Women's GEL-Venture 4 Trail Running Shoe ASICS Women's GEL-Venture 4 Trail Running Shoe ASICS Women's GEL-Venture 4 Trail Running Shoe ASICS Women's GEL-Venture 4 Trail Running Shoe</a>
+        </h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-unitprice">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+        <div class="row-add">
+            <h3 class="col-name t-include">開學分享組合包含以下商品：</h3>
+            <h3 class="col-name"><a href="" target="_blank">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</a></h3>
+            <h3 class="col-name"><a href="" target="_blank">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</a></h3>
+            <h3 class="col-name"><a href="" target="_blank">配件 - 白蘭氏 五味子芝麻錠 20錠</a></h3>
+        </div>
+        <div class="row-status">
+            <span class="tag-status is-qualified">已符合</span>
+            <span class="t-promote"><a href="">冬季特惠滿1000折100活動</a></span>
+        </div>
+        <div class="row-add">
+            <h3 class="col-name"><a href="" target="_blank"><span class="tag-status is-odd">Odd size</span>贈品 - 白蘭氏 五味子芝麻錠 20錠</a></h3>
+            <ul class="col-content">
+                <li class="col-subtotal">NT$0</li>
+                <li class="col-unitprice">NT$0</li>
+                <li class="col-quantity">1</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-image"><a href="" target="_blank" class="img-product"><img src="http://placehold.it/60x60/f1f1f1/666666" alt="YAMASAKI 山崎 優賞16吋遙控型涼風立扇"></a></div>
+        <h3 class="col-name"><a href="" target="_blank"><span class="tag-status is-odd">Odd size</span>加購品 - 白蘭氏 五味子芝麻錠 20錠</a></h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-unitprice">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-image"><a href="" target="_blank" class="img-product"><img src="http://placehold.it/60x60/f1f1f1/666666" alt="YAMASAKI 山崎 優賞16吋遙控型涼風立扇"></a></div>
+        <h3 class="col-name"><a href="" target="_blank">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</a></h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-unitprice">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+        <div class="row-status">
+            <span class="tag-status is-not-qualified">未符合</span>
+            <span class="t-promote is-not-qualified">冬季特惠滿1000折100活動 - 再湊 $9999.99，可享有 <a href="" target="_blank">2015 Happy New Year</a></span>
+        </div>
+        <div class="row-add row-additional">
+            <h3 class="col-name"><a href="" target="_blank"><span class="tag-status is-odd">Odd size</span>加購品 - 白蘭氏 五味子芝麻錠 20錠</a></h3>
+            <ul class="col-content">
+                <li class="col-subtotal">NT$9,999,999.00</li>
+                <li class="col-unitprice">NT$9,999,999.00</li>
+                <li class="col-quantity">9999</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-image"><a href="" target="_blank" class="img-product"><img src="http://placehold.it/60x60/f1f1f1/666666" alt="YAMASAKI 山崎 優賞16吋遙控型涼風立扇"></a></div>
+        <h3 class="col-name"><a href="" target="_blank">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</a></h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-unitprice">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+        <div class="row-status">
+            <span class="tag-status is-max-purchase">此商品會員限購買 1 個</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-image"><a href="" target="_blank" class="img-product"><img src="http://placehold.it/60x60/f1f1f1/666666" alt="YAMASAKI 山崎 優賞16吋遙控型涼風立扇"></a></div>
+        <h3 class="col-name"><a href="" target="_blank">購物車加購 - 白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</a></h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-unitprice">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+    </div>
+    <div class="row row-liner row-subsummary">
+        <h3 class="col-name">Total amount of Items</h3>
+        <ul class="col-content">
+            <li>NT$999,999,999.00</li>
+        </ul>
+        <h3 class="col-name">
+            日本處理費 (運費+稅金)
+            <span class="t-exclamation go-imported-tip go-tip">
+                <div class="md-tip" id="tip">
+                    <p class="t-title">Shipping</p>
+                    <p class="t-content"><span class="t-bold">$24.01 (approx. NT$ 756)</span><br>International Priority Shipping to Taiwan via the Global Shipping Program</p>
+                    <p class="t-title">Import charges</p>
+                    <p class="t-content"><span class="t-bold">$15.35</span> (amount confirmed at checkout)<br>No additional import charges on delivery</p>
+                    <button class="btn-close" onclick="$.fancybox.close();">關閉說明</button>
+                </div>
+            </span>
+        </h3>
+        <ul class="col-content">
+            <li>NT$999.00</li>
+        </ul>
+        <h3 class="col-name">活動折扣 - 冬季特惠滿1000折100活動</h3>
+        <ul class="col-content t-minus">
+            <li>-NT$999.00</li>
+        </ul>
+        <h3 class="col-name">活動折扣 - 少女服飾滿千送百</h3>
+        <ul class="col-content t-minus">
+            <li>-NT$999.00</li>
+        </ul>
+        <h3 class="col-name">Shopping Credits</h3>
+        <ul class="col-content t-minus">
+            <li>-NT$999.00</li>
+        </ul>
+        <h3 class="col-name">Estimated Tax</h3>
+        <ul class="col-content">
+            <li>NT$999.00</li>
+        </ul>
+        <h3 class="col-name">Merchandise Fees</h3>
+        <ul class="col-content">
+            <li>NT$999.00</li>
+        </ul>
+        <h3 class="col-name">Shipping Fee <span class="t-comment">- Standard Shipping (3-7 business days)</span></h3>
+        <ul class="col-content">
+            <li>NT$999.00</li>
+        </ul>
+    </div>
+    <div class="row row-liner row-summary">
+        <h3 class="t-bold">訂單總計<span class="t-price"><span class="t-currency">NT$</span>999,999,999.00</span></h3>
+    </div>
+</div><!-- confirm infr -->
+<dl class="md-confirm-infr l-card">
+    <dd>
+        <div class="t-title">訂單金額<a href="cart.html" class="go-edit">修改訂購清單</a></div>
+        <ul>
+            <li class="t-price"><span class="t-currency">NT$</span>999,999,999.00</li>
+            <li class="t-comment">(Include PaymentCode $1)</li>
+        </ul>
+    </dd>
+    <dd>
+        <div class="t-title">收貨資訊<a href="address.html" class="go-edit">修改收貨資訊</a></div>
+        <ul>
+            <li>Alexis Eason</li>
+            <li>Manhattan Mall 901 Ave of the Americas Suite 137 New York, NY</li>
+            <li>10001-3511</li>
+            <li>United States</li>
+            <li>+886-919283600</li>
+            <li>+1 (212) 295-6120</li>
+        </ul>
+    </dd>
+    <dd>
+        <div class="t-title">付款方式<a href="payment.html" class="go-edit">修改付款方式</a></div>
+        <ul>
+            <li>信用卡分期 (3期0利率)</li>
+        </ul>
+    </dd>
+</dl>
+<!-- invoice vat -->
+<div class="md-invoice">
+    <label for="checkbox_vat"><input type="checkbox" id="checkbox_vat" class="checkbox-vat"> 發票需打統編</label>
+    <div class="md-enter-vat md-form">
+        <label for="input_vat" class="label-title">統一編號 </label>
+        <input type="number" id="input_vat" class="input-vat" size="15" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="統一編號">
+        <span class="t-comment">公司戶發票一經開立，無法換開回個人發票。發票將會隨貨寄送</span>
+    </div>
+</div>
+
+<!-- cn invoice -->
+<div class="md-invoice">
+    <label for="checkbox_cn_invoice"><input type="checkbox" id="checkbox_cn_invoice" class="checkbox-cn-invoice"> 需要开具发票</label>
+    <dl class="md-enter-cn-invoice md-form">
+        <dd>
+            <label class="label-title">发票类型 </label>
+            <label for="input_invoice_personal"><input type="radio" id="input_invoice_personal" name="input_invoice_type"> 个人</label>
+            <label for="input_invoice_personal"><input type="radio" id="input_invoice_group" name="input_invoice_type" checked> 单位</label>
+        </dd>
+        <dd>
+            <label for="input_cn_invoice_title" class="label-title">发票抬头 </label>
+            <input type="text" id="input_cn_invoice_title" size="20" placeholder="发票抬头">
+            <span class="t-comment">发票金额为现金支付的金额 (扣除代金券、返利金额等)</span>
+        </dd>
+    </dl>
+</div>
+<!-- agreement -->
+<dl class="md-agreement">
+    <dd><label for="checkbox_agree_newsletter"><input type="checkbox" id="checkbox_agree_newsletter"> Subscribe newsletter</label></dd>
+    <dd><label for="checkbox_agree_custom"><input type="checkbox" id="checkbox_agree_custom"> Custom policy</label></dd>
+</dl>
+<!-- button -->
+<dl class="md-payment-buttons">
+    <dd class="t-infr">確定結帳後將成立訂單，請確認資訊是否正確</dd>
+    <dd class="t-check"><label for="checkbox_agree_policy"><input type="checkbox" id="checkbox_agree_policy"> I read and accept xxxx <a href="" target="_blank">Terms &amp; Conditions of Sale</a> and <a href="" target="_blank">Privacy Policy</a></label></dd>
+    <dd><button class="btn-payment btn-submit go-popup" href="#authorization" onclick="authorizeComplite();">Submit</button></dd>
+</dl>
+<!-- credit card icon -->
+<div class="credit-card-icon"><span class="icon-visaelectron"></span><span class="icon-maestro"></span><span class="icon-forbrugsforeningen"></span><span class="icon-dankort"></span><span class="icon-visa"></span><span class="icon-mastercard"></span><span class="icon-amex"></span><span class="icon-dinersclub"></span><span class="icon-discover"></span><span class="icon-unionpay"></span><span class="icon-jcb"></span></div>
+<dl class="md-credit-card-notice">
+    <dt>信用卡資訊: 採用SSL 128 bits安全加密後傳送至發卡銀行進行驗證</dt>
+    <dd>為確保網路交易安全，您同意本公司就此筆交易向發卡銀行、收單行及持卡人核對是否屬實；您所填寫的姓名、電話資料，亦將於核對完成後刪除。<br>若您同意以上所約定的付款程序，請按「確認送出」進行程序。</li>
+    <dd>為確保交易安全，本公司會將上述資料向發卡銀行及持卡人照會，如有冒用他人信用卡交易者，經查獲必移送法辦。</li>
+</dl>
+<!-- authorization -->
+<div id="authorization" class="md-authorization md-dialog">
+    <div class="md-animation"></div>
+    <p class="t-description">授權中<br>請勿關閉視窗...</p>
+</div>	<!-- footer -->
+	<footer class="l-footer">
+		<div class="service">ASAP 使用<span class="icon-uitox-s"></span>金物流服務</div>
+	    	<div class="copyright">
+	       	&copy; <?php echo date('Y'); ?> <a href="http://www.uitox.com/" target="_blank">uitox Corporation</a> or its affiliates.
+	       	<a href="privacy.html" target="_blank" class="go-privacy">隱私權政策</a>
+		</div>
+	</footer></div>
+<a class="go-top" title="Back to top"></a>
+<script src="assets/c/js/vendor/jquery.min.js" ></script>
+<script src="assets/c/js/vendor/jquery.fancybox.pack.js"></script>
+<script src="assets/c/js/common.js"></script>
+<script src="assets/c/js/vendor/intlTelInput.min.js"></script>
+<script src="assets/c/js/init_intlTelInput.js"></script>
+<script src="assets/c/js/p_confirm.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+.site-search{
+	float: right;
+    height: 34px;
+    margin: 22px 40px 0 0;
+    width: 500px;
+    background: $search_bk;
+    position: relative;
+    .form{
+        font-size: 0;
+    }
+    .input-search{
+        border: 1px solid $search_border;
+        padding-left: 10px;
+        margin: 0;
+        width: 80%;
+        height: 34px;
+        background: $search_bk;
+        color: $search_text;
+        font-size: 12px;
+        &:focus{
+            color: black;
+        }
+    }
+    .btn-submit{
+        background: $search_btn;
+        border: none;
+        margin: 0;
+        height: 34px;
+        vertical-align: top;
+        cursor: pointer;
+    }
+    .recommend{
+        font-size: 0.815em;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        display: none;
+        a{
+            width: 20%;
+            display: inline-block;
+            margin-left: -4px;
+            text-align: left;
+            text-decoration: underline;
+            color: $recommend_link;
+        }
+    }
+}
+@include RWD(pad-mobile) {
+.site-search{
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: auto;
+    padding: 0;
+    width: 100%;
+    background: #fff;
+    display: none;
+    .search-btn{
+        position: absolute;
+        z-index: 10;
+        right: 10px;
+        top: 10px;
+        display: block;
+    }
+    .input-search {
+        height: 40px;
+        margin: 0;
+        width: 100%;
+        background: #fff;
+        position: relative;
+        border-bottom: 1px solid $border;
+    }
+    .recommend{
+        padding-left: 15px;
+        margin-bottom: 10px;
+        a{
+            width: auto;
+            margin-right: 10px;
+            color: $recommend_link;
+        }
+    }
+}
+}

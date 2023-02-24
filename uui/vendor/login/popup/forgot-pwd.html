@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox vendor</title>
+<link href="/css/plugin/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/css/login.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="/js/lib/html5.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ie.css">
+<![endif]--></head>
+<body>
+<div class="login-popup-content">
+  <h1 class="title"><i class="fa fa-question-circle"></i>忘記密碼</h1>
+  <p class="comment forgot-msg">請輸入您申請帳戶的資料，我們將會協助您取回密碼！</p>
+  <dl class="form-element">
+    <dd><label>您的平台編號</label><input type="text" class="input-customer-num" placeholder="請輸入平台編號"></dd>
+    <dd><label>帳號</label><input type="text" placeholder="請輸入您的帳號"></dd>
+    <dd><label>E-mail</label><input type="text" placeholder="請輸入您的e-mail"></dd>
+    <dd><label>請輸入右方數字</label><input type="text" class="input-captcha"><img src="/img/captcha.gif" class="img-captcha"><a href="" class="reload-captcha"><i class="fa fa-refresh"></i>重新產生</a></dd>
+    <dd><input type="text" class="hidden-captcha"></dd>
+  </dl>
+  <div class="login-button">
+    <button class="btn-cancel" onclick="parent.$.fancybox.close();"><i class="fa fa-times"></i>取消</button>
+    <button class="btn-submit" onclick="alert('密碼重設信已寄到您的e-mail，請儘快登入並變更您的密碼！');parent.$.fancybox.close();"><i class="fa fa-check"></i>取回密碼</button>
+  </div>
+</div><script src="/js/lib/jquery-1.9.1.js" ></script>
+<script src="/js/lib/bootstrap-dropdown.js"></script>
+<script src="/js/nav-action.js"></script>
+</body>
+</html>

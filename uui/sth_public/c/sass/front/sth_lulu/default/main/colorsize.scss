@@ -1,0 +1,239 @@
+@import "../../../../define/__init.scss";
+@import "../../../module_item/_rwd_colorsize.scss";
+
+.item-main{
+	line-height: 1.9;
+	font-size: 14px;
+	@include clearfix;
+	.photo{
+		position: relative;
+		overflow: hidden;
+	}
+	.info{
+		float: left;
+		h1{
+			background: #0d0d0d;
+		}
+	}
+	h1.name{
+		float: left;
+		min-height: 30px;
+		word-wrap:break-word;
+		text-align: left;
+	}
+	.hlight{
+		-webkit-box-shadow: 0px 0px 1px 2px #e00517;
+		-moz-box-shadow: 0px 0px 1px 2px #e00517;
+		box-shadow: 0px 0px 1px 2px #e00517;
+	}
+	.line{
+		padding: 5px 0 5px 5px;
+		text-align: left;
+		@include clearfix-ab;
+	}
+	.key{
+		float: left;
+		vertical-align: top;
+		word-wrap: break-word;
+		text-align: justify;
+		text-justify: inter-ideograph;
+		width: 100px;
+		font-size: 1em;
+	}
+	.value{
+		display: block;
+		margin-bottom: 10px;
+		float:left;
+		position:relative;
+		z-index: 0;
+		&+.value{
+			margin-left: 100px;
+		}
+		>li{
+			padding: 9px 8px;
+			margin: 0 8px 8px 0;
+			cursor: pointer;
+			// min-width: 32px;
+			height: 32px;
+			border: 1px solid $light_gray;
+			display: inline-block;
+			font-size: 12px;
+			line-height: 14px;
+			vertical-align: top;
+			position:relative;
+			z-index: 0;
+			&.img{
+				padding: 1px;
+			}
+			img{
+				height: 100%;
+				display:block;
+				width:28px;
+				text-align: center;
+				position:relative;
+				z-index: 0;
+			}
+		}
+		.active{
+			position: relative;
+			border: 1px solid $primary;
+			color: $primary;
+			z-index: 0;
+			&:after{
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				content: '';
+				border-style: solid;
+				border-width: 0 0 15px 15px;
+				border-color: transparent transparent $primary transparent;
+				z-index:10;
+	        }
+			.type{
+				padding: 3px;
+			}
+			.fa{
+				position: absolute;
+				right: -1px;
+				bottom: -2px;
+				color: white;
+				font-size: 12px;
+				z-index: 99;
+				-ms-transform: scale(0.8, 0.8); /* IE 9 */
+				-webkit-transform: scale(0.8, 0.8); /* Chrome, Safari, Opera */
+				transform: scale(0.8, 0.8);
+			}
+		}
+		.disabled{
+			position: relative;
+			cursor: not-allowed;
+			border: 1px dashed $light_gray;
+			.fa{
+				position: absolute;
+				right: 2px;
+				bottom: 0px;
+				color: $light_gray;
+				font-size: 16px;
+				z-index: 3;
+			}
+		}
+		.item{
+			display: block;
+			margin-right: 15px;
+		}
+		.name{
+			font-size: 13px;
+			margin-right: 5px;
+			a{
+				margin-right:5px;
+			}
+		}
+	}
+	.label{
+		display: inline-block;
+		//color: $text;
+		font-size: 14px;
+		line-height: 1.9;
+	}
+	.pick{
+		margin:0 0 0 0;
+	}
+	.link{
+		font-size: 14px;
+		//color: $text;
+		&:hover{
+			//color: $primary;
+		}
+	}
+	.buy{
+		display: inline-block;
+	}
+	del{
+		font-size: 10px;
+		margin-right: 5px;
+	}
+	.discount-mark{
+		display: inline-block;
+		color: white;
+		font-size: 12px;
+		font-weight: bold;
+		margin-right: 3px;
+		margin-bottom: 4px;
+		padding: 1px 5px;
+		background: $price;
+	}
+	.currency{
+		display: inline-block;
+		vertical-align: bottom;
+		margin-bottom: 7px;
+	}
+	.price{
+		line-height: 1.45;
+		//color: $price;
+		display: inline-block;
+		vertical-align: bottom;
+	}
+	.quantity{
+		vertical-align: bottom;
+		margin-right: 10px;
+		margin-bottom: 5px;
+	}
+	.button{
+		margin-bottom: 5px;
+	}
+	.arrival-info-btn{
+		width: 100%;
+		position: relative;
+		clear: both;
+		@include clearfix;
+	}
+	.btn-arrival{
+		float: right;
+		margin-top: 5px;
+		padding: 3px 13px;
+		display: block;
+	}
+	.highlight{
+		clear: both;
+		margin-top: 5px;
+		font-size: 12px;
+		text-align: right;
+		span{
+			margin-left: 15px;
+		}
+	}
+	.payinfo{		
+		width: 100%;
+		margin: 10px 0 10px;
+		//padding-left: 25px;
+		@include clearfix;
+		a:hover{
+			color: $text_hover;
+		}
+	}
+	.other-pay{
+		margin-top: 5px;
+		@include clearfix;
+	}
+	.icon-seven{
+		float: left;
+		&::before{
+			margin-right: 6px;
+			top: -2px;
+		}
+	}
+	.icon-fami{
+		float: left;
+		margin-right: 6px;
+		margin-top: -2px;
+	}
+	.pay{
+		font-size: 12px;
+		i{
+			margin-right: 3px;
+		}
+		a{
+			margin-left: 10px;
+		}
+	}
+}

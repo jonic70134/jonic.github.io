@@ -1,0 +1,394 @@
+@charset "utf-8";
+
+#wrapper { height: auto; margin: 62px 10px 0 50px; }
+#container { width: 98%; height: auto; margin: 10px auto 0; color: #333; }
+
+/* 麵包屑*/
+.breadcrumb_top .select-site{position:absolute;top:60px;right:60px;font-size:.9em;}
+.breadcrumb_top .select-site button{margin:0 3px;}
+.breadcrumb_top .select-site button[disable="disable"]{background-color:#ddd;}
+.breadcrumb { list-style: none; }
+.breadcrumb > li { display: inline-block; }
+.breadcrumb > li > a { color: #08c; }
+.breadcrumb > li > .divider { padding: 0 5px; color: #999; }
+.breadcrumb > li > a:hover { color: #333; }
+.breadcrumb > .active { color: #327e04; font-size: 1.2em; }
+.breadcrumb > .link { color: #08c; }
+
+/*商品列表CSS
+   --------------Author：jonic  -- jonic@uitox.com ------------------------------------------------------------*/
+ .add-product-data .btn {
+    padding:5px 10px;
+    font-size:.9em
+}
+a.linkbtn{
+    padding: 5px 10px;
+    font-size: .9em;
+    vertical-align: middle;
+    color: #fff;
+    display: inline-block;
+    font-family: "微軟正黑體", "Microsoft Jhenghei", "Heiti TC", "LiHei Pro", sans-serif;
+    background: #0068b6;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+button.btn-submit, button.btn-submit:hover {
+    padding: 2px 10px;
+    background-color: #e00;
+    vertical-align: middle;
+    font-size: 1.1em;
+}
+button.btn-cancel, button.btn-cancel:hover {
+    background-color: #9aa9b3;
+}
+button.btn-back-prev{
+    font-size: .9em;
+    padding:5px 15px;
+    background-color: #9aa9b3;
+}
+button.btn-back-prev:hover{
+    background-color: #7d919d;
+}
+/*-- html star--*/
+/* body {
+    background-color:transparent
+}
+*/.productlist-main {
+    width:100%;
+    height:auto;
+    margin:10px auto;
+    padding-bottom:50px;
+}
+.productlist-main a {
+    display:block;
+    max-height:60px;
+    text-decoration:underline;
+    line-height:150%;
+    /* white-space:normal; 
+    position: relative;*/
+    word-break: break-word;
+    word-wrap: break-word;
+}
+/*查詢*/
+ .productlist-main .commodity-search {
+    padding:10px;
+    background:#eaefe5;
+}
+ .productlist-main .commodity-search .btn-info{
+    font-size:1em;
+    margin:5px 0;
+    padding:3px 10px;
+    border: none;
+    background-color: #e00
+ }
+  .productlist-main .commodity-search .btn-info:hover{
+    font-size:1em;
+    margin:5px 0;
+    padding:3px 10px;
+    background-color: #b00
+ }
+.productlist-main .nextinput .search-input {
+    width:300px;
+    padding:3px 5px;
+}
+.productlist-main .search-detail {
+    display:none;
+    position:relative;
+    margin-top:5px;
+    padding:10px 0;
+    white-space:nowrap;
+}
+/*.productlist-main .search-detail::before {
+    position:absolute;
+    top:-10px;
+    left:420px;
+    content:"\0020";
+    width:0;
+    height:0;
+    border-style:solid;
+    border-width:0 10px 10px 10px;
+    border-color:transparent transparent #0068b6 transparent;
+    z-index:0
+}*/
+.productlist-main .search-detail label {
+    display:inline-block;
+    width:100px;
+    text-align:right
+}
+.productlist-main .search-detail label.searchdetail-check {
+    width:auto;
+}
+.productlist-main .special::before {
+    left:645px
+}
+/*功能鍵*/
+ .productlist-main .productlist-func {
+    float:left;
+    max-width:800px;
+    margin:0 0 5px;
+    padding:5px 0 0;
+}
+.productlist-main .productlist-func .btn-info{
+    font-size: 1.1em;
+    margin:2px 0;
+    padding:5px 10px;
+}
+.productlist-main .productlist-func .btn-trash {
+    background-color:#888;
+}
+.productlist-main .productlist-func .btn-trash:hover {
+    background-color:#555;
+}
+.productlist-main .productlist-func .btn-edit {
+    background-color:#4d9900;
+}
+.productlist-main .productlist-func .btn-edit:hover {
+    background-color:#360;
+}
+.productlist-main .productlist-func a, .productlist-main .productlist-func form, .add-product-data .send form {
+    display:inline-block;
+    vertical-align:middle;
+}
+.pages {
+    margin:10px;
+    text-align:center;
+}
+.pages a, .pages span {
+    margin:3px;
+    padding:1px 5px;
+}
+.pages a {
+    color:#333;
+    border:#ccc 1px solid;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    border-radius:3px;
+    vertical-align:middle;
+}
+.pages a.prev-page:before {
+    content:"\00ab";
+    margin-right:3px;
+}
+.pages a.next-page:after {
+    content:"\00bb";
+    margin-left:3px;
+}
+.pages a:hover {
+    color:#fff;
+    background:#999;
+    border-color:#999;
+}
+.pages a.disable {
+    color:#ccc;
+    background:none;
+    border-color:#ccc;
+}
+/*分頁*/
+ .productlist-main .commodity-tab .pages {
+    float:right;
+    margin:5px 0 0;
+}
+.productlist-main .commodity-tab .pages a, .productlist-main .commodity-tab .pages span {
+    display:inline-block;
+}
+/*table*/
+ .productlist-main .commodity-tab {
+    padding:0
+}
+.productlist-main .commodity-tab .tableCon {
+    width:100%;
+    display:inline-block;
+    font-size:0;
+    white-space:nowrap;
+}
+.productlist-main .commodity-tab .special{
+    white-space: normal;
+}
+.productlist-main .table-left, .productlist-main .table-right {
+    display:inline-block;
+    vertical-align:top
+}
+.productlist-main .table-freeze {
+    width:100%;
+}
+.productlist-main .table-rightcol {
+    width:100%
+}
+.productlist-main .table-left {
+    width:30%;
+}
+.productlist-main .table-right {
+    width:70%;
+    overflow-x:scroll;
+}
+.productlist-main.show_verify_cate .table-left{
+    width:15%;
+}
+.productlist-main.show_verify_cate .table-right{
+    width:85%;
+}
+.productlist-main .commodity-tab td, .productlist-main .commodity-tab th {
+    min-width:30px;
+    height:95px;
+    max-height:95px;
+    padding:3px;
+    /*position:relative;*/
+    vertical-align:middle;
+    text-align:center;
+    font-size:13px;
+    line-height:150%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.productlist-main .commodity-tab th {
+    height:45px;
+    ;
+    font-weight:700;
+    border:1px solid #fff;
+    border-bottom-color: #7A98A2;
+    border-right-color:#fff;
+}
+.productlist-main .commodity-tab td {
+    border-bottom: #d4dbdf 1px solid;
+    border-right: #fff 1px solid;
+}
+.productlist-main .commodity-tab thead {
+    min-width:50px;
+    color:#333;
+    font-size:13px;
+    background:#b2deee;
+}
+.productlist-main .commodity-tab tr:nth-child(even) {
+    background: #f1f3f5;
+}
+.productlist-main .commodity-tab .prod-check {
+    width:20px;
+    max-width:20px;
+}
+.productlist-main .commodity-tab .prod-pic, .productlist-main .commodity-tab .prod-onoff {
+    width:60px;
+}
+.productlist-main .commodity-tab .prod-pic a {
+    position: relative;
+}
+.productlist-main .commodity-tab .prod-name {
+    width:150px;
+}
+.productlist-main .commodity-tab .prod-name .limitname{
+    height:85px;
+    overflow: hidden;
+    word-break:break-all;
+    white-space: normal;
+    line-height: 160%;
+}
+.productlist-main .commodity-tab .prod-name .limitname p{
+    width: 175px;
+    height: 85px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.productlist-main .commodity-tab .prod-color {
+    width:80px;
+}
+.productlist-main .commodity-tab .prod-color .limitname{
+    height:85px;
+    overflow: hidden;
+    word-break:break-all;
+    white-space: normal;
+    line-height: 160%;
+}
+.productlist-main .commodity-tab .prod-color .limitname p{
+    width: 85px;
+    height: 85px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.productlist-main .commodity-tab .prod-size {
+    width:80px;
+}
+.productlist-main .commodity-tab .prod-size .limitname{
+    height:85px;
+    overflow: hidden;
+    word-break:break-all;
+    white-space: normal;
+    line-height: 160%;
+}
+.productlist-main .commodity-tab .prod-size .limitname p{
+    width: 85px;
+    height: 85px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.productlist-main .commodity-tab .combine {
+    color:#f60;
+    font-weight:700;
+}
+.productlist-main .commodity-tab .listtabpic {
+    width:50px;
+    height:50px;
+    margin:0 auto;
+    overflow:hidden;
+    background-size:cover;
+}
+.productlist-main .commodity-tab .edit {
+    display:none;
+    width:50px;
+    height:20px;
+    left:5px;
+    bottom:0;
+    text-align:center;
+    position:absolute;
+    background-color:#333;
+    opacity:.8
+}
+.productlist-main .commodity-tab #editPic:hover .edit {
+    display:block;
+    color:#fff;
+}
+.productlist-main .commodity-tab .editPic:hover .edit {
+    display:block;
+    width:100%;
+    color:#fff;
+}
+.productlist-main .tableCon .delSm {
+    color:#e00;
+}
+.productlist-main .commodity-tab .table-special {
+    width:100%;
+}
+
+.ui-datepicker-title select {
+    color: #666;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+display: inline-block;
+width: 14px;
+height: 14px;
+margin-top: 1px;
+line-height: 14px;
+vertical-align: text-top;
+background-image: url("/c/img/vendor/glyphicons-halflings.png");
+background-position: 14px 14px;
+background-repeat: no-repeat;
+}
+
+.icon-chevron-down {
+background-position: -313px -119px;
+}
+
+.icon-chevron-up {
+background-position: -288px -120px;
+}

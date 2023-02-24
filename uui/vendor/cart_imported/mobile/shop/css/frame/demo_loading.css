@@ -1,0 +1,62 @@
+/*
+Syntax error: Undefined variable: "$red".
+        on line 15 of C:/xampp/htdocs/uitox/feiniu/assets/sass/mobile/frame/demo_loading.scss
+
+Backtrace:
+C:/xampp/htdocs/uitox/feiniu/assets/sass/mobile/frame/demo_loading.scss:15
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/script/variable.rb:49:in `_perform'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/script/node.rb:40:in `perform'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:298:in `visit_prop'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:320:in `visit_rule'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:128:in `visit_root'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/tree/root_node.rb:20:in `render'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/engine.rb:315:in `_render'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/../sass/engine.rb:262:in `render'
+file:/C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/fire-app.jar!/compass_patch.rb:168:in `compile'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+file:/C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/fire-app.jar!/compass_patch.rb:167:in `compile'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+file:/C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/fire-app.jar!/compass_patch.rb:166:in `compile'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
+org/jruby/RubyArray.java:1620:in `each'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/backport_from_0.13/lib/compass/watcher/compiler.rb:25:in `compile'
+org/jruby/RubyKernel.java:2105:in `send'
+(__FORWARDABLE__):3:in `compile'
+file:/C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/fire-app.jar!/app_watcher.rb:42:in `watch!'
+file:/C:/Users/kenblue/Dropbox/software/fire.app.windows.v1.12/fire.app/fire-app.jar!/ui/tray.rb:514:in `watch'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:224:in `call'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  /*content: "Syntax error: Undefined variable: \"$red\".\A         on line 15 of C:/xampp/htdocs/uitox/feiniu/assets/sass/mobile/frame/demo_loading.scss"; */}

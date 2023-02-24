@@ -1,0 +1,113 @@
+//-----------------rwd_header_002
+//_nav_menu.scss
+.f-cart,.icon-account,.icon-search{
+    color:$icon_color;
+}
+@include RWD(desktop-all) {
+.nav-menu{
+    background: $primary;
+    li a:hover{
+        background: $hover_bk;
+        color: $hover_text;
+    }
+    .menu-one{
+        >li{
+            >a{
+                color: $nav_text;
+                &:hover{
+                    background: $hover_bk;
+                    color: $hover_text;
+                    border-color: $nav_border;  
+                    border-bottom-color: $hover_bk;
+                }
+                &.active{
+                    color: $active_text;
+                    background: $active_bk;
+                }
+            }
+        }
+    }
+    .menu-two{
+        border-color: $nav_border;
+        >li{
+            >a{
+                background: $nav_bk;
+                &:hover, &.active{
+                    background: $hover_bk;
+                    color: $hover_text;
+                }
+            }
+        }
+    }
+    .menu-three{
+        border-color: $nav_border;
+        >li{
+            a{
+                background: $nav_bk;
+                &:hover{
+                    background: $hover_bk;
+                    color: $hover_text;
+                }
+            }
+        }
+    }
+}
+}
+//_nav_user.scss
+.nav-user{
+    .cart-btn{
+        .count{
+            color: $count;
+            background: $count_bg;
+        }
+    }    
+    .account-item{
+        border-color: $light_gray;
+        li{
+            border-bottom-color: $light_gray;
+            a{
+                color: $gray;
+                &:hover{
+                    background: $hover_bk;
+                    color: $hover_text;
+                }
+            }
+        }
+    }
+}
+
+//_site_search.scss
+.site-search{
+    .form{
+        border-color: $border;
+        background: $search_bk;
+    }
+    .input-search{
+        background: $search_bk;
+        color: $text;
+    }
+    .btn-submit{
+        background: $search_btn;
+    }   
+    .recommend{        
+        a{
+            color: $recommend_link;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
+@include RWD(pad-mobile) {
+.site-search{    
+    .input-search {
+        border-bottom-color: $border;
+    }
+    .recommend{
+        a{
+            color: $recommend_link;
+        }
+    }
+}
+}
+//-----------------rwd_header_002 END

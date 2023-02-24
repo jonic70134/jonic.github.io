@@ -1,0 +1,21 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_stayreal.scss";
+
+@import "../../../module_item/_rwd_colorsize.scss";
+
+body{
+	background: #222!important;
+}
+.item-main{
+	.info{
+		h1{
+			font-size: 18px;
+			background: #ff0077;
+			padding: 6px;
+			line-height: 1.4;
+		}
+	}
+}
+.item-buy {
+	background: #222!important;
+}

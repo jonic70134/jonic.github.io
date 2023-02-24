@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* rwd_index_004 開始 */
+.rwd_index_004 {
+  zoom: 1;
+}
+.rwd_index_004:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.rwd_index_004 .item {
+  width: 25%;
+  padding: 0 42.5px;
+  float: left;
+}
+.rwd_index_004 .photo {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.rwd_index_004 .info {
+  clear: left;
+}
+.rwd_index_004 .feature {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  height: 60px;
+  overflow: hidden;
+}
+.rwd_index_004 del {
+  color: #6c6c6c;
+}
+.rwd_index_004 .currency {
+  font-size: 12px;
+}
+.rwd_index_004 .price {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+@media (min-width: 1000px) {
+  .rwd_index_004 .item {
+    padding-bottom: 20px;
+  }
+  .rwd_index_004 .info {
+    padding: 0 15px;
+  }
+  .rwd_index_004 .feature li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 999px) {
+  .rwd_index_004 {
+    padding: 0 1%;
+  }
+  .rwd_index_004 .item {
+    padding: 1% 0 3%;
+    width: 100%;
+    margin: 0;
+    display: table;
+  }
+  .rwd_index_004 .photo {
+    display: table-cell;
+  }
+  .rwd_index_004 .info {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    padding: 0 10px;
+  }
+  .rwd_index_004 .feature {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+/* rwd_index_004 結束 */

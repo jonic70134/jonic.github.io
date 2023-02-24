@@ -1,0 +1,181 @@
+//homepage modify: edit ad
+.edit-ad {
+	background: lighten($main-lighten-color,8);
+	border: $main-grey-color 1px solid;
+	@include border-radius(3px);
+	& + & {
+		margin-top: 15px;
+	}
+	.edit-ad-preview {
+		width: 150px;
+		padding: 0 10px 0 20px;
+		position: relative;
+		float: left;
+		&:before {
+			content: "\0020";
+			top: -60px;
+			left: 0;
+			border: transparent 40px solid;
+			border-left-color: darken($main-grey-color,10);
+			position: absolute;
+		}
+		.edit-ad-num {
+			color: lighten($main-lighten-color,10);
+			font-size: 1.6em;
+			font-weight: bold;
+			font-family: Tahoma,Arial,serif;
+			top: -22px;
+			left: 5px;
+			position: absolute;
+		}
+		.edit-ad-img {
+			width: 150px;
+			max-width: 150px;
+			height: 150px;
+			max-height: 150px;
+			border: #ddd 1px solid;
+			background: #fff;
+			text-align: center;
+			vertical-align: middle;
+			display: table-cell;
+			img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+	}
+	.edit-ad-content {
+		float: left;
+		input[type="text"] {
+			margin: 3px 5px;
+		}
+		&.item-detail dd {
+			margin-bottom: 5px;
+		}
+		.item-detail-name {
+			color: mix($main-blue-color,#999,50);
+			margin: 0 7px;
+			&:after {
+				content: "|";
+				color: #ccc;
+				margin-left: 5px;
+			}
+		}
+		a {
+			color: #333;
+			&:hover {
+				color: mix($main-green-color,#fff,70);
+			}
+			&:after {
+				@include list-arrow(mix($main-green-color,#fff,40),1em,0);
+				content: "\f08e";
+				color: mix($main-green-color,#fff,40);
+			    margin-left: 5px;
+			    position: static;
+			}
+		}
+	}
+	.input-ad-url {
+		width: 300px;
+	}
+	.input-ad-schedule {
+		width: 100px;
+	}
+	.btn-sync-item {
+		font-size: 0.9em;
+		margin: 0 5px;
+		padding: 5px 10px;
+		@include btn-color($main-color);
+	}
+	.btn-clear-ad {
+		font-size: 0.9em;
+		right: 15px;
+		bottom: 10px;
+		padding: 5px 10px;
+		@include btn-color(mix($main-color,#fff,50));
+		position: absolute;
+	}
+}
+.edit-block-name {
+	margin-top: -10px;
+	padding: 10px 0 20px;
+	background: none !important;
+	.input-text {
+		width: 200px;
+		margin: 0 5px;
+	}
+	.btn-clear-ad {
+		font-size: 0.9em;
+		right: 15px;
+		bottom: 20px;
+		padding: 5px 10px;
+		@include btn-color(mix($main-color,#fff,50));
+		position: absolute;
+	}
+	.btn-action {
+		font-size: 0.9em;
+		padding: 5px 10px;
+		@include btn-color(mix($main-color,#fff,50));
+		&.btn-green {
+			@include btn-color(mix($main-green-color,#fff,40));
+		}
+	}
+}
+button.btn-block-infr {
+	font-size: 0.9em;
+	top: 20px;
+	right: 30px;
+	padding: 3px 10px;
+	@include btn-color(mix($main-red-color,#fff,40));
+	position: absolute;
+	&:hover {
+		@include border-left-radius(0);
+		@include box-shadow(none);
+	}
+}
+.edit-block-infr {
+	top: 10px;
+	right: 110px;
+	padding: 10px;
+	background: #fff;
+	border: darken(mix($main-red-color,#fff,40),10) 3px solid;
+	@include border-radius(10px);
+	@include box-shadow(rgba(black,0.2) -3px 3px 5px);
+	position: absolute;
+	z-index: 10;
+	display: none;
+	&:before {
+		content: "\0020";
+		top: 18px;
+		right: 0;
+		margin-top: -10px;
+		border: transparent 10px solid;
+		border-right-color: darken(mix($main-red-color,#fff,40),10);
+		position: absolute;
+	}
+	.add-block {
+		width: auto;
+		float: none;
+	}
+}
+button.btn-add-item {
+	font-size: 0.9em;
+	margin-top: 10px;
+	padding: 5px 20px;
+	@include btn-color(mix($main-green-color,#fff,40));
+	float: right;
+	@include clearfix;
+}
+.edit-nav {
+	padding: 20px;
+	dd {
+		display: inline-block;
+	}
+}
+.edit-title {
+	padding: 20px;
+	background: none !important;
+	dd {
+		margin: 5px 0;
+	}
+}

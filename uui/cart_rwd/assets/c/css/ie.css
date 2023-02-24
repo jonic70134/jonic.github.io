@@ -1,0 +1,177 @@
+[class*="btn-"],
+.t-comment,
+.md-form > dt, .md-form > dd,
+.md-annoucement,
+.l-footer .go-privacy,
+.md-product-list .row-status .t-infr,
+.md-product-list .row-shipping .col-content.is-show,
+.md-product-list .col-name,
+.md-product-list .col-content,
+.tag-status,
+.md-additional .md-addition-products > dd,
+.md-add-address .md-form .label-title,
+.md-user-address,
+.md-payment-buttons .t-infr,
+.md-payment-buttons > dd,
+.md-installment dd .go-bank,
+.md-credit-card .label-title,
+.md-credit-card .t-reward.is-show,
+.md-credit-card .credit-card-icon,
+.md-credit-card .credit-card-icon span,
+.md-confirm-infr > dd,
+.md-login .md-form .label-title,
+.t-pwd-infr, .md-pwd-check .md-pwd-bar {
+  *display: inline !important;
+  zoom: 1;
+}
+
+.md-dialog .btn-cancel:first-child {
+  display: none;
+}
+
+.input-address {
+  width: 400px;
+}
+
+.md-authorization {
+  padding: 30px 10px;
+}
+
+.md-animation {
+  display: none;
+}
+
+[class*="icon-"]:before {
+  content: "";
+}
+
+.icon-uitox-s, .icon-uitox, .credit-card-icon span {
+  background-repeat: no-repeat;
+  content: "\0020";
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  zoom: 1;
+  background-image: url("../img/icon-global.png");
+}
+
+.icon-uitox-s {
+  width: 47px;
+  height: 15px;
+  margin: 0 5px 7px;
+  vertical-align: middle;
+  background-position: 0 0;
+}
+
+.credit-card-icon span {
+  width: 35px;
+  height: 25px;
+}
+
+.icon-visa-g {
+  background-position: 0 -15px;
+}
+
+.icon-mastercard-g {
+  background-position: -35px -15px;
+}
+
+.icon-jcb-g {
+  background-position: -70px -15px;
+}
+
+.icon-unionpay-g {
+  background-position: -105px -15px;
+}
+
+.icon-visaelectron-g {
+  background-position: -140px -15px;
+}
+
+.icon-amex-g {
+  background-position: -175px -15px;
+}
+
+.icon-discover-g {
+  background-position: -210px -15px;
+}
+
+.icon-dinersclub-g {
+  background-position: -245px -15px;
+}
+
+.icon-dankort-g {
+  background-position: -280px -15px;
+}
+
+.icon-maestro-g {
+  background-position: -315px -15px;
+}
+
+.icon-forbrugsforeningen-g {
+  background-position: -350px -15px;
+}
+
+.icon-visa {
+  background-position: 0 -40px;
+}
+
+.icon-mastercard {
+  background-position: -35px -40px;
+}
+
+.icon-jcb {
+  background-position: -70px -40px;
+}
+
+.icon-unionpay {
+  background-position: -105px -40px;
+}
+
+.icon-visaelectron {
+  background-position: -140px -40px;
+}
+
+.icon-amex {
+  background-position: -175px -40px;
+}
+
+.icon-discover {
+  background-position: -210px -40px;
+}
+
+.icon-dinersclub {
+  background-position: -245px -40px;
+}
+
+.icon-dankort {
+  background-position: -280px -40px;
+}
+
+.icon-maestro {
+  background-position: -315px -40px;
+}
+
+.icon-forbrugsforeningen {
+  background-position: -350px -40px;
+}
+
+.icon-cvv {
+  background-position: 0 -65px;
+}
+
+.icon-cs-logo {
+  width: 20px;
+  height: 20px;
+  background: url("../img/cs.png") no-repeat;
+}
+.icon-cs-logo.seven {
+  background-position: 0 0;
+}
+.icon-cs-logo.ok {
+  background-position: -20px 0;
+}
+.icon-cs-logo.fami {
+  background-position: -40px 0;
+}

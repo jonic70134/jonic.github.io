@@ -1,0 +1,24 @@
+.t-cart-title {
+  color: #333;
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: center;
+}
+.t-cart-title .t-title-large {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+}
+
+.md-privacy-content {
+  padding: 20px;
+}
+@media only screen and (max-width: 568px) {
+  .md-privacy-content {
+    padding: 15px;
+  }
+}
+
+.md-form-btn button {
+  font-size: 1em;
+}

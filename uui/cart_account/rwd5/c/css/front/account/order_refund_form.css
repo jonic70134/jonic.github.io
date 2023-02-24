@@ -1,0 +1,238 @@
+.site-body {
+  padding-bottom: 0px;
+}
+
+.refund_form_001 a {
+  color: #2290c6;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  transition: 0.4s;
+}
+.refund_form_001 a:active, .refund_form_001 a.on-touch {
+  color: #7fbee5;
+}
+.refund_form_001 .order-list-block {
+  position: relative;
+  width: 100%;
+  height: auto;
+  color: #666666;
+  padding: 15px 20px;
+  margin: 10px 0;
+  top: 0px;
+  background: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 2px 1px #dddddd;
+  -moz-box-shadow: 0 1px 2px 1px #dddddd;
+  box-shadow: 0 1px 2px 1px #dddddd;
+}
+.refund_form_001 .order-list-block {
+  zoom: 1;
+}
+.refund_form_001 .order-list-block:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.refund_form_001 .title {
+  padding: 5px 15px;
+  font-weight: bold;
+  background: #2290c6;
+  color: white;
+  line-height: 180%;
+  margin: -15px -20px 15px -20px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+}
+.refund_form_001 .refund-info {
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.refund_form_001 .refund-form-content {
+  width: 80%;
+  padding: 15px 20px;
+  border: 1px solid #CDCDCD;
+  margin: 0 auto 20px auto;
+  line-height: 1.4;
+  -webkit-box-shadow: 0 1px 4px 2px #cccccc;
+  -moz-box-shadow: 0 1px 4px 2px #cccccc;
+  box-shadow: 0 1px 4px 2px #cccccc;
+}
+.refund_form_001 .refund-form-content h3 {
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  background: #0066a0;
+  padding: 5px 5px;
+  width: 100%;
+}
+.refund_form_001 .refund-form-content h2 {
+  color: #333333;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.refund_form_001 .refund-form-content h4 {
+  color: #666666;
+  font-size: 1em;
+  text-align: center;
+}
+.refund_form_001 .refund-form-content .r-form-data {
+  border: 1px solid #dddddd;
+  color: #666666;
+  padding: 15px;
+  margin: 15px 0;
+}
+.refund_form_001 .refund-form-content .r-form-data {
+  zoom: 1;
+}
+.refund_form_001 .refund-form-content .r-form-data:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.refund_form_001 .refund-form-content li {
+  float: left;
+}
+.refund_form_001 .refund-form-content .r-form-title {
+  width: 9%;
+  margin-right: 1%;
+  margin-bottom: 20px;
+  display: block;
+  font-weight: bold;
+}
+.refund_form_001 .refund-form-content .r-form-detail {
+  width: 90%;
+}
+.refund_form_001 .refund-form-content dl {
+  margin-bottom: 10px;
+  display: block;
+}
+.refund_form_001 .refund-form-content dl {
+  zoom: 1;
+}
+.refund_form_001 .refund-form-content dl:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.refund_form_001 .refund-form-content dl:last-child {
+  margin-bottom: 0;
+}
+.refund_form_001 .refund-form-content dt {
+  float: left;
+  width: 7%;
+  margin-right: 1%;
+  display: block;
+}
+.refund_form_001 .refund-form-content dd {
+  float: left;
+  width: 92%;
+}
+.refund_form_001 .refund-actions {
+  width: 100%;
+  text-align: center;
+  margin: 25px 0;
+}
+.refund_form_001 .refund-actions .button {
+  margin: 0 20px;
+}
+.refund_form_001 .refund-actions .button:active, .refund_form_001 .refund-actions .button.on-touch {
+  color: white;
+}
+@media only screen and (max-width: 1241px) {
+  .refund_form_001 {
+    padding: 0 15px;
+  }
+  .refund_form_001 .refund-form-content dt {
+    width: 9%;
+  }
+  .refund_form_001 .refund-form-content dd {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .refund_form_001 .refund-form-content .r-form-title {
+    width: 11%;
+    margin-right: 1%;
+  }
+  .refund_form_001 .refund-form-content .r-form-detail {
+    width: 88%;
+  }
+  .refund_form_001 .refund-form-content dl {
+    margin-bottom: 10px;
+  }
+  .refund_form_001 .refund-form-content dt {
+    width: 12%;
+  }
+  .refund_form_001 .refund-form-content dd {
+    width: 87%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .refund_form_001 .refund-form-content {
+    width: 90%;
+  }
+  .refund_form_001 .refund-form-content .r-form-title {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .refund_form_001 .refund-form-content .r-form-detail {
+    width: 100%;
+  }
+  .refund_form_001 .refund-form-content dl {
+    margin-bottom: 15px;
+  }
+  .refund_form_001 .refund-form-content dt {
+    width: 13%;
+    margin-right: 1%;
+  }
+  .refund_form_001 .refund-form-content dd {
+    width: 86%;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .refund_form_001 .refund-form-content h2 {
+    font-size: 1.3em;
+  }
+  .refund_form_001 .refund-form-content dt {
+    width: 100%;
+    margin-bottom: 3px;
+  }
+  .refund_form_001 .refund-form-content dd {
+    width: 100%;
+  }
+}

@@ -1,0 +1,48 @@
+@import "compass";
+@import "compass/css3";
+@import "compass/utilities/general/hacks";
+@import "_variables.scss";
+@import "_mixin.scss";
+
+@import "_breadcrumb.scss";
+@import "_template-base.scss";
+@import "_template-table.scss";
+@import "_template-popup.scss";
+
+.list-summary {
+	margin-top: 15px;
+	font-size: 1em;
+	font-family: $font-default;
+	dd {
+		padding: 5px 10px;
+	}
+}
+.template-button {
+	margin-top: 10px;
+	button {
+		font-size: 1em;
+		padding: 3px 10px;
+	}
+}
+//title breadcrumb
+.title-breadcrumb {
+	color: $main-color;
+	font-weight: bold;
+	margin-left: 5px;
+	i {
+		font-size: 1.2em;
+		margin-right: 5px;
+	}
+	a {
+		color: darken($main-grey-color,20);
+		font-size: 0.95em;
+		&:hover {
+			color: darken($main-grey-color,50);
+		}
+	}
+	.divider {
+		color: $main-grey-color;
+		font-size: 0.9em;
+		margin: 0 5px;
+	}
+}

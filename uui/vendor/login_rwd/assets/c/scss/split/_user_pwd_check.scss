@@ -1,0 +1,72 @@
+.md-pwd-check {
+	height: 20px; 
+	margin-bottom: 5px;
+	letter-spacing: -0.32em; 
+	@include border-radius(20px); 
+	overflow: hidden; 
+	position: relative;
+	@include RWD(pad) {
+		width: 100%;
+		margin-left: 0;
+	}
+	.md-pwd-bar {
+		width: 33%; 
+		height: 20px;
+		letter-spacing: normal; 
+		background: $main-grey; 
+		vertical-align: top; 
+		display: inline-block;
+		&.md-bar-light {
+			@include border-left-radius(20px);
+		}
+		&.md-bar-hard {
+			@include border-right-radius(20px);
+		}
+		&.is-light {
+			background: $c-red;
+		}
+		&.is-medium {
+			background: $c-yellow;
+		}
+		&.is-hard {
+			background: $c-green;
+		}
+	}
+	.t-status {
+		color: #fff; 
+		font-size: 0.8em; 
+		letter-spacing: normal; 
+		left: 0; 
+		top: 0; 
+		right: 0; 
+		bottom: 0; 
+		padding-left: 10px; 
+		@include box-sizing(border-box);
+		position: absolute; 
+		z-index: 1;
+		&:after {
+			content: ""; 
+			top: 0; 
+			left: 0; 
+			bottom: 0; 
+			right: 0; 
+			@include border-radius(20px);
+			@include background-image(linear-gradient(-45deg,rgba(white,.2) 25%,transparent 25%,transparent 50%,rgba(white,.2) 50%,rgba(white,.2) 75%,transparent 75%,transparent));
+			@include background-size(50px 50px);
+			-webkit-animation: barmove 2s linear infinite;
+			-moz-animation: barmove 2s linear infinite;
+			animation: barmove 2s linear infinite;
+			overflow: hidden; 
+			position: absolute; 
+			z-index: 1; 
+		}
+	}
+}
+.t-pwd-infr {
+	@extend .t-comment;
+	letter-spacing: normal;
+	display: block;
+	@include RWD(pad) {
+		margin-left: 0;
+	}
+}

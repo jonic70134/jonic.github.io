@@ -1,0 +1,67 @@
+//theme color
+$bg_file:         "../../../../../../c/img/sth_stayreal/icon_stayreal.png";
+$bg_file_hpd:     "../../../../../../c/img/sth_stayreal/icon_stayreal_retina.png";
+
+//主題色
+$primary:			#ff0077;
+$button:			$primary;
+$button_text:		white;
+
+$text:				#AAAAAA;
+$text_hover:		gray;
+$link:				white;
+$border:			#333;
+$price:				$primary;
+$hover_text:		white;
+$hover_bk:			$dark_gray;
+$active_text:		white;
+$active_bk:			$primary;
+$disabled:			gray;
+$background:		black;
+$background2:		#EEE;
+$title_h3:			#666;
+$icon_color:		#999999;
+
+//header
+$header_border:		#efefef;
+$header_bk:			white;
+$nav_bk:			black;
+$nav_border:        none;
+$nav_text: 			#999;
+
+// component
+$current:           #fff;
+
+//item
+$items_hover:		#b3e5fe;
+$items_name:			#f2f2f2;
+
+//footer
+$footer_bk:			black;
+$footer_title:		#f2f2f2;
+$footer_link:		#999999;
+$footer_hover:		$primary;
+
+//form
+$input_text:		white;
+$input_bk:			$border;
+$input_border:		#666666;
+
+//site-search
+$search_bk:			$border;
+$search_text:		$input_text;
+$search_border:		$border;
+$search_btn:		$border;
+$recommend_link:	#999;
+$ui_menu_border:	#ccc;
+$ui_menu_bk:		#f7f7f7;
+
+//site-cart
+$count_bg:                            $primary;
+$count:				white;
+$cart_bk:			black;
+
+//aside
+$aside_title:       #504f47;
+$aside_title2:      $primary;
+$aside_bg:      	#FFFFFF;

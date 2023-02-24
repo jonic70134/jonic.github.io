@@ -1,0 +1,49 @@
+@mixin placeholder {
+    ::-webkit-input-placeholder {@content}
+    :-moz-placeholder {@content}
+    ::-moz-placeholder {@content}
+    :-ms-input-placeholder {@content}  
+}
+@mixin RWD($media) {
+    @if $media == desktop {
+        @media only screen and (max-width: $screen-lg-max){@content;}
+    }
+    @else if $media == pad {
+        @media only screen and (max-width: $screen-md-max){@content;}
+    }
+    @else if $media == mobile {
+        @media only screen and (max-width: $screen-sm-max){@content;}
+    }
+}
+@mixin hide-txt {
+    white-space: nowrap;
+    text-indent: 100%;
+    overflow: hidden;
+    *text-indent: 0;
+    *font: 0/0 serif;
+    *color: transparent;
+}
+@mixin icon-style {
+    background-repeat: no-repeat;
+    content: "\0020";
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    zoom: 1;
+}
+@mixin icon-font($unicode) {
+    content: $unicode;
+    line-height: 1;
+    font-family: FontAwesome;
+    vertical-align: middle;
+    display: inline-block;
+}
+@mixin btn-color($btn-color,$bevel) {
+    background: $btn-color;
+    @include box-shadow(rgba(black,0.2) 0 #{-$bevel}px 0 inset);
+    &:hover, &:active {
+        background: darken($btn-color,10);
+        @include box-shadow(rgba(black,0.2) 0 #{$bevel}px 0 inset);
+    }
+}

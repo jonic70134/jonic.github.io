@@ -1,0 +1,35 @@
+.site-search-answer{
+	.light{
+		//color: $red;
+		padding: 0 5px;
+	}
+	h1{
+		line-height: 140%;
+		font-size: 1.05em;
+		//color: $text;
+		padding-left: 2px;
+		margin: 10px 0 10px 0;
+	}
+	p{
+		font-size: 0.9em;
+		//color: $text;
+		margin-bottom: 15px;
+		padding-left: 2px;
+		a{
+			color: $link;
+			text-decoration: underline;
+		}
+	}
+}
+@media only screen and (max-width: $screen-md-max){
+.site-search-answer{
+	h1{
+		font-size: 1em;
+		margin-bottom: 5px;
+		padding-left: 15px;
+	}
+	p{
+		padding-left: 15px;
+	}
+}
+}

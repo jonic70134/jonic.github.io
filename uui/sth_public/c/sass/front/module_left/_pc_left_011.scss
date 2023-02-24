@@ -1,0 +1,177 @@
+.pc_left_011{
+    width:200px;
+    height:360px;
+    margin-bottom: 20px;
+    position: relative;
+    border: #c9c9c9 1px solid;
+    -webkit-box-shadow: 3px 1px 6px #f8f8f8;
+    -moz-box-shadow: 3px 1px 6px #f8f8f8;
+    box-shadow: 3px 1px 6px #f8f8f8;
+    .photoblock{
+        display: inline-block;
+        a,img{
+            display: block;
+            width: 90px;
+            height: 90px;
+        } 
+    }
+    ul{
+        //background: #e5e5e5;
+        //border-bottom: #fc5555 2px solid;
+        background: #f9ebde;
+        border-bottom: #099 2px solid;
+        li{
+            display: inline-block;
+            width: 33.33%;
+            padding: 4px 0 5px;
+            text-align: center;
+            font-size: 13px;
+            color: #099;
+            //color: #a40000;
+            //border-right: #FFF 1px solid;
+            margin-right: -4px;
+            cursor: pointer;
+            &.active{
+                //background: #fc5555;
+                background: #099;
+                a{
+                    color: #FFF;  
+                }
+            }
+            &:nth-child(3){
+                border-right: none;
+            }
+            a{
+                color: #099;
+            }
+        }
+        
+    }
+    .content{
+        position: relative;
+    }
+    .items{
+         display: none;
+         &.active {
+          display: inherit;
+        }
+    }
+    .item{
+        display: block;
+        padding: 10px 0 10px 11px;
+        border-bottom: #c9c9c9 1px dashed;
+        &:nth-child(3){
+            border-bottom: none;
+        }
+    }
+    .info{
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            width: 90px;
+        }
+    .btn-more{
+        display: inline-block;
+        background: #fc5555;
+        color: #FFF;
+        font-size: 12px;
+        padding: 0 6px 3px;
+        position: relative;
+        bottom: 4px;
+        left: 7px;
+        border-radius: 4px;
+    }
+    .buy{
+            margin: 1px 0 0 7px;
+            color: #e00517;
+            font-size: 12px;
+            .currency{
+                display: inline-block;
+                vertical-align: top;
+                position: relative;
+                top: 9px;
+            }
+            .price{
+                display: inline-block;
+                width: 71px;
+                height: 25px;
+                margin-top: 3px;
+                //padding-right: 7px;
+                font-size: 20px;
+                font-weight:700;
+                font-family: Tahoma;
+                overflow: hidden;
+            }
+            .start{
+                font-size: 13px;
+            }
+            .point{
+                color: #666;
+                font-size: 12px;
+                margin: 0 0 3px;
+                .price{
+                    width: 85px;
+                    height: 14px;
+                    font-size: 12px;
+                    color: #e00517;
+                }
+            }
+        }
+    // Tab-A 版型
+    .act-A{
+        .name{
+            width: 91px;
+            height: 45px;
+            line-height: 15px;
+            padding-left: 7px;
+            padding-right: 7px;
+            color: #000;
+            font-size: 14px;
+            word-break: break-word;
+            word-wrap: break-word;
+            overflow: hidden;
+        }
+        
+        .more{
+            width:100%;
+            height:30px;
+            text-align: right;
+            a{
+                display: inline-block;
+                background: #fc5555;
+                color: #FFF;
+                font-size: 12px;
+                padding: 3px 6px 6px;
+                margin: 10px 16px;
+                border-radius: 4px;
+            }
+            
+        }
+    }
+    
+    // Tab-B 版型
+    .act-B{
+        .name{
+            width: 178px;
+            height: 36px;
+            margin: 0 0 8px;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+            word-break: break-word;
+            word-wrap: break-word;
+            overflow: hidden;
+        }
+        .info{
+        }
+        .item{
+            padding: 12px 0 15px 11px;
+            &:nth-child(2){
+                border-bottom: none;
+            }
+        }
+        .btn-more{
+            top: 1px;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.layout {
+  margin: 0 auto;
+  position: relative;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+.hide {
+  display: none;
+}
+
+.row, .clearfix {
+  zoom: 1;
+}
+.row:after, .clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.block {
+  margin: 10px;
+  padding: 10px;
+  background: white;
+  -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.5);
+}
+.block {
+  zoom: 1;
+}
+.block:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.block .title {
+  border-bottom: 1px solid #cccccc;
+  padding: 5px 0 10px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+h2 {
+  margin: 5px 0 10px;
+  font-size: 0.9em;
+  line-height: 140%;
+}
+
+.rule li {
+  font-size: 0.8em;
+  line-height: 140%;
+  margin: 5px 5px 5px 24px;
+  color: #777777;
+  list-style: decimal;
+}
+
+article.block pre{
+    word-wrap: break-word;
+}
+
+html>/**/body article.block pre, x:-moz-any-link, x:default{
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.inside-service {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  color: white;
+  z-index: 5;
+  height: 50px;
+}
+.inside-service h1 {
+  text-align: center;
+  font-size: 0.6em;
+  padding: 2px 0;
+}
+.inside-service .actions {
+  border-top: 1px solid #cccccc;
+  background: white;
+}
+.inside-service .actions {
+  zoom: 1;
+}
+.inside-service .actions:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.inside-service .actions li {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.inside-service .actions li a {
+  color: black;
+  display: block;
+}
+
+.footer {
+  padding-bottom: 60px;
+}

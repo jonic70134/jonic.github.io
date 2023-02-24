@@ -1,0 +1,63 @@
+//confirm page
+.t-final-infr {
+	margin: 0 5px 20px;
+	@include RWD(mobile) {
+		display: none;
+	}
+}
+.md-final-list {
+	margin: 20px 5px 0;
+	dd {
+		margin: 5px 0;
+	}
+}
+.md-go-pay {
+	margin: 10px 0 10px 60px;
+	.img-cn-payment {
+		vertical-align: middle;
+	}
+	.btn-pay {
+		font-size: 1.1em;
+		padding: 5px 20px;
+	}
+	.go-edit {
+		margin: 5px 0 0 10px;
+		display: inline-block;
+		&:before {
+			margin-right: 3px;
+			@include icon-font("\f01e");
+		}
+	}
+}
+.md-final-msg {
+	margin: 30px 0;
+	.t-title {
+		font-size: 1.2em;
+	}
+	.t-description {
+		color: #777;
+		line-height: $font-small-line-height;
+	}
+}
+.btn-share {
+	color: #fff;
+	font-size: 13px;
+	font-weight: normal;
+	margin-left: 10px;
+	vertical-align: middle;
+	@include box-shadow(none);
+	display: inline-block;
+	&:before {
+		font-size: 1.05em;
+		margin-right: 5px;
+	}
+	&.go-share-fb {
+		@include btn-color(darken($c-blue,10),2px);
+		&:before {
+			@include icon-font("\f082");
+		}
+	}
+	@include RWD(mobile) {
+		float: right;
+	}
+}

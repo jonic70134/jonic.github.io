@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox vendor</title>
+<link href="/css/plugin/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/css/data.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="/js/lib/html5.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ie.css">
+<![endif]--></head>
+<body>
+<div class="popup-content">
+  	<h1 class="title"><i class="fa fa-file-text-o"></i>通用資料設定</h1>
+	<div class="form-element clearfix">
+		<label class="form-element-name">寄件者名稱設定：</label>
+		<div class="form-element-content"><input type="text" class="input-text" placeholder="請輸入要顯示的寄件人名稱"></div>
+		<div class="comment">會顯示在e-mail的寄件者名稱部分，例：</div>
+		<div class="form-element-infr"><img src="/img/infr-email-name.jpg" width="300" height="53" alt="寄件者名稱設定說明"></div>
+	</div>
+	<div class="form-element clearfix">
+		<label class="form-element-name">公司logo圖片：</label>
+		<div class="form-element-content"><input type="file" accept="image/*"></div>
+		<div class="comment">公司logo會出現在每一封e-mail的最上面，限為jpg/png/gif/jpeg格式檔案，檔案尺寸&lt;10kb。例：</div>
+		<div class="form-element-infr"><img src="/img/infr-email-logo.jpg" width="300" height="140" alt="網站標題圖說明"></div>
+	</div>
+	<div class="form-element clearfix">
+		<label class="form-element-name">Logo位置設定：</label>
+		<div class="form-element-content">
+			<label for="radio1"><input type="radio" id="radio1" name="radioGroup">Logo靠左</label>
+      		<label for="radio2"><input type="radio" id="radio2" name="radioGroup">Logo置中</label>
+      		<label for="radio3"><input type="radio" id="radio3" name="radioGroup">Logo靠右</label>
+		</div>
+	</div>
+	<div class="form-element clearfix">
+		<label class="form-element-name">E-mail簽名檔：</label>
+		<div class="form-element-content"><textarea class="input-text" rows="5" placeholder="請輸入您的e-mail簽名檔...">此信件由系統自動發送，請勿直接回覆。
+{{web_name}}  購物網站： {%web_url%}
+</textarea></div>
+		<div class="comment">E-mail版尾簽名檔會出現在每一封發送e-mail的最後面。</div>
+	</div>
+	<div class="template-button">
+		<button class="btn-cancel" onclick="parent.$.fancybox.close();"><i class="fa fa-times"></i>取消</button>
+		<button class="btn-submit" onclick="alert('通用資料設定成功'); parent.$.fancybox.close();"><i class="fa fa-check"></i>確認送出</button>
+	</div>
+</div><script src="/js/lib/jquery-1.9.1.js" ></script>
+<script src="/js/lib/bootstrap-dropdown.js"></script>
+<script src="/js/nav-action.js"></script>
+<script src="/js/template-action.js"></script>
+</body>
+</html>

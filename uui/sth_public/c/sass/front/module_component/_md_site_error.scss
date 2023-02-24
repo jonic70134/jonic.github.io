@@ -1,0 +1,39 @@
+.error {
+	text-align: center;
+	margin: 30px auto;
+	padding: 90px 10px 0;
+	.img-error {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	h1 {
+		font-weight: bold;
+		font-size: 1.3rem;
+		margin: 15px 0 20px;
+		color: #000;
+		vertical-align: middle;
+		span{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		
+	}
+	ul {
+		display: inline-block;
+		list-style: disc;
+		padding-left: 20px;
+	}
+	li {
+		text-align: left;
+		margin-bottom: 10px;
+		line-height: 1.4;
+		color: $text;
+	}
+	.btn-back {
+		color: #fff;
+		margin-top: 15px;
+		padding: 5px 10px;
+		background: #000;
+		display: inline-block;
+	}
+}

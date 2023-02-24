@@ -1,0 +1,12 @@
+.md_site_activity_items_title {
+	position: relative;
+	.t-title {
+		background: #000;
+	}
+	.btn-toggle-filter {
+		&.is-active {
+			color: #000;
+			border-color: #000;
+		}
+	}
+}

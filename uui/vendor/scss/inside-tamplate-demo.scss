@@ -1,0 +1,96 @@
+@import "compass";
+@import "compass/css3";
+@import "compass/utilities/general/hacks";
+@import "_variables.scss";
+@import "_mixin.scss";
+
+//tamplate demo
+body {
+  padding: 20px;
+}
+.demo-title {
+  color: $main-color;
+  font-size: 1.333em;
+  font-family: $font-heiti;
+  i {
+    font-size: 1.2em;
+    margin-right: 8px;
+  }
+}
+.demo-tabs {
+  margin: 20px auto;
+  letter-spacing: -0.32em;
+  dd {
+    padding-left: 30px;
+    letter-spacing: normal;
+    background: #eee;
+    display: inline-block;
+    position: relative;
+    &:before, &:after {
+      content: "\0020";
+      left: 0;
+      top: 50%;
+      border: transparent solid;
+      position: absolute;
+    }
+    &:before {
+      border-left-color: #fff;
+      border-width: 25px;
+      margin-top: -25px;
+    }
+    &:after {
+      border-left-color: #eee;
+      border-width: 20px;
+      margin-top: -20px;
+    }
+    &:first-child {
+      @include border-left-radius(60px);
+      &:before, &:after {
+        content: "";
+        display: none;
+      }
+    }
+    &:last-child {
+      @include border-right-radius(60px);
+    }
+    a {
+      color: #333;
+      height: 30px;
+      margin: 0 5px;
+      padding: 10px 20px 0;
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      &:hover, &:hover:before, &.active, &.active:before {
+        color: $main-red-color;
+      }
+      &:before {
+        @include list-arrow(#666,1.2em,0);
+        left: 10px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.demo-content {
+  width: 1220px;
+  min-height: 500px;
+  iframe {
+  	width: 100%;
+    border: none;
+  }
+}
+.demo-mobile {
+  width: 320px;
+  height: 480px;
+  margin: 0 auto;
+  padding: 135px 35px;
+  background: url(/img/mobile.png) no-repeat;
+  .scroll {
+    height: 100%;
+  }
+  iframe {
+    width: 100%;
+    border: none;
+  }
+}

@@ -1,0 +1,64 @@
+@import "compass";
+@import "compass/css3";
+@import "compass/utilities/general/hacks";
+@import "_variables.scss";
+@import "_mixin.scss";
+
+@import "_breadcrumb.scss";
+@import "_template-base.scss";
+@import "_template-table.scss";
+@import "_template-popup.scss";
+
+.double-scroll-top, .double-scroll-bottom {
+	margin-top: 0;
+}
+.template-button {
+	button.super-big {
+		font-size: 2em;
+		padding: 10px 70px;
+	}
+}
+.list-summary {
+	margin-bottom: 20px;
+}
+.date {
+	color: #999;
+	margin: 20px 0 10px;
+}
+.go-list {
+	text-decoration: underline;
+	top: 10px;
+	right: 10px;
+	position: absolute;
+	z-index: 1;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.template-table {
+	a {
+		margin-left: 3px;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+		&:after {
+			content: "";
+		}
+	}
+	.function {
+		td {
+			border: none;
+			background: none;
+		}
+		input {
+			margin: 5px 0 0;
+		}
+	}
+	.line-through {
+		text-decoration: line-through;
+	}
+}
+.form-feedback {
+	padding: 3px 5px !important;
+}

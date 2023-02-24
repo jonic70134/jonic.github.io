@@ -1,0 +1,707 @@
+@charset"utf-8";
+
+/*商品-賣場列表CSS
+   --------------Author：1000  -- thousnd.chen@uitox.com ------------------------------------------------------------*/
+
+/*-- popup common --*/
+ html {
+    background:none
+}
+button.btn-submit, button.btn-submit:hover {
+    background-color:#e00
+}
+button.btn-cancel, button.btn-cancel:hover {
+    background-color: #9AA9B3;
+}
+button.btn-preview{
+    margin:0 2px;
+    vertical-align: middle;
+}
+button.btn-delete{
+    background-color:#9aa9b3;
+    padding:2px 0 2px 5px;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+}
+button.btn-edit{
+    background-color:#84a366;
+    padding:2px 0 2px 5px;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+}
+button.btn-download{
+    background-color:#0068B6;
+    padding:2px 0 2px 5px;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+}
+.productlist-popup {
+    margin:0 auto;
+}
+.productlist-popup .prodpop-name {
+    overflow: hidden;
+    word-break:break-all;
+}
+.productlist-popup .commodity-tab .tableCon {
+    white-space: normal;
+}
+.productlist-popup .tableCon table {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.productlist-popup td, .productlist-popup th {
+    padding:3px;
+    position:relative;
+    vertical-align:middle;
+    text-align:center;
+    font-size:13px;
+    line-height:150%;
+}
+.productlist-popup th {
+    height:40px;
+    font-weight:700;
+    border:1px solid #fff;
+    border-bottom-color: #7A98A2;
+    border-right-color:#fff;
+}
+.productlist-popup td {
+    min-height:40px;
+    max-width:300px;
+    word-break:break-all; 
+    color:#333;
+    border-bottom: #d4dbdf 1px solid;
+    border-right: #fff 1px solid;
+}
+.productlist-popup thead {
+    min-width:50px;
+    color:#333;
+    font-size:13px;
+    background:#b2deee;
+}
+.productlist-popup tr:nth-child(even) {
+    background:#f1f3f5;
+}
+.productlist-popup .add-table thead {
+    background:#0094c9;
+}
+.productlist-popup .add-table th {
+    color:#fff;
+}
+.productlist-popup .search-detail {
+    display:none;
+    position:relative;
+    width:910px;
+    margin-top:5px;
+    padding:10px 0;
+}
+.productlist-popup .search-detail input {
+    padding:3px 3px;
+    color:#555;
+    font-size:13px
+}
+.productlist-popup .search-detail label {
+    display:inline-block;
+    width:70px;
+    text-align:right
+}
+.productlist-popup .search-detail label.searchdetail-check {
+    width:auto;
+}
+.productlist-popup h4 {
+    display:inline-block;
+    margin:0 0 10px 0;
+    padding:5px 10px;
+    font-size:13px;
+    font-weight:normal;
+    color:#333;
+    border-right:1px solid #aaa;
+    border-bottom:1px solid #aaa;
+    background-color:#deedf7;
+}
+.productlist-popup h5 {
+    padding:5px;
+    color:#333;
+}
+/*商品-賣場列表--*/
+ .productlist-popup {
+    padding: 20px;
+    width: 95%;
+}
+.productlist-popup .title {
+    margin-bottom:15px;
+    padding-bottom:10px;
+    border-bottom: 1px solid #ccc;
+}
+.productlist-popup .commodity-tab {
+    padding: 0;
+}
+.productlist-popup input[type="text"] {
+    padding: 2px 3px;
+    font-size: 15px;
+    border-color: #999 #ccc #ccc #ccc;
+}
+.productlist-popup input[type="text"]:disabled {
+    background-color: #eee;
+}
+.productlist-popup .p-type-right {
+    margin-bottom: 10px;
+    text-align: right;
+}
+.productlist-popup .p-type-right span {
+    margin-right: 10px;
+}
+.productlist-popup .red {
+    color: #ff4747;
+}
+.productlist-popup .black {
+    color: #000;
+}
+.productlist-popup .gray {
+    color: #7d919d;
+}
+.productlist-popup button.gray {
+    background: #7d919d;
+}
+.productlist-popup .send {
+    text-align: center;
+    margin: 20px 0;
+    clear: both;
+}
+.productlist-popup .send button {
+    width: 100px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 1.1em;
+}
+.productlist-popup h3 {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 200%;
+    margin-bottom: 10px;
+}
+/*商品-賣場列表  商品名稱--------------------------------------------------------------------------*/
+ .productlist-popup .product-box ul {
+    min-height: 40px;
+    line-height: 2.7;
+}
+.productlist-popup .product-box li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+.productlist-popup .product-box #price_confirm_area {
+    margin:0;
+}
+.productlist-popup .product-box .left {
+    width: 100px;
+    text-align: right;
+    background-color: #C8E3F4;
+    border-bottom: 1px solid #fff;
+}
+.productlist-popup .product-box .right {
+    width: 390px;    
+    height: 40px;
+}
+.productlist-popup .product-box .right .limitname {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*商品-賣場列表  複製到新平台--------------------------------------------------------------------------*/
+.productlist-popup .cloneto{
+    margin-left:30px;
+    color:#333;
+}
+.productlist-popup .cloneto p{
+    margin:10px 10px 10px 0;
+}
+.productlist-popup .cloneto li{
+    margin:5px 0;
+}
+.productlist-popup .cloneto dd{
+    margin:10px 0;
+}
+.productlist-popup .cloneto dd b{
+    font-weight: 700;
+    color:#e00;
+}
+/*商品-賣場列表  價格確認--------------------------------------------------------------------------*/
+ .productlist-popup #price_confirm_area {
+    margin-bottom: 10px;
+    font-size:15px;
+    color:#ff4747;
+}
+.productlist-popup #price_confirm_area input {
+    width:1em;
+    padding:2px;
+    color:#f00;
+    font-weight:700;
+    text-align:center;
+    border:1px solid #ff4747;
+}
+/*改售價  --------------------------------------------------------------------------*/
+ .m-price .productlist-popup #price_confirm_area {
+    text-align: center;
+}
+/*改成本  --------------------------------------------------------------------------*/
+ .m-cost .productlist-popup .product-box .left {
+    width: 160px;
+}
+/*贈品  --------------------------------------------------------------------------*/
+ .premiums .commodity-search, .add .commodity-search {
+    margin-bottom: 20px;
+}
+/*加購品  --------------------------------------------------------------------------*/
+ .add .add-tab {
+    height: 250px;
+    overflow: hidden;
+    overflow-y:auto;
+    border: 2px solid #a9c9d6;
+    margin-bottom: 10px;
+}
+/*圖片 ------------------------------------------------------------------------------*/
+ .photo-area {
+    width: 500px;
+}
+.photo-form h2 {
+    font-size: 15px;
+    line-height: 140%;
+    padding: 5px 0;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 15px;
+}
+.photo-form .photo {
+    text-align: center;
+}
+.photo-form .photo img.item_main_pic {
+    max-width: 360px;
+    max-height: 360px;
+    display: block;
+    margin: 0 auto;
+}
+.photo-form button.btn-update {
+    background: #7FB3DA;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    display: block;
+    margin-left: 85px;
+}
+.photo-form a{
+    width: 87px;
+    margin-left: 52px;
+}
+/*商品數  -------------------------------------------------------------------------*/
+ .product-quantity .uxprice a {
+    background: #4D9900;
+    color: #FFFFFF;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 5px 10px;
+    text-align: center;
+    width: 80px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.product-quantity .uxprice a:last-child {
+    margin-right: 0;
+}
+.product-quantity .tableCon table {
+    margin-bottom: 0;
+}
+
+.product-quantity .tableCon td{
+
+}
+.product-quantity .product-box {
+    float: left;
+}
+.product-quantity .uxprice {
+    text-align: right;
+    margin: 20px 0;
+}
+/*特賣變價  -------------------------------------------------------------------------*/
+ #set_info {
+    font-size:15px
+}
+#set_info input {
+    width:auto
+}
+#set_info a {
+    display:inline
+}
+#set_info b {
+    color:#e00
+}
+#set_info table {
+    width:100%
+}
+#set_info th {
+    width:200px;
+    height:auto;
+    font-size:.9em;
+    line-height:250%;
+    text-align:right;
+    vertical-align:middle;
+    border-bottom:#d4dbdf 1px solid;
+}
+#set_info td {
+    text-align:left;
+    vertical-align:middle
+}
+#set_info tr:nth-child(even) {
+    border-bottom:1px solid #d4dbdf;
+    background-color:#f1f3f5
+}
+#set_info #show_sm_name {
+    color:#0084ff;
+}
+#set_info #show_sm_price b, #set_info #show_ssm_type2 b {
+    margin-right:5px;
+    padding:3px 10px;
+    color:#fff;
+    background-color:#ED7474;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px
+}
+#set_info .etcsize {
+    color:#999;
+    font-size:13px;
+}
+/* 商品列表 - 屬性 */
+ .attribute {
+    margin:0 0 10px
+}
+.attribute ul {
+    width:700px;
+    margin:20px auto;
+}
+.attribute .attrlist {
+    float:left;
+    width:350px;
+    height:140px;
+}
+.attribute span {
+    min-width:30px;
+    text-align:left
+}
+.attribute .attrblock {
+    display:inline-block;
+    width:250px;
+    height:100px;
+    margin:0;
+    padding:2px 5px;
+    overflow:auto;
+    border:1px solid #aaa;
+    vertical-align:middle
+}
+.attribute .attrblock span {
+    min-width:0;
+    margin-right:5px
+}
+.attribute .attrblock li {
+    display:inline-block;
+    margin:3px 0;
+    padding:2px 5px;
+    color:#fff;
+    font-size:1.1em;
+    background-color:#7fb3da;
+    cursor:pointer;
+}
+/*商品列表 - 商品資訊*/
+ .productlist-popup .add-product-data {
+    width:96%;
+    padding:0;
+    box-shadow:none
+}
+.productlist-popup .commodityTr a {
+    display:inline;
+}
+/*賣場列表 - 活動*/
+ h4.market-act-title {
+    margin:0;
+}
+.market-act {
+    margin:0 0 10px;
+    border:1px solid #d4dbdf;
+    border-bottom:none
+}
+.market-act a {
+    display:inline
+}
+.market-act th {
+    border-bottom:1px solid #d4dbdf;
+    color:#333;
+}
+.market-act td {
+    text-align: left
+}
+/*賣場列表 - 區間銷售量熱賣提醒*/
+.market-hotsale .tableCon {
+    border:1px solid #d4dbdf;
+    border-bottom:none
+}
+.market-hotsale .overamt  {
+    color: #f00;
+}
+.market-hotsale .overamt-text {
+    text-align: center;
+    line-height: 200%;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.market-hotsale .comment  {
+    color: #cf8900;
+    font-size: 0.85em;
+}
+.market-hotsale .search-filter {
+    background: #eaefe5;
+    border-radius: 3px;
+    margin: 20px 0;
+    padding: 10px;
+}
+.market-hotsale .search-filter input[type="text"] {
+    font-size: 12px;
+}
+.market-hotsale .search-filter button {
+    font-size: 1em;
+    margin: 5px 0px;
+    padding: 3px 10px;
+}
+.market-hotsale .btn-more {
+    float: right;
+    margin: 
+}
+/*賣場/商品名稱說明*/
+.name_hint {
+    width: 750px;
+    margin: 0 auto;
+}
+.name_hint .commodity-tab .hintpic {
+    background: #DEEDF7;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+.name_hint .commodity-tab .hintpic .spec {
+    padding-left: 20px;
+    color: #0068b6;
+    font-size: 1.333em;
+    font-family: "微軟正黑體", "Microsoft Jhenghei", "Heiti TC", "LiHei Pro", sans-serif;
+}
+.name_hint .commodity-tab .hintpic p img {
+    margin: 10px auto;
+    display: block;
+}
+.maxqua_tab .sm_max_saleqty, .maxqua_tab .sm_percent {
+    max-width: 50px;
+    width: 40px;
+}
+/*賣場預覽頁*/
+.product-prev {
+    padding: 0;
+    width: 100%;
+}
+.product-prev .container {
+    width:100%;
+    margin-top: 45px;
+}
+.product-prev .copylink-topbar {
+    padding: 7px 0 0 0;
+    background: #f7f7f7;
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
+    height: 38px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    font-size: 12px;
+    color: #555;
+}
+.product-prev .copylink-topbar {
+    zoom: 1;
+}
+.product-prev .copylink-topbar:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.product-prev .copylink-topbar .container {
+    width: 1220px;
+    position: relative;
+    margin: 0px auto;
+}
+/*批次修改可賣量*/
+.productlist-popup .batch-modify-quantity {
+    margin: 20px 25px;
+}
+.productlist-popup .batch-modify-quantity h2 {
+    color: #0068b6; 
+    font-size: 1.333em; 
+    font-family: "微軟正黑體", "Microsoft Jhenghei", "Heiti TC", "LiHei Pro", sans-serif;
+    margin:15px 0;
+}
+.productlist-popup .batch-modify-quantity p {
+    color: #333;
+    padding: 15px 20px;
+    line-height: 25px;
+}
+.productlist-popup .batch-modify-quantity a {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+/*多張商品主圖*/
+.photo-form .photo > a {
+    width:360px;
+    min-height:360px;
+    position:relative;
+    background-color:#ccc;
+}
+.photo-form #add_item_main_pic .fileinput-button{
+    margin-top: 35%;
+}
+.photo-form #edit_item_main_pic .fileinput-button > span{
+    background: #000;
+    width: 100%;
+    height: 30px;
+    display: block;
+    top: 333px;
+    position: relative;
+}
+.photo-form .fileinput-button p{
+    line-height:180%;
+}
+.photo-form .fileinput-button input { bottom: 0;}
+
+.photo-form .photo div.addpic { 
+    position: absolute; 
+    left: 150px; 
+    top: 35%; 
+}
+.photo-form .photo div.addpicok { 
+    display:none;
+    text-decoration: underline; 
+    position: relative; 
+    width:100%;
+    height:360px;
+    left: 0px; 
+    top: -365px;
+    line-height: 30px; 
+    opacity: 0.6;
+    color:#fff;
+}
+.photo-form .photo a:hover div.addpicok{
+    display:block; 
+    margin-bottom: -30px;
+}
+.photo-form .photo div.addpic a { 
+    display:inline-block; 
+    color:#0066cc; 
+    font-size: 32px; 
+    margin-top:12px; 
+    font-weight:bolder; 
+}
+.photo-form .photo div.addpic > font { 
+    display:inline-block; 
+    padding-bottom:6px; 
+}
+
+.photo-form .add-other-pic, .photo-form .add-color-pic{ 
+    width: 360px; 
+    margin: 0 auto;
+    }
+.photo-form .add-other-pic span,.photo-form .add-color-pic span{ 
+    width: 64.5px; 
+    height: 64.5px; 
+    border: 1px solid #ccc; 
+    cursor: pointer; 
+    position: relative; 
+    display: inline-block; 
+    margin: 5px 2px; 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box; 
+    vertical-align: middle; 
+    overflow: hidden;
+}
+.photo-form .add-other-pic span img,.photo-form .add-color-pic span img{ 
+    width: 100%; 
+    vertical-align: middle;
+}
+.photo-form .add-other-pic span.active{ 
+    border: 2px solid #08C; 
+    position: relative; 
+    z-index: 0
+}
+.photo-form .add-other-pic .active .fa { 
+    position: absolute; 
+    z-index: 99; 
+    top: 2px; 
+    right: 2px; 
+    transform: scale(0.8, 0.8); 
+    color: #000; 
+    display: block;
+}
+.photo-form .add-other-pic .add-other-button { 
+    background: #ccc; 
+    height: 64.5px; 
+    line-height: 64.5px; 
+    text-align: center; 
+    color:#fff; 
+    font-size: 35px;
+}
+
+/* 顏色小圖 */
+.photo-form .add-color-pic p {
+    margin:15px 0 5px;
+    font-size:16px;
+}
+/* 新增推播*/
+.template-popup-form dd {
+    margin-bottom: 10px;
+}
+.template-popup-form .label-content-title {
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    color: #333;
+}
+.template-popup-form .label-content-title-middle {
+    vertical-align: middle;
+}
+.template-popup-form .textares-form {
+    width: 400px;
+    height: 100px;
+}
+.template-popup-form .txt-caculate .txt-length {
+    color: #e00;
+    margin: 0 5px;
+}
+.template-popup-form .push-jump {
+    display: none;
+}
+.push-jump-content {
+    width: 410px;
+    line-height: 30px;
+    display: inline-block;
+}
+/*商品規格新增圖片*/
+.add-product-data .show-main span.item-spec-img-upload { color: #999; font-size: 13px; min-width: 100px;}
+.add-product-data .show-main span .linkbtn { text-decoration: none; display: inline-block;}
+.add-product-data .show-main span .linkbtn .fileinput-button { width: 90px; min-width: 90px; text-align: center;}
+.add-product-data .show-main span .linkbtn:hover { -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 -5px 0 inset; -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 -5px 0 inset; box-shadow: rgba(0, 0, 0, 0.4) 0 -5px 0 inset; }
+.add-product-data .show-main span .item-spec-preview { margin: 10px 0;}
+.add-product-data .show-main span .item-spec-preview li { display: inline-block; vertical-align: top;}
+.add-product-data .show-main span .item-spec-preview li:first-child { border: 1px solid #ccc;}
+.add-product-data .show-main span .item-spec-preview li:first-child img { max-width: 730px;}
+.add-product-data .show-main span .item-spec-preview li button.btn-white { background: #fff; border: 1px solid #ccc; color: #999; padding: 3px 0 3px 5px; margin-left: 10px;}
+.add-product-data .show-main span .item-spec-preview li button.btn-white:hover { background: #999; color: #fff;}

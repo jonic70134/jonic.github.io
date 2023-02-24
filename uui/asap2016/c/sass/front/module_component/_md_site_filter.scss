@@ -1,0 +1,90 @@
+.btn-toggle-filter {
+	top: 6px;
+	right: 10px;
+	padding: 3px 5px;
+	color: rgba(white,0.8);
+	font-size: 0.95rem;
+	border: rgba(white,0.8) 1px solid;
+	background: none;
+	position: absolute;
+	&:before {
+		content: "\f161";
+		margin-right: 3px;
+		line-height: 1;
+		font-family: FontAwesome;
+		vertical-align: middle;
+		display: inline-block;
+	}
+	&.is-active {
+		color: $primary;
+		border-color: $primary;
+		background: rgba(white,0.7);
+		&:before {
+			content: "\f139";
+		}
+	}
+}
+.site-filter {
+	max-height: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-bottom-width: 0;
+	background: lighten($gray,40);
+	@include box-shadow(none);
+	@include transition(all 0.3s ease-out);
+	overflow: hidden;
+	&.is-expand {
+		max-height: 10000px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-bottom: $border 1px solid;
+		@include box-shadow(rgba(black,0.1) 0 0 2px);
+		overflow: visible;
+	}
+	select {
+		width: 100%;
+		padding: 6px 4px;
+		border: none;
+	}
+	.row {
+		padding: 5px 10px;
+		@include clearfix;
+	}
+	.input-number {
+		margin: 0;
+		padding: 6px 4px;
+		border: none;
+	}
+	.col-left {
+		float: left;
+		margin-right: 15px;
+		line-height: 32px;
+	}
+	.col-right {
+		text-align: right;
+		.input-number {
+			width: 30%;
+		}
+		span{
+			margin: 0 5px;
+		}
+	}
+	.btn-filter {
+		color: #fff;
+		letter-spacing: 1px;
+		margin-top: 5px;
+		padding: 7px;
+		text-align: center;
+		@include box-sizing(border-box);
+		&.btn-clear {
+			width: 30%;
+			background: lighten($gray,20);
+			float: left;
+		}
+		&.btn-submit {
+			width: 68%;
+			background: darken($gray,20);
+			float: right;
+		}
+	}
+}

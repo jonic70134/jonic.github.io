@@ -1,0 +1,86 @@
+//id management
+.md-account {
+	padding: 20px;
+	@include RWD(mobile){
+		padding: 10px;
+		border-width: 0;
+	}
+	input:not([type="radio"]), input:not([type="checkbox"]) {
+		@include RWD(mobile){
+			width: 100%;
+			@include box-sizing(border-box);
+		}
+	}
+}
+.t-user-id {
+	color: $main-color;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-right: 5px;
+}
+.t-title-form {
+	color: mix($main-color,#eee,30);
+	font-weight: bold;
+	margin-bottom: 5px;
+	&:before {
+		font-weight: normal;
+		margin-right: 5px;
+	}
+	&.edit {
+		&:before {
+			@include icon-font("\f040");
+		}
+	}
+	&.add {
+		&:before {
+			@include icon-font("\f067");
+		}
+	}
+}
+.md-input-item {
+	position: relative;
+	display: inline-block;
+	@include RWD(mobile) {
+		width: 100%;
+	}
+}
+.md-action {
+	float: right;
+}
+.md-edit-action {
+	margin-top: 10px;
+	display: block;
+	button {
+		font-size: 1.05em;
+		@include RWD(mobile) {
+			width: 100%;
+			margin: 3px 0;
+			padding: 7px 15px;
+		}
+	}
+}
+.btn-transparent {
+	padding: 4px 8px;
+	@include btn-color(rgba($main-grey,0.3));
+}
+.btn-edit {
+	&:before {
+		@include icon-font("\f040");
+	}
+}
+.btn-delete {
+	&:before {
+		@include icon-font("\f00d");
+	}
+}
+.btn-add {
+	&:before {
+		margin-right: 5px;
+		@include icon-font("\f067");
+	}
+	@include RWD(mobile) {
+		width: 100%;
+		margin: 3px 0;
+		padding: 7px 15px;
+	}
+}

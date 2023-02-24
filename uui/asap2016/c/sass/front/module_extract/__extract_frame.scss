@@ -1,0 +1,153 @@
+//-----------------_button
+.button {
+    color: $button_text;
+    background: $button;
+    &:hover {
+        background: lighten($button, 5%);
+    }
+    &.disabled, &[disabled] {
+        color: $light_gray;
+    }
+    // rush addcart button style
+    &.btn-rush, .btn-addcart, .btn-add{
+        background: $button;
+        color: $button_text;
+        &:hover {
+            background: lighten($button, 5%);
+        }
+        // active/pressed
+        &:active, &.pressed {
+            background: darken($button, 15%);
+        }
+    }
+    //end
+
+    // discount button style
+    &.btn-discount, &.red {
+        background: $orange;
+        &:hover {
+            background: lighten($orange, 5%);
+        }
+        // active/pressed
+        &:active, &.pressed {
+            background: darken($orange, 15%);
+        }
+    }
+    //end
+
+    // preorder button style
+    &.btn-preorder, &.yellow {
+        background: $yellow;
+        color: $button_text;
+        &:hover {
+            background: lighten($yellow, 5%);
+        }
+        // active/pressed
+        &:active, &.pressed {
+            background: darken($yellow, 15%);
+        }
+    }
+
+    // gray button style
+    &.gray {
+        background: $gray;
+        color: white;
+        &:hover {
+            background: lighten($gray, 5%);
+        }
+        &:active, &.pressed {
+            background: darken($gray, 15%);
+        }
+    }    
+    //即將開賣
+    &.btn-to-sale{
+        color: $orange;
+    }
+}
+//-----------------_button END
+
+//-----------------_style_default
+body{
+    color: $text;
+    background: $background;
+}
+a{
+    color: $link;
+}
+.title-h3{
+    color: $title_h3;   
+    .sub{
+        color: $primary;
+    }
+}
+.red-text{
+    color: $red;
+}
+input[type='password'], input[type='email'], input[type='tel'], input[type='text'], input[type='number'], input[type='search']{    
+    border-color: $input_border;    
+    background: $input_bk;
+    color: $input_text;
+}
+select{
+    background: $input_bk;
+    color: $input_text;
+    border-color: $input_border;
+}
+
+.quantity-alert{
+    background: $primary;
+    color: $text;
+    &:after{
+        border-color: $primary transparent transparent transparent;
+    }
+}
+.quantity{   
+    .quantity-input{
+        border:none;
+        border-top:1px solid $input_border;
+        border-bottom:1px solid $input_border;
+        color: $input_text;
+        background: $input_bk;
+    }
+    .quantity-decrease{
+        color: $input_text;
+        border-color: $input_border;
+        // background: $input_bk;
+        // &:hover{
+        //     background: $hover_bk;
+        // }
+    }
+    .quantity-increase{
+        color: $input_text;
+        border-color: $input_border;
+        // background: $input_bk;
+        // &:hover{
+        //     background: $hover_bk;
+        // }
+    }
+}
+//-----------------_style_default END
+
+//-----------------_fancybox_style
+.fancybox-inner{
+    .title{
+        background: $primary;
+    }
+    .block{        
+        .price{
+            color: $price;
+        }
+        .final-price{
+            color: $price;
+        }        
+    }
+    .name{
+        color: $primary;
+    }
+}
+.cart-mark{
+    background: invert($background);
+    color: $primary;
+    border: 10px solid rgba($background, 0.3);
+}
+//-----------------_fancybox_style END

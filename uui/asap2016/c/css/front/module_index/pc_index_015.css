@@ -1,0 +1,113 @@
+.pc_nav_menu_001 .recommend .hot a, .pc_nav_menu_001 .recommend dd a {
+  display: block;
+  padding: 11px 0px 10px;
+}
+
+.pc_nav_menu_001 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.pc_nav_menu_001 {
+  zoom: 1;
+}
+.pc_nav_menu_001:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.pc_nav_menu_001 .recommend {
+  background: #e5e5e5;
+  background: -moz-linear-gradient(top, #fff 0%, #e5e5e5 50%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fff 0%, #e5e5e5 50%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fff 0%, #e5e5e5 50%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#e5e5e5',GradientType=0 );
+  /* IE6-9 */
+  height: 36px;
+  font-size: 13px;
+  overflow: hidden;
+}
+.pc_nav_menu_001 .recommend {
+  zoom: 1;
+}
+.pc_nav_menu_001 .recommend:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.pc_nav_menu_001 .recommend .hot {
+  float: left;
+  border: 1px solid #e00;
+  width: 49px;
+  margin-left: -1px;
+  position: relative;
+}
+.pc_nav_menu_001 .recommend .hot:nth-child(1) {
+  margin-left: 0;
+}
+.pc_nav_menu_001 .recommend .hot a {
+  color: #e00;
+}
+.pc_nav_menu_001 .recommend .hot a:hover {
+  color: #ff2222;
+}
+.pc_nav_menu_001 .recommend dd {
+  float: left;
+  width: 80px;
+  border: 1px solid #ccc;
+  margin-left: -1px;
+}
+.pc_nav_menu_001 .recommend dd:nth-child(1) {
+  margin-left: 0;
+}
+.pc_nav_menu_001 .recommend dd a {
+  color: #555;
+  position: relative;
+}
+.pc_nav_menu_001 .recommend dd a:hover {
+  color: #e00517;
+}
+.pc_nav_menu_001 .recommend dd a.on {
+  background-color: #e00;
+  color: #fff;
+}
+
+.pc_nav_menu_item {
+  margin-top: -7px;
+  margin-bottom: 10px;
+}
+.pc_nav_menu_item {
+  zoom: 1;
+}
+.pc_nav_menu_item:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.pc_nav_menu_item li {
+  float: left;
+  background-color: #faeaed;
+  border: 1px solid #fcd2d9;
+  width: 8.3333333%;
+  height: 26px;
+  font-size: 12px;
+  text-align: center;
+}
+.pc_nav_menu_item li a {
+  display: block;
+  line-height: 24px;
+}
+.pc_nav_menu_item li:first-child {
+  margin-left: 0;
+}

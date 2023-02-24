@@ -1,0 +1,204 @@
+.setting-tabs {
+	padding: 0;
+	background: darken($main-lighten-color,20);
+	border: none;
+	letter-spacing: -0.32em;
+	dd {
+		width: auto;
+		margin: 0;
+		font-size: 1.1em;
+		letter-spacing: normal;
+		border-right: darken($main-lighten-color,10) 1px solid;
+		a {
+			color: #fff;
+			background: none;
+			border: none;
+			@include border-radius(0);
+			position: relative;
+			&.active {
+				background: darken($main-lighten-color,40);
+				&:after {
+					content: "\0020";
+					top: 100%;
+					left: 50%;
+					margin-left: -5px;
+					border: transparent solid;
+					border-color: rgba(darken($main-lighten-color,40),0);
+					border-top-color: darken($main-lighten-color,40);
+					border-width: 5px;
+					display: block;
+					position: absolute;
+					z-index: 1;
+				}
+			}
+		}
+	}
+}
+.setting-online {
+	margin-left: -19px;
+	background: none !important;
+	border-collapse: separate;
+	border-spacing: 19px;
+	& > dd {
+		width: 600px;
+		height: 100px;
+		padding: 15px 20px;
+		font-family: $font-heiti;
+		background: darken($main-lighten-color,10);
+		border: darken($main-lighten-color,10) 1px solid;
+		@include border-radius(3px);
+		@include box-sizing(border-box);
+		vertical-align: middle;
+		display: table-cell;
+		position: relative;
+		&.status-now {
+			color: #fff;
+			text-align: center;
+		}
+		&.status-future {
+			margin-left: 20px;
+			background: #fff;
+			&:before {
+				content: "\0020";
+				top: 50%;
+				left: -20px;
+				margin-top: -20px;
+				border: transparent solid;
+				border-color: rgba(darken($main-lighten-color,10),0);
+				border-left-color: darken($main-lighten-color,10);
+				border-width: 20px;
+				display: block;
+				position: absolute;
+			}
+			.status {
+				margin-right: 55px;
+			}
+		}
+	}
+	.status {
+		font-size: 1.2em;
+		font-weight: bold;
+		.highlight {
+			display: inline-block;
+		}
+	}
+	.switch {
+		top: 17px;
+		right: 15px;
+		position: absolute;
+	}
+	.comment {
+		width: auto;
+		margin-top: 10px;
+		padding: 0;
+	}
+}
+.setting-overview {
+	background: none !important;
+	& > dd {
+		width: 230px;
+		margin: 0 15px 15px 0;
+		padding: 15px;
+		background: #fff;
+		border: $main-grey-color 1px solid;
+		border-top: $main-grey-color 5px solid;
+		@include border-radius(3px);
+		@include box-sizing(border-box);
+		vertical-align: top;
+		overflow: hidden;
+		position: relative;
+		display: inline-block;
+		@include clearfix;
+		&.no-active {
+			border-color: $main-red-color;
+			.setting-title {
+				.fa {
+					color: $main-red-color;
+				}
+			}
+		}
+	}
+	.setting-title {
+		color: darken($main-lighten-color,30);
+		font-size: 1.15em;
+		font-family: $font-heiti;
+		margin-bottom: 10px;
+		display: block;
+		position: relative;
+		.fa {
+			color: lighten($main-green-color,10);
+			font-size: 1.1em;
+			margin-right: 5px;
+		}
+	}
+	.setting-time {
+		color: #999;
+		font-size: 0.9em;
+		.fa {
+			margin-right: 5px;
+		}
+	}
+	button.btn-setting {
+		font-size: 1em;
+		padding: 3px 10px;
+		float: right;
+	}
+}
+.site-setting {
+	& > dd {
+		margin-bottom: 10px;
+		&.hidden-infr {
+			width: 70%;
+			max-height: 0;
+			margin-left: 220px;
+			padding-left: 10px;
+			border: $main-grey-color 1px solid;
+			border-top-width: 0;
+			border-bottom-width: 0;
+			background: lighten($main-grey-color,10);
+			@include border-radius(3px);
+			@include transition(all,0.3s);
+			overflow: hidden;
+			&.active {
+				max-height: 10000px;
+				margin-bottom: 20px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border-top-width: 1px;
+				border-bottom-width: 1px;
+			}
+			.comment {
+				padding-left: 0;
+			}
+		}
+	}
+	.form-element-name {
+		width: 220px;
+		color: mix($main-red-color,#666,20);
+		&.txt {
+			padding-top: 0;
+		}
+	}
+	.comment {
+		padding-left: 220px;
+		display: block;
+		a {
+			color: $main-red-color;
+		}
+	}
+	.form-element-infr {
+		padding-left: 220px;
+	}
+	.select-img {
+		vertical-align: top;
+	}
+	.disable {
+		@include opacity(0.5);
+		cursor: no-drop;
+	}
+}
+button.btn-active {
+	font-size: 1em;
+	margin: 0 10px;
+	padding: 3px 10px;
+}

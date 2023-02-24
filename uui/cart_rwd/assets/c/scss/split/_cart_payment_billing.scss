@@ -1,0 +1,12 @@
+//payment: billing address
+.md-billing-address {
+	max-height: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	overflow: hidden;
+	&.is-show {
+		max-height: 10000px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}

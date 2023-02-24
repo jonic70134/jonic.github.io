@@ -1,0 +1,199 @@
+//
+// .button
+// .button.gray
+// .button.large
+// .button.medium   // shadow style
+// .button.small
+// .button.disabled
+//
+.button {
+    //default button style
+    cursor: pointer;
+    -webkit-appearance: none;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    width: auto;
+    text-align: center;
+    line-height: 28px;
+    height: 28px;
+    border: none;
+    background: $blue;
+    padding: 0 1.25em;
+    margin: 0;
+    font-family: '微軟正黑體';
+    border-radius: 2px;
+    @include user-select;
+    @include inline-block;
+    @include box-sizing(border-box);
+    &:hover {
+        color: white;
+        text-decoration: none;
+        background: $light_blue;
+    }
+    &.disabled, &[disabled] {
+        cursor: default;
+    }
+    &[type=reset], &[type=button], &[type=submit] {
+        font-family: inherit;
+        border: 0 none;
+        margin: 0;
+    }
+    //active/pressed
+    &:active, &.pressed {
+        background: $dark_blue;
+        &.large {
+        }
+    }
+    //default button large style
+    &.large {
+        font-size: 15px;
+        padding: 0 1.25em;
+        height: 32px;
+        line-height: 32px;
+        @include box-sizing( border-box );
+        &.disabled, &[disabled] {
+        }
+        &:active, &.pressed {
+        }
+    }
+    //end
+    
+    // rush addcart button style
+    &.btn-rush, .btn-addcart{
+        background: $blue;
+        &:hover {
+            background: $light_blue;
+        }
+        &.disabled, &[disabled] {
+        }
+        &.large {
+            &.disabled, &[disabled] {
+            }
+        }
+        // active/pressed
+        &:active, &.pressed {
+            background: $dark_blue;
+            &.large {
+            }
+        }
+    }
+    //end
+
+    // add button style
+    &.btn-add{
+        background: $blue;
+        font-size: 0.8em;
+        height: 22px;
+        line-height: 18px;
+        &:hover {
+            background: $light_blue;
+        }
+        &.disabled, &[disabled] {
+        }
+        &.large {
+            &.disabled, &[disabled] {
+            }
+        }
+        // active/pressed
+        &:active, &.pressed {
+            background: $dark_blue;
+            &.large {
+            }
+        }
+    }
+    //end
+
+    // discount button style
+    &.btn-discount, &.red {
+        background: $red;
+        &:hover {
+            background: $light_red;
+        }
+        &.disabled, &[disabled] {
+        }
+        &.large {
+            &.disabled, &[disabled] {
+            }
+        }
+        // active/pressed
+        &:active, &.pressed {
+            background: $dark_red;
+            &.large {
+            }
+        }
+    }
+    //end
+
+    // preorder button style
+    &.btn-preorder, &.yellow {
+        background: $yellow;
+        color: black;
+        &:hover {
+            background: $light_yellow;
+        }
+        &.disabled, &[disabled] {
+        }
+        &.large {
+            &.disabled, &[disabled] {
+            }
+        }
+        // active/pressed
+        &:active, &.pressed {
+            background: $dark_yellow;
+            &.large {
+            }
+        }
+    }
+    //end
+
+    // gray button style
+    &.gray {
+        background: $gray;
+        color: white;
+        &:hover {
+            background: $light_gray;
+            color: $gray;
+        }
+        &.disabled, &[disabled] {
+            color: $gray;
+            background: $light_gray;
+        }
+        &.large {
+            &.disabled,
+            &[disabled] {
+            }
+        }
+        // active/pressed
+        &:active, &.pressed {
+            background: $dark_gray;
+            &.large {
+                background: $gray;
+                color: white;
+            }
+        }
+    }
+    //end
+}
+.message{
+    font-size: 1.2em;
+    font-weight: 800;
+    height: 32px;
+    &.to-stock{
+        color: $orange;
+    }
+    &.to-sale{
+        color: $green;
+    }
+    &.preorder-finish{
+        color: $gray;
+    }
+    &.rushout{
+        color: $gray;
+    }
+    &.soldout{
+        color: $gray;
+    }
+}
+            

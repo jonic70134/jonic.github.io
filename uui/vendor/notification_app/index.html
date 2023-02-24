@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html ng-app="uitoxapp">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<title>Inbox</title>
+<link href="css/vendor/ionic/ionic.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<script src="js/vendor/ionic/ionic.bundle.js"></script>
+<script src="cordova.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<body>
+<ion-nav-bar class="bar-calm">
+  <ion-nav-back-button class="button-icon ion-ios-arrow-left"></ion-nav-back-button>
+</ion-nav-bar>
+<ion-nav-view></ion-nav-view>
+<script id="templates/home.html" type="text/ng-template">
+  <ion-view view-title="Inbox">
+    <ion-content ng-controller="MsgListCtrl">
+      <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()"></ion-refresher>
+      <ion-list can-swipe=”listCanSwipe”>
+        <ion-item class="item-input md-search">
+          <i class="icon ion-android-search"></i><input type="search" placeholder="Search message...">
+        </ion-item>
+        <ion-item class="md-msglist is-home">
+          <a href="#/lists" class="md-msgline">
+            <h2 class="item-title">可賣量異常</h2>
+            <p class="item-txt">商品id 201411AG21000001 可賣量超賣，請盡快進行處理。</p>
+            <span class="item-note">12:30</span>
+            <span class="badge badge-assertive">999</span>
+          </a>
+        </ion-item>
+        
+        <ion-item class="md-msglist is-home">
+          <a href="#/lists" class="md-msgline">
+            <h2 class="item-title">可賣量異常</h2>
+            <p class="item-txt">商品id 201411AG21000001 可賣量超賣，請盡快進行處理。</p>
+            <span class="item-note">14/12/31</span>
+            <span class="badge badge-assertive"></span>
+          </a>
+        </ion-item>
+        
+        <ion-item class="md-msglist is-home">
+          <a href="#/lists" class="md-msgline">
+            <h2 class="item-title">可賣量異常</h2>
+            <p class="item-txt">商品id 201411AG21000001 可賣量超賣，請盡快進行處理。</p>
+            <span class="item-note">14/12/31</span>
+            <span class="badge badge-assertive"></span>
+          </a>
+        </ion-item>
+        
+        <ion-item class="md-msglist is-home">
+          <a href="#/lists" class="md-msgline">
+            <h2 class="item-title">可賣量異常</h2>
+            <p class="item-txt">商品id 201411AG21000001 可賣量超賣，請盡快進行處理。</p>
+            <span class="item-note">14/12/31</span>
+            <span class="badge badge-assertive"></span>
+          </a>
+        </ion-item>
+        
+        <ion-item class="md-msglist is-home">
+          <a href="#/lists" class="md-msgline">
+            <h2 class="item-title">可賣量異常</h2>
+            <p class="item-txt">商品id 201411AG21000001 可賣量超賣，請盡快進行處理。</p>
+            <span class="item-note">14/12/31</span>
+            <span class="badge badge-assertive"></span>
+          </a>
+        </ion-item>
+        
+      </ion-list>
+    </ion-content>
+  </ion-view>
+</script>
+<script id="templates/lists.html" type="text/ng-template">
+  <ion-view view-title="可賣量異常">
+    <ion-content ng-controller="MsgListCtrl">
+      <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()"></ion-refresher>
+      <ion-list show-delete="data.showDelete" can-swipe=”listCanSwipe”>
+      <ion-item class="item-input md-search">
+        <i class="icon ion-android-search"></i><input type="search" placeholder="Search message...">
+      </ion-item>
+      <ion-item class="item-icon-left item-remove-animate md-msglist is-unread" item="item" data-title="通知uitox提醒-可賣量異常訊息">
+        <a href="#/detail" class="md-msgline">
+          <i class="icon ion-android-mail icon-read"></i>
+          <h2 class="item-title">通知uitox提醒-可賣量異常訊息</h2>
+          <p class="item-txt t-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non nisl sem. Nam nibh odio, sodales eu massa sed, luctus lobortis massa. Nunc ac ex et ligula vestibulum tincidunt ut nec erat. Aliquam ornare facilisis arcu, id blandit odio. Integer ante elit, scelerisque in efficitur in, suscipit ac dui. Donec feugiat erat sit amet leo aliquet vulputate. In hac habitasse platea dictumst. Quisque lobortis nec sapien et egestas.</p>
+          <span class="item-note">12:30</span>
+        </a>
+        <ion-option-button class="button-assertive btn-option" ng-click=""><i class="ion ion-android-delete"></i></ion-option-button>
+      </ion-item>
+      <ion-item class="item-icon-left item-remove-animate md-msglist is-todo" item="item" data-title="通知uitox提醒-可賣量異常訊息">
+        <a href="#/detail" class="md-msgline">
+          <i class="icon ion-alert icon-read"></i>
+          <h2 class="item-title">通知uitox提醒-可賣量異常訊息</h2>
+          <p class="item-txt t-wrap">商品id 201411AG21000001 可賣量超賣，請盡快進行處理。</p>
+          <span class="item-note">12:30</span>
+        </a>
+        <ion-option-button class="button-assertive btn-option" ng-click=""><i class="ion ion-android-delete"></i></ion-option-button>
+      </ion-item>
+      <ion-item class="item-icon-left item-remove-animate md-msglist is-done" item="item">
+        <a href="#/detail" class="md-msgline">
+          <i class="icon ion-android-done icon-read"></i>
+          <h2 class="item-title">通知uitox提醒-可賣量異常訊息</h2>
+          <p class="item-txt t-wrap">商品id 201411AG21000001 可賣量超賣，請盡快進行處理。</p>
+          <span class="item-note">星期三</span>
+        </a>
+        <ion-option-button class="button-assertive btn-option" ng-click=""><i class="ion ion-android-delete"></i></ion-option-button>
+      </ion-item>
+      
+      <ion-item class="item-icon-left item-remove-animate md-msglist" item="item">
+        <a href="#/detail" class="md-msgline">
+          <i class="icon ion-android-drafts icon-read"></i>
+          <h2 class="item-title">通知uitox提醒-可賣量異常訊息</h2>
+          <p class="item-txt t-wrap">商品id 201411AG21000001 可賣量超賣，請盡快進行處理。</p>
+          <span class="item-note">14/12/31</span>
+        </a>
+        <ion-option-button class="button-assertive btn-option" ng-click=""><i class="ion ion-android-delete"></i></ion-option-button>
+      </ion-item>
+      
+      <ion-item class="item-icon-left item-remove-animate md-msglist" item="item">
+        <a href="#/detail" class="md-msgline">
+          <i class="icon ion-android-drafts icon-read"></i>
+          <h2 class="item-title">通知uitox提醒-可賣量異常訊息</h2>
+          <p class="item-txt t-wrap">商品id 201411AG21000001 可賣量超賣，請盡快進行處理。</p>
+          <span class="item-note">14/12/31</span>
+        </a>
+        <ion-option-button class="button-assertive btn-option" ng-click=""><i class="ion ion-android-delete"></i></ion-option-button>
+      </ion-item>
+      
+      <ion-item class="item-icon-left item-remove-animate md-msglist" item="item">
+        <a href="#/detail" class="md-msgline">
+          <i class="icon ion-android-drafts icon-read"></i>
+          <h2 class="item-title">通知uitox提醒-可賣量異常訊息</h2>
+          <p class="item-txt t-wrap">商品id 201411AG21000001 可賣量超賣，請盡快進行處理。</p>
+          <span class="item-note">14/12/31</span>
+        </a>
+        <ion-option-button class="button-assertive btn-option" ng-click=""><i class="ion ion-android-delete"></i></ion-option-button>
+      </ion-item>
+      
+      <ion-item class="item-icon-left item-remove-animate md-msglist" item="item">
+        <a href="#/detail" class="md-msgline">
+          <i class="icon ion-android-drafts icon-read"></i>
+          <h2 class="item-title">通知uitox提醒-可賣量異常訊息</h2>
+          <p class="item-txt t-wrap">商品id 201411AG21000001 可賣量超賣，請盡快進行處理。</p>
+          <span class="item-note">14/12/31</span>
+        </a>
+        <ion-option-button class="button-assertive btn-option" ng-click=""><i class="ion ion-android-delete"></i></ion-option-button>
+      </ion-item>
+      
+      <ion-item class="item-icon-left item-remove-animate md-msglist" item="item">
+        <a href="#/detail" class="md-msgline">
+          <i class="icon ion-android-drafts icon-read"></i>
+          <h2 class="item-title">通知uitox提醒-可賣量異常訊息</h2>
+          <p class="item-txt t-wrap">商品id 201411AG21000001 可賣量超賣，請盡快進行處理。</p>
+          <span class="item-note">14/12/31</span>
+        </a>
+        <ion-option-button class="button-assertive btn-option" ng-click=""><i class="ion ion-android-delete"></i></ion-option-button>
+      </ion-item>
+      
+      <ion-item class="item-icon-left item-remove-animate md-msglist" item="item">
+        <a href="#/detail" class="md-msgline">
+          <i class="icon ion-android-drafts icon-read"></i>
+          <h2 class="item-title">通知uitox提醒-可賣量異常訊息</h2>
+          <p class="item-txt t-wrap">商品id 201411AG21000001 可賣量超賣，請盡快進行處理。</p>
+          <span class="item-note">14/12/31</span>
+        </a>
+        <ion-option-button class="button-assertive btn-option" ng-click=""><i class="ion ion-android-delete"></i></ion-option-button>
+      </ion-item>
+      
+      <ion-item class="item-icon-left item-remove-animate md-msglist" item="item">
+        <a href="#/detail" class="md-msgline">
+          <i class="icon ion-android-drafts icon-read"></i>
+          <h2 class="item-title">通知uitox提醒-可賣量異常訊息</h2>
+          <p class="item-txt t-wrap">商品id 201411AG21000001 可賣量超賣，請盡快進行處理。</p>
+          <span class="item-note">14/12/31</span>
+        </a>
+        <ion-option-button class="button-assertive btn-option" ng-click=""><i class="ion ion-android-delete"></i></ion-option-button>
+      </ion-item>
+      
+      <ion-infinite-scroll on-infinite="addItems()"></ion-infinite-scroll>
+    </ion-list>
+    </ion-content>
+  </ion-view>
+</script>
+<script id="templates/detail.html" type="text/ng-template">
+  <ion-view view-title="Detail">
+    <ion-content class="l-article">
+      <h3 class="item-title">通知uitox提醒-可賣量異常訊息</h3>
+      <span class="item-note">2015/01/05 12:59</span>
+      <div class="clearfix"></div>
+      <p class="item-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non nisl sem. Nam nibh odio, sodales eu massa sed, luctus lobortis massa. Nunc ac ex et ligula vestibulum tincidunt ut nec erat. Aliquam ornare facilisis arcu, id blandit odio. Integer ante elit, scelerisque in efficitur in, suscipit ac dui. Donec feugiat erat sit amet leo aliquet vulputate. In hac habitasse platea dictumst. Quisque lobortis nec sapien et egestas.</p>
+      <p class="item-txt">我希望有一天能用鼠標雙擊我的錢包，不然不曉得奮鬥，喝醉了我誰也不服,我就扶牆!我就像一隻趴在玻璃上的蒼蠅，睡你的老公，女人之美，愛情，年老的時候，男孩窮著養，如果有錢也是一種錯，我們常常衝著鏡子做鬼臉，那麼你至少得吃一對兒鯨魚……我身邊的朋友們啊，在於說謊說的白日見鬼。</p>
+      <button class="button button-block button-positive">Go setting</button>
+      <ion-list class="list list-inset">
+        <ion-item class="item item-input">
+          <input type="text" placeholder="Textbox 1">
+        </ion-item>
+        <ion-item class="item item-input">
+          <input type="text" placeholder="Textbox 2">
+        </ion-item>
+        <ion-item class="item item-input">
+          <textarea>Enter your message</textarea>
+        </ion-item>
+      </ion-list>
+      <ion-list class="list list-inset">
+        <ion-item class="item item-toggle">
+           Toggle
+           <label class="toggle toggle-balanced">
+             <input type="checkbox">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </ion-item>
+      </ion-list>
+      <ion-list class="list list-inset">
+        <ion-item class="item item-checkbox">
+           <label class="checkbox checkbox-stable">
+             <input type="checkbox">
+           </label>
+           Checkbox 1
+        </ion-item>
+        <ion-item class="item item-checkbox">
+           <label class="checkbox checkbox-stable">
+             <input type="checkbox">
+           </label>
+           Checkbox 2
+        </ion-item>
+        <ion-item class="item item-checkbox">
+           <label class="checkbox checkbox-stable">
+             <input type="checkbox" checked>
+           </label>
+           Checkbox 3
+        </ion-item>
+      </ion-list>
+      <ion-list class="list list-inset">
+        <ion-item class="item item-radio">
+          <input type="radio" name="radiogroup" checked>
+          <div class="item-content">Radio 1</div>
+          <i class="radio-icon ion-checkmark"></i>
+        </ion-item>
+        <ion-item class="item item-radio">
+          <input type="radio" name="radiogroup">
+          <div class="item-content">Radio 2</div>
+          <i class="radio-icon ion-checkmark"></i>
+        </ion-item>
+        <ion-item class="item item-radio">
+          <input type="radio" name="radiogroup">
+          <div class="item-content">Radio 3</div>
+          <i class="radio-icon ion-checkmark"></i>
+        </ion-item>
+      </ion-list>
+      <ion-list class="list list-inset">
+        <ion-item class="item item-input item-select">
+          <div class="input-label">
+            Select 1
+          </div>
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option selected>Option 3</option>
+          </select>
+        </ion-item>
+        <ion-item class="item item-input item-select">
+          <div class="input-label">
+            Select 2
+          </div>
+          <select>
+            <option>Option 1</option>
+            <option selected>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </ion-item>
+        <ion-item class="item item-input item-select">
+          <div class="input-label">
+            Select 3
+          </div>
+          <select>
+            <option selected>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </ion-item>
+      </ion-list>
+      <button class="button button-block button-assertive">Submit</button>
+    </ion-content>
+  </ion-view>
+</script>
+</body>
+</html>

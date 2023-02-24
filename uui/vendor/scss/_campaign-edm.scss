@@ -1,0 +1,184 @@
+//edit edm
+.edit-area {
+	margin: 10px 0 20px;
+	padding: 30px;
+	text-align: center;
+	background: #efefef;
+	@include border-radius(3px);
+	position: relative;
+	.btn-add {
+		@include btn-color(lighten($main-green-color,10));
+	}
+	.block {
+		margin-bottom: 10px;
+		text-align: left;
+		position: relative;
+		&:hover {
+			.cover {
+				@include opacity(1);
+			}
+		}
+		&:nth-last-child(2) {
+			margin-bottom: 20px;
+		}
+	}
+	.cover {
+		padding: 10px;
+		font-family: $font-heiti;
+		background: rgba(black,0.6);
+		@include opacity(0);
+		@include box-sizing(border-box);
+		@include transition(opacity,0.3s);
+		button {
+			&.btn-delete {
+				@include btn-color(darken($main-grey-color,20));
+			}
+		}
+		.edit-sort {
+			color: #fff;
+			font-size: 15px;
+			margin: 0 1px;
+			padding: 3px 15px;
+			background: #333;
+			background: rgba(white,0.5);
+			@include border-radius(5px);
+			@include transition(background,0.2s);
+			vertical-align: top;
+			display: inline-block;
+			i {
+				margin-right: 5px;
+			}
+			.ui-spinner {
+				margin-left: 5px;
+				input {
+					font-size: 12px !important;
+					font-family: $font-default !important;
+					padding: 1px 2px;
+				}
+			}
+			&:hover {
+				color: #fff;
+				background: $main-color;
+			}
+		}
+		.tooltip {
+			right: 10px;
+			top: 8px;
+			margin: 0 5px;
+			padding: 10px 20px;
+			color: #fff;
+			font-size: 16px;
+			background: #f90;
+			border: #fff 1px solid;
+			@include border-radius(5px);
+			@include box-shadow(rgba(black,0.3) 3px 3px 5px);
+			position: absolute;
+			&:before, &:after {
+				content: "\0020";
+				right: 100%;
+				top: 50%;
+				border: transparent solid;
+				position: absolute;
+			}
+			&:before {
+				border-width: 8px;
+				border-right-color: #fff;
+				margin-top: -8px;
+			}
+			&:after {
+				border-width: 7px;
+				border-right-color: #f90;
+				margin-top: -7px;
+			}
+		}
+	}
+}
+.edm-item {
+	width: 100%;
+	td {
+		padding: 10px;
+		color: #666;
+		background: #fff;
+		border: #efefef 10px solid;
+		b {
+			font-weight: bold;
+		}
+		&.item-new {
+			color: $main-grey-color;
+			font-size: 1.5em;
+			font-family: $font-heiti;
+			text-align: center;
+			vertical-align: middle;
+		}
+		&.item-banner {
+			height: 70px;
+			font-size: 1.5em;
+			font-family: $font-heiti;
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+	&.item-4 td {
+		width: 25%;
+	}
+	&.item-2 td {
+		width: 50%;
+		padding: 0;
+	}
+	.product {
+		dd {
+			margin: 5px 0;
+		}
+		img {
+			margin: 5px 0;
+			display: block;
+		}
+	} 
+}
+.edit-edm {
+	padding-top: 0;
+	.btn-import-prod {
+		font-size: 0.9em;
+		margin: 5px 0;
+		padding: 3px 5px;
+		.fa {
+			font-size: 1em;
+			margin-right: 3px;
+		}
+	}
+	.file-upload {
+		margin: 5px 0;
+		padding: 3px 5px;
+		color: #fff;
+		font-size: 0.9em;
+    		font-family: $font-heiti;
+    		vertical-align: middle;
+		@include btn-color($main-color);
+		@include border-radius(5px);
+		@include transition(background,0.3s, box-shadow,0.2s);
+		cursor: pointer;
+		overflow: hidden;
+		display: inline-block;
+		position: relative;
+		.fa {
+			font-size: 1em;
+			margin-right: 3px;
+		}
+		&:hover {
+			@include box-shadow(rgba(black,0.4) 0 -5px 0 inset);
+		}
+		input[type="file"] {
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			@include opacity(0);
+			cursor: pointer;
+			position: absolute;
+		}
+	}
+	.comment {
+		color: mix($main-red-color,#c90,10);
+		margin: 3px 0 0 0;
+	}
+}

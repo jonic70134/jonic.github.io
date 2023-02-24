@@ -1,0 +1,42 @@
+.site-ad-top .container {
+  font-size: 0;
+}
+.site-ad-top .container img {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .site-ad-top {
+    display: none;
+  }
+}
+.error {
+  text-align: center;
+  margin: 100px auto 150px;
+}
+.error h1 {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-bottom: 30px;
+}
+.error ul {
+  display: inline-block;
+  list-style: disc;
+}
+.error li {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.error .actions {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .error {
+    margin: 30px auto 50px;
+    padding: 0 40px;
+  }
+  .error li {
+    font-size: 0.8em;
+  }
+}

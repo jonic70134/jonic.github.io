@@ -1,0 +1,14 @@
+.site-ad-top{
+	.container{
+		font-size: 0;
+		img{
+			width: 100%;
+		}
+	}
+}
+//pad & mobile
+@include RWD(mobile) {
+.site-ad-top{
+	display: none;
+}
+}

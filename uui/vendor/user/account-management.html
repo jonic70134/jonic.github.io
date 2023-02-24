@@ -1,0 +1,572 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox vendor</title>
+<link href="/css/plugin/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/css/plugin/jquery.fancybox.css?v=2.1.4" rel="stylesheet" type="text/css" media="screen" />
+<link href="/css/plugin/jquery-ui-1.10.4.custom.css" rel="stylesheet" type="text/css">
+<link href="/css/plugin/jquery-ui-timepicker-addon.css" rel="stylesheet" type="text/css">
+<link href="/css/template.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="/js/lib/html5.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ie.css">
+<![endif]--></head>
+<body>
+<div id="wrapper">
+    <!-- Header  -->
+    <header id="header" class="clearfix">
+      <div class="logo"><a href="#" title="回到首頁"><span>平台管理系統</span></a></div>
+      <!-- User -->
+      <div class="user">
+        <div class="btn-group">
+          <a class="btn-group-user go-popup" data-width="400" data-href="/index/popup/supply-only.html" data-type="iframe"><i class="fa fa-truck"></i>純出貨</a>
+        </div>
+        <div class="btn-group">
+          <a class="btn-group-user" href="/data/site-setting.html"><i class="fa fa-cogs"></i>平台設定</a>
+        </div>
+        <div class="btn-group">
+          <!-- if annoucement -->
+          <a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bullhorn animate-rubberBand animated"></i><span class="quantity">99</span><span class="caret"></span></a>
+          <!-- if no annoucement -->
+          <!--a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bullhorn"></i><span class="quantity quantity-zero">0</span><span class="caret"></span></a-->
+          <ul class="dropdown-menu">
+            <li><a href="#">系統公告<span class="quantity">55</span></a></li>
+            <li><a href="#">ASAP<span class="quantity">99+</span></a></li>
+            <li><a href="#">ADI<span class="quantity">99+</span></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <!-- if notification -->
+          <!--a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bell animate-swing animated"></i><span class="quantity">99</span><span class="caret"></span></a-->
+          <!-- if no notification -->
+          <a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bell"></i><span class="quantity quantity-zero">0</span><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><span class="notification-summary"><i class="fa fa-exclamation-triangle"></i>99 項新通知</span></li>
+            <li><a href="#">新品尚未開單<span class="quantity">55</span></a></li>
+            <li><a href="#">新品尚未開單新品尚未開單<span class="quantity">99+</span></a></li>
+            <li><a href="#" class="more-notification">更多通知<i class="fa fa-arrow-circle-right"></i></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-user"></i>userName<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/user/my-account.html">個人資料修改</a></li>
+            <li><a href="#">登出</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- User /-->
+    </header>
+    <!--Header /-->    <!-- BEGIN Menu -->
+    <div class="nav-bg"></div>
+    <nav id="nav">
+     <ul>
+      <li class="dis-dropdown"><a href="/" ><i class="fa fa-home"></i>首頁</a></li>
+      <li><span ><i class="fa fa-archive"></i>商品管理</span>
+          <ul>
+            <li><a href="#">新增商品(看所有商品)</a></li>
+            <li><a href="/product/import-data.html">批次匯入商品</a></li>
+            <li><a href="#">商品有可賣量不能賣清單</a></li>
+            <li><a href="#">前台可賣量已缺貨清單</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-th"></i>前端賣場佈置/管理</span>
+          <ul>
+            <li><a href="/inside/modify-theme.html">網站風格設定(選版型)</a></li>
+            <li><a href="/inside/modify-homepage.html">首頁佈置</a></li>
+            <li><a href="/inside/modify-asap-homepage.html">ASAP首頁佈置</a></li>
+            <li><a href="/inside/modify-menu.html">新增區館(分類)/列表</a></li>
+            <li><a href="#">維護各賣場商品</a></li>
+            <li><a href="#">活動品變價管理</a></li>
+            <li><a href="/search/search-keywords.html">站內熱門字搜尋設定</a></li>
+            <li><a href="#">網站設定(購買上限/公告等)</a></li>
+            <li><a href="/inside/modify-terms.html">自訂購物需知
+</a></li>
+            <li><a href="/inside/modify-privacy.html">自訂隱私權</a></li>
+            <li><a href="/inside/modify-custom.html">自訂頁面管理</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-briefcase"></i>行銷活動管理</span>
+          <ul>
+            <li><a href="/campaign/campaign-list.html">行銷活動設定/查詢</a></li>
+            <li><a href="/campaign/additional-purchase.html">結帳頁下加購商品</a></li>
+            <li><a href="/campaign/edm-list.html">eDM編輯/發送</a></li>
+            <li><a href="/campaign/coupon-apply-list.html">購物金申請</a></li>
+            <li><a href="/campaign/coupon-list.html">購物金使用報表</a></li>
+            <li><a href="/campaign/sale-ontime-list.html">整點特賣</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-tasks"></i>業績報表</span>
+          <ul>
+            <li><a href="/achievement/achievement.html">平台即時業績查詢</a></li>
+            <li><a href="/achievement/orders-charts.html">訂單魚群</a></li>
+            <li><a href="#">訂單查詢</a></li>
+            <li><a href="#">平台退訂明細查詢</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-exchange"></i>進還貨管理</span>
+          <ul>
+            <li><a href="#">申請/刪除寄倉單</a></li>
+            <li><a href="#">申請/刪除退倉單</a></li>
+            <li><a href="#">列印寄倉單→進貨到uitox</a></li>
+            <li><a href="#">新品未開單列表</a></li>
+            <li><a href="#">進貨被驗退商品</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-cubes"></i>庫存報表</span>
+          <ul>
+            <li><a href="#">商品即時庫存</a></li>
+            <li><a href="#">商品區間進銷存</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-paste"></i>訂單出貨狀況</span>
+          <ul>
+            <li><a href="#">全部未出訂單</a></li>
+            <li><a href="#">超過24H未出貨訂單</a></li>
+            <li><a href="#">已出貨回填異常訂單</a></li>
+            <li><a href="#">查所有訂單</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-share"></i>訂單出貨</span>
+          <ul>
+            <li><a href="">下載匯入範例</a></li>
+            <li><a href="">下載匯入範例 - 宅配</a></li>
+            <li><a href="">下載匯入範例 - 超取</a></li>
+            <li><a href="/orders/delivery.html">匯入訂單</a></li>
+            <li><a href="">查詢訂單匯入結果</a></li>
+            <li><a href="/orders/delivery-feedback.html">查看訂單出貨狀態</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-reply"></i>訂單退訂</span>
+          <ul>
+            <li><a href="">下載退訂範例</a></li>
+            <li><a href="/orders/returns.html">匯入退訂</a></li>
+            <li><a href="">查詢退訂匯入結果</a></li>
+            <li><a href="">查看退訂收回狀態</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa u-icon-u"></i>對uitox帳款</span>
+          <ul>
+            <li><a href="#">即時對帳</a></li>
+            <li><a href="#">已請款歷史帳款明細</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-puzzle-piece"></i>與供應商對帳</span>
+          <ul>
+            <li><a href="/account/table.html">即時對帳</a></li>
+            <li><a href="#">已請款歷史帳款明細</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-phone"></i>營管/客服</span>
+          <ul>
+            <li><a href="">審訂單價格</a></li>
+            <li><a href="/customer/cs-orders.html">訂單查詢</a></li>
+            <li><a href="/customer/cs-returns.html">退訂查詢</a></li>
+            <li><a href="">購物金查詢</a></li>
+            <li><a href="">購物金審核</a></li>
+            <li><a href="/data/table.html">簡訊及e-mail設定</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-building"></i>供應商管理</span>
+          <ul>
+            <li><a href="#">供應商資料與合約</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-user"></i>會員管理</span>
+          <ul>
+            <li><a href="#">會員資料修改/補發帳密</a></li>
+          </ul>
+      </li>
+      <li><span class="active"><i class="fa fa-lock"></i>權限設定</span>
+          <ul>
+            <li><a href="/user/user-list.html">新增人員權限/查詢</a></li>
+            <li><a href="/user/user-group-list.html">看所有權限列表</a></li>
+            <li><a href="">從系統匯出資料紀錄</a></li>
+            <li><a href="">對uitox窗口資料維護</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-envelope"></i>聯絡uitox</span>
+          <ul>
+            <li><a href="#">聯絡uitox</a></li>
+          </ul>
+      </li>     
+     </ul>
+    </nav>
+    <!-- END Menu -->    <!-- container -->
+    <div id="container">
+      <div class="breadcrumb_top">
+  <ul class="breadcrumb"><li><a href="/">首頁</a><span class="divider"> &gt; </span></li> <li class="active">會員管理</li></ul>
+</div>
+<section class="template-content">
+  <div class="form-element search-filter">
+    <label class="label-search">購物金活動編號<input type="text" class="input-search" placeholder="請輸入購物金活動編號"></label>
+    <label class="label-search">使用平台<select name="" id="" class="select-search"><option value="">請選擇</option><option value="">select1</option><option value="">select2</option></select></label>
+    <div class="select-group">
+      <label>篩選條件A</label>
+      <label for="checkBox1"><input type="checkbox" id="checkBox1" name="checkboxGroup">多選1</label>
+      <label for="checkBox2"><input type="checkbox" id="checkBox2" name="checkboxGroup">多選2</label>
+      <label for="checkBox3"><input type="checkbox" id="checkBox3" name="checkboxGroup">多選3</label>
+      <label for="checkBox4"><input type="checkbox" id="checkBox4" name="checkboxGroup">多選4</label>
+      <label for="checkBox5"><input type="checkbox" id="checkBox5" name="checkboxGroup">多選5</label>
+    </div>
+    <div class="select-group">
+      <label>篩選條件B</label>
+      <label for="radio1"><input type="radio" id="radio1" name="radioGroup">單選1</label>
+      <label for="radio2"><input type="radio" id="radio2" name="radioGroup">單選2</label>
+      <label for="radio3"><input type="radio" id="radio3" name="radioGroup">單選3</label>
+      <label for="radio4"><input type="radio" id="radio4" name="radioGroup">單選4</label>
+      <label for="radio5"><input type="radio" id="radio5" name="radioGroup">單選5</label>
+    </div>
+    <div class="select-group">
+      <label>建立時間</label>
+      <input type="text" class="input-datepicker" placeholder="請輸入開始時間">~<input type="text" class="input-datepicker" placeholder="請輸入結束時間" value=""><span class="comment"> (查詢區間最長90天，可查詢6個月內資料)</span>
+    </div>
+    <div class="select-group">
+      <button class="btn-submit"><i class="fa fa-search"></i>查詢</button>
+      <button class="btn-cancel"><i class="fa fa-times"></i>清除</button>
+    </div>
+  </div>
+  <section class="table-container">
+    <div class="table-hd double-scroll-head">
+      <table class="template-table">
+        <thead>
+          <tr>
+            <th>會員email<button class="table-sort" title="排序"><i class="fa fa-chevron-down"></i></button></th>
+            <th>會員手機<button class="table-sort" title="排序"><i class="fa fa-chevron-down"></i></button></th>
+            <th>忘記密碼</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td class="txt">kaylin_petersen@mac.com (<a class="go-popup" data-width="800" data-href="/user/popup/account-email.html">修改</a>)</td>
+            <td class="txt">0919****** (<a class="go-popup" data-width="800" data-href="/user/popup/account-mobile.html">修改</a>)</td>
+            <td><a href="">忘記密碼</a></td>
+          </tr>
+          
+          <tr>
+            <td class="txt">kerry_woods@fastmail.com (<a class="go-popup" data-width="800" data-href="/user/popup/account-email.html">修改</a>)</td>
+            <td class="txt">0919****** (<a class="go-popup" data-width="800" data-href="/user/popup/account-mobile.html">修改</a>)</td>
+            <td><a href="">忘記密碼</a></td>
+          </tr>
+          
+          <tr>
+            <td class="txt">tomassparks@live.com (<a class="go-popup" data-width="800" data-href="/user/popup/account-email.html">修改</a>)</td>
+            <td class="txt">0919****** (<a class="go-popup" data-width="800" data-href="/user/popup/account-mobile.html">修改</a>)</td>
+            <td><a href="">忘記密碼</a></td>
+          </tr>
+          
+          <tr>
+            <td class="txt">moses_kinney@gmail.com (<a class="go-popup" data-width="800" data-href="/user/popup/account-email.html">修改</a>)</td>
+            <td class="txt">0919****** (<a class="go-popup" data-width="800" data-href="/user/popup/account-mobile.html">修改</a>)</td>
+            <td><a href="">忘記密碼</a></td>
+          </tr>
+          
+          <tr>
+            <td class="txt">ty-bowden@live.com (<a class="go-popup" data-width="800" data-href="/user/popup/account-email.html">修改</a>)</td>
+            <td class="txt">0919****** (<a class="go-popup" data-width="800" data-href="/user/popup/account-mobile.html">修改</a>)</td>
+            <td><a href="">忘記密碼</a></td>
+          </tr>
+          
+          <tr>
+            <td class="txt">teddymclaughlin@live.com (<a class="go-popup" data-width="800" data-href="/user/popup/account-email.html">修改</a>)</td>
+            <td class="txt">0919****** (<a class="go-popup" data-width="800" data-href="/user/popup/account-mobile.html">修改</a>)</td>
+            <td><a href="">忘記密碼</a></td>
+          </tr>
+          
+          <tr>
+            <td class="txt">hamish_mcclure@me.com (<a class="go-popup" data-width="800" data-href="/user/popup/account-email.html">修改</a>)</td>
+            <td class="txt">0919****** (<a class="go-popup" data-width="800" data-href="/user/popup/account-mobile.html">修改</a>)</td>
+            <td><a href="">忘記密碼</a></td>
+          </tr>
+          
+          <tr>
+            <td class="txt">jamal_chung@live.com (<a class="go-popup" data-width="800" data-href="/user/popup/account-email.html">修改</a>)</td>
+            <td class="txt">0919****** (<a class="go-popup" data-width="800" data-href="/user/popup/account-mobile.html">修改</a>)</td>
+            <td><a href="">忘記密碼</a></td>
+          </tr>
+          
+          <tr>
+            <td class="txt">angelo-lucas@me.com (<a class="go-popup" data-width="800" data-href="/user/popup/account-email.html">修改</a>)</td>
+            <td class="txt">0919****** (<a class="go-popup" data-width="800" data-href="/user/popup/account-mobile.html">修改</a>)</td>
+            <td><a href="">忘記密碼</a></td>
+          </tr>
+          
+          <tr>
+            <td class="txt">jerald_watts@live.com (<a class="go-popup" data-width="800" data-href="/user/popup/account-email.html">修改</a>)</td>
+            <td class="txt">0919****** (<a class="go-popup" data-width="800" data-href="/user/popup/account-mobile.html">修改</a>)</td>
+            <td><a href="">忘記密碼</a></td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="table-body">
+      <section class="double-scroll-top">
+        <div class="scroll-content-width"></div>
+      </section>
+      <section class="double-scroll-bottom">
+        <table class="template-table scroll-content">
+          <thead>
+            <tr>
+              <th>發送每組點數</th>
+              <th>發送組數</th>
+              <th>發送總點數</th>
+              <th>歸戶總點數</th>
+              <th>歸戶率</th>
+              <th>使用總點數</th>
+              <th>使用率</th>
+              <th>歸戶後使用率</th>
+              <th>使用會員總數</th>
+              <th>使用購物金<br>消費訂單數</th>
+              <th>使用新客總數</th>
+              <th>新客使用購物金<br>消費訂單總額</th>
+              <th>發出平台</th>
+              <th>類型</th>
+              <th>說明</th>
+              <th>連結</th>
+              <th>詳細訊息</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">$65,535</td>
+              <td>STAYREAL</td>
+              <td>非序號</td>
+              <td class="txt"><input type="text" class="input-list-txtbox input-list-txtbox1" placeholder="請填寫退訂說明"><button class="btn-txt btn-green btn-copy-to-val"><i class="fa fa-angle-double-down"></i>以下全同</button></td>
+              <td class="txt"><a href="/" target="_blank" title="連結title連結title">我是一個網頁連結</a></td>
+              <td><button class="btn-red" title="下載"><i class="fa fa-download"></i></button><button class="btn-green go-popup" data-width="600" data-href="/template/popup/form.html" title="修改"><i class="fa fa-pencil"></i></button><button class="btn-blue go-popup" data-width="800" data-href="/template/popup/table.html" title="詳情"><i class="fa fa-search"></i></button><button class="btn-grey" title="刪除"><i class="fa fa-times"></i></button></td>
+            </tr>
+            
+            <tr>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">$65,535</td>
+              <td>STAYREAL</td>
+              <td>非序號</td>
+              <td class="txt"><input type="text" class="input-list-txtbox" placeholder="請填寫退訂說明"><button class="btn-txt btn-green btn-copy-val"><i class="fa fa-angle-up"></i>同上</button></td>
+              <td class="txt"><a href="/" target="_blank" title="連結title連結title">我是一個網頁連結</a></td>
+              <td><button class="btn-red" title="下載"><i class="fa fa-download"></i></button><button class="btn-green go-popup" data-width="800" data-href="/template/popup/form.html" title="修改"><i class="fa fa-pencil"></i></button><button class="btn-blue go-popup" data-width="800" data-href="/template/popup/table.html" title="詳情"><i class="fa fa-search"></i></button><button class="btn-grey" title="刪除"><i class="fa fa-times"></i></button></td>
+            </tr>
+            
+            <tr>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">$65,535</td>
+              <td>STAYREAL</td>
+              <td>非序號</td>
+              <td class="txt"><input type="text" class="input-list-txtbox" placeholder="請填寫退訂說明"><button class="btn-txt btn-green btn-copy-val"><i class="fa fa-angle-up"></i>同上</button></td>
+              <td class="txt"><a href="/" target="_blank" title="連結title連結title">我是一個網頁連結</a></td>
+              <td><button class="btn-red" title="下載"><i class="fa fa-download"></i></button><button class="btn-green go-popup" data-width="800" data-href="/template/popup/form.html" title="修改"><i class="fa fa-pencil"></i></button><button class="btn-blue go-popup" data-width="800" data-href="/template/popup/table.html" title="詳情"><i class="fa fa-search"></i></button><button class="btn-grey" title="刪除"><i class="fa fa-times"></i></button></td>
+            </tr>
+            
+            <tr>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">$65,535</td>
+              <td>STAYREAL</td>
+              <td>非序號</td>
+              <td class="txt"><input type="text" class="input-list-txtbox" placeholder="請填寫退訂說明"><button class="btn-txt btn-green btn-copy-val"><i class="fa fa-angle-up"></i>同上</button></td>
+              <td class="txt"><a href="/" target="_blank" title="連結title連結title">我是一個網頁連結</a></td>
+              <td><button class="btn-red" title="下載"><i class="fa fa-download"></i></button><button class="btn-green go-popup" data-width="800" data-href="/template/popup/form.html" title="修改"><i class="fa fa-pencil"></i></button><button class="btn-blue go-popup" data-width="800" data-href="/template/popup/table.html" title="詳情"><i class="fa fa-search"></i></button><button class="btn-grey" title="刪除"><i class="fa fa-times"></i></button></td>
+            </tr>
+            
+            <tr>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">$65,535</td>
+              <td>STAYREAL</td>
+              <td>非序號</td>
+              <td class="txt"><input type="text" class="input-list-txtbox" placeholder="請填寫退訂說明"><button class="btn-txt btn-green btn-copy-val"><i class="fa fa-angle-up"></i>同上</button></td>
+              <td class="txt"><a href="/" target="_blank" title="連結title連結title">我是一個網頁連結</a></td>
+              <td><button class="btn-red" title="下載"><i class="fa fa-download"></i></button><button class="btn-green go-popup" data-width="800" data-href="/template/popup/form.html" title="修改"><i class="fa fa-pencil"></i></button><button class="btn-blue go-popup" data-width="800" data-href="/template/popup/table.html" title="詳情"><i class="fa fa-search"></i></button><button class="btn-grey" title="刪除"><i class="fa fa-times"></i></button></td>
+            </tr>
+            
+            <tr>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">$65,535</td>
+              <td>STAYREAL</td>
+              <td>非序號</td>
+              <td class="txt"><input type="text" class="input-list-txtbox" placeholder="請填寫退訂說明"><button class="btn-txt btn-green btn-copy-val"><i class="fa fa-angle-up"></i>同上</button></td>
+              <td class="txt"><a href="/" target="_blank" title="連結title連結title">我是一個網頁連結</a></td>
+              <td><button class="btn-red" title="下載"><i class="fa fa-download"></i></button><button class="btn-green go-popup" data-width="800" data-href="/template/popup/form.html" title="修改"><i class="fa fa-pencil"></i></button><button class="btn-blue go-popup" data-width="800" data-href="/template/popup/table.html" title="詳情"><i class="fa fa-search"></i></button><button class="btn-grey" title="刪除"><i class="fa fa-times"></i></button></td>
+            </tr>
+            
+            <tr>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">$65,535</td>
+              <td>STAYREAL</td>
+              <td>非序號</td>
+              <td class="txt"><input type="text" class="input-list-txtbox" placeholder="請填寫退訂說明"><button class="btn-txt btn-green btn-copy-val"><i class="fa fa-angle-up"></i>同上</button></td>
+              <td class="txt"><a href="/" target="_blank" title="連結title連結title">我是一個網頁連結</a></td>
+              <td><button class="btn-red" title="下載"><i class="fa fa-download"></i></button><button class="btn-green go-popup" data-width="800" data-href="/template/popup/form.html" title="修改"><i class="fa fa-pencil"></i></button><button class="btn-blue go-popup" data-width="800" data-href="/template/popup/table.html" title="詳情"><i class="fa fa-search"></i></button><button class="btn-grey" title="刪除"><i class="fa fa-times"></i></button></td>
+            </tr>
+            
+            <tr>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">$65,535</td>
+              <td>STAYREAL</td>
+              <td>非序號</td>
+              <td class="txt"><input type="text" class="input-list-txtbox" placeholder="請填寫退訂說明"><button class="btn-txt btn-green btn-copy-val"><i class="fa fa-angle-up"></i>同上</button></td>
+              <td class="txt"><a href="/" target="_blank" title="連結title連結title">我是一個網頁連結</a></td>
+              <td><button class="btn-red" title="下載"><i class="fa fa-download"></i></button><button class="btn-green go-popup" data-width="800" data-href="/template/popup/form.html" title="修改"><i class="fa fa-pencil"></i></button><button class="btn-blue go-popup" data-width="800" data-href="/template/popup/table.html" title="詳情"><i class="fa fa-search"></i></button><button class="btn-grey" title="刪除"><i class="fa fa-times"></i></button></td>
+            </tr>
+            
+            <tr>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">$65,535</td>
+              <td>STAYREAL</td>
+              <td>非序號</td>
+              <td class="txt"><input type="text" class="input-list-txtbox" placeholder="請填寫退訂說明"><button class="btn-txt btn-green btn-copy-val"><i class="fa fa-angle-up"></i>同上</button></td>
+              <td class="txt"><a href="/" target="_blank" title="連結title連結title">我是一個網頁連結</a></td>
+              <td><button class="btn-red" title="下載"><i class="fa fa-download"></i></button><button class="btn-green go-popup" data-width="800" data-href="/template/popup/form.html" title="修改"><i class="fa fa-pencil"></i></button><button class="btn-blue go-popup" data-width="800" data-href="/template/popup/table.html" title="詳情"><i class="fa fa-search"></i></button><button class="btn-grey" title="刪除"><i class="fa fa-times"></i></button></td>
+            </tr>
+            
+            <tr>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">100.00%</td>
+              <td class="num">100.00%</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">65,535</td>
+              <td class="num">$65,535</td>
+              <td>STAYREAL</td>
+              <td>非序號</td>
+              <td class="txt"><input type="text" class="input-list-txtbox" placeholder="請填寫退訂說明"><button class="btn-txt btn-green btn-copy-val"><i class="fa fa-angle-up"></i>同上</button></td>
+              <td class="txt"><a href="/" target="_blank" title="連結title連結title">我是一個網頁連結</a></td>
+              <td><button class="btn-red" title="下載"><i class="fa fa-download"></i></button><button class="btn-green go-popup" data-width="800" data-href="/template/popup/form.html" title="修改"><i class="fa fa-pencil"></i></button><button class="btn-blue go-popup" data-width="800" data-href="/template/popup/table.html" title="詳情"><i class="fa fa-search"></i></button><button class="btn-grey" title="刪除"><i class="fa fa-times"></i></button></td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <div class="clearfix"></div>
+  </section>
+  <div class="pages">
+    <a class="prev-page disable">上一頁</a>
+    <span class="current-page">1/255</span>
+    <a href="#" class="next-page">下一頁</a>
+    <select class="select-page"><option>第1頁</option></select>
+  </div>
+</section>
+    </div>
+    <!-- container /-->
+<!--%= render :partial => "footer" %-->
+</div><!-- wrapper /-->
+<script src="/js/lib/jquery-1.9.1.js" ></script>
+<script src="/js/lib/bootstrap-dropdown.js"></script>
+<script src="/js/nav-action.js"></script>
+<script src="/js/lib/jquery.fancybox.pack.js?v=2.1.4"></script>
+<script src="/js/lib/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="/js/lib/jquery-ui-timepicker-addon.js"></script>
+<script src="/js/lib/jquery-ui-sliderAccess.js"></script>
+<script src="/js/lib/jquery-ui-timepicker-zh-TW.js"></script>
+<script src="/js/template-action.js"></script>
+<script src="/js/double-scroll.js"></script>
+<script>
+//date time picker
+var timeOption = {
+    dateFormat: 'yy/mm/dd',
+    showTimepicker: false,
+    minDate: -180,
+    maxDate: 0
+};
+$('.input-datepicker').datetimepicker(timeOption);
+</script>
+</body>
+</html>

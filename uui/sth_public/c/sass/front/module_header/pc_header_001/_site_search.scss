@@ -1,0 +1,92 @@
+.site-search{
+    float: left;
+    vertical-align: top;
+    margin: 25px 0 0;
+    z-index: 3;
+    // background: $search_bk;
+    .form{
+        font-size: 0;
+    }
+    .input-search{
+        border: 3px solid $search_border;
+    	padding-left: 10px;
+        margin: 0;
+        width: 300px;
+        height: 34px;
+        background: $search_bk;
+        color: $search_text;
+        font-size: 12px;
+        &:focus{
+            color: black;
+        }
+	}
+    .btn-submit{
+        background: $search_btn;
+        border: none;
+        margin: 0;
+        height: 34px;
+        vertical-align: top;
+        cursor: pointer;
+    }
+    .icon-search{
+        padding: 5px 0px;
+        font-size: 20px;
+        color: white;
+        &:before{
+            background: none;
+            height: auto;
+            padding-top: 0;
+        }
+    }
+    .recommend{
+        font-size: 0.815em;
+        margin-top: 3px;
+        width: 337px;
+        height: 20px;
+        overflow: hidden;
+        >li{
+            float: left;
+            list-style: none;
+            padding: 3px 6px;
+            &:first-child{
+                padding-left: 0;
+            }
+        }
+        a{
+            color: $recommend_link;
+            &:hover{
+                color: $primary;
+                @include transition(0.3s);
+            }
+        }
+    }
+}
+
+.ui-menu {
+    padding:2px;
+    // display:block;
+    background: #fff;
+    z-index: 2;
+    // border: 1px solid $search_border;
+    max-width: 300px;
+    @include box-shadow(0 1px 5px #555);
+    .ui-menu-item {
+        width:100%;
+        a {
+            line-height: 1.6;
+            padding: 5px 10px;
+            color:#111;
+            font-size: 14px;
+            display: block;
+            border-bottom: 1px solid #eee;
+            &:hover {
+                border: 1px solid $ui_menu_border;
+                // background: $ui_menu_bk;
+                background: #ECFAFF;
+                // padding: 1px 1px 1px 9px;
+                cursor: pointer;
+                @include box-shadow(1px 1px 5px #aaa);
+            }
+        }
+    }
+}

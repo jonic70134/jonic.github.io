@@ -1,0 +1,42 @@
+//summary price
+.md-summary {
+	margin-bottom: 10px;
+	padding-left: 5px;
+	@include RWD(mobile) {
+		margin-top: 10px;
+		padding-left: 0;
+	}
+	&.is-merge {
+		font-weight: bold;
+		@extend .clearfix;
+	}
+	.t-price {
+		color: $c-red;
+		font-size: 1.4em;
+		margin-left: 10px;
+		.currency {
+			font-size: 0.7em;
+		}
+	}
+}
+.btn-expand-list {
+	color: lighten($font-color,40);
+	font-size: 13px;
+	font-weight: normal;
+	margin-left: 10px;
+	vertical-align: middle;
+	@include box-shadow(none);
+	display: inline-block;
+	&:after {
+		margin-left: 5px;
+		@include icon-font("\f0d7");
+	}
+	&.is-expand {
+		&:after {
+			@include icon-font("\f0d8");
+		}
+	}
+	@include RWD(mobile) {
+		float: right;
+	}
+}

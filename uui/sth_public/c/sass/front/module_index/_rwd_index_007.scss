@@ -1,0 +1,76 @@
+/*rwd_index_007 開始 */
+
+.rwd_index_007{
+	@include clearfix;
+	.item{
+		float: left;
+		width: 16.66%;
+		padding: 0 10px;
+		display: inline-block;
+	}
+	.photo{
+		display: inline-block;
+//		width: 100%;
+		margin-bottom: 10px;
+        padding-top: 60px;
+//		img{
+//			width: 100%;
+//		}
+	}
+	.info{
+		display: none;
+        clear:left;
+	}
+	// .name{
+	// 	margin-bottom: 10px;
+	// 	//color: $items_name;
+	// 	// font-size: 15px;
+	// 	// min-height: 30px;
+	// 	// height: auto;
+	// 	// overflow: hidden;
+	// }
+	del{
+		color: $text;
+	}
+	.currency{
+		font-size: 12px;
+		//color: $price;
+	}
+	.price{
+		font-size: 18px;
+		margin-right: 5px;
+		//color: $price;
+	}
+}
+@include RWD(pad-mobile) {
+.rwd_index_007{
+	padding: 0 1%;
+	.item{
+		width: 33.333%;
+		padding: 1%;
+	}
+	.info{
+		display: block;
+	}
+	// .name{
+	// 	font-size: 1em;
+	// }
+}
+}
+@include RWD(mobile) {
+.rwd_index_007{
+	padding: 0 1%;
+	.item{
+		width: 50%;
+		padding: 0;
+	}
+	.info{
+		display: block;
+	}
+	// .name{
+	// 	font-size: 1em;
+	// }
+}
+}
+
+/* rwd_index_007 結束*/

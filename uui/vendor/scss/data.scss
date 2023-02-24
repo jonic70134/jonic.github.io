@@ -1,0 +1,72 @@
+@import "compass";
+@import "compass/css3";
+@import "compass/utilities/general/hacks";
+@import "_variables.scss";
+@import "_mixin.scss";
+
+@import "_breadcrumb.scss";
+@import "_inside-form-element.scss";
+@import "_template-base.scss";
+@import "_template-popup.scss";
+@import "_template-table.scss";
+@import "_data-site-setting.scss";
+@import "_data-editor.scss";
+
+.template-popup-form {
+	line-height: 1.6;
+	.label-content-title {
+		width: 150px;
+	}
+	.textarea-form {
+		height: auto;
+		margin-left: 155px;
+	}
+	.editable {
+		width: 400px;
+		margin-left: 155px;
+		padding: 3px 5px;
+		color: #666;
+		font-size: 0.9em;
+		background: #fff;
+		border: #ccc 1px solid;
+		@include border-radius(3px);
+		table {
+			margin: 5px 0;
+			border-top: #999 1px solid;
+			border-left: #999 1px solid;
+		}
+		td {
+			padding: 3px;
+			vertical-align: middle;
+			border-right: #999 1px solid;
+			border-bottom: #999 1px solid;
+		}
+	}
+	.comment {
+		width: auto;
+		margin-left: 155px;
+		padding-left: 0;
+	}
+	.form-group {
+		margin-left: 155px;
+	}
+}
+.form-element .btn-group {
+	width: 400px;
+	display: inline-block;
+	dt, dd {
+		margin-bottom: 0;
+		vertical-align: top;
+	}
+	button {
+		font-size: 1em;
+		margin: 0 3px 3px 0;
+		padding: 3px 10px;
+	}
+	.comment {
+		color: #999;
+		margin-left: 3px;
+		padding-left: 0;
+		display: inline-block;
+	}
+}

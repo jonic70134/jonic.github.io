@@ -1,0 +1,47 @@
+$bank_file:       "../../../../../../c/img/frame/icon_bank.png";
+$bank_file_hpd:   "../../../../../../c/img/frame/icon_retina_bank.png";
+
+.hide{
+	display: none;
+}
+.container, .clearfix{
+	@include clearfix;
+}
+.container{
+	position: relative;
+	margin: 0 auto;
+	@media only screen and (min-width: $screen-xl-min){
+		width: 1220px;
+	}
+	@media only screen and (min-width: $screen-lg-min) and (max-width: $screen-lg-max){
+		width: 960px;
+	}
+	@media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+		width: 100%;
+	}
+	@media only screen and (max-width: $screen-sm-max){
+		width: 100%;
+	}
+}
+.hidden-mobile{
+	@media only screen and (max-width: $screen-sm-max){
+		display: none !important;
+	}
+}
+.hidden-table{
+	@media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+		display: none !important;
+	}
+}
+.hidden-desktop{
+	@media only screen and (min-width: $screen-md-max){
+		display: none !important;
+	}
+}
+
+.nopadding{
+	.container{
+		padding: 0!important;
+		border-bottom: none!important;
+	}
+}

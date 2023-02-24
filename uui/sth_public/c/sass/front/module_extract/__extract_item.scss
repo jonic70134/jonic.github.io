@@ -1,0 +1,170 @@
+//-----------------_item_add
+.item-add{
+    .container{
+        border-color: $border;
+    }   
+    .name{
+        color: $items_name;
+    }
+    .currency{
+        color: $price;
+    }
+    .price{
+        color: $price;
+    }
+}
+
+@include RWD(pad-mobile) {
+.item-add{
+    border-bottom-color: $border;
+    .items{
+        border-color: $border;
+    }
+}
+}
+@include RWD(mobile) {
+.item-add{
+    .item{
+        border-bottom-color: $border;
+    }
+}
+}
+//-----------------_item_add END
+
+//-----------------_item_buy
+@include RWD(pad-mobile) {
+.item-buy{
+    border-top-color: $border;
+    background: $background;
+    .tips_alert{
+        color:$primary;
+    }
+}
+}
+//-----------------_item_buy END
+
+//-----------------_item_detail
+.item-detail{
+    .container{
+        border-bottom-color: $border;
+    }    
+}
+//-----------------_item_detail END
+
+//-----------------_item_main
+.item-main{
+    .name{
+        color: $items-name;
+    }
+    .feature{
+        li{
+            color: $text;
+        }
+    }   
+    .key{
+        color: $items_name;
+    }
+    .value{
+        >li{
+            border-color: $light_gray;
+        }
+        .active{
+            border-color: #e00;
+            color: #e00;
+            &:after{
+                border-color: transparent transparent #e00 transparent;
+            }
+        }
+        .disabled{
+            border-color: $light_gray;          
+        }       
+    }
+    .label{
+        color: $text;
+    }
+    .link{
+        color: $text;
+        &:hover{
+            color: $primary;
+        }
+    }   
+    .currency{
+        color: $price;
+    }
+    .price{
+        color: $price;
+    }
+    .sale{
+        color: $primary;
+        border-color: $primary;     
+        .time{
+            background: $primary;
+        }       
+    }   
+    .credit-card{
+        color:$text;
+        background: $background;
+        .more{
+            .credit-card-list{
+                background: $background;
+            }
+        }
+    }
+}
+@include RWD(pad-mobile) {
+.item-main{ 
+    .info{
+        border-bottom-color: $border;       
+    }   
+}
+}
+//-----------------_item_main END
+
+//-----------------_item_spec
+.item-spec{
+    .spec{
+        border-bottom-color: $border;
+    }
+}
+//-----------------_item_spec END
+
+//-----------------_rwd_item_layout
+.title-h3{
+    border-left-color: $primary;
+}
+//-----------------_rwd_item_layout END
+
+//-----------------_item-related
+.item-related {
+    .item-related-tabs{
+        ul{
+            background: $background;
+        }
+        li {
+            color: $text;
+            border-left-color: $border;
+            &:hover{
+                color: $text_hover;
+            }
+            &.active{
+                color: $link;
+                &:hover{
+                    color: $link;
+                }
+            }
+        }
+    }
+    .items {
+        border-color: $border;
+    }
+    .name {
+        color: $items_name;
+    }
+    .currency {
+        color: $price;
+    }
+    .price {
+        color: $price;
+    }
+}
+//-----------------_item-related END

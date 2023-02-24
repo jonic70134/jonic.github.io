@@ -1,0 +1,185 @@
+@include RWD(desktop-all) {
+.nav-menu{
+    margin-top: 13px;
+    //margin-top: 22px;
+    float: left;
+    .container{
+        width: auto;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .menu-one{
+        @include clearfix;
+        >li{
+            position: relative;
+            float: left;
+            a{
+                display: block;
+                padding: 6px 17px 16px;
+                //padding: 6px 17px 24px;
+                border-bottom: 3px solid transparent;
+                color: #999;
+                font-size: 0.95em;
+                font-weight: bold;
+                &.current {
+                    border-bottom: 3px solid $primary;
+                }
+                &:hover, &.active {
+                    //color: $primary;
+                    @include transition(0.3s);
+                }
+            }
+        }
+    }
+    .menu-two{
+        position: absolute;        
+        top: 91.3%;
+        //top: 94%;
+        left: 20px;
+        border: 1px solid $primary;
+        border-top: 1px solid $primary;
+        z-index: 5;
+        @include opacity(0.85);
+        &:after{
+            position: absolute;
+            top: -8px;
+            left: 20px;
+            content:'';
+            border-style: solid;
+            border-width: 0 10px 10px 10px;
+            //border-color: transparent transparent $nav_bk transparent;
+        }
+        &:before{
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            content:'';
+            border-style: solid;
+            border-width: 0 10px 10px 10px;
+            //border-color: transparent transparent $primary transparent;
+        }
+        >li{
+            float: none;
+            position: relative;
+            a{
+                padding: 10px 30px 10px 20px;
+                min-width: 155px;
+                //border-bottom: 1px solid black;
+                white-space: nowrap;
+                background: black;
+                font-size: 0.9em;
+                opacity: 1;
+                &:hover, &.active{
+                    //color: $primary;
+                    //background: $primary;
+                    @include transition(0.3s);
+                }
+            }
+            &::last-child{
+                a{
+                    border-bottom: none;
+                }
+            }
+        }
+        &:before{
+            display: block;
+            float: left;
+        }
+    }
+    .menu-three{
+        position: absolute;
+        float: left;
+        top: -1px;
+        left: 100%;
+        border-width: 1px;
+        border-style: solid;
+        //border: 1px solid $primary;
+        z-index: 5;
+        >li{
+            float: none;
+            a{
+                padding: 10px 60px 10px 20px;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                //border-bottom: 1px solid #e5e5e5;
+                white-space: nowrap;
+                font-size: 0.9em;                
+                &:hover{
+                    //background: $primary;
+                    @include transition(0.3s);
+                }
+            }
+        }
+    }
+}
+}
+
+@include RWD(desktop-extra) {
+.nav-menu{
+    width: 760px;
+    //margin-left: 40px;
+}
+}
+
+@include RWD(desktop-normal) {
+.nav-menu{
+    width: 525px;
+    //margin-left: 15px;
+    li{
+        a{
+            padding: 6px 13px 30px 13px;
+        }
+    }
+}
+}
+
+@include RWD(pad-mobile) {
+.nav-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 10;
+    .menu-one{
+        >li{
+            position: relative;
+            a{
+                display: block;
+                padding: 13px 10px;
+                color: #6c6c6c;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                //border-bottom: 1px solid $border;
+                &.current{
+                }
+                &:hover{
+                    //color: $primary;
+                    @include transition(0.3s);
+                }
+            }
+        }
+    }
+    .menu-two{
+        >li{
+            a{
+                padding-left: 22px;
+                border-left-width: 3px;
+                border-left-style: solid;
+                //border-left: 3px solid $primary;
+            }
+        }
+    }
+    .menu-three{
+        >li{
+            list-style: square inside;
+            a{
+                //background: lighten($primary, 25%);
+                padding-left: 25px;
+                border-left: 3px solid transparent;
+            }
+        }
+    }
+}
+}

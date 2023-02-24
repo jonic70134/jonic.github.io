@@ -1,0 +1,29 @@
+.go-cod-tip {
+	.md-tip {
+		width: 430px;
+		padding: 0 15px;
+		left: 120%;
+		top: 0;
+		margin-top: -40px;
+		&:after, &:before {
+			right: 100%;
+			top: 30px;
+		}
+		&:after {
+			border-right-color: $card-bg-color;
+			border-width: 8px;
+			margin-top: -8px;
+		}
+		&:before {
+			border-right-color: darken($card-border-color,10);
+			border-width: 9px;
+			margin-top: -9px;
+		}
+	}
+	&:hover {
+		.md-tip {
+			top: 120%;
+			padding: 15px;
+		}
+	}
+}

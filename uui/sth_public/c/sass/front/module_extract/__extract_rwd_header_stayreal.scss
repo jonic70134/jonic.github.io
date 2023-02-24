@@ -1,0 +1,143 @@
+//-----------------rwd_header_001
+//_header_layout.scss
+.f-cart,.icon-account,.icon-search{
+    color: $icon_color;
+}
+.cart-btn{    
+    &:hover{
+        .icon-cart{
+            color: $primary;
+        }
+    }
+    .count{
+        background: $count_bg;
+        color: $count;
+    }
+}
+//_nav_menu.scss
+@include RWD(desktop-all) {
+.nav-menu{
+    .menu-one{
+        >li{            
+            a{
+                color: $nav_text;
+                &.current{
+                    border-bottom-color: $primary;
+                }
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+    .menu-two{
+        border-color: $primary;
+        &:after{
+            border-color: transparent transparent $nav_bk transparent;
+        }
+        &:before{
+            border-color: transparent transparent $primary transparent;
+        }
+        >li{
+            a{
+                border-bottom-color: $nav_border;
+                background: $nav_bk;
+                &:hover, &.active{
+                    color: $primary;
+                }
+            }            
+        }
+    }
+    .menu-three{
+        border-color: $primary;        
+        >li{
+            a{                
+                border-bottom-color: $nav_border;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+}
+@include RWD(pad-mobile) {
+.nav-menu{
+    background: $nav_bk;
+    .menu-one{
+        >li{            
+            a{               
+                border-bottom-color: $border;
+                &:hover{
+                    color: $primary;                  
+                }
+            }
+        }
+    }
+    .menu-two{
+        >li{
+            a{
+                border-left-color: $primary;  
+            }
+        }
+    }    
+}
+}
+//_nav_menu_mobile.scss
+@include RWD(pad-mobile) {
+.nav-menu-mobile{
+    border-top-color: $border;
+    border-bottom-color: $border;
+    background: $nav_bk;    
+    .count{
+        background: $count_bg;
+    }
+}
+}
+//_nav_user.scss
+.nav-user{
+    border-top-color: $border;
+    >ul{  
+        >li{
+            >a{
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }   
+}
+
+//_site_search.scss
+.site-search{
+    .input-search{
+        border-color: $border;
+        background: $search_bk;
+        color: $search_text;
+    }
+    .btn-submit{
+        background: $search_btn;
+    }   
+    .recommend{        
+        a{
+            color: $recommend_link;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
+@include RWD(pad-mobile) {
+.site-search{    
+    .input-search {
+        background: $input_bk;
+        border-bottom-color: $light_gray;
+    }
+    .recommend{
+        a{
+            color: $recommend_link;
+        }
+    }
+}
+}
+//-----------------rwd_header_001 END

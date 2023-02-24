@@ -1,0 +1,45 @@
+$bank_file:       "../../../../../../c/img/frame/icon_bank.png";
+$bank_file_hpd:   "../../../../../../c/img/frame/icon_retina_bank.png";
+
+.site-body{
+	padding-bottom: 40px;
+	width: 1220px;
+	margin: 0 auto;
+	@include clearfix;
+}
+.site-left{
+	width: 200px;
+	margin-right: 20px;
+	float: left;
+}
+.site-main{
+	width: 1000px;
+	float: right;
+	.container{
+		width: auto;
+	}
+}
+
+@include RWD(desktop-normal) {
+.site-body{
+	width: 960px;
+}
+.site-left{
+	width: 20%;
+}
+.site-main{
+	width: 77.9%;
+}
+}
+@include RWD(pad-mobile) {
+.site-body{
+	width: 100%;
+}
+.site-left, .site-main{
+	width: 100%;
+	float: none;
+}
+.site-left{
+	display: none;
+}
+}

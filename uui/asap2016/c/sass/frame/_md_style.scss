@@ -1,0 +1,337 @@
+@import url("http://fonts.googleapis.com/css?family=Orbitron");
+body {
+	color: $text;
+	background: $background;
+	font-family: 'EuphemiaUCAS',Tahoma,'LiHei Pro','Heiti TC','微軟正黑體',sans-serif;
+	-webkit-text-size-adjust: none;
+}
+a {
+	color: $link;
+}
+input, select, button {
+	font-family: 'EuphemiaUCAS',Tahoma,'LiHei Pro','Heiti TC','微軟正黑體',sans-serif;
+	background: $input_bk;
+	color: $text;
+	font-size: 1rem;
+	margin: 0;
+	padding: 4px;
+	border: $input_border 1px solid;
+	&:focus {
+		outline: none;
+	}
+	&:disabled {
+		color: darken($input_border,10);
+		background: lighten($input_border,5);
+	}
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+button {
+	border: none;
+}
+
+//無法購買這麼多數量
+.quantity-alert {
+	color: #fff;
+	font-size: 0.9rem;
+	line-height: 1.4;
+	text-align: center;
+	width: 150px;
+	left: 50%;
+	bottom: 100%;
+	margin-left: -75px;
+	padding: 1px 5px;
+	background: $red;
+	@include border-radius(2px);
+	display: block;
+	position: absolute;
+	z-index: 99;
+	&:after {
+		content: "\0020";
+		top: 100%;
+		left: 50%;
+		border: solid transparent;
+		border-color: rgba($red,0);
+		border-top-color: $red;
+		border-width: 5px;
+		margin-left: -5px;
+		position: absolute;
+	}
+}
+.quantity {
+	font-size: 0;
+	vertical-align: top;
+	display: inline-block;
+	position: relative;
+	@include clearfix;
+	.quantity-input {
+		width: 36px;
+		height: 30px;
+		padding: 0;
+		font-size: 1rem;
+		line-height: 30px;
+		letter-spacing: normal;
+		text-align: center;
+		border-left: none;
+		border-right: none;
+		@include border-radius(0px);
+		-webkit-appearance: none;
+       	-moz-appearance: none;
+        appearance: none;
+	}
+	.btn-quantity {
+		width: 28px;
+		height: 30px;
+		padding: 0 7px;
+		color: $gray;
+		line-height: 30px;
+		letter-spacing: normal;
+		text-align: center;
+		background: #fff;
+		border: $input_border 1px solid;
+		vertical-align: middle;
+		cursor: pointer;		
+		display: inline-block;
+		@include user-select;
+		&.is-disabled {
+			color: darken($input_border,10);
+			background: lighten($input_border,5);
+			cursor: no-drop;
+		}
+	}
+	&.large {
+		margin-right: 10px;
+		.btn-quantity {
+			width: 43px;
+			height: 40px;
+			font-size: 1.2rem;
+			line-height: 40px;
+		}
+		.quantity-input {
+			width: 42px;
+			height: 40px;
+			line-height: 38px;
+		}
+	}
+}
+.nav-to-top {
+	color: darken($gray,20);
+	font-size: 1.4rem;
+	right: 0;
+	bottom: 30px;
+	padding: 8px 15px;
+	background: lighten($gray,40);
+	@include border-left-radius(5px);
+	@include box-shadow(rgba(black,0.15) 0 5px 7px);
+	@include opacity(0.8);
+	display: block;
+	cursor: pointer;
+	position: fixed;
+	z-index:10;
+}
+.cart-mark {
+	background: $primary;
+	color: white;
+	border: 10px solid rgba($primary, 0.4);
+	padding: 17px 20px;
+	text-align: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 20;
+	margin-top: -35px;
+	margin-left: -100px;
+	width: 200px;
+	line-height: 1.2;
+	@include border-radius(2px);
+}
+.select-dialog {
+	left: 0;
+	right: 0;
+	bottom: 100%;
+	background: none;
+	@include transition(all 0.3s ease-out);
+	@include box-sizing(border-box);
+	overflow: hidden;
+	position: fixed;
+	z-index: 99;
+	&.is-show {
+		top: 0;
+		bottom: 0;
+		background: rgba(black,0.7);
+	}
+	.t-title {
+		color: #000;
+		font-size: 1.05rem;
+		margin-right: 20px;
+		padding: 10px 0 20px;
+		background: none;
+	}
+	.size-block {
+		padding: 10px;
+		background: #fff;
+		@include box-shadow(rgba(black,0.7) 0 5px 20px);
+	}
+	.btn-close {
+		color: $gray;
+		top: 0;
+		right: 0;
+		position: absolute;
+	}
+	.discount-line {
+		color: lighten($gray,10);
+		padding: 5px 0;
+		text-align: right;
+		@extend .clearfix;
+		&.summary {
+			padding-top: 10px;
+			border-top: 1px solid $border2;
+		}
+		.value-name {
+			float: left;
+		}
+	}
+	.md-item-buy {
+		margin-top: 10px;
+		text-align: center;
+	}
+}
+.size-block {
+	.hlight {
+		border: $hlight 2px solid;
+		padding: 0 10px;
+	}
+	.line {
+		padding: 10px 0;
+	}
+	.value-name {
+		margin-bottom: 8px;
+		font-size: 1.05rem;
+	}
+	.select-size {
+		display: block;
+		margin-bottom: -8px;
+		.size {
+			margin: 0 5px 5px 0;
+			font-size: 0.8rem;
+			line-height: 1;
+			vertical-align: top;
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			label {
+				padding: 10px;
+			}
+			&.img {
+				padding: 0;
+				label {
+					width: 35px;
+					height: 35px;
+					padding: 1px;
+				}
+				.img-item {
+					height: 100%;
+				}
+			}
+		}
+		.input-size {
+			height: 100%;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			position: absolute;
+			@include opacity(0);
+			& + label {
+				border: $light_gray 1px solid;
+				display: inline-block;
+				&:before {
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					content: "";
+				}
+				&:after {
+					line-height: 1;
+					font-family: FontAwesome;
+					vertical-align: middle;
+					right: 0;
+					bottom: 0;
+					display: inline-block;
+					position: absolute;
+					z-index: 1;
+				}
+			}
+			&:checked + label {
+				border-color: $primary;
+				&:before {
+					border-style: solid;
+					border-width: 0 0 20px 20px;
+					border-color: transparent transparent $primary transparent;
+				}
+				&:after {
+					content: "\f00c";
+					color: #fff;
+					font-size: 12px;
+				}
+			}
+			&:disabled + label {
+				border-color: $light_gray;
+				border-style: dashed;
+				color: lighten($text,40);
+				&:after {
+					content: "\f057";
+					right: 3px;
+					bottom: 1px;
+					color: $light_gray;
+					font-size: 16px;
+				}
+				.img-item {
+					@include opacity(0.7);
+				}
+			}
+		}
+	}
+}
+.img-spacing {
+    margin-bottom: 15px!important;
+}
+.is-border-none:hover {
+	border:none !important;
+}
+.t-title {
+	color: #fff;
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 10px;
+	background: $primary;
+}
+.t-digital-numbers {
+	font-family: "Orbitron", sans-serif;
+}
+.t-ontime-clock {
+	color: #fff;
+	font-size: 1rem;
+	letter-spacing: 0;
+	padding: 2px 5px;
+	vertical-align: middle;
+	text-shadow: #000 1px 1px 2px;
+	border: lighten($gray,30) 1px solid;
+	background: #222;
+	@include background-gradient(#777,#000);
+	@include border-radius(2px);
+	@include box-shadow(#000 1px 1px 5px inset);
+	display: inline-block;
+}
+.t-red {
+	color: $red;
+}

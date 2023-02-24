@@ -1,0 +1,28 @@
+.md_site_search {
+    position: relative;
+    .t-title {
+        padding-right: 105px;
+    }
+    .t-ellipsis {
+        max-width: 75%;
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    .t-count {
+        color: rgba(white,0.8);
+        font-size: 0.85rem;
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+    .t-no-result {
+        color: darken($text,20);
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 50px 10px;
+    }
+}

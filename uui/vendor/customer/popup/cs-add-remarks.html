@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox vendor</title>
+<link href="/css/plugin/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/css/customer.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="/js/lib/html5.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ie.css">
+<![endif]--></head>
+<body>
+<div class="cs-popup-content">
+  <h1 class="title"><i class="fa fa-pencil"></i>新增備註</h1>
+  <div class="form-element add-remarks-form">
+    <textarea class="textarea-add-remarks" placeholder="請輸入備註內容..."></textarea>
+  </div>
+  <div class="cs-button">
+    <button class="btn-cancel" onclick="parent.$.fancybox.close();"><i class="fa fa-times"></i>取消</button>
+    <button class="btn-submit"><i class="fa fa-check"></i>確認送出</button>
+  </div>
+</div><script src="/js/lib/jquery-1.9.1.js" ></script>
+<script src="/js/lib/bootstrap-dropdown.js"></script>
+<script src="/js/nav-action.js"></script>
+<script src="/js/customer-action.js"></script>
+<script>
+(function($){
+  var orderDetail = $(window.parent.document).find('#order-201405AP26001420');//id need to change by order
+  $('.btn-submit').click(function(){
+    alert('備註新增完成');
+    parent.$.fancybox.close();
+    orderDetail.show();
+    orderDetail.prev('tr').find('.toggle-order-detail').addClass('active');
+    orderDetail.prev('tr').find('td').css({
+      'background-color':'#fde5e5',
+      'font-weight':'bold'
+    });
+    orderDetail.find('.order-detail-tabs').children('dd').removeClass('active');
+    orderDetail.find('.order-detail-tabs').find('.tab-remarks').addClass('active');
+    orderDetail.find('.order-detail-content').hide();
+    orderDetail.find('.remarks').show();
+  });
+})(jQuery);
+</script>
+</body>
+</html>

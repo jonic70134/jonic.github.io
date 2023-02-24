@@ -1,0 +1,119 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_lulu.scss";
+
+@import "../../../module_item/_rwd_item_layout.scss";
+@import "../../../module_component/_nav_breadcrumbs.scss";
+@import "../../../../3rd-party/_idangerous.swiper.scss";
+@import "../../../module_item/_item_main_002.scss";
+@import "../../../module_item/_item_add.scss";
+@import "../../../module_item/_item_related.scss";
+@import "../../../module_item/_item_detail.scss";
+@import "../../../module_item/_item_spec.scss";
+@import "../../../module_item/_item_buy.scss";
+@import "../../../module_item/_credit_card.scss";
+
+.item-add {
+	.currency{
+		vertical-align: 1px;
+	}
+	.price{
+		font-size: 16px;
+	}
+	@include RWD(pad-mobile) {
+		border-bottom: 0;
+	}
+	@media screen and (max-width:340px) {
+		.photo {
+			img {
+				max-width: 90px;
+			}
+		}
+	}
+}
+.item-related {
+	.item-related-tabs{
+		text-align: center;
+		margin-bottom: -15px;
+		padding-left: 0;
+		height: 30px;
+		ul{
+			padding: 0;
+			background: none;
+		}
+		li {
+			height: 30px;
+			width: 206px;
+			padding: 0;
+			margin: 0;
+			font-size: 12px;
+			color: #333;
+			letter-spacing: 1px;
+			text-align: center;
+  			text-transform: uppercase;
+  			line-height: 29px;
+			border: 1px solid #010101;
+			background: white;
+			cursor: auto;
+			display: none;
+			@include transition(0.3s);
+			&.tab-1{
+				display: block;
+			}
+			&:hover{
+				color: #333;
+			}
+			&.active{
+				color: #333;
+				font-weight: normal;
+				font-size: 12px;
+				border-left: 1px solid #010101;
+				padding: 0;
+			}
+		}
+	}
+	.items {
+		border: 0!important;
+		border-top: 1px solid $border!important;
+		&.tab-2{
+			display: none;
+		}
+	}
+	.item {
+		padding: 0 17px;
+		&:hover{
+			.info{
+				@include transition(0.3s);
+				@include opacity(1);
+			}
+		}
+	}
+	.info{
+		@include opacity(0);
+	}
+	.name {
+		text-align: center;
+	}
+	.buy {
+		text-align: center;
+	}
+	.price {
+		font-size: 14px;
+	}
+	@include RWD(pad-mobile) {
+		margin: 25px 0px 10px;
+		.info{
+			@include opacity(1);
+		}
+	}
+	@media screen and (max-width:568px) {
+		.item-related-tabs {
+			margin-bottom: -12px;
+			height: 25px;
+			li {
+				height: 25px;
+				width: 150px;
+				line-height: 23px;
+			}
+		}
+	}
+}

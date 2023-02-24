@@ -1,0 +1,144 @@
+	.item-E{
+    	display: block;
+		width: 100%;
+	    text-align: center;
+		padding: 5px 0 10px;
+		background-color: #ffe09d;
+		li{
+			width: 19%;
+			display: inline-block;
+			margin: 5px 3px 0;
+			padding: 0;
+			vertical-align: top;
+			background-color: #FFF;
+			a{
+				display: block;
+			}
+		}
+		.photo-block{
+			position: relative;
+			display: block;
+			width: 215px;
+			height: 215px;
+			font-size: 0;
+			margin: 6px;
+			background: #FFF;
+			border: #cacaca 1px solid;
+			.photo{
+			    display: block;
+			    width: 100%;
+			    height: 0;
+			    overflow: hidden;
+			    padding-top: 100%;
+			    position: relative;
+			}
+			img{
+				position: absolute;
+			    left: 0;
+			    top: 0;
+			    bottom: 0;
+			    right: 0;
+			    margin: auto;
+			    max-width: 100%;
+			    max-height: 100%;
+			}
+		}
+		.info-photo{
+			width: 100%;
+			background-color: #149c7b;
+			border: #149c7b 1px solid;
+			p{
+				font-size: 16px;
+			    line-height: 130%;
+				color: #FFF;
+			    text-align: center;
+			    padding: 6px 10px;
+		    	font-family: "微軟正黑體";
+			}
+		}
+		.info-block{
+			display: block;
+			width: 100%;
+			padding: 9px 0 0;
+		}
+		.info-txt{
+			margin: 0;
+			h3{
+				display: block;
+			    width: 100%;
+			    height: 32px;
+			    overflow: hidden;
+			    color: #000;
+			    font-size: 13px;
+			    line-height: 16px;
+			    margin: 0 0 7px;
+			    padding: 0 3px;
+			    text-align: center;
+			}
+		}
+		.price-block{
+			background: #282828;
+			padding: 8px 45px 10px 5px;
+			position: relative;
+			del{
+			    display: none;
+		    	text-align: left;
+			    padding: 4px 0;
+		        font-size: 12px;
+			    color: #bfbfbf;
+			    vertical-align: bottom;
+				position: relative;
+				top: 2px;
+				height: auto;
+				span{
+					display: inline-block;
+			        max-width: 38px;
+			        overflow: hidden;
+				}
+			}
+			p{
+			    display: inline-block;
+		        overflow: hidden;
+				color: #ffc750;
+				padding: 0;
+				text-align: center;
+				vertical-align: bottom;
+				position: relative;
+				top: 2px;
+				.currency{
+					display: inline-block;
+					position: relative;
+					bottom: 3px;
+					padding-right: 3px;
+				    vertical-align: bottom;
+				}
+				.price{
+					display: inline-block;
+			        max-width: 116px;
+			        overflow: hidden;
+					font-size: 32px;
+				    position: relative;
+    				top: 0;
+				    vertical-align: bottom;
+				}
+			}
+			.currency{
+				font-size: 12px;
+			}
+			.item-btn{
+				display: inline-block;
+	    		width: 38px;
+			    height: 23px;
+				background: url("../img/edm_block_3/edm-style-E/buy_btn.png");
+				background-repeat: no-repeat;
+			    background-position: center;
+			    background-size: contain;
+			    vertical-align: bottom;
+			    position: absolute;
+				bottom: 4px;
+				right: 4px;
+			    cursor: pointer;
+			    border: none;
+			}
+		}
+	}

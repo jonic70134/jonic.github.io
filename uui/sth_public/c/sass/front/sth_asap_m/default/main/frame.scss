@@ -1,0 +1,27 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_asap_m.scss";
+
+@import "../../../../frame/_reset.scss";
+@import "../../../../frame/_md_layouts.scss";
+@import "../../../../frame/_md_style.scss";
+@import "../../../../frame/_md_button.scss";
+@import "../../../module_header/_md_header_001.scss";
+@import "../../../module_component/_md_nav_menu.scss";
+@import "../../../module_component/_md_nav_menu_title_002.scss";
+@import "../../../module_component/_md_item_list.scss";
+.photo {
+	position: relative;
+	.discount_tip{
+		position: absolute; bottom: 15px; right: 5px;
+		width:45px;height:45px;
+		color:$primary;
+		font-weight: 700;
+		text-align: center;
+		background-image: url('../../../../../../c/img/frame/2hr_icon_45x45.png');
+	}
+}
+@import "../../../module_footer/_md_footer_001.scss";
+@import "../../../module_footer/_md_footer_002.scss";
+@import "../../../module_footer/_md_copyright_001.scss";
+@import "../../../module_component/_site_tags.scss";
+@import "../../../module_component/_site_translation.scss";

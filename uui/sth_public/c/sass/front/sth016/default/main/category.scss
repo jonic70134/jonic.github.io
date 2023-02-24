@@ -1,0 +1,39 @@
+@import "../../../../define/__init.scss";
+
+@import "../../../../frame/_rwd_layout_two_column.scss";
+@import "../../../module_category/_rwd_category_layout.scss";
+@import "../../../module_component/_nav_breadcrumbs.scss";
+@import "../../../module_component/_item_list_four.scss";
+@import "../../../module_component/_item_list.scss";
+@import "../../../module_component/_nav_pagination.scss";
+@import "../../../module_component/_site_sort.scss";
+@import "../../../module_component/_site_filter.scss";
+
+
+.two_column{
+	.item-list-four{
+		.item{
+			margin:8px;
+		}
+	}
+}
+//desktop
+@include RWD(desktop-normal) {
+	.two_column{
+		.item-list-four{
+			.item{
+				width: 31.25%;
+				
+			}
+		}
+	}
+}
+
+//pad
+@include RWD(pad) {
+	.item-list-four{
+		.item{
+			width: 47.816%;
+		}
+	}
+}

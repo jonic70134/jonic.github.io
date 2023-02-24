@@ -1,0 +1,40 @@
+.rwd_index_028{
+	font-size: 0;	
+	img{
+		width: 100%;
+	}
+	@include clearfix;
+	.item-two-block{
+		border: 1px solid $bk_gray;
+		border-left: none;
+		@include clearfix;
+		a{
+			float: left;
+			width: 50%;
+			display: block;
+			border-left: 1px solid $bk_gray;
+		}
+	}
+	@include RWD(pad) {
+		padding: 0 1%;
+		.container{
+			padding: 20px 0;
+			border-bottom: 1px solid $bk_gray!important;
+		}
+	}
+	@include RWD(mobile) {
+		.container{
+			padding: 10px 0;
+			border-bottom: none;
+		}
+		.item-two-block{
+			a{
+				float: none;
+				width: 100%;			
+				&:first-child{
+					border-bottom: 1px solid $bk_gray;
+				}
+			}
+		}
+	}
+}

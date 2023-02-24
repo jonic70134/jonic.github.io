@@ -1,0 +1,154 @@
+html,body{
+	padding:0;
+	height:auto;
+	background-color:#fff;
+}
+.site-body,.site-main{
+	width:100%;
+}
+.md-item-main{
+	.photo{
+		// float:none;
+		width:40%;
+		padding-top:75px;
+		float:left;
+		img{
+			max-width:190px;
+			display: block;
+			margin:0 auto;
+			// text-align: center;
+		}
+	}
+	.info{
+		// float: none
+		position:static;
+		width:55%;
+		padding:75px 0 0 10px;
+		float:left;
+	}
+	h1.name{
+		width:100%;
+		max-height:60px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding:4px 13px;
+		border-bottom:1px solid #ccc;
+		overflow: hidden;
+		font-size:18px;
+		color:white;
+		background-color:$primary; 
+		display:block;
+	}
+	del{
+		font-size: 14px;
+	}
+	.line{
+		margin:3px 0;
+		padding:5px 10px;
+		border:none;
+	}
+	.key{
+		// width:100%;
+		// display: block;
+		font-size: 14px;
+	}
+	.feature{
+		display: none;
+	}
+	.recomand_price{
+		text-align: right;
+		width:100%;
+		.key{
+			width:60px;
+		}
+		.value{
+			display:inline-block;
+			width:160px;
+		}
+	}
+	.net_price{
+		text-align: right;
+		width:100%;
+		.key{
+			width:60px;
+		}
+		.buy{
+			display:inline-block;
+			width:210px;
+		}
+	}
+	.buy_button{
+		// position: absolute;
+		// left: 50%;
+		// margin-left: -112px;
+		text-align:right;
+	}
+	.value,.buy{
+		width:100%;
+		margin-bottom: 0;
+	}
+	.button{
+		float:right;
+	}
+	.quantity{
+		.quantity-input{
+			height:40px;
+			border:1px solid #ccc;
+			border-right:none;
+			border-left:none;
+		}
+	}
+}
+@media screen and (max-width: 480px){
+.md-item-main{
+	.photo{
+		img{
+			max-width:300px;
+		}
+	}
+	.photo,.info{
+		width:100%;
+		padding-top:70px;
+	}
+	.info{
+		padding:10px 5px 0;
+		.button{
+			display: inline-block;
+  		}
+	}
+	.quantity {
+		width:auto;
+		margin-right:8px;
+		display:inline-block;
+  	} 
+	.value,.buy{
+		width:100%;
+	}
+	.recomand_price{
+		.value,.key{
+			width:100%;
+			text-align: right;
+		}
+	}
+	.net_price{
+		.buy,.key{
+			width:100%;
+			text-align: right;
+		}
+	}
+}
+}
+// @media screen and (max-width: 394px) {
+// .md-item-main{
+//   	.info{
+//   		.button{
+//     		display: inline-block;
+//   		}
+//   	} 
+//   	.quantity {
+// 	    margin-right:8px;
+// 	    display:inline-block;
+//   	} 
+// }
+// }

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" href="">
+        <title>ASAP</title>
+        <link href="../css/base.css" rel="stylesheet" type="text/css">
+        <link href="../css/buy.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/buy.js"></script>
+    </head>
+    <body cz-shortcut-listen="true">
+        <div id="cart_weap">
+            <div id="cart_header">
+                <a href="http://www.asap.com.tw/"><img src="../img/1408443630_AWC000001.jpg"></a><span></span>
+                <span class="backlink pattop"><a href="#">回上一頁</a></span>
+            </div>
+<script type="text/javascript" src="../js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="../js/buy_list.js"></script>
+
+<div class="buy_brembox text13">
+    <span class="fontb">本次消費總計</span>
+    <span id="total_price_banner" class="fontb colred">NT$<span class="pricenum">479</span></span>
+    <a href="javascript:void(0);" class="opwnlist" id="detail_switch">收起購物清單&gt;</a>
+</div>
+
+<!-- tw_list Start -->
+<div id="detail_list" class="pricebar" style="display: block;">
+    <div class="tablist clearfix">
+        <div class="listr title clearfix">
+            <div class="column1">商品名稱</div>
+            <div class="column2">數量</div>
+            <div class="column3">單價</div>
+            <div class="column4">小計</div>
+            <div class="column5"></div>
+        </div><!-- title -->
+
+        <!-- 商品清單區塊 -->
+        <div id="set_list">
+            <div class="listr center clearfix">
+                <div class="column1 undefined">
+                    <span class="tag-status is-odd">大材積</span><a href="#" target="_blank">ROWA Magic Box 多功能穿戴裝置 Magic Box-黃</a>
+                    <span class="tag-status is-vendor-delivery">廠商直送</span><span class="tag-status is-uitox-delivery">uitox運送</span><span class="tag-status is-separate-delivery">分開到貨</span><span class="tag-status is-imported">日本直送</span>
+                    <p class="colff0"></p>
+                </div>
+                <div class="column2 undefined">1</div>
+                <div class="column3 undefined">NT$399</div>
+                <div class="column4 undefined">NT$399</div>
+                <div class="column5"></div>
+            </div>
+        </div>
+
+        <hr class="listline">
+
+        <!-- 活動折抵區塊 -->
+        <div id="act_list"></div>
+
+        <!-- 運費折抵區塊 -->
+        <div id="fee_list" class="listr center clearfix" style="display: block;">
+             <div id="fee_list_name" class="column1">日本處理費 (配送到府) <span class="go-tip">說明<span class="md-tip">處理費包含配送到府運費及商品關稅</span></span></div>
+             <div class="column2"></div>
+             <div class="column3"></div>
+             <div class="column4">NT$<span id="fee_list_val">80</span></div>
+             <div class="column5"></div>
+        </div>
+
+        <!-- 購物金折扣區塊 -->
+        <div id="point" class="listr center clearfix">
+             <div class="column1">購物金折抵</div>
+             <div class="column2">&nbsp;</div>
+             <div class="column3">&nbsp;</div>
+             <div class="column4">- NT$<span name="point_val">5</span></div>
+             <div class="column5"></div>
+        </div>
+
+        <!-- 購物金2折扣區塊 -->
+        <div id="point2" class="listr center clearfix">
+             <div class="column1">禮品卡折抵</div>
+             <div class="column2">&nbsp;</div>
+             <div class="column3">&nbsp;</div>
+             <div class="column4">- NT$<span name="point2_val">5</span></div>
+             <div class="column5"></div>
+        </div>
+
+        <div class="listr center clearfix">
+            <div class="column1">&nbsp;</div>
+            <div class="column2">&nbsp;</div>
+            <div class="column3"><span class="totaltxt">總計</span></div>
+            <div class="column4">
+                <span class="colred">NT$ </span>
+                <span id="total_price" class="text16 colred">479</span>
+            </div>
+            <div class="column5">&nbsp;</div>
+        </div>
+    </div>
+</div>
+<!-- tw_list End -->
+<div class="enterdta enterdta_pad">
+<script type="text/javascript" src="../js/zip_code_all.js"></script>
+<script type="text/javascript" src="../js/jquery.payment.js"></script>
+<script type="text/javascript" src="../js/consignee_tw.js"></script>
+<style type="text/css">
+    body{ overflow: scroll; _overflow:auto; *overflow:auto !important }
+    .hidden_zip{display: none}
+    .sdiv {
+        float: left;
+        border: #cccccc 1px solid;
+        height: 20px;
+        line-height: 20px;
+        width: 530px;
+    }
+    .floatleft {
+        float: left;
+        color: #888888;
+        margin: 0px 0 0 1px;
+    }
+    .noborder {
+        border: none;
+        background: none;
+        font-size: 12px;
+    }
+    .noborder:focus {
+        outline: 0;
+    }
+</style>
+    <div class="cart_box">
+        <div class="title">
+            <font class="text12">請選擇分期：(※除不盡餘數於第一期收取)</font>
+        </div>
+        <hr class="hrC">
+        <ol class="frame">
+            <li class="column1">
+                <input type="radio" id="setInstallment" name="setInstallment" value="3">
+            </li>
+            <li class="column2">NT$ 159  x&nbsp; 3期 0利率</li>
+            <li class="column4">中信、台新、花旗、台北富邦、國泰世華、永豐、萬泰、澳盛、玉山、新光、匯豐、聯邦、華南、遠東、大眾、上海、合庫、兆豐、渣打、台企、元大、安泰、日盛、永旺、台中商銀、華泰、三信商銀、土銀、一銀、彰銀、陽信</li>
+            <li><div class="clear"></div></li>
+        </ol>
+    </div>
+    <div class="tabtr clearfix">
+        <div class="columnleft"><span>持卡人姓名</span></div>
+        <div class="columnright">
+            <input type="text" id="buyerName" name="buyerName" size="15" maxlength="100" class="input-text1" value=" ">
+            <span class="txtt">手機</span>
+            <input type="text" id="buyerCellPhone" name="buyerCellPhone" size="15" maxlength="10" class="input-text1" value=" ">
+            <span class="txtt">市話</span>
+            <input type="text" id="buyerTelete" name="buyerTelete" size="15" maxlength="20" class="input-text1" value=""><span class="txcol">(可不填)</span>
+        </div>
+    </div>
+    <!-- creditcard demo 1 -->
+    <div class="tabtr clearfix">
+        <div class="columnleft">信用卡卡號</div>
+        <div class="columnright clearfix">
+            <div class="selmarght">
+                <select id="CardType" name="CardType" class="input-text1">
+                    <option value="VISA">VISA</option>
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="JCB">JCB</option>
+                </select>
+            </div>
+            <div id="CreditCardInput" class="cardinput">
+                <input type="text" maxlength="4" id="creditCard1" name="creditCard1" size="3" class="input-text1 cartwidth" autocomplete="off">&nbsp;-
+                <input type="text" maxlength="4" id="creditCard2" name="creditCard2" size="3" class="input-text1 cartwidth" autocomplete="off">&nbsp;-
+                <input type="text" maxlength="4" id="creditCard3" name="creditCard3" size="3" class="input-text1 cartwidth" autocomplete="off">&nbsp;-
+                <input type="text" maxlength="4" id="creditCard4" name="creditCard4" size="3" class="input-text1 cartwidth" autocomplete="off">
+            </div>
+            <div id="UseBonus" class="UseBonus"></div>
+        </div>
+    </div>
+    <div class="tabtr clearfix">
+        <div class="columnleft"><span>信用卡截止日</span></div>
+        <div class="columnright">
+            <span class="select">
+                <select id="CardMonth" name="CardMonth" class="input-text1">
+                    <option value="">--</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </span>
+            <span class="text12 mon">月 &nbsp; </span>
+            <span class="select">
+                <select id="CardYear" name="CardYear" class="input-text1">
+                    <option value="">----</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                </select>
+            </span>
+            <span class="text12 mon">年</span>
+            <span id="cvc" class="cvctxt">背面末三碼</span>
+            <input type="text" size="3" maxlength="3" class="input-text1" autocomplete="off">
+            (圖示→) <img src="../img/cridit.gif" alt="" border="0">
+        </div>
+    </div>
+    <label name="addInfo" class="clearfix">
+        <span class="addinfom"><input name="addr_last_name" value="Y" type="checkbox"> 收貨地址顯示購買人姓名</span>
+    </label>
+    <div id="firstConsignee" class="firstcosaddr"><!-- 一個區塊 -->
+        <div class="tabtr clearfix">
+            <div class="columnleft"><span>收貨人</span></div>
+            <div class="columnright">
+                <span class="txttb">姓名</span>
+                <input type="text" name="getName" id="getName" size="15" maxlength="100" class="input-text1" value="林雯涵">
+                <span class="txtt">手機</span><input type="text" name="getCellPhone" id="getCellPhone" size="15" maxlength="10" class="input-text1" value="**********">
+                <span class="txtt">市話</span><input type="text" name="getTelete" id="getTelete" size="15" maxlength="20" class="input-text1" value="">
+                <span class="txcol">(可不填)</span>
+            </div>
+
+
+        </div>
+        <div class="tabtr clearfix">
+            <div class="columnleft"><span>地址</span></div>
+            <div class="columnright clearfix">
+                <div id="twzip1" class="left">
+                    <select id="getCity" name="getCity" class="input-text1">
+                        <option value="">請選擇</option>
+                        <option value="基隆市">基隆市</option>
+                        <option value="台北市">台北市</option>
+                        <option value="新北市">新北市</option>
+                        <option value="宜蘭縣">宜蘭縣</option>
+                    </select>
+                    <select name="getTownships" class="input-text1">
+                        <option value="請選擇">請選擇</option>
+                        <option value="100 中正區">100 中正區</option>
+                        <option value="103 大同區">103 大同區</option>
+                        <option value="104 中山區">104 中山區</option>
+                        <option value="105 松山區">105 松山區</option>
+                    </select>
+                    <input type="text" id="zipcode" name="zipcode" readonly="readonly" size="15" class="hidden_zip"></div>
+                <div class="left">
+                    <div class="sdiv">
+                        <div class="floatleft" id="myPosition">110台北市信義區</div>
+                        <input type="text" id="getAddress" name="getAddress" size="45" maxlength="120" value="忠孝東路四段563號8樓" class="noborder">
+                    </div>
+                    <div style=" *float:left; *position:relative; *right:300px; float: right; height: 20px; line-height: 20px; margin: 0 0 0 5px;">
+                        <link rel="stylesheet" href="../css/tinybox_style.css">
+                        <script type="text/javascript" src="../js/tinybox.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- 一個區塊 -->
+
+<div class="invoice_block">
+    <div class="invoice_box">
+        <div class="invoice_pad">
+            <div class="tabtr clearfix">
+                <span class="cartdown"><a href="javascript:void(0);" id="sp">發票需打統編請按此  </a><span class="col888">(紙本發票將主動寄出)</span></span>
+            </div>
+            <div id="invoice_3div">
+                <div class="invoice">
+                    <div class="tabtr clearfix">
+                        <div class="columnleft"><span class="vatnum">統一編號</span></div>
+                        <div class="columnright">
+                            <input type="text" id="vat_number" name="vat_number" size="10" maxlength="8" value="" class="input-text1">
+                            <a href="javascript:void(0);" onclick="TINY.box.show({iframe:&#39;https://shop-tw1.uitox.com/AW000001/invoice/lists&#39;,
+                                boxid:&#39;frameless&#39;,
+                                width:810,
+                                height:500,
+                                fixed:false,
+                                maskid:&#39;bluemask&#39;,
+                                maskopacity:40})" class="getadd">統編備忘錄</a>
+                            <font class="text12 col888 txtt2 txtt2">‧公司戶發票一經開立，無法換開為個人戶發票</font>
+                            <label class="addinfomb" for="save_invoice_data"><input type="checkbox" id="save_invoice_data" name="save_invoice_data" value="Y"><span>資料加入備忘錄</span></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 訂閱電子報 -->
+        <div class="subscribe_edm"><input type="checkbox" id="subscribe_edm" name="subscribe_edm" value="Y"><label for="subscribe_edm">訂閱電子報</label></div>
+    </div>
+</div>
+</form>
+
+    <!-- 收貨地址 -->
+    <div id="secondConsignee" class="addreslist" style="">
+        <div class="top clearfix">
+            <span class="choceadr">請選擇收貨地址</span>
+        </div>
+
+        <div class="addrestab clearfix">
+            <div id="consignee">
+                <div class="list_tr clearfix">    
+                    <label for="radio_1">
+                        <div class="column0">
+                            <input type="radio" name="consignee_select" id="radio_1" value="1">
+                        </div>
+                        <div class="column1">
+                            <span>*** ************</span>
+                        </div>    
+                        <div class="column2">林雯涵</div>    
+                        <div class="column3">**********</div>    
+                        <div class="column4"></div>
+                    </label>    
+                    <div class="column5">
+                        <a name="edit_consignee" href="javascript:void(0);">修改</a>
+                    </div>
+                </div>
+                <div name="modify_tab" class="add_tab">    
+                    <ol class="tabtr clearfix">      
+                        <li class="columnleft">收貨人姓名：</li>      
+                        <li class="columnright">        
+                            <input type="text" name="name_1" size="20" value="" class="input-text1">       
+                        </li>    
+                    </ol>    
+                    <ol class="tabtr clearfix">      
+                        <li class="columnleft">收貨地址：</li>      
+                        <li class="columnright">        
+                            <div class="twzip" name="twzip_1">
+                                <select id="city_1" name="city_1" class="input-text1">
+                                    <option value="">請選擇</option>
+                                    <option value="基隆市">基隆市</option>
+                                    <option value="台北市">台北市</option>
+                                    <option value="新北市">新北市</option>
+                                    <option value="宜蘭縣">宜蘭縣</option>
+                                </select>
+                                <select id="townships_1" name="townships_1" class="input-text1">
+                                    <option value="請選擇">請選擇</option>
+                                    <option value="207 萬里區">207 萬里區</option>
+                                    <option value="208 金山區">208 金山區</option>
+                                    <option value="220 板橋區">220 板橋區</option>
+                                    <option value="221 汐止區">221 汐止區</option>
+                                </select>
+                                <input type="text" id="zipcode" name="zipcode" readonly="readonly" size="15" class="hidden_zip">
+                            </div>        
+                            <div class="left">            
+                                <div class="sdiv">                
+                                    <div name="myPosition_1" class="floatleft">231新北市新店區</div>          
+                                    <input type="text" name="addr_1" size="45" maxlength="120" value="******" class="noborder">                
+                                </div>        
+                            </div>      
+                        </li>    
+                    </ol>    
+                    <ol class="tabtr clearfix">      
+                        <li class="columnleft">手機：</li>      
+                        <li class="columnright">        
+                            <input type="text" name="cellphone_1" value="**********" maxlength="10">        
+                            <span class="homeph">市話：         
+                                <input type="text" name="telete_1" size="20" value="" class="input-text1" maxlength="20">        
+                                <span class="col888">(可不填)</span>
+                            </span>      
+                        </li>    
+                    </ol>    
+                    <div class="btn">            
+                        <input type="button" name="cancel_edit_consignee" value=" 取 消 ">            
+                        <input type="button" name="submit_edit_consignee" value=" 送 出 ">    
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新增其他收貨地址 -->
+            <div class="list_tr clearfix">
+                <div class="column1">
+                    <label for="addads">
+                        <input type="radio" id="addads" name="consignee_select" value="add_new_consignee">
+                        <span>新增其他收貨地址</span>
+                    </label>
+                </div>
+                <div class="column2">&nbsp;</div>
+                <div class="column3">&nbsp;</div>
+                <div class="column4">&nbsp;</div>
+                <div class="column5">&nbsp;</div>
+            </div>
+            <div id="add_tab" class="add_tab">
+                <ol class="tabtr clearfix">
+                    <li class="columnleft">收貨人姓名：</li>
+                    <li class="columnright">
+                        <input type="text" name="addName" id="addName" size="20" value="" class="input-text1">
+                    </li>
+                </ol>
+                <ol class="tabtr clearfix">
+                    <li class="columnleft">收貨地址：</li>
+                    <li class="columnright">
+                        <div id="new_consignee" class="twzip">
+                            <select id="addCity" name="addCity" class="input-text1">
+                                <option value="">請選擇</option>
+                                <option value="基隆市">基隆市</option>
+                                <option value="台北市">台北市</option>
+                                <option value="新北市">新北市</option>
+                                <option value="宜蘭縣">宜蘭縣</option>
+                            </select>
+                            <select name="addTownships" class="input-text1">
+                                <option value="">請選擇</option>
+                            </select>
+                        </div>
+                        <div class="left">
+                            <div class="sdiv">
+                                <div name="addmyPosition" class="floatleft"></div>
+                                <input type="text" name="addAddress" id="addAddress" size="45" maxlength="120" value="" class="noborder">
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <ol class="tabtr clearfix">
+                    <li class="columnleft">手機：</li>
+                    <li class="columnright"><input type="text" name="addCellPhone" id="addCellPhone" size="20" value="" class="input-text1 mar" maxlength="10">
+                        <span class="homeph">市話： <input type="text" name="addTelete" id="addTelete" size="20" value="" class="input-text1" maxlength="20">
+                            <span class="col888">(可不填)</span>
+                        </span>
+                    </li>
+                </ol>
+                <div class="btn">
+                    <input type="button" name="cancel_add_consignee" value=" 取 消 ">
+                    <input type="button" name="submit_add_consignee" value=" 送 出 ">
+                </div>
+            </div>
+            <div class="moreadd"><a id="more_consignee_btn" href="javascript:void(0);">顯示更多收貨地址</a></div>
+        </div>
+    </div>
+    <!-- 收貨地址 -->
+
+</div>
+<div class="cart_exptxt">
+    <p class="col000">信用卡資訊 : 採用SSL 128 bits安全加密後傳送至發卡銀行進行驗證 </p>
+    *為確保網路交易安全，您同意本公司就此筆交易向發卡銀行、收單行及持卡人核對是否屬實；您所填寫的姓名、電話資料,亦將於核對完成後刪除。
+    <br>若您同意以上所約定的付款程序，請按確認送出進行程序。
+    <br>*為確保交易安全，本公司會將上述資料向發卡銀行及持卡人照會，如有冒用他人信用卡交易者，經查獲必移送法辦。
+    <br><span class="colff0"></span>
+</div>
+<div class="checkoutbtn">
+    <input type="button" name="validate_submit" value="確 定 送 出" class="submit">
+    <div class="checkoutlink"><a href="#">回上一頁</a></div>
+</div>
+
+<div id="cart_footer" class="clearfix">
+    <div class="foterleft">ASAP 使用 <img src="../img/icon_service_uitox.gif" border="0"> 金物流服務</div>
+    <div class="foterright">
+        <span class="text11 gray">© 2013 <a class="col333" href="javascript:void(0)">uitox Corporation</a> or its affiliates.</span>
+        <a href="#" target="_blank">隱私權政策</a>
+    </div>
+</div>
+</div>
+</body>
+</html>

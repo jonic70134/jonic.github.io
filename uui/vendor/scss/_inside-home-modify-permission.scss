@@ -1,0 +1,120 @@
+//homepage modify: permission
+.search-filter {
+	padding: 0;
+	background: none !important;
+	overflow: visible;
+	.search-user-title {
+		width: 120px;
+		display: inline-block;
+	}
+	.input-search, .input-search-product, .select-search {
+		width: 150px;
+		margin: 5px;
+	}
+	.input-search-time {
+		width: 100px;
+		margin: 5px;
+	}
+	.btn-submit, .btn-cancel {
+		font-size: 1em;
+		padding: 3px 10px;
+		@include btn-color($main-red-color);
+	}
+	.btn-cancel {
+		@include btn-color(darken($main-grey-color,20));
+	}
+	.adv-search {
+		display: none;
+	}
+	.error-msg {
+		margin-left: 10px;
+		color: #f00;
+		i {
+			margin-right: 3px;
+		}
+	}
+	.related-searches {
+		width: 150px;
+		left: 113px;
+		top: 28px;
+		padding: 5px;
+		background: #fff;
+		border: #ccc 1px solid;
+		border-top: 0;
+		@include border-radius(3px);
+		@include box-shadow(rgba(black,0.1) 3px 3px 5px);
+		position: absolute;
+		z-index: 1;
+		display: none;
+		dd {
+			padding: 5px;
+			cursor: pointer;
+			&:hover {
+				background: $main-grey-color;
+			}
+		}
+	}
+}
+.table-list {
+	width: 100%;
+	margin: 20px 0;
+	caption {
+		color: #999;
+		text-align: left;
+		margin: 5px 0;
+	}
+	th, td {
+		padding: 5px 10px;
+		color: #333;
+		text-align: center;
+		vertical-align: middle;
+		border-bottom: $main-grey-color 1px solid;
+	}
+	th {
+		background: $main-grey-color;
+	}
+	tr:nth-child(odd) td {
+		background: lighten($main-grey-color,10);
+	}
+	.btn-delete, .btn-detail {
+		font-size: 0.9em;
+		padding: 3px 0 3px 5px;
+		@include btn-color(darken($main-grey-color,20));
+		@include border-radius(100%);
+	}
+	.btn-detail {
+		@include btn-color(mix($main-green-color,#fff,60));
+	}
+}
+.pages {
+	margin: 10px;
+	text-align: center;
+	a, span {
+		margin: 3px;
+		padding: 1px 5px;
+	}
+	a {
+		color: #333;
+		border: #ccc 1px solid;
+		@include border-radius(3px);
+		vertical-align: middle;
+		&.prev-page:before {
+			content: "\00ab";
+			margin-right: 3px;
+		}
+		&.next-page:after {
+			content: "\00bb";
+			margin-left: 3px;
+		}
+		&:hover {
+			color: #fff;
+			background: #999;
+			border-color: #999;
+		}
+		&.disable {
+			color: #ccc;
+			background: none;
+			border-color: #ccc;
+		}
+	}
+}

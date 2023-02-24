@@ -1,0 +1,61 @@
+.hide {
+  display: none;
+}
+
+.container {
+  width: 1220px;
+  position: relative;
+  margin: 0 auto;
+}
+.container {
+  zoom: 1;
+}
+.container:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.site-body {
+  padding-bottom: 40px;
+  width: 1220px;
+  margin: 0 auto;
+}
+.site-body {
+  zoom: 1;
+}
+.site-body:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.site-left {
+  width: 200px;
+  margin-right: 20px;
+  float: left;
+  margin-top: 10px;
+}
+
+.site-main {
+  width: 1000px;
+  float: left;
+  position: relative;
+}
+.site-main .container {
+  width: auto;
+}
+
+.site-header {
+  border-bottom: none;
+}
+
+.site-left {
+  margin-top: 0px;
+}

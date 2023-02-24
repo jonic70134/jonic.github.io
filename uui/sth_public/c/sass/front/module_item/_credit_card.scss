@@ -1,0 +1,116 @@
+.credit-card{
+    max-width: 880px;
+    background: #fff;
+    margin-top:-46px;
+    margin-bottom: 36px;
+	.title-h3{
+		background: #504f47;
+		color: #fff;
+		border-bottom: 1px solid $border2;
+		padding: 15px 10px;
+		margin-bottom: 0;
+		.link{
+			color: #eee;
+			font-size: 13px;
+			margin-left: 10px;
+			font-weight: normal;
+			text-decoration: underline;
+			&:hover{
+				color: $hover_text;
+			}
+		}
+		.icon-close{
+			float: right;
+		}
+	}
+	.list{
+		width: 100%;
+		font-size: 14px;
+		line-height: 140%;
+		text-align: center;
+		th{
+			padding: 10px 5px 5px;
+			border-bottom: 2px solid $border;
+		}
+		td{
+			padding: 10px 5px;
+			border-bottom: 1px dotted $border;
+			vertical-align: middle;
+			img{
+				margin-top: 4px;
+				width: 100px;
+			}
+			a{
+				font-size: 12px;
+			}
+		}
+		h4{
+			font-weight: bold;
+			color: red;
+		}
+		a:hover{
+			color: $hover_text;
+		}
+		.descript{
+			font-size: 12px;
+			text-align: left;
+			padding: 15px 20px;
+			background: $background2;
+			p{
+				font-weight: bold;
+				font-size: 13px;
+			}
+			ol{
+				list-style-type: decimal;
+				margin-left: 14px;
+				margin-top: 10px;
+			}
+			ul{
+				>li{
+					background: url("../../../../../../img/frame/circle.png") no-repeat 0px 10px;
+					padding-left: 8px;
+				}
+			}
+		}
+	}
+	.bonus-detail{
+		background: #504f47;
+		color: #fff;
+		display: block;
+		padding: 15px 0;
+		margin-bottom:36px;
+		th, td{
+			font-size: 12px;
+			line-height: 140%;
+			padding: 8px 10px;
+		}
+		th{
+			width: 140px;
+			text-align: right;
+		}
+	}
+	.rate{
+		color: $red;
+		font-weight: bold;
+		width: 15%;
+		.text18{
+			font-size: 22px;
+			padding: 0 3px;
+			top: 2px;
+    		position: relative;
+    		font-style: italic;
+		}
+	}
+	.bank-name{
+		font-size: 12px;
+		width: 70%;
+		text-align: left;
+		.note{
+			>li{
+				display: inline-block;
+				width: 84px;
+				color: #666;
+			}
+		}
+	}
+}

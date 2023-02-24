@@ -1,0 +1,18 @@
+@import "../define/__init.scss";
+.hero{
+	border-bottom: 1px solid $light_gray;
+	font-size: 0;
+    img{
+        width: 100%;
+    }
+}
+.case{
+	.theme{
+		display: inline-block;
+		margin: 0 1% 3% 0;
+		border: 1px solid $gray;
+		padding: 3px;
+		@include crop(23%, black);
+		background: #f2f2f2;
+	}
+}

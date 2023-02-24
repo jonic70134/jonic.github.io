@@ -1,0 +1,13 @@
+//payment: installment
+.md-cn-payment {
+	.md-form {
+		margin-left: 0;
+		margin-bottom: 0;
+		& > dd {
+			margin-bottom: 10px;
+		}
+	}
+	.img-cn-payment {
+		vertical-align: middle;
+	}
+}

@@ -1,0 +1,51 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_stayreal.scss";
+@import "../../../module_extract/_extract_stayreal.scss";
+
+.red-text{
+    color: $primary;
+}
+
+//-----------------_item_main
+.item-main{
+    .value{
+        .active{
+            border-color: $primary;
+            color: $primary;
+            &:after{
+                border-color: transparent transparent $primary transparent;
+            }
+        }      
+    }
+}
+
+//-----------------_site_activity
+.site-activity{	
+	.ready{
+		background: $primary;
+	}
+	.date{
+		background: #FFE6DF;
+		color: #555;
+	}
+	.act-content{
+		color: $primary;
+	}
+	@include RWD(pad-mobile) {
+		.swiper-container{			
+			.swiper-left, .swiper-right{
+				border-top-color: $border;
+				border-right-color: $border;
+				background: #1D1D1D;
+			}
+		}		
+	}
+
+}
+
+//-----------------_site_search_answer
+.site-search-answer{
+	.light{
+		color: $primary;
+	}
+}

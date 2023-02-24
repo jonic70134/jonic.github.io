@@ -1,0 +1,88 @@
+.hide {
+  display: none;
+}
+
+.container {
+  width: 1220px;
+  position: relative;
+  margin: 0 auto;
+}
+.container {
+  zoom: 1;
+}
+.container:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.site-body {
+  padding-bottom: 40px;
+  width: 1220px;
+  margin: 0 auto;
+}
+.site-body {
+  zoom: 1;
+}
+.site-body:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 999px) {
+  .hidden-desktop {
+    display: none !important;
+  }
+}
+
+.site-header {
+  border-bottom: none;
+}
+
+.site-left {
+  margin-top: 0px;
+}
+
+.campaign-4 {
+  clear: both;
+  padding: 0 0 8px 0;
+}
+.campaign-4 li {
+  width: 24.5%;
+  display: inline-block;
+  text-align: center;
+  -webkit-box-reflect: below 0 -webkit-linear-gradient(transparent, transparent 40%, rgba(255, 255, 255, 0.2));
+}
+.campaign-4 a {
+  display: block;
+  width: 100%;
+  color: #06c;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.campaign-4 a:hover {
+  color: #e00517;
+}
+.campaign-4 .fa-star {
+  margin-right: 2px;
+  color: #FCC500;
+  text-shadow: 1px 1px 0px #aaa;
+}
+.campaign-4 .fa-hot {
+  font: 700 12px arial,sans-serif;
+  margin-right: 2px;
+  padding: 3px 5px;
+  vertical-align: 2px;
+  color: white;
+  background-color: #e00517;
+}

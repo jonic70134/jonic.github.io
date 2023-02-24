@@ -1,0 +1,77 @@
+//import
+.import-form {
+	& > dd {
+		margin-bottom: 10px;
+		position: relative;
+	}
+	.form-element-name {
+		width: 40%;
+		text-align: right;
+		display: inline-block;
+	}
+	.input-search {
+		width: 330px;
+	}
+	.related-searches {
+		width: 330px;
+		left: 40%;
+		top: 23px;
+		margin-left: 7px;
+		padding: 3px 5px;
+		background: #fff;
+		border: #ccc 1px solid;
+		border-top: none;
+		@include border-bottom-radius(5px);
+		cursor: pointer;
+		position: absolute;
+		z-index: 1;
+		display: none;
+		dd {
+			padding: 5px;
+			&:hover {
+				background: $main-grey-color;
+			}
+		}
+	}
+	.select-group {
+		vertical-align: top;
+		display: inline-block;
+		dd {
+			margin-bottom: 5px;
+		}
+	}
+	.comment {
+		color: mix($main-red-color,#c90,10);
+		display: block;
+		margin: 5px 0 0 40%;
+		padding-left: 5px;
+	}
+	.btn-infr {
+		font-size: 1em;
+		padding: 5px 10px;
+		@include btn-color(darken($main-grey-color,20));
+	}
+}
+//popup
+.dialog {
+	font-size: 1.2em;
+	dd {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.comment {
+		margin-top: 5px;
+	}
+}
+.sell-quantity {
+	button.btn-quantity {
+		font-size: 1em;
+		margin-left: 5px;
+		padding: 3px 10px;
+		@include btn-color(lighten($main-green-color,10));
+	}
+	.edit-quantity {
+		margin-left: 5px;
+		display: none;
+	}
+}

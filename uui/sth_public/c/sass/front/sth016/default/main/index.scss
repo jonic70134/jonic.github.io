@@ -1,0 +1,15 @@
+@import "../../../../define/__init.scss";
+
+@import "../../../../frame/_rwd_layout_two_column.scss";
+@import"../../../module_index/_rwd_index_layout.scss";
+
+
+.two_column{
+	.site-main{
+		background: $background2;
+		padding: 15px;
+		.container{
+			width: auto;
+		}
+	}
+}

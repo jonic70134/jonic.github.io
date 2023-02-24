@@ -1,0 +1,63 @@
+.order_refund_002 .order-refund2-block {
+  position: relative;
+  width: 100%;
+  height: auto;
+  color: #666666;
+  text-align: center;
+  line-height: 1.5;
+  padding: 45px 15px;
+  margin-bottom: 30px;
+  top: 0px;
+  background: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 2px 1px #dddddd;
+  -moz-box-shadow: 0 1px 2px 1px #dddddd;
+  box-shadow: 0 1px 2px 1px #dddddd;
+}
+.order_refund_002 .order-refund2-block {
+  zoom: 1;
+}
+.order_refund_002 .order-refund2-block:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.order_refund_002 .order-refund2-block p {
+  margin-bottom: 15px;
+  line-height: 1.9;
+}
+.order_refund_002 .actions {
+  border-top: 1px solid #dddddd;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.order_refund_002 .button {
+  margin: 0 10px;
+}
+@media only screen and (max-width: 1241px) {
+  .order_refund_002 {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .order_refund_002 .button {
+    margin: 8px 10px;
+  }
+}

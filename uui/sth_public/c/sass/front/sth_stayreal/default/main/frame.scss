@@ -1,0 +1,50 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_stayreal.scss";
+@import "../../../../frame/_reset.scss";
+@import "../../../../frame/_rwd_layouts.scss";
+@import "../../../../frame/_button.scss";
+
+@import "../../../../frame/_bank.scss";
+@import "../../../../frame/_fancybox_style.scss";
+@import "../../../../frame/_rwd_style.scss";
+
+@import "../../../module_component/_site_ad_top.scss";
+@import"../../../module_component/_site_float_bar.scss";
+@import "../../../module_header/_stayreal_header.scss";
+@import "../../../module_footer/_rwd_footer_001.scss";
+@import "../../../module_footer/_rwd_copyright_001.scss";
+
+.rwd_footer_001{
+	margin-top: 0px;
+}
+
+.button {
+	// discount button style
+    &.btn-follow-list {
+        background: $primary;
+        &:hover {
+            background: lighten($primary, 5%);
+        }
+        // active/pressed
+        &:active, &.pressed {
+            background: darken($primary, 15%);
+        }
+    }
+}
+
+//site-float-bar
+.site-float-bar {
+	background: #111;
+	background-color: rgba(17, 17, 17, .8);
+	.container {
+		color: #CCC;
+	}
+}
+
+
+
+
+
+
+
+	

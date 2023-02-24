@@ -1,0 +1,44 @@
+body {
+	color: $font-color;
+	font: #{$font-size}/#{$font-line-height} $font-family;
+	background: $bg-color;
+	overflow-x: hidden;
+	overflow-y: auto;
+	@include RWD(desktop) {
+		font-size: 0.95em;
+	}
+}
+a {
+	color: $anchor-color;
+	text-decoration: none;
+	cursor: pointer;
+	&:hover {
+		color: $anchor-hover-color;
+	}
+}
+ul, li {
+	list-style: none;
+}
+pre {
+	font-size: 1em;
+	font-family: $font-family;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+@include placeholder {
+	color: lighten($font-color,70);
+	opacity: 1;
+}
+*:focus {
+	outline: 0;
+}
+::-moz-selection {
+	color: #fff; 
+	background: darken($sub-color,10); 
+	text-shadow: none;
+}
+::selection {
+	color: #fff; 
+	background: darken($sub-color,10); 
+	text-shadow:none;
+}

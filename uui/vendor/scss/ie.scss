@@ -1,0 +1,29 @@
+@import "compass";
+@import "compass/css3";
+@import "_variables.scss";
+@import "_mixin.scss";
+
+//inline block
+.user .notification, .btn-group-user .caret,
+#nav > ul > li > a:after, #nav > ul > li > span:after, #nav > ul > li ul a:before,
+.annoucement dd:before, .index-catagory dd, .index-catagory dd:before,
+.breadcrumb > li,
+.theme dd, .theme > dd .theme-color, .theme > dd .theme-color dd, 
+.modify-tabs dd, .modify-content .modify-button button, .modify-content .modify-detail .edit-area button, 
+.preview-tabs dd, .preview-tabs dd a, .preview-tabs dd a:before,
+.catagory-function .catagory-theme, .catagory-function .catagory-theme > dd {
+	*display: inline !important;
+	*zoom: 1;
+}
+//:checked fallback
+.catagory-function {
+	.catagory-theme {
+		& > dd {
+			input[type="radio"] {
+				width: auto;
+				@include opacity(1);
+				position: static;
+			}
+		}
+	}
+}

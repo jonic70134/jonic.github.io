@@ -1,0 +1,40 @@
+.quantity .quantity-input {
+  line-height: 30px;
+}
+
+.quantity.small .quantity-input {
+  line-height: 22px;
+}
+
+.pc_category_list .quantity .quantity-input {
+  line-height: 22px;
+}
+
+.site-sort .sort li + li + li + li + li a {
+  border-right: 1px solid #cccccc;
+}
+
+.nav-pagination a {
+  border: 1px solid #cccccc;
+}
+
+.pc-item-main .value > li img {
+  z-index: -1;
+}
+.pc-item-main .payinfo-left {
+  width: 295px;
+}
+.pc-item-main .credit-card .block {
+  padding: 0 0 0 5px;
+}
+.pc-item-main .credit-card .block:first-child {
+  padding: 0 5px 0 0;
+}
+
+.pc-item-main .item-fee .fa-question .fee-info {
+  visibility: visible;
+  display: none;
+}
+.pc-item-main .item-fee .fa-question:hover .fee-info {
+  display: block;
+}

@@ -1,0 +1,24 @@
+@import "../../../../define/__init.scss";
+@import "../../../style_color/___color_asap_wechat.scss";
+
+@import "../../../../frame/_reset.scss";
+@import "../../../../frame/_md_layouts.scss";
+@import "../../../../frame/_md_style.scss";
+@import "../../../../frame/_md_button.scss";
+@import "../../../module_header/_md_header_wechat.scss";
+@import "../../../module_component/_md_nav_menu.scss";
+@import "../../../module_component/_md_nav_menu_title_002.scss";
+@import "../../../module_component/_md_item_list.scss";
+@import "../../../module_footer/_md_footer_wechat.scss";
+@import "../../../module_component/_site_tags.scss";
+@import "../../../module_component/_site_translation.scss";
+.md-list-item{
+	margin: 5px 0;
+	padding: 5px 10px;
+}
+.search-bar{
+	display:none;
+}
+.site-body{
+	padding-top:53px;
+}

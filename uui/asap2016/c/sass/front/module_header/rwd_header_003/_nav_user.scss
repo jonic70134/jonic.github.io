@@ -1,0 +1,123 @@
+.nav-user{
+    margin-top: 22px;
+    float: right;
+    @include clearfix;
+    visibility:hidden;
+	>ul>li{
+        float: left;
+        padding: 4px;
+        cursor: pointer;
+        &.nav-account{
+        	margin-right: 20px;
+        }
+    }
+    .cart-btn{
+    	position: relative;
+    	.count{
+                    position: absolute;
+                    top: -2px;
+                    left: 10px;
+                    //color: $count;
+                    //background: $primary;
+                    font-weight: bold;
+                    font-style: normal;
+                    z-index: 3;
+                    padding: 2px 5px;
+                    @include border-radius (50%);
+    	}
+        .f-cart{
+            font-size: 1.8em;
+        }
+        .icon-cart:before{
+            width: 30px;
+        }
+    }
+    .icon-menu{
+        display: none;
+    }
+    .nav-account{
+        position: relative;
+        // &:hover{
+        //         .account-item{
+        //             display: block;
+        //         }
+        // } 此段由JS控制 by 橘子
+        .icon-account{
+            font-size:1.7em;
+        }
+    }
+    .account-item{
+        border-width: 1px;
+        border-style: solid; 
+        //border: 1px solid $light_gray;
+        width: 148px;
+        background: #fff;
+        position: absolute;
+        z-index: 2;
+        font-size: 0.813em;
+        right: 0;
+        top: 35px;
+        li{
+            display: block;
+            float: none;
+            padding: 0;
+            border-bottom-width: 1px;
+            border-bottom-style: solid; 
+            //border-bottom: 1px solid $light_gray;
+            &:first-child{
+                margin-right: 0;
+            }
+            &:last-child{
+                border-bottom: 0;
+            }
+            a{
+                display: block;
+                padding: 12px 20px;
+                //color: $gray;
+                &:hover{
+                    //background: $hover_bk;
+                    //color: $hover_text;
+                }
+            }
+        }
+    }
+}
+@include RWD(desktop-all) {
+    .nav-user{
+        .main-cart{
+            position: relative;
+            &:hover{
+                .cart-item{
+                    display: block;
+                }
+            }
+        }
+        .icon-search{
+            display: none;
+        }
+    }
+}
+@include RWD(pad-mobile) {
+.nav-user{
+    // position: absolute;
+    // right: 20px;
+    // z-index: 4;
+    display: block;
+    margin-top:10px;
+    float:none;
+    ul{
+        float:right;
+    }
+    ul>li{
+        float: left;
+        padding: 5px 15px;
+        &.nav-account{
+            margin: 0;
+        }
+    }
+    .icon-menu{
+        font-size:1.7em;
+        display: inline-block;
+    }
+}
+}

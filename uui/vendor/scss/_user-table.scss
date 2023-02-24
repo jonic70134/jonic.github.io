@@ -1,0 +1,99 @@
+//list table
+.table-hd {
+	float: left;
+}
+.table-body {
+	overflow: auto;
+	float: left;
+}
+.user-table {
+	min-width: 100%;
+	margin: 20px 0;
+	border-collapse: collapse;
+	caption {
+		color: #999;
+		text-align: left;
+		margin: 5px 0;
+	}
+	th, td {
+		height: 25px;
+		padding: 5px 10px;
+		color: #333;
+		text-align: center;
+		vertical-align: middle;
+		white-space: nowrap;
+		background: #fff;
+		border-bottom: $main-grey-color 1px solid;
+		border-right: #fff 1px solid;
+		&.txt {
+			text-align: left;
+		}
+		&.num {
+			text-align: right;
+		}
+	}
+	th {
+		background: mix($main-blue-color,#fff,30);
+		border-bottom-color: mix($main-blue-color,#999,20);
+		border-right-color: rgba(white,0.2);
+	}
+	tr:nth-child(even) td {
+		background: lighten($main-grey-color,10);
+	}
+	a {
+		&:after {
+			@include list-arrow(darken($main-grey-color,10),1em,0);
+			content: "\f08e";
+		    margin-left: 5px;
+		    position: static;
+		}
+	}
+	.txt-marking {
+		color: mix($main-red-color,#c90,10);
+	}
+	button {
+		font-size: 0.9em;
+	}
+	.btn-edit, .btn-detail, .btn-helper, .btn-permission, .btn-delete {
+		margin: 0 3px;
+		padding: 2px 0 2px 5px;
+		@include btn-color(mix($main-green-color,#fff,60));
+		@include border-radius(100%);
+	}
+	.btn-detail {
+		padding: 3px 0 3px 5px;
+		@include btn-color(mix($main-color,#fff,50));
+	}
+	.btn-helper {
+		padding: 4px 1px 2px 5px;
+	}
+	.btn-permission {
+		padding: 3px 2px 3px 7px;
+		@include btn-color(mix($main-red-color,#fff,40));
+	}
+	.btn-delete {
+		@include btn-color(darken($main-grey-color,20));
+	}
+	.btn-option {
+		padding: 3px 10px;
+		@include btn-color(mix($main-color,#fff,50));
+	}
+	.table-sort {
+		color: #fff;
+		margin: 0 3px;
+		vertical-align: middle;
+		@include text-shadow(rgba(black,0.3) 0 1px);
+		&.active {
+			color: mix($main-blue-color,#666,30);
+			@include text-shadow(rgba(white,0.7) 0 1px);
+		}
+	}
+	&:hover {
+		// & > tbody > tr > td {
+		// 	background: #fff;
+		// }
+		& > tbody > tr:hover > td {
+			background: mix($main-green-color,#fff,10);
+		}
+	}
+}

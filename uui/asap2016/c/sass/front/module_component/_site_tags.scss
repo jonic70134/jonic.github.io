@@ -1,0 +1,115 @@
+$flag-img: "../../../../../../c/img/sth_asap/flag/flag-s.png";
+
+.tag-status {
+	font-size: 12px;
+	line-height: 1.44;
+	letter-spacing: normal;
+	font-weight: bold;
+	margin-left: 5px;
+	padding: 0 5px;
+	border: 1px solid;
+	background: white;
+	display: inline-block;
+	&.is-odd {
+		border-color: $label_blue;
+		color: $label_blue;
+        a{
+            color: $label_blue;
+        }
+	}
+	&.is-preorder {
+		border-color: $label_yellow;
+		color: $label_yellow;
+        a{
+            color: $label_yellow;
+        }
+	}
+	&.is-imported {
+		border-color: $label_green;
+		color: $label_green;
+        a{
+            color: $label_green;
+        }
+	}
+	&.is-uitox-5h-delivery {
+        border-color: $label_red;
+		color: $label_red;
+        a{
+            color: $label_red;
+        }
+	}
+    &.is-uitox-24h-delivery {
+		border-color: #FF3600;
+		color: #FF3600;
+        a{
+            color: #FF3600;
+        }
+	}
+	&.is-vendor-delivery {
+		border-color: $label_purple;
+		color: $label_purple;
+        a{
+            color: $label_purple;
+        }
+	}
+	&.is-separate-delivery {
+		border-color: $label_dark-blue;
+		color: $label_dark-blue;
+        a{
+           color: $label_dark-blue; 
+        }
+	}
+	&.is-max-purchase {
+		border-color: $label_gray;
+		color: $label_gray;
+        a{
+            color: $label_gray;
+        }
+	}
+	&.is-2h-delivery{
+		background:none;
+		border: none;
+		padding: 0;
+	}
+}
+.commodity-status {
+	@include clearfix;
+	width: 100%;
+	.ic-tag {
+		float: left;
+		width: 28px;
+		height: 20px;
+		font-size: 12px;
+		line-height: 18px;
+		margin: 0 1px 0 0;
+		text-align: center; 
+		&.ic-price {
+			background-color: #f80;
+			color: #fff;
+		}
+		&.ic-top {
+			border: 1px solid #f80;
+			color: #f80;
+			width: 33px;
+		}
+		&.ic-limited {
+			border: 1px solid #00aa01;
+			color: #00aa01;
+		}
+		&.ic-gifts {
+			border: 1px solid #09c;
+			color: #09c;
+		}
+	}
+	//flag
+	.ic-flag {
+		background: url("#{$flag-img}") no-repeat 0 0 scroll transparent;
+		width: 29px;
+		overflow: hidden;
+		text-indent: 100%;
+		white-space: nowrap;
+		&.fg-jp {
+			
+		}
+	}
+}

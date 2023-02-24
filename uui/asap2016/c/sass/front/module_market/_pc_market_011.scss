@@ -1,0 +1,80 @@
+$swiper-btn: "../../../../c/img/sth_asap/swiper-btn.png";
+.pc_market_011 {
+	margin: 0 auto 20px;
+	.subject-title {
+		border-bottom: 1px solid #aaa;
+		color: #333;
+		font-size: 18px;
+		line-height: 20px;
+		padding-bottom: 5px;
+	}
+	.content{
+		// border-top: 1px solid $border;
+		position: relative;
+	}
+	.num-page {
+		position: absolute;
+		right: 0;
+		top: -27px;
+		@include clearfix;
+		.num {
+			float: left;
+			display: block;
+			width: 30px;
+			border: 1px solid #aaa;
+			color: #000;
+			font-size: 13px;
+			margin: 0 3px 0 0;
+			padding: 5px 0 4px;
+			text-align: center;
+			&.active {
+				background-color: #ddd;
+			}
+		}
+	}
+	.items {
+		width: ( 200px * 4 ) + (36 * 3);
+		height: 200px;
+		overflow: hidden;
+		margin: 0 45px;
+		padding: 15px 0;
+		position: relative;
+		ul {
+			width: 99999px;
+			position: absolute;
+			z-index: 2;
+			li {
+				float: left;
+				width: 200px;
+				height: 200px;
+				margin-right: 36px;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.btn {
+		.btn-link {
+			background: url("#{$swiper-btn}") no-repeat 0 0 scroll transparent;
+			width: 30px;
+			height: 60px;
+			display: block;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			position: absolute;
+			top: 85px;
+			z-index: 99;
+			&.prev {
+				background-position: left top;
+				left: 0px;
+
+			}
+			&.next {
+				background-position: right -75px;
+				right: 0px;
+			}
+		}
+	}
+}

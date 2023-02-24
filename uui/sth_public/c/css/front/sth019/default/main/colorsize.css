@@ -1,0 +1,100 @@
+html, body {
+  padding: 0;
+  height: auto;
+}
+
+.site-body, .site-main {
+  width: 100%;
+}
+
+.item-main {
+  padding-bottom: 0;
+}
+.item-main .photo {
+  width: 36%;
+  height: auto;
+  float: left;
+  padding: 75px 0 0;
+}
+.item-main .photo img {
+  position: static;
+  border: none;
+  max-width: 190px;
+  display: block;
+  margin: 0 auto;
+}
+.item-main .info {
+  width: 60%;
+  padding: 75px 0 0 10px;
+  border: none;
+}
+.item-main .info h1 {
+  width: 100% !important;
+  max-height: 60px;
+  padding: 6px 5px;
+  margin-bottom: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  background: #d00;
+  color: white;
+  font-size: 18px !important;
+  line-height: 1.4;
+}
+.item-main .info .line {
+  margin: 2px 0;
+}
+.item-main .info .line + line + line {
+  margin-bottom: 10px;
+}
+.item-main .info .value {
+  width: 78%;
+}
+.item-main .info .price {
+  font-size: 24px;
+  margin: 0;
+}
+.item-main .info .currency {
+  font-size: 12px;
+}
+.item-main .feature {
+  display: none;
+}
+
+.item-buy {
+  text-align: right;
+  margin: 30px 30px 0 0;
+}
+
+@media screen and (max-width: 480px) {
+  .item-main .photo img {
+    max-width: 230px;
+    padding: 0;
+  }
+  .item-main .photo, .item-main .info {
+    width: 100%;
+    padding-top: 70px;
+  }
+  .item-main .info {
+    padding: 10px 10px 0;
+  }
+  .item-main .value, .item-main .buy {
+    width: 100%;
+  }
+  .item-main .recomand_price .value, .item-main .recomand_price .key {
+    width: 100%;
+    text-align: right;
+  }
+  .item-main .net_price .buy, .item-main .net_price .key {
+    width: 100%;
+    text-align: right;
+  }
+
+  .item-buy {
+    text-align: right;
+    margin: 30px 10px;
+    padding-bottom: 70px;
+  }
+}

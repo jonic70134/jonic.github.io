@@ -1,0 +1,81 @@
+/* form element */
+.md-form {
+	margin: 10px;
+	position: relative;
+	@include RWD(pad) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	& > dt {
+		display: inline-block;
+	}
+	& > dd {
+		margin-right: 10px;
+		display: inline-block;
+		position: relative;
+		@include RWD(pad) {
+			margin-bottom: 5px;
+			display: block;
+		}
+	}
+	.label-title {
+		margin-right: 2px;
+		@include RWD(pad) {	
+			display: none !important;
+			&.is-show {
+				width: auto !important;
+				text-align: left !important;
+				display: block !important;
+			}
+		}
+	}
+	input:not([type="radio"]), input:not([type="checkbox"]), select {
+		max-width: 100%;
+		margin-right: 3px;
+		@include box-sizing(border-box);
+		@include RWD(pad) {
+			width: 100%;
+			&.width-half {
+				width: 48.5%;
+				vertical-align: top;
+				&:nth-child(odd) {
+					margin-right: 0;
+					float: right;
+				}
+			}
+		}
+		&:focus {
+			border-color: $c-yellow;
+			@include box-shadow(rgba($c-yellow,0.3) 0 0 5px inset);
+		}
+		&.is-allow {
+			border-color: $c-green;
+			@include box-shadow(rgba($c-green,0.3) 0 0 5px inset);
+		}
+		&.is-error {
+			border-color: $c-red;
+			@include box-shadow(rgba($c-red,0.3) 0 0 5px inset);
+		}
+	}
+	input[type="radio"], input[type="checkbox"] {
+		@include RWD(pad) {
+			width: auto;
+		}
+	}
+}
+.md-form-btn {
+	margin: 20px 0 5px;
+	text-align: center;
+	letter-spacing: -0.32em;
+	button {
+		font-size: 1.2em;
+		letter-spacing: normal;
+		margin: 0 5px;
+		padding: 5px 15px;
+		@include RWD(mobile) {
+			width: 100%;
+			margin: 5px 0;
+			padding: 7px 15px;
+		}
+	}
+}

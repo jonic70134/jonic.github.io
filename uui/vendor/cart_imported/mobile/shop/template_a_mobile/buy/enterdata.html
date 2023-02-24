@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="zh-TW">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ASAP閃電購物網</title>
+    <link rel="shortcut icon" href="../../img/1423020993_AWC000001.ico">
+    <!--[if lt IE 9]>
+    <script src="../../js/3rd-party/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="../../css/frame/frame.css" type="text/css">
+    <link rel="stylesheet" href="../../css/shop/get_style.css" type="text/css">
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/jquery.blockUI.js"></script>
+    <script type="text/javascript" src="../../js/jquery.selectboxes.js"></script>
+</head>
+<body cz-shortcut-listen="true">
+    <header class="header-inn">
+        <div class="layout uitox">
+            <h3>信用卡</h3>
+            <a class="icon-logo-customer" href="http://m.asap.com.tw/"><img src="../../img/1423020998_AWC000001.jpg"></a><span></span>
+            <ul class="top-actions">
+                <li class="return-index"><a href="#">回上一頁</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="total block icon-arrow-rs icon-arrow-ds">
+        本次消費總計：
+        <span class="dollar">NT$</span>
+        <span class="price">6,689</span>
+        <ol class="list">
+            <li class="main ">    
+                <p class="name">ASUS ZenWatch 智慧手錶<span class="attricon green">日本直送</span></p>    
+                <p class="attr ">        
+                    <span class="count">數量: 1</span>        
+                    <span class="price">
+                        <span class="dollar">NT$</span>5,990
+                    </span>    
+                </p>
+            </li>
+            <li class="main sub"></li>
+            <li class="main ">    
+                <p class="name">
+                    <span class="tag-big attricon blue">大材積</span>春風 拉拉熊愛心限定 10包*7串
+                </p>    
+                <p class="attr ">        
+                    <span class="count">數量: 1</span>        
+                    <span class="price">
+                        <span class="dollar">NT$</span>699
+                    </span>    
+                </p>
+            </li>
+            <li class="main sub"></li>
+        </ol>
+    </div>
+
+    <div class="credit block">
+        <h1 class="title">信用卡資訊</h1>
+        <div class="line">
+            <input type="text" class="name" placeholder="持卡人姓名" value="nancy">
+        </div>
+        <div class="line">
+            <input type="tel" class="mobile" maxlength="10" placeholder="手機" value="0911******">
+            <input type="tel" maxlength="20" class="tel" placeholder="市話(可不填)" value="">
+        </div>
+        <div class="line">信用卡卡號</div>
+        <div class="line">
+            <select id="CardType" name="CardType" class="type">
+                <option value="VISA">VISA</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="JCB">JCB</option>
+            </select>
+            <input type="tel" class="credit" maxlength="16" placeholder="●●●● ●●●● ●●●● ●●●●" autocomplete="off" onkeyup="checkCreditCard();">
+        </div>
+        <div class="line">信用卡截止日</div>
+        <select class="month">
+            <option value="">月</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+        </select>
+        <select class="year">
+            <option value="">年</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+        </select>
+        <input type="tel" class="code" placeholder="背面末三碼" maxlength="3" autocomplete="off">
+        <div class="line hide">
+            <input type="checkbox" value="YES"><label for="Use" class="red">使用紅利點數折抵刷卡金</label>
+        </div>
+    </div>
+
+    <div class="receive addr block">
+        <div id="firstConsignee">
+            <h1 class="title">收貨人資訊</h1>
+            <input type="text" class="name" placeholder="收貨人姓名" value="nancy">
+            <input type="tel" class="tel" placeholder="手機" value="0911******">
+            <input type="tel" class="tel" placeholder="市話(可不填)" value="">
+            <div id="twzip1">
+                <select id="getCity" name="getCity" class="city-1">
+                    <option value="">請選擇城市</option>
+                    <option value="基隆市">基隆市</option>
+                    <option value="台北市">台北市</option>
+                    <option value="新北市">新北市</option>
+                </select>
+            <input type="text" class="address" placeholder="地址" value="***路四段563號8樓">
+        </div>
+
+        <div id="secondConsignee">
+            <h1 class="title">請選擇收貨地址</h1>
+            <div id="secondConsignee_content">
+                <section class="select-list">    
+                    <input type="radio" name="consignee_select" id="radio_1" value="1">    
+                    <label for="radio_1">        
+                        <span class="icon-person-s">nancy</span>        
+                        <span class="icon-mobile-s">0911******</span>        
+                        <p class="addr">*********忠孝東路四段563號8樓</p>    
+                    </label>    
+                    <a href="javascript: void(0);" class="icon-edit"></a>
+                </section>
+                <div class="lightbox-addr hide lightbox">    
+                    <div class="block">        
+                        <h1>修改收貨人資料</h1>        
+                        <input type="text" placeholder="收貨人姓名" class="input-name" value="nancy">        
+                        <input type="tel" placeholder="手機" class="input-phone" value="0911******">        
+                        <input type="tel" placeholder="市話(可不填)" class="input-phone" value="">        
+                        <div name="twzip_1">
+                            <select id="city_1" name="city_1" class="city-1">
+                                <option value="">請選擇城市</option>
+                                <option value="基隆市">基隆市</option>
+                                <option value="台北市">台北市</option>
+                                <option value="新北市">新北市</option>
+                                <option value="宜蘭縣">宜蘭縣</option>
+                            </select>
+                            <select id="townships_1" name="townships_1" class="city-2">
+                                <option value="請選擇區域">請選擇區域</option>
+                                <option value="100 中正區">100 中正區</option>
+                                <option value="103 大同區">103 大同區</option>
+                            </select>
+                        </div>        
+                        <input type="text" maxlength="120" value="忠孝東路四段563號8樓" class="address">        
+                        <div class="actions">            
+                            <a href="javascript:void(0);" class="button gray">取消</a>            
+                            <a href="javascript:void(0);" class="button red">送出</a>
+                        </div>        
+                        <a href="javascript:void(0);" class="icon-close"></a>    
+                    </div>
+                </div>
+                <section class="select-list">    
+                    <input type="radio" name="consignee_select" id="radio_2" value="2">    
+                    <label for="radio_2">        
+                        <span class="icon-person-s">nancy</span>        
+                        <span class="icon-mobile-s">0911******</span>        
+                        <p class="addr">*********測試街23號</p>    
+                    </label>    
+                    <a href="javascript: void(0);" class="icon-edit"></a>
+                </section>
+                <div class="lightbox-addr hide lightbox">    
+                    <div class="block">        
+                        <h1>修改收貨人資料</h1>        
+                        <input type="text" placeholder="收貨人姓名" class="input-name" value="nancy">        
+                        <input type="tel" placeholder="手機" class="input-phone" value="0911******">        
+        
+                        <input type="tel" laceholder="市話(可不填)" class="input-phone" value="">        
+                        <div name="twzip_2">
+                            <select id="city_2" name="city_2" class="city-1">
+                                <option value="">請選擇城市</option>
+                                <option value="基隆市">基隆市</option>
+                                <option value="台北市">台北市</option>
+                            </select>
+                            <select id="townships_2" name="townships_2" class="city-2">
+                                <option value="請選擇區域">請選擇區域</option>
+                                <option value="207 萬里區">207 萬里區</option>
+                                <option value="208 金山區">208 金山區</option>
+                            </select>
+                        </div>        
+                        <input type="text" name="addr_2" maxlength="120" value="測試街23號" class="address">
+                        <div class="actions">            
+                            <a href="javascript:void(0);" class="button gray">取消</a>            
+                            <a href="javascript:void(0);" class="button red">送出</a>        
+                        </div>        
+                        <a href="javascript:void(0);" class="icon-close"></a>    
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="select-list btn-add">新增其他收貨地址</a>
+            <div class="lightbox-addr hide lightbox">
+                <div class="block">
+                    <h1 class="title">新增收貨地址</h1>
+                    <input type="text" placeholder="收貨人姓名" class="input-name">
+                    <input type="tel" placeholder="手機" class="input-phone">
+                    <input type="tel" placeholder="市話(可不填)" class="input-addr">
+                    <div id="new_consignee" class="twzip">
+                        <select id="addCity" name="addCity" class="city-1">
+                            <option value="">請選擇城市</option>
+                            <option value="基隆市">基隆市</option>
+                            <option value="台北市">台北市</option>
+                        </select>
+                        <select class="city-2">
+                            <option value="">請選擇區域</option>
+                        </select>
+                    <input type="text" class="address" placeholder="地址">
+                    <div class="actions">
+                        <a href="javascript:void(0);" class="button gray">取消</a>
+                        <a href="javascript:void(0);" class="button red">新增</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon-close"></a>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+            <input type="checkbox"><label for="get_invoice">發票需打統編</label>
+        </div>
+        <input type="tel" value="" maxlength="8" class="input-vat hide" placeholder="統一編號">
+        <!-- 訂閱電子報 -->
+        <div class="subscribe_edm">
+            <input type="checkbox" value="Y"><label for="subscribe_edm">訂閱電子報</label>
+        </div>
+        <div class="actions">
+            <a href="javascript:void(0);" class="button red large btn-submit">確定送出</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="layout">
+            <p>ASAP閃電購物網使用uitox金物流服務</p>
+            <p class="copyright">© 2013 <a class="col333" href="javascript:void(0)">uitox Corporation</a> or its affiliates.</p>
+        </div>
+    </footer>
+</form>
+</body>
+</html>

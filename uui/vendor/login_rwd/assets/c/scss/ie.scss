@@ -1,0 +1,69 @@
+@import "compass";
+@import "define/*";
+
+//fix inline-block
+[class*="btn-"], 
+.t-comment, .t-pwd-infr, 
+.l-footer .go-privacy, 
+.md-input-item, 
+.form-item.captcha .t-reload:before, 
+.place-label.is-allow:before, .place-label.is-error:before, 
+.t-forgot-pwd:before, 
+.go-top:before, 
+.t-back:before, 
+.btn-edit:before, .btn-delete:before, .btn-add:before, 
+.md-pwd-check .md-pwd-bar {
+	*display: inline !important;
+	zoom: 1;
+}
+//input
+input {
+	color: lighten($font-color,20);
+	font-size: $font-size;
+	line-height: $font-line-height;
+	font-family: $font-family;
+	vertical-align: middle;
+	margin: 0;
+	padding: 8px 5px;
+	border: $border-color 1px solid;
+	background: #fff;
+	&:disabled {
+		cursor: no-drop;
+	}
+	&:focus {
+		border-color: $c-yellow;
+		@include box-shadow(rgba($c-yellow,0.3) 0 0 5px inset);
+	}
+	&.is-allow {
+		border-color: $c-green;
+		@include box-shadow(rgba($c-green,0.3) 0 0 5px inset);
+	}
+	&.is-error {
+		border-color: $c-red;
+		@include box-shadow(rgba($c-red,0.3) 0 0 5px inset);
+	}
+}
+.md-form {
+	input {
+		width: 100%;
+		@include box-sizing(border-box);
+	}
+}
+.place-label {
+	background: none;
+}
+//icon
+[class*="icon-"]:before {
+	content: "";
+}
+.icon-uitox-s {
+	@include icon-style;
+	background-image: url($icon-cart-png);
+}
+.icon-uitox-s {
+	width: 47px;
+	height: 15px;
+	margin: 0 5px 7px;
+	vertical-align: middle;
+	background-position: 0 0;
+}

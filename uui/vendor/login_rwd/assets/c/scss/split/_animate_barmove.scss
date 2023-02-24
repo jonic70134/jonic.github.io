@@ -1,0 +1,18 @@
+//bar animation
+@mixin anime-barmove {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 50px 50px;
+	}
+}
+@-webkit-keyframes barmove {
+	@include anime-barmove;
+}
+@-moz-keyframes barmove {
+	@include anime-barmove;
+}
+@keyframes barmove {
+	@include anime-barmove;
+}

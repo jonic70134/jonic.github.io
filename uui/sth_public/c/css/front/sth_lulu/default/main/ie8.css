@@ -1,0 +1,7 @@
+.site-sort .sort li + li + li + li + li a {
+  border-right: 1px solid #cccccc;
+}
+
+.quantity .quantity-input {
+  line-height: 22px;
+}

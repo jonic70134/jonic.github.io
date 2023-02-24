@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox vendor</title>
+<link href="/css/plugin/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/css/plugin/jquery.fancybox.css?v=2.1.4" rel="stylesheet" type="text/css" media="screen" />
+<link href="/css/user.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="/js/lib/html5.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ie.css">
+<![endif]--></head>
+<body>
+<div id="wrapper">
+    <!-- Header  -->
+    <header id="header" class="clearfix">
+      <div class="logo"><a href="#" title="回到首頁"><span>平台管理系統</span></a></div>
+      <!-- User -->
+      <div class="user">
+        <div class="btn-group">
+          <a class="btn-group-user" href="/data/site-setting.html"><i class="fa fa-cogs"></i>平台設定</a>
+        </div>
+        <div class="btn-group">
+          <!-- if annoucement -->
+          <a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bullhorn animate-rubberBand animated"></i><span class="quantity">99</span><span class="caret"></span></a>
+          <!-- if no annoucement -->
+          <!--a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bullhorn"></i><span class="quantity quantity-zero">0</span><span class="caret"></span></a-->
+          <ul class="dropdown-menu">
+            <li><a href="#">系統公告<span class="quantity">55</span></a></li>
+            <li><a href="#">ASAP<span class="quantity">99+</span></a></li>
+            <li><a href="#">ADI<span class="quantity">99+</span></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <!-- if notification -->
+          <!--a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bell animate-swing animated"></i><span class="quantity">99</span><span class="caret"></span></a-->
+          <!-- if no notification -->
+          <a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bell"></i><span class="quantity quantity-zero">0</span><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><span class="notification-summary"><i class="fa fa-exclamation-triangle"></i>99 項新通知</span></li>
+            <li><a href="#">新品尚未開單<span class="quantity">55</span></a></li>
+            <li><a href="#">新品尚未開單新品尚未開單<span class="quantity">99+</span></a></li>
+            <li><a href="#" class="more-notification">更多通知<i class="fa fa-arrow-circle-right"></i></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-user"></i>userName<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/user/my-account.html">個人資料修改</a></li>
+            <li><a href="#">登出</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- User /-->
+    </header>
+    <!--Header /-->    <!-- BEGIN Menu -->
+    <div class="nav-bg"></div>
+    <nav id="nav">
+     <ul>
+      <li class="dis-dropdown"><a href="/" ><i class="fa fa-home"></i>首頁</a></li>
+      <li><span ><i class="fa fa-archive"></i>商品管理</span>
+          <ul>
+            <li><a href="#">新增商品(看所有商品)</a></li>
+            <li><a href="/product/import-data.html">批次匯入商品</a></li>
+            <li><a href="#">商品有可賣量不能賣清單</a></li>
+            <li><a href="#">前台可賣量已缺貨清單</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-th"></i>前端賣場佈置/管理</span>
+          <ul>
+            <li><a href="/inside/modify-theme.html">網站風格設定(選版型)</a></li>
+            <li><a href="/inside/modify-homepage.html">首頁佈置</a></li>
+            <li><a href="/inside/modify-asap-homepage.html">ASAP首頁佈置</a></li>
+            <li><a href="/inside/modify-menu.html">新增區館(分類)/列表</a></li>
+            <li><a href="#">維護各賣場商品</a></li>
+            <li><a href="#">活動品變價管理</a></li>
+            <li><a href="/search/search-keywords.html">站內熱門字搜尋設定</a></li>
+            <li><a href="#">網站設定(購買上限/公告等)</a></li>
+            <li><a href="/inside/modify-terms.html">自訂購物需知
+</a></li>
+            <li><a href="/inside/modify-privacy.html">自訂隱私權</a></li>
+            <li><a href="/inside/modify-custom.html">自訂頁面管理</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-briefcase"></i>行銷活動管理</span>
+          <ul>
+            <li><a href="/campaign/campaign-list.html">行銷活動設定/查詢</a></li>
+            <li><a href="/campaign/additional-purchase.html">結帳頁下加購商品</a></li>
+            <li><a href="/campaign/edm-list.html">eDM編輯/發送</a></li>
+            <li><a href="/campaign/coupon-apply-list.html">購物金申請</a></li>
+            <li><a href="/campaign/coupon-list.html">購物金使用報表</a></li>
+            <li><a href="/campaign/sale-ontime-list.html">整點特賣</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-tasks"></i>業績報表</span>
+          <ul>
+            <li><a href="/achievement/achievement.html">平台即時業績查詢</a></li>
+            <li><a href="/achievement/orders-charts.html">訂單魚群</a></li>
+            <li><a href="#">訂單查詢</a></li>
+            <li><a href="#">平台退訂明細查詢</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-exchange"></i>進還貨管理</span>
+          <ul>
+            <li><a href="#">申請/刪除寄倉單</a></li>
+            <li><a href="#">申請/刪除退倉單</a></li>
+            <li><a href="#">列印寄倉單→進貨到uitox</a></li>
+            <li><a href="#">新品未開單列表</a></li>
+            <li><a href="#">進貨被驗退商品</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-cubes"></i>庫存報表</span>
+          <ul>
+            <li><a href="#">商品即時庫存</a></li>
+            <li><a href="#">商品區間進銷存</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-paste"></i>訂單出貨狀況</span>
+          <ul>
+            <li><a href="#">全部未出訂單</a></li>
+            <li><a href="#">超過24H未出貨訂單</a></li>
+            <li><a href="#">已出貨回填異常訂單</a></li>
+            <li><a href="#">查所有訂單</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-share"></i>訂單出貨</span>
+          <ul>
+            <li><a href="">下載匯入範例</a></li>
+            <li><a href="">下載匯入範例 - 宅配</a></li>
+            <li><a href="">下載匯入範例 - 超取</a></li>
+            <li><a href="/orders/delivery.html">匯入訂單</a></li>
+            <li><a href="">查詢訂單匯入結果</a></li>
+            <li><a href="/orders/delivery-feedback.html">查看訂單出貨狀態</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-reply"></i>訂單退訂</span>
+          <ul>
+            <li><a href="">下載退訂範例</a></li>
+            <li><a href="/orders/returns.html">匯入退訂</a></li>
+            <li><a href="">查詢退訂匯入結果</a></li>
+            <li><a href="">查看退訂收回狀態</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa u-icon-u"></i>對uitox帳款</span>
+          <ul>
+            <li><a href="#">即時對帳</a></li>
+            <li><a href="#">已請款歷史帳款明細</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-puzzle-piece"></i>與供應商對帳</span>
+          <ul>
+            <li><a href="/account/table.html">即時對帳</a></li>
+            <li><a href="#">已請款歷史帳款明細</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-phone"></i>營管/客服</span>
+          <ul>
+            <li><a href="">審訂單價格</a></li>
+            <li><a href="/customer/cs-orders.html">訂單查詢</a></li>
+            <li><a href="/customer/cs-returns.html">退訂查詢</a></li>
+            <li><a href="">購物金查詢</a></li>
+            <li><a href="">購物金審核</a></li>
+            <li><a href="/data/table.html">簡訊及e-mail設定</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-building"></i>供應商管理</span>
+          <ul>
+            <li><a href="#">供應商資料與合約</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-user"></i>會員管理</span>
+          <ul>
+            <li><a href="#">會員資料修改/補發帳密</a></li>
+          </ul>
+      </li>
+      <li><span class="active"><i class="fa fa-lock"></i>權限設定</span>
+          <ul>
+            <li><a href="/user/user-list.html">新增人員權限/查詢</a></li>
+            <li><a href="/user/user-group-list.html">看所有權限列表</a></li>
+            <li><a href="">從系統匯出資料紀錄</a></li>
+            <li><a href="">對uitox窗口資料維護</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-envelope"></i>聯絡uitox</span>
+          <ul>
+            <li><a href="#">聯絡uitox</a></li>
+          </ul>
+      </li>     
+     </ul>
+    </nav>
+    <!-- END Menu -->    <!-- container -->
+    <div id="container">
+      <div class="breadcrumb_top">
+  <ul class="breadcrumb"><li><a href="/">首頁</a><span class="divider"> &gt; </span></li> <li class="link">帳號權限管理<span class="divider"> &gt; </span></li> <li class="active">使用者列表</li></ul>
+</div>
+<dl class="user-tabs">
+  <dd><a href="/user/user-list.html" class="active">使用者列表</a></dd>
+  <dd><a href="/user/user-group-list.html">功能群組列表</a></dd>
+</dl>
+<section class="user-content">
+  <div class="form-element search-filter">
+    <label class="label-search">使用者狀態<select name="" id="" class="select-search"><option value="">全部</option><option value="">啟用</option><option value="">停用</option></select></label>
+    <label class="label-search">搜尋使用者<input type="text" class="input-search" placeholder="使用者帳號或姓名關鍵字"></label>
+    <button class="btn-submit"><i class="fa fa-search"></i>查詢</button>
+    <button class="btn-cancel"><i class="fa fa-times"></i>清除</button>
+  </div>
+  <div class="user-function user-button">
+    <button class="btn-create" onclick="location.href='/user/user-add.html'"><i class="fa fa-plus"></i>新增使用者</button>
+  </div>
+  <table class="user-table">
+    <thead>
+      <tr>
+        <th>使用者帳號</th>
+        <th>使用者姓名</th>
+        <th>角色</th>
+        <th>狀態</th>
+        <th>歸屬PM</th>
+        <th>最後登入時間</th>
+        <th>更新人</th>
+        <th>建立時間</th>
+        <th>更新時間</th>
+        <th>管理</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Admin</td>
+        <td>薛子</td>
+        <td>其他</td>
+        <td>停用</td>
+        <td><span class="txt-marking">未設定</span></td>
+        <td><a href="#" class="go-popup" data-width="600" data-href="/user/popup/user-ip-log.html" title="使用者IP記錄">2013/08/30 20:59</a></td>
+        <td>黃正</td>
+        <td>2013/02/14 20:59</td>
+        <td>2013/09/01 20:59</td>
+        <td><button class="btn-permission" onclick="location.href='/user/user-permission.html'" title="權限設定"><i class="fa fa-lock"></i></button><button class="btn-edit" onclick="location.href='/user/user-edit.html'" title="修改"><i class="fa fa-pencil"></i></button></td>
+      </tr>
+      
+      <tr>
+        <td>A00001</td>
+        <td>梁英淑</td>
+        <td>PM</td>
+        <td>啟用</td>
+        <td>羅安</td>
+        <td><a href="#" class="go-popup" data-width="600" data-href="location.href='/user/popup/user-ip-log.html'" title="使用者IP記錄">2013/09/02 20:59</a></td>
+        <td>袁秀</td>
+        <td>2013/06/15 20:59</td>
+        <td>2013/03/03 20:59</td>
+        <td><button class="btn-permission" onclick="location.href='/user/user-permission.html'" title="權限設定"><i class="fa fa-lock"></i></button><button class="btn-edit" onclick="location.href='/user/user-edit.html'" title="修改"><i class="fa fa-pencil"></i></button></td>
+      </tr>
+      
+      <tr>
+        <td>A00002</td>
+        <td>姚育</td>
+        <td>PM</td>
+        <td>啟用</td>
+        <td>萬建</td>
+        <td><a href="#" class="go-popup" data-width="600" data-href="location.href='/user/popup/user-ip-log.html'" title="使用者IP記錄">2013/08/13 20:59</a></td>
+        <td>盧榮</td>
+        <td>2013/04/01 20:59</td>
+        <td>2013/06/26 20:59</td>
+        <td><button class="btn-permission" onclick="location.href='/user/user-permission.html'" title="權限設定"><i class="fa fa-lock"></i></button><button class="btn-edit" onclick="location.href='/user/user-edit.html'" title="修改"><i class="fa fa-pencil"></i></button></td>
+      </tr>
+      
+      <tr>
+        <td>A00003</td>
+        <td>錢蓉</td>
+        <td>PM</td>
+        <td>啟用</td>
+        <td>範蓉永</td>
+        <td><a href="#" class="go-popup" data-width="600" data-href="location.href='/user/popup/user-ip-log.html'" title="使用者IP記錄">2013/03/10 20:59</a></td>
+        <td>白英成</td>
+        <td>2013/01/21 20:59</td>
+        <td>2013/01/19 20:59</td>
+        <td><button class="btn-permission" onclick="location.href='/user/user-permission.html'" title="權限設定"><i class="fa fa-lock"></i></button><button class="btn-edit" onclick="location.href='/user/user-edit.html'" title="修改"><i class="fa fa-pencil"></i></button></td>
+      </tr>
+      
+      <tr>
+        <td>A00004</td>
+        <td>高鈴世</td>
+        <td>PM</td>
+        <td>啟用</td>
+        <td>蔡秀婷</td>
+        <td><a href="#" class="go-popup" data-width="600" data-href="location.href='/user/popup/user-ip-log.html'" title="使用者IP記錄">2013/04/28 20:59</a></td>
+        <td>謝鴻</td>
+        <td>2013/11/06 20:59</td>
+        <td>2013/09/21 20:59</td>
+        <td><button class="btn-permission" onclick="location.href='/user/user-permission.html'" title="權限設定"><i class="fa fa-lock"></i></button><button class="btn-edit" onclick="location.href='/user/user-edit.html'" title="修改"><i class="fa fa-pencil"></i></button></td>
+      </tr>
+      
+      <tr>
+        <td>A00005</td>
+        <td>薛美怡</td>
+        <td>PM</td>
+        <td>啟用</td>
+        <td>朱怡安</td>
+        <td><a href="#" class="go-popup" data-width="600" data-href="location.href='/user/popup/user-ip-log.html'" title="使用者IP記錄">2013/10/27 20:59</a></td>
+        <td>馬正</td>
+        <td>2013/04/27 20:59</td>
+        <td>2013/12/14 20:59</td>
+        <td><button class="btn-permission" onclick="location.href='/user/user-permission.html'" title="權限設定"><i class="fa fa-lock"></i></button><button class="btn-edit" onclick="location.href='/user/user-edit.html'" title="修改"><i class="fa fa-pencil"></i></button></td>
+      </tr>
+      
+      <tr>
+        <td>A00006</td>
+        <td>龔孟宇</td>
+        <td>PM</td>
+        <td>啟用</td>
+        <td>杜蓉宗</td>
+        <td><a href="#" class="go-popup" data-width="600" data-href="location.href='/user/popup/user-ip-log.html'" title="使用者IP記錄">2013/05/29 20:59</a></td>
+        <td>邵賢</td>
+        <td>2013/05/18 20:59</td>
+        <td>2013/10/11 20:59</td>
+        <td><button class="btn-permission" onclick="location.href='/user/user-permission.html'" title="權限設定"><i class="fa fa-lock"></i></button><button class="btn-edit" onclick="location.href='/user/user-edit.html'" title="修改"><i class="fa fa-pencil"></i></button></td>
+      </tr>
+      
+      <tr>
+        <td>A00007</td>
+        <td>江元</td>
+        <td>PM</td>
+        <td>啟用</td>
+        <td>郝忠鴻</td>
+        <td><a href="#" class="go-popup" data-width="600" data-href="location.href='/user/popup/user-ip-log.html'" title="使用者IP記錄">2013/02/10 20:59</a></td>
+        <td>賀孟</td>
+        <td>2013/09/04 20:59</td>
+        <td>2013/01/01 20:59</td>
+        <td><button class="btn-permission" onclick="location.href='/user/user-permission.html'" title="權限設定"><i class="fa fa-lock"></i></button><button class="btn-edit" onclick="location.href='/user/user-edit.html'" title="修改"><i class="fa fa-pencil"></i></button></td>
+      </tr>
+      
+      <tr>
+        <td>A00008</td>
+        <td>康哲國</td>
+        <td>PM</td>
+        <td>啟用</td>
+        <td>郭惠世</td>
+        <td><a href="#" class="go-popup" data-width="600" data-href="location.href='/user/popup/user-ip-log.html'" title="使用者IP記錄">2013/01/02 20:59</a></td>
+        <td>杜昌</td>
+        <td>2013/02/08 20:59</td>
+        <td>2013/01/30 20:59</td>
+        <td><button class="btn-permission" onclick="location.href='/user/user-permission.html'" title="權限設定"><i class="fa fa-lock"></i></button><button class="btn-edit" onclick="location.href='/user/user-edit.html'" title="修改"><i class="fa fa-pencil"></i></button></td>
+      </tr>
+      
+      <tr>
+        <td>A00009</td>
+        <td>邵雅</td>
+        <td>PM</td>
+        <td>啟用</td>
+        <td>何彥穎</td>
+        <td><a href="#" class="go-popup" data-width="600" data-href="location.href='/user/popup/user-ip-log.html'" title="使用者IP記錄">2013/07/23 20:59</a></td>
+        <td>汪瑞民</td>
+        <td>2013/11/24 20:59</td>
+        <td>2013/09/25 20:59</td>
+        <td><button class="btn-permission" onclick="location.href='/user/user-permission.html'" title="權限設定"><i class="fa fa-lock"></i></button><button class="btn-edit" onclick="location.href='/user/user-edit.html'" title="修改"><i class="fa fa-pencil"></i></button></td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <div class="pages">
+    <a class="prev-page disable">上一頁</a>
+    <span class="current-page">1/255</span>
+    <a href="#" class="next-page">下一頁</a>
+    <select class="select-page"><option>第1頁</option></select>
+  </div>
+</section>
+    </div>
+    <!-- container /-->
+<!--%= render :partial => "footer" %-->
+</div><!-- wrapper /-->
+<script src="/js/lib/jquery-1.9.1.js" ></script>
+<script src="/js/lib/bootstrap-dropdown.js"></script>
+<script src="/js/nav-action.js"></script>
+<script src="/js/lib/jquery.fancybox.pack.js?v=2.1.4"></script>
+<script src="/js/user-action.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+//payment method
+.md-payment {
+	.go-infr, .go-tip {
+		margin-left: 5px;
+		@include RWD(mobile) {
+			float: right;
+		}
+	}
+}
+.md-payment-detail {
+	max-height: 0;
+	@include transition(all 0.5s ease-out);
+	overflow: hidden;
+	&.is-active {
+		max-height: 10000px;
+	}
+}

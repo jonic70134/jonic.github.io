@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* rwd_index_010 開始 */
+.rwd_index_010 {
+  zoom: 1;
+}
+.rwd_index_010:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.rwd_index_010 .item {
+  float: left;
+  width: 16.66%;
+  padding: 0 10px;
+  display: inline-block;
+}
+.rwd_index_010 .photo {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 999px) {
+  .rwd_index_ad {
+    padding: 0 1%;
+  }
+  .rwd_index_ad .item {
+    width: 33.33333%;
+    padding: 1%;
+  }
+}
+/* rwd_index_010 結束 */

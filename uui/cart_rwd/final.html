@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox shopping cart</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/c/css/vendor/font-awesome.min.css" rel="stylesheet">
+<link href="assets/c/css/vendor/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<link href="assets/c/css/common.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="assets/c/js/vendor/html5.js"></script>
+<script src="assets/c/js/ie.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/c/css/ie.css">
+<![endif]--></head>
+<body>
+<div class="l-container">
+    <!-- banner -->
+    
+    <!-- header  -->
+    <header class="l-header">
+        <div class="logo"><a href="http://www.asap.com.tw/" class="icon-asap" title="返回ASAP首頁"><img src="assets/c/img/asap-logo.png" alt="ASAP閃電購物網"></a></div>
+        <a href="http://www.asap.com.tw/" class="t-back">回 ASAP 再選購</a>
+        
+        
+    </header>
+     <p class="t-highlight"><i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i>  提醒您尚有 <a href="#">2H到貨(1)</a> 購物車未結帳，請您點選連結完成結帳。</p>
+    <!--header /--><h1 class="t-cart-title">您的訂單已支付，感謝您的訂購！Thank you for your order!</h1>
+<p class="t-final-infr">We will send you an SMS once your order has been delivered.<br>Our logistics partner will call you upon arrival.<br>Please note that we might be calling you from an unlisted number.</p>
+<!-- invoice -->
+<div class="md-final-invoice l-card">
+    <h2 class="t-title">發票說明：<span class="t-type">出貨後開立電子發票</span> <span class="t-comment">(依據「消費通路開立電子發票試辦作業要點」開立)</span></h2>
+    <p class="t-description">可在出貨24小時後，於「電子發票服務整合平台」查詢發票明細。</p>
+    <!-- donate -->
+    <dl class="md-form">
+        <dd><label for="radio_donate"><input type="radio" tabindex="2" id="radio_donate" class="radio-donate go-popup" href="#donate_org" name="donate_invoice">捐贈發票</label></dd>
+        <dd><label for="radio_no_donate"><input type="radio" tabindex="1" id="radio_no_donate" class="radio-no-donate" name="donate_invoice" checked>不捐贈發票 <span class="t-comment">(中獎會通知並寄紙本發票給您)</span></label></dd>
+    </dl>
+    <!-- invoice vat -->
+    <div class="md-form">
+        <label for="checkbox_vat"><input type="checkbox" tabindex="3" id="checkbox_vat" class="checkbox-vat go-popup" href="#enter_vat"> 發票需打統編</label>
+    </div>
+    <div class="md-option">
+        <button class="btn-invoice go-popup" href="#get_invoice">索取紙本發票</button>
+        <button class="btn-invoice go-popup" href="#enter_barcode">輸入手機載具條碼</button>
+    </div>
+</div>
+<!-- donate -->
+<dl id="donate_org" class="md-donate-org md-dialog">
+    <h3 class="t-title">發票捐贈</h3>
+    <dd class="t-content">
+        <label for="radio_donate_ccf"><input type="radio" tabindex="4" id="radio_donate_ccf" name="donate_org">捐贈家扶基金會</label>
+    </dd>
+    <dd class="t-content">
+        <label for="radio_donate_other"><input type="radio" tabindex="5" id="radio_donate_other" name="donate_org">捐贈其他社福團體</label>
+        <input type="text" tabindex="6" id="input_org_code" class="input-org-code" size="10" placeholder="輸入愛心碼">
+        <a href="https://www.einvoice.nat.gov.tw/APMEMBERVAN/XcaOrgPreserveCodeQuery/XcaOrgPreserveCodeQuery?CSRT=5869448578986796627" target="_blank">查詢</a>
+    </dd>
+    <div class="md-form-btn">
+        <button class="btn-cancel" onclick="$.fancybox.close();">Cancel</button>
+        <button class="btn-submit" onclick="$.fancybox.close();">確定捐贈</button>
+        <button class="btn-cancel" onclick="$.fancybox.close();">Cancel</button>
+    </div>
+</dl>
+<!-- enter vat -->
+<div id="enter_vat" class="md-final-vat md-dialog">
+    <h3 class="t-title">發票打統編</h3>
+    <p class="t-content">
+        <label for="input_vat" class="label-title">統一編號</label>
+        <input type="number" tabindex="7" id="input_vat" class="input-vat" size="15" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="統一編號">
+    </p>
+    <ul class="t-content t-comment">
+        <li>公司戶發票一經開立，無法換開回個人發票。</li>
+        <li class="t-highlight">發票將會隨貨寄送</li>
+    </ul>
+    <div class="md-form-btn">
+        <button class="btn-cancel" onclick="$.fancybox.close();">Cancel</button>
+        <button class="btn-submit" onclick="$.fancybox.close();">確認送出</button>
+        <button class="btn-cancel" onclick="$.fancybox.close();">Cancel</button>
+    </div>
+</div>
+<!-- enter barcode -->
+<div id="enter_barcode" class="md-enter-barcode md-dialog">
+    <h3 class="t-title">手機載具條碼 <a href="https://www.einvoice.nat.gov.tw/APMEMBERVAN/GeneralCarrier/generalCarrier?mp=1" target="_blank" class="t-exclamation t-comment"></a></h3>
+    <div class="md-form">
+        <label for="input_barcode" class="label-title">請輸入手機載具條碼</label>
+        <input type="text" tabindex="8" id="input_barcode" size="20" placeholder="請輸入手機載具條碼">
+        <span class="t-comment">(限大寫英數字)</span>
+    </div>
+    <div class="md-form">
+        <label for="input_barcode" class="label-title">請再輸入一次條碼</label>
+        <input type="text" tabindex="9" id="input_barcode" size="20" placeholder="請再輸入一次條碼">
+    </div>
+    <div class="md-form-btn">
+        <button class="btn-cancel" onclick="$.fancybox.close();">Cancel</button>
+        <button class="btn-submit" onclick="$.fancybox.close();">確認送出</button>
+        <button class="btn-cancel" onclick="$.fancybox.close();">Cancel</button>
+    </div>
+</div>
+<!-- get invoice -->
+<div id="get_invoice" class="md-get-invoice md-dialog">
+    <h3 class="t-title">索取紙本發票</h3>
+    <p class="t-content">提醒您：</p>
+    <p class="t-content">1. 使用電子發票，電腦自動幫您對獎，中獎時會e-mail通知並掛號寄出紙本發票給您。</p>
+    <p class="t-content">2. 使用電子發票，退貨時不會因為找不到紙本發票，導致無法退款。</p>
+    <p class="t-content">您確定仍要索取「紙本發票」？</p>
+    <div class="md-form-btn">
+        <button class="btn-cancel" onclick="elecInvoice(); $.fancybox.close();">使用電子發票</button>
+        <button class="btn-submit" onclick="paperInvoice(); $.fancybox.close();">索取紙本發票 (含明細)</button>
+        <button class="btn-submit" onclick="paperInvoice(); $.fancybox.close();">索取紙本發票</button>
+        <button class="btn-cancel" onclick="elecInvoice(); $.fancybox.close();">使用電子發票</button>
+    </div>
+</div>
+<!-- confirm products -->
+<dl class="md-final-list">
+    <dd>訂單查詢、退貨、訂單疑問，請至<a href="" target="_blank">查訂單</a>查詢</dd>
+    <dd>訂單編號：<span class="t-bold">201406AP20001796</span></dd>
+    <dd>訂單金額：<span class="t-bold">NT$999,999,999.00</span>
+        <div class="md-go-pay"><img src="assets/c/img/cn-payment-alipay.png" class="img-cn-payment" alt="支付宝"> <button class="btn-pay btn-submit">立即支付</button><a href="" target="_blank" class="go-edit">更改支付方式</a></div>
+    </dd>
+    <dd class="t-highlight">信用卡紅利點數折抵，折抵點數2000點 = 120 元 (120元於信用卡帳單內扣除，不直接折抵刷卡金額)</dd>
+</dl>
+<h1 class="t-cart-title">您的訂購明細<button class="btn-share go-share-fb">分享</button></h1>
+<!-- product list -->
+<div class="md-product-list in-final l-card">
+    <div class="row">
+        <h3 class="col-name">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+    </div>
+    <div class="row">
+        <h3 class="col-name">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶) 白蘭氏 傳統雞精手提盒裝 (70g x 20瓶) 白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+        <div class="row-status">
+            <span class="tag-status is-odd">Odd size</span>
+            <span class="tag-status is-preorder">Pre-order Item(s)</span>
+            <span class="tag-status is-imported">Japan delivery</span>
+            <span class="tag-status is-uitox-delivery">uitox delivery</span>
+            <span class="tag-status is-vendor-delivery">Vendor delivery</span>
+            <span class="tag-status is-separate-delivery">Separate delivery</span>
+        </div>
+        <div class="row-add row-buy-discount">
+            <h3 class="col-name">買立折折扣</h3>
+            <ul class="col-content">
+                <li>-NT$100</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <h3 class="col-name">ASICS Women's GEL-Venture 4 Trail Running Shoe ASICS Women's GEL-Venture 4 Trail Running Shoe ASICS Women's GEL-Venture 4 Trail Running Shoe ASICS Women's GEL-Venture 4 Trail Running Shoe</h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+        <div class="row-add">
+            <h3 class="col-name t-include">開學分享組合包含以下商品：</h3>
+            <h3 class="col-name">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</h3>
+            <h3 class="col-name">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</h3>
+            <h3 class="col-name">配件 - 白蘭氏 五味子芝麻錠 20錠</h3>
+        </div>
+        <div class="row-add">
+            <h3 class="col-name"><span class="tag-status is-odd">Odd size</span>贈品 - 白蘭氏 五味子芝麻錠 20錠</h3>
+            <ul class="col-content">
+                <li class="col-subtotal">NT$0</li>
+                <li class="col-quantity">1</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <h3 class="col-name"><span class="tag-status is-odd">Odd size</span>加購品 - 白蘭氏 五味子芝麻錠 20錠</h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+    </div>
+    <div class="row">
+        <h3 class="col-name">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+        <div class="row-add row-additional">
+            <h3 class="col-name"><span class="tag-status is-odd">Odd size</span>加購品 - 白蘭氏 五味子芝麻錠 20錠</h3>
+            <ul class="col-content">
+                <li class="col-subtotal">NT$9,999,999.00</li>
+                <li class="col-quantity">9999</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <h3 class="col-name">白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+    </div>
+    <div class="row">
+        <h3 class="col-name">購物車加購 - 白蘭氏 傳統雞精手提盒裝 (70g x 20瓶)</h3>
+        <ul class="col-content">
+            <li class="col-subtotal">NT$9,999,999.00</li>
+            <li class="col-quantity">9999</li>
+        </ul>
+    </div>
+    <div class="row row-liner row-subsummary">
+        <h3 class="col-name">Total amount of Items</h3>
+        <ul class="col-content">
+            <li>NT$999,999,999.00</li>
+        </ul>
+        <h3 class="col-name">活動折扣 - 冬季特惠滿1000折100活動</h3>
+        <ul class="col-content t-minus">
+            <li>-NT$999.00</li>
+        </ul>
+        <h3 class="col-name">活動折扣 - 少女服飾滿千送百</h3>
+        <ul class="col-content t-minus">
+            <li>-NT$999.00</li>
+        </ul>
+        <h3 class="col-name">Shopping Credits</h3>
+        <ul class="col-content t-minus">
+            <li>-NT$999.00</li>
+        </ul>
+        <h3 class="col-name">Estimated Tax</h3>
+        <ul class="col-content">
+            <li>NT$999.00</li>
+        </ul>
+        <h3 class="col-name">Merchandise Fees</h3>
+        <ul class="col-content">
+            <li>NT$999.00</li>
+        </ul>
+        <h3 class="col-name">Shipping Fee <span class="t-comment">- Standard Shipping (3-7 business days)</span></h3>
+        <ul class="col-content">
+            <li>NT$999.00</li>
+        </ul>
+        <div class="row-status">
+            <span class="tag-status is-qualified">Qualified</span>
+            <span class="t-promote">Year-End Deals, you will receive shopping credits 999.99</span><br>
+            <p class="t-infr">The shopping credits will be credited to your account on yyyy/mm/dd. Any return items before yyyy/mm/dd may result in voidance of the shopping credits.</p>
+        </div>
+    </div>
+    <div class="row row-liner row-summary">
+        <h3 class="t-bold">訂單總計<span class="t-price"><span class="t-currency">NT$</span>999,999,999.00</span></h3>
+    </div>
+</div><div class="md-final-msg">
+    <p class="t-description">Note: Your Invoice will be generated once your order has been delivered from our warehouse.
+You can check your Invoice details under My Account > <a href="">My Orders</a></p>
+</div>
+<div class="md-final-msg">
+    <h4 class="t-title">親愛的顧客您好：</h4>
+    <p class="t-description">本網頁僅列出貴用戶表示的購買意願清單，不代表交易已經完成。優達斯經確認用戶欲購買的商品交易條件無誤且還有存貨，才會向發卡行進行請款；只有當優達斯收到信用卡交易款項時，貴用戶的付款程序才算完成。</p>
+</div>
+<div class="md-payment-buttons"><a href="http://www.asap.com.tw/" class="t-back">回 ASAP 閃電購物網</a></div>
+<!-- error -->
+<h1 class="t-cart-title">Oops! There's something wrong.</h1>
+<dl class="md-cart-error l-card">
+    <dd>Your selected item (SNOOPY x STAYREAL Snoopy Hooded Sweatshirt 史努比認真活帽T - 黑色 - L) went Out Of Stock during the transaction process.</dd>
+    <dd class="t-comment">Your order has been cancelled，we apologize for any inconvenience caused.</dd>
+</dl>
+<dl class="md-payment-buttons">
+    <dd><button class="btn-cancel">Back check</button></dd>
+    <dd><button class="btn-cancel">Continue Shopping</button></dd>
+</dl>	<!-- footer -->
+	<footer class="l-footer">
+		<div class="service">ASAP 使用<span class="icon-uitox-s"></span>金物流服務</div>
+	    	<div class="copyright">
+	       	&copy; <?php echo date('Y'); ?> <a href="http://www.uitox.com/" target="_blank">uitox Corporation</a> or its affiliates.
+	       	<a href="privacy.html" target="_blank" class="go-privacy">隱私權政策</a>
+		</div>
+	</footer></div>
+<a class="go-top" title="Back to top"></a>
+<script src="assets/c/js/vendor/jquery.min.js" ></script>
+<script src="assets/c/js/vendor/jquery.fancybox.pack.js"></script>
+<script src="assets/c/js/common.js"></script>
+<script src="assets/c/js/p_final.js"></script></body>
+</html>

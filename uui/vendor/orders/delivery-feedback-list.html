@@ -1,0 +1,482 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox vendor</title>
+<link href="/css/plugin/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/css/plugin/jquery.fancybox.css?v=2.1.4" rel="stylesheet" type="text/css" media="screen" />
+<link href="/css/plugin/jquery-ui-1.10.4.custom.css" rel="stylesheet" type="text/css">
+<link href="/css/plugin/jquery-ui-timepicker-addon.css" rel="stylesheet" type="text/css">
+<link href="/css/orders.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="/js/lib/html5.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ie.css">
+<![endif]--></head>
+<body>
+<div id="wrapper">
+    <!-- Header  -->
+    <header id="header" class="clearfix">
+      <div class="logo"><a href="#" title="回到首頁"><span>平台管理系統</span></a></div>
+      <!-- User -->
+      <div class="user">
+        <div class="btn-group">
+          <a class="btn-group-user" href="/data/site-setting.html"><i class="fa fa-cogs"></i>平台設定</a>
+        </div>
+        <div class="btn-group">
+          <!-- if annoucement -->
+          <a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bullhorn animate-rubberBand animated"></i><span class="quantity">99</span><span class="caret"></span></a>
+          <!-- if no annoucement -->
+          <!--a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bullhorn"></i><span class="quantity quantity-zero">0</span><span class="caret"></span></a-->
+          <ul class="dropdown-menu">
+            <li><a href="#">系統公告<span class="quantity">55</span></a></li>
+            <li><a href="#">ASAP<span class="quantity">99+</span></a></li>
+            <li><a href="#">ADI<span class="quantity">99+</span></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <!-- if notification -->
+          <!--a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bell animate-swing animated"></i><span class="quantity">99</span><span class="caret"></span></a-->
+          <!-- if no notification -->
+          <a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-bell"></i><span class="quantity quantity-zero">0</span><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><span class="notification-summary"><i class="fa fa-exclamation-triangle"></i>99 項新通知</span></li>
+            <li><a href="#">新品尚未開單<span class="quantity">55</span></a></li>
+            <li><a href="#">新品尚未開單新品尚未開單<span class="quantity">99+</span></a></li>
+            <li><a href="#" class="more-notification">更多通知<i class="fa fa-arrow-circle-right"></i></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <a class="dropdown-toggle btn-group-user" data-toggle="dropdown" href="#"><i class="fa fa-user"></i>userName<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/user/my-account.html">個人資料修改</a></li>
+            <li><a href="#">登出</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- User /-->
+    </header>
+    <!--Header /-->    <!-- BEGIN Menu -->
+    <div class="nav-bg"></div>
+    <nav id="nav">
+     <ul>
+      <li class="dis-dropdown"><a href="/" ><i class="fa fa-home"></i>首頁</a></li>
+      <li><span ><i class="fa fa-archive"></i>商品管理</span>
+          <ul>
+            <li><a href="#">新增商品(看所有商品)</a></li>
+            <li><a href="/product/import-data.html">批次匯入商品</a></li>
+            <li><a href="#">商品有可賣量不能賣清單</a></li>
+            <li><a href="#">前台可賣量已缺貨清單</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-th"></i>前端賣場佈置/管理</span>
+          <ul>
+            <li><a href="/inside/modify-theme.html">網站風格設定(選版型)</a></li>
+            <li><a href="/inside/modify-homepage.html">首頁佈置</a></li>
+            <li><a href="/inside/modify-asap-homepage.html">ASAP首頁佈置</a></li>
+            <li><a href="/inside/modify-menu.html">新增區館(分類)/列表</a></li>
+            <li><a href="#">維護各賣場商品</a></li>
+            <li><a href="#">活動品變價管理</a></li>
+            <li><a href="/search/search-keywords.html">站內熱門字搜尋設定</a></li>
+            <li><a href="#">網站設定(購買上限/公告等)</a></li>
+            <li><a href="/inside/modify-terms.html">自訂購物需知
+</a></li>
+            <li><a href="/inside/modify-privacy.html">自訂隱私權</a></li>
+            <li><a href="/inside/modify-custom.html">自訂頁面管理</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-briefcase"></i>行銷活動管理</span>
+          <ul>
+            <li><a href="/campaign/campaign-list.html">行銷活動設定/查詢</a></li>
+            <li><a href="/campaign/additional-purchase.html">結帳頁下加購商品</a></li>
+            <li><a href="/campaign/edm-list.html">eDM編輯/發送</a></li>
+            <li><a href="/campaign/coupon-apply-list.html">購物金申請</a></li>
+            <li><a href="/campaign/coupon-list.html">購物金使用報表</a></li>
+            <li><a href="/campaign/sale-ontime-list.html">整點特賣</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-tasks"></i>業績報表</span>
+          <ul>
+            <li><a href="/achievement/achievement.html">平台即時業績查詢</a></li>
+            <li><a href="/achievement/orders-charts.html">訂單魚群</a></li>
+            <li><a href="#">訂單查詢</a></li>
+            <li><a href="#">平台退訂明細查詢</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-exchange"></i>進還貨管理</span>
+          <ul>
+            <li><a href="#">申請/刪除寄倉單</a></li>
+            <li><a href="#">申請/刪除退倉單</a></li>
+            <li><a href="#">列印寄倉單→進貨到uitox</a></li>
+            <li><a href="#">新品未開單列表</a></li>
+            <li><a href="#">進貨被驗退商品</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-cubes"></i>庫存報表</span>
+          <ul>
+            <li><a href="#">商品即時庫存</a></li>
+            <li><a href="#">商品區間進銷存</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-paste"></i>訂單出貨狀況</span>
+          <ul>
+            <li><a href="#">全部未出訂單</a></li>
+            <li><a href="#">超過24H未出貨訂單</a></li>
+            <li><a href="#">已出貨回填異常訂單</a></li>
+            <li><a href="#">查所有訂單</a></li>
+          </ul>
+      </li>
+      <li><span class="active"><i class="fa fa-share"></i>訂單出貨</span>
+          <ul>
+            <li><a href="">下載匯入範例</a></li>
+            <li><a href="">下載匯入範例 - 宅配</a></li>
+            <li><a href="">下載匯入範例 - 超取</a></li>
+            <li><a href="/orders/delivery.html">匯入訂單</a></li>
+            <li><a href="">查詢訂單匯入結果</a></li>
+            <li><a href="/orders/delivery-feedback.html">查看訂單出貨狀態</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-reply"></i>訂單退訂</span>
+          <ul>
+            <li><a href="">下載退訂範例</a></li>
+            <li><a href="/orders/returns.html">匯入退訂</a></li>
+            <li><a href="">查詢退訂匯入結果</a></li>
+            <li><a href="">查看退訂收回狀態</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa u-icon-u"></i>對uitox帳款</span>
+          <ul>
+            <li><a href="#">即時對帳</a></li>
+            <li><a href="#">已請款歷史帳款明細</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-puzzle-piece"></i>與供應商對帳</span>
+          <ul>
+            <li><a href="/account/table.html">即時對帳</a></li>
+            <li><a href="#">已請款歷史帳款明細</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-phone"></i>營管/客服</span>
+          <ul>
+            <li><a href="">審訂單價格</a></li>
+            <li><a href="/customer/cs-orders.html">訂單查詢</a></li>
+            <li><a href="/customer/cs-returns.html">退訂查詢</a></li>
+            <li><a href="">購物金查詢</a></li>
+            <li><a href="">購物金審核</a></li>
+            <li><a href="/data/table.html">簡訊及e-mail設定</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-building"></i>供應商管理</span>
+          <ul>
+            <li><a href="#">供應商資料與合約</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-user"></i>會員管理</span>
+          <ul>
+            <li><a href="#">會員資料修改/補發帳密</a></li>
+          </ul>
+      </li>
+      <li><span ><i class="fa fa-lock"></i>權限設定</span>
+          <ul>
+            <li><a href="/user/user-list.html">新增人員權限/查詢</a></li>
+            <li><a href="/user/user-group-list.html">看所有權限列表</a></li>
+            <li><a href="">從系統匯出資料紀錄</a></li>
+            <li><a href="">對uitox窗口資料維護</a></li>
+          </ul>
+      </li>
+      <li><span><i class="fa fa-envelope"></i>聯絡uitox</span>
+          <ul>
+            <li><a href="#">聯絡uitox</a></li>
+          </ul>
+      </li>     
+     </ul>
+    </nav>
+    <!-- END Menu -->    <!-- container -->
+    <div id="container">
+      <div class="breadcrumb_top">
+  <ul class="breadcrumb"><li><a href="/">首頁</a><span class="divider"> &gt; </span></li> <li class="link">訂單處理<span class="divider"> &gt; </span></li> <li><a href="/orders/delivery-feedback.html">出貨回填</a><span class="divider"> &gt; </span></li> <li class="active">查詢已回填訂單</li></ul>
+</div>
+<section class="template-content">
+  <div class="form-element search-filter">
+    <div class="select-group">
+      <label>接單時間</label>
+      <input type="text" class="input-datepicker" placeholder="請輸入開始時間">~<input type="text" class="input-datepicker" placeholder="請輸入結束時間" value="">
+    </div>
+    <div class="select-group">
+      <button class="btn-submit"><i class="fa fa-search"></i>查詢</button>
+      <button class="btn-cancel"><i class="fa fa-times"></i>清除</button>
+    </div>
+  </div>
+  <section class="double-scroll-top">
+    <div class="scroll-content-width"></div>
+  </section>
+  <section class="table-container double-scroll-bottom">
+    <table class="template-table scroll-content">
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th>訂單編號</th>
+          <th>序號</th>
+          <th>物流商</th>
+          <th>宅配單號</th>
+          <th>數量</th>
+          <th>實際出貨數</th>
+          <th>接單時間</th>
+          <th>匯出時間</th>
+          <th>出貨時間</th>
+          <th>退訂狀態</th>
+          <th>料號</th>
+          <th>商品名稱</th>
+          <th>顏色</th>
+          <th>尺寸</th>
+          <th>收貨人</th>
+          <th>商品ID</th>
+          <th>平台名稱</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a class="go-popup" data-width="700" data-href="/orders/popup/delivery-feedback-cancel.html">取消出貨</a></td>
+          <td><span class="highlight line-through">201407AP02002240</span></td>
+          <td><span class="highlight line-through">1</span></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>01/12 20:59</td>
+          <td>12/27 20:59</td>
+          <td>02/13 20:59</td>
+          <td><span class="highlight">出貨前取消</span></td>
+          <td><span class="highlight line-through">AAA-0001</span></td>
+          <td class="txt"><span class="highlight line-through">一賦她已是痛一們理互門我人</span></td>
+          <td><span class="highlight line-through">土耳其藍</span></td>
+          <td><span class="highlight line-through">99</span></td>
+          <td><span class="highlight line-through">陳菁</span></td>
+          <td><span class="highlight line-through">201405AG220000753</span></td>
+          <td><span class="highlight line-through">ASAP</span></td>
+        </tr>
+        
+        <tr>
+          <td><a class="go-popup" data-width="700" data-href="/orders/popup/delivery-feedback-cancel.html">取消出貨</a></td>
+          <td>201407AP02002240</td>
+          <td>2</td>
+          <td>黑貓</td>
+          <td>02797110027454</td>
+          <td>99</td>
+          <td>99</td>
+          <td>08/07 20:59</td>
+          <td>04/18 20:59</td>
+          <td>02/21 20:59</td>
+          <td>已出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">繼這日動老年穿了要情</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>楊倫婷</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td><a class="go-popup" data-width="700" data-href="/orders/popup/delivery-feedback-cancel.html">取消出貨</a></td>
+          <td>201407AP02002240</td>
+          <td>3</td>
+          <td>黑貓</td>
+          <td>02797110027454</td>
+          <td>99</td>
+          <td>99</td>
+          <td>11/28 20:59</td>
+          <td>10/27 20:59</td>
+          <td>11/28 20:59</td>
+          <td>已出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">皮似好結袖們卻拚-市一</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>武瑋政</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td><a class="go-popup" data-width="700" data-href="/orders/popup/delivery-feedback-cancel.html">取消出貨</a></td>
+          <td>201407AP02002240</td>
+          <td>4</td>
+          <td>黑貓</td>
+          <td>02797110027454</td>
+          <td>99</td>
+          <td>99</td>
+          <td>06/15 20:59</td>
+          <td>06/18 20:59</td>
+          <td>01/28 20:59</td>
+          <td>已出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">地人麵似問總難再別年</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>蘇偉</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td><a class="go-popup" data-width="700" data-href="/orders/popup/delivery-feedback-cancel.html">取消出貨</a></td>
+          <td>201407AP02002240</td>
+          <td>5</td>
+          <td>黑貓</td>
+          <td>02797110027454</td>
+          <td>99</td>
+          <td>99</td>
+          <td>01/16 20:59</td>
+          <td>03/26 20:59</td>
+          <td>02/09 20:59</td>
+          <td>已出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">本行有真不我杯標何體導時中</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>郭宇</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td><a class="go-popup" data-width="700" data-href="/orders/popup/delivery-feedback-cancel.html">取消出貨</a></td>
+          <td>201407AP02002240</td>
+          <td>6</td>
+          <td>黑貓</td>
+          <td>02797110027454</td>
+          <td>99</td>
+          <td>99</td>
+          <td>01/27 20:59</td>
+          <td>01/23 20:59</td>
+          <td>01/05 20:59</td>
+          <td>已出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">不不狗什由和台苦解會咖是把的</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>邵君</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td><a class="go-popup" data-width="700" data-href="/orders/popup/delivery-feedback-cancel.html">取消出貨</a></td>
+          <td>201407AP02002240</td>
+          <td>7</td>
+          <td>黑貓</td>
+          <td>02797110027454</td>
+          <td>99</td>
+          <td>99</td>
+          <td>01/29 20:59</td>
+          <td>12/10 20:59</td>
+          <td>06/27 20:59</td>
+          <td>已出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">蛋他柚的而可太上們的而-憊始</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>謝秋</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td><a class="go-popup" data-width="700" data-href="/orders/popup/delivery-feedback-cancel.html">取消出貨</a></td>
+          <td>201407AP02002240</td>
+          <td>8</td>
+          <td>黑貓</td>
+          <td>02797110027454</td>
+          <td>99</td>
+          <td>99</td>
+          <td>09/29 20:59</td>
+          <td>07/18 20:59</td>
+          <td>02/03 20:59</td>
+          <td>已出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">很的去能去完是這移感可</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>何仁芳</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td><a class="go-popup" data-width="700" data-href="/orders/popup/delivery-feedback-cancel.html">取消出貨</a></td>
+          <td>201407AP02002240</td>
+          <td>9</td>
+          <td>黑貓</td>
+          <td>02797110027454</td>
+          <td>99</td>
+          <td>99</td>
+          <td>04/06 20:59</td>
+          <td>12/29 20:59</td>
+          <td>01/16 20:59</td>
+          <td>已出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">繞下冷是鬧頭裊這因之當佔</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>於銘</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+        <tr>
+          <td><a class="go-popup" data-width="700" data-href="/orders/popup/delivery-feedback-cancel.html">取消出貨</a></td>
+          <td>201407AP02002240</td>
+          <td>10</td>
+          <td>黑貓</td>
+          <td>02797110027454</td>
+          <td>99</td>
+          <td>99</td>
+          <td>10/01 20:59</td>
+          <td>05/23 20:59</td>
+          <td>01/10 20:59</td>
+          <td>已出貨</td>
+          <td>AAA-0001</td>
+          <td class="txt">杯地已還不是街年蛋以逆不</td>
+          <td>土耳其藍</td>
+          <td>99</td>
+          <td>朱貞</td>
+          <td>201405AG220000753</td>
+          <td>ASAP</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </section>
+  <div class="pages">
+    <a class="prev-page disable">上一頁</a>
+    <span class="current-page">1/255</span>
+    <a href="#" class="next-page">下一頁</a>
+    <select class="select-page"><option>第1頁</option></select>
+  </div>
+</section>
+    </div>
+    <!-- container /-->
+<!--%= render :partial => "footer" %-->
+</div><!-- wrapper /-->
+<script src="/js/lib/jquery-1.9.1.js" ></script>
+<script src="/js/lib/bootstrap-dropdown.js"></script>
+<script src="/js/nav-action.js"></script>
+<script src="/js/lib/jquery.fancybox.pack.js?v=2.1.4"></script>
+<script src="/js/lib/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="/js/lib/jquery-ui-timepicker-addon.js"></script>
+<script src="/js/lib/jquery-ui-sliderAccess.js"></script>
+<script src="/js/lib/jquery-ui-timepicker-zh-TW.js"></script>
+<script src="/js/template-action.js"></script>
+<script src="/js/double-scroll.js"></script>
+<script>
+//date time picker
+var timeOption = {
+    dateFormat: 'yy/mm/dd',
+    showTimepicker: false,
+    maxDate: 0
+};
+$('.input-datepicker').datetimepicker(timeOption);
+</script>
+</body>
+</html>

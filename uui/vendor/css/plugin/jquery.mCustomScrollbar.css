@@ -1,0 +1,62 @@
+/* mCustomScrollbar */
+.mCSB_container {
+	width:100%; 
+	margin-right:8px; 
+	overflow:hidden;
+}
+.mCSB_container.mCS_no_scrollbar {
+	margin-right:0;
+}
+.mCS_disabled>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar, 
+.mCS_destroyed>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar {
+	margin-right:8px;
+}
+.mCustomScrollBox>.mCSB_scrollTools {
+	width:5px; 
+	height:100%; 
+	top:0; 
+	right:0;
+}
+.mCSB_scrollTools .mCSB_draggerContainer {
+	height:auto; 
+	top:0; 
+	left:0; 
+	bottom:0; 
+	right:0; 
+	position:absolute;
+}
+.mCSB_scrollTools a+.mCSB_draggerContainer {
+	margin:10px 0;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+	width:1px; 
+	height:100%; 
+	margin:0 auto; 
+	background:#ccc; 
+}
+.mCSB_scrollTools:hover .mCSB_draggerRail, 
+.mCSB_scrollTools:active .mCSB_draggerRail {
+	background:#ccc;
+}
+.mCSB_scrollTools .mCSB_dragger {
+	width:100%; 
+	height:30px; 
+	cursor:pointer;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	width:8px; 
+	height:100%; 
+	margin:0 auto; 
+	text-align:center; 
+	background:#ccc; 
+	-webkit-border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-ms-border-radius: 5px; 
+	-o-border-radius: 5px; 
+	border-radius: 5px;
+}
+.mCSB_scrollTools:hover .mCSB_dragger .mCSB_dragger_bar, 
+.mCSB_scrollTools:active .mCSB_dragger .mCSB_dragger_bar, 
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+	background:#999;
+}

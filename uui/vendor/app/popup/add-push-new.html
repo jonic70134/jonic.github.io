@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uitox vendor</title>
+<link href="/css/plugin/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/css/plugin/jquery.fancybox.css?v=2.1.4" rel="stylesheet" type="text/css" media="screen" />
+<link href="/css/plugin/jquery-ui-1.10.4.custom.css" rel="stylesheet" type="text/css">
+<link href="/css/plugin/jquery-ui-timepicker-addon.css" rel="stylesheet" type="text/css">
+<link href="/css/app.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="/js/lib/html5.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ie.css">
+<![endif]--></head>
+<body>
+<div class="popup-content">
+  <h1 class="title"><i class="fa fa-pencil"></i>設定APP推播</h1>
+  <dl class="form-element template-popup-form">
+    <dd>
+      <label class="label-content-title">推播名稱：</label><input type="text" size="30" placeholder="請輸入說明說明說明說明">
+    </dd>
+    <dd>
+      <label class="label-content-title">推播週期：</label>
+      <label for="radio_push_time_single"><input type="radio" id="radio_push_time_single" name="radio_push_time" checked>單次</label>
+      <label for="radio_push_time_cycle"><input type="radio" id="radio_push_time_cycle" name="radio_push_time">週期性</label>
+    </dd>
+    <dd class="push-time push-time-single">
+      <label class="label-content-title">單次推播時間：</label>
+      <input type="text" class="input-timepicker" id="input_push_time_single" placeholder="推播發送時間">
+      <input type="checkbox" id="checkbox_send_now"><label for="checkbox_send_now">儲存後立即發送</label>
+    </dd>
+    <dd class="push-time push-time-cycle" style="display:none;">
+      <label class="label-content-title">週期推播時間：</label>
+      <input type="text" class="input-datepicker" placeholder="推播起始日期">~<input type="text" class="input-datepicker" placeholder="推播結束日期">
+      每
+      <select class="select-form" id="select_push_cycle">
+        <option value="day">日</option>
+        <option value="week">週</option>
+        <option value="month">月</option>
+      </select>
+      <span class="push-cycle push-cycle-day">
+        <select class="select-form"><option value="">10:00</option></select>
+      </span>
+      <span class="push-cycle push-cycle-week" style="display:none;">
+        <select class="select-form"><option value="">一</option></select>
+        <select class="select-form"><option value="">10:00</option></select>
+      </span>
+      <span class="push-cycle push-cycle-month" style="display:none;">
+        <select class="select-form"><option value="">1</option></select>日
+        <select class="select-form"><option value="">10:00</option></select>
+      </span>
+    </dd>
+    <dd>
+      <label class="label-content-title">行動裝置：</label>
+      <label for="checkbox_os1"><input type="checkbox" id="checkbox_os1" name="checkbox_os" checked>iOS</label>
+      <label for="checkbox_os2"><input type="checkbox" id="checkbox_os2" name="checkbox_os" checked>Android</label>
+    </dd>
+    <dd>
+      <label class="label-content-title">閱讀後轉到：</label>
+      <select class="select-form" id="select_push_jump">
+        <option value="home">首頁</option>
+        <option value="item">商品頁</option>
+        <option value="edm">eDM</option>
+        <option value="catagory">分類館頁</option>
+      </select>
+    <dd class="push-jump push-jump-item" style="display:none;">
+      <label class="label-content-title">賣場編號：</label>
+      <input type="text" size="20" placeholder="請輸入賣場編號">
+      <a href="" target="_blank">預覽</a>
+      <div class="push-procuct-preview">
+        <div class="img-product"><img src="http://placehold.it/50x50/999999/ffffff"></div>
+        <p class="caption-product">【狂降62折】Bravo-u Samsung Galaxy Tab2 10.0 P5100HC高透螢幕保護貼(10吋)</p>
+      </div>
+    </dd>
+    <dd class="push-jump push-jump-edm" style="display:none;">
+      <label class="label-content-title">eDM位置：</label>
+      <select class="select-form"><option value="">在南弟是和高子市驅輸</option></select>
+    </dd>
+    <dd class="push-jump push-jump-catagory" style="display:none;">
+      <label class="label-content-title">分類館頁：</label>
+      <select class="select-form"><option value="">婦幼、童裝、嬰幼玩具</option></select>
+      <select class="select-form"><option value="">★電腦平板配件【狂殺23折up】</option></select>
+    </dd>
+    <dd class="push-jump push-jump-catagory" style="display:none;">
+      <label class="label-content-title"></label>
+      <select class="select-form"><option value="">★電腦平板配件【狂殺23折up】</option></select>
+      <select class="select-form"><option value="">★電腦平板配件【狂殺23折up】</option></select>
+    </dd>
+    <dd>
+      <label class="label-content-title">訊息類型：</label>
+      <label for="radio_push_type_text"><input type="radio" id="radio_push_type_text" name="radio_push_type" checked>文案</label>
+      <label for="radio_push_type_img"><input type="radio" id="radio_push_type_img" name="radio_push_type">圖片</label>
+      <label for="radio_push_type_item"><input type="radio" id="radio_push_type_item" name="radio_push_type">商品</label>
+    </dd>
+    <dd class="push-type push-type-text">
+      <label class="label-content-title">推播文案：</label>
+      <textarea class="textarea-form textarea-calculated" placeholder="請輸入推播文案..."></textarea><br>
+      <span class="txt-calculate comment">最多輸入 <span class="highlight">500</span> 字元 (約250個中文字)，已輸入<span class="txt-length">0</span>個字</span>
+    </dd>
+    <dd class="push-type push-type-img" style="display:none;">
+      <label class="label-content-title">推播圖片：</label>
+      <input type="file" accept="image/*">
+      <span class="comment">圖片大小上限150KB的 GIF / JPG / JPEG / PNG 格式檔案</span>
+    </dd>
+    <dd class="push-type push-type-item" style="display:none;">
+      <label class="label-content-title">推播商品：</label>
+      <input type="text" size="20" placeholder="請輸入賣場編號">
+      <span class="comment">(推播賣場名稱及圖片)</span>
+    </dd>
+  </dl>
+  <div class="template-button">
+    <button class="btn-cancel" onclick="parent.$.fancybox.close();"><i class="fa fa-times"></i>取消</button>
+    <button class="btn-submit" onclick="alert('「推播名稱推播名稱推播名稱」已設定完成。'); parent.$.fancybox.close();"><i class="fa fa-check"></i>儲存及發送</button>
+  </div>
+</div><script src="/js/lib/jquery-1.9.1.js" ></script>
+<script src="/js/lib/bootstrap-dropdown.js"></script>
+<script src="/js/nav-action.js"></script>
+<script src="/js/lib/jquery.fancybox.pack.js?v=2.1.4"></script>
+<script src="/js/lib/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="/js/lib/jquery-ui-timepicker-addon.js"></script>
+<script src="/js/lib/jquery-ui-sliderAccess.js"></script>
+<script src="/js/lib/jquery-ui-timepicker-zh-TW.js"></script>
+<script src="/js/template-action.js"></script>
+<script src="/js/update-fancybox.js"></script>
+<script>
+//date time picker
+var timeOption = {
+  dateFormat: 'yy/mm/dd',
+  timeFormat: 'HH:mm',
+  stepMinute: 10,
+  minDate: 0
+};
+$('.input-timepicker').datetimepicker(timeOption);
+var dateOption = {
+  dateFormat: 'yy/mm/dd',
+  showTimepicker: false,
+  minDate: 0
+};
+$('.input-datepicker').datetimepicker(dateOption);
+//立即發送
+$('#checkbox_send_now').click(function() {
+  var ifSendNow = $(this).prop('checked');
+  $('#input_push_time_single').prop('disabled',ifSendNow).val('');
+});
+//週期
+$('#radio_push_time_single').click(function() {
+  $('.push-time').hide();
+  $('.push-time-single').show();
+});
+$('#radio_push_time_cycle').click(function() {
+  $('.push-time').hide();
+  $('.push-time-cycle').show();
+});
+$('#select_push_cycle').bind('click change',function() {
+  switch($(this).val()) {
+    case 'day':
+        $('.push-cycle').hide();
+        $('.push-cycle-day').show();
+        break;
+    case 'week':
+        $('.push-cycle').hide();
+        $('.push-cycle-week').show();
+        break;
+    case 'month':
+        $('.push-cycle').hide();
+        $('.push-cycle-month').show();
+        break;
+    default:
+        $('.push-cycle').hide();
+        $('.push-cycle-day').show();
+  };
+});
+//跳轉
+$('#select_push_jump').bind('click change',function() {
+  switch($(this).val()) {
+    case 'home':
+        $('.push-jump').hide();
+        break;
+    case 'item':
+        $('.push-jump').hide();
+        $('.push-jump-item').show();
+        break;
+    case 'edm':
+        $('.push-jump').hide();
+        $('.push-jump-edm').show();
+        break;
+    case 'catagory':
+        $('.push-jump').hide();
+        $('.push-jump-catagory').show();
+        break;
+    default:
+        $('.push-jump').hide();
+  };
+  parent.$.fancybox.update();
+});
+//類型
+$('#radio_push_type_text').click(function() {
+  $('.push-type').hide();
+  $('.push-type-text').show();
+  parent.$.fancybox.update();
+});
+$('#radio_push_type_img').click(function() {
+  $('.push-type').hide();
+  $('.push-type-img').show();
+  parent.$.fancybox.update();
+});
+$('#radio_push_type_item').click(function() {
+  $('.push-type').hide();
+  $('.push-type-item').show();
+  parent.$.fancybox.update();
+});
+</script>
+</body>
+</html>

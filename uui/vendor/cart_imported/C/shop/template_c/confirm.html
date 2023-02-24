@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+        <link rel="shortcut icon" href="http://img.uitoxbeta.com/A/deploy/AWC000164/website/1418122788_AWC000164.ico">
+        <link href="../css/buy.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/buy.js"></script>
+        <script type="text/javascript" src="../js/jquery.blockUI.js"></script>
+        <script type="text/javascript" src="../js/tinybox.js"></script>
+        <script type="text/javascript" src="../js/jquery.selectboxes.js"></script>
+        <script type="text/javascript" src="../js/buy_list.js"></script>
+        <style type="text/css">
+            body{ overflow: scroll; _overflow:auto; *overflow:auto !important }
+        </style>
+    </head>
+    <body cz-shortcut-listen="true">
+        <div id="sgbuy_weap">
+            <div id="sgbuy_header">
+                <a href="#"><img src="../img/1418123335_AWC000164.jpg"></a>&nbsp;
+                <span class="backlink pattop"><a href="#">Back</a></span>
+            </div><!-- header -->
+    <div class="cart_ship">
+        <p class="txtname">Shipping Address</p>
+        <div class="addrs_block clearfix">
+            <ol class="clearfix">
+                <li class="name_txt">gwargareg</li>
+                <li class="phone_txt">0911******</li>
+                <li class="phone_txt"></li>
+            </ol>        
+            <div class="addrs_txt">401 W Greenlawn, ********, MI, *****</div>
+        </div>
+        <input class="btn_change submit" type="button" value="Change" onclick="location.href=&#39;enterData&#39;;">
+    </div>
+    <div class="buy_brembox text13">
+        <span class="fontb">Total for This Order</span>
+        <span id="total_price_banner" class="fontb colred">US$ <span class="pricenum">50.00</span></span>
+    </div>
+    <div id="detail_list" class="pricebar">
+        <div class="tablist clearfix">
+            <div class="listr title clearfix">
+                <div class="column1">Your Items</div>
+                <div class="column2">Qty</div>
+                <div class="column3">Unit Price</div>
+                <div class="column4">Subtotal</div>
+                <div class="column5"></div>
+            </div><!-- title -->
+            <hr class="listline">
+            <!-- Product List Region -->
+            <div id="set_list">
+                <div class="listr center clearfix">
+                    <div class="column1 undefined">
+                        <span class="icon_big">Odd size</span>
+                        <a href="#" target="_blank">us-大材積01</a>
+                        <p class="colff0"></p>
+                    </div>
+                    <div class="column2 undefined">1</div>
+                    <div class="column3 undefined">US$50.00</div>
+                    <div class="column4 undefined">US$50.00</div>
+                    <div class="column5"></div>
+                </div>
+            </div>
+            <hr class="listline">
+            <!-- Activity List Region -->
+            <div id="act_list"></div>
+            <hr class="listline">
+            <!-- shipping -->
+            <div class="listr center clearfix hide">
+                <div class="column1">Sales Tax</div>
+                <div class="column2"></div>
+                <div class="column3"></div>
+                <div class="column4"></div>
+                <div class="column5"></div>
+            </div>
+            <div class="listr center clearfix hide">
+                <div class="column1">Recycling Fees</div>
+                <div class="column2">&nbsp;</div>
+                <div class="column3">&nbsp;</div>
+                <div class="column4"></div>
+                <div class="column5"></div>
+            </div>
+            <hr class="listline hide">
+            <!-- Point Region -->
+            <div id="point" class="listr center clearfix hide">
+                <div class="column1"> Shopping Credits</div>
+                <div class="column2">&nbsp;</div>
+                <div class="column3">&nbsp;</div>
+                <div class="column4">- US$<span name="point_val">6</span></div>
+                <div class="column5"></div>
+            </div>
+            <!-- Point2 Region -->
+            <div id="point2" class="listr center clearfix hide">
+                <div class="column1"> Voucher</div>
+                <div class="column2">&nbsp;</div>
+                <div class="column3">&nbsp;</div>
+                <div class="column4">- US$<span name="point2_val">9</span></div>
+                <div class="column5"></div>
+            </div>
+            <hr class="listline">
+            <div class="listr center clearfix shipsp">
+                <div class="column1">  Choose a delivery option (Orders are shipped within 1-2 business days of confirmation.)</div>
+            </div>
+            <!-- shopping_speed -->
+            <div id="shopping_speed">
+                <div class="listr center clearfix">
+                    <div class="column1">
+                        <input type="radio" name="ship_service_type" id="shipping_2" class="ship_radio" value="2" data-carriage="0.00">
+                        <label for="shipping_2">Ground<span></span></label>
+                    </div>
+                    <div class="column2">&nbsp;</div>
+                    <div class="column3">&nbsp;</div>
+                    <div class="column4">US$0.00</div>
+                    <div class="column5"></div>
+                </div>
+                <div class="listr center clearfix">
+                    <div class="column1">
+                        <input type="radio" name="ship_service_type" id="shipping_1" class="ship_radio" value="1" data-carriage="42.10">
+                        <label for="shipping_1">2nd Business Day<span>[Add $42.10]</span></label>
+                    </div>
+                    <div class="column2">&nbsp;</div>
+                    <div class="column3">&nbsp;</div>
+                    <div class="column4 hide">US$42.10</div>
+                    <div class="column5"></div>
+                </div>
+                <div class="listr center clearfix">
+                    <div class="column1">
+                        <input type="radio" name="ship_service_type" id="shipping_3" class="ship_radio" value="3" data-carriage="80.26">
+                        <label for="shipping_3">Next Business Day<span>[Add $80.26]</span></label>
+                    </div>
+                    <div class="column2">&nbsp;</div>
+                    <div class="column3">&nbsp;</div>
+                    <div class="column4 hide">US$80.26</div>
+                    <div class="column5"></div>
+                </div>
+            </div>
+            <!-- 運費折抵區塊 -->
+            <div id="fee_list" class="listr center clearfix" style="display: none;">
+                 <div id="fee_list_name" class="column1">Shipping Fee</div>
+                 <div class="column2"></div>
+                 <div class="column3"></div>
+                 <div class="column4">US$<span id="fee_list_val">0.00</span></div>
+                 <div class="column5"></div>
+            </div>
+            <!-- total -->
+            <hr class="listline">
+            <div class="listr center clearfix">
+                <div class="column1">&nbsp;</div>
+                <div class="column2">&nbsp;</div>
+                <div class="column3"><span class="totaltxt">Order Total</span></div>
+                <div class="column4"><span class="colred">US$ </span><span id="total_price" class="text16 colred">50.00</span></div>
+                <div class="column5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="sgcheckoutbtn">
+        <input type="submit" id="btn_checkout" value="Proceed to checkout" class="submit">
+    </div>
+<div id="sgbuy_footer">
+    <div class="foterleft">  </div>
+    <div class="foterright">
+    	<span class="col666">© 2014 <a href="#" target="_blank" class="col66bb">Privacy Policy</a> and Terms of use ©AsusTek Computer Inc. All rights reserved.</span> 
+        <a href="#" target="_blank" class="col66bb"></a>
+    </div>
+</div>
+</div>
+</body>
+</html>
