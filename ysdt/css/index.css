@@ -2334,10 +2334,10 @@ button.swiper-pagination-bullet {
           mask-size: 300px 300px;
   -webkit-mask-composite: source-in;
           mask-composite: source-in;
-  -webkit-mask: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(8%, #fff), to(transparent)), -webkit-gradient(linear, right top, left top, from(transparent), color-stop(8%, #fff), to(transparent));
-  -webkit-mask: linear-gradient(to top, transparent 0%, #fff 8% 85%, transparent 100%), linear-gradient(to left, transparent 0%, #fff 8% 85%, transparent 100%);
-          mask: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(8%, #fff), to(transparent)), -webkit-gradient(linear, right top, left top, from(transparent), color-stop(8%, #fff), to(transparent));
-          mask: linear-gradient(to top, transparent 0%, #fff 8% 85%, transparent 100%), linear-gradient(to left, transparent 0%, #fff 8% 85%, transparent 100%);
+  -webkit-mask: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(5%, #fff), to(transparent)), -webkit-gradient(linear, right top, left top, from(transparent), color-stop(5%, #fff), to(transparent));
+  -webkit-mask: linear-gradient(to top, transparent 0%, #fff 5% 95%, transparent 100%), linear-gradient(to left, transparent 0%, #fff 5% 95%, transparent 100%);
+          mask: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(5%, #fff), to(transparent)), -webkit-gradient(linear, right top, left top, from(transparent), color-stop(5%, #fff), to(transparent));
+          mask: linear-gradient(to top, transparent 0%, #fff 5% 95%, transparent 100%), linear-gradient(to left, transparent 0%, #fff 5% 95%, transparent 100%);
   mask-size: 300px 300px;
 }
 
@@ -2712,14 +2712,15 @@ button.swiper-pagination-bullet {
 }
 .turn_body {
   width: 380px;
-  border: 1px solid #ccc;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .turn_iframe {
-  width: 100%;
+  display: block;
+  width: 374px;
   height: 100%;
+  margin: 0 auto;
 }
 
 .spec_prod {
