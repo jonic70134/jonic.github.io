@@ -152,61 +152,37 @@ img {
   margin: 0;
 }
 
-.item_head {
+.name_block {
+  margin: 0 35px 0 0;
+}
+.name_block div {
+  color: #999;
+  line-height: 1.4;
+}
+
+.name {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin: 0;
-  padding: 3%;
-  background-color: #333;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.item_head:nth-child(2n) {
-  margin-left: 0;
-  margin-right: 0;
-}
-.item_head .name {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-}
-.item_head .cupn_t {
-  font-size: clamp(0.9rem, 3vw, 1.5rem);
-}
-.item_head .cupn_ticket {
-  width: 200px;
-  height: 90px;
-  font-size: clamp(0.9rem, 2vw, 1.3rem);
-}
-.item_head .cupn_price {
-  font-size: 2rem;
-}
-.item_head .nor_price {
-  font-size: clamp(1rem, 3vw, 2rem);
-}
-.item_head .nor_price::first-letter {
-  font-size: clamp(0.7rem, 2vw, 1.5rem);
-  text-decoration: none;
-}
-.item_head .photo {
-  -webkit-box-flex: 2;
-      -ms-flex: 2 1 35%;
-          flex: 2 1 35%;
-  border-radius: 10px;
-}
-.item_head .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  width: 65%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 0 0 2%;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  font-size: 1.6rem;
+  color: white;
+  line-height: 1.2;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.summary {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  margin: 0 60px 40px 0;
+  overflow: hidden;
+  color: #999;
+  line-height: 1.2;
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  word-break: break-all;
 }
 
 .photo {
@@ -246,23 +222,7 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 15px 0 0;
-}
-
-.cupn_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 30px 0 0;
 }
 
 .cupn_t {
@@ -312,49 +272,48 @@ img {
 
 .cupn_dur {
   color: #555;
+  font-weight: 500;
 }
 
 .cupn_price {
   margin: 5px 0 0;
   color: #ee6262;
-  font-size: 1.5rem;
   font-weight: 700;
 }
-.cupn_price::first-letter {
-  font-size: 1.2rem;
-}
 
-.name_block {
-  margin: 0 20px 20px 0;
-}
-.name_block div {
-  color: #999;
-  line-height: 1.4;
-}
-
-.name {
+.price_area {
   display: -webkit-box;
-  -webkit-box-orient: vertical;
-  line-clamp: 2;
-  -webkit-line-clamp: 2;
-  margin: 0 35px 35px 0;
-  font-size: 1.6rem;
-  color: white;
-  line-height: 1.2;
-  word-break: break-all;
-  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 20px 0 0 0;
 }
 
-.summary {
+.cupn_block {
   display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
-  line-clamp: 3;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  color: #999;
-  line-height: 1.2;
-  font-size: clamp(1rem, 2vw, 1.6rem);
-  word-break: break-all;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 46%;
+          flex: 2 1 46%;
 }
 
 .price {
@@ -398,17 +357,6 @@ img {
   text-decoration: none;
 }
 
-.dis {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.dis img {
-  width: 24px;
-  height: 26px;
-  margin: 0 5px;
-}
-
 .dis_net {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,37 +369,106 @@ img {
 .dis_price {
   color: #f77;
   font-size: 3.5rem;
-  font-size: clamp(1.5rem, 4vw, 3.5rem);
+  font-size: clamp(1.5rem, 4vw, 4rem);
 }
 .dis_price::first-letter {
   font-size: clamp(1rem, 3vw, 2.5rem);
 }
 
-.dis_af {
-  color: white;
-  font-size: clamp(1rem, 3vw, 2rem);
-}
-
-.dis_af_price {
-  color: #ff0;
-  font-size: clamp(1.5rem, 3.5vw, 3rem);
-}
-.dis_af_price::first-letter {
-  font-size: clamp(0.7rem, 3vw, 2rem);
-}
-
 .btn-imd {
-  margin-top: 15px;
-  padding: 9px 50 10px 72px;
-  font-size: clamp(1rem, 2vw, 2rem);
+  width: 100%;
+  margin: 10px 0 0;
+  padding: 9px 0 10px 20px;
+  font-size: clamp(1rem, 2vw, 1.8rem);
   letter-spacing: 16px;
   border: none;
   color: white;
   background-color: #f5281e;
+  white-space: nowrap;
   cursor: pointer;
   line-height: 1;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+}
+
+.item_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 1.8%;
+  background-color: #333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.item_head .info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 65%;
+          flex: 2 1 65%;
+  margin: 0 0 0 2%;
+}
+.item_head .name {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+.item_head .price_b {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 50%;
+          flex: 2 1 50%;
+}
+.item_head .cupn_t {
+  font-size: clamp(0.9rem, 3vw, 2.2rem);
+  letter-spacing: 1px;
+}
+.item_head .cupn_ticket {
+  width: 100%;
+  height: 150px;
+  font-size: clamp(0.9rem, 3vw, 3.5rem);
+}
+.item_head .cupn_price_b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.item_head .cupn_price_t {
+  margin: 0 5px 0 0;
+  color: #555;
+  font-size: clamp(0.9rem, 2.8vw, 2.8rem);
+}
+.item_head .cupn_price {
+  font-size: clamp(0.9rem, 3vw, 3rem);
+}
+.item_head .cupn_price::first-letter {
+  font-size: clamp(0.7rem, 2.5vw, 1.5rem);
+}
+.item_head .dis {
+  margin: 0 0 60px;
+}
+.item_head .nor_price {
+  font-size: clamp(1rem, 3vw, 3rem);
+}
+.item_head .nor_price::first-letter {
+  font-size: clamp(0.7rem, 2vw, 1.5rem);
+  text-decoration: none;
+}
+.item_head .photo {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 35%;
+          flex: 2 1 35%;
+  border-radius: 10px;
 }
 
 .item.sm {
@@ -574,9 +591,6 @@ img {
   .items {
     margin: 0 20px;
   }
-  .item.sm .name {
-    margin: 0 20px 15px 0;
-  }
   .item.sm .dis_price {
     font-size: 1.5rem;
   }
@@ -585,11 +599,6 @@ img {
   }
   .item.sm .dis_af_price {
     font-size: 1.2rem;
-  }
-}
-@media (min-width: 748px) and (max-width: 1221px) {
-  .name {
-    margin: 0 20px 20px 0;
   }
 }
 @media (min-width: 748px) and (max-width: 1200px) {
@@ -607,9 +616,6 @@ img {
   }
 }
 @media (min-width: 748px) and (max-width: 1100px) {
-  .name {
-    margin: 0 10px 15px 0;
-  }
   .item.sm {
     padding: 15px;
   }
@@ -646,7 +652,6 @@ img {
     font-size: 0.9rem;
   }
   .cupn_ticket {
-    width: 130px;
     height: 55px;
   }
   .cupn_price {
@@ -698,7 +703,6 @@ img {
     font-size: 0.7rem;
   }
   .cupn_ticket {
-    width: 100px;
     height: 42px;
   }
   .cupn_price {
@@ -750,9 +754,6 @@ img {
             flex-flow: column;
     padding: 15px;
   }
-  .item_head .name {
-    margin: 0 20px 10px 0;
-  }
   .item_head .photo {
     width: 100%;
     padding-top: 100%;
@@ -761,9 +762,18 @@ img {
     width: 100%;
     margin: 0;
   }
+  .item_head .name_block {
+    margin: 0;
+  }
+  .item_head .cupn_block {
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+  }
   .item_head .cupn_ticket {
-    width: 170px;
-    height: 65px;
+    height: 60px;
+  }
+  .price_area {
+    margin: 10px 0 0;
   }
   .summary {
     line-clamp: 2;
@@ -776,9 +786,6 @@ img {
   .cupn_dur {
     margin: 0 0 -2px;
   }
-  .btn-imd {
-    width: 100%;
-  }
 }
 @media (max-width: 655px) {
   .saletime {
@@ -787,35 +794,20 @@ img {
   .saletime p {
     display: inline;
   }
-  .name {
-    margin: 0 15px 15px 0;
-  }
   .item.sm .name {
     margin: 0 15px 15px 0;
-  }
-  .item.sm .dis_af {
-    font-size: 1.2rem;
-  }
-  .item.sm .dis_price {
-    font-size: 1.5rem;
-  }
-  .item.sm .dis_af_price {
-    font-size: 1.2rem;
   }
 }
 @media (max-width: 575px) {
   .item {
     padding: 10px;
   }
-  .item_head .name_block {
-    margin: 0 10px 10px 0;
-  }
   .item_head .cupn_ticket {
-    width: 110px;
-    height: 52px;
+    height: 58px;
   }
-  .item_head .cupn_price {
-    font-size: 1.2rem;
+  .item_head .cupn_block {
+    -ms-flex-preferred-size: 22%;
+        flex-basis: 22%;
   }
   .cupn_t {
     margin: 0 0 5px;
@@ -831,9 +823,8 @@ img {
   .cupn_price::first-letter {
     font-size: 0.7rem;
   }
-  .dis img {
-    width: 18px;
-    height: auto;
+  .item_head .dis {
+    margin: 0;
   }
   .item.sm {
     padding: 10px;
@@ -851,18 +842,8 @@ img {
   .item.sm .dis {
     margin: 0;
   }
-  .item.sm .dis_af {
-    font-size: 1rem;
-  }
   .item.sm .dis_price {
     font-size: 1.2rem;
-  }
-  .item.sm .dis_af_price {
-    font-size: 1.2rem;
-    font-size: 1rem;
-  }
-  .item.sm .dis_af_price::first-letter {
-    font-size: 0.9rem;
   }
 }
 @media (max-width: 460px) {
@@ -893,15 +874,6 @@ img {
     font-size: 1rem;
   }
   .item.sm .dis_price::first-letter {
-    font-size: 0.7rem;
-  }
-  .item.sm .dis_af {
-    font-size: 0.7rem;
-  }
-  .item.sm .dis_af_price {
-    font-size: 0.7rem;
-  }
-  .item.sm .dis_af_price::first-letter {
     font-size: 0.7rem;
   }
 }

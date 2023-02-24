@@ -125,51 +125,36 @@ img{
     flex-flow: row wrap;
 	justify-content: space-between;
 	margin:0;
-	
 }
-.item_head{
-	display: flex;
-    width: 100%;
-	margin:0;
-	padding:3%;
-	background-color: #333;
-	box-sizing: border-box;
-	&:nth-child(2n){
-		margin-left:0;
-		margin-right:0;
+.name_block{
+	margin: 0 35px 0 0;
+	div{
+		color: #999;
+    	line-height: 1.4;
 	}
-	.name{
-		font-size:clamp(1.5rem , 3vw, 2rem);
-	}
-	.cupn_t{
-		font-size:clamp(.9rem , 3vw, 1.5rem);
-	}
-	.cupn_ticket{
-		width:200px;
-		height:90px;
-		font-size:clamp(.9rem , 2vw, 1.3rem);
-	}
-	.cupn_price{
-		font-size:2rem;
-	}
-	.nor_price{
-		font-size:clamp(1rem , 3vw, 2rem);
-		&::first-letter{
-			font-size:clamp(.7rem , 2vw, 1.5rem);
-			text-decoration: none;
-		}
-	}
-	.photo{
-		flex:2 1 35%;
-		border-radius: 10px;
-	}
-	.info{
-		display: flex;
-		flex-flow: column;
-		width:65%;
-		justify-content: space-between;
-		margin: 0 0 0 2%;
-	}
+}
+.name{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	line-clamp: 2;
+	-webkit-line-clamp:2;
+	font-size:1.6rem;
+	color:white;
+	line-height: 1.2;
+	word-break: break-all;
+	overflow: hidden;
+}
+.summary{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	line-clamp: 3;
+	-webkit-line-clamp:3;
+	margin: 0 60px 40px 0;
+	overflow: hidden;
+	color:#999;
+	line-height: 1.2;
+	font-size:clamp(1rem , 2vw, 1.6rem);
+	word-break: break-all;
 }
 .photo{
 	position: relative;
@@ -196,13 +181,7 @@ img{
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: flex-start;
-	margin:15px 0 0;
-}
-.cupn_block{
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	align-items: center;
+	margin:30px 0 0;
 }
 .cupn_t{
 	margin:0 0 10px;
@@ -230,46 +209,27 @@ img{
 }
 .cupn_dur{
 	color:#555;
+	font-weight: 500;
 }
 .cupn_price{
 	margin: 5px 0 0;
 	color:#ee6262;
-	font-size:1.5rem;
 	font-weight: 700;
-	&::first-letter{
-		font-size:1.2rem;
-	}
-}
-.name_block{
-	margin: 0 20px 20px 0;
-	div{
-		color: #999;
-    	line-height: 1.4;
-	}
 }
 
-.name{
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	line-clamp: 2;
-	-webkit-line-clamp:2;
-	margin: 0 35px 35px 0;
-	font-size:1.6rem;
-	color:white;
-	line-height: 1.2;
-	word-break: break-all;
-	overflow: hidden;
+.price_area{
+	display: flex;
+    flex-flow: row nowrap;
+	align-items: flex-start;
+	margin: 20px 0 0 0;
 }
-.summary{
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	line-clamp: 3;
-	-webkit-line-clamp:3;
-	overflow: hidden;
-	color:#999;
-	line-height: 1.2;
-	font-size:clamp(1rem , 2vw, 1.6rem);
-	word-break: break-all;
+.cupn_block{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	align-self: flex-end;
+	flex:2 1 46%;
 }
 .price{
 	display: flex;
@@ -295,13 +255,13 @@ img{
 		text-decoration: none;
 	}
 }
-.dis{
-	justify-content: space-between;
-	img{
-		width:24px;height:26px;
-		margin:0 5px;
-	}
-}
+// .dis{
+// 	justify-content: space-between;
+// 	// img{
+// 	// 	width:24px;height:26px;
+// 	// 	margin:0 5px;
+// 	// }
+// }
 .dis_net{
 	display: flex;
 	align-items: baseline;
@@ -309,34 +269,100 @@ img{
 .dis_price{
 	color:#f77;
 	font-size:3.5rem;
-	font-size:clamp(1.5rem , 4vw, 3.5rem);
+	font-size:clamp(1.5rem , 4vw, 4rem);
 	&::first-letter{
 		font-size:clamp(1rem , 3vw, 2.5rem);
 	}
 }
-.dis_af{
-	color:white;
-	font-size:clamp(1rem , 3vw, 2rem)
-}
-.dis_af_price{
-	color:#ff0;
-	font-size:clamp(1.5rem , 3.5vw, 3rem);
-	&::first-letter{
-		font-size:clamp(.7rem , 3vw, 2rem);
-	}
-}
+// .dis_af{
+// 	color:white;
+// 	font-size:clamp(1rem , 3vw, 2rem)
+// }
+// .dis_af_price{
+// 	color:#ff0;
+// 	font-size:clamp(1.5rem , 3.5vw, 3rem);
+// 	&::first-letter{
+// 		font-size:clamp(.7rem , 3vw, 2rem);
+// 	}
+// }
 .btn-imd{
-	margin-top:15px;
-	padding: 9px 50 10px 72px;
-	font-size:clamp(1rem , 2vw, 2rem);
+	width: 100%;
+	margin:10px 0 0;
+	padding: 9px 0 10px 20px;
+	font-size:clamp(1rem , 2vw, 1.8rem);
 	letter-spacing: 16px;
 	border: none;
 	color: white;
 	background-color: #f5281e;
+	white-space: nowrap;
 	cursor: pointer;
 	line-height: 1;
-	align-self:flex-end;
 }
+.item_head{
+	display: flex;
+    width: 100%;
+	margin:0;
+	padding:1.8%;
+	background-color: #333;
+	box-sizing: border-box;
+	// &:nth-child(2n){
+	// 	margin-left:0;
+	// 	margin-right:0;
+	// }
+	.info{
+		position: relative;
+		display: flex;
+		flex-flow: column;
+		flex: 2 1 65%;
+		margin: 0 0 0 2%;
+	}
+	.name{
+		font-size:clamp(1.5rem , 3vw, 2.5rem);
+	}
+	.price_b{
+		flex:2 1 50%;
+	}
+	.cupn_t{
+		font-size:clamp(.9rem , 3vw, 2.2rem);
+		letter-spacing: 1px;
+	}
+	.cupn_ticket{
+		width:100%;	
+		height:150px;
+		font-size:clamp(.9rem , 3vw, 3.5rem);
+	}
+	.cupn_price_b{
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: baseline;
+	}
+	.cupn_price_t{
+		margin: 0 5px 0 0;
+		color:#555;
+		font-size: clamp(0.9rem, 2.8vw, 2.8rem);
+	}
+	.cupn_price{
+		font-size: clamp(0.9rem, 3vw, 3rem);
+		&::first-letter{
+			font-size: clamp(0.7rem, 2.5vw, 1.5rem);
+		}
+	}
+	.dis{
+		margin: 0 0 60px;
+	}
+	.nor_price{
+		font-size:clamp(1rem , 3vw, 3rem);
+		&::first-letter{
+			font-size:clamp(.7rem , 2vw, 1.5rem);
+			text-decoration: none;
+		}
+	}
+	.photo{
+		flex:2 1 35%;
+		border-radius: 10px;
+	}
+}
+
 .item.sm{
 	display: flex;
     flex-flow: row nowrap;
@@ -382,7 +408,7 @@ img{
 		margin:5px 0 0;
 	}
 	.cupn_t{
-		margin:5px  0 10px;
+		margin:5px 0 10px;
 	}
 	.cupn_ticket{
 		font-size: clamp(.9rem, 1.5vw, 1.3rem);
@@ -439,9 +465,6 @@ img{
 		margin: 0 20px;
 	}
 	.item.sm{
-		.name{
-			margin:0 20px 15px 0;
-		}
 		.dis_price{
 			font-size:1.5rem;
 		}
@@ -451,11 +474,6 @@ img{
 		.dis_af_price{
 			font-size:1.2rem;
 		}
-	}
-}
-@media (min-width:748px) and (max-width: 1221px) {
-	.name{
-		margin:0 20px 20px 0;
 	}
 }
 @media (min-width:748px) and (max-width: 1200px) {
@@ -475,9 +493,6 @@ img{
 	}
 }
 @media (min-width:748px) and (max-width: 1100px) {
-	.name{
-		margin:0 10px 15px 0;
-	}
 	.item.sm{
 		padding:15px;
 		.name{
@@ -516,7 +531,7 @@ img{
 		font-size:.9rem;
 	}
 	.cupn_ticket{
-		width: 130px;height:55px;
+		height:55px;
 	}
 	.cupn_price{
 		font-size:1.1rem;
@@ -572,7 +587,7 @@ img{
 		font-size:.7rem;
 	}
 	.cupn_ticket{
-		width: 100px;height:42px;
+		height:42px;
 	}
 	.cupn_price{
 		font-size:.9rem;
@@ -629,9 +644,6 @@ img{
 	.item_head{
 		flex-flow:column;
 		padding: 15px;
-		.name{
-			margin:0 20px 10px 0;
-		}
 		.photo{
 			width: 100%;
 			padding-top: 100%;
@@ -640,9 +652,18 @@ img{
 			width:100%;
 			margin: 0;
 		}
-		.cupn_ticket{
-			width:170px;height:65px;
+		.name_block{
+			margin: 0;
 		}
+		.cupn_block{
+			flex-basis: 15%;
+		}
+		.cupn_ticket{
+			height:60px;
+		}
+	}
+	.price_area{
+		margin: 10px 0 0;
 	}
 	.summary{
 		line-clamp: 2;
@@ -655,9 +676,6 @@ img{
 	.cupn_dur{
 		margin: 0 0 -2px;
 	}
-	.btn-imd{
-		width: 100%;
-	}
 }
 
 
@@ -668,22 +686,19 @@ img{
 			display: inline;
 		}
 	}
-	.name{
-		margin:0 15px 15px 0;
-	}
 	.item.sm{
 		.name{
 			margin:0 15px 15px 0;
 		}
-		.dis_af{
-			font-size:1.2rem;
-		}
-		.dis_price{
-			font-size:1.5rem;
-		}
-		.dis_af_price{
-			font-size:1.2rem;
-		}
+		// .dis_af{
+		// 	font-size:1.2rem;
+		// }
+		// .dis_price{
+		// 	font-size:1.5rem;
+		// }
+		// .dis_af_price{
+		// 	font-size:1.2rem;
+		// }
 	}
 }
 @media (max-width: 575px) {
@@ -691,16 +706,13 @@ img{
 		padding:10px;
 	}
 	.item_head{
-		.name_block{
-			margin:0 10px 10px 0;
-		}
 		.cupn_ticket{
-			width: 110px;
-    		height: 52px;
+    		height: 58px;
 		}
-		.cupn_price{
-			font-size:1.2rem;
+		.cupn_block{
+			flex-basis: 22%;
 		}
+
 	}
 	.cupn_t{
 		margin: 0 0 5px;
@@ -715,10 +727,9 @@ img{
 			font-size:.7rem;
 		}
 	}
-	.dis{
-		img{
-			width:18px;
-			height: auto;
+	.item_head{
+		.dis{
+			margin:0;
 		}
 	}
 	.item.sm{
@@ -736,19 +747,19 @@ img{
 		.dis{
 			margin:0;
 		}
-		.dis_af{
-			font-size:1rem;
-		}
 		.dis_price{
 			font-size:1.2rem;
 		}
-		.dis_af_price{
-			font-size:1.2rem;
-			font-size:1rem;
-			&::first-letter{
-				font-size:.9rem;
-			}
-		}
+		// .dis_af{
+		// 	font-size:1rem;
+		// }
+		// .dis_af_price{
+		// 	font-size:1.2rem;
+		// 	font-size:1rem;
+		// 	&::first-letter{
+		// 		font-size:.9rem;
+		// 	}
+		// }
 	}
 }
 @media (max-width: 460px) {
@@ -783,15 +794,15 @@ img{
 				font-size:.7rem;
 			}
 		}
-		.dis_af{
-			font-size:.7rem;
-		}
-		.dis_af_price{
-			font-size:.7rem;
-			&::first-letter{
-				font-size:.7rem;
-			}
-		}
+		// .dis_af{
+		// 	font-size:.7rem;
+		// }
+		// .dis_af_price{
+		// 	font-size:.7rem;
+		// 	&::first-letter{
+		// 		font-size:.7rem;
+		// 	}
+		// }
 	}
 }
 @media (max-width: 395px) {
