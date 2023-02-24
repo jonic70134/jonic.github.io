@@ -48,12 +48,13 @@
 .sepc_two_block{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 20px 45px;
     .spec_l,.spec_r{
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 20px;
         height: 340px;
     }
     img{
@@ -75,6 +76,14 @@
         border-collapse: separate;
         box-shadow:inset 0 0 40px 16px
     }
+}
+.mask{
+    mask-size:300px 300px;
+    mask-composite: source-in;  
+    mask: 
+        linear-gradient(to top,  transparent 0%, #fff 8% 85%, transparent 100%),
+        linear-gradient(to left, transparent 0%, #fff 8% 85%, transparent 100%);
+    mask-size:  300px 300px;
 }
 .pay_dis{
     display:flex;

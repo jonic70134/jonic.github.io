@@ -51,10 +51,12 @@ html
 										mixin slidertwo(bkg,one,two)
 											.swiper-slide(href='item.html')
 												.sepc_two_block(style='background:#eee url(img/sample/'+bkg+'.jpg)')
-													a(href="item.html").spec_l.faded(style='color:black;')
-														img.fadeimg(src='img/sample/'+ one, alt='商品名稱', title='商品名稱')
-													a(href="item.html").spec_r.faded(style='color:black;')
-														img.fadeimg(src='img/sample/'+ two, alt='商品名稱', title='商品名稱')
+													a(href="item.html").spec_l
+														.mask
+														img.fadeimg.mask(src='img/sample/'+ one, alt='商品名稱', title='商品名稱')
+													a(href="item.html").spec_r
+														.mask
+														img.fadeimg.mask(src='img/sample/'+ two, alt='商品名稱', title='商品名稱')
 										+slidertwo('bkg_01','300x300_01.jpg','300x300_02.jpg')
 										
 									.icon.icon_arrow.slide_btn_r
