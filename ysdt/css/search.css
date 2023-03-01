@@ -687,7 +687,21 @@ label {
   z-index: 20;
   width: 200px;
 }
-.pc_index_menu .nav-menu {
+.pc_index_menu .title {
+  padding: 13px 10px 13px 13px;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  word-break: break-word;
+  word-wrap: break-word;
+  letter-spacing: 4px;
+}
+.pc_index_menu .title i {
+  margin-top: 3px;
+  float: right;
+}
+
+.nav-menu {
   position: absolute;
   left: 0;
   top: -1px;
@@ -696,7 +710,8 @@ label {
   background: rgba(0, 0, 0, 0.7);
   cursor: pointer;
 }
-.pc_index_menu .nav-menu .all_cate {
+
+.all_cate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -714,33 +729,23 @@ label {
   color: white;
   background: rgba(0, 0, 0, 0.7);
 }
-.pc_index_menu .nav-menu .icon_allcate {
+
+.icon_allcate {
   font-size: 0.9rem;
 }
-.pc_index_menu .title {
-  padding: 13px 10px 13px 13px;
-  color: white;
-  font-size: 1.2rem;
-  line-height: 1.3;
-  word-break: break-word;
-  word-wrap: break-word;
-  letter-spacing: 4px;
+
+.menu-union {
+  background-color: #a79d90;
 }
-.pc_index_menu .title i {
-  margin-top: 3px;
-  float: right;
-}
-.pc_index_menu .menu-one {
+
+.menu-one {
   display: none;
 }
-.pc_index_menu .menu-one .bold {
-  color: #f5281e;
-  font-weight: 700;
-}
-.pc_index_menu .menu-one .menu-title, .pc_index_menu .menu-one .menu-sub-title {
+
+.menu-title {
   position: relative;
   display: block;
-  padding: 10px 0px;
+  padding: 7px 0;
   margin: 0;
   color: white;
   font-size: 1rem;
@@ -752,12 +757,12 @@ label {
   word-break: break-word;
   word-wrap: break-word;
 }
-.pc_index_menu .menu-one .menu-title:after, .pc_index_menu .menu-one .menu-sub-title:after {
+.menu-title:after {
   display: block;
   position: absolute;
   right: 8px;
   top: 50%;
-  color: #999;
+  color: #fffae3;
   font-family: "icomoon" !important;
   font-style: normal;
   font-weight: normal;
@@ -770,96 +775,30 @@ label {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-.pc_index_menu .menu-one .menu-one-li {
-  position: relative;
-  border-bottom: 1px solid #777;
-  padding-left: 13px;
+
+.menu-sub-t {
+  padding: 15px 10px;
+  color: #fffae3;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
-.pc_index_menu .menu-one .menu-one-li:hover {
+
+.menu-one-li {
+  position: relative;
+  padding: 0 0 0 20px;
+}
+.menu-one-li:hover {
   background: white;
 }
-.pc_index_menu .menu-one .menu-one-li:hover .menu-expand {
+.menu-one-li:hover .menu-expand {
   display: block;
 }
-.pc_index_menu .menu-one .menu-one-li:hover .menu-title {
+.menu-one-li:hover .menu-title {
   color: black;
 }
-.pc_index_menu .menu-expand {
-  width: 1020px;
-  position: absolute;
-  top: 0px;
-  left: 100%;
-  z-index: 5;
-  font-size: 0;
-  -webkit-box-shadow: 1px 0 5px #aaa;
-          box-shadow: 1px 0 5px #aaa;
-  display: none;
-}
-.pc_index_menu .menu-expand {
-  zoom: 1;
-}
-.pc_index_menu .menu-expand:after {
-  content: ".";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-}
-.pc_index_menu .menu-expand .menu-sub-expand {
-  position: relative;
-  width: 185px;
-  display: inline-block;
-  vertical-align: top;
-  background: white;
-  -webkit-box-shadow: 0px 0px 5px #bbb;
-          box-shadow: 0px 0px 5px #bbb;
-}
-.pc_index_menu .menu-expand .menu-sub-li .menu-sub-title {
-  width: auto;
-  color: #666;
-  padding: 11px 5px 10px 10px;
-}
-.pc_index_menu .menu-expand .menu-sub-li .menu-sub-title.bold {
-  color: #f5281e;
-  font-weight: 700;
-}
-.pc_index_menu .menu-expand .menu-sub-li .menu-sub-title.after {
-  color: #999;
-}
-.pc_index_menu .menu-expand .menu-sub-li:hover.after {
-  color: #999;
-}
-.pc_index_menu .menu-expand .menu-sub-expand-red {
-  display: inline-block;
-  width: 835px;
-  background: #f8e5e8;
-}
-.pc_index_menu .menu-expand .menu-sub-expand-red .menu-sub-expand-more {
-  width: 42px;
-  text-decoration: underline;
-  color: #f5281e;
-}
-.pc_index_menu .menu-expand .menu-last-li {
-  padding-left: 5px;
-  border-bottom: 1px dotted #ccc;
-}
-.pc_index_menu .menu-expand .menu-last-li > a {
-  display: inline-block;
-  width: 100px;
-  padding: 11px 5px 10px;
-  line-height: 1.2;
-  color: #333;
-  font-size: 13px;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.pc_index_menu .menu-expand .menu-last-li > a.bold {
-  font-weight: 700;
-  color: #f5281e;
-  text-decoration: underline;
+
+.menu-site, .menu-union {
+  padding: 0 0 15px;
 }
 
 .breadcrumb {
