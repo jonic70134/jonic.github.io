@@ -8,6 +8,7 @@ var spec1area = new Swiper('.sepc_single .sepc_single_slide', {
     autoplay: {
         delay: 5000,
     },
+    loop:true,
 });
 // top slider
 var spec2area = new Swiper('.spec_area .spec_slide', {
@@ -157,7 +158,7 @@ $(window).scroll(function() {
         $('.gotop').fadeOut(dur);
     }
 });
-
+// 回頂端
 $('.gotop').click(function(event) {
     event.preventDefault();
     $('html, body').animate({
@@ -166,8 +167,11 @@ $('.gotop').click(function(event) {
     return false;
 });
 
-
-// iframe
-// $.get('https://turn.shopping.friday.tw/', function(data) {
-//     $('.turn_body').html(data);
-// });
+// shadow DOM
+const shadowRoot = document.getElementById('turn_body').attachShadow({mode: 'open'});
+const iframe = document.createElement('iframe');
+iframe.src = 'https://go.shopping.friday.tw/cycle/turn/?d=1';
+shadowRoot.appendChild(iframe);
+iframe.style.width = '368px';
+iframe.style.height = '680px';
+iframe.style.border = 'none';
