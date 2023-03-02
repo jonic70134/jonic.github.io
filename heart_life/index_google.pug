@@ -53,54 +53,30 @@ html
                 p 以下商品是專門為您特別挑選，有的商品會附有個人對品折價券
                 p 請於 #[span 23:59] 前完成購買，即可享有個人個人折價優惠
             .items
-                a.item.sm(href='#')
-                        .photo
-                            img(src='img/05_13_182x240.jpg', alt='商品名稱', title='商品名稱')
-                        .info
-                            .cupn
-                                h3.name 商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品
-                                .cupn_block
-                                    .cupn_t 個人對品折價券
-                                    .cupn_ticket
-                                        .cupn_bg
-                                            .cupn_dur 07/13 23:59止
-                                            .cupn_price $1,000 
-                            .nor
-                                .nor_t 市價
-                                .nor_price $99,999
-                            .dis
-                                .dis_net
-                                    .dis_t 網路價
-                                    .dis_price $29,999
-                                img(src="img/cupn_arrow.svg")
-                                .dis_net
-                                    .dis_af 折後
-                                    .dis_af_price $29,899
                 mixin item(prod_pic)
                     a.item.sm(href='#')
                         .photo
                             img(src='img/'+ prod_pic +'.jpg', alt='商品名稱', title='商品名稱')
                         .info
-                            .cupn
-                                h3.name 商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品
+                            .name_block
+                                h3.name 商品名稱商品名稱商品商品名稱商品名稱商品名稱商品商品商品名稱商品名稱商品商品名稱商品名稱商品名稱商品商品
+                            .price_area
+                                .price_b
+                                    .nor
+                                        .nor_t 市價
+                                        .nor_price $99,999
+                                    .dis
+                                        .dis_net
+                                            .dis_t 網路價
+                                            .dis_price $29,999
                                 .cupn_block
                                     .cupn_t 個人對品折價券
                                     .cupn_ticket
                                         .cupn_bg
                                             .cupn_dur 07/13 23:59止
                                             .cupn_price $1,000 
-                            .nor
-                                .nor_t 市價
-                                .nor_price $999,999
-                            .dis
-                                .dis_net
-                                    .dis_t 網路價
-                                    .dis_price $299,999
-                                img(src="img/cupn_arrow.svg")
-                                .dis_net
-                                    .dis_af 折後
-                                    .dis_af_price $298,999
-                +item('250_02')
+                                
+                +item('250_03')
                 +item('250_03')
                 +item('250_04')
                 +item('250_05')
@@ -109,3 +85,4 @@ html
                 +item('250_08')
                 +item('250_09')
                 +item('250_10')
+                +item('250_07')
