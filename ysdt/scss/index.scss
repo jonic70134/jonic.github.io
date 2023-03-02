@@ -354,9 +354,19 @@
 }
 
 .ad_banner{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     margin-top:15px;
-    img{
+    a,img{
         display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    &.multi{
+        img{
+            aspect-ratio: 1;
+        }
     }
 }
 .spec_area{
