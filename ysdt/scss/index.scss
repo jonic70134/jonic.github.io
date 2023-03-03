@@ -118,12 +118,30 @@
     }
 }
 .spec_duo{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 820px;
     .spec_prod.a1{
         .spec_r_block{
             margin: 0 0 5px;
         }
         .per_price{
             padding: 5px 0 0;
+        }
+    }
+    .spec_prod{
+        height: 280px;
+        .swiper-container{
+            padding: 15px 20px 20px;
+            box-sizing: border-box;
+        }
+        .spec_l{
+            position: relative;
+            img{
+                width: 250px;
+                height: 250px;
+            }
         }
     }
 }
@@ -429,26 +447,6 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     margin: 10px 0 20px;
-}
-.spec_duo{
-    width: 820px;
-    .spec_prod{
-        height: 280px;
-        .swiper-container{
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .spec_l{
-            position: relative;
-            img{
-                width: 250px;
-                height: 250px;
-            }
-        }
-        .spec_r_block{
-            margin: 0 0 20px;
-        }
-    }
 }
 .turn_body{
     width:380px ;
