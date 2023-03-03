@@ -18,14 +18,6 @@ html
 							.sepc_single
 								.sepc_single_slide.swiper-container
 									.swiper-wrapper
-										mixin slider(big)
-											.swiper-slide(href='item.html')
-												.sepc_single_block
-													a(href="item.html").spec_l
-														img(src='img/sample/'+ big+'.jpg', alt='商品名稱', title='商品名稱')
-										+slider('820x380_03')
-										+slider('820x380_01')
-										+slider('820x380_02')
 										mixin slidertwo(bkg,one,two)
 											.swiper-slide(href='item.html')
 												.sepc_two_block(style='background:#eee url(img/sample/'+bkg+'.jpg)')
@@ -39,11 +31,21 @@ html
 														.slide_price
 															.price_t 網路價
 															.price $2,999
-										+slidertwo('bkg_01','300x300_01.jpg','300x300_02.jpg')
-										+slidertwo('bkg_02','nb.png','tv.png')
+										+slidertwo('bkg_13','nb.png','tv.png')
+										+slidertwo('bkg_13','item_019.jpg','item_017.jpg')
+										+slidertwo('bkg_07','300x300_01.jpg','300x300_02.jpg')
+										+slidertwo('bkg_07','nb.png','tv.png')
 										+slidertwo('bkg_03','nb.png','tv.png')
 										+slidertwo('bkg_04','300x300_01.jpg','300x300_02.jpg')
 										+slidertwo('bkg_05','nb.png','tv.png')
+										mixin slider(big)
+											.swiper-slide(href='item.html')
+												.sepc_single_block
+													a(href="item.html").spec_l
+														img(src='img/sample/'+ big+'.jpg', alt='商品名稱', title='商品名稱')
+										+slider('820x380_03')
+										+slider('820x380_01')
+										+slider('820x380_02')
 										mixin slidertwo(gradient1,gradient2,one,two)
 											.swiper-slide(href='item.html')
 												.sepc_two_block(style='background: linear-gradient('+gradient1+', '+gradient2+');')
@@ -71,7 +73,7 @@ html
 										
 									.icon.icon_arrow.slide_btn_r
 									.icon.icon_arrow.slide_btn_l
-							.spec_prod 
+							.spec_prod.a1
 								.spec_slide.swiper-container
 									.swiper-wrapper
 										mixin slider(big,small_top,small_bot)
@@ -79,11 +81,18 @@ html
 												.spec_block
 													a(href="item.html").spec_l
 														img(src='img/sample/'+ big+'.jpg', alt='商品名稱', title='商品名稱')
+														.spec_prod_price
+															.price $999,999
 													.spec_r 
 														a(href="item.html").spec_r_block
 															img(src='img/sample/'+ small_top+'.jpg', alt='商品名稱', title='商品名稱')
+															.per_price
+																.price $999,999
 														a(href="item.html").spec_r_block
 															img(src='img/sample/'+ small_bot+'.jpg', alt='商品名稱', title='商品名稱')
+															.per_price
+																.price $999,999
+															
 										+slider('240_01','03_08_100','03_09_100')
 										+slider('240_02','03_02_100','03_03_100')
 										+slider('03_04_240','03_05_100','03_06_100')

@@ -2260,11 +2260,12 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-width: 340px;
   height: 340px;
 }
 .sepc_two_block img {
   display: block;
-  max-width: 340px;
+  width: 340px;
   max-height: 340px;
 }
 
@@ -2296,6 +2297,8 @@ button.swiper-pagination-bullet {
   width: 100%;
   padding: 5px 10px;
   background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .slide_price .price_t {
   margin: 0 5px 0 0;
@@ -2317,6 +2320,36 @@ button.swiper-pagination-bullet {
 }
 .slide_price.white .price {
   color: #d00;
+}
+
+.spec_duo .spec_prod.a1 .spec_r_block {
+  margin: 0 0 5px;
+}
+.spec_duo .spec_prod.a1 .per_price {
+  padding: 5px 0 0;
+}
+
+.spec_prod_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 96.1%;
+  padding: 5px 10px;
+  margin: 0 0 0 5px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0 0 5px 5px;
 }
 
 .pay_dis {
@@ -2697,9 +2730,12 @@ button.swiper-pagination-bullet {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.spec_duo .spec_prod .spec_l {
+  position: relative;
+}
 .spec_duo .spec_prod .spec_l img {
-  width: 230px;
-  height: 230px;
+  width: 250px;
+  height: 250px;
 }
 .spec_duo .spec_prod .spec_r_block {
   margin: 0 0 20px;
@@ -2745,6 +2781,8 @@ button.swiper-pagination-bullet {
   width: 240px;
   height: 240px;
   border: 5px solid #ddd5cc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;

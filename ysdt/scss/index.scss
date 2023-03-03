@@ -55,11 +55,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        min-width: 340px;
         height: 340px;
     }
     img{
         display: block;
-        max-width: 340px;
+        width: 340px;
         max-height: 340px;
     }
 }
@@ -93,6 +94,7 @@
     width: 100%;
     padding: 5px 10px;
     background-color: rgba($color: #000000, $alpha: .7);
+    box-sizing: border-box;
     .price_t{
         margin: 0 5px 0 0 ;
         color: white;
@@ -114,6 +116,29 @@
             color:#d00;
         }
     }
+}
+.spec_duo{
+    .spec_prod.a1{
+        .spec_r_block{
+            margin: 0 0 5px;
+        }
+        .per_price{
+            padding: 5px 0 0;
+        }
+    }
+}
+.spec_prod_price{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    position: absolute;bottom:8px;left:0;
+    width: 96.1%;
+    padding: 5px 10px;
+    margin: 0 0 0 5px;
+    color: white;
+    background-color: rgba($color: #000000, $alpha: .7);
+    box-sizing: border-box;
+    border-radius: 0 0 5px 5px;
 }
 .pay_dis{
     display:flex;
@@ -414,9 +439,10 @@
             box-sizing: border-box;
         }
         .spec_l{
+            position: relative;
             img{
-                width: 230px;
-                height: 230px;
+                width: 250px;
+                height: 250px;
             }
         }
         .spec_r_block{
@@ -454,6 +480,7 @@
     img{
         width: 240px;height:240px;
         border:5px solid #ddd5cc;
+        box-sizing: border-box;
         @include border-radius(10px)
     }
     .spec_info{
