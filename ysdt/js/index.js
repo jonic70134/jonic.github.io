@@ -148,22 +148,20 @@ $(".icon_track").click(function(e){
 });
 
 // gotop
-var offset = 100;
-var dur = 500;
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > offset) {
-        $('.gotop').fadeIn(dur);
+    if ($(this).scrollTop() > 300) {
+        $('.gotop').fadeIn(500);
     } else {
-        $('.gotop').fadeOut(dur);
+        $('.gotop').stop().fadeOut(500);
     }
 });
 // 回頂端
-$('.gotop').click(function(event) {
-    event.preventDefault();
+$('.gotop').click(function(e) {
+    e.preventDefault();
     $('html, body').animate({
         scrollTop: 0
-    }, dur);
+    }, 500);
     return false;
 });
 

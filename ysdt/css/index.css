@@ -2280,6 +2280,45 @@ button.swiper-pagination-bullet {
   mask-size: 300px 300px;
 }
 
+.slide_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.slide_price .price_t {
+  margin: 0 5px 0 0;
+  color: white;
+  font-size: 0.9rem;
+}
+.slide_price .price {
+  color: #ff0;
+  font-size: 1.2rem;
+}
+.slide_price .price::first-letter {
+  font-size: 0.9rem;
+}
+.slide_price.white {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.slide_price.white .price_t {
+  color: #333;
+}
+.slide_price.white .price {
+  color: #d00;
+}
+
 .pay_dis {
   display: -webkit-box;
   display: -ms-flexbox;
