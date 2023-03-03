@@ -7,10 +7,18 @@
 
 
 .body_container{
+    min-height: 100vh;
     background: #eee;
 }
 .red{
     color:#d00;
+}
+.red_line{
+    color:#d00;
+    text-decoration: underline;
+}
+.bold{
+    font-weight: 700;
 }
 .blue{
     color:#06c;
@@ -23,7 +31,11 @@
     display: flex;
     justify-content: center;
 }
-
+.col_center{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
 .mem_order_detail{
     margin:0 0 50px;
 }
@@ -34,8 +46,8 @@
     margin:10px 0;
     padding:25px 10px 10px;
     font-size: 1.5rem;
-    background: white;
-    border-bottom:1px solid #ccc;
+    // background: white;
+    // border-bottom:1px solid #ccc;
     small{
         font-size:.9rem;
     }
@@ -56,6 +68,7 @@
     background: white;
     box-shadow: 1px 1px 10px #ccc;
     a{
+        font-size:.8rem;
         color:#06c;
         text-decoration: underline;
         &.cancel{
@@ -79,15 +92,72 @@
     p{
         color:#333;
         margin:0 108px 0 12px;
-        font-size:.8rem;
     }
 }
-.mem_chk{
+.order_tab{
     display: grid;
+    grid-template-rows: 30px 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 400px 1fr 1fr;
+    grid-gap:5px 0;
+    align-items: center;
+    margin:10px auto;
+    font-size:.8rem;
+    line-height: 1.2;
+}
+[class*="ord_head"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    background: #c5f1ff;
+    box-sizing: border-box;
+    &.grey{
+        background: #ccc;
+    }
+    &.complete{
+        background: #ffcccc;
+    }
+}
+.ord_detail{
+    margin: 0 0 0 40px;
+}
+
+
+
+
+.mem_chk{
+    display: none;
     grid-template-rows: 30px 90px;
-    grid-template-columns: 100px 400px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100px 300px 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap:5px 0;
     margin:10px auto;
+    
+}
+[ID*="chk_open_detail"]{
+    display: none;
+}
+[ID*="chk_open_detail"]:checked{
+    & + .mem_chk{
+        display: grid;
+    }
+    // & ~ .chk_open_lb{
+    //     &:after{
+    //         display: block;
+    //         content:'展合明細▲';
+    //     }
+    // }
+}
+.chk_open_lb{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: .8rem;
+    color:#06c;
+    // color: darken($color: #c5f1ff, $amount: 55) ;
+    // back{ground-color:darken($color: #c5f1ff, $amount: 50) ;
+    &:after{
+        display: block;
+        content:'展合明細▼';
+    }
 }
 [class*="mem_block"]{
     display: flex;flex-flow:row ;align-items: center;
@@ -95,13 +165,20 @@
     padding: 10px;
     color:#333;
     background: white;
+    font-size:.9rem;
     line-height: 1.4;
     box-sizing: border-box;
+    &.grey{
+        background: #ccc;
+    }
+    &.complete{
+        background: #ffcccc;
+    }
 }
 .item_head{
     padding:10px;
     font-size:.8rem;
-    background: #f4f2e7;
+    background: #c5f1ff;
 }
 .item_img{
     display: flex;
@@ -109,17 +186,22 @@
     justify-content: center;
     img{
         max-width: 80px;
-        max-height: 90px;
+        max-height: 80px;
     }
 }
 .item_invoice{
-    .blue{
-        font-size: 1rem;
-    }
+    color:black;
+    text-decoration: underline;
+}
+.item_st,.item_else{
+    display: flex;
+    flex-flow:column ;
 }
 .item_name{
     display: flex;
-    align-items: center;
+    flex-flow:column ;
+    align-items: flex-start;
+    justify-content: flex-start;
     p{
         display: -webkit-box;
         -webkit-line-clamp: 3;
