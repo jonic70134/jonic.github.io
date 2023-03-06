@@ -1506,6 +1506,10 @@ a.gotop:after {
   color: red;
   font-weight: 700;
 }
+.lightbox-target .com_s_price {
+  color: red;
+  font-size: 1rem;
+}
 .lightbox-target .com_dis_price {
   position: relative;
   color: red;
