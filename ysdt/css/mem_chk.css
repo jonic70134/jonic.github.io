@@ -1085,6 +1085,7 @@ a.gotop:after {
           box-shadow: 1px 1px 10px #ccc;
 }
 .mem_order_info a {
+  margin: 0 0 0 1px;
   font-size: 0.8rem;
   color: #06c;
   text-decoration: underline;
@@ -1449,104 +1450,82 @@ a.gotop:after {
   max-height: 100%;
   max-width: 400px;
 }
-.lightbox-target .con_t {
-  width: 100%;
-  padding: 0 0 10px;
-  font-size: 1rem;
-  font-weight: 700;
-  text-align: center;
-  border-bottom: 1px solid #ccc;
-}
 .lightbox-target .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 90%;
-  height: auto;
-  padding: 10px;
-  background: #fff;
-  color: #333;
-  margin: auto;
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
+  width: 90%;
+  max-width: 0%;
+  height: auto;
+  max-height: 0%;
+  margin: auto;
+  padding: 20px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+  background: #fff;
+  border: 3px solid #fff;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  max-height: 0%;
-  max-width: 0%;
-  border: 3px solid #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-  line-height: 1.4;
 }
 .lightbox-target .con_m {
-  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 8px 10px 0;
 }
-.lightbox-target .con_m_t {
+.lightbox-target .con_m.grey {
+  color: #999;
+}
+.lightbox-target .com_price_t {
+  font-weight: 700;
+}
+.lightbox-target .com_price_sm {
+  font-size: 0.9rem;
+  color: #999;
+}
+.lightbox-target .com_price {
   font-size: 1.1rem;
-  text-align: center;
-  letter-spacing: 1px;
+  color: red;
+  font-weight: 700;
 }
-.lightbox-target .con_input {
-  margin: 10px 0;
-  padding: 5px;
-  text-align: center;
-  font-size: 1.5rem;
-  background: #eee;
-  letter-spacing: 2px;
-  border: none;
+.lightbox-target .com_dis_price {
+  position: relative;
+  color: red;
 }
-.lightbox-target .con_long {
-  height: 350px;
-  margin: 10px 0;
-  overflow: auto;
-  line-height: 1.6;
+.lightbox-target .com_dis_price:after {
+  content: "-";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-.lightbox-target .con_long p {
-  color: #888;
-  font-size: 0.8rem;
-}
-.lightbox-target .con_foot {
-  color: black;
-  margin: 20px 0 10px;
-  font-size: 0.7rem;
-  text-align: center;
-}
-
-.box_btn_grey, .box_btn_red {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 10px 30px;
-  text-align: center;
-  color: white;
-  background-color: #f5281d;
-  border-radius: 5px;
-  letter-spacing: 2px;
-}
-
-.box_btn_grey {
-  margin: 0 20px 0 0;
-  background-color: #999;
+.lightbox-target .con_addr {
+  line-height: 1.8;
 }
 
 .lightbox-close {
   position: absolute;
-  top: 8px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   color: #aaa;
   border: 1px solid #999;
   border-radius: 50%;
@@ -1558,10 +1537,10 @@ a.gotop:after {
   content: "";
   position: absolute;
   top: 2px;
-  left: 10px;
+  left: 8px;
   display: block;
   width: 2px;
-  height: 18px;
+  height: 14px;
   background: #aaa;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -1571,8 +1550,4 @@ a.gotop:after {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-}
-
-.copyright {
-  background: #eee;
 }
