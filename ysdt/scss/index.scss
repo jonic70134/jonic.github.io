@@ -6,6 +6,7 @@
 // @import "partials/cupn";
 @import "partials/page_item";
 @import "partials/cupn";
+@import "partials/turn";
 @import "3rd-party/_swiper.scss";
 .swiper-container{
     height: 100%; 
@@ -447,16 +448,6 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     margin: 10px 0 20px;
-}
-.turn_body{
-    width:380px ;
-    box-sizing: border-box;
-}
-.turn_iframe{
-    display: block;
-    width: 374px;
-    height: 100%;
-    margin: 0 auto;
 }
 .spec_prod{
     margin:15px 0 0;

@@ -99,7 +99,79 @@ html
 										+slider('03_01_240','03_02_100','03_03_100')
 									.swiper-button-next
 									.swiper-button-prev
-						#turn_body
+						//- 轉轉
+						.turn_body
+							.cupn_top
+								.turn_container
+									a.cupn_qr(href="#download")
+										img(src="img/sample/qrcode.svg", alt="qrcode")
+										span 下載APP
+									.topic
+										img(src="img/sample/dtype.svg", alt="")
+									a.cupn_chg(href="#")
+										img(src="img/sample/turn.svg", alt="")
+										span 再轉
+							.banner
+								img(src="img/banner.svg", alt="快速購物")
+							.cupn_items#refresh
+								a.cupn_item.cupn_ance(href="#").roll-in-left
+									img.cupn_ance_img(src="img/sample/promotion.png", alt="三版位圖")
+								a.cupn_item(href='#').purple.roll-in-left
+									.photo
+										img.cupnimg(src='img/sample/04_01_80.jpg', alt='商品名稱', title='商品名稱')
+									.info
+										.cupn
+											h3.name 商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品商品名稱商品名稱商品
+											.cupn_block
+												.cupn_t 個人對品折價券
+												.cupn_ticket
+													.cupn_price $9,999
+										.nor
+											.nor_t 市價
+											.nor_price $999,999
+										.dis
+											.dis_net
+												.dis_t 網路價
+												.dis_price $299,999
+											img(src="img/cupn_arrow.svg")
+											.dis_net
+												.dis_af 折後
+												.dis_af_price $298,999
+								mixin cupnimg(src,name,cupnprice,oriprice,netprice,disprice)
+									a.cupn_item(href='#').rotate-in-hor
+										.photo
+											img.cupnimg(src='img/sample/'+ src +'.jpg', alt='商品名稱', title='商品名稱')
+										.info
+											.cupn
+												h3.name=name
+												.cupn_block
+													.cupn_t 個人對品折價券
+													.cupn_ticket
+														<!--.cupn_dur 07/13 23:59止-->
+														.cupn_price=cupnprice 
+											.nor
+												.nor_t 市價
+												.nor_price=oriprice
+											.dis
+												.dis_net
+													.dis_t 網路價
+													.dis_price=netprice
+												img(src="img/cupn_arrow.svg")
+												.dis_net
+													.dis_af 折後
+													.dis_af_price=disprice
+								+cupnimg('04_03_80','GaGa 摩洛哥護髮油100ml2入(多款可選)+木質氣墊梳【再轉轉】','$1,000','$8,390','$7,900','$6,900')
+								+cupnimg('04_02_80','女王節特惠組【凡購買即贈2包貼布】康森 COMESAN 石墨烯隱形護腰','$1,000','$8,390','$7,900','$6,900')
+								+cupnimg('04_03_80','可遙控溫熱','$99','$2,390','$790','$649')
+								+cupnimg('04_04_80','健身大師-第三代超強雙核心美腿機—琥珀限定款','$1','$390','$90','$49')
+								+cupnimg('04_01_80','GaGa 摩洛哥護髮油100ml2入(多款可選)+木質氣墊梳【再轉轉】','$1,000','$2,390','$790','$649')
+								+cupnimg('04_02_80','女王節特惠組【凡購買即贈2包貼布】康森 COMESAN 石墨烯隱形護腰','$100','$2,390','$790','$649')
+								+cupnimg('04_03_80','可遙控溫熱多段按摩器','$99','$2,390','$790','$649')
+								+cupnimg('04_04_80','健身大師-第三代超強雙核心美腿機—琥珀限定款','$1','$390','$90','$49')
+								+cupnimg('04_01_80','GaGa 摩洛哥護髮油100ml2入(多款可選)+木質氣墊梳【再轉轉】','$1,000','$2,390','$790','$649')
+								+cupnimg('04_02_80','女王節特惠組【凡購買即贈2包貼布】康森 COMESAN 石墨烯隱形護腰','$100','$2,390','$790','$649')
+								+cupnimg('04_03_80','可遙控溫熱多段按摩器','$99','$2,390','$790','$649')
+								+cupnimg('04_04_80','健身大師-第三代超強雙核心美腿機—琥珀限定款','$1','$390','$90','$49')
 					.per_duoslide.duo_1
 						.per_info
 							a.per_l(href='item.html')

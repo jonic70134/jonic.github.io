@@ -165,11 +165,19 @@ $('.gotop').click(function(e) {
     return false;
 });
 
+// 再轉轉按鈕
+$(".cupn_chg img").click(function() {
+    $(this).addClass('rotate-in-center').on("animationend", function(){
+        $(this).removeClass('rotate-in-center');
+    });
+    $(".cupn_items").load("index.html #refresh > *");
+});
+
 // shadow DOM
-const shadowRoot = document.getElementById('turn_body').attachShadow({mode: 'open'});
-const iframe = document.createElement('iframe');
-iframe.src = 'https://go.shopping.friday.tw/cycle/turn/?d=1';
-shadowRoot.appendChild(iframe);
-iframe.style.width = '368px';
-iframe.style.height = '680px';
-iframe.style.border = 'none';
+// const shadowRoot = document.getElementById('turn_body').attachShadow({mode: 'open'});
+// const iframe = document.createElement('iframe');
+// iframe.src = 'https://go.shopping.friday.tw/cycle/turn/?d=1';
+// shadowRoot.appendChild(iframe);
+// iframe.style.width = '368px';
+// iframe.style.height = '680px';
+// iframe.style.border = 'none';
