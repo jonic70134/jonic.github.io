@@ -8,6 +8,7 @@
 
 .body_container{
     min-height: 100vh;
+    padding:0 0 40px;
     background: #eee;
 }
 .red{
@@ -197,6 +198,7 @@
 .item_st,.item_else{
     display: flex;
     flex-flow:column ;
+    justify-content: center;
 }
 .item_name{
     display: flex;

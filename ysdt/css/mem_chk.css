@@ -996,6 +996,7 @@ a.gotop:after {
 
 .body_container {
   min-height: 100vh;
+  padding: 0 0 40px;
   background: #eee;
 }
 
@@ -1403,6 +1404,9 @@ a.gotop:after {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .item_name {
