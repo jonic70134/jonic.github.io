@@ -603,16 +603,23 @@ label{
 
 .copyright{
     padding-top: 30px;
-    text-align: right;
-    color:#888;
-    font-size: 0.75em;
-    word-break: break-word;
-	word-wrap: break-word;
+    font-size: 0.75rem;
+	.foot_nav{
+		display: flex;
+		justify-content: space-evenly;
+		padding: 20px 0;
+		background: #ece8df;
+		a{
+			color:black;
+			text-decoration: none;
+		}
+	}
 	small{
 		display: block;
 		padding:8px;
-		color:#333;
-		text-align: right;
+		text-align: center;
+		color:#888;
+		background: #333;
 	}
     a{
         color:#06c;

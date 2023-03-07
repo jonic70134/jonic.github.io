@@ -888,17 +888,28 @@ label {
 
 .copyright {
   padding-top: 30px;
-  text-align: right;
-  color: #888;
-  font-size: 0.75em;
-  word-break: break-word;
-  word-wrap: break-word;
+  font-size: 0.75rem;
+}
+.copyright .foot_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 20px 0;
+  background: #ece8df;
+}
+.copyright .foot_nav a {
+  color: black;
+  text-decoration: none;
 }
 .copyright small {
   display: block;
   padding: 8px;
-  color: #333;
-  text-align: right;
+  text-align: center;
+  color: #888;
+  background: #333;
 }
 .copyright a {
   color: #06c;
