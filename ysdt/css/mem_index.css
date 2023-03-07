@@ -1305,7 +1305,7 @@ a.gotop:after {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   font-family: "icomoon";
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #aaa;
 }
 [class*=mem_block] img {
