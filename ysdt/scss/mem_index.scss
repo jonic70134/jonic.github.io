@@ -47,10 +47,11 @@
     color:#333;
     background: white;
     &::after{
-        content:'';
+        content:'\e93f';
         position: absolute;top:50%;right:25px;transform: translateY(-50%);
-        width:12px;height:22px;
-        background: url('../img/icon_dept_arrow.svg') no-repeat center;
+        font-family: "icomoon";
+        font-size:1.2rem;
+        color:#aaa;
     }
     img{
         width: 30px;
