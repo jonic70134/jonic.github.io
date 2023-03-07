@@ -17,6 +17,8 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body {
@@ -2541,8 +2543,8 @@ button.swiper-pagination-bullet {
   padding: 6px 0 10px;
 }
 .spec_prod .spec_r_block img {
-  width: 80px;
-  height: 80px;
+  width: 86px;
+  height: 86px;
 }
 
 .item_t {
