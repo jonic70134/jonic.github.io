@@ -26,10 +26,6 @@
     font-size:.7rem;
     color:#06c;
 }
-.icon_track_plus:before{
-    margin-right:3px;
-    font-size:.8rem;
-}
 .btn-fav{
     display: flex;
     align-items: center;
@@ -54,11 +50,6 @@
 .btn-carted{
     color:white;
     background:#e00;
-}
-.icon_track:before{
-    margin-right:3px;
-    color:#666;
-    font-size:1.5rem;
 }
 .icon_plus:before,.icon_minus:before{
     font-size: .7rem;
@@ -262,7 +253,15 @@
     line-height: 1.9;
     font-size: .85rem;
     margin: 10px 0;
-   
+    .icon_track_plus:before{
+        margin-right:3px;
+        font-size:.8rem;
+    }
+    .icon_track:before{
+        margin-right:3px;
+        color:#666;
+        font-size:1.5rem;
+    }
     .item_full{
         display: flex;
         

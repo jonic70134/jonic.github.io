@@ -603,7 +603,7 @@ label {
   padding: 8px;
 }
 .head_func .my_account {
-  margin: 0 5px;
+  margin: 0 8px 0 0;
   text-align: center;
 }
 .head_func .my_account span {
@@ -2125,11 +2125,6 @@ button.swiper-pagination-bullet {
   color: #06c;
 }
 
-.icon_track_plus:before {
-  margin-right: 3px;
-  font-size: 0.8rem;
-}
-
 .btn-fav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2160,12 +2155,6 @@ button.swiper-pagination-bullet {
 .btn-carted {
   color: white;
   background: #e00;
-}
-
-.icon_track:before {
-  margin-right: 3px;
-  color: #666;
-  font-size: 1.5rem;
 }
 
 .icon_plus:before, .icon_minus:before {
@@ -2422,6 +2411,15 @@ button.swiper-pagination-bullet {
   line-height: 1.9;
   font-size: 0.85rem;
   margin: 10px 0;
+}
+.pc-item-main .icon_track_plus:before {
+  margin-right: 3px;
+  font-size: 0.8rem;
+}
+.pc-item-main .icon_track:before {
+  margin-right: 3px;
+  color: #666;
+  font-size: 1.5rem;
 }
 .pc-item-main .item_full {
   display: -webkit-box;
