@@ -1,0 +1,80 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/mem_chk.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug 
+			.site-main
+				.container
+					.mem_chk_t
+						a.back(href="mem_chk.html")
+							i.icon.icon_swiper_prev
+							p.chk_order 查訂單 
+								small (聯絡客服)
+						p.red 提醒您:本公司不會主動打電話告知您任何有付款修改的問題,若接到可疑電話請拒絕回應
+					
+					.mem_chk_ask
+						.mem_chk_return_t 查詢退訂/退款
+						.mem_ask_container
+							.ord_num 訂單序號：#[strong 20230130123456]
+							.ord_return_grid
+								.ord_return_head
+									input#return_chk1(type="checkbox", name="" checked)
+									label(for="return_chk1") 退訂申請
+								.ord_return_head
+									input#return_chk2(type="checkbox", name="" checked)
+									label(for="return_chk2") 貨物在賣方手上
+								.ord_return_head
+									input#return_chk3(type="checkbox", name="" checked)
+									label(for="return_chk3") 發票憑證確認
+								.ord_return_head
+									input#return_chk4(type="checkbox", name="" checked)
+									label(for="return_chk4") 準備退款
+								.ord_return_head
+									input#return_chk5(type="checkbox", name="")
+									label(for="return_chk5") 退款完成
+								.ord_return_td
+									p 2023/03/01
+								.ord_return_td
+									
+								.ord_return_td
+									p 2023/03/02
+								.ord_return_td
+									p 2023/03/10
+									p.price.red $ 31,000
+									p (退還至原信用卡帳戶)
+								.ord_return_td
+							
+							.ord_info_t 退款明細
+							.ord_detail_grid
+								.ord_detail_head 項次
+								.ord_detail_head 商品名稱
+								.ord_detail_head 數量
+
+								.ord_detail_td 1
+								.ord_detail_td 【飛利浦 PHILIPS】醒香智選IH大火力8人份電子鍋(HD4539)
+								.ord_detail_td 1
+
+								.ord_detail_td 2
+								.ord_detail_td 【飛利浦 PHILIPS】醒香智選IH大火力8人份電子鍋(HD4539)
+								.ord_detail_td 2
+
+
+							.ord_info_t 取件人資訊
+							.ord_detail_grid
+								.ord_detail_head 姓名
+								.ord_detail_head 電話
+								.ord_detail_head 地址
+
+								.ord_detail_td 陳*民
+								.ord_detail_td 0982****76
+								.ord_detail_td **************60巷2弄2號3樓
+
+							.ord_btn
+								a(href="mem_chk.html") 返回 
+
+	include src/_foot.pug
+
