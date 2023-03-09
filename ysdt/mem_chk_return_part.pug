@@ -25,7 +25,7 @@ html
 								.ord_info_head 項次
 								.ord_info_head 請勾選
 								.ord_info_head 商品名稱
-								.ord_info_head 原購買數量
+								.ord_info_head 購買數量
 								.ord_info_head 退訂數量
 								.ord_info_head 部分退訂
 
@@ -66,7 +66,7 @@ html
 								.ord_info_head 項次
 								.ord_info_head 請勾選
 								.ord_info_head 商品名稱
-								.ord_info_head 原購買數量
+								.ord_info_head 購買數量
 								.ord_info_head 退訂數量
 								.ord_info_head 部分退訂
 
@@ -109,6 +109,20 @@ html
 								p #[strong 聯絡人]：施**
 								p #[strong 連絡電話]：0982****76
 								p #[strong 取件地址]：**************60巷2弄2號3樓
+							.ord_info_t 退款資訊
+							.ord_bank
+								.ord_bank_line
+									p 銀行名稱：
+									select.ord_info_select(name="")
+										option(value="1") 請選擇銀行
+									p 分行名稱：
+									select.ord_info_select(name="")
+										option(value="1") 請選擇分行
+								.ord_bank_line
+									p 戶名：
+									input(type="text")
+									p 帳號：
+									input(type="text")
 							.ord_line.agree
 								input#agree(type="checkbox", name="")
 								label(for="agree")

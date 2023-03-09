@@ -336,7 +336,8 @@
     margin:0 0 10px;
     padding: 5px 10px;
     font-size: .9rem;
-    background: #eee;
+    color: #eee;
+    background: #333;
 }
 .ord_info_grid{
     display: grid;
@@ -460,15 +461,14 @@
         }
     }
     .ord_reason{
-        display: block;
         margin: 20px 0;
         border: 0;
     }
     .ord_chos,.ord_des{
-        padding: 0;
+        padding:0 10px 10px 0;
     }
-    .ord_des_area{
-        height: 100px;
+    .ord_info_select{
+        margin: 5px 0 0;
     }
 }
 .ord_btn{
@@ -526,4 +526,21 @@
     line-height: 1.2;
     border-top: 1px solid #ccc;
     border-left: 1px solid #ccc;
+}
+
+.ord_bank_line{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 500px;
+    margin:  0 0 10px;
+    p{
+        width:129px;
+        text-align: right;
+    }
+    select,input{
+        width: 120px;
+        margin: 0 0px 0 0;
+        padding:3px 10px;
+    }
 }

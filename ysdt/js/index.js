@@ -148,7 +148,6 @@ $(".icon_track").click(function(e){
 });
 
 // gotop
-
 $(window).scroll(function() {
     if ($(this).scrollTop() > 300) {
         $('.gotop').fadeIn(500);
@@ -156,7 +155,6 @@ $(window).scroll(function() {
         $('.gotop').stop().fadeOut(500);
     }
 });
-// 回頂端
 $('.gotop').click(function(e) {
     e.preventDefault();
     $('html, body').animate({
