@@ -64,8 +64,7 @@
     color:#333;
 }
 .mem_order_info{
-    margin: 15px 0;
-    padding: 10px;
+    margin: 0 0 15px 0;
     background: white;
     box-shadow: 1px 1px 10px #ccc;
     a{
@@ -99,7 +98,7 @@
 .order_tab{
     display: grid;
     grid-template-rows: 30px 30px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 400px 1fr 1fr;
+    grid-template-columns: 140px 140px 140px 83px 1fr 400px 1fr;
     grid-gap:5px 0;
     align-items: center;
     margin:10px auto;
@@ -110,42 +109,61 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 25px;
-    background: #c5f1ff;
-    box-sizing: border-box;
+    height: 100%;
+    background: #cdeeff;
     &.grey{
         background: #ccc;
     }
     &.complete{
         background: #ffcccc;
     }
+    &.yellow{
+        background: #ffffcc;
+    }
 }
 .ord_detail{
     margin: 0 0 0 40px;
 }
-
-
-
-
-.mem_chk{
+.ord_addr{
+    display: flex;
+    align-items: center;
+    padding: 0 0 10px 10px;
+}
+.ord_addr_b{
+    width: 535px;
+    font-size:.8rem;
+    color:#777;
+    line-height: 1.2;
+}
+a.ord_confirm_btn{
+    padding: 5px 8px;
+    text-decoration: none;
+    border:1px solid #06c;
+}
+.mem_chk_tab{
     display: none;
+}
+.mem_chk{
+    display: grid;
     grid-template-rows: 30px 90px;
-    grid-template-columns: 100px 300px 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap:5px 0;
+    grid-template-columns: 400px 130px 100px 90px 110px 1fr 1fr 1fr;
+    grid-gap:0;
     margin:10px auto;
+    border-top:1px solid #ccc;
     
 }
 [ID*="chk_open_detail"]{
     display: none;
 }
 [ID*="chk_open_detail"]:checked{
-    & + .mem_chk{
-        display: grid;
+    & + .mem_chk_tab{
+        display: block;
+        margin:-10px 0 0px;
     }
     // & ~ .chk_open_lb{
     //     &:after{
     //         display: block;
-    //         content:'展合明細▲';
+    //         content:'展合明細▲'; 
     //     }
     // }
 }
@@ -153,7 +171,10 @@
     display: inline-block;
     padding: 5px 10px;
     font-size: .8rem;
-    color:#06c;
+    color:#333;
+    border:1px solid #ccc;
+    border-bottom: 0;
+    border-left: 0;
     // color: darken($color: #c5f1ff, $amount: 55) ;
     // back{ground-color:darken($color: #c5f1ff, $amount: 50) ;
     &:after{
@@ -169,36 +190,34 @@
     background: white;
     font-size:.9rem;
     line-height: 1.4;
-    box-sizing: border-box;
-    &.grey{
-        background: #ccc;
-    }
-    &.complete{
-        background: #ffcccc;
-    }
+    border-bottom:1px solid #ccc;
+    border-right:1px solid #ccc;
+    // &.grey{
+    //     background: #ccc;
+    // }
+    // &.complete{
+    //     background: #ffcccc;
+    // }
 }
 .item_head{
     padding:10px;
     font-size:.8rem;
-    background: #c5f1ff;
 }
 .item_img{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     img{
+        display: block;
+        margin: 0 10px 0 0;
         max-width: 80px;
         max-height: 80px;
     }
 }
-.item_invoice{
-    color:black;
-    text-decoration: underline;
-}
-.item_st,.item_else{
-    display: flex;
-    flex-flow:column ;
-    justify-content: center;
+.item_price{
+    a{
+        margin: 0 0 0 5px;
+    }
 }
 .item_name{
     display: flex;
@@ -210,15 +229,35 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;  
         overflow: hidden;
+        margin: 0 0 5px;
     }
+}
+.item_no{
+    font-weight: 700;
+    font-size:.8rem;
+}
+.item_invoice{
+    a{
+        color:#06c;
+        text-decoration: underline;
+    }
+}
+.item_st,.item_else{
+    display: flex;
+    flex-flow:column ;
+    justify-content: center;
+    a.grey{
+        color:#666;
+        margin: 0 0 10px;
+    }
+}
+a.grey{
+    color:#666;
 }
 .mem_name{
     margin: 10px 0 0;
     font-size:1.4rem;
 }
-
-
-
 
 .lightbox-target {
 	position: fixed;
@@ -532,15 +571,17 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    width: 500px;
     margin:  0 0 10px;
-    p{
-        width:129px;
+    .bank_txt{
+        width:150px;
         text-align: right;
     }
-    select,input{
-        width: 120px;
-        margin: 0 0px 0 0;
-        padding:3px 10px;
+    .bank_td{
+        width: 200px;
+        select,input{
+            width: 100%;
+            margin: 0 0px 0 0;
+            padding:3px 10px;
+        }
     }
 }

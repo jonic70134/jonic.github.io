@@ -112,17 +112,21 @@ html
 							.ord_info_t 退款資訊
 							.ord_bank
 								.ord_bank_line
-									p 銀行名稱：
-									select.ord_info_select(name="")
-										option(value="1") 請選擇銀行
-									p 分行名稱：
-									select.ord_info_select(name="")
-										option(value="1") 請選擇分行
+									.bank_txt 銀行名稱：
+									.bank_td
+										select.ord_info_select(name="")
+											option(value="1") 請選擇銀行
+									.bank_txt 分行名稱：
+									.bank_td
+										select.ord_info_select(name="")
+											option(value="1") 請選擇分行
 								.ord_bank_line
-									p 戶名：
-									input(type="text")
-									p 帳號：
-									input(type="text")
+									.bank_txt 戶名：
+									.bank_td
+										input(type="text")
+									.bank_txt 帳號：
+									.bank_td
+										input(type="text")
 							.ord_line.agree
 								input#agree(type="checkbox", name="")
 								label(for="agree")

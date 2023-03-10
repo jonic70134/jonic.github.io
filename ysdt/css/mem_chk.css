@@ -943,7 +943,7 @@ label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 50px 5px;
+  padding: 20px 50px;
   font-size: 0.75rem;
   color: #555;
   background: #ece8df;
@@ -955,14 +955,16 @@ label {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  width: 510px;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .foot_link a {
   display: block;
   width: 75px;
-  margin: 0 50px 15px 0;
+  margin: 0 50px 0 0;
   color: black;
   text-decoration: none;
 }
@@ -988,8 +990,8 @@ label {
 a.gotop {
   display: none;
   position: fixed;
-  right: 0;
-  bottom: 20px;
+  right: 10px;
+  bottom: 80px;
   z-index: 50;
   padding: 10px;
   color: #eee;
@@ -1157,8 +1159,7 @@ a.gotop:after {
 }
 
 .mem_order_info {
-  margin: 15px 0;
-  padding: 10px;
+  margin: 0 0 15px 0;
   background: white;
   -webkit-box-shadow: 1px 1px 10px #ccc;
           box-shadow: 1px 1px 10px #ccc;
@@ -1203,8 +1204,8 @@ a.gotop:after {
   display: grid;
   -ms-grid-rows: 30px 5px 30px;
   grid-template-rows: 30px 30px;
-  -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr 0 400px 0 1fr 0 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 400px 1fr 1fr;
+  -ms-grid-columns: 140px 0 140px 0 140px 0 83px 0 1fr 0 400px 0 1fr;
+  grid-template-columns: 140px 140px 140px 83px 1fr 400px 1fr;
   grid-gap: 5px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1294,10 +1295,8 @@ a.gotop:after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 25px;
-  background: #c5f1ff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  height: 100%;
+  background: #cdeeff;
 }
 [class*=ord_head].grey {
   background: #ccc;
@@ -1305,19 +1304,51 @@ a.gotop:after {
 [class*=ord_head].complete {
   background: #ffcccc;
 }
+[class*=ord_head].yellow {
+  background: #ffffcc;
+}
 
 .ord_detail {
   margin: 0 0 0 40px;
 }
 
-.mem_chk {
+.ord_addr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 10px 10px;
+}
+
+.ord_addr_b {
+  width: 535px;
+  font-size: 0.8rem;
+  color: #777;
+  line-height: 1.2;
+}
+
+a.ord_confirm_btn {
+  padding: 5px 8px;
+  text-decoration: none;
+  border: 1px solid #06c;
+}
+
+.mem_chk_tab {
   display: none;
-  -ms-grid-rows: 30px 5px 90px;
+}
+
+.mem_chk {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 30px 0 90px;
   grid-template-rows: 30px 90px;
-  -ms-grid-columns: 100px 0 300px 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr;
-  grid-template-columns: 100px 300px 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 5px 0;
+  -ms-grid-columns: 400px 0 130px 0 100px 0 90px 0 110px 0 1fr 0 1fr 0 1fr;
+  grid-template-columns: 400px 130px 100px 90px 110px 1fr 1fr 1fr;
+  grid-gap: 0;
   margin: 10px auto;
+  border-top: 1px solid #ccc;
 }
 
 .mem_chk > *:nth-child(1) {
@@ -1404,16 +1435,19 @@ a.gotop:after {
   display: none;
 }
 
-[ID*=chk_open_detail]:checked + .mem_chk {
-  display: -ms-grid;
-  display: grid;
+[ID*=chk_open_detail]:checked + .mem_chk_tab {
+  display: block;
+  margin: -10px 0 0px;
 }
 
 .chk_open_lb {
   display: inline-block;
   padding: 5px 10px;
   font-size: 0.8rem;
-  color: #06c;
+  color: #333;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  border-left: 0;
 }
 .chk_open_lb:after {
   display: block;
@@ -1437,20 +1471,13 @@ a.gotop:after {
   background: white;
   font-size: 0.9rem;
   line-height: 1.4;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-[class*=mem_block].grey {
-  background: #ccc;
-}
-[class*=mem_block].complete {
-  background: #ffcccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 .item_head {
   padding: 10px;
   font-size: 0.8rem;
-  background: #c5f1ff;
 }
 
 .item_img {
@@ -1460,31 +1487,19 @@ a.gotop:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .item_img img {
+  display: block;
+  margin: 0 10px 0 0;
   max-width: 80px;
   max-height: 80px;
 }
 
-.item_invoice {
-  color: black;
-  text-decoration: underline;
-}
-
-.item_st, .item_else {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.item_price a {
+  margin: 0 0 0 5px;
 }
 
 .item_name {
@@ -1507,6 +1522,38 @@ a.gotop:after {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin: 0 0 5px;
+}
+
+.item_no {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.item_invoice a {
+  color: #06c;
+  text-decoration: underline;
+}
+
+.item_st, .item_else {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.item_st a.grey, .item_else a.grey {
+  color: #666;
+  margin: 0 0 10px;
+}
+
+a.grey {
+  color: #666;
 }
 
 .mem_name {
@@ -2098,15 +2145,17 @@ a.gotop:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 500px;
   margin: 0 0 10px;
 }
-.ord_bank_line p {
-  width: 129px;
+.ord_bank_line .bank_txt {
+  width: 150px;
   text-align: right;
 }
-.ord_bank_line select, .ord_bank_line input {
-  width: 120px;
+.ord_bank_line .bank_td {
+  width: 200px;
+}
+.ord_bank_line .bank_td select, .ord_bank_line .bank_td input {
+  width: 100%;
   margin: 0 0px 0 0;
   padding: 3px 10px;
 }

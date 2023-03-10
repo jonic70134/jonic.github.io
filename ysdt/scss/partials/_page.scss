@@ -639,19 +639,19 @@ label{
 	display: flex;
 	flex-flow:row nowrap;
 	justify-content: space-between;
-    padding: 20px 50px 5px;
+    padding: 20px 50px;
     font-size: 0.75rem;
 	color:#555;
 	background: #ece8df;
 }
 .foot_link{
 	display: flex;
-	flex-flow:row wrap;
-	width: 510px;
+	flex-flow:row nowrap;
+	align-items: center;
 	a{
 		display: block;
 		width: 75px;
-		margin:0 50px 15px 0;
+		margin:0 50px 0 0;
 		color:black;
 		text-decoration: none;
 	}
@@ -668,7 +668,7 @@ label{
 }
 a.gotop{
 	display: none;
-	position: fixed;right: 0;bottom: 20px;z-index: 50;
+	position: fixed;right: 10px;bottom: 80px;z-index: 50;
 	padding: 10px;
 	color: #eee;
 	background: #e00;
