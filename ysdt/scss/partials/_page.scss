@@ -312,7 +312,7 @@ label{
 	color: #aaa;
 	font-size:1rem;
 	outline:none;
-	-webkit-appearance: none;
+	appearance: none;
 	@include border-radius(8px);
 	&:focus{
 		color: black;

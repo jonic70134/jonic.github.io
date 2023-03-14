@@ -496,6 +496,8 @@ label {
   font-size: 1rem;
   outline: none;
   -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
@@ -1013,9 +1015,9 @@ a.gotop:after {
 }
 
 .items_bg {
-  margin: 15px 0 0;
+  margin: 15px 0;
   padding: 20px;
-  background-color: #eee;
+  background-color: #f3f1e8;
 }
 
 .items .photo {

@@ -496,6 +496,8 @@ label {
   font-size: 1rem;
   outline: none;
   -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
