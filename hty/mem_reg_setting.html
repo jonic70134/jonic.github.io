@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>AI B type PC</title>
+    <meta content="friDay" name="description">
+    <meta content="Orange" name="author">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/mem_login.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="body_container">
+      <div class="cart_head">
+        <div class="container"><a class="back" href="index.html"><i class="icon icon-chevron-left"></i>回首頁</a><a class="logo" href="index.html" title="回到friDay"><i class="icon icon-friday_logo"></i></a></div>
+      </div>
+      <div class="site-main login">
+        <div class="mid_title">設定密碼</div>
+        <form class="login_body" action="mem_login.html">
+          <div class="login_line">
+            <div class="sub_t left">帳號：0912324567</div>
+          </div>
+          <div class="login_line">
+            <div class="pass_b">
+              <input id="pass-b1" type="password" placeholder="設定密碼" required autofocus><i class="icon icon-eye toggle-pass" toggle="#pass-b1"></i>
+            </div>
+            <p class="red">請輸入正確的密碼格式，包含英文大小寫與數字</p>
+          </div>
+          <div class="login_line">
+            <div class="pass_b">
+              <input id="pass-b2" type="password" placeholder="確認密碼" required><i class="icon icon-eye toggle-pass" toggle="#pass-b2"></i>
+            </div>
+            <p class="red">請輸入正確的密碼格式，包含英文大小寫與數字</p><!--p.red_mid 密碼不一致，請重新輸入-->
+          </div>
+          <input class="btn_red" type="submit" value="確定">
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="js/3rd-party/jquery-3.6.0.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/mem_login.js"></script>
+</html>

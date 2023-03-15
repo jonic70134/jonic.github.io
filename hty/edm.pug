@@ -1,0 +1,81 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
+		title EDM
+		meta(content='EDM', name='description')
+		meta(content='Orange', name='author')
+		meta(content='width=device-width, initial-scale=1.0', name='viewport')
+		link(rel='icon', href='img/baichain.ico')
+		link(href='css/edm.css', rel='stylesheet')
+	body
+		.body_container
+			header.site-header.bg_black
+				.container
+					.main-head
+						.container
+							a.logo(href='index.html')
+								img(src='img/asap40w.png', alt='白昌')
+								h1(itemprop='name') 白昌
+							ul.head-func
+								li
+									a.my-account(href='#')
+										img(src='img/icon_account_w.png', alt='我的')
+										span 我的
+								li
+									a.cart(href='cart/orderlist.html')
+										img(src='img/icon_cart_w.png', alt='購物車')
+
+			.site-main.clearfix(role='main')
+				.container
+					// 專屬品
+					.personal
+						.personal_info
+							.personal_limit
+								p 個人專屬商品
+							h2.name SONY 索尼 A9F MASTER系列 OLED $K Ultra HD 高動態範圍(HDR) 智慧型電視 KD-65A9F 65吋 OLED 液晶電視
+							.personal_buy
+								p.dur
+									span 我的專屬特價期間：
+									br
+									| 5/20 14:00 ~ 5/22 14:00
+								.per_price
+									.nor
+										span.title 原價
+										p.del 199,900
+									.pay_dis
+										span.title 限時特價
+										p.price 195,900
+										button.button.large.btn-imd(onclick='location.href="item.html"') 立即購買
+						img.per_img(src='img/sample/item_019.jpg', alt='商品名稱', title='商品名稱')
+					include src/_cupn.pug
+					.item_t 以下為您挑選可能需要的商品：
+					.items
+						-var j = 30;
+						- for (var i = 0; i < j; i++)
+							a.item(href='item.html')
+								p.photo
+									span.float
+										i.fa.fa-eye(aria-hidden='true')
+										i.fa.fa-heart-o(aria-hidden='true')
+									img(src='img/sample/item_04.jpg', alt='商品名稱', title='商品名稱')
+								.info
+									h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+									.price(itemprop='price') 999,999
+							a.item(href='item.html')
+								p.photo
+									span.float
+										i.fa.fa-eye(aria-hidden='true')
+										i.fa.fa-heart-o(aria-hidden='true')
+									img(src='img/sample/item_08.jpg', alt='商品名稱', title='商品名稱')
+								.info
+									h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+									.price(itemprop='price') 999,999
+			include src/_foot.pug
+			script(src='js/3rd-party/jquery-1.9.1.min.js')
+			script(src='js/3rd-party/swiper-bundle.min.js')
+			script(src='js/3rd-party/masonry.pkgd.min.js')
+			script(src='js/3rd-party/imagesloaded.pkgd.min.js')
+			script(src='js/common.js')
+			script(src='js/index.js')

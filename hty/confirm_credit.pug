@@ -1,0 +1,36 @@
+doctype html
+html
+    head
+        include src/_meta.pug
+        link(href='css/confirm.css', rel='stylesheet')
+
+    body
+        .cart_head
+            .container
+                a.logo(href="index.html", title="回到friDay")
+                    i.icon.icon_friday_logo
+        .line
+            //- 已收訂單
+            .msg_top
+                .icon.icon_check
+                p.msg_got_big 已經收到您的訂單
+                p.credit_fin 您已完成信用卡付款
+            .msg_done
+                p 親愛的顧客您好，
+                p 感謝您訂購「
+                    strong 遠傳friDay購物
+                    | 」的商品
+                p 訂單編號：
+                    a.order_num(href="#") 20220123456789 
+                p 待本筆交易付款完成，將會儘快為您處理訂單並出貨。
+            .msg_alert
+                |提醒您:本公司不會主動打電話告知您任何有關付款修改的問題.若接到可電話請拒絕回應
+            .load 
+
+            .msg_notice
+                |本系統已收到您的下訂訊息，不代表交易完成。待確認交易條件(如商品存貨量、商品售價等)無誤，
+                br
+                |將依下訂內出貨，待收到商品出貨通知易才算完成。
+            .btn_block
+                a.btn_back(href="index.html") 回首頁
+                a.btn_chk(href="chk.html") 查訂單

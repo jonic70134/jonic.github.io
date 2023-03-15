@@ -1,0 +1,27 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/mem_login.css', rel='stylesheet')
+	body
+		.body_container
+			.cart_head
+				.container
+					a.back(href="index.html")
+						i.icon.icon-chevron-left
+						| 回首頁
+					a.logo(href="index.html", title="回到friDay")
+						i.icon.-friday_logo
+			.site-main.login
+				.mid_title 會員註冊
+				form.login_body(action="mem_reg_send.html")
+					.login_line
+						input(type='text' placeholder='請輸入Email或電話號碼' autofocus required)
+						p.red 請輸入正確格式
+					input.btn_red(type="submit", value="取得驗證碼")
+
+	script(src='js/3rd-party/jquery-3.6.0.min.js')
+	script(src='js/common.js')
+	script(src='js/mem_login.js')
+
+

@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/mem_login.css', rel='stylesheet')
+	body
+		.body_container
+			.cart_head
+				.container
+					a.back(href="index.html")
+						i.icon.icon-chevron-left
+						| 回首頁
+					a.logo(href="index.html", title="回到friDay")
+						i.icon.-friday_logo
+			.site-main.login
+				.mid_title 重設密碼
+				form.login_body(action="mem_forgot_setting.html")
+					.login_line
+						.sub_t 認證碼已用簡訊發送至 09*****987
+					.login_line
+						input.verify(type='unmber' placeholder='請輸入驗證碼' inputmode="numeric" required autofocus)
+						P.time 請於3分鐘內輸入驗證碼，剩餘時間
+							span.red 02:59
+						<!--p.red_mid 驗證碼輸入錯誤，請重新輸入或回到上一步輸入正確手機號碼-->
+					.login_bot
+						a.btn_cancel(href='#') 重發
+						input.btn_red(type="submit", value="下一步")
+
+					
+	script(src='js/3rd-party/jquery-3.6.0.min.js')
+	script(src='js/mem_login.js')
+
+

@@ -1,0 +1,43 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/item_coupon.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug
+			.sub_head
+				.container
+					include src/_menu.pug
+					include src/_tagcloud.pug
+			.container
+				.item_coupon
+					p SONY 再享95折
+					p 本區滿#[span 1]元，每件享#[span 95]折優惠。促銷活動不適用部分退貨。
+						
+				.func_top
+					.sort
+						.sort_check
+							input.sort_radio#sort1(type="radio", name="sort" checked="checked")
+							label.sort_lb(for="sort1") 暢銷排行
+						.sort_check
+							input.sort_radio#sort2(type="radio", name="sort")
+							label.sort_lb(for="sort2") 最新上架
+						.sort_check
+							input.sort_radio#sort3(type="radio", name="sort")
+							label.sort_lb(for="sort3") 價格由高到低
+						.sort_check
+							input.sort_radio#sort4(type="radio", name="sort")
+							label.sort_lb(for="sort4") 價格由低到高
+			.site-main
+				.container
+					.cate_main
+						//- 分類商品
+						include src/_cateitem.pug
+						//- 分頁
+						include src/_pagenav.pug
+					
+			script(src='js/3rd-party/jquery-3.6.0.min.js')
+			script(src='js/common.js')
+			script(src='js/item_coupon.js')

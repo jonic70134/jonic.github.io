@@ -1,0 +1,119 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/mem_data.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug 
+			.site-main
+				.container
+					.mem_chk_t
+						a.back(href="mem_index.html")
+							i.icon.icon_swiper_prev
+							p.chk_order 回到 我的
+
+					form.mem_data_b(action="")
+						.mem_data_sub_t 查看我的資料
+						.mem_data
+							.mem_data_td.right 手機帳號
+							.mem_data_td 0912*****2
+							.mem_data_td.right 姓名
+							.mem_data_td
+								input.data_input(type="text" autocomplete="name" value="陳小軒")
+								label.mem_data_lb(for="sex_male")
+									input#sex_male(type="radio", name="sex")
+									p 先生
+								label.mem_data_lb(for="sex_female")
+									input#sex_female(type="radio", name="sex")
+									p 女士							
+							.mem_data_td.right 生日
+							.mem_data_td
+								input.data_input(type='date' name="bday" value='2005-01-01' autocomplete="on")
+							.mem_data_td.right Email
+							.mem_data_td
+								input.data_input(type="email" autocomplete="email" value="firday@friday.tw")
+							.mem_data_td.right 地址
+							.mem_data_td
+								.form_input
+									input.data_input.addr(type="text" autocomplete="address-line1" value="台北市內湖區瑞光路468號7樓")
+						a.modify_btn(href="#") 修改黃金密碼
+							//- .mem_data_td.gold
+							//- 	a.modify_btn(href="#") 修改黃金密碼
+								
+							//- .mem_data_td
+							//- .mem_data_td
+							//- 	.gold_des.red (初次註冊的會員.請設定黃金密碼;之後查看會員資料時,需輸入黃金密碼)
+						.news
+							label.news_lb(for="news1") 
+								input#news1(type="checkbox", name="news1")
+								span 我願意收到本系統簡訊及優惠訊息電子報
+						.data_bot
+							input.send_btn(type="submit", value="儲存")
+	//- .lightbox-target#set_pass
+	//- 	form.content(action="#pass_send")
+	//- 		.con_t 設定黃金密碼
+	//- 		.con_m
+	//- 			input.con_input(type="tel" autocomplete="tel" placeholder="手機號碼")
+	//- 		.con_bot
+	//- 			input.box_btn_send(type="submit" value='取得驗證碼' required autofocus)
+	//- 		a.lightbox-close(href="#")
+	//- .lightbox-target#pass_send
+	//- 	form.content(action="#set_addr")
+	//- 		.con_t 設定黃金密碼
+	//- 		.con_m
+	//- 			.con_line
+	//- 				.sub_t 認證碼已用簡訊發送至 09*****987
+	//- 			.con_line
+	//- 				input.con_input(type='unmber' placeholder='驗證碼' inputmode="numeric" required autofocus)
+	//- 				P.time 請於3分鐘內輸入驗證碼，剩餘時間
+	//- 					span.red 02:59
+	//- 			.con_bot
+	//- 				a.box_btn_resend(href='#') 重發
+	//- 				input.box_btn_send(type="submit", value="下一步")
+	//- 		a.lightbox-close(href="#")
+	//- .lightbox-target#set_addr
+	//- 	form.content(action="#pass_done")
+	//- 		.con_t 設定黃金密碼
+	//- 		.con_m
+	//- 			.con_line
+	//- 				.sub_t 帳號：0912345869
+	//- 			.con_line
+	//- 				.addr_t 請選擇此帳號的收貨地址：
+	//- 				.addr_b
+	//- 					.addr_line
+	//- 						label.con_lb(for="addr1") 
+	//- 							input#addr1(type="checkbox", name="addrlist" checked)
+	//- 							p 114台北市內湖區瑞光路***號7F
+	//- 					.addr_line
+	//- 						label.con_lb(for="addr2") 
+	//- 							input#addr2(type="checkbox", name="addrlist")
+	//- 							p 114台北市信義區**路11號
+	//- 					.addr_line
+	//- 						label.con_lb(for="addr3") 
+	//- 							input#addr3(type="checkbox", name="addrlist")
+	//- 							p 114台北市大安區**東路八段68號		
+	//- 			.con_bot
+	//- 				input.box_btn_send(type="submit", value="確定")
+	//- 		a.lightbox-close(href="#")
+	//- .lightbox-target#pass_done
+	//- 	form.content(action="mem_data_reset.html")
+	//- 		.con_t 設定黃金密碼
+	//- 		.con_m
+	//- 			.con_line
+	//- 				.sub_t 帳號：0912345869
+	//- 			.con_line
+	//- 				.pass_b
+	//- 					input#pass-b1.con_input(type='unmber' placeholder='設定黃金密碼(6碼英文數字)' maxlenght='6' inputmode='numeric' required autofocus)
+	//- 					i.icon.icon-eye.toggle-pass(toggle="#pass-b1")
+	//- 				.pass_b
+	//- 					input#pass-b2.con_input(type='unmber' placeholder='確認黃金密碼' maxlenght='6' inputmode='numeric' required autofocus)
+	//- 					i.icon.icon-eye.toggle-pass(toggle="#pass-b2")
+	//- 			.con_bot
+	//- 				input.box_btn_send(type="submit", value="確定")
+	//- 		a.lightbox-close(href="#")
+	include src/_foot.pug
+	script(src='js/3rd-party/jquery-3.6.0.min.js')
+	script(src='js/common.js')
+	script(src='js/mem_login.js')

@@ -1,0 +1,50 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/mem_login.css', rel='stylesheet')
+	body
+		.body_container
+			.cart_head
+				.container
+					a.back(href="index.html")
+						i.icon.icon-chevron-left
+						| 回我的首頁
+					a.logo(href="index.html", title="回到friDay")
+						i.icon.icon-friday_logo
+			.site-main.login
+				.mid_title 會員登入
+				form.login_body(action="mem_index.html")
+					.login_line
+						input(type='text' placeholder='帳號：手機門號/Email' inputmode="email" autocomplete autofocus required)
+					.login_line
+						.pass_b
+							input#pass-b1(type='password' placeholder='密碼' required autofocus)
+							i.icon.icon-eye.toggle-pass(toggle="#pass-b1")
+						p.red 請輸入正確的帳號 & 密碼
+					.login_captcha
+						.slidercaptcha.card
+							.card-body
+								#captcha
+					input.btn_black(type="submit", value="登入")
+					.login_reg
+						a.reg(href="mem_reg.html") 註冊新會員
+						a.forgot_pas(href="mem_forgot.html") 忘記密碼
+					
+	script(src='js/3rd-party/jquery-3.6.0.min.js')
+	script(src='js/3rd-party/longbow.slidercaptcha.min.js')
+	script.
+		var captcha = sliderCaptcha({
+			id: 'captcha',
+			width:'400',
+			height:'100',
+			onSuccess: function () {
+				var handler = setTimeout(function () {
+					window.clearTimeout(handler);
+					captcha.reset();
+				}, 500)
+			}
+		});
+	script(src='js/mem_login.js')
+
+

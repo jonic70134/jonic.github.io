@@ -1,0 +1,153 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/item.css', rel='stylesheet')
+		script(type='application/ld+json').
+			{
+			"@context": "http://schema.org",
+			"@type": "Product",
+			"name": "送無線充電版多選一+Targus Newport 15吋拉繩後背包-時尚黑 iPhone XR 紅色(PRODUCT)",
+			"description": "擁有 iPhone 歷來最持久的電池續航力 最快的效能表現、防潑抗水能力 媲美攝影棚等級的照片與 4K 影片 #iphone #iphoneXR",
+			"url": "https://baichian.com.tw/item.html",
+			"image": "img/sample/XRred.jpg",
+			"offers": {
+			"@type": "AggregateOffer",
+			"lowPrice": "195.000",
+			"highPrice": "199.000",
+			"priceCurrency": "TWD",
+			"seller": {
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"name": "APPLE",
+			"url": "https://www.apple.com/tw",
+			"image": ""
+			},
+			"availability": "http://schema.org/InStock"
+			},
+			}
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug
+			.sub_head
+				.container
+					include src/_menu.pug
+					.breadcrumb
+						a.link(href="index.html") 首頁
+						span >
+						a.link(href="index.html") 家電.數位.3C.
+						span >
+						a.link(href="index.html") 智慧型手機
+						span > iphone
+			.site-main(role='main')
+				.pc-item-main
+					.container
+						.item_frame
+							.item_full
+								include src/_item_slider.pug
+								.info
+									include src/_item_info.pug
+									include src/_item_split.pug
+									// 配送方式
+									.send.item_line
+										span.title 配送
+										ul.value
+											li.active
+												| 門市配送
+												i.icon.icon_check
+											li 宅配
+									// 贈品區
+									.gift_chk_area.blue
+										.add_list
+											.title
+												.l_title 
+													i.icon.icon_star A區
+													span.cole00 目前已選購0件，還差 4 件，尚未符合條件
+											.emp_noc
+												.l_title 熱銷補貨到小家電任選4入
+												a.more(href='#')
+													span.more_txt  我要選擇商品
+													i.icon.icon_more
+									// 贈品不可選 加購區
+									.add_noc.blue
+										.add_list
+											.title
+												.l_title
+													i.icon.icon_star B區
+													span.cole00 目前已選購2件，還差 1 件，尚未符合條件
+												.r_title
+													span.cole00 $0
+											.add_line
+												.add_chk_block
+													input#add_chk_001.add_chk(type='checkbox')
+													label.add_label(for='add_chk_001')
+													p 全家商品卡100元+好收納不鏽鋼刀剪組+100週年紀念公仔
+												.quantity
+													span.quantity-decrease
+														i.icon.icon_minus
+													input.quantity-input(type='text', value='1', max='99', title='請輸入購買量')
+													span.quantity-increase
+														i.icon.icon_plus
+											.add_line
+												.add_chk_block
+													input#add_chk_002.add_chk(type='checkbox')
+													label.add_label(for='add_chk_002')
+													p 全家商品卡100元+好收納不鏽鋼刀剪組+100週年紀念公仔
+												.quantity
+													span.quantity-decrease
+														i.icon.icon_minus
+													input.quantity-input(type='text', value='1', max='99', title='請輸入購買量')
+													span.quantity-increase
+														i.icon.icon_plus
+									.shop_btn_block.item_line
+										.shop_btn
+											//- button.button.btn-imd 立即結帳
+											button.button.btn-cart 加入購物車
+				.pc-item-add.add_view.blue
+					.container
+						h3.title-h3 A區
+							span 熱銷補貨到小家電任選4入
+						.items
+							- var j = 10;
+							- for (var i = 1; i < j; i++)
+								figure.item(class='add_chk_00'+i)
+									input(id='add_00'+i)(type='checkbox')
+									label(for='add_00'+i)
+									.photo
+										img(src='img/sample/150_0'+ i +'.jpg', title='商品圖', alt='【PUFII】秋季熱銷品 自訂款素面修身襯衫')
+									figcaption.info
+										h1.name 全家商品卡100元+好收納不鏽鋼刀剪組+100週年紀念公仔
+										span.price $195,000
+										.buy
+											a(href="#").btn-notselect 加入選購
+				.pc-item-add.add_view.blue
+					.container
+						h3.title-h3 B區
+							span 熱銷補貨到小家電任選3入
+						.items
+							- var j = 10;
+							- for (var i = 1; i < j; i++)
+								figure.item(class='add_chk_00'+i)
+									input(id='add_00'+i)(type='checkbox')
+									label(for='add_00'+i)
+									.photo
+										img(src='img/sample/150_0'+ i +'.jpg', title='商品圖', alt='【PUFII】秋季熱銷品 自訂款素面修身襯衫')
+									figcaption.info
+										h1.name 全家商品卡100元+好收納不鏽鋼刀剪組+100週年紀念公仔
+										span.price $195,000
+										.buy
+											a(href="#").btn-notselect 加入選購
+				//- 商品說明
+				include src/_item_detail.pug
+				//- 相關商品
+				include src/_item_relative.pug
+			//- lightbox
+			include src/_item_lightbox.pug
+			
+			include src/_foot.pug
+			script(src='js/3rd-party/jquery-3.6.0.min.js')
+			script(src='js/3rd-party/swiper-bundle.min.js')
+			script(src='js/3rd-party/lity.min.js')
+			script(src='js/common.js')
+			script(src='js/item.js')

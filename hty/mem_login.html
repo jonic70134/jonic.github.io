@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>AI B type PC</title>
+    <meta content="friDay" name="description">
+    <meta content="Orange" name="author">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/mem_login.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="body_container">
+      <div class="cart_head">
+        <div class="container"><a class="back" href="index.html"><i class="icon icon-chevron-left"></i>回我的首頁</a><a class="logo" href="index.html" title="回到friDay"><i class="icon icon-friday_logo"></i></a></div>
+      </div>
+      <div class="site-main login">
+        <div class="mid_title">會員登入</div>
+        <form class="login_body" action="mem_index.html">
+          <div class="login_line">
+            <input type="text" placeholder="帳號：手機門號/Email" inputmode="email" autocomplete autofocus required>
+          </div>
+          <div class="login_line">
+            <div class="pass_b">
+              <input id="pass-b1" type="password" placeholder="密碼" required autofocus><i class="icon icon-eye toggle-pass" toggle="#pass-b1"></i>
+            </div>
+            <p class="red">請輸入正確的帳號 & 密碼</p>
+          </div>
+          <div class="login_captcha">
+            <div class="slidercaptcha card">
+              <div class="card-body">
+                <div id="captcha"></div>
+              </div>
+            </div>
+          </div>
+          <input class="btn_black" type="submit" value="登入">
+          <div class="login_reg"><a class="reg" href="mem_reg.html">註冊新會員</a><a class="forgot_pas" href="mem_forgot.html">忘記密碼</a></div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="js/3rd-party/jquery-3.6.0.min.js"></script>
+  <script src="js/3rd-party/longbow.slidercaptcha.min.js"></script>
+  <script>
+    var captcha = sliderCaptcha({
+    	id: 'captcha',
+    	width:'400',
+    	height:'100',
+    	onSuccess: function () {
+    		var handler = setTimeout(function () {
+    			window.clearTimeout(handler);
+    			captcha.reset();
+    		}, 500)
+    	}
+    });
+  </script>
+  <script src="js/mem_login.js"></script>
+</html>

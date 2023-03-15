@@ -1,0 +1,114 @@
+// 首頁
+@import "partials/base";
+@import "partials/mixin";
+@import "partials/color";
+@import "partials/page";
+@import "partials/pagenav";
+
+body,.body_container,.copyright{
+    background: #eee;
+}
+
+.red{
+    color:#d00;
+}
+.green{
+    color:#57ab09;
+}
+.blue{
+    color:#06c;
+    font-size:.9rem;
+}
+.back{
+    display: flex;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+.pagenav{
+    margin: 40px 0;
+}
+.mem_chk_t{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin:10px 0 0;
+    padding:25px 10px 10px;
+    font-size: 1.5rem;
+    // background: white;
+    // border-bottom:1px solid #ccc;
+}
+.chk_order{
+    margin: 0 0 0 10px;
+    font-size: 1.5rem;
+    color:#333;
+}
+
+// 
+.icon_cart:before,.icon_del:before{
+    font-size: 1.8rem;
+    color:#333;
+}
+.icon_del:before{
+    font-size: 1.3rem;
+    color:#aaa;
+}
+.mem_track{
+    display: grid;
+    grid-template-rows: repeat(auto);
+    grid-template-columns: 130px 500px repeat(3,auto);
+    grid-gap: 0;
+    margin:10px auto;
+    background: white;
+}
+.mem_track_td{
+    display: flex;flex-flow:row ;align-items: center;
+    position: relative;
+    padding: 10px 20px;
+    color:#333;
+    background: white;
+    line-height: 1.4;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+}
+.name{
+    display: flex;
+    flex-flow:column ;
+    align-items: flex-start;
+    justify-content: center;
+    font-size:1.1rem;
+    a{
+        color:#333;
+    }
+}
+.tag{
+    padding: 3px 8px;
+    font-size: .7rem;
+    color:white;
+    background: #e00;
+    border-radius:5px ;
+}
+.price {
+	font-size: 1.5rem;
+	color: #e00;
+    &::first-letter{
+        font-size:.7rem;
+    }
+}
+.pic{
+    img{
+        display: block;
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+.lack{
+    padding:5px 10px;
+    font-size:.9rem;
+    background: #eee;
+}

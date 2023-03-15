@@ -1,0 +1,76 @@
+// 分類頁
+@import "partials/base";
+@import "partials/mixin";
+@import "partials/color";
+@import "partials/page";
+
+@import "partials/cateitem";
+@import "partials/relate";
+@import "partials/functop";
+
+.icon_pictxt{
+    display: none;
+}
+.sub_head{
+    .container{
+        justify-content: flex-start;
+    }
+}
+.site-main{
+    width: 100%;
+    margin:0 auto;
+    padding: 20px 0 0;
+    .container{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}
+
+.search_item{
+    .icon_cart,.icon_track{
+        position: relative;
+        display: block;
+        font-size: 1.6rem;
+        &:before{
+            color:#333;
+        }
+    }
+    .icon_cart{
+        margin:0 50px 0 40px;
+    }
+    .icon_track{
+        font-size: 2rem;
+        align-self:flex-end;
+    }
+    .icon_track_plus{
+        font-size: 1.3rem;
+    }
+    .icon_cart_arrow{
+        position: absolute;left:-8px;top:-5px;
+        font-size: .7rem;
+        padding:3px 4px 4px;
+        background-color: #d00;
+        @include border-radius(50%);
+    }
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+}
+.btn-load{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top:10px;
+    padding:6px 10px 7px;
+    color:#666;
+    background:white;
+    font-size:1.1rem;
+    border:1px solid #666;
+    outline:none;
+    cursor: pointer;
+}
+.icon_refresh{
+    margin:0 0 0 5px;
+}

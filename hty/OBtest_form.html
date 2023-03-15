@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ASAP 4.0</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="description" content="ASAP 4.0 公測說明">
+    <meta name="keywords" content="uitox,asap 4.0,AI,無人電商">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ASAP 4.0 公測說明">
+    <meta property="og:image" content="img/ai.jpg">
+    <meta property="og:description" content="ASAP在一年多以前暫停網站運作，全心全力投入使用 AI 技術打造新的電商網站，經過了 封測階段，現在終於到了可以公測的程度了。新的技術是從新的理念發展出來的，我們的理 念是要虛化傳統的電商平台，讓網路技術在供需兩端扮演接近超導體的角色。">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <style>
+      html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      background: transparent
+      }
+      html,body {
+      font-family: '微軟正黑體',Tahoma,'新細明體','Arial Unicode MS',Arial,Helvetica,sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale
+      }
+      body {
+      line-height: 1;
+      background:black;
+      }
+      article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+      display: block
+      }
+      ul,ol {
+      list-style: none
+      }
+      blockquote,q {
+      quotes: none
+      }
+      blockquote:before,blockquote:after,q:before,q:after {
+      content: '';
+      content: none
+      }
+      a {
+      margin: 0;
+      padding: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      background: transparent;
+      text-decoration: none
+      }
+      ins {
+      background-color: #ff9;
+      color: #000;
+      text-decoration: none
+      }
+      mark {
+      background-color: #ff9;
+      color: #000;
+      font-style: italic;
+      font-weight: bold
+      }
+      del {
+      text-decoration: line-through
+      }
+      abbr[title],dfn[title] {
+      border-bottom: 1px dotted;
+      cursor: help
+      }
+      table {
+      border-collapse: collapse;
+      border-spacing: 0
+      }
+      hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #cccccc;
+      margin: 1em 0;
+      padding: 0
+      }
+      input,select {
+      -webkit-appearance: none;
+      vertical-align: middle
+      }
+      h1,h2,h3,h4,h5,h6 {
+      font-weight: normal
+      }
+      ::-webkit-search-cancel-button {
+      display: none
+      }
+      .clearfix:after {
+      content: ".";
+      display: block;
+      height: 0;
+      visibility: hidden;
+      clear: both
+      }
+      .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0
+      }
+      .sr-only-focusable:active,.sr-only-focusable:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      clip: auto
+      }
+      body {
+      width: 100%;
+      color: black;
+      }
+      sup {
+      font-size: 1rem;
+      vertical-align: super
+      }
+      .bold {
+      font-weight: 700
+      }
+      .blue_txt1 {
+      color: #0068b7
+      }
+      .red{
+      color:red;
+      }
+      .table_scroll {
+      width: 100%;
+      margin: 0 0 20px;
+      -webkit-overflow-scrolling: touch;
+      overflow: auto
+      }
+      a {
+      display: inline-block;
+      margin:0 3px;
+      font-size:.9rem;
+      color: #06c;
+      text-decoration: underline;
+      }
+      .main {
+      max-width: 630px;
+      margin: 20px auto;
+      padding:10px;
+      }
+      .cont_block{
+      margin-bottom:45px;
+      }
+      h1 {
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color:white;
+      }
+      h2 {
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color:white;
+      }
+      p {
+      color: white;
+      font-size: 1.1rem;
+      line-height: 1.4
+      }
+      p.des{
+      color:#bbb;
+      margin:5px 0;
+      }
+      small {
+      font-size: 1rem;
+      color: #888
+      }
+      small a {
+      font-size: 1rem;
+      font-weight: 700
+      }
+      ul {
+      list-style: outside decimal;
+      margin-top:20px;
+      margin-bottom: 30px
+      }
+      ul li {
+      margin:0 0 20px 25px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: white;
+      }
+      .table_scroll {
+      width: 100%;
+      -webkit-overflow-scrolling: touch;
+      overflow: auto
+      }
+      .table_blue {
+      width: 100%;
+      color: #888;
+      background: white;
+      margin: 0 auto;
+      font-size: 1rem;
+      border: 1px solid #0ae
+      }
+      .table_blue .f_link {
+      color: #06c;
+      text-decoration: underline
+      }
+      .table_blue tr {
+      color: white
+      }
+      .table_blue th {
+      width:50%;
+      padding: 5px 5px 5px 10px;
+      background: #0ae;
+      border: 1px solid #0ae;
+      white-space: nowrap
+      }
+      .table_blue td {
+      width:50%;
+      padding: 5px 5px 5px 10px;
+      color: #888;
+      border: 1px solid #0ae
+      }
+      .table_blue a {
+      color: #06c;
+      text-decoration: underline
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="webtmp">
+        <div class="cont_block">
+          <h1>服務費率表</h1>
+          <ul>
+            <li>AI系統服務費：
+              <div class="table_scroll">
+                <table class="table_blue">
+                  <tbody>
+                    <tr>
+                      <th>月業績 (單位 /元)</th>
+                      <th>服務費用 (單位 /元)</th>
+                    </tr>
+                    <tr>
+                      <td>20,000 以下</td>
+                      <td>前三個月        免費<br>第四個月開始  $799 /月</td>
+                    </tr>
+                    <tr>
+                      <td>100,000 以下</td>
+                      <td>$1,499 /月</td>
+                    </tr>
+                    <tr>
+                      <td>500,000 以下</td>
+                      <td>$7,499 /月</td>
+                    </tr>
+                    <tr>
+                      <td>1,000,000 以下</td>
+                      <td>$14,999 /月</td>
+                    </tr>
+                    <tr>
+                      <td>1,000,000 以上</td>
+                      <td>$19,999 /月</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li>
+              <p>聯合曝光 : </p>
+              <p>在非ASAP4.0的其他網站曝光成交收2%</p>
+            </li>
+            <li>
+              <p>外部媒體廣告費：</p>
+              <p class="des">有使用才收費以分攤方式計算， 當服務啟動的時候，會在系統後台公告費率，乙方登入之便可以取得必要資訊。</p>
+            </li>
+            <li>
+              <p>金流服務費：</p>
+              <p class="des">信用卡刷手續費：</p>
+              <div class="table_scroll">
+                <table class="table_blue">
+                  <tbody>
+                    <tr>
+                      <th>刷卡分期數</th>
+                      <th>手續費</th>
+                    </tr>
+                    <tr>
+                      <td>一次付清</td>
+                      <td>2%</td>
+                    </tr>
+                    <tr>
+                      <td>3期</td>
+                      <td>3%</td>
+                    </tr>
+                    <tr>
+                      <td>6期</td>
+                      <td>3.5%</td>
+                    </tr>
+                    <tr>
+                      <td>12期</td>
+                      <td>6%</td>
+                    </tr>
+                    <tr>
+                      <td>24期</td>
+                      <td>8%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="des">信用卡外其餘第三方支付手續費：</p>
+              <div class="table_scroll">
+                <table class="table_blue">
+                  <tbody>
+                    <tr>
+                      <th>第三方支付平台</th>
+                      <th>手續費 (綁卡或是帳戶一次付清 )</th>
+                    </tr>
+                    <tr>
+                      <td>Apple Pay</td>
+                      <td>2%</td>
+                    </tr>
+                    <tr>
+                      <td>Line Pay</td>
+                      <td>2%</td>
+                    </tr>
+                    <tr>
+                      <td>Samsung Pay</td>
+                      <td>2%</td>
+                    </tr>
+                    <tr>
+                      <td>Google Pay</td>
+                      <td>2%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

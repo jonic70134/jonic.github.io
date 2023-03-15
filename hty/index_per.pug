@@ -1,0 +1,88 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/index.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug
+			.sub_head
+				.container
+					include src/_menu.pug
+					include src/_tagcloud.pug
+			.site-main.clearfix(role='main')
+				.container
+					// 個人專屬商品
+					.personal
+						.personal_info
+							.personal_limit
+								p 個人專屬商品
+							h2.name SONY 索尼 A9F MASTER系列 OLED $K Ultra HD 高動態範圍(HDR) 智慧型電視 KD-65A9F 65吋 OLED 液晶電視
+							.personal_buy
+								p.dur
+									span 我的專屬特價期間：
+									br
+									| 5/20 14:00 ~ 5/22 14:00
+								.per_price
+									.nor
+										span.title 原價
+										p.del 199,900
+									.pay_dis
+										span.title 限時特價
+										p.price 195,900
+										button.button.large.btn-imd(onclick='location.href="item.html"') 立即購買
+						img.per_img(src='img/sample/item_019.jpg', alt='商品名稱', title='商品名稱')
+					.items
+						-var j = 6;
+						- for (var i = 0; i < j; i++)
+							a.item(href='item.html')
+								p.photo
+									span.float
+										i.fa.fa-eye(aria-hidden='true')
+										i.fa.fa-heart-o(aria-hidden='true')
+									img(src='img/sample/item_01.jpg', alt='商品名稱', title='商品名稱')
+								.info
+									h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+									.price(itemprop='price') 999,999
+							a.item(href='item.html')
+								p.photo
+									span.float
+										i.fa.fa-eye(aria-hidden='true')
+										i.fa.fa-heart-o(aria-hidden='true')
+									img(src='img/sample/item_017.jpg', alt='商品名稱', title='商品名稱')
+								.info
+									h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+									.price(itemprop='price') 999,999
+							a.item(href='item.html')
+								p.photo
+									span.float
+										i.fa.fa-eye(aria-hidden='true')
+										i.fa.fa-heart-o(aria-hidden='true')
+									img(src='img/sample/item_019.jpg', alt='商品名稱', title='商品名稱')
+								.info
+									h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+									.price(itemprop='price') 999,999
+							a.item(href='item.html')
+								p.photo
+									span.float
+										i.fa.fa-eye(aria-hidden='true')
+										i.fa.fa-heart-o(aria-hidden='true')
+									img(src='img/sample/item_03.jpg', alt='商品名稱', title='商品名稱')
+								.info
+									h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+									.price(itemprop='price') 999,999
+							a.item(href='item.html')
+								p.photo
+									span.float
+										i.fa.fa-eye(aria-hidden='true')
+										i.fa.fa-heart-o(aria-hidden='true')
+									img(src='img/sample/item_05.jpg', alt='商品名稱', title='商品名稱')
+								.info
+									h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+									.price(itemprop='price') 999,999
+			include src/_foot.pug
+			script(src='js/3rd-party/jquery-1.9.1.min.js')
+			script(src='js/3rd-party/swiper-bundle.min.js')
+			script(src='js/common.js')
+			script(src='js/index.js')
