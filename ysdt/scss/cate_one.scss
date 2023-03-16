@@ -1,8 +1,9 @@
 // 首頁
 @import "partials/base";
-@import "partials/mixin";
 @import "partials/color";
+
 @import "partials/page";
+@import "partials/tag_cloud";
 @import "partials/page_item";
 @import "3rd-party/_swiper.scss";
 @import "partials/relate";
@@ -104,6 +105,12 @@
 .per_duoslide{
     margin:7px 0 0;
     position: relative;
+    .swiper-slide{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        grid-gap:40px;
+    }
     .per_l{
         width: 360px;
         padding: 15px;
@@ -148,8 +155,9 @@
         }
     }
     .per_block{
+        display: block;
         width:160px;
-        margin:0px;
+        margin:0;
     }
     .per_r{
         padding:10px 28px 0;
@@ -309,7 +317,7 @@
     img{
         width: 200px;height:200px;
         border:5px solid #ddd5cc;
-        @include border-radius(10px)
+        border-radius:10px;
     }
     .spec_info{
         display: flex;
@@ -358,6 +366,7 @@
     background: none;
 }
 .relate_prod{
+    width: 100%;
     margin: 10px 0 0;
     border: none;
     background: #f3f1e8;

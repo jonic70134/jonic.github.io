@@ -1,9 +1,9 @@
 // 首頁
 @import "partials/base";
-@import "partials/mixin";
 @import "partials/color";
+
 @import "partials/page";
-@import "3rd-party/_font-awesome.min.scss";
+@import "partials/tag_cloud";
 
 .site-main , .site-main .container{
     height: 70vh;
@@ -57,6 +57,7 @@
 
 .btn-back_index {
     display: block;
+    width: 100px;
     margin: 0 auto;
     background: linear-gradient(#555,#000);
     padding: 0 12px;

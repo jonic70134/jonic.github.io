@@ -452,28 +452,28 @@ html
 							+item('05_17_182x240')
 							+item('05_18_182')
 		
-	include src/_foot.pug
-#edit_img.lightbox-target
-	.content
-		.con_t 選擇圖片
-		.form-line
-			#file-upload
-				.chos-file
-					input#file-input(type='file' accept='image/jpeg,image/gif' multiple='')
-					label.image-upload.fa.fa-plus(for='file-input') 
-						p 新增圖片
-				.preview
-		.form-line
-			span.t-grey (限尺寸820x380px內，規格JPG、GIF，檔案大小1MB以下)
-		.form-line.full-width
-			.form-label 設定連結
-			.form-content
-				input(type="text" placeholder='請輸入網址')
-		.form-line.form-bot
-			a.btn-blue(href="#") 上傳送出
-		a.lightbox-close(href="#")
-	script(src='js/3rd-party/jquery-3.6.0.min.js')
-	script(src='js/3rd-party/swiper-bundle.min.js')
-	script(src='js/3rd-party/macy.js')
-	script(src='js/common.js')
-	script(src='js/index_modify.js')
+		include src/_foot.pug
+		#edit_img.lightbox-target
+			.content
+				.con_t 選擇圖片
+				.form-line
+					#file-upload
+						.chos-file
+							input#file-input(type='file' accept='image/jpeg,image/gif' multiple='')
+							label.image-upload.fa.fa-plus(for='file-input') 
+								p 新增圖片
+						.preview
+				.form-line
+					span.t-grey (限尺寸820x380px內，規格JPG、GIF，檔案大小1MB以下)
+				.form-line.full-width
+					.form-label 設定連結
+					.form-content
+						input(type="text" placeholder='請輸入網址')
+				.form-line.form-bot
+					a.btn-blue(href="#") 上傳送出
+				a.lightbox-close(href="#")
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/3rd-party/macy.js')
+		script(src='js/common.js')
+		script(src='js/index_modify.js')

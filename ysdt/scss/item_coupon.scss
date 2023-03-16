@@ -1,28 +1,17 @@
 // 分類頁
 @import "partials/base";
-@import "partials/mixin";
 @import "partials/color";
-@import "partials/page";
 
+@import "partials/page";
+@import "partials/tag_cloud";
 @import "partials/cateitem";
-@import "partials/relate";
 @import "partials/pagenav";
 @import "partials/functop";
 
-.sub_head{
-    .container{
-        justify-content: flex-start;
-    }
-}
+
 .site-main{
     width: 100%;
-    margin:0 auto;
     padding: 20px 0 0;
-    .container{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-    }
 }
 .item_coupon{
     margin: 20px 0 15px;
@@ -50,7 +39,4 @@
         margin: initial;
     }
 
-}
-.icon_pictxt{
-    width: 30px;
 }

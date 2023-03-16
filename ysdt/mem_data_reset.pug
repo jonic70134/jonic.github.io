@@ -53,80 +53,82 @@ html
 								span 我願意收到本網站各項簡訊及電話通知
 						.data_bot
 							input.send_btn(type="submit", value="儲存")
-	.lightbox-target#enter_pass
-		form.content(action="#")
-			.con_t 輸入黃金密碼
-			.con_m
-				input.con_input(type="tel" autocomplete="tel" placeholder="黃金密碼")
-				.con_line
-					a.set_pass(href="#set_pass") 重設黃金密碼
-			.con_bot
-				input.box_btn_send(type="submit" value='確定' required autofocus)
-			a.lightbox-close(href="#")
-	.lightbox-target#set_pass
-		form.content(action="#pass_send")
-			.con_t 重設黃金密碼
-			.con_m
-				input.con_input(type="tel" autocomplete="tel" placeholder="手機號碼")
-			.con_bot
-				input.box_btn_send(type="submit" value='取得驗證碼' required autofocus)
-			a.lightbox-close(href="#")
-	.lightbox-target#pass_send
-		form.content(action="#set_addr")
-			.con_t 重設黃金密碼
-			.con_m
-				.con_line
-					.sub_t 認證碼已用簡訊發送至 09*****987
-				.con_line
-					input.con_input(type='unmber' placeholder='驗證碼' inputmode="numeric" required autofocus)
-					P.time 請於3分鐘內輸入驗證碼，剩餘時間
-						span.red 02:59
+	
+		include src/_foot.pug
+		
+		.lightbox-target#enter_pass
+			form.content(action="#")
+				.con_t 輸入黃金密碼
+				.con_m
+					input.con_input(type="tel" autocomplete="tel" placeholder="黃金密碼")
+					.con_line
+						a.set_pass(href="#set_pass") 重設黃金密碼
 				.con_bot
-					a.box_btn_resend(href='#') 重發
-					input.box_btn_send(type="submit", value="下一步")
-			a.lightbox-close(href="#")
-	.lightbox-target#set_addr
-		form.content(action="#pass_done")
-			.con_t 重設黃金密碼
-			.con_m
-				.con_line
-					.sub_t 帳號：0912345869
-				.con_line
-					.addr_t 請選擇此帳號的收貨地址：
-					.addr_b
-						.addr_line
-							label.con_lb(for="addr1") 
-								input#addr1(type="checkbox", name="addrlist" checked)
-								p 114台北市內湖區瑞光路***號7F
-						.addr_line
-							label.con_lb(for="addr2") 
-								input#addr2(type="checkbox", name="addrlist")
-								p 114台北市信義區**路11號
-						.addr_line
-							label.con_lb(for="addr3") 
-								input#addr3(type="checkbox", name="addrlist")
-								p 114台北市大安區**東路八段68號		
+					input.box_btn_send(type="submit" value='確定' required autofocus)
+				a.lightbox-close(href="#")
+		.lightbox-target#set_pass
+			form.content(action="#pass_send")
+				.con_t 重設黃金密碼
+				.con_m
+					input.con_input(type="tel" autocomplete="tel" placeholder="手機號碼")
 				.con_bot
-					input.box_btn_send(type="submit", value="確定")
-			a.lightbox-close(href="#")
-	.lightbox-target#pass_done
-		form.content(action="")
-			.con_t 重設黃金密碼
-			.con_m
-				.con_line
-					.sub_t 帳號：0912345869
-				.con_line
-					.pass_b
-						input#pass-b1.con_input(type='unmber' placeholder='設定黃金密碼(6碼英文數字)' maxlenght='6' inputmode='numeric' required autofocus)
-						i.icon.icon-eye.toggle-pass(toggle="#pass-b1")
-					.pass_b
-						input#pass-b2.con_input(type='unmber' placeholder='確認黃金密碼' maxlenght='6' inputmode='numeric' required autofocus)
-						i.icon.icon-eye.toggle-pass(toggle="#pass-b2")
+					input.box_btn_send(type="submit" value='取得驗證碼' required autofocus)
+				a.lightbox-close(href="#")
+		.lightbox-target#pass_send
+			form.content(action="#set_addr")
+				.con_t 重設黃金密碼
+				.con_m
+					.con_line
+						.sub_t 認證碼已用簡訊發送至 09*****987
+					.con_line
+						input.con_input(type='unmber' placeholder='驗證碼' inputmode="numeric" required autofocus)
+						P.time 請於3分鐘內輸入驗證碼，剩餘時間
+							span.red 02:59
+					.con_bot
+						a.box_btn_resend(href='#') 重發
+						input.box_btn_send(type="submit", value="下一步")
+				a.lightbox-close(href="#")
+		.lightbox-target#set_addr
+			form.content(action="#pass_done")
+				.con_t 重設黃金密碼
+				.con_m
+					.con_line
+						.sub_t 帳號：0912345869
+					.con_line
+						.addr_t 請選擇此帳號的收貨地址：
+						.addr_b
+							.addr_line
+								label.con_lb(for="addr1") 
+									input#addr1(type="checkbox", name="addrlist" checked)
+									p 114台北市內湖區瑞光路***號7F
+							.addr_line
+								label.con_lb(for="addr2") 
+									input#addr2(type="checkbox", name="addrlist")
+									p 114台北市信義區**路11號
+							.addr_line
+								label.con_lb(for="addr3") 
+									input#addr3(type="checkbox", name="addrlist")
+									p 114台北市大安區**東路八段68號		
+					.con_bot
+						input.box_btn_send(type="submit", value="確定")
+				a.lightbox-close(href="#")
+		.lightbox-target#pass_done
+			form.content(action="")
+				.con_t 重設黃金密碼
+				.con_m
+					.con_line
+						.sub_t 帳號：0912345869
+					.con_line
+						.pass_b
+							input#pass-b1.con_input(type='unmber' placeholder='設定黃金密碼(6碼英文數字)' maxlenght='6' inputmode='numeric' required autofocus)
+							i.icon.icon-eye.toggle-pass(toggle="#pass-b1")
+						.pass_b
+							input#pass-b2.con_input(type='unmber' placeholder='確認黃金密碼' maxlenght='6' inputmode='numeric' required autofocus)
+							i.icon.icon-eye.toggle-pass(toggle="#pass-b2")
 
-				.con_bot
-					input.box_btn_send(type="submit", value="確定")
-			a.lightbox-close(href="#")
-	include src/_foot.pug
-	script(src='js/3rd-party/jquery-3.6.0.min.js')
-	script(src='js/common.js')
-	script(src='js/mem_login.js')
+					.con_bot
+						input.box_btn_send(type="submit", value="確定")
+				a.lightbox-close(href="#")
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/common.js')
+		script(src='js/mem_login.js')

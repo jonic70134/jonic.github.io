@@ -1,18 +1,32 @@
 // 分類頁
 @import "partials/base";
-@import "partials/mixin";
 @import "partials/color";
-@import "partials/page";
+
+@import "partials/font_iconmoon";
+@import "partials/head";
+@import "partials/menu";
+@import "partials/tag_cloud";
+
 @import "3rd-party/_swiper.scss";
 
 @import "partials/cateitem";
 @import "partials/relate";
 @import "partials/pagenav";
 @import "partials/functop";
+
+.body_container{
+	min-height: calc(100vh - 82px);
+}
+.container{
+    width: 1220px;
+    margin:0 auto;
+}
 .sub_head{
-    .container{
-        justify-content: flex-start;
-    }
+	.container{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
 }
 .site-main{
     width: 100%;

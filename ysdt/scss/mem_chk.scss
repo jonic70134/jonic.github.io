@@ -1,16 +1,34 @@
-// 首頁
 @import "partials/base";
-@import "partials/mixin";
 @import "partials/color";
-@import "partials/page";
+
+@import "partials/font_iconmoon";
+@import "partials/head";
+@import 'partials/foot';
+
 @import "partials/pagenav";
 
-
 .body_container{
-    min-height: 100vh;
+	min-height: calc(100vh - 82px);
     padding:0 0 40px;
     background: #eee;
 }
+.site-main{
+    width:1220px;
+    margin:0 auto;
+    position: relative;
+}
+.container{
+    width: 1220px;
+    margin:0 auto;
+}
+.sub_head{
+	.container{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+}
+
 .red{
     color:#d00;
 }

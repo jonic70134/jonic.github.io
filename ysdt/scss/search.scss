@@ -1,9 +1,8 @@
-// 分類頁
 @import "partials/base";
-@import "partials/mixin";
 @import "partials/color";
-@import "partials/page";
 
+@import "partials/page";
+@import "partials/tag_cloud";
 @import "partials/cateitem";
 @import "partials/relate";
 @import "partials/functop";
@@ -18,7 +17,6 @@
 }
 .site-main{
     width: 100%;
-    margin:0 auto;
     padding: 20px 0 0;
     .container{
         display: flex;
@@ -51,7 +49,7 @@
         font-size: .7rem;
         padding:3px 4px 4px;
         background-color: #d00;
-        @include border-radius(50%);
+        border-radius:50%;
     }
 }
 

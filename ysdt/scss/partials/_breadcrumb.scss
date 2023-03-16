@@ -1,0 +1,16 @@
+.breadcrumb{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 50px;
+    margin:0 0 0 20px;
+    font-size:.9rem;
+    .link{
+        padding: 0 5px 0;
+        color:#0767d3;
+        text-decoration: underline;
+		&:first-child{
+			padding:0 5px 0 0 ;
+		}
+    }
+}

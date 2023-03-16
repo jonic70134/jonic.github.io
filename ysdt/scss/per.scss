@@ -1,12 +1,36 @@
 @import "partials/base";
-@import "partials/mixin";
 @import "partials/color";
-@import "partials/page";
+
+@import "partials/font_iconmoon";
+@import "partials/head";
+@import 'partials/foot';
+
 @import "partials/cupn";
 @import "partials/page_item";
 @import "3rd-party/_swiper.scss";
+
 .body_container{
     padding: 0;
+	min-height: calc(100vh - 82px);
+}
+.site-main{
+    width:1220px;
+    margin:0 auto;
+    position: relative;
+}
+.container{
+    width: 1220px;
+    margin:0 auto;
+}
+.sub_head{
+	.container{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+}
+.cupn_slide{
+    overflow: hidden;
 }
 .site-header {
     background-color: #f5281e;
@@ -71,7 +95,7 @@
     display: block;
     width:300px;
     height:300px;
-    @include border-radius(10px);
+    border-radius:10px;
     background-color: white;
 }
 .per_l{
@@ -79,7 +103,7 @@
     flex-flow:row nowrap;
     justify-items: stretch;
     padding:20px;
-    @include border-radius(5px);
+    border-radius:5px;
 }
 .per_buy{
     display: flex;
@@ -140,11 +164,7 @@
         }
     }
 }
-.cupn_t,.item_t{
-    margin-top:25px;
-    color:#666;
-    font-size:1rem;
-}
-.item_bg{
-    margin: 10px 0 0;
+.item_t{
+    margin: 20px 0;
+    font-size:1.2rem;
 }

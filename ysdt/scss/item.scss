@@ -1,17 +1,32 @@
 // 單品頁
 @import "partials/base";
-@import "partials/mixin";
 @import "partials/color";
-@import "partials/page";
+
+@import "partials/font_iconmoon";
+@import "partials/head";
+@import "partials/menu";
+@import 'partials/breadcrumb';
+@import 'partials/foot';
 @import "partials/relate";
 
 @import "3rd-party/_swiper.scss";
-@import "3rd-party/_lity.scss";
-
+// @import "3rd-party/_lity.scss";
+.body_container{
+	min-height: calc(100vh - 82px);
+}
+.site-main{
+    width:1220px;
+    margin:0 auto;
+    position: relative;
+}
+.container{
+    width: 1220px;
+    margin:0 auto;
+}
 .sub_head{
-    .container{
-        justify-content: flex-start;
-    }
+	.container{
+		display: flex;
+	}
 }
 .swiper-container{
     margin:0;
@@ -105,12 +120,9 @@
 		border:1px solid #ccc;
         border-right:none;
         border-left:none;
-		-webkit-appearance: none;
-        -moz-appearance: none;
         appearance: none;
         border-radius: 0;
         line-height: 1;
-        @include box-sizing(border-box);
 	}
 	.quantity-decrease,.quantity-increase{
         padding: 12px;
@@ -119,10 +131,7 @@
         color:#777;
         border: 1px solid #ccc;
 		cursor: pointer;
-        -webkit-appearance: none;
-        -moz-appearance: none;
         appearance: none;
-        @include box-sizing(border-box);
 	}
 }
 .more{
@@ -152,7 +161,7 @@
     line-height: 1;
     color:#feff00;
     background-color: #88c533;
-    @include border-radius(0 0 10px 10px);
+    border-radius:0 0 10px 10px;
 }
 
 .item_slider{
@@ -484,7 +493,7 @@
         padding:0 7px;
         font-size:1rem;
         background-color: #d00;
-        @include border-radius(8px);
+        border-radius:8px;
     }
     .coupon_search{
         margin:0 10px;
@@ -1295,7 +1304,7 @@
 	opacity: 0;
 	overflow: hidden;
 	z-index: 100;
-    @include transition(.3s ease-in-out);
+    transition:.3s ease-in-out;
 	&:target {
 		opacity: 1;
 		top: 0;
@@ -1312,7 +1321,7 @@
 	height: 20px;
 	box-sizing: border-box;
 	color: black;
-    @include transition(.4s ease-in-out);
+    transition:.4s ease-in-out;
 	&:before, &:after {
 		content: " ";
 		display: block;
@@ -1337,7 +1346,7 @@
 	box-sizing: border-box;
     overflow-y: auto;
     overflow-x: hidden;
-    @include transition(.4s ease-in-out);
+    transition:.4s ease-in-out;
 }
 .lightbox_t{
     padding: 10px;

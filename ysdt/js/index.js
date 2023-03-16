@@ -4,7 +4,7 @@ var spec1area = new Swiper('.sepc_single .sepc_single_slide', {
     navigation: {
         nextEl: ".slide_btn_r",
         prevEl: ".slide_btn_l",
-      },
+    },
     autoplay: {
         delay: 5000,
     },

@@ -93,9 +93,9 @@ html
 										button.button.btn-imd 立即購買
 							.per_r.swiper-container
 								.swiper-wrapper
-									mixin slider(src)
-										a.swiper-slide(href='item.html')
-											.per_block
+									.swiper-slide
+										mixin slider(src)
+											a.per_block(href='item.html')
 												.per_dur
 													img(src='img/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
 												.per_r_info
@@ -103,25 +103,29 @@ html
 													.per_price
 														.price $999,900
 														p.rush(href="#") 搶購 
-									+slider('01_02_160')
-									+slider('01_03_160')
-									+slider('01_04_160')
-									+slider('01_05_160')
+										+slider('05_01_182')
+										+slider('05_07_182')
+										+slider('05_03_182')
+										+slider('05_14_182')
+										+slider('05_10_182')
+										+slider('05_16_182')
 
-									+slider('01_02_160')
-									+slider('01_03_160')
-									+slider('01_04_160')
-									+slider('01_05_160')
-
-									+slider('05_03_182')
-									+slider('05_05_182')
-									+slider('05_07_182')
-									+slider('05_01_182')
-
-									+slider('05_03_182')
-									+slider('05_05_182')
-									+slider('05_07_182')
-									+slider('05_01_182')
+									.swiper-slide
+										mixin slider(src)
+											a.per_block(href='item.html')
+												.per_dur
+													img(src='img/sample/'+ src+'.jpg', alt='商品名稱', title='商品名稱')
+												.per_r_info
+													h3.name Grivel 分力盤/系統架設/ Grivel Four 四孔分力盤 RTFOUR 義大利製
+													.per_price
+														.price $999,900
+														p.rush(href="#") 搶購 
+										+slider('01_04_160')
+										+slider('01_05_160')
+										+slider('01_03_160')
+										+slider('05_14_182')
+										+slider('05_18_182')
+										+slider('05_01_182')
 								.swiper-button-next
 								.swiper-button-prev
 								
@@ -263,9 +267,9 @@ html
 							+item('05_17_182x240')
 							+item('05_18_182')
 
-include src/_foot.pug
-script(src='js/3rd-party/jquery-3.6.0.min.js')
-script(src='js/3rd-party/swiper-bundle.min.js')
-script(src='js/3rd-party/macy.js')
-script(src='js/common.js')
-script(src='js/cate_one.js')
+		include src/_foot.pug
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/3rd-party/macy.js')
+		script(src='js/common.js')
+		script(src='js/cate_one.js')
