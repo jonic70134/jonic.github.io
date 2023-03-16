@@ -800,23 +800,6 @@ label {
   word-break: break-word;
   word-wrap: break-word;
 }
-.menu-title:after {
-  display: block;
-  position: absolute;
-  right: 8px;
-  top: 50%;
-  color: #fffae3;
-  font-family: "icomoon" !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  font-size: 0.7rem;
-  line-height: 1;
-  content: "\e93f";
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
 
 .menu-sub-t {
   padding: 15px 10px;
@@ -827,7 +810,7 @@ label {
 
 .menu-one-li {
   position: relative;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 10px;
 }
 .menu-one-li:hover {
   background: white;
