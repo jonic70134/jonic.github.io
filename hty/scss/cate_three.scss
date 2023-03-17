@@ -1,8 +1,9 @@
 // 首頁
 @import "partials/base";
-@import "partials/mixin";
 @import "partials/color";
+
 @import "partials/page";
+@import "partials/tag_cloud";
 @import "partials/page_item";
 @import "partials/relate";
 @import "partials/catemenu";
@@ -113,7 +114,7 @@
     img{
         width: 200px;height:200px;
         border:5px solid #ddd5cc;
-        @include border-radius(10px)
+        border-radius: 10px;
     }
     .spec_info{
         display: flex;
@@ -162,6 +163,7 @@
     background: none;
 }
 .relate_prod{
+    width: 100%;
     margin: 10px 0 0;
     border: none;
     background: #f3f1e8;

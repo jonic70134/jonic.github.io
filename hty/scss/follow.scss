@@ -1,8 +1,8 @@
 // 首頁
 @import "partials/base";
-@import "partials/mixin";
 @import "partials/color";
 @import "partials/page";
+@import 'partials/breadcrumb';
 @import "partials/pagenav";
 .sub_head{
 	.container{
@@ -165,7 +165,7 @@
 	font-size: .7rem;
 	padding:3px 4px 4px;
 	background-color: #d00;
-	@include border-radius(50%);
+	border-radius:50%;
 }
 
 .fw-notice-date{

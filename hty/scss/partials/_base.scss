@@ -98,3 +98,9 @@ h1, h2, h3, h4, h5, h6{
     display:none;
 }
 .clearfix:after {   content: ".";   display: block; height: 0;  visibility: hidden; clear: both;}
+:focus{
+	outline:0;
+}
+label{
+	cursor: pointer;
+}

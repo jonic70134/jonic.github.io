@@ -70,29 +70,29 @@ html
 						a(href="mem_cheat.html").mem_block3_3.mem_anti
 							img(src="img/mem_exp.svg")
 							.mem_link_name 防詐騙公告
-	.lightbox-target#mem_phone_order
-		.content
-			.con_t 手機號碼查訂單
-			.con_m
-				.con_m_t 訂購人手機號碼
-				input.con_input(type="tel" autocomplete="tel")
-			.con_btn
-				a.box_btn_send(href="#mem_phone_send") 取得驗證碼
-			a.lightbox-close(href="#")
-	.lightbox-target#mem_phone_send
-		.content
-			.con_t 手機號碼查訂單
-			.con_m
-				p.sendphone 認證碼已用簡訊發送至 09*****987
-				input.con_input(type="text" maxlength="6")
-				P.time 請於3分鐘內輸入驗證碼，剩餘時間
-					span.red 02:59
-			.con_btn
-				a.box_btn_resend(href="#mem_phone_send") 重新發送驗證碼
-				a.box_btn_send(href="mem_chk.html") 確認送出
-			.con_foot
-				p 驗證碼簡訊將於1分鐘內發送至您的手機,若未收到簡訊,
-				p 請點学重新發送驗證碼簡訊按钮,重新發送簡訊。
-			a.lightbox-close(href="#")
-	include src/_foot.pug
+		include src/_foot.pug
+		.lightbox-target#mem_phone_order
+			.content
+				.con_t 手機號碼查訂單
+				.con_m
+					.con_m_t 訂購人手機號碼
+					input.con_input(type="tel" autocomplete="tel")
+				.con_btn
+					a.box_btn_send(href="#mem_phone_send") 取得驗證碼
+				a.lightbox-close(href="#")
+		.lightbox-target#mem_phone_send
+			.content
+				.con_t 手機號碼查訂單
+				.con_m
+					p.sendphone 認證碼已用簡訊發送至 09*****987
+					input.con_input(type="text" maxlength="6")
+					P.time 請於3分鐘內輸入驗證碼，剩餘時間
+						span.red 02:59
+				.con_btn
+					a.box_btn_resend(href="#mem_phone_send") 重新發送驗證碼
+					a.box_btn_send(href="mem_chk.html") 確認送出
+				.con_foot
+					p 驗證碼簡訊將於1分鐘內發送至您的手機,若未收到簡訊,
+					p 請點学重新發送驗證碼簡訊按钮,重新發送簡訊。
+				a.lightbox-close(href="#")
 

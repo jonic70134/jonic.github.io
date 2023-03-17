@@ -1,16 +1,34 @@
-// 首頁
 @import "partials/base";
-@import "partials/mixin";
 @import "partials/color";
-@import "partials/page";
+
+@import "partials/font_iconmoon";
+@import "partials/head";
+@import 'partials/foot';
+
 @import "partials/pagenav";
 
-
 .body_container{
-    min-height: 100vh;
+	min-height: calc(100vh - 82px);
     padding:0 0 40px;
     background: #eee;
 }
+.site-main{
+    width:1220px;
+    margin:0 auto;
+    position: relative;
+}
+.container{
+    width: 1220px;
+    margin:0 auto;
+}
+.sub_head{
+	.container{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+}
+
 .red{
     color:#d00;
 }
@@ -380,13 +398,19 @@ a.grey{
 }
 .ord_info_grid{
     display: grid;
-    grid-template-rows: 30px 40px 40px;
-    grid-template-columns: 50px 50px  1fr 80px 80px 100px;
+    grid-template-rows: 30px 40px;
+    grid-template-columns: 50px 1fr  80px 80px;
     grid-gap: 0;
+    margin: 0 0 20px;
     font-size:.8rem;
     line-height: 1.2;
     border-top: 1px solid #ccc;
     border-left: 1px solid #ccc;
+    background: white;
+    a{
+        color:#06c;
+        text-decoration: underline;
+    }
 }
 .ord_info_head{
     display: flex;
@@ -420,27 +444,53 @@ a.grey{
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+#order_return_edit{
+    display: none;
+    &:checked{
+        & ~ .ord_returen_enter{
+            display: block;
+        }
+        & ~ .order_return_lb, & ~ .order_return_num{
+            display: none;
+        }
+    }
+}
+.order_return_lb{
+    color:#06c;
+    text-decoration: underline;
+    &::after{
+        content:'修'; 
+    }
+    
+}
+.ord_returen_enter{
+    display: none;
+}
+
 .ord_num{
     padding:20px 0 10px 0px;
 }
 .ord_msg{
-    padding:20px 0;
+    margin: 0 0 20px;
+    padding:20px ;
     line-height: 1.6;
-    p{
-        margin: 10px 0;
-    }
+    background: #efefef;
     small{
         color:#777;
         font-size:.9rem;
+    }
+    .line_indent{
+        margin: 0 0 0 20px;
     }
 }
 .ord_reason{
     display: flex;
     flex-flow: row nowrap;
     margin: 0 0 10px ;
-    padding: 0 ;
+    padding: 0;
     border: 1px solid #ccc;
-    border-top: 0;
+    background: white;
 }
 .ord_info_select{
     width: 100%;
@@ -449,13 +499,11 @@ a.grey{
     box-sizing: border-box;
 }
 
-.ord_chos{
+.ord_chos,.ord_des{
     flex:2 1 50%;
     padding: 10px;
-}
-.ord_des{
-    flex:2 1 50%;
-    padding: 10px;
+}.ord_des{
+    padding: 5px;
 }
 .ord_des_area{
     width: 100%;
@@ -484,13 +532,17 @@ a.grey{
         p{
             font-size: .9rem;
         }
+        a{
+            color:black;
+            text-decoration: underline;
+        }
     }
     input{
         margin: 0 10px 0 0;
     }
 }
 .mem_chk_container,.mem_ask_container{
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
 }
 .mem_chk_ask{

@@ -112,6 +112,14 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
+:focus {
+  outline: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?9fk6lu");
@@ -246,8 +254,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .icon_swiper_prev:before {
   content: "\e93c";
-  color: white;
-  font-size: 0.8rem;
+  color: #666;
 }
 
 .cupn_arrow:before {
@@ -278,6 +285,92 @@ h1, h2, h3, h4, h5, h6 {
 .icon_minus:before {
   content: "\e942";
   color: #888988;
+}
+
+.foot_nav {
+  background: #ece8df;
+}
+.foot_nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 50px;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.foot_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.foot_link a {
+  display: block;
+  width: 75px;
+  margin: 0 50px 0 0;
+  color: black;
+  text-decoration: none;
+}
+
+.foot_pby {
+  color: #999;
+  text-align: right;
+}
+
+.foot_pby_txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 0 10px;
+}
+
+a.gotop {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 80px;
+  z-index: 50;
+  padding: 10px;
+  color: #eee;
+  background: #e00;
+  border: 1px solid #e00;
+  border-radius: 50%;
+  opacity: 0.8;
+  text-decoration: none;
+}
+a.gotop:after {
+  display: block;
+  content: "\e93f";
+  color: #eee;
+  font-family: "icomoon" !important;
+  font-size: 1rem;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.icon_swiper_prev:before {
+  color: white;
+  font-size: 0.8rem;
 }
 
 body {
@@ -1660,6 +1753,9 @@ button.is-disabled {
   padding: 8px;
   border: none;
   background: #eee;
+}
+.form input[type=email], .form input[autocomplete=address-line1] {
+  width: 215px;
 }
 .form:last-child {
   margin: 0;

@@ -1,0 +1,45 @@
+.tag-cloud{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 1000px;height:45px;
+	margin-top:5px;
+	overflow: hidden;
+	line-height: 1.4;
+	background-color: white;
+	a{
+		padding:0 10px ;
+	}
+	.greyLV1{
+		color:#999;
+		font-size:.8rem;
+		animation-delay: 0.7s;
+	}
+	.greyLV2{
+		color:#999;
+		font-size:1rem;
+		animation-delay: 0.5s;
+		
+	}
+	.blueLV1{
+		color:#7bd;
+		font-size:.8rem;
+		animation-delay: 0.7s;
+	}
+	.blueLV2{
+		color:#7bd;
+		font-size:1rem;
+		animation-delay: 0.5s;
+	}
+	.orangeLV1{
+		color:#f80;
+		font-size:.8rem;
+		animation-delay: 0.7s;
+	}
+	.orangeLV2{
+		color:#f80;
+		font-size:1rem;
+		animation-delay: 0.5s;
+	}
+}

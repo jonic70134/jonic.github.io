@@ -1,18 +1,18 @@
-// 智慧分類menu開合
-$('.nav-menu').hover(function() {
-    $('.menu-one').stop(true,true).slideToggle();
-});
 
 // 個人禮券slider
 var cupnslide = new Swiper('.cupn_slide', {
-    slidesPerView: 3.5,
+    slidesPerView: 3,
+    slidesPerGroup: 6,
     spaceBetween: 15,
+    grid: {
+        rows: 2,
+        fill: 'row',
+    },
     navigation: {
-        nextEl: ".cupn .swiper-button-next",
-        prevEl: ".cupn .swiper-button-prev",
+        nextEl: ".cupn_con .swiper-button-next",
+        prevEl: ".cupn_con .swiper-button-prev",
       },
 });
-
 
 // 瀑布流
 var masonry = new Macy({
@@ -34,24 +34,4 @@ var masonry = new Macy({
 $('.imgTrack').click(function(e){
     e.preventDefault();
     $(this).toggleClass('imgTrack imgTrackPlus');
-});
-
-// gotop
-var offset = 100;
-var dur = 500;
-
-$(window).scroll(function() {
-    if ($(this).scrollTop() > offset) {
-        $('.gotop').fadeIn(dur);
-    } else {
-        $('.gotop').fadeOut(dur);
-    }
-});
-
-$('.gotop').click(function(event) {
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: 0
-    }, dur);
-    return false;
 });

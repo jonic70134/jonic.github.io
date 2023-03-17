@@ -1759,6 +1759,9 @@ button.is-disabled {
   border: none;
   background: #eee;
 }
+.form input[type=email], .form input[autocomplete=address-line1] {
+  width: 215px;
+}
 .form:last-child {
   margin: 0;
 }

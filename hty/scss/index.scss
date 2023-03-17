@@ -1,13 +1,14 @@
 // 首頁
 @import "partials/base";
-@import "partials/mixin";
 @import "partials/color";
+
 @import "partials/page";
-// @import "partials/cupn";
+@import "partials/tag_cloud";
 @import "partials/page_item";
 @import "partials/cupn";
 @import "partials/turn";
 @import "3rd-party/_swiper.scss";
+
 .swiper-container{
     height: 100%; 
     position: relative;
@@ -18,10 +19,6 @@
 }
 .swiper-button-next{
     right: 0;
-}
-.img-mask{
-    position: absolute;top:0;bottom:0;right:0;left:0;
-    background: radial-gradient(circle at 50% 60%,transparent, transparent,rgba(0,0,0,0.3));
 }
 .slide_btn_r,.slide_btn_l{
     position: absolute;top:50%;right: 0; transform: translateY(-50%);z-index: 10;
@@ -65,24 +62,10 @@
         max-height: 340px;
     }
 }
-// .faded{
-//     position: relative;
-//     &::after{
-//         content: "";
-//         position: absolute;
-//         display: block;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//         border-collapse: separate;
-//         box-shadow:inset 0 0 40px 16px
-//     }
-// }
 .mask{
     mask-size:300px 300px;
     mask-composite: source-in;  
-    mask: 
+    mask:
         linear-gradient(to top,  transparent 0%, #fff 5% 95%, transparent 100%),
         linear-gradient(to left, transparent 0%, #fff 5% 95%, transparent 100%);
     mask-size:  300px 300px;
@@ -471,7 +454,7 @@
         width: 240px;height:240px;
         border:5px solid #ddd5cc;
         box-sizing: border-box;
-        @include border-radius(10px)
+        border-radius:10px;
     }
     .spec_info{
         display: flex;

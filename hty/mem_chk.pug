@@ -38,7 +38,7 @@ html
 									p (LINE Pay)
 								.ord_block.ord_cancel.center
 									span 我要
-									a.grey(href="mem_chk_return_part.html") 全退訂 
+									a.grey(href="mem_chk_return.html") 全退訂 
 								.ord_block.ord_detail
 									
 								.ord_block.ord_ask.center
@@ -582,29 +582,29 @@ html
 									.ord_confirm
 										a.ord_confirm_btn(href="#") 確認退訂 
 					include src/_pagenav.pug
-	.lightbox-target#item_price_pop
-		.content
-			.con_m
-				.com_price_t 商品總金額：
-				.com_price $34,500
-			.con_m
-				.com_price_sm 運費
-				.com_s_price $30
-			.con_m
-				.com_price_sm 活動折抵
-				.com_dis_price $30
-			.con_m
-				.com_price_sm HappyGo活動折抵
-				.com_dis_price $80
-			.con_m
-				.com_price_sm 遠傳幣折抵
-				.com_dis_price $500
-			.con_m
-				.com_price_sm 信用卡紅利折抵
-				.com_dis_price $30
-			.con_m
-				.com_price_t 結帳總金額：
-				.com_price $33,910
-			a.lightbox-close(href="#")
-	include src/_foot.pug
+		include src/_foot.pug
+		.lightbox-target#item_price_pop
+			.content
+				.con_m
+					.com_price_t 商品總金額：
+					.com_price $34,500
+				.con_m
+					.com_price_sm 運費
+					.com_s_price $30
+				.con_m
+					.com_price_sm 活動折抵
+					.com_dis_price $30
+				.con_m
+					.com_price_sm HappyGo活動折抵
+					.com_dis_price $80
+				.con_m
+					.com_price_sm 遠傳幣折抵
+					.com_dis_price $500
+				.con_m
+					.com_price_sm 信用卡紅利折抵
+					.com_dis_price $30
+				.con_m
+					.com_price_t 結帳總金額：
+					.com_price $33,910
+				a.lightbox-close(href="#")
 

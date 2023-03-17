@@ -14,7 +14,7 @@
       <header class="site-header">
         <div class="container">
           <div class="main_head">
-            <div class="header_l"><a class="logo" href="index.html"><img src="img/hty_Logo.png" alt=""></a>
+            <div class="header_l"><a class="logo" href="index.html"><img src="../img/hty_Logo.png" alt="新東陽"></a>
               <div class="site_search">
                 <input class="input_search" type="search" maxlength="128" placeholder="請輸入商品名稱"><a class="btn-search" href="search.html"><i class="icon icon_search"></i></a>
               </div>
@@ -75,7 +75,7 @@
                   <p class="red_line">請盡快付款</p>
                   <p>(LINE Pay)</p>
                 </div>
-                <div class="ord_block ord_cancel center"><span>我要</span><a class="grey" href="mem_chk_return_part.html">全退訂 </a></div>
+                <div class="ord_block ord_cancel center"><span>我要</span><a class="grey" href="mem_chk_return.html">全退訂 </a></div>
                 <div class="ord_block ord_detail"></div>
                 <div class="ord_block ord_ask center"><span>我要</span><a class="grey" href="mem_chk_ask.html">提問</a></div>
               </div>
@@ -527,101 +527,103 @@
         </div>
       </div>
     </div>
+    <footer class="foot_nav">
+      <div class="container">
+        <div class="foot_link"><a href="mem_intro.html">網站簡介</a><a href="mem_service.html">服務條款</a><a href="mem_des.html">購物約定條款</a><a href="mem_cheat.html">防詐騙宣導</a><a href="mem_privacy.html">隱私權說明</a></div>
+        <div class="foot_pby">
+          <div class="foot_pby_txt">
+            <p>Powered by </p><img class="foot_pbyimg" src="img/ysdt_logo.svg" alt="">
+          </div><small>遠時數位科技 提供技術服務,包含AI生成網站,金流,發票及客服</small>
+        </div>
+      </div><a class="gotop" href="#"></a>
+    </footer>
+    <!-- 狀態列 僅作為切換版面使用-->
+    <div class="chg_block">
+      <div class="chg_btn">
+        <p><i class="icon icon_allcate"></i></p>
+        <div class="chg_st"><a href="index.html">原始版本天</a>
+          <hr><a href="item.html">單品</a><a href="item_add01.html">加＋贈不選</a><a href="item_add02.html">多規+加+贈</a><a href="item_AB.html">A+B</a><a href="item_ABchoice.html">AB任選</a><a href="item_hide.html">隱藏商品</a><a href="item_notsale.html">尚未開賣</a><a href="item_soldout.html">售完補貨中</a><a href="item_per.html">個人賣場</a>
+        </div>
+      </div>
+    </div>
+    <style>
+      .chg_block {
+      	position: fixed;
+      	right: 0;
+      	top: 30%;
+      	z-index: 10;
+      }
+      .chg_btn {
+      	position: relative;
+      	
+      }
+      .chg_btn .icon_allcate::before{
+      	font-size:.7rem;
+      	color:black;
+      }
+      .chg_btn p {
+      	padding: 10px 5px;
+      	font-size: .85rem;
+      	color: #333;
+      	background: #ffda34;
+      	cursor:pointer;
+      }
+      .chg_btn:hover .chg_st {
+      	display: flex;
+      }
+      .chg_st {
+      	display: none;
+      	flex-flow: column wrap;
+      	position: absolute;right: 0;top: 100%;
+      }
+      .chg_st a {
+      	display: block;
+      	width: 77px;
+      	margin: 2px;
+      	padding: 7px 10px;
+      	font-size: .85rem;
+      	color: #333;
+      	background-color: #eee;
+      	text-decoration: none;
+      	border-radius: 8px;
+      	box-shadow: -1px 1px 5px #aaa;
+      }
+      .chg_st a:hover {
+      	color: #333;
+      	background: #ffda34;
+      }
+    </style>
+    <div class="lightbox-target" id="item_price_pop">
+      <div class="content">
+        <div class="con_m">
+          <div class="com_price_t">商品總金額：</div>
+          <div class="com_price">$34,500</div>
+        </div>
+        <div class="con_m">
+          <div class="com_price_sm">運費</div>
+          <div class="com_s_price">$30</div>
+        </div>
+        <div class="con_m">
+          <div class="com_price_sm">活動折抵</div>
+          <div class="com_dis_price">$30</div>
+        </div>
+        <div class="con_m">
+          <div class="com_price_sm">HappyGo活動折抵</div>
+          <div class="com_dis_price">$80</div>
+        </div>
+        <div class="con_m">
+          <div class="com_price_sm">遠傳幣折抵</div>
+          <div class="com_dis_price">$500</div>
+        </div>
+        <div class="con_m">
+          <div class="com_price_sm">信用卡紅利折抵</div>
+          <div class="com_dis_price">$30</div>
+        </div>
+        <div class="con_m">
+          <div class="com_price_t">結帳總金額：</div>
+          <div class="com_price">$33,910</div>
+        </div><a class="lightbox-close" href="#"></a>
+      </div>
+    </div>
   </body>
-  <div class="lightbox-target" id="item_price_pop">
-    <div class="content">
-      <div class="con_m">
-        <div class="com_price_t">商品總金額：</div>
-        <div class="com_price">$34,500</div>
-      </div>
-      <div class="con_m">
-        <div class="com_price_sm">運費</div>
-        <div class="com_s_price">$30</div>
-      </div>
-      <div class="con_m">
-        <div class="com_price_sm">活動折抵</div>
-        <div class="com_dis_price">$30</div>
-      </div>
-      <div class="con_m">
-        <div class="com_price_sm">HappyGo活動折抵</div>
-        <div class="com_dis_price">$80</div>
-      </div>
-      <div class="con_m">
-        <div class="com_price_sm">遠傳幣折抵</div>
-        <div class="com_dis_price">$500</div>
-      </div>
-      <div class="con_m">
-        <div class="com_price_sm">信用卡紅利折抵</div>
-        <div class="com_dis_price">$30</div>
-      </div>
-      <div class="con_m">
-        <div class="com_price_t">結帳總金額：</div>
-        <div class="com_price">$33,910</div>
-      </div><a class="lightbox-close" href="#"></a>
-    </div>
-  </div>
-  <footer class="foot_nav">
-    <div class="foot_link"><a href="#">網站簡介</a><a href="#">服務條款</a><a href="#">購物約定條款</a><a href="#">防詐騙宣導</a><a href="#">隱私權說明</a></div>
-    <div class="foot_pby">
-      <div class="foot_pby_txt">
-        <p>Powered by </p><img class="foot_pbyimg" src="img/ysdt_logo.svg" alt="">
-      </div><small>遠時數位科技 提供技術服務,包含AI生成網站,金流,發票及客服</small>
-    </div><a class="gotop" href="#"></a>
-  </footer>
-  <!-- 狀態列 僅作為切換版面使用-->
-  <div class="chg_block">
-    <div class="chg_btn">
-      <p><i class="icon icon_allcate"></i></p>
-      <div class="chg_st"><a href="index.html">原始版本天</a>
-        <hr><a href="item.html">單品</a><a href="item_add01.html">加＋贈不選</a><a href="item_add02.html">多規+加+贈</a><a href="item_AB.html">A+B</a><a href="item_ABchoice.html">AB任選</a><a href="item_hide.html">隱藏商品</a><a href="item_notsale.html">尚未開賣</a><a href="item_soldout.html">售完補貨中</a><a href="item_per.html">個人賣場</a>
-      </div>
-    </div>
-  </div>
-  <style>
-    .chg_block {
-    	position: fixed;
-    	right: 0;
-    	top: 30%;
-    	z-index: 10;
-    }
-    .chg_btn {
-    	position: relative;
-    	
-    }
-    .chg_btn .icon_allcate::before{
-    	font-size:.7rem;
-    	color:black;
-    }
-    .chg_btn p {
-    	padding: 10px 5px;
-    	font-size: .85rem;
-    	color: #333;
-    	background: #ffda34;
-    	cursor:pointer;
-    }
-    .chg_btn:hover .chg_st {
-    	display: flex;
-    }
-    .chg_st {
-    	display: none;
-    	flex-flow: column wrap;
-    	position: absolute;right: 0;top: 100%;
-    }
-    .chg_st a {
-    	display: block;
-    	width: 77px;
-    	margin: 2px;
-    	padding: 7px 10px;
-    	font-size: .85rem;
-    	color: #333;
-    	background-color: #eee;
-    	text-decoration: none;
-    	border-radius: 8px;
-    	box-shadow: -1px 1px 5px #aaa;
-    }
-    .chg_st a:hover {
-    	color: #333;
-    	background: #ffda34;
-    }
-  </style>
 </html>

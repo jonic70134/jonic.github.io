@@ -1,23 +1,17 @@
 doctype html
 html
 	head
-		meta(charset='utf-8')
-		meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
-		title 白昌
-		meta(content='白昌首頁', name='description')
-		meta(content='Orange', name='author')
-		meta(content='width=device-width, initial-scale=1.0', name='viewport')
-		link(rel='icon', href='img/baichain.ico')
+		include src/_meta.pug
 		link(href='css/error.css', rel='stylesheet')
 	body
 		.body_container
 			include src/_topbar.pug
 			include src/_header.pug
-			.sub-head
+			.sub_head
 				.container
 					include src/_menu.pug
 					include src/_tagcloud.pug
-			.site-main.clearfix(role='main')
+			.site-main(role='main')
 				.container
 					.blur_bg
 						.bubble
@@ -31,9 +25,7 @@ html
 							li 此網頁可能暫時出現故障
 							li 暫時沒有網路訊號或者行動網路連線
 							br
-						button.btn-back_index(type='button') 回 ASAP 4.0 首頁
-			include src/_foot.pug
-			script(src='js/3rd-party/jquery-1.9.1.min.js')
-			script(src='js/3rd-party/swiper-bundle.min.js')
-			script(src='js/common.js')
-			script(src='js/index.js')
+						a.btn-back_index(href="index.html") 回首頁
+		include src/_foot.pug
+		script(src='js/common.js')
+		script(src='js/index.js')

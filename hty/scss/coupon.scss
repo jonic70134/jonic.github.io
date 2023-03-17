@@ -1,8 +1,9 @@
 // 首頁
 @import "partials/base";
-@import "partials/mixin";
 @import "partials/color";
+
 @import "partials/page";
+@import 'partials/breadcrumb';
 @import "partials/cupn";
 .sub_head{
     .container{
