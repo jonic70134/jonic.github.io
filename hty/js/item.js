@@ -1,30 +1,18 @@
 
 // 頁首標籤slider
-var tagslide = new Swiper('.tag-slide .swiper-container', {
-    slidesPerView: 10,
+var payslide = new Swiper('.payslide .swiper-container', {
+    slidesPerView: 4,
     spaceBetween: 10,
-    freeMode: true,
-    freeModeSticky:true,
     navigation: {
-        nextEl: '.icon-next',
-    }
+        nextEl: ".payslide .icon_arrow.next",
+        prevEl: ".payslide .icon_arrow.prev",
+    },
 });
 
 // 智慧分類menu開合
 $('.nav-menu').hover(function() {
     $('.menu-one').stop(true,true).slideToggle();
 });
-
-//item main 選規格
-$('.value>li').click(function(){
-	var img = "<i class='icon icon_check'></i>";
-	if($(this).hasClass('disabled')){
-		return false;
-	}else{
-    	$(this).addClass('active').append(img).siblings().removeClass('active').find('.icon_check').remove();
-	}
-});
-
 
 
 $(function(){

@@ -152,7 +152,9 @@
                       </div>
                     </div><i class="icon icon_arrow nextBtn"></i><i class="icon icon_arrow prevBtn"></i>
                   </div>
-                  <div class="oth_item"><a class="item_prev" href="#">上一個商品 </a><a class="item_next" href="#">下一個商品</a></div>
+                  <div class="oth_item"><a class="find_similar"><i class="icon icon_search"></i><span>看相似商品</span></a>
+                    <div class="rollitem"><a class="item_prev" href="#">上一個商品 </a><a class="item_next" href="#">下一個商品</a></div>
+                  </div>
                 </div>
                 <div class="info">
                   <!-- 商品名稱-->
@@ -165,17 +167,46 @@
                         <div class="title">網路價</div>
                         <div class="price">$195,000</div>
                       </div>
-                    </div><a class="btn-fav icon icon_track" href="#">追蹤商品</a>
+                    </div>
                   </div>
-                  <div class="item_line act_line"></div>
+                  <div class="item_line fav">
+                    <p class="ue">UE</p><a class="btn-fav icon icon_track" href="#">追蹤商品</a>
+                  </div>
+                  <div class="item_line delivery"><span class="title">配送</span>
+                    <div class="value">
+                      <div class="value_line">
+                        <input class="item_line_chk" id="deli1" type="radio" value="1" name="delivery" checked>
+                        <label class="item_line_lb icon icon_check" for="deli1">門市配送</label>
+                      </div>
+                      <div class="value_line">
+                        <input class="item_line_chk" id="deli2" type="radio" value="2" name="delivery">
+                        <label class="item_line_lb icon icon_check" for="deli2">宅配</label>
+                      </div>
+                    </div>
+                  </div>
                   <!-- 簡介-->
-                  <div class="shop_btn_block item_line">
+                  <div class="item_line shop_btn_block">
                     <div class="shop_btn">
                       <div class="quantity"><span class="quantity-decrease"><i class="icon icon_minus"></i></span>
                         <input class="quantity-input" type="text" value="1" max="99" title="請輸入購買量"><span class="quantity-increase"><i class="icon icon_plus"></i></span>
                       </div>
                       <button class="button large btn-imd">立即結帳</button>
                       <button class="button large btn-cart">加入購物車</button>
+                    </div>
+                  </div>
+                  <div class="item_line paytxt">
+                    <p class="grey">本站付款方式</p>
+                    <p>信用卡、ATM、LINE Pay、HAPPY GO Pay、街口支付、悠遊付</p>
+                  </div>
+                  <div class="item_line payslide">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/credit_01.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/credit_02.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/credit_03.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/credit_04.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/credit_05.jpg" alt=""></div>
+                      </div><i class="icon icon_arrow next"></i><i class="icon icon_arrow prev"></i>
                     </div>
                   </div>
                 </div>

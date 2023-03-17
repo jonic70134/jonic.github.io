@@ -16,10 +16,31 @@ h1.name 送無線充電版多選一+Targus Newport 15吋拉繩後背包-時尚�
 		//- .sale_time
 		//- 	span.colfe0 1天13小時25分11秒 
 		//- 	span.colwhite 特賣結束
+.item_line.fav
+	p.ue UE
 	a(href="#").btn-fav.icon.icon_track
 		| 追蹤商品
-.item_line.act_line
-	//- .coupon 最高可折 
+.item_line.delivery
+	span.title 配送
+	.value
+		.value_line
+			input#deli1.item_line_chk(type="radio", value="1",name="delivery" checked)
+			label.item_line_lb.icon.icon_check(for="deli1") 門市配送
+		.value_line
+			input#deli2.item_line_chk(type="radio", value="2",name="delivery")
+			label.item_line_lb.icon.icon_check(for="deli2") 宅配
+
+//- .colorsize.item_line
+//- 	span.title 顏色
+//- 	.value
+//- 		.value_line
+//- 			input#colorsize1.item_line_chk(type="radio", value="1",name="colorsize" checked)
+//- 			label.item_line_lb.icon.icon_check(for="colorsize1") 黃色
+//- 		.value_line
+//- 			input#colorsize2.item_line_chk(type="radio", value="2",name="colorsize")
+//- 			label.item_line_lb.icon.icon_check(for="colorsize2") 紅色
+//- .item_line.act_line
+	//- .coupon 最高可折  
 	//- 	span.cole00 11111 購物金
 	//- 	a(href='#') (說明)
 	//- a.fancybox.coupon_search(href='../popup/site_fancybox_all.html #login_box') 查詢可用折價券
