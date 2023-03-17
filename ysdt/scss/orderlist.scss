@@ -1112,8 +1112,11 @@ button.is-disabled {
 		border:none;
 		background: #eee;
 	}
-	input[type="email"],input[autocomplete="address-line1"]{
+	input[type="email"]{
 		width:215px;
+	}
+	input[autocomplete="address-line1"]{
+		width:350px;
 	}
 	&:last-child{
 		margin:0;
