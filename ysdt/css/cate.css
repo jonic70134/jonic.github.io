@@ -841,64 +841,29 @@ a.gotop:after {
 }
 
 .tag-cloud {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 1000px;
-  height: 45px;
-  margin-top: 5px;
-  overflow: hidden;
+  position: relative;
+  width: 1020px;
+  height: 50px;
+  padding: 10px;
+  background: #ccc;
   line-height: 1.4;
+  overflow: hidden;
+}
+
+.tag {
+  display: block;
+  width: auto !important;
+  margin: 0 10px 0 0;
+  padding: 3px 15px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: black;
   background-color: white;
-}
-.tag-cloud a {
-  padding: 0 10px;
-}
-.tag-cloud .greyLV1 {
-  color: #999;
-  font-size: 0.8rem;
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-.tag-cloud .greyLV2 {
-  color: #999;
-  font-size: 1rem;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-.tag-cloud .blueLV1 {
-  color: #7bd;
-  font-size: 0.8rem;
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-.tag-cloud .blueLV2 {
-  color: #7bd;
-  font-size: 1rem;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-.tag-cloud .orangeLV1 {
-  color: #f80;
-  font-size: 0.8rem;
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-.tag-cloud .orangeLV2 {
-  color: #f80;
-  font-size: 1rem;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  border-radius: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .cate_main {

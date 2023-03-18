@@ -1,45 +1,52 @@
 .tag-cloud{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: center;
-	width: 1000px;height:45px;
-	margin-top:5px;
-	overflow: hidden;
+	position: relative;
+	width: 1020px;height:50px;
+	padding: 10px;
+	background: #ccc;
 	line-height: 1.4;
-	background-color: white;
-	a{
-		padding:0 10px ;
-	}
-	.greyLV1{
-		color:#999;
-		font-size:.8rem;
-		animation-delay: 0.7s;
-	}
-	.greyLV2{
-		color:#999;
-		font-size:1rem;
-		animation-delay: 0.5s;
-		
-	}
-	.blueLV1{
-		color:#7bd;
-		font-size:.8rem;
-		animation-delay: 0.7s;
-	}
-	.blueLV2{
-		color:#7bd;
-		font-size:1rem;
-		animation-delay: 0.5s;
-	}
-	.orangeLV1{
-		color:#f80;
-		font-size:.8rem;
-		animation-delay: 0.7s;
-	}
-	.orangeLV2{
-		color:#f80;
-		font-size:1rem;
-		animation-delay: 0.5s;
-	}
+	overflow: hidden;
 }
+.tag{
+	display: block;width: auto!important;
+    margin: 0 10px 0 0;
+    padding: 3px 15px;
+    font-size: 1.1rem;
+	text-align: center;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+	// .greyLV1{
+	// 	color:#999;
+	// 	font-size:.8rem;
+	// 	animation-delay: 0.7s;
+	// }
+	// .greyLV2{
+	// 	color:#999;
+	// 	font-size:1rem;
+	// 	animation-delay: 0.5s;
+		
+	// }
+	// .blueLV1{
+	// 	color:#7bd;
+	// 	font-size:.8rem;
+	// 	animation-delay: 0.7s;
+	// }
+	// .blueLV2{
+	// 	color:#7bd;
+	// 	font-size:1rem;
+	// 	animation-delay: 0.5s;
+	// }
+	// .orangeLV1{
+	// 	color:#f80;
+	// 	font-size:.8rem;
+	// 	animation-delay: 0.7s;
+	// }
+	// .orangeLV2{
+	// 	color:#f80;
+	// 	font-size:1rem;
+	// 	animation-delay: 0.5s;
+	// }

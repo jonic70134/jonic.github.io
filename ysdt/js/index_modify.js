@@ -136,21 +136,6 @@ $(".icon_track").click(function(e){
     $(this).toggleClass('icon_track icon_track_plus');
 });
 
-// gotop
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 300) {
-        $('.gotop').fadeIn(500);
-    } else {
-        $('.gotop').stop().fadeOut(500);
-    }
-});
-$('.gotop').click(function(e) {
-    e.preventDefault();
-    $('html, body').animate({
-        scrollTop: 0
-    }, 500);
-    return false;
-});
 
 // 再轉轉按鈕
 $(".cupn_chg img").click(function() {
