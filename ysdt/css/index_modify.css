@@ -1003,16 +1003,13 @@ a.gotop:after {
 }
 
 .cupn_items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: ;
+  grid-template-rows: repeat(auto, 1fr);
+  grid-gap: 30px;
 }
 
 .cupn_item {
@@ -1025,8 +1022,6 @@ a.gotop:after {
           flex-flow: row nowrap;
   padding: 8px;
   background-color: #333;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .info {
@@ -1140,6 +1135,7 @@ a.gotop:after {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   line-clamp: 3;
+  min-width: 120px;
   margin: 0 15px 0 0;
   font-size: 0.9rem;
   color: white;
