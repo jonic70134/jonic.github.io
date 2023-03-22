@@ -1,3 +1,14 @@
+// 分類menu開合
+$('.nav-menu').hover(function() {
+    $('.menu-one').stop(true,true).slideToggle();
+});
+
+// 標籤雲
+var tagslide = new Swiper('.tag-cloud', {
+    slidesPerView: 'auto',
+    loop:true,
+});
+
 // power by
 var removeClass = true;
 $('.pbybtn').click(function(e) {

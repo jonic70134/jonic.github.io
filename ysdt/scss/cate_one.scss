@@ -1,11 +1,11 @@
 // 首頁
 @import "partials/base";
 @import "partials/color";
+@import "3rd-party/_swiper.scss";
 
 @import "partials/page";
 @import "partials/tag_cloud";
 @import "partials/page_item";
-@import "3rd-party/_swiper.scss";
 @import "partials/relate";
 @import "partials/catemenu";
 
@@ -325,7 +325,7 @@
         flex-flow: row nowrap;
         align-items: flex-end;
         justify-content: space-between;
-        padding:5px 10px 15px;
+        padding:3px 10px 15px;
     }
     .per_price{
         margin: 0 0 0 3px;
@@ -349,7 +349,7 @@
         justify-content: center;
         align-items: center;
         .per_price{
-            padding: 6px 0 10px;
+            padding: 6px 0 7px;
         }
         img{
             width:86px;height:86px;

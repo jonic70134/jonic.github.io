@@ -1,0 +1,137 @@
+// 首頁
+@import "partials/base";
+@import "partials/color";
+
+@import "partials/font_iconmoon";
+@import 'partials/foot';
+@import "partials/cupn";
+
+body{
+    background: #eee;
+}
+.body_container{
+	min-height: calc(100vh - 82px);
+}
+.site-main{
+    width:1220px;
+    margin:0 auto;
+    position: relative;
+}
+.container{
+    width: 1220px;
+    margin:0 auto;
+}
+.site-header{
+    position: relative;
+    border-bottom: 1px solid #eee;
+    background: white;
+}
+.main_head{
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content: space-between;
+	position: relative;
+    padding: 20px 0;
+	.container{
+		width: 100%;
+	}
+}
+
+.header_l,.header_r{
+	display:flex;
+	flex-flow:row nowrap;
+	align-items: center;
+}
+.header_r{
+    display: flex;
+    flex-flow:column;
+    position: relative;top: 15px;
+    line-height: 1.2;
+}
+.header_r_top{
+    font-size:1rem;
+}
+.header_r_bot{
+    color:#aaa;
+    font-size: .85rem;
+}
+.logo{
+	display: block;
+	img{
+		display: block;
+		width: 200px;
+	}
+}
+.red{
+    color:#d00;
+}
+.back{
+    display: flex;
+    font-size: 1.3rem;
+}
+
+
+.mem_chk_t{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin:0;
+    padding:20px 0;
+    font-size: 1.3rem;
+    small{
+        font-size:.9rem;
+    }
+}
+.chk_order{
+    margin: 0 0 0 10px;
+    color:#333;
+}
+
+.cupn_top{
+    margin:0 0 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+.cupn_des{
+    text-align: center;
+    font-size:1.5rem;
+    font-weight: 500;
+    line-height: 2;
+}
+.cupn_bot{
+    padding: 30px;
+    background: white;
+    p{
+        margin: 0 0 30px;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+}
+.cupn_items{
+    display: grid;
+    grid-template-columns: repeat(3,360px);
+    grid-template-rows: repeat(auto,1fr);
+    grid-gap:30px;
+}
+.cupn_item{
+    border-radius: 10px;
+    &.red{
+        background:#cf3373 url('../img/chkbg_01.jpg') no-repeat ;
+    }
+    &.blue{
+        background:#1a3375 url('../img/chkbg_02.jpg') no-repeat ;
+    }
+    &.black{
+        background:#222 url('../img/chkbg_03.jpg') no-repeat ;
+    }
+}
+.nor_t, .dis_t,.nor_price,.dis_price{
+    color:white;
+}
+.cupn_price{
+    margin: 0;
+    font-size: 1.5rem;
+}

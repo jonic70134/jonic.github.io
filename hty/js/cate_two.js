@@ -9,15 +9,6 @@ $('.cho_tab').click(function(){
 });
 
 
-
-
-// 分類menu開合
-$('.nav-menu').hover(function() {
-    $('.menu-one').stop(true,true).slideToggle();
-});
-
-
-
 // 瀑布流
 var masonry = new Macy({
     container: '.items',

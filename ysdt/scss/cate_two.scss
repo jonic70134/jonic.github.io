@@ -1,12 +1,18 @@
 // 首頁
 @import "partials/base";
 @import "partials/color";
+@import "3rd-party/_swiper.scss";
 
 @import "partials/page";
 @import "partials/tag_cloud";
 @import "partials/page_item";
 @import "partials/relate";
 @import "partials/catemenu";
+
+.swiper-slide{
+    width: auto;
+    height: auto;
+}
 
 .cate_r{
     width: 1000px;
@@ -98,6 +104,7 @@
     }
     .swiper-slide{
         margin:0 39px 0 0;
+        flex: 1;
         &:last-child{
             margin:0;
         }

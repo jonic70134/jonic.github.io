@@ -418,7 +418,7 @@ label {
 }
 
 .input_search {
-  border: 1px solid #fff;
+  border: 5px solid #eee;
   padding: 5px 70px 5px 10px;
   margin: 0;
   width: 410px;
@@ -2468,8 +2468,6 @@ h1.name {
 
 .split {
   margin: 0 0 10px;
-  padding-top: 5px;
-  border-top: 1px solid #ccc;
 }
 .split span {
   margin: 0 2px;
@@ -3146,7 +3144,7 @@ h1.name {
   overflow: hidden;
 }
 .item_detail .container {
-  width: 1000px;
+  width: 1040px;
   margin: 0;
 }
 .item_detail .item {
@@ -3164,6 +3162,7 @@ h1.name {
 }
 .item_detail .item img {
   display: block;
+  max-width: 100%;
 }
 .item_detail .item .no-gift {
   font-size: 18px;

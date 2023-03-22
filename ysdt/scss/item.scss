@@ -615,8 +615,8 @@ h1.name {
 }
 .split{
     margin:0 0 10px;
-    padding-top: 5px;
-    border-top:1px solid #ccc;
+    // padding-top: 5px;
+    // border-top:1px solid #ccc;
     span{
         margin:0 2px;
         &.cole00{
@@ -1251,7 +1251,7 @@ h1.name {
     margin-bottom:40px;
     overflow: hidden;
     .container{
-        width:1000px;
+        width:1040px;
         margin: 0;
     }
     .item{
@@ -1268,6 +1268,7 @@ h1.name {
         }
         img{
             display: block;
+            max-width: 100%;
         }
         .no-gift{
             font-size:18px;

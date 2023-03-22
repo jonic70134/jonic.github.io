@@ -5,18 +5,7 @@ html
 		link(href='css/mem_chk_cupn.css', rel='stylesheet')
 	body
 		.body_container
-			
-			header.site-header
-				.container
-					.main_head
-						.header_l
-							a.logo(href='index.html')
-								img(src="img/friday_logo_red.svg", alt="")
-						.header_r
-							p.header_r_top Powered by YSDT (遠時)
-							p.header_r_bot 負責AI網站, 金流, 發票及客服
-
-					
+			include src/_header.pug
 			.site-main
 				.container
 					.mem_chk_t
@@ -55,59 +44,13 @@ html
 							+cupnimg('04_01_80')
 							+cupnimg('04_02_80')
 							+cupnimg('04_03_80')
-
-							mixin cupnimg(src)
-								a.cupn_item.blue(href='#')
-									.photo
-										img.cupnimg(src='img/sample/'+ src +'.jpg', alt='商品名稱', title='商品名稱')
-									.info
-										.cupn
-											h3.name 商品名稱商品名稱商品商品名稱
-											.cupn_block
-												.cupn_t 個人對品折價券
-												.cupn_ticket
-													.cupn_price $1,000 
-										.nor
-											.nor_t 市價
-											.nor_price $999,999
-										.dis
-											.dis_net
-												.dis_t 網路價
-												.dis_price $299,999
-											img(src="img/cupn_arrow.svg")
-											.dis_net
-												.dis_af 折後
-												.dis_af_price $298,999
+							+cupnimg('04_01_80')
+							+cupnimg('04_02_80')
+							+cupnimg('04_03_80')
 							+cupnimg('04_01_80')
 							+cupnimg('04_02_80')
 							+cupnimg('04_03_80')
 
-
-							mixin cupnimg(src)
-								a.cupn_item.black(href='#')
-									.photo
-										img.cupnimg(src='img/sample/'+ src +'.jpg', alt='商品名稱', title='商品名稱')
-									.info
-										.cupn
-											h3.name 商品名稱
-											.cupn_block
-												.cupn_t 個人對品折價券
-												.cupn_ticket
-													.cupn_price $100 
-										.nor
-											.nor_t 市價
-											.nor_price $999,999
-										.dis
-											.dis_net
-												.dis_t 網路價
-												.dis_price $99,999
-											img(src="img/cupn_arrow.svg")
-											.dis_net
-												.dis_af 折後
-												.dis_af_price $98,999
-							+cupnimg('04_01_80')
-							+cupnimg('04_02_80')
-							+cupnimg('04_03_80')
 						
 		include src/_foot.pug
 		script(src='js/3rd-party/jquery-3.6.0.min.js')
