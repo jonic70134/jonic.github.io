@@ -2,7 +2,7 @@ doctype html
 html
     head
         include src/_meta.pug
-        link(href='css/confirm.css', rel='stylesheet')
+        link(href='css/order_confirm.css', rel='stylesheet')
 
     body
         .cart_head
@@ -14,23 +14,24 @@ html
             .msg_top
                 .icon.icon_check
                 p.msg_got 已經收到您的訂單
-                p.msg_goto 請前往ATM付款
+                p.msg_goto 請前往Line Pay付款
             .msg_done
-                p 請您於
-                    span.red 2023/01/09 23:59:59
-                    |前轉帳  
-                p 轉帳銀行代碼：805 遠東銀行
-                p 銀行帳號：9882301137654921
-                p 轉帳金額：
-                    span.red $1060
+                p 親愛的顧客您好，
+                p 感謝您訂購「
+                    strong 遠傳friDay購物
+                    | 」的商品
+                p 訂單編號：
+                    a.order_num(href="#") 20220123456789 
+                p 待本筆交易付款完成，將會儘快為您處理訂單並出貨。
             .msg_alert
                 |提醒您:本公司不會主動打電話告知您任何有關付款修改的問題.若接到可電話請拒絕回應
             .load 
-                
+                p 自動前往LINE Pay付款...
+                .loading
             .msg_notice
                 |本系統已收到您的下訂訊息，不代表交易完成。待確認交易條件(如商品存貨量、商品售價等)無誤，
                 br
                 |將依下訂內出貨，待收到商品出貨通知易才算完成。
             .btn_block
                 a.btn_back(href="index.html") 回首頁
-                a.btn_chk(href="chk.html") 查訂單
+                a.btn_chk(href="mem_chk.html") 查訂單
