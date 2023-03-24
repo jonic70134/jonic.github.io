@@ -286,24 +286,90 @@ label {
   color: #888988;
 }
 
-.icon_check:before {
-  font-size: 3.5rem;
+body {
+  background: #eee;
 }
 
-.cart_head {
-  padding: 10px 0;
-  background: #e00;
-  text-align: center;
+.body_container {
+  min-height: calc(100vh - 82px);
+}
+
+.site-main, .container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.site-header {
+  position: relative;
+  border-bottom: 1px solid #eee;
+  background: white;
+}
+
+.main_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding: 20px 10px;
+}
+.main_head .container {
+  width: 100%;
+}
+
+.header_l, .header_r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  position: relative;
+  top: 15px;
+  line-height: 1.4;
+}
+
+.header_r_top {
+  font-size: 1rem;
+}
+
+.header_r_bot {
+  color: #aaa;
+  font-size: 0.85rem;
 }
 
 .logo {
-  max-width: 200px;
-  max-height: 120px;
-  font-size: 1.8rem;
+  display: block;
+}
+.logo img {
+  display: block;
+  width: 200px;
 }
 
-body {
-  background-color: #eee;
+.icon_check:before {
+  font-size: 3.5rem;
 }
 
 .red {

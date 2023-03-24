@@ -5,13 +5,7 @@ html
 		link(href='css/order_list.css', rel='stylesheet')
 	body
 		.body_container
-			.cart_head
-				.container
-					a.back(href="index.html")
-						i.icon.icon_swiper_prev
-						| 回首頁
-					a.logo(href="index.html", title="回到friDay")
-						i.icon.icon_friday_logo
+			include src/_order_head.pug
 			.site-main
 				.container
 					.order_all
@@ -122,6 +116,33 @@ html
 							a.btn-continue(href="index.html") 再購物
 							a.btn-cancel(href="index.html") 離開暫記
 							a.btn-confirm(href="order_chk.html") 去結帳
+						.beforelist
+							.before_top
+								a(href="#") 看以前加入購物車的商品
+							.cart_item.is-before
+								.order_chk_all
+									nput(id='order_ch6').order_chk(type="checkbox", checked="checked")
+									label.order_chk_label(for='order_chk6')
+								.cart_img
+									img(src='../img/sample/05_01_182.jpg', alt="商品圖片")
+								.cart_info
+									.cart_name
+										a.cart_name_link(href="item.html") 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g
+										.cart_size 白色 600ml
+									.cart_price_b
+										.cart_price
+											.ori_t 原價
+											.ori_price $9,999
+										.cart_price
+											.ori_t 網路價
+											.ori_price $9,900
+										.cart_price
+											.dis_t 折扣後價格
+											.dis_price $9,800
+								.cart_last
+									a(href="#").btn-addtocart
+										i.icon.icon_cart
+									a(href="#").btn-remove 刪除
 		include src/_foot.pug
 		script(src='js/3rd-party/jquery-3.6.0.min.js')
 		script(src='js/common.js')

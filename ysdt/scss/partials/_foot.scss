@@ -1,3 +1,17 @@
+.container_ue{
+	width: 100%;
+	background: white;
+}
+.foot_ue{
+	width: 100%;
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 5px 50px;
+	text-align: right;
+	color:#666;
+	font-size: .9rem;
+	
+}
 .foot_nav{
 	background: #ece8df;
 	.container{
@@ -33,7 +47,7 @@
 }
 a.gotop{
 	display: none;
-	position: fixed;right: 10px;bottom: 80px;z-index: 50;
+	position: fixed;right: 10px;bottom: 90px;z-index: 50;
 	padding: 10px;
 	color: #eee;
 	background: #e00;

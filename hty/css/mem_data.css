@@ -288,7 +288,6 @@ label {
 
 .site-header {
   position: relative;
-  border-bottom: 1px solid #eee;
   background-color: #f5281e;
 }
 .site-header.bg_profile {
@@ -496,14 +495,17 @@ label {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  margin: 33px 10px 0 0;
+  margin: 33px 140px 0 0;
   font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: #999;
+}
+.pby span {
+  font-size: 1.1rem;
 }
 
 .pbybtn {
   margin: 0 0 0 3px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #999;
   text-decoration: underline;
 }
 
@@ -511,7 +513,7 @@ label {
   display: none;
   position: absolute;
   top: -200px;
-  width: 185px;
+  width: 205px;
   padding: 10px;
   color: #555;
   background: white;
@@ -548,7 +550,7 @@ label {
 }
 
 .head_link {
-  padding: 7px 0;
+  padding: 8px 0;
   background: rgba(0, 0, 0, 0.25);
   border-radius: 10px 0 0 10px;
 }
@@ -626,6 +628,21 @@ label {
   text-decoration: underline;
 }
 
+.container_ue {
+  width: 100%;
+  background: white;
+}
+
+.foot_ue {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 5px 50px;
+  text-align: right;
+  color: #666;
+  font-size: 0.9rem;
+}
+
 .foot_nav {
   background: #ece8df;
 }
@@ -687,7 +704,7 @@ a.gotop {
   display: none;
   position: fixed;
   right: 10px;
-  bottom: 80px;
+  bottom: 90px;
   z-index: 50;
   padding: 10px;
   color: #eee;

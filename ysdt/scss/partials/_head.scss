@@ -1,6 +1,5 @@
 .site-header{
     position: relative;
-    border-bottom: 1px solid #eee;
     background-color: $primary-color;
     &.bg_profile{
 		background:white;
@@ -173,19 +172,22 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-	margin: 33px 10px 0 0;
+	margin: 33px 140px 0 0;
 	font-size:.7rem;
-	color:rgba(255,255,255,.5);
+	color:#999;
+	span{
+		font-size:1.1rem;
+	}
 }
 .pbybtn{
 	margin: 0 0 0 3px;
-	color:rgba(255,255,255,.5);
+	color:#999;
 	text-decoration: underline;
 }
 .pby_detail{
 	display: none;
 	position: absolute;top:-200px;
-	width: 185px;
+	width: 205px;
 	padding:10px;
 	color:#555;
 	background: white;
@@ -214,7 +216,7 @@
 	}
 }
 .head_link{
-	padding:7px 0;
+	padding:8px 0;
 	background: rgba(0,0,0,.25);
 	border-radius:10px 0 0 10px;
 }

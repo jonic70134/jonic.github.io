@@ -1,7 +1,7 @@
 // 單品頁
 @import "partials/base";
 @import "partials/color";
-
+@import "3rd-party/_swiper.scss";
 @import "partials/font_iconmoon";
 @import "partials/head";
 @import "partials/menu";
@@ -9,7 +9,7 @@
 @import 'partials/foot';
 @import "partials/relate";
 
-@import "3rd-party/_swiper.scss";
+
 // @import "3rd-party/_lity.scss";
 .body_container{
 	min-height: calc(100vh - 82px);
@@ -51,6 +51,7 @@
     color:#666;
     &.icon_track_plus{
         color:#d00;
+        align-self: center;
     }
     &.icon_track_plus:before{
         font-size:1rem;
@@ -599,17 +600,17 @@ h1.name {
         width: 100%;
     }
     .icon_arrow{
-        position: absolute;right: 0;top:-18px;
         cursor: pointer;
         &::before{
+            position: absolute;right: 0;top:-18px;
             color: white;
             padding: 3px;
             background: #aaa;
             border-radius: 5px;
         }
     }
-    .icon_arrow.prev{
-        left:auto;right:20px;top:-16.5px;
+    .icon_arrow.prev::before{
+        left:auto;right:23px;
         transform: rotate(-180deg);
     }
 }

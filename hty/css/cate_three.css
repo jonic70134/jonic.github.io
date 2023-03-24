@@ -1126,7 +1126,6 @@ button.swiper-pagination-bullet {
 
 .site-header {
   position: relative;
-  border-bottom: 1px solid #eee;
   background-color: #f5281e;
 }
 .site-header.bg_profile {
@@ -1334,14 +1333,17 @@ button.swiper-pagination-bullet {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  margin: 33px 10px 0 0;
+  margin: 33px 140px 0 0;
   font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: #999;
+}
+.pby span {
+  font-size: 1.1rem;
 }
 
 .pbybtn {
   margin: 0 0 0 3px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #999;
   text-decoration: underline;
 }
 
@@ -1349,7 +1351,7 @@ button.swiper-pagination-bullet {
   display: none;
   position: absolute;
   top: -200px;
-  width: 185px;
+  width: 205px;
   padding: 10px;
   color: #555;
   background: white;
@@ -1386,7 +1388,7 @@ button.swiper-pagination-bullet {
 }
 
 .head_link {
-  padding: 7px 0;
+  padding: 8px 0;
   background: rgba(0, 0, 0, 0.25);
   border-radius: 10px 0 0 10px;
 }
@@ -1564,6 +1566,21 @@ button.swiper-pagination-bullet {
   padding: 0 0 15px;
 }
 
+.container_ue {
+  width: 100%;
+  background: white;
+}
+
+.foot_ue {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 5px 50px;
+  text-align: right;
+  color: #666;
+  font-size: 0.9rem;
+}
+
 .foot_nav {
   background: #ece8df;
 }
@@ -1625,7 +1642,7 @@ a.gotop {
   display: none;
   position: fixed;
   right: 10px;
-  bottom: 80px;
+  bottom: 90px;
   z-index: 50;
   padding: 10px;
   color: #eee;
@@ -1646,7 +1663,7 @@ a.gotop:after {
 }
 
 .body_container {
-  min-height: calc(100vh - 82px);
+  min-height: calc(100vh - 102px);
 }
 
 .site-main {
@@ -1677,7 +1694,7 @@ a.gotop:after {
   position: relative;
   width: 1020px;
   height: 50px;
-  padding: 10px;
+  padding: 10px 10px 9px;
   background: #ccc;
   line-height: 1.4;
   overflow: hidden;
@@ -1691,7 +1708,7 @@ a.gotop:after {
   font-size: 1.1rem;
   text-align: center;
   color: black;
-  background-color: white;
+  background: white;
   border-radius: 20px;
   white-space: nowrap;
   overflow: hidden;

@@ -4,26 +4,13 @@
 @import "partials/color";
 
 @import "partials/font_iconmoon";
-
+@import 'partials/order_head';
 
 
 .icon_check:before {
 	font-size:3.5rem;
 }
 
-.cart_head{
-    padding:10px 0; 
-    background:#e00 ;
-    text-align: center;
-}
-.logo{
-	max-width:200px;
-	max-height: 120px;
-	font-size:1.8rem;
-}
-body{
-	background-color: #eee;
-}
 .red{
 	color:#e00;
 }

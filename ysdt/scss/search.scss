@@ -1,12 +1,15 @@
 @import "partials/base";
 @import "partials/color";
+@import "3rd-party/_swiper.scss";
 
 @import "partials/page";
 @import "partials/tag_cloud";
 @import "partials/cateitem";
 @import "partials/relate";
 @import "partials/functop";
-
+.swiper-wrapper{
+    height: auto;
+}
 .icon_pictxt{
     display: none;
 }

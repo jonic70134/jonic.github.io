@@ -3,65 +3,11 @@
 @import "partials/color";
 
 @import "partials/font_iconmoon";
+@import 'partials/order_head';
 @import 'partials/foot';
 @import "partials/cupn";
 
-body{
-    background: #eee;
-}
-.body_container{
-	min-height: calc(100vh - 82px);
-}
-.site-main{
-    width:1220px;
-    margin:0 auto;
-    position: relative;
-}
-.container{
-    width: 1220px;
-    margin:0 auto;
-}
-.site-header{
-    position: relative;
-    border-bottom: 1px solid #eee;
-    background: white;
-}
-.main_head{
-	display:flex;
-	flex-flow:row nowrap;
-	justify-content: space-between;
-	position: relative;
-    padding: 20px 0;
-	.container{
-		width: 100%;
-	}
-}
 
-.header_l,.header_r{
-	display:flex;
-	flex-flow:row nowrap;
-	align-items: center;
-}
-.header_r{
-    display: flex;
-    flex-flow:column;
-    position: relative;top: 15px;
-    line-height: 1.2;
-}
-.header_r_top{
-    font-size:1rem;
-}
-.header_r_bot{
-    color:#aaa;
-    font-size: .85rem;
-}
-.logo{
-	display: block;
-	img{
-		display: block;
-		width: 200px;
-	}
-}
 .red{
     color:#d00;
 }
@@ -87,13 +33,20 @@ body{
     color:#333;
 }
 
-.cupn_top{
+.cupn_top,.empty_top{
     margin:0 0 15px;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: white;
+    text-align: center;
+    font-size:1.5rem;
+    font-weight: 500;
+    line-height: 2;
+}
+.empty_top{
+    padding: 45px 20px ;
 }
 .cupn_des{
     text-align: center;
@@ -134,4 +87,186 @@ body{
 .cupn_price{
     margin: 0;
     font-size: 1.5rem;
+}
+
+// 無商品
+.empty_bot{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: white;
+    font-size: 1.2rem;
+}
+.empty_l{
+    display: flex;
+    align-items: baseline;
+}
+.empty_r{
+    font-size:.9rem;
+    color:#999;
+}
+.before_lb{
+    margin: 0 0 0 10px;
+    padding: 5px 12px;
+    cursor: pointer;
+    color:#555;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    line-height: 14px;
+    position: relative;
+    z-index: 0;
+    &::after{
+        content: "展開▼";
+    }
+}
+.before_chk{
+    display: none;
+    &:checked ~ .before_lb{
+        &::before{
+            position: absolute;bottom: -2px;right: -3px;z-index: 20;transform: scale(0.5);
+            display: block;
+	        color: #fff;
+        }
+        &:after {
+            content: '收合▲ ';
+        }
+    }
+}
+.cart_item {
+	display: flex;
+	flex-flow: row nowrap;
+	flex-basis: 100%;
+    margin: 0 0 10px;
+	padding: 20px 30px;
+    background: white;
+}
+.cart_item.is-lack {
+	background: #ddd;
+	.order_chk_all {
+		visibility: hidden;
+	}
+}
+.cart-item-add {
+	display: table-row;
+	[class^="cart-"] {
+		margin: 2px;
+		padding: 0 5px 0 0;
+		border: none;
+	}
+	.cart-add-sale-t {
+		padding: 5px;
+	}
+	.cart_img {
+		width: 160px;
+	}
+}
+.cart_img {
+	padding: 0 2px;
+	img {
+		display: block;
+		width: 130px;
+		border: 1px solid #ccc;
+	}
+}
+.cart-lack-tag {
+	width: 100%;
+	margin: 0;
+	padding: 3px 0 5px;
+	font-size: .9rem;
+	text-align: center;
+	color: #fefefe;
+	background: #555;
+}
+.cart_info {
+	display: flex;
+	flex-flow: column nowrap;
+	flex-basis: 100%;
+	justify-content: space-between;
+	padding: 0px 5px;
+}
+.cart_name_link{
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0 0 5px;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+.cart-count {
+	flex-basis: 70px;
+	padding-right: 10px;
+	text-align: right;
+	font-size: 1.2rem;
+}
+.cart_size {
+	margin-bottom: 10px;
+	color: #333;
+	font-size: .85rem;
+	line-height: 1.4;
+}
+.cart_quantity {
+	margin: 0 0 10px;
+}
+.cart_price_b{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    margin: 0 0 10px;
+}
+.cart_cupn_t{
+    margin:0 0 10px;
+    font-size:.8rem;
+    color:#e00;
+}
+.cart_select{
+    margin: 0 5px;
+    padding:2px 5px;
+    color:#666;
+    border:1px solid #ccc;
+}
+.cart_price{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    margin: 0 8px 5px 0;
+    font-size: .9rem;
+    color: #e00;
+}
+.unit_price{
+    color: #e00;
+}
+.ori_t {
+	color: #999;
+}
+.ori_price {
+    margin: 0 0 0 3px;
+    color: #999;
+    text-decoration: line-through;
+    &::first-letter{
+        font-size:.7rem;
+    }
+}
+.dis_t{
+    font-size:1rem;
+    color:black;
+}
+.dis_price{
+    margin: 0 0 0 3px;
+    font-size:1.3rem;
+    &::first-letter{
+        font-size:.7rem;
+    }
+}
+.btn-remove {
+    width:auto;
+    margin: 0;
+    padding: 2px 10px;
+    font-size: .8rem;
+    color: #333;
+    border: 1px solid #cecece;
+    background: #ddd;
+    white-space: nowrap;
 }

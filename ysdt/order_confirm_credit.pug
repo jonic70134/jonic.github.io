@@ -5,10 +5,7 @@ html
         link(href='css/order_confirm.css', rel='stylesheet')
 
     body
-        .cart_head
-            .container
-                a.logo(href="index.html", title="回到friDay")
-                    i.icon.icon_friday_logo
+        include src/_order_head.pug
         .line
             //- 已收訂單
             .msg_top
