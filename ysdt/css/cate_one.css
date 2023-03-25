@@ -1869,11 +1869,13 @@ a.gotop:after {
   padding-top: 5px;
 }
 .items .name {
-  width: 120px;
+  width: 124px;
   color: black;
   font-size: 0.7rem;
   white-space: nowrap;
   overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 .items .price {
   margin-left: 5px;
