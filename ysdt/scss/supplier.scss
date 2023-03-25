@@ -1,15 +1,22 @@
 @import "partials/base";
 @import "partials/color";
 
-@import "partials/page";
-@import "partials/breadcrumb";
-
+@import 'partials/foot';
 .body_container{
+    padding: 40px 0 20px;
+	min-height: calc(100vh - 102px);
     background-color: #eee;
 }
-.breadcrumb{
-    margin:0;
-    height:45px;
+.site-main{
+    width:100%;
+    max-width: 1220px;
+    margin:0 auto;
+    position: relative;
+}
+.container{
+    width:100%;
+    max-width: 1220px;
+    margin:0 auto;
 }
 .supplier{
     display: grid;
@@ -21,7 +28,7 @@
 .supplier_block{
     text-align: center;
     color:#555;
-    aspect-ratio: 1;
+    aspect-ratio: 16/9;
 }
 .supplier_photo{
     position: relative;

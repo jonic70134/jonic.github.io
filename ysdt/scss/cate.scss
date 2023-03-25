@@ -1,7 +1,7 @@
 // 分類頁
 @import "partials/base";
 @import "partials/color";
-
+@import "3rd-party/_swiper.scss";
 @import "partials/page";
 @import "partials/tag_cloud";
 @import "partials/cateitem";
@@ -9,6 +9,9 @@
 @import "partials/pagenav";
 @import "partials/functop";
 
+.tag{
+    height: auto;
+}
 .site-main{
     width: 100%;
     padding: 20px 0 0;

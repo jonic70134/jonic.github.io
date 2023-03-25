@@ -31,20 +31,22 @@ html
 						a.reg(href="mem_reg.html") 註冊新會員
 						a.forgot_pas(href="mem_forgot.html") 忘記密碼
 					
-	script(src='js/3rd-party/jquery-3.6.0.min.js')
-	script(src='js/3rd-party/longbow.slidercaptcha.min.js')
-	script.
-		var captcha = sliderCaptcha({
-			id: 'captcha',
-			width:'400',
-			height:'100',
-			onSuccess: function () {
-				var handler = setTimeout(function () {
-					window.clearTimeout(handler);
-					captcha.reset();
-				}, 500)
-			}
-		});
-	script(src='js/mem_login.js')
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/common.js')
+		script(src='js/3rd-party/longbow.slidercaptcha.min.js')
+		script.
+			var captcha = sliderCaptcha({
+				id: 'captcha',
+				width:'400',
+				height:'100',
+				onSuccess: function () {
+					var handler = setTimeout(function () {
+						window.clearTimeout(handler);
+						captcha.reset();
+					}, 500)
+				}
+			});
+		script(src='js/mem_login.js')
 
 
