@@ -984,24 +984,11 @@ a.gotop:after {
   border-radius: 10px;
 }
 .items .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 5px 0;
   padding-top: 5px;
 }
 .items .name {
-  width: 124px;
+  width: 100%;
   color: black;
   font-size: 0.7rem;
   white-space: nowrap;
@@ -1010,7 +997,8 @@ a.gotop:after {
      text-overflow: ellipsis;
 }
 .items .price {
-  margin-left: 5px;
+  margin: 3px 0 0 0;
+  text-align: right;
   color: #d00;
   font-size: 0.8rem;
 }

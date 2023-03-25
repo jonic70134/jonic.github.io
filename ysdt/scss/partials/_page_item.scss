@@ -34,15 +34,12 @@
         border-radius:10px;
     }
     .info{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
+        
         margin:5px 0;
         padding-top: 5px;
     }
     .name{
-        width:124px;
+        width:100%;
         color: black;
         font-size:.7rem;
         white-space: nowrap;
@@ -50,7 +47,8 @@
         text-overflow: ellipsis;
     }
     .price{
-        margin-left:5px;
+        margin: 3px 0 0 0;
+        text-align: right;
         color:$price;
         font-size:.8rem;
     }
