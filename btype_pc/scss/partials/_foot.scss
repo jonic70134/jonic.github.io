@@ -1,0 +1,137 @@
+.container_ue{
+	width: 100%;
+	background: white;
+}
+.foot_ue{
+	width: 100%;
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 5px 50px;
+	text-align: right;
+	color:#666;
+	font-size: .9rem;
+	
+}
+.foot_nav{
+	background: #ece8df;
+	.container{
+		display: flex;
+		flex-flow:row nowrap;
+		justify-content: space-between;
+		padding: 20px 50px;
+		font-size: 0.75rem;
+		color:#555;
+	}
+}
+.foot_link{
+	display: flex;
+	flex-flow:row nowrap;
+	align-items: center;
+	a{
+		display: block;
+		width: 75px;
+		margin:0 50px 0 0;
+		color:black;
+		text-decoration: none;
+	}
+}
+.foot_pby{
+    position: relative;
+	color:#999;
+	text-align: right;
+    .pby_detail{
+        text-align: left;
+        &.active{
+            top: -185px;
+            left: -92px;
+        }
+    }
+    .pbybtn{
+        margin: 0 0 0 5px;
+        color: #999 !important;
+    }
+}
+.foot_pby_txt{
+	display: flex;
+	align-items: baseline;
+	justify-content: flex-end;
+	margin: 0 0 10px;
+}
+a.gotop{
+	display: none;
+	position: fixed;right: 10px;bottom: 90px;z-index: 50;
+	padding: 10px;
+	color: #eee;
+	background: #e00;
+	border: 1px solid #e00;
+	border-radius: 50%;
+	opacity: 0.8;
+	text-decoration: none;
+	&:after{
+		display: block;
+		content: "\e93f";
+		color: #eee;
+		font-family: 'icomoon' !important;
+		font-size: 1rem;
+		transform: rotate(-90deg);
+	}
+}
+@media (max-width: 1199px) {
+    .foot_nav{
+        .container{
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+    }
+    .foot_link{
+        a{
+            width: auto;
+            margin: 0 30px 0 0;
+        }
+    }
+}
+@media (max-width: 830px) {
+    .supplier{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .foot_nav{
+        .container{
+            justify-content: center;
+        }
+    }
+    .foot_link{
+        width: 100%;
+        max-width:650px ;
+        margin: 0 0 10px;
+        justify-content: space-between;
+        a{
+            width: auto;
+            margin: 0;
+        }
+    }
+    .foot_pby_txt{
+        justify-content: center;
+    }
+}
+@media (max-width: 520px) {
+    .supplier{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:20px;
+    }
+    .foot_nav{
+        .container{
+            padding: 10px;
+            font-size: .7rem;
+        }
+    }
+    .foot_pby{
+        font-size: .7rem;
+    }
+    .foot_pby_txt{
+        margin: 0 0 5px;
+    }
+    .foot_pbyimg{
+        width: 70px;
+        margin: 0;
+    }
+}

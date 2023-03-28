@@ -1,0 +1,42 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/search.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_topbar.pug
+			include src/_header.pug
+			.sub_head
+				.container
+					include src/_menu.pug
+					include src/_tagcloud.pug
+			.container
+				include src/_functop.pug
+			.site-main
+				.container
+					.cate_main
+						.cate_items.cate_items_txt
+							- var j = 31;
+							- for (var i = 1; i < j; i++)
+								.item.search_item
+									a.photo(href="item.html")
+										img(src='../img/sample/cate/180_'+ i+'.jpg', alt='商品名稱', title='商品名稱')
+									.per_r_info
+										a(href="item.html")
+											h2.name 大開口短柄活動扳手大活口衛浴扳手8寸6寸短把迷你扳手工具
+										.per_price
+											.price 799,090
+											a.icon.icon_cart(href='#')
+												span.icon.icon_cart_arrow
+											a.icon.icon_track(href='#')
+						.loader
+							a.btn-load(href="#")
+								p 更多商品
+								i.icon.icon_refresh
+					include src/_item_relative.pug
+			include src/_foot.pug
+			script(src='js/3rd-party/jquery-3.6.0.min.js')
+			script(src='js/3rd-party/swiper-bundle.min.js')
+			script(src='js/common.js')
+			script(src='js/search.js')

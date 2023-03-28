@@ -1,0 +1,45 @@
+header.site-header
+	.container
+		.main_head
+			.header_l
+				a.logo(href='index.html')
+					img(src="img/hty_logo.png", alt="")
+					//- img(src="../img/sample//logo_3.jpg", alt="")
+					//- img(src="../img/sample/logo_6.jpg", alt="")
+					//- img(src="../img/sample/logo_14.jpg", alt="")
+					//- img(src="../img/sample/logo_5.jpg", alt="")
+				.site_search
+					input.input_search(type='search', maxlength='128', placeholder='請輸入商品名稱')
+					a(href="search.html").btn-search
+						i.icon.icon_search
+			.header_r
+				.pby
+					p Powered by #[span YSDT]
+						a.pbybtn(href="#pby_detail") 詳
+						.pby_detail
+							p 本網站為「網站品牌商公司」銷售商品的網站，而本網站所有AI生成技術及網站系統均是遠時數位科技股份有限公司(以下稱YSDT)建置，日常營運之客服、金流、發票、退貨退款均由YSDT負責。本網站除了銷售「網站品牌商公司」商品外，也同時展示其它YSDT廠商的商品，而這些商品透過YSDT獨家AI 友商推薦商品    技術展示，並會顯示 友商推薦商品    標誌。透過 友商推薦商品技術，「網站品牌商公司」  就會有成千上萬的商品陳列，並進一步提供優惠折扣，讓每一位消費者可看到適合自已且具有吸引力的商品，享有嶄新的購物體驗！
+								a.pbyclose(href="#") 關閉 
+
+				ul.head_link
+					//- li
+					//- 	a(href='coupon.html') 個人對品折價券
+					li
+						a(href='crazy.html') 瘋最夯
+					li
+						a(href='fresh.html') 新到貨
+				ul.head_func
+					li
+						a.my_account(href='mem_index.html')
+							i.icon.icon_account
+							span 我的
+					li
+						a.my_account(href='mem_track.html')
+							i.icon.icon_track_plus
+							span 最愛
+					li
+						a.cart(href='order_list.html')
+							i.icon.icon_cart
+							i.icon.icon_check
+			.head_login
+				.mem_user_name 09*****456 您好！
+				a.logout(href="#") 登出 
