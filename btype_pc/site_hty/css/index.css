@@ -1010,7 +1010,6 @@ a.gotop:after {
 }
 .items .price {
   margin: 3px 0 0 0;
-  text-align: right;
   color: #d00;
   font-size: 0.8rem;
 }
