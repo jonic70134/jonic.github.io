@@ -803,6 +803,285 @@ a.gotop:after {
     margin: 0;
   }
 }
+.cupn_chg {
+  display: block;
+}
+
+.cupn_con {
+  position: relative;
+  margin: 15px 0 0;
+  padding: 0 20px;
+}
+.cupn_con .swiper-button-prev {
+  left: 0;
+}
+
+.cupn_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 8px;
+}
+
+.cupn_des {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.cupn_time {
+  color: #d00;
+}
+
+.cupn_more {
+  padding: 5px 17px;
+  font-size: 1.15rem;
+  color: #ff0;
+  background: #d00;
+  text-decoration: underline;
+  border-radius: 5px;
+}
+
+.cupn_items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: ;
+  grid-template-rows: repeat(auto, 1fr);
+  grid-gap: 30px;
+}
+
+.cupn_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding: 8px;
+  background-color: #333;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 0 8px;
+}
+
+.photo {
+  display: block;
+}
+
+.cupn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 5px 0 0;
+}
+
+.cupnimg {
+  display: block;
+  width: 104px;
+  border: 2px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cupn_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cupn_t {
+  margin: 0 0 6px;
+  color: #f5c5c5;
+  font-size: 0.7rem;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.cupn_ticket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 91px;
+  height: 39px;
+  margin: 0 6px 0 0;
+  font-size: 0.7rem;
+  background: #f5c5c5 url("../img/cupn_frame.svg") no-repeat center center;
+  border: 2px solid #f5c5c5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cupn_dur {
+  color: #555;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.cupn_price {
+  margin: 2px 0 0;
+  color: #ee6262;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.cupn_price::first-letter {
+  font-size: 0.7rem;
+}
+
+.cupn .name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  min-width: 120px;
+  margin: 0 15px 0 0;
+  font-size: 0.9rem;
+  color: white;
+  line-height: 1.2;
+  word-break: break-word;
+  overflow: hidden;
+}
+.cupn .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.nor, .dis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.nor {
+  margin: 0 0 -8px;
+}
+
+.nor_t, .dis_t {
+  margin: 0 5px 0 0;
+  color: #888;
+  font-size: 0.7rem;
+}
+
+.nor_price {
+  text-decoration: line-through;
+}
+
+.nor_price {
+  margin: 0 8px 0 0;
+  font-size: 0.8rem;
+  color: #888;
+  text-decoration: line-through;
+}
+.nor_price::first-letter {
+  font-size: 0.7rem;
+}
+
+.dis {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.dis img {
+  width: 14px;
+  margin: 0 2px;
+}
+
+.dis_net {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.dis_price {
+  color: #f77;
+  font-size: 1rem;
+}
+.dis_price::first-letter {
+  font-size: 0.7rem;
+}
+
+.dis_af {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.dis_af_price {
+  color: #ff0;
+  font-size: 1.2rem;
+}
+.dis_af_price::first-letter {
+  font-size: 0.7rem;
+}
+
 .pagenav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -829,7 +1108,7 @@ a.gotop:after {
 }
 .nav.active {
   color: white;
-  background: #f5281e;
+  background: #d00;
 }
 
 .page_nav {
@@ -1954,4 +2233,68 @@ a.grey {
   width: 100%;
   margin: 0 0px 0 0;
   padding: 3px 10px;
+}
+
+.cupn_top {
+  margin: 0 0 15px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+}
+
+.cupn_des {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.cupn_bot {
+  padding: 30px;
+  background: white;
+}
+.cupn_bot p {
+  margin: 0 0 30px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.cupn_items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 360px 30px 360px 30px 360px;
+  grid-template-columns: repeat(3, 360px);
+  -ms-grid-rows: ;
+  grid-template-rows: repeat(auto, 1fr);
+  grid-gap: 30px;
+}
+
+.cupn_item {
+  border-radius: 10px;
+}
+.cupn_item.red {
+  background: #cf3373 url("../img/chkbg_01.jpg") no-repeat;
+}
+.cupn_item.blue {
+  background: #1a3375 url("../img/chkbg_02.jpg") no-repeat;
+}
+.cupn_item.black {
+  background: #222 url("../img/chkbg_03.jpg") no-repeat;
+}
+
+.nor_t, .dis_t, .nor_price, .dis_price {
+  color: white;
+}
+
+.cupn_price {
+  margin: 0;
+  font-size: 1.5rem;
 }

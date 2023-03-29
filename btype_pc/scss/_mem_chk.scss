@@ -4,7 +4,7 @@
 @import "partials/font_iconmoon";
 @import "partials/head";
 @import 'partials/foot';
-
+@import "partials/cupn";
 @import "partials/pagenav";
 
 .body_container{
@@ -636,4 +636,55 @@ a.grey{
             padding:3px 10px;
         }
     }
+}
+
+
+
+.cupn_top{
+    margin:0 0 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+.cupn_des{
+    text-align: center;
+    font-size:1.5rem;
+    font-weight: 500;
+    line-height: 2;
+}
+.cupn_bot{
+    padding: 30px;
+    background: white;
+    p{
+        margin: 0 0 30px;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+}
+.cupn_items{
+    display: grid;
+    grid-template-columns: repeat(3,360px);
+    grid-template-rows: repeat(auto,1fr);
+    grid-gap:30px;
+}
+.cupn_item{
+    border-radius: 10px;
+    &.red{
+        background:#cf3373 url('../img/chkbg_01.jpg') no-repeat ;
+    }
+    &.blue{
+        background:#1a3375 url('../img/chkbg_02.jpg') no-repeat ;
+    }
+    &.black{
+        background:#222 url('../img/chkbg_03.jpg') no-repeat ;
+    }
+}
+.nor_t, .dis_t,.nor_price,.dis_price{
+    color:white;
+}
+.cupn_price{
+    margin: 0;
+    font-size: 1.5rem;
 }
