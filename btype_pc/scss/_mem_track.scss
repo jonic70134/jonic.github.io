@@ -82,7 +82,7 @@ body,.body_container,.copyright{
 .mem_track{
     display: grid;
     grid-template-rows: repeat(auto);
-    grid-template-columns: 130px 500px repeat(3,auto);
+    grid-template-columns: 130px 500px 230px 1fr 1fr;
     grid-gap: 0;
     margin:10px auto;
     background: white;
