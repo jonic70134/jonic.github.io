@@ -63,12 +63,13 @@
     }
 }
 .mask{
-    mask-size:300px 300px;
-    mask-composite: source-in;  
-    mask:
-        linear-gradient(to top,  transparent 0%, #fff 5% 95%, transparent 100%),
-        linear-gradient(to left, transparent 0%, #fff 5% 95%, transparent 100%);
-    mask-size:  300px 300px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.4);
+    // mask-size:300px 300px;
+    // mask-composite: source-in;  
+    // mask:
+    //     linear-gradient(to top,  transparent 0%, #fff 5% 95%, transparent 100%),
+    //     linear-gradient(to left, transparent 0%, #fff 5% 95%, transparent 100%);
+    // mask-size:  300px 300px;
 }
 .slide_price{
     display: flex;

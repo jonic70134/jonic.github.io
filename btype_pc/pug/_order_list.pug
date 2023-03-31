@@ -116,7 +116,10 @@ html
 							a.btn-confirm(href="order_chk.html") 去結帳
 						.beforelist
 							.before_top
-								a(href="#") 看以前加入購物車的商品
+								.before_t
+									a.add_before(href="#") 看以前加入購物車的商品
+									p 以前加入購物車的商品(請按 #[span.blue 「重新加入購物車」]之後再結帳)
+								small *商品僅保留三個月
 							.cart_item.is-before
 								.order_chk_all
 									nput(id='order_ch6').order_chk(type="checkbox", checked="checked")
@@ -140,7 +143,10 @@ html
 								.cart_last
 									a(href="#").btn-addtocart
 										i.icon.icon_cart
-									a(href="#").btn-remove 刪除
+										span 重新加入購物車
+									a(href="#").btn-remove 
+										img(src="img/icon_trash.svg") 
+										span 刪除
 		include src/_foot.pug
 		script(src='js/3rd-party/jquery-3.6.0.min.js')
 		script(src='js/3rd-party/swiper-bundle.min.js')

@@ -2829,15 +2829,8 @@ button.swiper-pagination-bullet {
 }
 
 .mask {
-  -webkit-mask-size: 300px 300px;
-          mask-size: 300px 300px;
-  -webkit-mask-composite: source-in;
-          mask-composite: source-in;
-  -webkit-mask: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(5%, #fff), to(transparent)), -webkit-gradient(linear, right top, left top, from(transparent), color-stop(5%, #fff), to(transparent));
-  -webkit-mask: linear-gradient(to top, transparent 0%, #fff 5% 95%, transparent 100%), linear-gradient(to left, transparent 0%, #fff 5% 95%, transparent 100%);
-          mask: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(5%, #fff), to(transparent)), -webkit-gradient(linear, right top, left top, from(transparent), color-stop(5%, #fff), to(transparent));
-          mask: linear-gradient(to top, transparent 0%, #fff 5% 95%, transparent 100%), linear-gradient(to left, transparent 0%, #fff 5% 95%, transparent 100%);
-  mask-size: 300px 300px;
+  -webkit-box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 .slide_price {

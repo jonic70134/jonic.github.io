@@ -17,3 +17,12 @@ $("input[name$='invo']").click(function() {
     $(".invo_credit").hide();
     $("#invo" + invo).show();
 });
+
+
+//看以前加入購物車的商品
+$('.add_before').click(function(e) {
+    e.preventDefault();
+    $('.cart_item.is-before').css('display','flex');
+    $('.add_before').hide();
+    $('.before_t p').show();
+});
