@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="65.3px" height="18px" viewBox="0 0 65.3 18" style="enable-background:new 0 0 65.3 18;" xml:space="preserve">
+<style type="text/css">
+	.製作陰影{fill:none;}
+	.圓角_x0020_2_x0020_點{fill:#FFFFFF;stroke:#231815;stroke-miterlimit:10;}
+	.即時反射_x0020_X{fill:none;}
+	.柔化斜角{fill:url(#SVGID_1_);}
+	.黃昏{fill:#FFFFFF;}
+	.葉子_GS{fill:#FFE100;}
+	.高捲式髮型_GS{fill-rule:evenodd;clip-rule:evenodd;fill:#4CACE2;}
+	.st0{fill:#999999;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-16.9456" y1="-41.1133" x2="-16.2385" y2="-40.4062">
+	<stop  offset="0" style="stop-color:#E6E7EA"/>
+	<stop  offset="0.1747" style="stop-color:#E2E3E6"/>
+	<stop  offset="0.3538" style="stop-color:#D6D7DA"/>
+	<stop  offset="0.5349" style="stop-color:#C1C4C5"/>
+	<stop  offset="0.7174" style="stop-color:#A4A8A8"/>
+	<stop  offset="0.8993" style="stop-color:#808584"/>
+	<stop  offset="1" style="stop-color:#686E6C"/>
+</linearGradient>
+<g>
+	<g>
+		<path class="st0" d="M8.1,7.4l-4-7.1H0l6.3,10.6v6.7H10v-6.7l6.3-10.6h-4.2L8.1,7.4z M25.5,7.6C23.1,6.7,22.2,6,22.2,5
+			c0-1.1,1.2-1.8,2.9-1.8c1.6,0,3.2,0.5,4.2,1.1V0.9C28.3,0.4,26.6,0,24.8,0c-3.7,0-6.3,2-6.3,5.1c0,3,1.8,4.3,4.8,5.4
+			c2.4,0.9,3.4,1.5,3.4,2.6c0,0.8-0.8,1.3-2.1,1.5c-0.5,0.1-1,0.1-1.5,0.1c-1.6-0.1-3.2-0.6-4.4-1.3V17c1.3,0.6,3.2,1,5.2,1
+			c4.1,0,6.5-1.9,6.5-5C30.4,10.1,28.5,8.8,25.5,7.6z M40.7,0.3h-5.5v17.3h5.6c5.9,0,9.6-3.6,9.6-8.7C50.4,3.9,46.6,0.3,40.7,0.3z
+			 M40.7,14.6h-1.8V3.4h1.8c3.8,0,5.9,2.4,5.9,5.6C46.6,12.2,44.4,14.6,40.7,14.6z M51.9,0.3v3.1h4.8v14.2h3.7V3.4h4.9V0.3H51.9z"/>
+	</g>
+</g>
+</svg>
