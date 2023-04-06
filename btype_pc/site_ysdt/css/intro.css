@@ -358,7 +358,7 @@ a {
 
 .head_link a {
   padding: 0 0 0 20px;
-  font-size: 1.2rem;
+  font-size: clamp(0.75rem, 0.95vw + 0.53rem, 1.25rem);
   color: white;
 }
 .head_link a::before {
@@ -445,7 +445,7 @@ a {
   padding: 5px 20px;
   color: white;
   background: #06c;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1.66vw + 0.61rem, 1.88rem);
   letter-spacing: 1px;
   border-radius: 5px;
 }
@@ -453,7 +453,7 @@ a {
   margin: 0 0 0 5px;
   content: "\e93f";
   font-family: "icomoon";
-  font-size: 1.1rem;
+  font-size: clamp(0.75rem, 0.89vw + 0.54rem, 1.22rem);
 }
 
 .update {
@@ -464,7 +464,7 @@ a {
 h2 {
   padding: 0 0 20px;
   color: black;
-  font-size: 2rem;
+  font-size: clamp(1rem, 1.89vw + 0.56rem, 2rem);
   letter-spacing: 1px;
 }
 
@@ -479,7 +479,7 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #333;
-  font-size: 1.35rem;
+  font-size: clamp(1rem, 0.71vw + 0.83rem, 1.38rem);
   line-height: 1.7;
 }
 .cont img {
@@ -494,12 +494,6 @@ h2 {
   margin-bottom: 15px;
 }
 .cont .cont_l p:last-child {
-  margin: 0;
-}
-.cont .cont_l ul {
-  padding: 0;
-}
-.cont .cont_l ul li {
   margin: 0;
 }
 .cont .cont_r {
@@ -527,7 +521,7 @@ h2 {
   padding: 30px 0 0;
 }
 .cont.straight h2 {
-  font-size: 1.55rem;
+  font-size: clamp(1rem, 1.89vw + 0.56rem, 2rem);
   padding: 0;
 }
 .cont.straight .container {
@@ -556,7 +550,7 @@ h2 {
   background: #3c3c3c;
 }
 .cont.black h2 {
-  font-size: 1.55rem;
+  font-size: clamp(1rem, 1.89vw + 0.56rem, 2rem);
   padding: 0 0 10px;
 }
 .cont.black .container {
@@ -881,37 +875,7 @@ h2 {
     width: 47%;
   }
 }
-@media only screen and (max-width: 1020px) {
-  .cont .container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .cont .cont_l, .cont ul {
-    font-size: 1.2rem;
-  }
-}
-@media only screen and (max-width: 970px) {
-  .cont h2 {
-    font-size: 1.6rem;
-  }
-  .cont .cont_l, .cont ul {
-    font-size: 1.1rem;
-  }
-  .cont .three_temp {
-    font-size: 1rem;
-  }
-  .cont .three_temp .cost {
-    font-size: 1.5rem;
-  }
-}
 @media only screen and (max-width: 920px) {
-  .cont h2 {
-    font-size: 1.3rem;
-  }
-  .cont .cont_l, .cont ul {
-    font-size: 1rem;
-  }
   .cont .benefit {
     margin: 0;
   }
@@ -921,9 +885,6 @@ h2 {
   }
 }
 @media only screen and (max-width: 800px) {
-  .cont .cont_l {
-    font-size: 1rem;
-  }
   .cont.black .container, .cont.straight .container, .cont .table_blue.AI {
     font-size: 1rem;
   }
@@ -941,14 +902,10 @@ h2 {
   }
   .cont .cont_l {
     width: 100%;
-    font-size: 1rem;
     vertical-align: middle;
   }
   .cont .cont_l p:last-child {
     margin: 0;
-  }
-  .cont a {
-    font-size: 1rem;
   }
   .cont .cont_r {
     width: 100%;
@@ -965,16 +922,12 @@ h2 {
 @media only screen and (max-width: 680px) {
   .head_link a {
     padding: 0 0 0 5px;
-    font-size: 0.8rem;
   }
   .head_link a::before {
     margin: 0 5px 0 0;
   }
   .head_link a::after, .head_link a:last-child::after {
     margin: 0 0 0 5px;
-  }
-  .cont ul .li_r, .cont ul .li_l {
-    width: 100%;
   }
   .brand_bot {
     -ms-grid-columns: 1fr 30px 1fr;
@@ -988,12 +941,11 @@ h2 {
   .cont .container {
     display: block;
   }
-  .cont .cont_l, .cont ul {
+  .cont .cont_l {
     width: auto;
     margin: 0 auto;
     padding: 0 10px 0 20px;
     text-align: left;
-    font-size: 1rem;
   }
   .cont .cont_r {
     vertical-align: middle;

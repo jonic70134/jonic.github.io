@@ -1,4 +1,5 @@
 @import "partials/base";
+@import "partials/function";
 @import "partials/font_iconmoon";
 
 body {
@@ -53,7 +54,7 @@ a {
 .head_link{
     a{
         padding: 0 0 0 20px;
-        font-size: 1.2rem;
+        font-size: fluid(12px,20px);
         color:white;
         &::before{
             content: " | ";
@@ -130,14 +131,14 @@ a {
     padding: 5px 20px;
     color: white;
     background: #06c;
-    font-size: 1.5rem;
+    font-size: fluid(16px,30px);
     letter-spacing: 1px;
     border-radius: 5px;
     &::after{
         margin: 0 0 0 5px;
         content: "\e93f";
         font-family: 'icomoon';
-        font-size: 1.1rem;
+        font-size: fluid(12px,19.5px);
     }
 }
 .update{
@@ -147,7 +148,7 @@ a {
 h2 {
     padding: 0 0 20px ;
     color: black;
-    font-size: 2rem;
+    font-size: fluid(16px,32px);
     letter-spacing: 1px;
 }
 .cont {
@@ -156,7 +157,7 @@ h2 {
         display: flex;
         justify-content: space-between;
         color: #333;
-        font-size: 1.35rem;
+        font-size: fluid(16px,22px);
         line-height: 1.7;
     }
 
@@ -167,20 +168,10 @@ h2 {
     .cont_l {
         width: 35%;
         margin:0 3% 0 0;
-
         p {
             margin-bottom: 15px;
-
             &:last-child {
-            margin: 0;
-            }
-        }
-
-        ul {
-            padding: 0;
-
-            li {
-            margin: 0;
+                margin: 0;
             }
         }
     }
@@ -201,7 +192,7 @@ h2 {
     &.straight {
         padding: 30px 0 0;
         h2 {
-            font-size: 1.55rem;
+            font-size: fluid(16px,32px);
             padding: 0;
         }
 
@@ -235,7 +226,7 @@ h2 {
         background: #3c3c3c;
 
         h2 {
-            font-size: 1.55rem;
+            font-size: fluid(16px,32px);
             padding: 0 0 10px;
         }
 
@@ -523,48 +514,9 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 1020px) {
-    .cont {
-        .container {
-            align-items: center;
-        }
-
-        .cont_l, ul {
-            font-size: 1.2rem;
-        }
-
-    }
-}
-
-@media only screen and (max-width: 970px) {
-    .cont {
-        h2 {
-            font-size: 1.6rem;
-        }
-
-        .cont_l, ul {
-            font-size: 1.1rem;
-        }
-
-        .three_temp {
-            font-size: 1rem;
-
-            .cost {
-            font-size: 1.5rem;
-            }
-        }
-    }
-}
 
 @media only screen and (max-width: 920px) {
     .cont {
-        h2 {
-            font-size: 1.3rem;
-        }
-
-        .cont_l, ul {
-            font-size: 1rem;
-        }
         .benefit{
             margin: 0;
         }
@@ -577,9 +529,6 @@ h2 {
 
 @media only screen and (max-width: 800px) {
     .cont {
-        .cont_l {
-            font-size: 1rem;
-        }
 
         &.black .container, &.straight .container, .table_blue.AI {
             font-size: 1rem;
@@ -599,18 +548,12 @@ h2 {
         }
         .cont_l {
             width: 100%;
-            font-size: 1rem;
             vertical-align: middle;
 
             p:last-child {
-            margin: 0;
+                margin: 0;
             }
         }
-
-        a {
-            font-size: 1rem;
-        }
-
         .cont_r {
             width: 100%;
             display: block;
@@ -631,18 +574,12 @@ h2 {
     .head_link{
         a{
             padding: 0 0 0 5px;
-            font-size:.8rem;
             &::before{
                 margin: 0 5px 0 0;
             }
             &::after,&:last-child::after{
                 margin: 0 0 0 5px;
             }
-        }
-    }
-    .cont ul {
-        .li_r, .li_l {
-            width: 100%;
         }
     }
     .brand_bot{
@@ -661,19 +598,18 @@ h2 {
             display: block;
         }
 
-        .cont_l, ul {
+        .cont_l {
             width: auto;
             margin: 0 auto;
             padding: 0 10px 0 20px;
             text-align: left;
-            font-size: 1rem;
         }
 
         .cont_r {
             vertical-align: middle;
 
             img {
-            margin: 0 auto;
+                margin: 0 auto;
             }
         }
 

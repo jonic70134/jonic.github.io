@@ -102,6 +102,39 @@
         }
     }
 }
+.cupn_block{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+}
+.cupn_t{
+    margin:0 3px 0 0;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+.cupn_ticket{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-width:100px;
+    margin:0 6px 0 0;
+    padding: 0 10px;
+    font-size:.7rem;
+    background:  #f5c5c5 url('../img/cupn_frame.svg') no-repeat center center;
+    border: 2px solid #f5c5c5;
+    box-sizing: border-box;
+    aspect-ratio: 21/9;
+}
+.cupn_price{
+    margin: 2px 0 0;
+    color:#ee6262;
+    font-size:1.4rem;
+    font-weight: 700;
+    &::first-letter{
+        font-size:.7rem;
+    }
+}
 .ori{
     .title,.price{
         color:#999;
