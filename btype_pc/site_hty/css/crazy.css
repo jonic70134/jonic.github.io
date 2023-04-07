@@ -760,6 +760,27 @@ label {
      text-overflow: ellipsis;
 }
 
+.tagcloud_btn_r {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 6px;
+  background: #ccc;
+  cursor: pointer;
+}
+.tagcloud_btn_r::before {
+  color: #666;
+  font-size: 1.4rem;
+}
+
 /**
 * Swiper 8.0.6
 * Most modern mobile touch slider and framework with hardware accelerated transitions

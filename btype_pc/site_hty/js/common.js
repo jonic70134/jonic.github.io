@@ -6,7 +6,11 @@ $('.nav-menu').hover(function() {
 // 標籤雲
 var tagslide = new Swiper('.tag-cloud', {
     slidesPerView: 'auto',
+    slidesPerGroup: 3,
     loop:true,
+    navigation: {
+        nextEl: ".tagcloud_btn_r",
+    },
 });
 
 $(function() {

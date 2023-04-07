@@ -24,6 +24,7 @@
 	.cupn_top{
 		display: flex;
 		justify-content: center;
+		margin: 0;
 		padding:0 5px;
 		background:$turn_header_bg ;
 	}
@@ -222,6 +223,7 @@
 		background: #eee;
 		img{
 			display: block;
+			width: 100%;
 			max-width: 400px;
 			margin: 0 auto;
 		}
