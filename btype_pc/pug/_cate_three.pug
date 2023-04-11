@@ -98,7 +98,103 @@ html
 							+slider('03_04_240','03_05_100','03_06_100')
 							+slider('03_07_240','03_08_100','03_09_100')
 
-					
+					.filter
+						//- .search_blcok 
+							//- h2.mid_title "xxxx" 的搜尋結果
+							//- .select_sort
+							//- 	select#sort(name="sort") 
+							//- 		option(value="1") 預設排序
+							//- 		option(value="2") 最新商品
+							//- 		option(value="3") 價格 低 → 高
+							//- 		option(value="4") 價格 高 → 低
+						.sort_block
+							.sort
+								label(for="sort1")
+									input(type="radio", name="sort" ,value="1", id="sort1" ,checked="checked")
+									p 預設排序
+								label(for="sort2")
+									input(type="radio", name="sort" ,value="2", id="sort2")
+									p 最新商品
+								label(for="sort3")
+									input(type="radio", name="sort" ,value="3", id="sort3")
+									span.checkmark
+									p 價格 低 → 高
+								label(for="sort4")
+									input(type="radio", name="sort" ,value="4", id="sort4")
+									span.checkmark
+									p 價格 高 → 低
+						.attr
+							//- .attrcon.special
+							//- 	.colst 其他人都在找
+							//- 	.colcheck
+							//- 		a(href='#') MSI 筆記型電腦
+							//- 		a(href='#') 電話錄音
+							//- 		a(href='#') 平板電腦
+							//- 		a.current(href='#') iPhone
+							//- .attrcon
+							//- 	.colst 品牌
+							//- 	.colcheck
+							//- 		a(href='#') SAMPO 聲寶(23)
+							//- 		a.current(href='#') SHARP 夏普(21)
+							//- 		a(href='#') ASUS 華碩(4)
+							//- 		a(href='#') SONY 索尼(18)
+							//- 		a(href='#') VITAS(33)
+							//- 		a(href='#') YOLO(12)
+							//- 		a(href='#') PANASONIC(11)
+							.attrcon
+								.colst 品牌
+								.colcheck
+									label.colb
+										input.colchk(type='checkbox')
+										span SAMPO 聲寶
+									label.colb
+										input.colchk(type='checkbox')
+										span ASUS 華碩
+									label.colb
+										input.colchk(type='checkbox')
+										span SONY 索尼
+									label.colb
+										input.colchk(type='checkbox')
+										span VITAS
+									label.colb
+										input.colchk(type='checkbox')
+										span YOLOYOLOYOLO
+									label.colb
+										input.colchk(type='checkbox')
+										span PANASONIC
+									
+								input#col_openchk.col_openchk(type="checkbox", name="")
+								label.col_openlb(for="col_openchk")
+								.col_check_sec
+									label.colb
+										input.colchk(type='checkbox')
+										span SONY 索尼
+									label.colb
+										input.colchk(type='checkbox')
+										span VITAS
+									label.colb
+										input.colchk(type='checkbox')
+										span YOLOYOLOYOLO
+									label.colb
+										input.colchk(type='checkbox')
+										span PANASONIC
+									label.colb
+										input.colchk(type='checkbox')
+										span SAMPO 聲寶
+									label.colb
+										input.colchk(type='checkbox')
+										span ASUS 華碩
+									label.colb
+										input.colchk(type='checkbox')
+										span ROG
+							//- .attrcon
+							//- 	.colst 價格
+							//- 	.colprice
+							//- 		span $
+							//- 		input.input-number(type='number' min='0' step='any')
+							//- 		span ~
+							//- 		input.input-number(type='number' min='0' step='any')
+							//- 		button.button.btn-submit(type='submit') 搜尋
 					.items_bg
 						.items
 							-var j = 6;

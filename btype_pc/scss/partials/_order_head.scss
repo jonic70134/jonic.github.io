@@ -17,24 +17,20 @@ body{
 }
 .main_head{
 	display:flex;
+	align-items: center;
 	flex-flow:row nowrap;
 	justify-content: space-between;
 	position: relative;
-    padding: 20px 10px;
+    padding: 10px;
+	height: 120px;
 	.container{
 		width: 100%;
 	}
 }
 
-.header_l,.header_r{
-	display:flex;
-	flex-flow:row nowrap;
-	align-items: center;
-}
 .header_r{
     display: flex;
     flex-flow:column;
-    position: relative;top: 15px;
     line-height: 1.4;
 }
 .header_r_top{
@@ -45,8 +41,11 @@ body{
 }
 .logo{
 	display: block;
+	max-width: 200px;
+    max-height: 120px;
+	overflow: hidden;
 	img{
 		display: block;
-		width: 200px;
+		width: 100%;
 	}
 }
