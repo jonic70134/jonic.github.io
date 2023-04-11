@@ -567,7 +567,7 @@ h2 {
             padding: 10px;
         }
 
-        .table_blue, .AI_table {
+        .table_blue, .ai_table {
             width: 100%;
         }
         .cont_l{
@@ -601,9 +601,15 @@ h2 {
         .benefit{
             flex-wrap: wrap;
             justify-content: flex-start;
+            
         }
     }
-    
+    [class^=benefit_]{
+        flex-basis: 20%;
+    }
+    .table_scroll{
+        zoom: 0.8;
+    }
 }
 
 @media only screen and (max-width: 740px) {
@@ -613,10 +619,15 @@ h2 {
         }
         .cont_l {
             width: 100%;
-            vertical-align: middle;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
 
             p:last-child {
                 margin: 0;
+            }
+            .apply{
+                margin: 20px 0;
             }
         }
         .cont_r {
@@ -700,16 +711,22 @@ h2 {
             }
         }
 
-        .AI_table {
+        .ai_table {
             font-size: 0.9rem;
-
             td {
-            min-width: 120px;
+                min-width: 120px;
 
-            &:first-child {
-                text-align: center;
-                white-space: normal;
+                &:first-child {
+                    text-align: center;
+                    white-space: normal;
+                }
             }
+            &.center{
+                td{
+                    &:first-child {
+                        width: 300px;
+                    }
+                }
             }
         }
 
@@ -718,6 +735,12 @@ h2 {
             font-size: 1rem;
             }
         }
+    }
+    [class^=benefit_]{
+        flex-basis: 33.3%;
+    }
+    .table_scroll{
+        zoom: 0.8;
     }
 }
   

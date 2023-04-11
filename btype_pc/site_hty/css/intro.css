@@ -1113,7 +1113,7 @@ h2 {
   .cont.black, .cont.straight {
     padding: 10px;
   }
-  .cont .table_blue, .cont .AI_table {
+  .cont .table_blue, .cont .ai_table {
     width: 100%;
   }
   .cont .cont_l {
@@ -1143,6 +1143,13 @@ h2 {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  [class^=benefit_] {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+  .table_scroll {
+    zoom: 0.8;
+  }
 }
 @media only screen and (max-width: 740px) {
   .cont .container {
@@ -1150,10 +1157,22 @@ h2 {
   }
   .cont .cont_l {
     width: 100%;
-    vertical-align: middle;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .cont .cont_l p:last-child {
     margin: 0;
+  }
+  .cont .cont_l .apply {
+    margin: 20px 0;
   }
   .cont .cont_r {
     width: 100%;
@@ -1216,17 +1235,27 @@ h2 {
   .cont .table_blue.AI .blue_bg {
     min-width: 20px;
   }
-  .cont .AI_table {
+  .cont .ai_table {
     font-size: 0.9rem;
   }
-  .cont .AI_table td {
+  .cont .ai_table td {
     min-width: 120px;
   }
-  .cont .AI_table td:first-child {
+  .cont .ai_table td:first-child {
     text-align: center;
     white-space: normal;
   }
+  .cont .ai_table.center td:first-child {
+    width: 300px;
+  }
   .cont .rate p, .cont .rate .btn-latest {
     font-size: 1rem;
+  }
+  [class^=benefit_] {
+    -ms-flex-preferred-size: 33.3%;
+        flex-basis: 33.3%;
+  }
+  .table_scroll {
+    zoom: 0.8;
   }
 }
