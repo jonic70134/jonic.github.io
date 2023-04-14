@@ -10,9 +10,6 @@
 .swiper-wrapper{
     height: auto;
 }
-.icon_pictxt{
-    display: none;
-}
 .sub_head{
     .container{
         justify-content: flex-start;
@@ -37,9 +34,7 @@
             color:#333;
         }
     }
-    .icon_cart{
-        margin:0 50px 0 40px;
-    }
+    
     .icon_track{
         font-size: 2rem;
         align-self:flex-end;
@@ -47,13 +42,7 @@
     .icon_track_plus{
         font-size: 1.3rem;
     }
-    .icon_cart_arrow{
-        position: absolute;left:-8px;top:-5px;
-        font-size: .7rem;
-        padding:3px 4px 4px;
-        background-color: #d00;
-        border-radius:50%;
-    }
+    
 }
 
 .loader{

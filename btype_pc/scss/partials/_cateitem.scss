@@ -6,6 +6,17 @@
     display:flex;
     flex-flow:row wrap;
     margin:0 0 50px;
+    .icon_cart{
+        margin:0 10px 0 40px;
+    }
+    .icon_cart_arrow{
+        position: absolute;left:-5px;top:-1px;
+        padding: 2px;
+        font-size: .7rem;
+        background-color: #d00;
+        border-radius:50%;
+    }
+    
 }
 .item{
     display:flex;
@@ -57,6 +68,7 @@
     display: flex;
     flex-flow:row nowrap;
     align-items: baseline;
+    margin: 10px 0 0;
     color:#d00;
     font-size:.9rem;
     font-weight: 700;
@@ -98,11 +110,21 @@
     .price{
         font-size:1.15rem;
     }
+    .icon_cart,.icon_track{
+        font-size: 1.6rem;
+    }
+    .icon_cart{
+        margin:0 50px 0 40px;
+    }
+    .icon_cart_arrow{
+        left:-8px;top:-5px;
+        padding:3px 4px 4px;
+    }
 }
 .search_item{
     .price{
         &::first-letter{
-            font-size:1.15rem;
+            font-size:.7rem;
         }
     }
 }

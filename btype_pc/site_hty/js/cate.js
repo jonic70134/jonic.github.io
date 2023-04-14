@@ -4,7 +4,7 @@ $('.nav-menu').hover(function() {
     $('.menu-one').stop(true,true).slideToggle();
 });
 
-// 愛心class切換
+// 圖文切換
 $(".icon_pictxt").click(function(e){
     e.preventDefault();
     $(this).toggleClass('icon_pictxt icon_picview');

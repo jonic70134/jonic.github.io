@@ -21,9 +21,10 @@
     right: 0;
 }
 .slide_btn_r,.slide_btn_l{
+    display: none;
     position: absolute;top:50%;right: 0; transform: translateY(-50%);z-index: 10;
     padding: 15px 3px;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.3);
     border-radius: 5px 0 0 5px;
     cursor: pointer;
     &::before{
@@ -42,6 +43,11 @@
     left: 0;
     right: auto;
     transform: rotate(180deg) translateY(50%);
+}
+.sepc_single_slide{
+    &:hover .icon{
+        display: block;
+    }
 }
 .sepc_two_block{
     display: flex;
