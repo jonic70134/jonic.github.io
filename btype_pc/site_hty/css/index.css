@@ -3440,7 +3440,12 @@ button.swiper-pagination-bullet {
 }
 
 .item_t {
-  margin-top: 40px;
-  color: #888;
-  font-size: 1.1rem;
+  margin: 5px 0 10px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.items_bg {
+  padding: 10px 20px 20px 20px;
 }

@@ -2450,6 +2450,16 @@ a.gotop:after {
 }
 
 .pc-item-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   line-height: 1.9;
   font-size: 0.85rem;
   margin: 10px 0;
@@ -2462,15 +2472,6 @@ a.gotop:after {
   margin-right: 3px;
   color: #666;
   font-size: 1.5rem;
-}
-.pc-item-main .colwhite {
-  color: white;
-}
-.pc-item-main .colfe0 {
-  color: #fe0;
-}
-.pc-item-main .cole00 {
-  color: #e00;
 }
 
 .tagStatus {
@@ -3345,6 +3346,7 @@ h1.name {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  font-size: 1rem;
   border-top: solid 2px #0069cd;
   line-height: 1.5;
   cursor: pointer;
@@ -3368,9 +3370,8 @@ h1.name {
 }
 
 .relate_prod {
-  position: absolute;
+  position: relative;
   top: -60px;
-  right: 0;
   padding: 15px 20px 10px;
 }
 

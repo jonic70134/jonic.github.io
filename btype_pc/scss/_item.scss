@@ -497,6 +497,9 @@
     }
 }
 .pc-item-main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     line-height: 1.9;
     font-size: .85rem;
     margin: 10px 0;
@@ -508,15 +511,6 @@
         margin-right:3px;
         color:#666;
         font-size:1.5rem;
-    }
-    .colwhite{
-        color:white;
-    }
-    .colfe0{
-        color:#fe0;
-    }
-    .cole00{
-        color:#e00;
     }
 }
 //標籤樣式
@@ -1333,6 +1327,7 @@ h1.name {
     width:100%;
     display: flex;
     flex-flow: row nowrap;
+    font-size: 1rem;
     border-top:solid 2px #0069cd;
     line-height: 1.5;
     cursor: pointer;
@@ -1355,7 +1350,7 @@ h1.name {
 // 相關商品
 
 .relate_prod {
-    position: absolute;top: -60px;right: 0;
+    position: relative;top: -60px;
     padding: 15px 20px 10px;
 }
 
