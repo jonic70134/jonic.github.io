@@ -213,26 +213,29 @@ h3{
 }
 .cart_gift {
 	margin: 0 0 5px;
-	p {
-        margin: 0 5px 0 0;
+}
+.cart_gift_item {
+	li {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: flex-start;
+		margin: 0 0 5px;
+		font-size: .85rem;
+		line-height: 1.2;
+		color: #333;
+	}
+	.red{
+		width: 36px;
+		margin: 0 5px 0 0;
 		padding: 2px 5px;
 		font-size: .8rem;
 		color: white;
 		background: #d00;
 	}
 }
-.cart_gift_item {
-	li {
-		display: flex;
-		flex-flow: row nowrap;
-		align-items: center;
-		margin: 0 0 5px;
-		font-size: .85rem;
-		line-height: 1.2;
-		color: #333;
-	}
+.cart_gift_name{
+	width: 80%;
 }
-
 .cart_name_link{
     display: -webkit-box;
     line-clamp: 2;
@@ -1210,14 +1213,6 @@ strong{
 	}
 	.cart-lack-tag {
 		font-size: .7rem;
-	}
-	.cart_gift_item {
-		li {
-			width: 145px;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: nowrap;
-		}
 	}
 	.cart_b_t {
 		font-size: .85rem;
