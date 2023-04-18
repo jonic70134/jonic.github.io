@@ -13,15 +13,7 @@ html
 		meta(content='width=device-width, initial-scale=1.0' name='viewport')
 		link(href='css/intro.css', rel='stylesheet')
 	body
-		header.site-header
-			.container
-				.main-head
-					a.logo(href='intro.html')
-						img(src='img/intro/ysdt_ai_logo.svg' alt='遠時AI電商' title=' 遠時AI電商')
-					.head_link
-						a(href="intro_co.html") 廠商合作
-						a(href="intro_apply.html") 報名說明會
-						a(href="intro_brand.html") 已合作品牌
+		include src/_intro_head.pug
 		.query
 			.container
 				.query_top

@@ -13,15 +13,7 @@ html
 		meta(content='width=device-width, initial-scale=1.0' name='viewport')
 		link(href='css/intro.css', rel='stylesheet')
 	body
-		header.site-header
-			.container
-				.main-head
-					a.logo(href='intro.html')
-						img(src='img/intro/ysdt_ai_logo.svg' alt='遠時AI電商' title=' 遠時AI電商')
-					.head_link
-						a(href="intro_co.html") 廠商合作
-						a(href="intro_apply.html") 報名說明會
-						a.active(href="intro_brand.html") 已合作品牌
+		include src/_intro_head.pug
 		article.main
 			section.brand
 				.container
@@ -36,55 +28,17 @@ html
 				.container
 					.brand_bot
 						a.brand_block(href='#')
+							.brand_photo
+								span 網站LOGO
 							.brand_name
-								span SONY
-						a.brand_block(href='#')
-							.brand_name
-								span Panasonic
-						a.brand_block(href='#')
-							.brand_name
-								span ASUS
-						a.brand_block(href='#')
-							.brand_name
-								span 新東陽
-						a.brand_block(href='#')
-							.brand_name
-								span 屈臣氏
-						a.brand_block(href='#')
-							.brand_name
-								span 鼎泰豐
-						a.brand_block(href='#')
-							.brand_name
-								span 精技科技
-						a.brand_block(href='#')
-							.brand_name
-								span SAMSUNG
-						a.brand_block(href='#')
-							.brand_name
-								span Sodastream
-						a.brand_block(href='#')
-							.brand_name
-								span ZOJIRUSHI
-						a.brand_block(href='#')
-							.brand_name
-								span 三菱重工空調
-						a.brand_block(href='#')
-							.brand_name
-								span REPUBLIC OF GAMES
-						a.brand_block(href='#')
-							.brand_name
-								span GOPRO
-						a.brand_block(href='#')
-							.brand_name
-								span Transcend
-						a.brand_block(href='#')
-							.brand_name
-								span iRobot
+								span 品牌名稱
 						- var j = 35;
 						- for (var i = 1; i < j; i++)
 							a.brand_block(href='#')
-								.brand_name
-									span 品牌名稱品牌名稱品牌名稱品牌名稱品牌名稱品牌名稱品牌名稱品牌名稱		
+								.brand_photo
+									img.brand_img(src='../img/sample/Logo_'+ i + '.jpg', alt='')
+								p.brand_name
+									span 品牌名稱
 		script(src='js/3rd-party/jquery-3.6.0.min.js')
 		script(src='js/intro.js')
 
