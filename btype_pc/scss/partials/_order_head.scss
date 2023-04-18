@@ -34,10 +34,10 @@ body{
     line-height: 1.4;
 }
 .header_r_top{
-    font-size:1rem;
+    font-size:fluid(12px,16px);
 }
 .header_r_bot{
-    font-size: .85rem;
+    font-size:fluid(10px,13.5px);
 }
 .logo{
 	display: block;
