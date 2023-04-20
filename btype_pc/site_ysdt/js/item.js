@@ -221,15 +221,15 @@ $(".btn-notadd").click(function() {
 $('.add_view .items').each(function(){
     var addNum = $(this).find($('.add_view .item')).length;
     var moreBlock= '<a href="#" class="more"><span class="more_txt">看更多</span><i class="icon icon_more"></i></a>';
-	if( addNum > 5){    //超過3個就截斷
+	if( addNum > 5){    //超過5個就截斷
 	  $('.item', this).eq(4).nextAll().hide().addClass('toggleable');
-	  $(this).append(moreBlock);    
+	  $(this).parents('.container').append(moreBlock);    
 	}
   });
-  $('.add_view .items .more').click(function(e){
+  $('.add_view .more').click(function(e){
       e.preventDefault();
 	$(this).hide();    
-	$(this).siblings('.item.toggleable').slideToggle(); 
+	$('.add_view .item.toggleable').slideToggle(); 
   }); 
 
 

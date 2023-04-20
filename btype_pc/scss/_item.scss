@@ -1106,7 +1106,7 @@ h1.name {
     }
 }
 .pc-item-add{
-    width:1000px;
+    width:1040px;
 	margin-bottom:20px;
 	&.blue{
 		.title-h3{
@@ -1134,18 +1134,18 @@ h1.name {
         width:auto;
     }
 	.items{
-        padding:0 10px;
+        display: grid;
+        grid-template-columns: repeat(5,auto);
+        grid-template-rows: repeat(2,auto);
+        grid-gap:5px;
+        margin: 5px 0 0;
 	}
 	.item{
 		position: relative;
-		width:17%;
-		min-height:110px;
-		display:inline-block;
-		margin:10px 0;
 		padding:10px;
-		border:solid 2px transparent;
+		border:1px solid transparent;
 		&.active{
-            border:solid 2px #e00;
+            border:1px solid #e00;
 		}
 		&.swiper-slide{
 			width:17% !important;
@@ -1188,8 +1188,9 @@ h1.name {
 		}
 	}
 	.info{
-		display:block;
+        width: auto;
 		margin:0 4px;
+        padding: 0;
 	}
 	.checkbox{
 		float:right;
