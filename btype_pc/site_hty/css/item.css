@@ -1952,7 +1952,7 @@ a.gotop:after {
 .btn-notselect, .btn-carted {
   display: block;
   width: 100%;
-  padding: 8px 0;
+  padding: 3px 0;
   text-align: center;
   font-size: 0.85rem;
   color: #777;
@@ -3145,8 +3145,8 @@ h1.name {
 .pc-item-add .items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 5px auto 5px auto 5px auto 5px auto;
-  grid-template-columns: repeat(5, auto);
+  -ms-grid-columns: 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr;
+  grid-template-columns: repeat(5, 1fr);
   -ms-grid-rows: auto 5px auto;
   grid-template-rows: repeat(2, auto);
   grid-gap: 5px;

@@ -61,7 +61,7 @@
 .btn-notselect,.btn-carted{
     display: block;
     width: 100%;
-    padding:8px 0;
+    padding:3px 0;
     text-align: center;
     font-size:.85rem;
     color:#777;
@@ -1135,7 +1135,7 @@ h1.name {
     }
 	.items{
         display: grid;
-        grid-template-columns: repeat(5,auto);
+        grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(2,auto);
         grid-gap:5px;
         margin: 5px 0 0;
