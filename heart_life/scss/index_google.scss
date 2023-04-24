@@ -143,7 +143,7 @@ img{
 	-webkit-box-orient: vertical;
 	line-clamp: 3;
 	-webkit-line-clamp:3;
-	margin: 0 60px 40px 0;
+	margin: 20px 60px 40px 0;
 	overflow: hidden;
 	color:#999;
 	line-height: 1.2;
@@ -282,7 +282,7 @@ img{
 .item_head{
 	display: flex;
     width: 100%;
-	margin:0;
+	margin:0 0 20px;
 	padding:1.8%;
 	background-color: #333;
 	box-sizing: border-box;
@@ -290,6 +290,7 @@ img{
 		position: relative;
 		display: flex;
 		flex-flow: column;
+		justify-content: space-between;
 		flex: 2 1 65%;
 		margin: 0 0 0 2%;
 	}
@@ -325,9 +326,6 @@ img{
 		&::first-letter{
 			font-size: clamp(0.7rem, 2.5vw, 1.5rem);
 		}
-	}
-	.dis{
-		margin: 0 0 40px;
 	}
 	.nor_price{
 		font-size:clamp(1rem , 3vw, 3rem);
@@ -403,10 +401,10 @@ img{
 		align-items: flex-end;
 	}
 	.price_b{
-		flex:2 1 60%;
+		flex:2 1 70%;
 	}
 	.cupn_block{
-		flex:2 1 30%;
+		flex:2 1 20%;
 	}
 	.cupn_t{
 		margin:0 0 5px;
@@ -441,6 +439,11 @@ img{
 			font-size:1.1rem;
 		}
 	}
+	.btn-imd{
+		padding: 5px 0 5px 5px;
+		letter-spacing: 5px;
+		font-size:clamp(.9rem , 2vw, 1.4rem);
+	}
 }
 
 
@@ -452,10 +455,7 @@ img{
 @media (min-width:748px) and (max-width: 1200px) {
 	.item_head{
 		.summary{
-			margin: 0 60px 20px 0;
-		}
-		.dis{
-			margin: 0 0 20px;
+			margin: 20px 60px 20px 0;
 		}
 
 	}
@@ -702,7 +702,7 @@ img{
 	}
 	.btn-imd{
 		margin: 5px 0 0;
-		padding: 3px 10px;
+		padding: 8px 10px;
 		font-size: .8rem;
 	}
 	.item_head{
@@ -721,10 +721,10 @@ img{
 			margin:0 0 0 5px;
 		}
 		.price_b{
-			flex:2 1 60%;
+			flex:2 1 70%;
 		}
 		.cupn_block{
-			flex:2 1 40%;
+			flex:2 1 30%;
 		}
 	}
 }

@@ -170,7 +170,7 @@ img {
   -webkit-box-orient: vertical;
   line-clamp: 3;
   -webkit-line-clamp: 3;
-  margin: 0 60px 40px 0;
+  margin: 20px 60px 40px 0;
   overflow: hidden;
   color: #999;
   line-height: 1.2;
@@ -391,7 +391,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin: 0;
+  margin: 0 0 20px;
   padding: 1.8%;
   background-color: #333;
   -webkit-box-sizing: border-box;
@@ -406,6 +406,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-flex: 2;
       -ms-flex: 2 1 65%;
           flex: 2 1 65%;
@@ -451,9 +454,6 @@ img {
 }
 .item_head .cupn_price::first-letter {
   font-size: clamp(0.7rem, 2.5vw, 1.5rem);
-}
-.item_head .dis {
-  margin: 0 0 40px;
 }
 .item_head .nor_price {
   font-size: clamp(1rem, 3vw, 3rem);
@@ -560,13 +560,13 @@ img {
 }
 .item.sm .price_b {
   -webkit-box-flex: 2;
-      -ms-flex: 2 1 60%;
-          flex: 2 1 60%;
+      -ms-flex: 2 1 70%;
+          flex: 2 1 70%;
 }
 .item.sm .cupn_block {
   -webkit-box-flex: 2;
-      -ms-flex: 2 1 30%;
-          flex: 2 1 30%;
+      -ms-flex: 2 1 20%;
+          flex: 2 1 20%;
 }
 .item.sm .cupn_t {
   margin: 0 0 5px;
@@ -600,6 +600,11 @@ img {
 .item.sm .dis_af_price::first-letter {
   font-size: 1.1rem;
 }
+.item.sm .btn-imd {
+  padding: 5px 0 5px 5px;
+  letter-spacing: 5px;
+  font-size: clamp(0.9rem, 2vw, 1.4rem);
+}
 
 @media (min-width: 748px) and (max-width: 1279px) {
   .items {
@@ -608,10 +613,7 @@ img {
 }
 @media (min-width: 748px) and (max-width: 1200px) {
   .item_head .summary {
-    margin: 0 60px 20px 0;
-  }
-  .item_head .dis {
-    margin: 0 0 20px;
+    margin: 20px 60px 20px 0;
   }
 }
 @media (min-width: 748px) and (max-width: 1100px) {
@@ -838,7 +840,7 @@ img {
   }
   .btn-imd {
     margin: 5px 0 0;
-    padding: 3px 10px;
+    padding: 8px 10px;
     font-size: 0.8rem;
   }
   .item_head .price_b {
@@ -859,13 +861,13 @@ img {
   }
   .item.sm .price_b {
     -webkit-box-flex: 2;
-        -ms-flex: 2 1 60%;
-            flex: 2 1 60%;
+        -ms-flex: 2 1 70%;
+            flex: 2 1 70%;
   }
   .item.sm .cupn_block {
     -webkit-box-flex: 2;
-        -ms-flex: 2 1 40%;
-            flex: 2 1 40%;
+        -ms-flex: 2 1 30%;
+            flex: 2 1 30%;
   }
 }
 @media (max-width: 395px) {
