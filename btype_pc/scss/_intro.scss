@@ -103,7 +103,7 @@ a {
 .head_link{
     a{
         padding: 0 0 0 20px;
-        font-size: 1.15rem;
+        font-size: fluid(15px,19px);
         color:white;
         &::before{
             content: " | ";
@@ -134,7 +134,7 @@ a {
 .pbybtn{
 	margin: 0 0 0 10px;
 	color:white;
-    font-size: 1.2rem;
+    font-size: fluid(16px,20px);;
 	text-decoration: underline;
 }
 .pby_detail{
@@ -374,7 +374,7 @@ h2 {
     flex-flow: row nowrap;
     align-items: center;
     margin: 0 0 15px;
-    font-size:1.1rem;
+    font-size:fluid(14px,18px);
     &.align_top{
         .form_t{
             align-self: flex-start;
@@ -487,7 +487,7 @@ h2 {
     position: relative;
     padding: 20px 0;
     color:white;
-    font-size:fluid(20px,40px);
+    font-size:fluid(16px,40px);
     text-align: center;
 }
 .brand_sub_t{
@@ -505,7 +505,6 @@ h2 {
     grid-gap:30px;
     margin: 0 -3%;
     padding: 40px 3% 30px;
-    background: #eee;
 }
 .brand_block{
     text-align: center;
@@ -519,31 +518,31 @@ h2 {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 120px;
     overflow: hidden;
     background: white;
     font-size:1.3rem;
+    border-radius: 20px;
+    aspect-ratio: 1;
+    box-shadow: 3px 2px 15px rgba(0,0,0, 0.2);
 }
 .brand_img{
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    min-width: 100px;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     z-index: 20;
     ~::after{
         display: none;
     }
 }
 .brand_name{
-    padding: 3px 0 ;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 48px;
+    padding: 3px;
     font-size:.9rem;
-    background-color: white;
-    border-top:2px solid #eee;
+    line-height: 1.4;
+    word-break: break-all;
     span{
         display: -webkit-box;
         line-clamp: 2;
@@ -682,9 +681,6 @@ h2 {
             margin: 0;
         }
     }
-    .brand_bot{
-        grid-template-columns:repeat(3, 1fr);
-    }
     
 }
 
@@ -713,6 +709,9 @@ h2 {
     }
     .table_scroll{
         zoom: 0.8;
+    }
+    .brand_bot{
+        grid-template-columns:repeat(auto-fit, minmax(100px, 1fr));
     }
 }
 
@@ -761,9 +760,6 @@ h2 {
                 margin: 0 0 0 5px;
             }
         }
-    }
-    .brand_bot{
-        grid-template-columns:repeat(2, 1fr);
     }
 }
 
@@ -846,6 +842,12 @@ h2 {
     .form_input{
         width: 350px;
     }
+    .form_choose{
+        width: 350px;
+        >.form_line{
+            align-items: flex-start;
+        }
+    }
     .co_t{
         flex-flow: column;
         input{
@@ -865,5 +867,11 @@ h2 {
     .table_scroll{
         zoom: 0.8;
     }
+    .brand_sub_t{
+        width: 85%;
+        padding: 8px;
+    }
+    .brand_bot{
+        grid-gap: 15px;
+    }
 }
-  
