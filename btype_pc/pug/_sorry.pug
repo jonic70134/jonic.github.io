@@ -1,0 +1,21 @@
+doctype html
+html
+	head
+		include src/_meta.pug
+		link(href='css/sorry.css', rel='stylesheet')
+	body
+		.body_container
+			include src/_order_head.pug
+			.site-main
+				.container
+
+					.empty_top
+						p 抱歉，您查詢的商品不存在。
+					.empty_bot
+						a.btn-confirm(href="index.html") 回首頁
+						
+		include src/_foot.pug
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/common.js')
+

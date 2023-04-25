@@ -323,7 +323,7 @@ body {
           justify-content: space-between;
   position: relative;
   padding: 10px;
-  height: 120px;
+  height: 75px;
 }
 .main_head .container {
   width: 100%;
@@ -351,7 +351,7 @@ body {
 .logo {
   display: block;
   max-width: 200px;
-  max-height: 120px;
+  max-height: 75px;
   overflow: hidden;
 }
 .logo img {
@@ -359,6 +359,11 @@ body {
   width: 100%;
 }
 
+@media (max-width: 375px) {
+  .logo {
+    max-width: 170px;
+  }
+}
 .container_ue {
   width: 100%;
   background: white;
