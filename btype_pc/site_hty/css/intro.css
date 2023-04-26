@@ -483,7 +483,29 @@ a {
   width: 160px;
 }
 
+.head_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .head_link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 0 0 20px;
   font-size: clamp(0.94rem, 0.47vw + 0.83rem, 1.19rem);
   color: white;
@@ -500,6 +522,21 @@ a {
 }
 .head_link a.active {
   color: gold;
+}
+.head_link .link_bdy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+  line-height: 1.1;
+}
+.head_link .link_top {
+  font-size: clamp(0.75rem, 0.36vw + 0.67rem, 0.94rem);
 }
 
 .pby {
@@ -740,9 +777,9 @@ h2 {
 
 .form {
   width: 100%;
-  max-width: 800px;
+  max-width: 760px;
   margin: 30px auto;
-  padding: 30px;
+  padding: 30px 40px;
   background: #f3f1e8;
   text-align: center;
   border-radius: 30px;
@@ -751,8 +788,9 @@ h2 {
   padding: 10px 0;
 }
 .form small {
-  font-size: 0.9rem;
-  color: #999;
+  font-size: clamp(0.88rem, 0.47vw + 0.76rem, 1.13rem);
+  color: #666;
+  line-height: 1.1;
 }
 .form.co h2 {
   font-size: 1.35rem;
@@ -781,7 +819,7 @@ h2 {
 }
 
 .form_input {
-  width: 500px;
+  width: 100%;
   margin: 0 0 0 10px;
   padding: 10px;
   border: 1px solid #aaa;
@@ -792,13 +830,60 @@ h2 {
 }
 
 .form_t {
-  width: 150px;
+  width: 140px;
   text-align: right;
 }
 
 .form_choose label {
   font-size: 1rem;
   text-align: left;
+}
+
+.form_con {
+  margin: 0 0 0 10px;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+
+.form_line_bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 25px 0 0;
+  font-size: clamp(0.88rem, 0.47vw + 0.76rem, 1.13rem);
+}
+
+.form_quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px auto;
+  padding: 5px 10px;
+  font-size: clamp(1rem, 0.95vw + 0.78rem, 1.5rem);
+  color: #06c;
+  border: 2px solid #06c;
+  border-radius: 5px;
+  line-height: 1.2;
+}
+.form_quote span {
+  font-size: clamp(0.75rem, 0.24vw + 0.69rem, 0.88rem);
 }
 
 .co_top {
@@ -897,6 +982,10 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.form_foot small {
+  margin: 0 0 20px;
+  font-size: clamp(0.88rem, 0.47vw + 0.76rem, 1.13rem);
+}
 
 .submit {
   display: inline-block;
@@ -904,7 +993,7 @@ h2 {
   padding: 10px 40px;
   color: white;
   background: #06c;
-  font-size: 1.5rem;
+  font-size: clamp(1.13rem, 0.83vw + 0.93rem, 1.56rem);
   letter-spacing: 1px;
   border-radius: 5px;
 }
@@ -1245,21 +1334,7 @@ h2 {
     width: 100%;
   }
 }
-@media (max-width: 920px) {
-  .head_link a {
-    padding: 0 0 0 10px;
-  }
-  .head_link a::before {
-    margin: 0 10px 0 0;
-  }
-  .head_link a:last-child:after {
-    margin: 0 0 0 10px;
-  }
-  .cont .benefit {
-    margin: 0;
-  }
-}
-@media (max-width: 810px) {
+@media (max-width: 970px) {
   .main-head {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1275,6 +1350,22 @@ h2 {
   .head_link {
     margin: 20px 0 0;
   }
+}
+@media (max-width: 920px) {
+  .head_link a {
+    padding: 0 0 0 10px;
+  }
+  .head_link a::before {
+    margin: 0 10px 0 0;
+  }
+  .head_link a:last-child:after {
+    margin: 0 0 0 10px;
+  }
+  .cont .benefit {
+    margin: 0;
+  }
+}
+@media (max-width: 810px) {
   .cont.black .container, .cont.straight .container, .cont .table_blue.AI {
     font-size: 1rem;
   }

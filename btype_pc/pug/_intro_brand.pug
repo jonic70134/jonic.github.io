@@ -13,7 +13,23 @@ html
 		meta(content='width=device-width, initial-scale=1.0' name='viewport')
 		link(href='css/intro.css', rel='stylesheet')
 	body
-		include src/_intro_head.pug
+		header.site-header
+			.container
+				.main-head
+					.header_l
+						a.logo(href='intro.html')
+							img(src='img/intro/ysdt_ai_logo.svg' alt='遠時AI電商' title=' 遠時AI電商')
+						.site_search
+							input.input_search(type='search', maxlength='128', placeholder='')
+							a(href="search.html").btn-search
+								i.icon.icon_search
+					.head_link
+						a(href="intro_co.html") 廠商合作
+						a.active(href="intro_apply.html")
+							p.link_bdy
+								span.link_top 電商名將謝振豐現場演示
+								span.link_bot 報名正式發表會
+						a(href="intro_brand.html") 已合作品牌
 		article.main
 			section.brand
 				.container
