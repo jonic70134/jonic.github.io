@@ -90,15 +90,7 @@ $(".btn-fav").click(function(e){
             $("."+tab_id).addClass('active');
         });
         
-        $('.item_tab_t').click(function(){
-            var tab_id = $(this).attr('data-tab');
-            $('.item_tab_t').removeClass('active');
-            //$('.item-related .items').removeClass('active');
-            $('.item_detail .item').removeClass('active');
-
-            $(this).addClass('active');
-            $("."+tab_id).addClass('active');
-        });
+        
     //請選擇尺寸按下去滑動到規格品區塊
     $(".btn-select-pink").click(function() {
         $('html, body').animate({

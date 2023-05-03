@@ -3343,9 +3343,15 @@ h1.name {
 .item_detail {
   min-height: 610px;
   margin-bottom: 40px;
-  overflow: hidden;
 }
 .item_detail .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   width: 1040px;
   margin: 0;
 }
@@ -3362,16 +3368,8 @@ h1.name {
   width: 100%;
   height: auto;
 }
-.item_detail .item img {
-  display: block;
-  max-width: 100%;
-}
 .item_detail .item .no-gift {
   font-size: 18px;
-}
-.item_detail .item.active {
-  visibility: visible;
-  position: static;
 }
 .item_detail .video-container {
   position: relative;
@@ -3387,36 +3385,51 @@ h1.name {
   height: 100%;
 }
 
-.item_tabs {
-  width: 100%;
+.tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto 20px;
+}
+
+.tab_radio {
+  position: absolute;
+  opacity: 0;
+}
+.tab_radio:checked + .tab_label {
+  background: #fff;
+  color: #000;
+  border: solid 1px #0069cd;
+  border-bottom: none;
+}
+.tab_radio:checked + .tab_label + .tab_con {
+  display: block;
+}
+
+.tab_label {
+  width: 50%;
+  padding: 5px 10px;
   font-size: 1rem;
-  border-top: solid 2px #0069cd;
-  line-height: 1.5;
-  cursor: pointer;
-}
-.item_tabs .item_tab_t {
-  border-left: solid 1px #0069cd;
-}
-.item_tabs .item_tab_t {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  border: solid 1px #0069cd;
+  background: #eaeef9;
   text-align: center;
-  border-right: solid 1px #0069cd;
-  border-bottom: solid 1px #0069cd;
-  background-color: #eaeef9;
-  padding: 8px 0px;
 }
-.item_tabs .item_tab_t.active {
-  background-color: #fff;
-  border-bottom: solid 1px #fff;
+
+.tab_con {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  -webkit-box-ordinal-group: 100;
+      -ms-flex-order: 99;
+          order: 99;
+}
+.tab_con img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .relate_prod {

@@ -1281,8 +1281,9 @@ h1.name {
 .item_detail { 
     min-height: 610px;
     margin-bottom:40px;
-    overflow: hidden;
     .container{
+        display: flex;
+        flex-flow: row nowrap;
         width:1040px;
         margin: 0;
     }
@@ -1298,17 +1299,9 @@ h1.name {
             width:100%;
             height:auto;
         }
-        img{
-            display: block;
-            max-width: 100%;
-        }
         .no-gift{
             font-size:18px;
         }
-    }
-    .item.active {
-        visibility: visible;
-        position: static;
     }
     .video-container{
         position: relative;
@@ -1324,28 +1317,47 @@ h1.name {
         height: 100%;
     }
 }
-.item_tabs {
-    width:100%;
-    display: flex;
-    flex-flow: row nowrap;
-    font-size: 1rem;
-    border-top:solid 2px #0069cd;
-    line-height: 1.5;
-    cursor: pointer;
-    .item_tab_t {
-        border-left:solid 1px #0069cd;
-    }
-    .item_tab_t {
-        flex:1;
-        text-align:center;
-        border-right:solid 1px #0069cd;
-        border-bottom:solid 1px #0069cd;
-        background-color:#eaeef9;
-        padding:8px 0px;
-    }
-    .item_tab_t.active {
-        background-color:#fff;
-        border-bottom:solid 1px #fff;
+
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto 20px;
+}
+
+.tab_radio {
+	position: absolute;
+	opacity: 0;
+	&:checked {
+		& + .tab_label {
+			background: #fff;
+			color: #000;
+			border: solid 1px #0069cd;
+			border-bottom: none;
+			& + .tab_con {
+				display: block;
+			}
+		}
+	}
+}
+.tab_label {
+    width: 50%;
+	padding: 5px 10px;
+    font-size:1rem;
+    border:solid 1px #0069cd;
+    background: #eaeef9;
+	text-align: center;
+	
+}
+.tab_con {
+    display: none;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    order:99;
+    img{
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
     }
 }
 // 相關商品
