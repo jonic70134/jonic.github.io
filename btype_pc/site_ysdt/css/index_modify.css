@@ -626,10 +626,16 @@ label {
           justify-content: space-between;
   width: 200px;
   color: white;
-  display: none;
 }
 
-.logout {
+.head_reg {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  z-index: 30;
+}
+
+.logout, .reg {
   color: white;
   text-decoration: underline;
 }
