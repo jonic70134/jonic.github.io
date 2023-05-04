@@ -1,24 +1,28 @@
 @import "partials/base";
 @import "partials/color";
-
+@import "partials/function";
 @import "partials/font_iconmoon";
-@import "partials/head";
+@import "partials/order_head";
 @import 'partials/foot';
 @import "partials/cupn";
-@import "partials/pagenav";
-
+// @import "partials/pagenav";
+.pby_detail{
+    display: none;
+}
 .body_container{
 	min-height: calc(100vh - 82px);
     padding:0 0 40px;
     background: #eee;
 }
 .site-main{
-    width:1220px;
+    width: 100%;
+    max-width:1220px;
     margin:0 auto;
     position: relative;
 }
 .container{
-    width: 1220px;
+    width: 100%;
+    max-width: 1220px;
     margin:0 auto;
 }
 .sub_head{
@@ -60,6 +64,7 @@
 }
 .mem_chk_t{
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
     margin:10px 0;
@@ -164,11 +169,11 @@ a.ord_confirm_btn{
 .mem_chk{
     display: grid;
     grid-template-rows: 30px 90px;
-    grid-template-columns: 400px 130px 100px 90px 110px 1fr 1fr 1fr;
+    grid-template-columns: 400px 130px 100px 90px 110px 100px 100px 1fr;
     grid-gap:0;
     margin:10px auto;
     border-top:1px solid #ccc;
-    
+    overflow-x: auto;
 }
 [ID*="chk_open_detail"]{
     display: none;
@@ -486,7 +491,7 @@ a.grey{
 }
 .ord_reason{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     margin: 0 0 10px ;
     padding: 0;
     border: 1px solid #ccc;
@@ -542,7 +547,8 @@ a.grey{
     }
 }
 .mem_chk_container,.mem_ask_container{
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
 }
 .mem_chk_ask{
@@ -621,7 +627,7 @@ a.grey{
 
 .ord_bank_line{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: center;
     margin:  0 0 10px;
     .bank_txt{
@@ -634,6 +640,7 @@ a.grey{
             width: 100%;
             margin: 0 0px 0 0;
             padding:3px 10px;
+            box-sizing: border-box;
         }
     }
 }
@@ -687,4 +694,79 @@ a.grey{
 .cupn_price{
     margin: 0;
     font-size: 1.5rem;
+}
+
+@media (max-width:1220px){
+    .order_tab{
+        grid-template-columns: 140px 140px 140px 83px 100px 1fr 80px;
+        grid-template-rows:30px 50px;
+        overflow-x: auto;
+        // grid-template-columns: repeat(7,auto);
+    }
+    .ord_block{
+        padding: 5px;
+    }
+    .back{
+        margin: 0 0 20px;
+    }
+}
+
+@media (max-width:800px){
+    .mem_chk_t{
+        padding: 10px;
+        .red{
+            margin: 0 auto;
+            line-height: 1.2;
+        }
+    }
+    .ord_chos, .ord_des{
+        flex-basis:100%;
+        padding: 5px;
+    }
+    .ord_bank_line{
+        width: 100%;
+        margin: 0;
+        .bank_txt,.bank_td{
+            flex-basis: 20%;
+            width: auto;
+            margin: 2px 0;
+            text-align: left;
+            input{
+                width: auto;
+            }
+        }
+        .bank_td{
+            flex-basis: 75%;
+        }
+    }
+}
+@media (max-width:500px){
+    .ord_bank_line{
+        .bank_txt,.bank_td{
+            flex-basis: 35%;
+        }
+        .bank_td{
+            flex-basis: 65%;
+        }
+    }
+    .ord_info_grid{
+        grid-template-rows: 40px 40px;
+        grid-template-columns: 30px 1fr 35px 50px;
+    }
+    .ord_info_head{
+        text-align: center;
+    }
+}
+@media (max-width:350px){
+    .ord_bank_line{
+        .bank_txt,.bank_td{
+            flex-basis: 100%;
+            input{
+                width: 100%;
+            }
+        }
+        .bank_td{
+            flex-basis: 100%;
+        }
+    }
 }
