@@ -184,7 +184,6 @@ a {
 
 .table_scroll {
     width: 100%;
-    overflow: auto;
 }
 .main{
     .container{
@@ -217,7 +216,7 @@ a {
 h2 {
     padding: 0 0 20px ;
     color: black;
-    font-size: fluid(16px,32px);
+    font-size: fluid(16px,29.5px);
     letter-spacing: 1px;
 }
 .cont {
@@ -762,6 +761,7 @@ h2 {
     }
     .table_scroll{
         zoom: 0.8;
+        overflow-x: auto;
     }
     .brand_bot{
         grid-template-columns:repeat(auto-fit, minmax(100px, 1fr));
@@ -916,9 +916,6 @@ h2 {
     }
     [class^=benefit_]{
         flex-basis: 33.3%;
-    }
-    .table_scroll{
-        zoom: 0.8;
     }
     .brand_sub_t{
         width: 85%;
