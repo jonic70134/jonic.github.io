@@ -1398,7 +1398,7 @@ a.gotop:after {
 }
 .turn_body .topic img {
   display: block;
-  width: 200px;
+  width: 150px;
 }
 .turn_body .cupn_chg {
   display: -webkit-box;
@@ -3548,17 +3548,16 @@ button.swiper-pagination-bullet {
   display: none;
 }
 
+.brand_pbybtn {
+  margin: 0 0 0 20px;
+  color: white;
+  text-decoration: underline;
+  font-size: clamp(1rem, 0.47vw + 0.89rem, 1.25rem);
+}
+
 .brand .pbybtn {
   margin: 0 0 0 20px;
   font-size: clamp(1rem, 0.47vw + 0.89rem, 1.25rem);
-}
-.brand .pby_detail {
-  font-size: 0.8rem;
-}
-.brand .pby_detail.active {
-  top: 65px;
-  right: 230px;
-  text-align: left;
 }
 
 .brand_more {

@@ -613,6 +613,12 @@
         display: none;
     }
 }
+.brand_pbybtn{
+    margin: 0 0 0 20px;
+    color:white;
+    text-decoration: underline;
+    font-size: fluid(16px,20px);
+}
 // .brand_name{
 //     display: flex;
 //     flex-flow: column;
@@ -640,14 +646,14 @@
         margin: 0 0 0 20px;
         font-size: fluid(16px,20px);
     }
-    .pby_detail{
-        font-size: .8rem;
-        &.active{
-            top: 65px;
-            right: 230px;
-            text-align: left;
-        }
-    }
+    // .pby_detail{
+    //     font-size: .8rem;
+    //     &.active{
+    //         top: 65px;
+    //         right: 230px;
+    //         text-align: left;
+    //     }
+    // }
 }
 .brand_more{
     text-align:right ;
