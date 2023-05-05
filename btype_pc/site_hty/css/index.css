@@ -1464,10 +1464,13 @@ a.gotop:after {
 .turn_body .cupnimg {
   display: block;
   width: 104px;
+  height: 104px;
   border: 2px solid white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .turn_body .cupn_block {
   display: -webkit-box;

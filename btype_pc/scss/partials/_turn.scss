@@ -93,9 +93,11 @@
 	.cupnimg{
 		display: block;
 		width:104px;
+		height: 104px;
 		border:2px solid white;
 		box-sizing: border-box;
 		border-radius: 8px;
+		object-fit: cover;
 	}
 	.cupn_block{
 		display: flex;
