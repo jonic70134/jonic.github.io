@@ -629,15 +629,45 @@ label {
 }
 
 .head_reg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   position: absolute;
-  top: 8px;
-  right: 10px;
+  top: 0;
+  right: 0;
   z-index: 30;
+  padding: 5px 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.25);
 }
-
-.logout, .reg {
+.head_reg a {
   color: white;
   text-decoration: underline;
+}
+
+.reg_mail {
+  width: 180px;
+  font-size: 0.9rem;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.reg_deital {
+  font-size: 0.8rem;
+  margin: 0 0 0 15px;
+}
+
+.reg, .login {
+  padding: 0 5px;
+  text-underline-offset: 3px;
 }
 
 .pc_index_menu {

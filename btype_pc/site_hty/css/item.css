@@ -1498,15 +1498,45 @@ button.swiper-pagination-bullet {
 }
 
 .head_reg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   position: absolute;
-  top: 8px;
-  right: 10px;
+  top: 0;
+  right: 0;
   z-index: 30;
+  padding: 5px 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.25);
 }
-
-.logout, .reg {
+.head_reg a {
   color: white;
   text-decoration: underline;
+}
+
+.reg_mail {
+  width: 180px;
+  font-size: 0.9rem;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.reg_deital {
+  font-size: 0.8rem;
+  margin: 0 0 0 15px;
+}
+
+.reg, .login {
+  padding: 0 5px;
+  text-underline-offset: 3px;
 }
 
 .pc_index_menu {
@@ -2951,12 +2981,9 @@ h1.name {
   border: none;
 }
 .add_list .add_label {
-  display: inline-block;
+  position: relative;
   width: 20px;
   height: 20px;
-  cursor: pointer;
-  vertical-align: middle;
-  position: relative;
   border: 1px solid #ccc;
 }
 .add_list .add_label:after {
@@ -3199,6 +3226,19 @@ h1.name {
   -ms-grid-column: 9;
 }
 .pc-item-add .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   padding: 10px;
   border: 1px solid transparent;
@@ -3234,17 +3274,11 @@ h1.name {
   cursor: pointer;
   color: #333;
 }
-.pc-item-add .photo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
 .pc-item-add .photo img {
-  max-width: 160px;
-  max-height: 160px;
-  overflow: hidden;
-  margin: 0 auto;
+  width: 160px;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .pc-item-add .info {
   width: auto;
@@ -3288,13 +3322,13 @@ h1.name {
   display: inline-block;
 }
 .pc-item-add .price {
-  font-size: 20px;
+  margin: 0 10px 0 0;
+  font-size: 1.2rem;
   color: #e00;
   display: block;
-  margin-right: 10px;
 }
-.pc-item-add .price small {
-  font-size: 14px;
+.pc-item-add .price::first-letter {
+  font-size: 0.8rem;
 }
 .pc-item-add .discount_price {
   float: left;

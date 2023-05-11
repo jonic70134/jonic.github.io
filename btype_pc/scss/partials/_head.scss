@@ -278,9 +278,29 @@
 	color:white;
 }
 .head_reg{
-	position: absolute;top:8px;right:10px;z-index: 30;
-}
-.logout,.reg{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: baseline;
+	position: absolute;top:0;right:0;z-index: 30;
+	padding:5px 10px;
 	color:white;
-	text-decoration: underline;
+	background-color: rgba(0,0,0,.25);
+	a{
+		color:white;
+		text-decoration: underline;
+	}
+}
+.reg_mail{
+	width: 180px;
+	font-size: .9rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.reg_deital{
+	font-size: .8rem;
+	margin:0 0 0 15px;
+}
+.reg,.login{
+	padding: 0 5px;
+	text-underline-offset: 3px;
 }
