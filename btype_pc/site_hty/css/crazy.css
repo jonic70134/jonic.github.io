@@ -22,7 +22,7 @@ time, mark, audio, video {
 }
 
 html, body {
-  font-family: "Microsoft JhengHei", Arial, sans-serif;
+  font-family: "PingFangTC-regular", "Microsoft JhengHei", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -512,12 +512,13 @@ label {
   text-decoration: underline;
 }
 
-.pby_detail {
+.pby_detail, .reg_detail {
   display: none;
   position: absolute;
   top: -200px;
   width: 435px;
   padding: 10px;
+  font-size: 0.7rem;
   color: #555;
   background: white;
   border: 3px solid #ddd5cc;
@@ -525,16 +526,21 @@ label {
   border-radius: 5px;
   line-height: 1.4;
 }
-.pby_detail.active {
-  display: block;
+.pby_detail.active, .reg_detail.active {
   top: 23px;
 }
 
-.pbyclose {
+.pbyclose, a.reg_close {
   display: block;
   color: #06c;
   text-decoration: underline;
   text-align: right;
+}
+
+.reg_detail {
+  width: 540px;
+  top: 30px;
+  right: 0;
 }
 
 .head_link, .head_func {
@@ -644,7 +650,7 @@ label {
   z-index: 30;
   padding: 5px 10px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .head_reg a {
   color: white;
@@ -652,14 +658,14 @@ label {
 }
 
 .reg_mail {
-  width: 180px;
+  width: 168px;
   font-size: 0.9rem;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
   overflow: hidden;
 }
 
-.reg_deital {
+.reg_des {
   font-size: 0.8rem;
   margin: 0 0 0 15px;
 }

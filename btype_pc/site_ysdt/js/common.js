@@ -6,7 +6,11 @@ $('.nav-menu').hover(function() {
 // 標籤雲
 var tagslide = new Swiper('.tag-cloud', {
     slidesPerView: 'auto',
+    slidesPerGroup: 3,
     loop:true,
+    navigation: {
+        nextEl: ".tagcloud_btn_r",
+    },
 });
 
 $(function() {
@@ -76,22 +80,32 @@ $(function() {
   
 
 // power by
-var removeClass = true;
 $('.pbybtn').click(function(e) {
     e.preventDefault();
-    $('.pby_detail').addClass('active');
-    removeClass = false;
+    $('.pby_detail').show().addClass('active');
 });
 $('.pbyclose').click(function(e) {
     e.preventDefault();
-    $('.pby_detail').removeClass('active');
-    removeClass = false;
+    $('.pby_detail').hide();
+
 });
-$('html').click(function () {
-    if (removeClass) {
-        $(".pby_detail").removeClass('active');
+
+// reg detail
+$('.reg_des').click(function(e) {
+    e.preventDefault();
+    $('.reg_detail').show();
+});
+$('.reg_close').click(function(e) {
+    e.preventDefault();
+    $('.reg_detail').hide();
+});
+
+$(document).mouseup(function(e){
+    var container = $(".pby_detail , .reg_detail");
+
+    if(!container.is(e.target) && container.has(e.target).length === 0){
+        container.hide();
     }
-    removeClass = true;
 });
 
 // gotop
