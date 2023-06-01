@@ -1,0 +1,23 @@
+.menu_topic{
+	// display: flex;
+	// flex-flow: row nowrap;
+	// justify-content: space-between;
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+	grid-gap:10px;
+	width: 100%;
+	height: 60px;
+	overflow: hidden;
+	white-space: nowrap;
+	// white-space: nowrap;
+	
+}
+.menu_topic_t{
+	display: block;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color:#333;
+}

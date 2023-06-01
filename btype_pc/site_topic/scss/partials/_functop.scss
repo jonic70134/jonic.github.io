@@ -1,0 +1,36 @@
+// 排序選項
+.func_top{
+    display: flex;
+	flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px 0 0 210px;
+}
+.sort{
+	display: flex;
+	flex-flow: row nowrap;
+	font-size:.8rem;
+}
+.sort_check{
+    border:1px solid #ccc;
+    border-right:0;
+    &:last-child{
+        border-right:1px solid #ccc;
+    }
+}
+.sort_radio{
+	display: none;
+	&:checked + .sort_lb{
+		border:none;
+        color:white;
+        background-color:#06c;
+	}
+}
+.sort_lb{
+	display: block;
+    width:100px;
+	padding: 9px;
+	font-size:.8rem;
+    text-align: center;
+	cursor: pointer;
+}

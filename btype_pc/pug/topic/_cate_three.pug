@@ -1,0 +1,197 @@
+doctype html
+html
+	head
+		include ../src/_meta.pug
+		link(href='css/cate_three.css', rel='stylesheet')
+	body
+		.body_container
+			include ../src/_topbar.pug
+			include ../src/_header.pug
+			.sub_head
+				.container
+					include ../src/_menu.pug
+					include ../src/_tagcloud.pug
+			.site-main
+				.cate_l
+					include ../src/_item_relative.pug
+				.cate_r
+					.spec_prod 
+						.spec_slide
+							mixin slider(big,small_top,small_bot)
+								.swiper-slide(href='item.html')
+									h2.title 特賣主題
+									.spec_block
+										a(href="item.html").spec_l
+											img(src='../img/sample/'+ big+'.jpg', alt='商品名稱', title='商品名稱')
+											.spec_info
+												h3.name 商品名稱商品名稱商品名稱商品名稱
+												.per_price
+													.price $999,900
+										.spec_r 
+											a(href="item.html").spec_r_block
+												img(src='../img/sample/'+ small_top+'.jpg', alt='商品名稱', title='商品名稱')
+												.per_price
+													.price $999,900
+											a(href="item.html").spec_r_block
+												img(src='../img/sample/'+ small_bot+'.jpg', alt='商品名稱', title='商品名稱')
+												.per_price
+													.price $999,900
+							+slider('03_01_240','03_02_100','03_03_100')
+							+slider('03_04_240','03_05_100','03_06_100')
+							+slider('03_07_240','03_08_100','03_09_100')
+
+					.filter
+						//- .search_blcok 
+							//- h2.mid_title "xxxx" 的搜尋結果
+							//- .select_sort
+							//- 	select#sort(name="sort") 
+							//- 		option(value="1") 預設排序
+							//- 		option(value="2") 最新商品
+							//- 		option(value="3") 價格 低 → 高
+							//- 		option(value="4") 價格 高 → 低
+						.sort_block
+							.sort
+								label(for="sort1")
+									input(type="radio", name="sort" ,value="1", id="sort1" ,checked="checked")
+									p 預設排序
+								label(for="sort2")
+									input(type="radio", name="sort" ,value="2", id="sort2")
+									p 最新商品
+								label(for="sort3")
+									input(type="radio", name="sort" ,value="3", id="sort3")
+									span.checkmark
+									p 價格 低 → 高
+								label(for="sort4")
+									input(type="radio", name="sort" ,value="4", id="sort4")
+									span.checkmark
+									p 價格 高 → 低
+						.attr
+							//- .attrcon.special
+							//- 	.colst 其他人都在找
+							//- 	.colcheck
+							//- 		a(href='#') MSI 筆記型電腦
+							//- 		a(href='#') 電話錄音
+							//- 		a(href='#') 平板電腦
+							//- 		a.current(href='#') iPhone
+							//- .attrcon
+							//- 	.colst 品牌
+							//- 	.colcheck
+							//- 		a(href='#') SAMPO 聲寶(23)
+							//- 		a.current(href='#') SHARP 夏普(21)
+							//- 		a(href='#') ASUS 華碩(4)
+							//- 		a(href='#') SONY 索尼(18)
+							//- 		a(href='#') VITAS(33)
+							//- 		a(href='#') YOLO(12)
+							//- 		a(href='#') PANASONIC(11)
+							.attrcon
+								.colst 品牌
+								.colcheck
+									label.colb
+										input.colchk(type='checkbox')
+										span SAMPO 聲寶
+									label.colb
+										input.colchk(type='checkbox')
+										span ASUS 華碩
+									label.colb
+										input.colchk(type='checkbox')
+										span SONY 索尼
+									label.colb
+										input.colchk(type='checkbox')
+										span VITAS
+									label.colb
+										input.colchk(type='checkbox')
+										span YOLOYOLOYOLO
+									label.colb
+										input.colchk(type='checkbox')
+										span PANASONIC
+									
+								input#col_openchk.col_openchk(type="checkbox", name="")
+								label.col_openlb(for="col_openchk")
+								.col_check_sec
+									label.colb
+										input.colchk(type='checkbox')
+										span SONY 索尼
+									label.colb
+										input.colchk(type='checkbox')
+										span VITAS
+									label.colb
+										input.colchk(type='checkbox')
+										span YOLOYOLOYOLO
+									label.colb
+										input.colchk(type='checkbox')
+										span PANASONIC
+									label.colb
+										input.colchk(type='checkbox')
+										span SAMPO 聲寶
+									label.colb
+										input.colchk(type='checkbox')
+										span ASUS 華碩
+									label.colb
+										input.colchk(type='checkbox')
+										span ROG
+							//- .attrcon
+							//- 	.colst 價格
+							//- 	.colprice
+							//- 		span $
+							//- 		input.input-number(type='number' min='0' step='any')
+							//- 		span ~
+							//- 		input.input-number(type='number' min='0' step='any')
+							//- 		button.button.btn-submit(type='submit') 搜尋
+					.items_bg
+						.items
+							-var j = 6;
+							- for (var i = 0; i < j; i++)
+							mixin item(prod_pic)
+								a.item(href='item.html')
+									.photo
+										.float
+											i.icon.icon_same
+											i.icon.icon_track
+										img(src='../img/sample/'+ prod_pic +'.jpg', alt='商品名稱', title='商品名稱')
+									.info
+										h3.name(itemprop='name') 商品名稱商品名稱商品商品名稱商品名稱商品
+										.price $999,999
+							+item('05_01_182')
+							+item('05_02_182x240')
+							+item('05_03_182')
+							+item('05_04_182x240')
+							+item('05_05_182')
+							+item('05_06_182x240')
+							+item('05_07_182')
+							+item('05_08_182x240')
+							+item('05_09_182x240')
+							+item('05_10_182')
+							+item('05_11_182x240')
+							+item('05_12_182')
+							+item('05_13_182x240')
+							+item('05_14_182')
+							+item('05_15_182x240')
+							+item('05_16_182')
+							+item('05_17_182x240')
+							+item('05_18_182')
+							
+							+item('05_01_182')
+							+item('05_02_182x240')
+							+item('05_03_182')
+							+item('05_04_182x240')
+							+item('05_05_182')
+							+item('05_06_182x240')
+							+item('05_07_182')
+							+item('05_08_182x240')
+							+item('05_09_182x240')
+							+item('05_10_182')
+							+item('05_11_182x240')
+							+item('05_12_182')
+							+item('05_13_182x240')
+							+item('05_14_182')
+							+item('05_15_182x240')
+							+item('05_16_182')
+							+item('05_17_182x240')
+							+item('05_18_182')
+
+		include ../src/_foot.pug
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/3rd-party/macy.js')
+		script(src='js/common.js')
+		script(src='js/cate_three.js')

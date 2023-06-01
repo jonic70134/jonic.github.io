@@ -1,0 +1,297 @@
+// 首頁
+@import "../partials/base";
+@import "../partials/color";
+@import "../3rd-party/_swiper.scss";
+
+@import "../partials/page";
+@import "../partials/tag_cloud";
+@import "../partials/page_item";
+@import "../partials/relate";
+@import "../partials/catemenu";
+
+.swiper-slide{
+    width: auto;
+    height: auto;
+}
+.cate_r{
+    width: 1000px;
+}
+.pay_dis{
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: baseline;
+    color:$primary-color;
+    font-size:.9rem;
+    .price{
+        font-size:2rem;
+        color:$primary-color;
+        &::first-letter{
+            font-size:1.2rem;
+        }
+    }
+}
+.price{
+    &::first-letter{
+        font-size:.7rem;
+    }
+}
+.per_dur{
+    position: relative;
+    
+}
+.restock{
+    position: absolute;left:0;bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size:.9rem;
+    letter-spacing: 2px;
+    color:white;
+    background: rgba($color: #000000, $alpha: .7);
+}
+.btn-imd{
+    width: 100%;
+    padding: 10px 0;
+    font-size: .9rem;
+    letter-spacing: 6px;
+    border: none;
+    color: white;
+    background-color: $primary-color;
+    cursor: pointer;
+    line-height: 1;
+    align-self:center;
+}
+.per_info{
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    border-top: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+.per_l{
+    display: flex;
+    flex-flow: column;
+    border-right:1px solid #ccc;
+    background-color: #f3f1e8;
+}
+.per_price{
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: baseline;
+    color:$price;
+    font-size:1rem;
+    font-weight: 700;
+    .title{
+        font-size:.8rem;
+    }
+    .rush{
+        margin-left:10px;
+        color:#06c;
+        font-size:.8rem;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+
+.spec_slide{
+    display: flex;
+    flex-flow:row nowrap ;
+    justify-content: space-between;
+    padding: 10px;
+}
+.spec_prod{
+    margin:15px 0 0;
+    background-color:#f3f1e8;
+    .swiper-container{
+        padding: 7px 25px;
+    }
+    .title{
+        padding: 8px 0 8px 10px;
+        font-size:1.25rem;
+    }
+    .spec_block{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .spec_l{
+        margin-right: 10px;
+    }
+    img{
+        width: 200px;height:200px;
+        border:5px solid #ddd5cc;
+        border-radius: 10px;
+    }
+    .spec_info{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding:5px 10px 15px;
+    }
+    .per_price{
+        margin: 0 0 0 3px;
+        font-size:.9rem;
+        font-weight: 500;
+    }
+    .currency{
+        font-size: .7rem;
+    }
+    .name{
+        width:120px;
+        font-size:.8rem;
+        color: black;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .spec_r_block{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        .per_price{
+            padding: 6px 0 10px;
+        }
+        img{
+            width:86px;height:86px;
+        }
+    }
+}
+
+.filter{
+    // display: flex;
+    // flex-flow: row nowrap;
+    // align-items: center;
+}
+
+.attr {
+    font-size: 0.813em;
+    line-height: 250%;
+    margin-bottom: 20px;
+}
+
+.attrcon {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    border: 1px solid #e9e9e9;
+    border-top: 0;
+    padding: 5px 0;
+    &:first-child {
+        border-top: 1px solid #e9e9e9;
+    }
+    &.special{
+        background: #fffaf9;
+    }
+
+    
+}
+
+
+.colst {
+    flex:0 0 53px;
+    margin:0 20px 0 0;
+    text-align: right;
+}
+
+.colcheck {
+    display: flex;
+    flex-flow: row wrap;
+    flex:0 0 815px;
+}
+.colb {
+    width: 115px;
+    margin-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.colchk {
+    margin-left: 0;
+}
+.col_openlb{
+    &::after{
+        display: block;
+        color:#999;
+        content: "展開▼";
+    }
+}
+.col_check_sec{
+    display: none;
+}
+.col_openchk{
+    display: none;
+    &:checked{
+        &~.col_openlb::after{
+            content: "收合▼";
+        }
+        &~.col_check_sec{
+            display: flex;
+            flex-flow: row wrap;
+            width: 813px;
+            margin: 0 0 0 73px;
+           
+        }
+    }
+}
+.sort_block{
+	margin:20px 0 0;
+	padding:10px 0 0;
+	.container{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom:1px solid #ccc;
+	}
+}
+.sort{
+	display: flex;
+	flex-flow: row nowrap;
+	padding:0;
+	font-size:.9rem;
+    border-left:1px solid #ddd;
+	label{
+		position: relative;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: flex-end;
+		width:110px;
+		text-align: center;
+		cursor: pointer;
+		color:#777;
+        border:1px solid #ddd;
+        border-left:0;
+        border-bottom:0;
+	}
+	p{
+        width: 100%;
+        padding: 10px 0;
+	}
+	input{
+		display: none;
+		&:checked{
+			~p{
+				color:white;
+                background-color:$primary-color;
+			}
+		}
+	}
+}
+.item_t{
+    margin-top:40px;
+    color:#888;
+    font-size:1.1rem;
+}
+.items_bg{
+    margin:20px 0 0;
+    padding:0;
+    background: none;
+}
+.relate_prod{
+    width: 100%;
+    margin: 0;
+    border: none;
+    background: #f3f1e8;
+}

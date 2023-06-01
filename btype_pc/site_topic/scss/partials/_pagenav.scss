@@ -1,0 +1,43 @@
+
+// 分頁
+.pagenav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    padding:11px 13px;
+    font-size:.9rem;
+    color:#333;
+    background: white;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    
+    &.active{
+        color:white;
+        background: $primary-color;
+    }
+}
+.page_nav{
+    margin:20px 0;
+}
+.page_mid{
+    display: flex;
+    flex-flow: row nowrap;
+    margin:0 20px;
+}
+.page_num{
+    border-right:0;
+    border-radius:0;
+}
+.page_ten_up,.page_ten_down{
+    margin:0 5px;
+}
+.page_prev{
+    border-right:0 ;
+    border-radius:5px 0 0 5px;
+}
+.page_next{
+    border-radius:0 5px 5px 0;
+}

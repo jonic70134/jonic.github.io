@@ -1,0 +1,19 @@
+@import '_font_iconmoon.scss';
+
+@import '_head.scss';
+@import '_menu_topic.scss';
+@import '_foot.scss';
+
+.body_container{
+	min-height: calc(100vh - 102px);
+}
+.site-main{
+    width:1220px;
+    margin:0 auto;
+    position: relative;
+}
+.container{
+    width: 1220px;
+    margin:0 auto;
+}
+
