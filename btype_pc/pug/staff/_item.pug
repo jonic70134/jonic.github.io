@@ -1,0 +1,86 @@
+doctype html
+html
+	head
+		include ../src/_meta.pug
+		link(href='css/item.css', rel='stylesheet')
+		script(type='application/ld+json').
+			{
+				"@context": "http://schema.org",
+				"@type": "Product",
+				"name": "送無線充電版多選一+Targus Newport 15吋拉繩後背包-時尚黑 iPhone XR 紅色(PRODUCT)",
+				"description": "擁有 iPhone 歷來最持久的電池續航力 最快的效能表現、防潑抗水能力 媲美攝影棚等級的照片與 4K 影片 #iphone #iphoneXR",
+				"url": "https://baichian.com.tw/item.html",
+				"image": "img/sample/XRred.jpg",
+				"offers": {
+					"@type": "AggregateOffer",
+					"lowPrice": "195.000",
+					"highPrice": "199.000",
+					"priceCurrency": "TWD",
+					"seller": {
+						"@context": "http://schema.org",
+						"@type": "Organization",
+						"name": "APPLE",
+						"url": "https://www.apple.com/tw",
+						"image": ""
+					},
+					"availability": "http://schema.org/InStock"
+				},
+			}
+	body
+		.body_container
+			include ../src/_header_staff.pug
+			.sub_head
+				.container
+					include ../src/_menu.pug
+					.breadcrumb
+						a.link(href="index.html") 首頁
+						span >
+						a.link(href="index.html") 家電.數位.3C.
+						span >
+						a.link(href="index.html") 智慧型手機
+						span > iphone
+			.site-main
+				.pc-item-main
+					.item_frame
+						.item_full
+							include ../src/_item_slider.pug
+							.info
+								include ../src/_item_info.pug
+								.item_line.shop_btn_block
+									.shop_btn
+										.quantity
+											span.quantity-decrease
+												i.icon.icon_minus
+											input.quantity-input(type='text', value='1', max='99', title='請輸入購買量')
+											span.quantity-increase
+												i.icon.icon_plus
+										button.button.large.btn-imd 立即結帳
+										button.button.large.btn-cart 加入購物車
+								.item_line.paytxt
+									p.grey 本站付款方式
+									p 信用卡、ATM、LINE Pay、HAPPY GO Pay、街口支付、悠遊付
+								.item_line.payslide
+									.swiper-container
+										.swiper-wrapper
+											.swiper-slide
+												img(src="img/credit_01.jpg", alt="")
+											.swiper-slide
+												img(src="img/credit_02.jpg", alt="")
+											.swiper-slide
+												img(src="img/credit_03.jpg", alt="")
+											.swiper-slide
+												img(src="img/credit_04.jpg", alt="")
+											.swiper-slide
+												img(src="img/credit_05.jpg", alt="")
+										i.icon.icon_arrow.next
+										i.icon.icon_arrow.prev
+						// 加購 (AB區 加上class=blue) 
+						include ../src/_item_add.pug
+						include ../src/_item_detail.pug
+					include ../src/_item_relative.pug
+		include ../src/_foot.pug
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/3rd-party/lity.min.js')
+		script(src='js/common.js')
+		script(src='js/item.js')

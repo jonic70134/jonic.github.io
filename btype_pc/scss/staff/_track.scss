@@ -1,0 +1,156 @@
+@import "../partials/base";
+@import "../partials/color";
+@import "../partials/page_staff";
+@import "../partials/tag_cloud";
+@import "../partials/pagenav";
+
+.cate_main{
+    margin:12px 60px 50px;
+}
+.track_t{
+    margin: 0 0 8px;
+    font-size:.9rem;
+    letter-spacing: 1px;
+}
+.track_topic{
+    display:flex;
+    justify-content: space-between;
+    padding:5px;
+    background: #eee;
+    border-bottom:1px solid #ccc;
+}
+.track_msg{
+    margin: 0 0 0 120px;
+}
+.track_price{
+    margin:0 0 0 402px;
+
+}
+.cate_items{
+    display:flex;
+    flex-flow:column;
+    margin:0 0 50px;
+}
+.item{
+    display:flex;
+    flex-flow:row nowrap;
+    width: 100%;
+    margin:0 0 10px;
+}
+.photo{
+    width: 120px;
+    height: 0;
+    padding-top: 120px;
+    position: relative;
+    overflow: hidden;
+    border-radius:10px ;
+    .float{
+        display: none;
+    }
+    img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+    }
+}
+.name{
+    display: -webkit-box;
+    width: 600px;
+    margin: 10px 0 5px;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.4;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.price{
+    width: 80px;
+    text-align: center;
+    font-size:1.15rem;
+    &::first-letter{
+        font-size:.7rem;
+    }
+}
+.per_price{
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: baseline;
+    color:#d00;
+    font-size:.9rem;
+    font-weight: 700;
+    .rush{
+        margin-left:5px;
+        color:#06c;
+        font-size:.8rem;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+.per_r_info{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width:100% ;
+    margin:0 0 0 10px;
+    padding:10px 10px 20px;
+    border-bottom:1px solid #ccc;
+    .icon_cart{
+        position: relative;
+        display: block;
+        width: 80px;
+        font-size:2rem;
+        text-align: center;
+        &::before{
+            color:#333;
+        }
+    }
+}
+.icon_cart_arrow{
+    position: absolute;
+    top: -5px;
+    left: 18px;
+    padding: 4px 3px;
+    font-size: 0.7rem;
+    color: white;
+    background: #d00;
+    border-radius: 50%;
+}
+.icon_del{
+    display: block;
+    font-size:1.2rem;
+}
+.track_des{
+    margin:40px 0;
+    padding:8px 10px;
+    font-size:.8rem;
+    line-height: 1.4;
+    background: #eee;
+}
+.btn_notify{
+    display: block;
+    padding: 7px 11px;
+    color:black;
+    font-size:.9rem;
+    background: #fedc68;
+}
+.restock{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+}

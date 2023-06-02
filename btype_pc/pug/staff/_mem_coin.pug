@@ -1,0 +1,75 @@
+doctype html
+html
+	head
+		include ../src/_meta.pug
+		link(href='css/mem_coin.css', rel='stylesheet')
+	body
+		.body_container
+			include ../src/_header_staff.pug 
+			.site-main
+				.container
+					.mem_chk_t
+						a.back(href="mem_index.html")
+							i.icon.icon_swiper_prev
+							p.chk_order 我的遠傳幣
+					.mem_coin_top
+						.mem_coin_top_l
+							img(src="../img/mem_coin.svg")
+							.mem_link_name 遠傳幣 
+								span.red 99,999
+						.mem_coin_top_r
+							span 9,999 即將到期
+							span.red (2023/12/31)
+
+					.mem_coin
+						.mem_coin_td.head 名稱
+						.mem_coin_td.head.center 遠傳幣
+						.mem_coin_td.head.center 日期
+						.mem_coin_td.head.center 到期日
+						- var j = 3;
+						- for (var i = 0; i < j; i++)
+							.mem_coin_td.name 專案發放:最強雙雙11,會員10,000遠傳幣大放送
+							.mem_coin_td.coin.center
+								p.red 10,000
+							.mem_coin_td.date.center 2023/11/11
+							.mem_coin_td.end.center 2023/12/11
+
+							.mem_coin_td.name 消費折抵:訂單2023111123456
+							.mem_coin_td.coin.center
+								p.green -1,000
+							.mem_coin_td.date.center 2023/11/11
+							.mem_coin_td.end.center
+
+							.mem_coin_td.name 專案發放:10月會員驚喜1,000遠傳幣大放送
+							.mem_coin_td.coin.center
+								p.red 1,000
+							.mem_coin_td.date.center 2023/01/11
+							.mem_coin_td.end.center 2023/10/19
+
+							.mem_coin_td.name 限時加碼:送您100遠傳幣
+							.mem_coin_td.coin.center
+								p.red 100
+							.mem_coin_td.date.center 2023/01/11
+							.mem_coin_td.end.center 2023/10/19
+
+							.mem_coin_td.name 滿額加贈:3C家全館單筆訂單滿30,000元,加贈3,000遠傳幣
+							.mem_coin_td.coin.center
+								p.red 3000
+							.mem_coin_td.date.center 2023/01/11
+							.mem_coin_td.end.center 2023/10/19
+
+					include ../src/_pagenav.pug
+
+					.mem_notice
+						.con_t 注意事項
+						.con_sub_t 遠傳幣使用原則：
+						ul.con_list
+							li 折抵消費金額時.1遠傳幣可折抵新台幣1元。
+							li 每次消費可百分百(100%)折抵您的消費金額。
+							li 若您辦理訂單「退貨」時系統於退貨退款完成後,隔日自動將您該筆已折抵的遠傳幣金額補回
+							li 任何經由輸入正確帳與密碼所使用之遠傳幣,除正常之取消訂單或退貨外,均不再做退還
+							li 本購物平台保留隨時變更、修正、暫停或終止本活動之權利。
+		include ../src/_foot.pug
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/common.js')

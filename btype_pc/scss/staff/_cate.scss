@@ -1,0 +1,27 @@
+// 分類頁
+@import "../partials/base";
+@import "../partials/color";
+@import "../3rd-party/_swiper.scss";
+@import "../partials/page_staff";
+@import "../partials/tag_cloud";
+@import "../partials/cateitem";
+@import "../partials/relate";
+@import "../partials/pagenav";
+@import "../partials/functop";
+
+.tag{
+    height: auto;
+}
+.site-main{
+    width: 100%;
+    padding: 20px 0 0;
+    .container{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}
+
+.icon_pictxt{
+    width: 30px;
+}

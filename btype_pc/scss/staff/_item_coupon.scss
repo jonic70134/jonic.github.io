@@ -1,0 +1,42 @@
+// 分類頁
+@import "../partials/base";
+@import "../partials/color";
+
+@import "../partials/page_staff";
+@import "../partials/tag_cloud";
+@import "../partials/cateitem";
+@import "../partials/pagenav";
+@import "../partials/functop";
+
+
+.site-main{
+    width: 100%;
+    padding: 20px 0 0;
+}
+.item_coupon{
+    margin: 20px 0 15px;
+    padding:15px;
+    font-size:1rem;
+    color:#333;
+    background-color: #ece8df;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    span{
+        color:#d00;
+    }
+}
+.func_top{
+    justify-content: center;
+    margin: 0;
+}
+.cate_items{
+    justify-content: space-between;
+}
+.item{
+    margin: 0 0 30px;
+    &:nth-child(5n){
+        margin: initial;
+    }
+
+}

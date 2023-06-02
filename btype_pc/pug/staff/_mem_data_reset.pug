@@ -1,0 +1,135 @@
+doctype html
+html
+	head
+		include ../src/_meta.pug
+		link(href='css/mem_data.css', rel='stylesheet')
+	body
+		.body_container
+			include ../src/_header_staff.pug 
+			.site-main
+				.container
+					.mem_chk_t
+						a.back(href="mem_index.html")
+							i.icon.icon_swiper_prev
+							p.chk_order 我的基本資料與修改
+
+					form.mem_data_b(action="")
+						.mem_data
+							.mem_data_td.right 會員帳號
+							.mem_data_td 0912*****2
+							.mem_data_td.right 姓名
+							.mem_data_td
+								input.data_input(type="text" autocomplete="name" value="陳小軒")
+							.mem_data_td.right 手機
+							.mem_data_td
+								input.data_input(type="tel" autocomplete="tel" value="0912345678")
+							.mem_data_td.right Email
+							.mem_data_td
+								input.data_input(type="email" autocomplete="email" value="firday@friday.tw")
+							.mem_data_td.right 地址
+							.mem_data_td
+								.form_input
+									.select_b
+										select#county(name="")
+											option(value="1") 台北市  
+										select#distric(name="") 
+											option(value="1") 內湖區
+									input.data_input(type="text" autocomplete="address-line1" value="瑞光路468號7樓")
+							.mem_data_td.right 黃金密碼
+							.mem_data_td.gold
+								input.data_input(type="password" value="******")
+								a.modify_btn(href="#enter_pass") 修改
+								
+							.mem_data_td
+							.mem_data_td
+								.gold_des.red (初次註冊的會員.請設定黃金密碼;之後查看會員資料時,需輸入黃金密碼)
+						.news
+							label.news_lb(for="news1") 
+								input#news1(type="checkbox", name="news1")
+								span 我願意收到本網站優惠訊息電子報
+							label.news_lb(for="news2") 
+								input#news2(type="checkbox", name="news2")
+								span 我願意收到本網站各項簡訊及電話通知
+						.data_bot
+							input.send_btn(type="submit", value="儲存")
+	
+		include ../src/_foot.pug
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/common.js')
+		.lightbox-target#enter_pass
+			form.content(action="#")
+				.con_t 輸入黃金密碼
+				.con_m
+					input.con_input(type="tel" autocomplete="tel" placeholder="黃金密碼")
+					.con_line
+						a.set_pass(href="#set_pass") 重設黃金密碼
+				.con_bot
+					input.box_btn_send(type="submit" value='確定' required autofocus)
+				a.lightbox-close(href="#")
+		.lightbox-target#set_pass
+			form.content(action="#pass_send")
+				.con_t 重設黃金密碼
+				.con_m
+					input.con_input(type="tel" autocomplete="tel" placeholder="手機號碼")
+				.con_bot
+					input.box_btn_send(type="submit" value='取得驗證碼' required autofocus)
+				a.lightbox-close(href="#")
+		.lightbox-target#pass_send
+			form.content(action="#set_addr")
+				.con_t 重設黃金密碼
+				.con_m
+					.con_line
+						.sub_t 認證碼已用簡訊發送至 09*****987
+					.con_line
+						input.con_input(type='unmber' placeholder='驗證碼' inputmode="numeric" required autofocus)
+						P.time 請於3分鐘內輸入驗證碼，剩餘時間
+							span.red 02:59
+					.con_bot
+						a.box_btn_resend(href='#') 重發
+						input.box_btn_send(type="submit", value="下一步")
+				a.lightbox-close(href="#")
+		.lightbox-target#set_addr
+			form.content(action="#pass_done")
+				.con_t 重設黃金密碼
+				.con_m
+					.con_line
+						.sub_t 帳號：0912345869
+					.con_line
+						.addr_t 請選擇此帳號的收貨地址：
+						.addr_b
+							.addr_line
+								label.con_lb(for="addr1") 
+									input#addr1(type="checkbox", name="addrlist" checked)
+									p 114台北市內湖區瑞光路***號7F
+							.addr_line
+								label.con_lb(for="addr2") 
+									input#addr2(type="checkbox", name="addrlist")
+									p 114台北市信義區**路11號
+							.addr_line
+								label.con_lb(for="addr3") 
+									input#addr3(type="checkbox", name="addrlist")
+									p 114台北市大安區**東路八段68號		
+					.con_bot
+						input.box_btn_send(type="submit", value="確定")
+				a.lightbox-close(href="#")
+		.lightbox-target#pass_done
+			form.content(action="")
+				.con_t 重設黃金密碼
+				.con_m
+					.con_line
+						.sub_t 帳號：0912345869
+					.con_line
+						.pass_b
+							input#pass-b1.con_input(type='unmber' placeholder='設定黃金密碼(6碼英文數字)' maxlenght='6' inputmode='numeric' required autofocus)
+							i.icon.icon-eye.toggle-pass(toggle="#pass-b1")
+						.pass_b
+							input#pass-b2.con_input(type='unmber' placeholder='確認黃金密碼' maxlenght='6' inputmode='numeric' required autofocus)
+							i.icon.icon-eye.toggle-pass(toggle="#pass-b2")
+
+					.con_bot
+						input.box_btn_send(type="submit", value="確定")
+				a.lightbox-close(href="#")
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/common.js')
+		script(src='js/mem_login.js')

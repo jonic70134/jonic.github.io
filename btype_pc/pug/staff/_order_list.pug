@@ -1,0 +1,156 @@
+doctype html
+html
+	head
+		include ../src/_meta.pug
+		link(href='css/order_list.css', rel='stylesheet')
+	body
+		.body_container
+			include ../src/_order_head.pug
+			.site-main
+				.container
+					.order_all
+						.order_head
+							h3 購物車
+							.order_chk_all
+								input#order_chk_all.order_chk(type="checkbox", checked="checked")
+								label.order_chk_label(for="order_chk_all")
+							.order-title 全選
+							
+
+						mixin cartimg(i,src)
+							.cart_item
+								.order_chk_all
+									input(id='order_chk'+i).order_chk(type="checkbox", checked="checked")
+									label.order_chk_label(for='order_chk'+i)
+								.cart_img
+									img(src='../img/sample/'+ src+'.jpg', alt="商品圖片")
+								.cart_info
+									.cart_name
+										a.cart_name_link(href="item.html") 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g
+										.cart_size 規格：85型 4K HDR OLED
+									.cart_per 特價期間07/10~07/13止
+									.cart_price_b
+										.cart_price
+											.ori_t 原價
+											.ori_price $9,999
+										.cart_price
+											.ori_t 網路價
+											.ori_price $9,900
+										.cart_price
+											.dis_t 折扣後價格
+											.dis_price $9,800
+									.cart_quantity
+										| 數量：1
+									.cart_gift
+										ul.cart_gift_item
+											li
+												p.red 贈品
+												p.cart_gift_name 3M百利爐具專用菜瓜布x1
+											li
+												p.red 贈品
+												p.cart_gift_name 室內芳香劑x1
+									hr
+									.cart_cupn_t 以下折扣優惠擇一使用：
+									.cart_cupn_b
+										.cart_cupn
+											label.cart_cupn_lb(for="coupon1") 
+												input#coupon1(type="radio", name="coupon")
+												p 活動折抵
+											.price $50
+										.cart_cupn
+											label.cart_cupn_lb(for="coupon2") 
+												input#coupon2(type="radio", name="coupon")
+												p 個人對品折價券 
+													small (當日有效)
+											
+											.price $30
+										.cart_cupn
+											label.cart_cupn_lb(for="coupon3") 
+												input#coupon3(type="radio", name="coupon")
+												p 使用折價券折抵 
+												select.cart_select
+													option(value="1") 請選擇  
+											.price $1000
+											
+
+
+								.cart_last
+									a(href="#").btn-remove 刪除
+						+cartimg(1,'05_10_182')
+						+cartimg(2,'05_18_182')
+						.cart_item.is-lack 
+							.order_chk_all
+								input(id='order_chk5').order_chk(type="checkbox", checked="checked")
+								label.order_chk_label(for='order_chk5')
+							.cart_img
+								img(src='../img/sample/05_03_182.jpg', alt="商品圖片")
+								.cart-lack-tag 補貨中
+							.cart_info
+								.cart_name
+									a.cart_name_link(href="item.html") 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g
+									.cart_size 白色 600ml
+								.cart_per 個人專屬特價期間07/10~07/13止
+								.cart_price_b
+									.cart_price
+										.ori_t 原價
+										.ori_price $990
+									.cart_price
+										.dis_t 網路價
+										.dis_price $999
+
+								.cart_gift
+									ul.cart_gift_item
+										li 
+											p 贈品
+											| 3M百利爐具專用菜瓜布x1
+										li 
+											p 贈品
+											| 室內芳香劑x1
+							.cart_last
+								a(href="#").btn-remove 刪除
+
+
+						.line.orderchk
+							a.btn-continue(href="index.html") 再購物
+							a.btn-cancel(href="index.html") 離開暫記
+							a.btn-confirm(href="order_chk.html") 去結帳
+						.beforelist
+							.before_top
+								.before_t
+									a.add_before(href="#") 看以前加入購物車的商品
+									p 以前加入購物車的商品(請按 #[span.blue 「重新加入購物車」]之後再結帳)
+								small *商品僅保留三個月
+							.cart_item.is-before
+								.order_chk_all
+									nput(id='order_ch6').order_chk(type="checkbox", checked="checked")
+									label.order_chk_label(for='order_chk6')
+								.cart_img
+									img(src='../img/sample/05_01_182.jpg', alt="商品圖片")
+								.cart_info
+									.cart_name
+										a.cart_name_link(href="item.html") 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g
+										.cart_size 白色 600ml
+									.cart_price_b
+										.cart_price
+											.ori_t 原價
+											.ori_price $9,999
+										.cart_price
+											.ori_t 網路價
+											.ori_price $9,900
+										.cart_price
+											.dis_t 折扣後價格
+											.dis_price $9,800
+								.cart_last
+									a(href="#").btn-addtocart
+										i.icon.icon_cart
+										span 重新加入購物車
+									a(href="#").btn-remove 
+										img(src="img/icon_trash.svg") 
+										span 刪除
+		include ../src/_foot.pug
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/common.js')
+		script(src='js/cart.js')
+
+

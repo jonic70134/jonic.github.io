@@ -1,0 +1,138 @@
+doctype html
+html
+	head
+		include ../src/_meta.pug
+		link(href='css/mem_chk.css', rel='stylesheet')
+	body
+		.body_container
+			include ../src/_header_staff.pug 
+			.site-main
+				.container
+					.mem_chk_t
+						a.back(href="mem_chk.html")
+							i.icon.icon_swiper_prev
+							p.chk_order 查訂單 
+								small (聯絡客服)
+						p.red 提醒您:本公司不會主動打電話告知您任何有付款修改的問題,若接到可疑電話請拒絕回應
+					
+					.mem_chk_return
+						.mem_chk_return_t 我要退訂
+						.mem_chk_container
+							.ord_num 訂單序號：#[strong 20230130123456]
+							.ord_info_t 商品資訊
+							.ord_info_grid
+								.ord_info_head 項次
+								.ord_info_head 請勾選
+								.ord_info_head 商品名稱
+								.ord_info_head 購買數量
+								.ord_info_head 退訂數量
+								.ord_info_head 部分退訂
+
+								.ord_info_td 1
+								.ord_info_td 
+									input#chk(type="checkbox", name="chk1" checked)
+								.ord_info_td
+									.ord_info_td_name 【飛利浦 PHILIPS】醒香智選IH大火力8人份電子鍋(HD4539)
+								.ord_info_td 1
+								.ord_info_td 1
+								.ord_info_td
+									select.ord_info_select(name="")
+										option(value="1") 部分退訂
+										option(value="2") 1
+								
+								.ord_info_td 2
+								.ord_info_td 
+									input#chk(type="checkbox", name="chk2" checked)
+								.ord_info_td 
+									.ord_info_td_name Midea美的 8L多功能溫控小烤箱 MD-PT08UX(WH)Midea美的 8L多功能溫控小烤箱 MD-PT08UX(WH)Midea美的 8L多功能溫控小烤箱 MD-PT08UX(WH)
+								.ord_info_td 2
+								.ord_info_td 2
+								.ord_info_td
+									select.ord_info_select(name="")
+										option(value="1") 部分退訂
+										option(value="2") 1
+							.ord_reason
+								.ord_chos
+									p 退訂原因
+									select.ord_info_select(name="")
+										option(value="1") 請選擇退訂原因
+										option(value="2") 不符期待(與網頁標示功能、圖片落差較大)
+								.ord_des
+									textarea.ord_des_area(name="") 
+
+							.ord_num 訂單序號：#[strong 20230130123456]
+							.ord_info_grid
+								.ord_info_head 項次
+								.ord_info_head 請勾選
+								.ord_info_head 商品名稱
+								.ord_info_head 購買數量
+								.ord_info_head 退訂數量
+								.ord_info_head 部分退訂
+
+								.ord_info_td 1
+								.ord_info_td 
+									input#chk(type="checkbox", name="chk3" checked)
+								.ord_info_td
+									.ord_info_td_name 【飛利浦 PHILIPS】醒香智選IH大火力8人份電子鍋(HD4539)
+								.ord_info_td 1
+								.ord_info_td 1
+								.ord_info_td
+									select.ord_info_select(name="" checked)
+										option(value="1") 部分退訂
+										option(value="2") 1
+								
+								.ord_info_td 2
+								.ord_info_td 
+									input#chk(type="checkbox", name="chk3" checked)
+								.ord_info_td 
+									.ord_info_td_name Midea美的 8L多功能溫控小烤箱 MD-PT08UX(WH)Midea美的 8L多功能溫控小烤箱 MD-PT08UX(WH)Midea美的 8L多功能溫控小烤箱 MD-PT08UX(WH)
+								.ord_info_td 2
+								.ord_info_td 2
+								.ord_info_td
+									select.ord_info_select(name="")
+										option(value="1") 部分退訂
+										option(value="2") 1
+							.ord_reason
+								.ord_chos
+									p 退訂原因
+									select.ord_info_select(name="")
+										option(value="1") 請選擇退訂原因
+										option(value="2") 不符期待(與網頁標示功能、圖片落差較大)
+								.ord_des
+									textarea.ord_des_area(name="") 
+
+							.ord_txt 訂單退訂，已使用之折價券/折扣碼將無法退
+							.ord_info_t 取貨資訊
+							.ord_line.addr
+								p.red 同訂單送貨地址
+								p #[strong 聯絡人]：施**
+								p #[strong 連絡電話]：0982****76
+								p #[strong 取件地址]：**************60巷2弄2號3樓
+							.ord_info_t 退款資訊
+							.ord_bank
+								.ord_bank_line
+									.bank_txt 銀行名稱：
+									.bank_td
+										select.ord_info_select(name="")
+											option(value="1") 請選擇銀行
+									.bank_txt 分行名稱：
+									.bank_td
+										select.ord_info_select(name="")
+											option(value="1") 請選擇分行
+								.ord_bank_line
+									.bank_txt 戶名：
+									.bank_td
+										input(type="text")
+									.bank_txt 帳號：
+									.bank_td
+										input(type="text")
+							.ord_line.agree
+								input#agree(type="checkbox", name="")
+								label(for="agree")
+									p 我同意由friDay購物代為處理退貨退款之發票及折讓單相關事宜，以加速退貨退款作業。若您已索取公司用(郵寄)或已列印公司用(線上列印)電子發票，請填寫折讓單才能辦理退款。折讓單紙本可至我的帳戶中列印填寫後寄回。
+							.ord_btn
+								a(href="mem_chk.html") 確認送出 
+		include ../src/_foot.pug
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/common.js')

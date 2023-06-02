@@ -1,0 +1,228 @@
+// 分類頁
+@import "../partials/base";
+@import "../partials/color";
+
+@import "../partials/font_iconmoon";
+@import "../partials/head_staff";
+@import "../partials/menu";
+@import "../partials/tag_cloud";
+
+@import "../3rd-party/_swiper.scss";
+
+@import "../partials/cateitem";
+@import "../partials/relate";
+@import "../partials/pagenav";
+@import "../partials/functop";
+
+.body_container{
+	min-height: calc(100vh - 82px);
+}
+.container{
+    width: 1220px;
+    margin:0 auto;
+}
+.sub_head{
+	.container{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+}
+.site-main{
+    width: 100%;
+    margin:0 auto;
+    padding: 20px 0 0;
+    background: #fcecec;
+    .container{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}
+.grad_t{
+    margin: 10px 0;
+    padding:5px 10px;
+    font-size:1.2rem;
+    font-weight: 700;
+    color:white;
+    background: rgb(255,86,103);
+    background: linear-gradient(45deg, rgba(255,86,103,1) 0%, rgba(251,178,193,1) 100%);
+    border-radius: 5px;
+    letter-spacing: 3px;
+    p{
+        margin: 0 0 0 200px;
+    }
+    span{
+        font-size:.9rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+}
+.swiper-container{
+    height: 100%; 
+    position: relative;
+    overflow: hidden;
+  }
+.swiper-button-prev{
+    left:12px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.pay_dis{
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: baseline;
+    color:$primary-color;
+    font-size:.9rem;
+    .price{
+        font-size:2rem;
+        color:$primary-color;
+        &::first-letter{
+            font-size:1.2rem;
+        }
+    }
+}
+.price{
+    &::first-letter{
+        font-size:.7rem;
+    }
+}
+.per_dur{
+    position: relative;
+}
+.restock{
+    position: absolute;left:0;bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size:.9rem;
+    letter-spacing: 2px;
+    color:white;
+    background: rgba($color: #000000, $alpha: .7);
+}
+.btn-imd{
+    width: 180px;
+    padding: 10px 0 10px 10px;
+    font-size: .9rem;
+    letter-spacing: 6px;
+    border: none;
+    color: white;
+    background-color: $primary-color;
+    cursor: pointer;
+    line-height: 1;
+    align-self:center;
+}
+
+.per_info{
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    width:100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+.per_l{
+    display: flex;
+    flex-flow: column;
+    width:460px;
+    border-right:1px solid #ccc;
+    background-color: #fcecec;
+}
+.per_price{
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: baseline;
+    color:$price;
+    font-size:1rem;
+    font-weight: 700;
+    .title{
+        font-size:.8rem;
+    }
+    .rush{
+        margin-left:10px;
+        color:#06c;
+        font-size:.8rem;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+.per_l{
+    flex-flow: row nowrap;
+    .name{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        margin:20px 0;
+        font-size:1.2rem;
+        color:#000;
+        line-height: 1.2;
+        word-break: break-word;
+        overflow: hidden;
+    }
+}
+.per_img{
+    display: block;
+    width:250px;
+    height:250px;
+}
+
+.per_r{
+    padding:15px 25px;
+    img{
+        max-width: 100px;
+        max-height: 100px;
+        border:3px solid #e5e5e5;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    .name{
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        margin:10px 0 5px;
+        color:#888;
+        font-size:.8rem;
+    }
+}
+.per_block{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.per_r_info{
+    margin-left:5px;
+}
+.per_buy{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding:10px;
+}
+
+.per{
+    margin:15px 0 0;
+    position: relative;
+    
+    .pay_dis{
+        .price{
+            margin:10px 0;
+            &::first-letter{
+                font-size:1.2rem;
+            }
+        }
+    }
+    .swiper-button-prev{
+        left:3px;
+    }
+    .swiper-button-next{
+        top: 15px; 
+        height: 100%;
+        padding: 0 5px;
+        background: white;
+    }
+}
+
+
+.icon_pictxt{
+    width: 30px;
+}

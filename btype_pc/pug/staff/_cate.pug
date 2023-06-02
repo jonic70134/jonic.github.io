@@ -1,0 +1,28 @@
+doctype html
+html
+	head
+		include ../src/_meta.pug
+		link(href='css/cate.css', rel='stylesheet')
+	body
+		.body_container
+			include ../src/_header_staff.pug
+			.sub_head
+				.container
+					include ../src/_menu.pug
+					include ../src/_tagcloud.pug
+			.container
+				include ../src/_functop.pug
+			.site-main
+				.container
+					.cate_main
+						//- 分類商品
+						include ../src/_cateitem.pug
+						//- 分頁
+						include ../src/_pagenav.pug
+						//-  相關商品
+					include ../src/_item_relative.pug
+		include ../src/_foot.pug	
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/common.js')
+		script(src='js/cate.js')

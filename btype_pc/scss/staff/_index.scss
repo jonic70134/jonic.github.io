@@ -1,13 +1,14 @@
 // 首頁
-@import "partials/base";
-@import "partials/function";
-@import "partials/color";
+@import "../partials//base";
+@import "../partials//function";
+@import "../partials//color";
 
-@import "partials/page_topic";
-@import "partials/tag_cloud";
-@import "partials/page_item";
-@import "partials/cupn";
-@import "3rd-party/_swiper.scss";
+@import "../partials/page_staff";
+@import "../partials//tag_cloud";
+@import "../partials//page_item";
+@import "../partials//cupn";
+@import "../partials//turn";
+@import "../3rd-party/_swiper.scss";
 
 .swiper-container{
     height: 100%; 
@@ -252,58 +253,6 @@
         .price{
             color:#ff0;
             margin: 0 0 0 20px;
-        }
-    }
-}
-.prod2_b{
-    margin: 0 0 0 10px;
-}
-.prod2_t{
-    padding:8px 0;
-    font-size:1rem;
-    color:white;
-    text-align: center;
-    background-color: #ff7474;
-    border-radius: 10px 10px  0 0 ;
-}
-.prod2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap:10px;
-    // width: (1220-820px);
-    
-    padding:0 0 10px 0;
-    background-color: #ffedec;
-    border-right: 8px solid transparent;
-    border-left:8px solid transparent;
-    border-image: 
-    linear-gradient(
-      to bottom, 
-      #ff7474, 
-      #ffedec
-    ) 1 100%;
-}
-.prod2_link,.prod2_img{
-    display: block;
-    width: 100%;
-    object-fit: scale-down;
-}
-.prod2_info{
-    width: 100%;
-    .name{
-        width: 190px;
-        color:#333;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-    .price{
-        margin: 6px 0 0 5px;
-        font-size:1rem;
-        color:$primary-color;
-        &::first-letter{
-            font-size:.7em;
         }
     }
 }
@@ -596,7 +545,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin: 0 0 20px;
+    margin: 10px 0 20px;
 }
 
 .item_t{

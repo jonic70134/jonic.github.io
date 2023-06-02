@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		include ../src/_meta.pug
+		link(href='css/mem_des.css', rel='stylesheet')
+	body
+		.body_container
+			include ../src/_header_staff.pug 
+			.site-main
+				.container
+					.mem_chk_t
+						a.back(href="mem_index.html")
+							i.icon.icon_swiper_prev
+							p.chk_order 網站簡介
+
+					#mem_des1.mem_des
+						.mem_des_t 網站簡介
+						p 遠時數位科技股份有限公司(遠傳集團)
+						p 致力於AI技術在電商應用的開發，推出最新AI自動建站的機制，
+						p 幫助各行各業省錢省時省力立即擁有自已的AI電商網站
+						p 只需商品上架，AI即可騶動網站自動生成，
+						p 除了自家商品也可以曝光其它眾多的商品 ;
+						p 自已的商品除了在自家AI網站露出之外，
+						p 也可以在眾多使用AI網站的聯合曝光! 
+						p 並進一步提供優惠折扣，
+						p 讓每一位消費者可看到適合自已且具有吸引力的商品，
+						p 享有嶄新的購物體驗!
+					
+		include ../src/_foot.pug
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/common.js')
+		script(src='js/mem.js')

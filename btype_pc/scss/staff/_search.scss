@@ -1,0 +1,66 @@
+@import "../partials/base";
+@import "../partials/color";
+@import "../3rd-party/_swiper.scss";
+
+@import "../partials/page_staff";
+@import "../partials/tag_cloud";
+@import "../partials/cateitem";
+@import "../partials/relate";
+@import "../partials/functop";
+.swiper-wrapper{
+    height: auto;
+}
+.sub_head{
+    .container{
+        justify-content: flex-start;
+    }
+}
+.site-main{
+    width: 100%;
+    padding: 20px 0 0;
+    .container{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}
+
+.search_item{
+    .icon_cart,.icon_track{
+        position: relative;
+        display: block;
+        font-size: 1.6rem;
+        &:before{
+            color:#333;
+        }
+    }
+    
+    .icon_track{
+        font-size: 2rem;
+        align-self:flex-end;
+    }
+    .icon_track_plus{
+        font-size: 1.3rem;
+    }
+    
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+}
+.btn-load{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top:10px;
+    padding:6px 10px 7px;
+    color:#666;
+    background:white;
+    font-size:1.1rem;
+    border:1px solid #666;
+    outline:none;
+    cursor: pointer;
+}
+.icon_refresh{
+    margin:0 0 0 5px;
+}

@@ -1,0 +1,102 @@
+doctype html
+html
+	head
+		include ../src/_meta.pug
+		link(href='css/mem_index.css', rel='stylesheet')
+	body
+		.body_container
+			include ../src/_header_staff.pug 
+			.site-main
+				.container
+					.mem_chk_t
+						a.back(href="mem_index.html")
+							p.chk_order 我的
+						a.logout(href="index.html") 
+							p 登出
+					.mem_index
+						
+						//- .mem_block1_1
+						//- 	.mem_avatar
+						//- 		img(src="img/mem_avatar.svg")
+						//- 		a(href="#").mem_edit
+						//- 			img(src="img/mem_edit.svg")
+						//- 	.mem_login_link
+						//- 		a.login_btn(href="mem_login.html") 登入
+						//- 		a.reg_btn(href="mem_reg.html") 註冊 
+						//- 	<!--//- 登入後顯示會員名稱 p.mem_name 張xx 你好-->
+
+						//- a(href="#mem_phone_order").mem_block2_1.mem_phone_order
+						//- 	img(src="img/mem_order.svg")
+						//- 	.mem_link_name 手機號碼查訂單 
+						//- 	.mem_contact (聯絡客服)
+						a(href="mem_chk.html").mem_block2_1.mem_web_order
+							img(src="img/mem_order.svg")
+							.mem_link_name 查訂單 
+							.mem_contact (聯絡客服)
+						a(href="mem_track.html").mem_block2_2.mem_phone_order
+							img(src="img/mem_track.svg")
+							.mem_link_name 我的最愛
+						
+
+						//- a(href="mem_coin.html").mem_block3_1.mem_coin
+						//- 	img(src="img/mem_coin.svg")
+						//- 	.mem_link_name 我的遠傳幣 
+						//- 		span.red 9999
+						//- a(href="mem_discount.html").mem_block3_2.mem_coupon
+						//- 	img(src="img/mem_coupon.svg")
+						//- 	.mem_link_name 我的折價券
+						//- 		span.red 9999
+						//- 		| 張
+						//- a(href="#").mem_block3_3.mem_coin
+						//- 	img(src="img/mem_happygo.svg")
+						//- 	.mem_link_name HAPPY GO 
+						//- 		span.blue 綁定卡片
+
+						//- a(href="mem_track.html").mem_block3_3.mem_track
+						//- 	img(src="img/mem_track.svg")
+						//- 	.mem_link_name 追蹤清單
+						a(href="mem_data.html").mem_block3_1.mem_data
+							img(src="img/mem_data.svg")
+							.mem_link_name 我的基本資料與修改
+						//- a(href="#").mem_block3_3.mem_exp
+						//- 	img(src="img/mem_exp.svg")
+						//- 	.mem_link_name 快樂購卡點數說明
+
+						a(href="mem_des.html").mem_block3_2.mem_buy
+							img(src="img/mem_exp.svg")
+							.mem_link_name 購物說明
+						//- a(href="#").mem_block3_2.mem_rma
+						//- 	img(src="img/mem_rma.svg")
+						//- 	.mem_link_name 售後服務
+						a(href="mem_cheat.html").mem_block3_3.mem_anti
+							img(src="img/mem_exp.svg")
+							.mem_link_name 防詐騙公告
+		include ../src/_foot.pug
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/common.js')
+		.lightbox-target#mem_phone_order
+			.content
+				.con_t 手機號碼查訂單
+				.con_m
+					.con_m_t 訂購人手機號碼
+					input.con_input(type="tel" autocomplete="tel")
+				.con_btn
+					a.box_btn_send(href="#mem_phone_send") 取得驗證碼
+				a.lightbox-close(href="#")
+		.lightbox-target#mem_phone_send
+			.content
+				.con_t 手機號碼查訂單
+				.con_m
+					p.sendphone 認證碼已用簡訊發送至 09*****987
+					input.con_input(type="text" maxlength="6")
+					P.time 請於3分鐘內輸入驗證碼，剩餘時間
+						span.red 02:59
+				.con_btn
+					a.box_btn_resend(href="#mem_phone_send") 重新發送驗證碼
+					a.box_btn_send(href="mem_chk.html") 確認送出
+				.con_foot
+					p 驗證碼簡訊將於1分鐘內發送至您的手機,若未收到簡訊,
+					p 請點学重新發送驗證碼簡訊按钮,重新發送簡訊。
+				a.lightbox-close(href="#")
+

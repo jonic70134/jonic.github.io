@@ -1,0 +1,35 @@
+doctype html
+html
+	head
+		include ../src/_meta.pug
+		link(href='css/mem_login.css', rel='stylesheet')
+	body
+		.body_container
+			.cart_head
+				.container
+					a.back(href="index.html")
+						i.icon.icon-chevron-left
+						| 回首頁
+					a.logo(href="index.html", title="回到friDay")
+						i.icon.-friday_logo
+			.site-main.login
+				.mid_title 設定密碼
+				form.login_body(action="mem_login.html")
+					.login_line
+						.sub_t.left 帳號：0912324567
+					.login_line
+						.pass_b
+							input#pass-b1(type='password' placeholder='設定密碼' required autofocus)
+							i.icon.icon-eye.toggle-pass(toggle="#pass-b1")
+						p.red 請輸入正確的密碼格式，包含英文大小寫與數字
+					.login_line
+						.pass_b
+							input#pass-b2(type='password' placeholder='確認密碼' required)
+							i.icon.icon-eye.toggle-pass(toggle="#pass-b2")
+						p.red 請輸入正確的密碼格式，包含英文大小寫與數字
+						<!--p.red_mid 密碼不一致，請重新輸入-->
+					input.btn_red(type="submit" value="確定")
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/common.js')
+		script(src='js/mem_login.js')

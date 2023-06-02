@@ -1,0 +1,26 @@
+@import '_font_iconmoon.scss';
+
+@import '_head_staff.scss';
+@import '_menu.scss';
+@import '_foot.scss';
+
+.body_container{
+	min-height: calc(100vh - 102px);
+}
+.site-main{
+    width:1220px;
+    margin:0 auto;
+    position: relative;
+}
+.container{
+    width: 1220px;
+    margin:0 auto;
+}
+.sub_head{
+	.container{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+}
+
