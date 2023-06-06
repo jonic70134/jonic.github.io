@@ -1158,80 +1158,7 @@ button.swiper-pagination-bullet {
 
 .site-header {
   position: relative;
-  background-color: #f5281e;
-}
-.site-header.bg_profile {
-  background: white;
-}
-.site-header.bg_profile .main_head {
-  background: white;
-  padding: 8px 0 9px;
-}
-.site-header.bg_profile .main_head .site_search .input_search {
-  border: 1px solid #ccc;
-}
-.site-header.bg_pic {
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-}
-.site-header.bg_pic .main_head {
-  background: transparent;
-  padding: 8px 0 9px;
-}
-.site-header.bg_pic .profile h1 p {
-  color: white;
-}
-.site-header .profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 42px;
-}
-.site-header .profile .prof_l, .site-header .profile .prof_r {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.site-header .profile img {
-  width: 90px;
-  height: 90px;
-  border: 3px solid white;
-  border-radius: 50%;
-}
-.site-header .profile h1 {
-  margin-bottom: 8px;
-  color: black;
-  font-size: 1.1rem;
-  line-height: 1.3;
-}
-.site-header .profile h1 p {
-  width: 105px;
-  overflow: hidden;
-  white-space: nowrap;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-}
-.site-header .profile .prof_r {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 10px;
-}
-.site-header .profile .prof_r a {
-  margin-right: 5px;
-}
-.site-header .profile .prof_r img {
-  width: 25px;
-  height: 25px;
-  border: 2px solid white;
-  border-radius: 50%;
+  background-color: #d0b9d5;
 }
 
 .main_head {
@@ -1255,7 +1182,7 @@ button.swiper-pagination-bullet {
 .site_search {
   position: relative;
   z-index: 3;
-  margin: 0 0 0 50px;
+  margin: 0 0 0 20px;
 }
 .site_search .icon_search {
   font-size: 1.1rem;
@@ -1329,11 +1256,17 @@ button.swiper-pagination-bullet {
 
 .logotxt {
   margin: 0 0 0 20px;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: white;
 }
 .logotxt p {
-  margin: 30px 0 0;
+  margin: 0;
+  padding: 5px;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  letter-spacing: 1px;
 }
 
 .avatar {

@@ -174,8 +174,20 @@ label {
 }
 
 .foot_pby {
+  position: relative;
   color: #999;
   text-align: right;
+}
+.foot_pby .pby_detail {
+  text-align: left;
+}
+.foot_pby .pby_detail.active {
+  top: -185px;
+  left: -92px;
+}
+.foot_pby .pbybtn {
+  margin: 0 0 0 5px;
+  color: #999 !important;
 }
 
 .foot_pby_txt {

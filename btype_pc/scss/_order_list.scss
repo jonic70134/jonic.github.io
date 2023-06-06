@@ -243,7 +243,7 @@ h3{
     overflow: hidden;
     margin: 0 0 5px;
     color: #333;
-    font-size: fluid(12px,16px);
+    font-size: fluid(14px,16px);
     line-height: 1.4;
 }
 
@@ -560,9 +560,9 @@ button {
     flex-flow: row wrap;
 }
 .payway_t{
-    min-width: 85px;
+    min-width: 93px;
 }
-.pay_label{
+.pay_label,.pay_label_one{
 	display: flex;
     flex-flow: row nowrap;
 	margin:10px 10px 10px 0;
@@ -571,11 +571,18 @@ button {
 .pay_radio{
 	margin: 0 3px 0 0;
 }
+.pay_t{
+	.red{
+		display: block;
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+}
 .cart_b_t_l{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-	font-size:fluid(12px,16px);
+	font-size:fluid(14.5px,16px);
 	line-height: 1.4;
     small{
         font-size:.7rem;
@@ -668,7 +675,7 @@ button {
 		}
 		input{
 			width: 40px;
-			margin:0 5px 0 0;
+			margin:5px 5px 0 0;
 		}
 		.form_input{
 			display: flex;
@@ -700,10 +707,10 @@ button {
 }
 
 .form_t{
-	min-width: 80px;
+	min-width: 90px;
 	margin: 0 5px 0 0;
 	text-align: right;
-	font-size:fluid(12px,16px);
+	font-size:.9rem;
 }
 .form_same{
 	display: flex;
@@ -728,6 +735,7 @@ button {
 	align-items: center;
 	label{
 		margin: 0 3px 0 0;
+		font-size: .9rem;
 	}
 	a{
 		color:#06c;
@@ -1160,11 +1168,14 @@ strong{
 	}
 	.pay_label{
 		width: 45%;
-		font-size: .8rem;
+		font-size: .85rem;
+	}
+	.pay_label_one{
+		width: 100%;
 	}
 	.payway_t{
-		min-width:65px ;
-		font-size:.8rem;
+		font-size:.9rem;
+		text-align: right;
 	}
 	.cart_img {
 		img {
@@ -1184,9 +1195,9 @@ strong{
 	.red_alert{
 		margin:0 0 0 5px;
 	}
-	.form_t{
-		min-width: 68px;
-	}
+	// .form_t{
+	// 	min-width: 68px;
+	// }
 	.form{
 		input[type=email],input[autocomplete="address-line1"]{
 			width: 225px;

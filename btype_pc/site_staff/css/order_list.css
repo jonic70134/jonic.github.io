@@ -311,6 +311,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
@@ -319,23 +322,11 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  padding: 20px 10px;
+  padding: 10px;
+  height: 75px;
 }
 .main_head .container {
   width: 100%;
-}
-
-.header_l, .header_r {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header_r {
@@ -346,28 +337,34 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  position: relative;
-  top: 15px;
   line-height: 1.4;
 }
 
 .header_r_top {
-  font-size: 1rem;
+  font-size: clamp(0.75rem, 0.47vw + 0.64rem, 1rem);
 }
 
 .header_r_bot {
-  color: #aaa;
-  font-size: 0.85rem;
+  font-size: clamp(0.63rem, 0.41vw + 0.53rem, 0.84rem);
 }
 
 .logo {
   display: block;
+  max-width: 200px;
+  max-height: 75px;
+  overflow: hidden;
 }
 .logo img {
   display: block;
-  width: 200px;
+  width: 100%;
+  max-height: 75px;
 }
 
+@media (max-width: 375px) {
+  .logo {
+    max-width: 170px;
+  }
+}
 .container_ue {
   width: 100%;
   background: white;
@@ -423,8 +420,20 @@ body {
 }
 
 .foot_pby {
+  position: relative;
   color: #999;
   text-align: right;
+}
+.foot_pby .pby_detail {
+  text-align: left;
+}
+.foot_pby .pby_detail.active {
+  top: -185px;
+  left: -92px;
+}
+.foot_pby .pbybtn {
+  margin: 0 0 0 5px;
+  color: #999 !important;
 }
 
 .foot_pby_txt {
@@ -762,7 +771,7 @@ h3 {
   overflow: hidden;
   margin: 0 0 5px;
   color: #333;
-  font-size: clamp(0.75rem, 0.47vw + 0.64rem, 1rem);
+  font-size: clamp(0.88rem, 0.24vw + 0.82rem, 1rem);
   line-height: 1.4;
 }
 
@@ -1173,10 +1182,10 @@ button {
 }
 
 .payway_t {
-  min-width: 85px;
+  min-width: 93px;
 }
 
-.pay_label {
+.pay_label, .pay_label_one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1192,6 +1201,12 @@ button {
   margin: 0 3px 0 0;
 }
 
+.pay_t .red {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
 .cart_b_t_l {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1203,7 +1218,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: clamp(0.75rem, 0.47vw + 0.64rem, 1rem);
+  font-size: clamp(0.91rem, 0.18vw + 0.86rem, 1rem);
   line-height: 1.4;
 }
 .cart_b_t_l small {
@@ -1332,7 +1347,7 @@ button {
 }
 .form.expdate input {
   width: 40px;
-  margin: 0 5px 0 0;
+  margin: 5px 5px 0 0;
 }
 .form.expdate .form_input {
   display: -webkit-box;
@@ -1368,10 +1383,10 @@ button {
 }
 
 .form_t {
-  min-width: 80px;
+  min-width: 90px;
   margin: 0 5px 0 0;
   text-align: right;
-  font-size: clamp(0.75rem, 0.47vw + 0.64rem, 1rem);
+  font-size: 0.9rem;
 }
 
 .form_same {
@@ -1408,6 +1423,7 @@ button {
 }
 .invo_per label {
   margin: 0 3px 0 0;
+  font-size: 0.9rem;
 }
 .invo_per a {
   color: #06c;
@@ -1910,11 +1926,14 @@ strong {
   }
   .pay_label {
     width: 45%;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+  }
+  .pay_label_one {
+    width: 100%;
   }
   .payway_t {
-    min-width: 65px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    text-align: right;
   }
   .cart_img img {
     width: 50px;
@@ -1931,9 +1950,6 @@ strong {
   }
   .red_alert {
     margin: 0 0 0 5px;
-  }
-  .form_t {
-    min-width: 68px;
   }
   .form input[type=email], .form input[autocomplete=address-line1] {
     width: 225px;

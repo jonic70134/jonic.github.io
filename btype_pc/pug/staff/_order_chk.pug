@@ -92,27 +92,28 @@ html
 						.line.payway_b
 							.payway_t 付款方式：
 							.payway
-								label.pay_label(for="payment1")
-									input.pay_radio#payment1(type="radio",value="1",name="payway" checked)
-									p.pay_t Line Pay
-								label.pay_label(for="payment2")
-									input.pay_radio#payment2(type="radio",value="2",name="payway")
-									p.pay_t 街口支付
-								label.pay_label(for="payment3")
-									input.pay_radio#payment3(type="radio",value="3",name="payway")
-									p.pay_t 悠遊付
-								label.pay_label(for="payment4")
-									input.pay_radio#payment4(type="radio",value="4",name="payway")
-									p.pay_t HAPPYGO Pay
-								label.pay_label(for="payment5")
-									input.pay_radio#payment5(type="radio",value="5",name="payway")
+								//- label.pay_label(for="payment1")
+								//- 	input.pay_radio#payment1(type="radio",value="1",name="payway" checked)
+								//- 	p.pay_t Line Pay
+								//- label.pay_label(for="payment2")
+								//- 	input.pay_radio#payment2(type="radio",value="2",name="payway")
+								//- 	p.pay_t 街口支付
+								//- label.pay_label(for="payment3")
+								//- 	input.pay_radio#payment3(type="radio",value="3",name="payway")
+								//- 	p.pay_t 悠遊付
+								//- label.pay_label(for="payment4")
+								//- 	input.pay_radio#payment4(type="radio",value="4",name="payway")
+								//- 	p.pay_t HAPPYGO Pay
+								label.pay_label_one(for="payment5")
+									input.pay_radio#payment5(type="radio",value="5",name="payway" checked)
 									p.pay_t 信用卡一次付清
-								label.pay_label(for="payment6")
-									input.pay_radio#payment6(type="radio",value="6",name="payway")
-									p.pay_t ATM轉帳
-								label.pay_label(for="payment7")
-									input.pay_radio#payment7(type="radio",value="7",name="payway")
-									p.pay_t web-ATM
+										span.red 刷聯名卡享專屬折扣+周二5%回饋(平日2%)
+								//- label.pay_label(for="payment6")
+								//- 	input.pay_radio#payment6(type="radio",value="6",name="payway")
+								//- 	p.pay_t ATM轉帳
+								//- label.pay_label(for="payment7")
+								//- 	input.pay_radio#payment7(type="radio",value="7",name="payway")
+								//- 	p.pay_t web-ATM
 						.line.paydiv#paydiv5
 							.form
 								.form_t 持卡人姓名

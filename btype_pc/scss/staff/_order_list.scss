@@ -3,8 +3,8 @@
 @import "../partials/color";
 
 @import "../partials/font_iconmoon";
-@import 'partials/order_head';
-@import 'partials/foot';
+@import "../partials/order_head";
+@import "../partials/foot";
 
 // .icon_swiper_prev:before {
 // 	color: white;
@@ -700,10 +700,10 @@ button {
 }
 
 .form_t{
-	min-width: 80px;
+	min-width: 86px;
 	margin: 0 5px 0 0;
 	text-align: right;
-	font-size:fluid(12px,16px);
+	font-size:1rem
 }
 .form_same{
 	display: flex;
@@ -1184,9 +1184,9 @@ strong{
 	.red_alert{
 		margin:0 0 0 5px;
 	}
-	.form_t{
-		min-width: 68px;
-	}
+	// .form_t{
+	// 	min-width: 68px;
+	// }
 	.form{
 		input[type=email],input[autocomplete="address-line1"]{
 			width: 225px;
