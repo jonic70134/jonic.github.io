@@ -298,6 +298,28 @@ h2 {
         }
     }
 }
+#duo_gift{
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+}
+.duo_bot{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 5px 0 0;
+    img{
+        width: 49.5%;
+    }
+}
+.duo_link{
+    align-self: flex-end;
+    a{
+        font-size:1rem;
+        color:#06c;
+        text-decoration: underline;
+    }
+}
 .red_l{
     margin: 10px 0 30px;
 }
@@ -708,6 +730,13 @@ h2 {
 
         &.straight a {
             font-size: 1rem;
+        }
+    }
+    .duo_bot{
+        flex-flow: column;
+        margin: 5px 0 0;
+        img{
+            width: 100%;
         }
     }
 }
