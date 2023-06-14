@@ -767,6 +767,11 @@ h2 {
   color: #06c;
   text-decoration: underline;
 }
+.duo_link a::after {
+  font-family: "icomoon";
+  content: "\e93f";
+  font-size: 0.8rem;
+}
 
 .red_l {
   margin: 10px 0 30px;

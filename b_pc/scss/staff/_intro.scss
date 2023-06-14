@@ -318,6 +318,11 @@ h2 {
         font-size:1rem;
         color:#06c;
         text-decoration: underline;
+        &::after{
+            font-family: 'icomoon';
+            content: "\e93f";
+            font-size: .8rem;
+        }
     }
 }
 .red_l{
