@@ -661,7 +661,7 @@ h2 {
         
         small{
             display: block;
-            font-size:fluid(12px,14px);
+            font-size:fluid(18px,20px);
         }
     }
     h3.red{
@@ -714,9 +714,6 @@ h2 {
 .des_ul{
     list-style: decimal outside;
     padding: 0 0 0 15px;
-    li{
-        
-    }
 }
 @media (max-width: 1220px) {
     body {

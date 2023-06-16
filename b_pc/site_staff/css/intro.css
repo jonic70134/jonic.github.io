@@ -1314,7 +1314,7 @@ h2 {
 }
 .lightbox-target h2 small {
   display: block;
-  font-size: clamp(0.75rem, 0.24vw + 0.69rem, 0.88rem);
+  font-size: clamp(1.13rem, 0.24vw + 1.07rem, 1.25rem);
 }
 .lightbox-target h3.red {
   font-weight: 700;
@@ -1379,6 +1379,7 @@ h2 {
   list-style: decimal outside;
   padding: 0 0 0 15px;
 }
+
 @media (max-width: 1220px) {
   body {
     min-width: 100%;
