@@ -1264,6 +1264,121 @@ h2 {
           align-items: flex-start;
 }
 
+.lightbox-target {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  overflow: hidden;
+  z-index: 50;
+}
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+.lightbox-target:target .content, .lightbox-target:target img {
+  max-height: 100%;
+  max-width: 1000px;
+}
+.lightbox-target .content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 90%;
+  max-width: 0%;
+  height: auto;
+  max-height: 0%;
+  margin: auto;
+  padding: 20px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+  background: #fff;
+  border: 3px solid #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.lightbox-target h2 {
+  text-align: center;
+  font-size: clamp(1.13rem, 1.42vw + 0.79rem, 1.88rem);
+}
+.lightbox-target h2 small {
+  display: block;
+  font-size: clamp(0.75rem, 0.24vw + 0.69rem, 0.88rem);
+}
+.lightbox-target h3.red {
+  font-weight: 700;
+  font-size: clamp(1rem, 0.47vw + 0.89rem, 1.25rem);
+}
+.lightbox-target .mem_des_t {
+  font-size: clamp(0.88rem, 0.47vw + 0.76rem, 1.13rem);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #aaa;
+  border: 1px solid #999;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+.lightbox-close:before, .lightbox-close:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  display: block;
+  width: 2px;
+  height: 14px;
+  background: #aaa;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.lightbox-close:after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.mem_des {
+  margin: 0 0 10px;
+  padding: 10px 20px;
+  background: white;
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+.mem_des a {
+  color: #06c;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.mem_des_t {
+  color: #333;
+}
+
+.des_ul {
+  list-style: decimal outside;
+  padding: 0 0 0 15px;
+}
 @media (max-width: 1220px) {
   body {
     min-width: 100%;

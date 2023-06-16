@@ -620,6 +620,104 @@ h2 {
         align-items: flex-start;
     }
 }
+
+.lightbox-target {
+	position: fixed;
+	top: -100%;
+	width: 100%;
+	background: rgba(0,0,0,.7);
+	opacity: 0;
+	overflow: hidden;
+	z-index: 50;
+    &:target {
+		opacity: 1;
+		top: 0;
+		bottom: 0;
+		.content, img {
+			max-height: 100%;
+            max-width: 1000px;
+		}
+	}
+    .content {
+        position: absolute;top: 50%;left: 0;right: 0;
+		width: 90%;max-width: 0%;
+		height: auto;max-height: 0%;
+        margin: auto;padding: 20px;
+        font-size: 1rem;
+        color: #333;
+        line-height: 1.4;
+        background: #fff;
+        border: 3px solid #fff;
+        overflow-y: auto;
+        overflow-x: hidden;
+		transform: translateY(-50%);
+		box-sizing: border-box;
+		box-shadow:0 0 8px rgba(0,0,0,.3);
+		
+	}
+    h2{
+        text-align: center;
+        font-size:fluid(18px,30px);
+        
+        small{
+            display: block;
+            font-size:fluid(12px,14px);
+        }
+    }
+    h3.red{
+        font-weight: 700;
+        font-size:fluid(16px,20px);
+    }
+    .mem_des_t{
+        font-size:fluid(14px,18px);
+    }
+}
+.lightbox-close {
+    position: absolute;top: 5px;right: 5px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	color: #aaa;
+    border:1px solid #999;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+	&:before, &:after {
+		content: "";
+        position: absolute;top: 2px;left:8px;
+		display: block;
+        width: 2px;
+		height: 14px;
+		background: #aaa;
+		transform:rotate(45deg);
+	}
+	&:after {
+		transform:rotate(-45deg);
+	}
+}
+.mem_des{
+    margin: 0 0 10px;
+    padding:10px 20px;
+    background: white;
+    color:#555;
+    font-size: .9rem;
+    line-height: 1.8;
+    a{
+        color:#06c;
+        text-align: center;
+        text-decoration:underline;
+    }
+}
+.mem_des_t{
+    color:#333;
+}
+.des_ul{
+    list-style: decimal outside;
+    padding: 0 0 0 15px;
+    li{
+        
+    }
+}
 @media (max-width: 1220px) {
     body {
         min-width: 100%;
