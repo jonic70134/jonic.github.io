@@ -639,6 +639,13 @@ h2 {
   letter-spacing: 1px;
 }
 
+.top {
+  margin: 10px 0 0;
+}
+.top img {
+  width: 100%;
+}
+
 .cont {
   margin: 30px 0 50px;
 }
@@ -714,6 +721,23 @@ h2 {
   margin: 0;
   padding: 30px 0;
   background: #f3f1e8;
+}
+.cont.index_brand {
+  margin: 0 0 20px;
+}
+.cont.index_brand .brand_top, .cont.index_brand h2 {
+  padding: 0;
+  text-align: left;
+}
+.cont.index_brand .container {
+  display: block;
+}
+.cont.index_brand .brand_bot {
+  padding: 30px 3%;
+}
+.cont.index_brand .brand_photo {
+  border-radius: 0;
+  aspect-ratio: 20/9;
 }
 .cont.black {
   margin: 0;
@@ -1130,6 +1154,15 @@ h2 {
   overflow: hidden;
 }
 
+.brand_btn {
+  display: block;
+}
+.brand_btn img {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+}
+
 .site-footer {
   padding: 20px;
 }
@@ -1395,6 +1428,9 @@ h2 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .cont.index_brand .brand_bot {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
   [class^=benefit_] {
     -ms-flex-preferred-size: 20%;

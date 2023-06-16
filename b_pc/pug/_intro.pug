@@ -15,8 +15,12 @@ html
 	body
 		include src/_intro_head.pug
 		article.main
+			section.top
+				.container
+					img(src="img/intro/topbn.png", alt="")
 			section.cont
 				.container
+					
 					.cont_l
 						h2 i 開店系統 服務說明
 						p
@@ -28,6 +32,28 @@ html
 						a.apply(href="intro_apply.html") 立即免費申請
 					.cont_r
 						img(src='img/intro/ysdt_ai_01.png' alt='遠時AI電商系統服務說明' title='遠時AI電商系統服務說明')
+			section.cont.brown.index_brand
+				.container
+					.brand_top
+						h2 i 開店 熱銷品牌推薦
+					.brand_bot
+						a.brand_block(href='https://ai4.ysdt.com.tw/apple')
+							.brand_photo(style="background-color:#444;")
+								img.brand_img(src='img/intro/200x70_01.png', alt='')
+						a.brand_block(href='https://ai4.ysdt.com.tw/mi')
+							.brand_photo(style="background-color:#fff;")
+								img.brand_img(src='img/intro/200x70_02.png', alt='')
+						a.brand_block(href='https://ai4.ysdt.com.tw/switch')
+							.brand_photo(style="background-color:#ec0000;")
+								img.brand_img(src='img/intro/200x70_03.png', alt='')
+						a.brand_block(href='https://ai4.ysdt.com.tw/samsung')
+							.brand_photo(style="background-color:#fff;")
+								img.brand_img(src='img/intro/200x70_04.png', alt='')
+						a.brand_block(href='https://ai4.ysdt.com.tw/razer')
+							.brand_photo(style="background-color:#000;")
+								img.brand_img(src='img/intro/200x70_05.png', alt='')
+					a.brand_btn(href="intro_brand.html")
+						img(src="img/intro/i_store.png", alt="") 
 			section.cont.brown.straight
 				.container
 					h2 加入「i 開店」的好處
