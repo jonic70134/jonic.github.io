@@ -222,7 +222,8 @@ h2 {
 }
 .top{
     margin:  10px 0 0;
-    img{
+    a,img{
+        display: block;
         width: 100%;
     }
 }

@@ -642,7 +642,8 @@ h2 {
 .top {
   margin: 10px 0 0;
 }
-.top img {
+.top a, .top img {
+  display: block;
   width: 100%;
 }
 
