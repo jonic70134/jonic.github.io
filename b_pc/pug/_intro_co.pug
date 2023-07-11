@@ -17,17 +17,17 @@ html
 		article.main
 			section
 				.container
-					.co_top
-						.co_t
-							p 玩玩看 我的AI模擬網站
-							input(type="text" placeholder="請填寫 希望的網站名稱")
-							small 會用標準字型來試作您的AI網站LOGO
-						.co_bot
-							a.submit(href="#") 看我的AI模擬 網站
-							small 會用友善的商品來作您的網站模擬展示
+					.cap
+						p.cap_t1 歡迎加入&nbsp;&nbsp;遠時i開店
+						p.cap_t2 一鍵千店‧多點聯賣
+						hr
+						p.cap_small 
+							| 包含遠東關企員購福利網、股東福利網、台北捷運再轉轉、悠遊付再轉轉、遠傳心生活、friDay影音、
+							br
+							| 遠傳friDay購物、網紅看盤… AI幫您自動行銷並觸及數百萬會員潛在消費者！
+							br
+							| 提供無痛#[span.blue 一鍵搬家]，AI馬上幫您#[span.blue 多點聯賣]！直接享有最優惠方案成交費：非3C 4% /3C 2.5%聯合曝光：1%金流：2%
 					.form.co
-						.form_top
-							h2 填寫以下資訊 立即開啟您的 AI 網站
 						.form_mid
 							.form_line
 								.form_t 公司名稱
@@ -44,17 +44,35 @@ html
 							.form_line
 								.form_t 聯絡信箱
 								input.form_input(type="email" autocomplete="email" inputmode="email")
-							.form_line
-								.form_t 賣場網站
-								input.form_input(type="text" inputmode="url" placeholder="可提供其它平台連結或官方粉絲團連結")
-						
+							.form_line.cent
+								.form_t 搬家原地址
+								.form_cent
+									.form_cent_top
+										input.form_input(type="text" inputmode="url" placeholder="可提供其它平台連結或官方粉絲團連結")
+										.form_des (非必填)
+									.form_cent_bot 
+										| 目前可搬家: 蝦皮個人賣場首頁、蝦皮商城自家店首頁		
+								
+
 						
 						.form_foot
 							label.co_chk_lb(for="co_chk") 
 								input#co_chk(type="checkbox", name="")
 								a(href="../download/ai_contract_20230210.pdf") 我同意遵守遠時AI電商合作條款
-							a.submit(href="#") 立即免費申請使用
+							a.submit(href="#") 馬上「一鍵開店」
 							small 請您在送出申請前，確認已填寫所有欄位，以加快後續審核流程，謝謝您！
+					.co_top
+						.co_td
+							p 玩玩看 我的AI模擬網站
+						.co_td
+							input(type="text" placeholder="請填寫 希望的網站名稱")
+						.co_td
+							small 會用標準字型來試作您的AI網站LOGO
+						.co_td
+						.co_td
+							a.submit(href="#") 看我的AI模擬 網站
+						.co_td
+							small 會用友善的商品來作您的網站模擬展示
 		a.gotop(href="#")
 		script(src='js/3rd-party/jquery-3.6.0.min.js')
 		script(src='js/intro.js')
