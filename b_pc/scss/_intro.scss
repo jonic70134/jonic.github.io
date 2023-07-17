@@ -62,7 +62,7 @@ a {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    flex-basis: 25%;
+    flex-basis: 50%;
 }
 
 .site_search {
@@ -133,7 +133,7 @@ a {
     flex-flow: row wrap;
     align-items: center;
     justify-content: flex-end;
-    flex-basis: 65%;
+    flex-basis: 50%;
 
     a {
         display: flex;
@@ -979,6 +979,20 @@ h2 {
 
     .input_search {
         width: 100%;
+    }
+
+    .head_link {
+        a {
+            padding: 0 0 0 10px;
+
+            &::before {
+                margin: 0 10px 0 0;
+            }
+
+            &:last-child::after {
+                margin: 0 0 0 10px;
+            }
+        }
     }
 }
 

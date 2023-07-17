@@ -422,8 +422,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .site_search {
@@ -500,8 +500,8 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -ms-flex-preferred-size: 65%;
-      flex-basis: 65%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 .head_link a {
   display: -webkit-box;
@@ -1512,6 +1512,15 @@ h2 {
   }
   .input_search {
     width: 100%;
+  }
+  .head_link a {
+    padding: 0 0 0 10px;
+  }
+  .head_link a::before {
+    margin: 0 10px 0 0;
+  }
+  .head_link a:last-child::after {
+    margin: 0 0 0 10px;
   }
 }
 @media (max-width: 970px) {
