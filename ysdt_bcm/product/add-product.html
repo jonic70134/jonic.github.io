@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <title>friDay </title>
+    <title>YSDT_bcm </title>
     <meta content="friDay" name="description">
     <meta content="Orange" name="author">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -12,19 +12,21 @@
   </head>
   <body>
     <div id="wrapper">
-      <header class="header">
-        <div class="logo"><a href="../index.html" title="回到首頁"><span>平台管理系統</span></a></div>
-        <div class="user">
-          <div class="btn-group"><a class="btn-group-user" href="#"><i class="fa fa-user"></i>userName<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">個人資料修改</a></li>
-              <li><a href="#">登出</a></li>
+      <header class="top_menu shadow-sm">
+        <div class="btn_group"><a class="side_menu_toggle" href="#" data-bs-toggle="collapse" data-bs-target="#side_menu" aria-expanded="true" aria-controls="side_menu"><i class="bi bi-layout-sidebar-inset"></i></a><a class="logo" href="index.html">平台管理系統</a></div>
+        <ul class="btn_group">
+          <li class="nav-item"><a class="nav-link" href="#"> <i class="bi bi-gear me-2"></i>平台設定</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-person-fill p-1"></i><span>friday_user</span></a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">個人資料修改</a></li>
+              <li><a class="dropdown-item" href="#">登出</a></li>
             </ul>
-          </div>
-          <div class="btn-group"><a class="btn-group-user" href="#">登出</a></div>
-        </div>
+          </li>
+        </ul>
       </header>
-      <nav id="nav"><a href="../index.html">首頁</a><a class="active" href="product/add-product.html">新增商品</a><a href="#">查商品</a><a href="#">訂單查詢</a><a href="#">對帳</a><a href="#">網站設定</a><a href="#">基本資料維護</a></nav>
+      <div class="collapse collapse-horizontal" id="side_menu">
+        <div class="side_menu_body"><a href="../index.html">首頁</a><a class="active" href="product/add-product.html">新增商品</a><a href="#">查商品</a><a href="#">訂單查詢</a><a href="#">對帳</a><a href="#">網站設定</a><a href="#">基本資料維護</a></div>
+      </div>
       <div id="container">
         <div class="add-product-detail-form">
           <div class="form-head-t">新增商品<span class="red">*必填</span></div>
@@ -169,7 +171,7 @@
     </div>
   </body>
 </html>
-<script src="../js/3rd-party/jquery-3.6.0.min.js"></script>
-<script src="../js/3rd-party/quill.min.js"></script>
-<script src="../js/common.js"></script>
-<script src="../js/product.js"></script>
+<script src="js/3rd-party/jquery-3.6.0.min.js"></script>
+<script src="js/3rd-party/quill.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/product.js"></script>
