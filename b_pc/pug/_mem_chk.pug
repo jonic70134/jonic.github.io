@@ -44,8 +44,8 @@ html
 								.ord_block.ord_ask.center
 									
 							label.chk_open_lb(for="chk_open_detail_2")
-							input#chk_open_detail_2(type="checkbox", name="")
-
+							input#chk_open_detail_2.chk_open_detail(type="checkbox", name="")
+							
 							.mem_chk_tab.slim
 								.mem_chk_st
 									.mem_st 
@@ -187,7 +187,7 @@ html
 									span 我要
 									a.grey(href="mem_chk_ask.html") 提問
 							label.chk_open_lb(for="chk_open_detail_1")
-							input#chk_open_detail_1(type="checkbox", name="")
+							input#chk_open_detail_1.chk_open_detail(type="checkbox", name="")
 							.mem_chk_tab
 								.mem_chk
 									.mem_block.item_head.center 商品名稱
@@ -226,509 +226,513 @@ html
 										p 收貨人地址：新北市泰山區*********2號3樓
 									.ord_confirm
 										a.ord_confirm_btn(href="#") 確認退訂 
-						.mem_order_info
-							.order_tab
-								.ord_block.ord_head.center 交易編號
-								.ord_block.ord_head.center 訂購時間
-								.ord_block.ord_head.center 實付金額
-								.ord_block.ord_head.center 付款時間
-								.ord_block.ord_head
-								.ord_block.ord_head
-								.ord_block.ord_head
+						//- .mem_order_info
+						//- 	.order_tab
+						//- 		.ord_block.ord_head.center 交易編號
+						//- 		.ord_block.ord_head.center 訂購時間
+						//- 		.ord_block.ord_head.center 實付金額
+						//- 		.ord_block.ord_head.center 付款時間
+						//- 		.ord_block.ord_head
+						//- 		.ord_block.ord_head
+						//- 		.ord_block.ord_head
 
-								.ord_block.ord_no.center
-									| TX20230130123456
-								.ord_block.ord_time.center
-									| 01/30 11:32
-								.ord_block.ord_price.center
-									| $36,650
-								.ord_block.pay_time.center.col_center
-									p 付款完成
-									p 01/30 10:35
-								.ord_block.ord_cancel.center
-									span 我要
-									a.grey(href="mem_chk_return.html") 全退訂 
-								.ord_block.ord_detail
+						//- 		.ord_block.ord_no.center
+						//- 			| TX20230130123456
+						//- 		.ord_block.ord_time.center
+						//- 			| 01/30 11:32
+						//- 		.ord_block.ord_price.center
+						//- 			| $36,650
+						//- 		.ord_block.pay_time.center.col_center
+						//- 			p 付款完成
+						//- 			p 01/30 10:35
+						//- 		.ord_block.ord_cancel.center
+						//- 			span 我要
+						//- 			a.grey(href="mem_chk_return.html") 全退訂 
+						//- 		.ord_block.ord_detail
 								
-								.ord_block.ord_ask.center
-									span 我要
-									a.grey(href="mem_chk_ask.html") 提問
-							label.chk_open_lb(for="chk_open_detail_2")
-							input#chk_open_detail_2(type="checkbox", name="")
-							.mem_chk_tab
-								.mem_chk
-									.mem_block.item_head.center 商品名稱
-									.mem_block.item_head.center 訂單序號
-									.mem_block.item_head.center 挑品退訂
-									.mem_block.item_head.center 數量
-									.mem_block.item_head.center 結帳金額
-									.mem_block.item_head.center 配送狀態
-									.mem_block.item_head.center 發票
-									.mem_block.item_head.center 其它
+						//- 		.ord_block.ord_ask.center
+						//- 			span 我要
+						//- 			a.grey(href="mem_chk_ask.html") 提問
+						//- 	label.chk_open_lb(for="chk_open_detail_2")
+						//- 	input#chk_open_detail_2(type="checkbox", name="")
+						//- 	.mem_chk_tab
+						//- 		.mem_chk
+						//- 			.mem_block.item_head.center 商品名稱
+						//- 			.mem_block.item_head.center 訂單序號
+						//- 			.mem_block.item_head.center 挑品退訂
+						//- 			.mem_block.item_head.center 數量
+						//- 			.mem_block.item_head.center 結帳金額
+						//- 			.mem_block.item_head.center 配送狀態
+						//- 			.mem_block.item_head.center 發票
+						//- 			.mem_block.item_head.center 其它
 
-									.mem_block.item_img
-										img(src="../img/sample/item_019.jpg", alt="商品圖片")
-										.item_name
-											p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
-									.mem_block.item_no.center
-										| 20230130123456
-									.mem_block.item_return.center
-										input#item_return_chk(type="checkbox", name="item_return_chk")
-									.mem_block.item_count.center
-										| 99
-									.mem_block.item_price.center
-										| $999,999
-										a(href="#item_price_pop") 詳
-									.mem_block.item_st.right
-										p 收到訂單 
-									.mem_block.item_invoice.center
-										P 處理中
-									.mem_block.item_else.center
+						//- 			.mem_block.item_img
+						//- 				img(src="../img/sample/item_019.jpg", alt="商品圖片")
+						//- 				.item_name
+						//- 					p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
+						//- 			.mem_block.item_no.center
+						//- 				| 20230130123456
+						//- 			.mem_block.item_return.center
+						//- 				input#item_return_chk(type="checkbox", name="item_return_chk")
+						//- 			.mem_block.item_count.center
+						//- 				| 99
+						//- 			.mem_block.item_price.center
+						//- 				| $999,999
+						//- 				a(href="#item_price_pop") 詳
+						//- 			.mem_block.item_st.right
+						//- 				p 收到訂單 
+						//- 			.mem_block.item_invoice.center
+						//- 				P 處理中
+						//- 			.mem_block.item_else.center
 
 
 
-									.mem_block.item_img
-										img(src="../img/sample/item_01.jpg", alt="商品圖片")
-										.item_name
-											p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱
-											p.bold 規格：比擬紅
-									.mem_block.item_no.center
-										| 20230130123456
-									.mem_block.item_return.center
-										input#item_return_chk(type="checkbox", name="item_return_chk")
-									.mem_block.item_count.center
-										| 99
-									.mem_block.item_price.center
-										| $999,999
-										a(href="#item_price_pop") 詳
-									.mem_block.item_st.right
-										p 處理中
-									.mem_block.item_invoice.center
-										p 處理中
+						//- 			.mem_block.item_img
+						//- 				img(src="../img/sample/item_01.jpg", alt="商品圖片")
+						//- 				.item_name
+						//- 					p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱
+						//- 					p.bold 規格：比擬紅
+						//- 			.mem_block.item_no.center
+						//- 				| 20230130123456
+						//- 			.mem_block.item_return.center
+						//- 				input#item_return_chk(type="checkbox", name="item_return_chk")
+						//- 			.mem_block.item_count.center
+						//- 				| 99
+						//- 			.mem_block.item_price.center
+						//- 				| $999,999
+						//- 				a(href="#item_price_pop") 詳
+						//- 			.mem_block.item_st.right
+						//- 				p 處理中
+						//- 			.mem_block.item_invoice.center
+						//- 				p 處理中
 									
-									.mem_block.item_else.center
+						//- 			.mem_block.item_else.center
 
-								.ord_addr
-									.ord_addr_b
-										p 收貨人姓名：施*宏
-										p 收貨人地址：新北市泰山區*********2號3樓
-									.ord_confirm
-										a.ord_confirm_btn(href="#") 確認退訂 
-						.mem_order_info
-							.order_tab
-								.ord_block.ord_head.center 交易編號
-								.ord_block.ord_head.center 訂購時間
-								.ord_block.ord_head.center 實付金額
-								.ord_block.ord_head.center 付款時間
-								.ord_block.ord_head
-								.ord_block.ord_head
-								.ord_block.ord_head
+						//- 		.ord_addr
+						//- 			.ord_addr_b
+						//- 				p 收貨人姓名：施*宏
+						//- 				p 收貨人地址：新北市泰山區*********2號3樓
+						//- 			.ord_confirm
+						//- 				a.ord_confirm_btn(href="#") 確認退訂 
+						//- .mem_order_info
+						//- 	.order_tab
+						//- 		.ord_block.ord_head.center 交易編號
+						//- 		.ord_block.ord_head.center 訂購時間
+						//- 		.ord_block.ord_head.center 實付金額
+						//- 		.ord_block.ord_head.center 付款時間
+						//- 		.ord_block.ord_head
+						//- 		.ord_block.ord_head
+						//- 		.ord_block.ord_head
 
-								.ord_block.ord_no.center
-									| TX20230130123456
-								.ord_block.ord_time.center
-									| 01/30 11:32
-								.ord_block.ord_price.center
-									| $36,650
-								.ord_block.pay_time.center.col_center
-									p 付款完成
-									p 01/30 10:35
-								.ord_block.ord_cancel.center
-									span 我要
-									a.grey(href="mem_chk_return.html") 全退訂 
-								.ord_block.ord_detail
+						//- 		.ord_block.ord_no.center
+						//- 			| TX20230130123456
+						//- 		.ord_block.ord_time.center
+						//- 			| 01/30 11:32
+						//- 		.ord_block.ord_price.center
+						//- 			| $36,650
+						//- 		.ord_block.pay_time.center.col_center
+						//- 			p 付款完成
+						//- 			p 01/30 10:35
+						//- 		.ord_block.ord_cancel.center
+						//- 			span 我要
+						//- 			a.grey(href="mem_chk_return.html") 全退訂 
+						//- 		.ord_block.ord_detail
 								
-								.ord_block.ord_ask.center
-									span 我要
-									a.grey(href="mem_chk_ask.html") 提問
-							label.chk_open_lb(for="chk_open_detail_3")
-							input#chk_open_detail_3(type="checkbox", name="")
-							.mem_chk_tab
-								.mem_chk
-									.mem_block.item_head.center 商品名稱
-									.mem_block.item_head.center 訂單序號
-									.mem_block.item_head.center 挑品退訂
-									.mem_block.item_head.center 數量
-									.mem_block.item_head.center 結帳金額
-									.mem_block.item_head.center 配送狀態
-									.mem_block.item_head.center 發票
-									.mem_block.item_head.center 其它
+						//- 		.ord_block.ord_ask.center
+						//- 			span 我要
+						//- 			a.grey(href="mem_chk_ask.html") 提問
+						//- 	label.chk_open_lb(for="chk_open_detail_3")
+						//- 	input#chk_open_detail_3(type="checkbox", name="")
+						//- 	.mem_chk_tab
+						//- 		.mem_chk
+						//- 			.mem_block.item_head.center 商品名稱
+						//- 			.mem_block.item_head.center 訂單序號
+						//- 			.mem_block.item_head.center 挑品退訂
+						//- 			.mem_block.item_head.center 數量
+						//- 			.mem_block.item_head.center 結帳金額
+						//- 			.mem_block.item_head.center 配送狀態
+						//- 			.mem_block.item_head.center 發票
+						//- 			.mem_block.item_head.center 其它
 
-									.mem_block.item_img
-										img(src="../img/sample/item_019.jpg", alt="商品圖片")
-										.item_name
-											p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
-									.mem_block.item_no.center
-										| 20230130123456
-									.mem_block.item_return.center
-										input#item_return_chk(type="checkbox", name="item_return_chk")
-									.mem_block.item_count.center
-										| 99
-									.mem_block.item_price.center
-										| $999,999
-										a(href="#item_price_pop") 詳
-									.mem_block.item_st.right
-										p 已出貨
-										p 便利帶 
-										a(href="#") 002792568786
-									.mem_block.item_invoice.center
-										a(href="#") AA12345678
+						//- 			.mem_block.item_img
+						//- 				img(src="../img/sample/item_019.jpg", alt="商品圖片")
+						//- 				.item_name
+						//- 					p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
+						//- 			.mem_block.item_no.center
+						//- 				| 20230130123456
+						//- 			.mem_block.item_return.center
+						//- 				input#item_return_chk(type="checkbox", name="item_return_chk")
+						//- 			.mem_block.item_count.center
+						//- 				| 99
+						//- 			.mem_block.item_price.center
+						//- 				| $999,999
+						//- 				a(href="#item_price_pop") 詳
+						//- 			.mem_block.item_st.right
+						//- 				p 已出貨
+						//- 				p 便利帶 
+						//- 				a(href="#") 002792568786
+						//- 			.mem_block.item_invoice.center
+						//- 				a(href="#") AA12345678
 									
-									.mem_block.item_else.center
-										a.grey(href="#") 下載購買證明
+						//- 			.mem_block.item_else.center
+						//- 				a.grey(href="#") 下載購買證明
 
 
-									.mem_block.item_img
-										img(src="../img/sample/item_01.jpg", alt="商品圖片")
-										.item_name
-											p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱
-											p.bold 規格：比擬紅
-									.mem_block.item_no.center
-										| 20230130123456
-									.mem_block.item_return.center
-										input#item_return_chk(type="checkbox", name="item_return_chk")
-									.mem_block.item_count.center
-										| 99
-									.mem_block.item_price.center
-										| $9,999
-										a(href="#item_price_pop") 詳
-									.mem_block.item_st.right
-										p 已出貨
-										p 黑貓宅急便
-										a(href="#") 903831023894
-									.mem_block.item_invoice.center
-										a(href="#") HK94031514
+						//- 			.mem_block.item_img
+						//- 				img(src="../img/sample/item_01.jpg", alt="商品圖片")
+						//- 				.item_name
+						//- 					p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱
+						//- 					p.bold 規格：比擬紅
+						//- 			.mem_block.item_no.center
+						//- 				| 20230130123456
+						//- 			.mem_block.item_return.center
+						//- 				input#item_return_chk(type="checkbox", name="item_return_chk")
+						//- 			.mem_block.item_count.center
+						//- 				| 99
+						//- 			.mem_block.item_price.center
+						//- 				| $9,999
+						//- 				a(href="#item_price_pop") 詳
+						//- 			.mem_block.item_st.right
+						//- 				p 已出貨
+						//- 				p 黑貓宅急便
+						//- 				a(href="#") 903831023894
+						//- 			.mem_block.item_invoice.center
+						//- 				a(href="#") HK94031514
 									
-									.mem_block.item_else.center
-										a.grey(href="#") 下載購買證明
-								.ord_addr
-									.ord_addr_b
-										p 收貨人姓名：施*宏
-										p 收貨人地址：新北市泰山區*********2號3樓
-									.ord_confirm
-										a.ord_confirm_btn(href="#") 確認退訂 
+						//- 			.mem_block.item_else.center
+						//- 				a.grey(href="#") 下載購買證明
+						//- 		.ord_addr
+						//- 			.ord_addr_b
+						//- 				p 收貨人姓名：施*宏
+						//- 				p 收貨人地址：新北市泰山區*********2號3樓
+						//- 			.ord_confirm
+						//- 				a.ord_confirm_btn(href="#") 確認退訂 
 
-						//- 付款失敗
-						.mem_order_info
-							.order_tab
-								.ord_block.ord_head.yellow.center 交易編號
-								.ord_block.ord_head.yellow.center 訂購時間
-								.ord_block.ord_head.yellow.center 實付金額
-								.ord_block.ord_head.yellow.center 付款時間
-								.ord_block.ord_head.yellow
-								.ord_block.ord_head.yellow
-								.ord_block.ord_head.yellow
+						//- //- 付款失敗
+						//- .mem_order_info
+						//- 	.order_tab
+						//- 		.ord_block.ord_head.yellow.center 交易編號
+						//- 		.ord_block.ord_head.yellow.center 訂購時間
+						//- 		.ord_block.ord_head.yellow.center 實付金額
+						//- 		.ord_block.ord_head.yellow.center 付款時間
+						//- 		.ord_block.ord_head.yellow
+						//- 		.ord_block.ord_head.yellow
+						//- 		.ord_block.ord_head.yellow
 
-								.ord_block.ord_no.center
-									| TX20230130123456
-								.ord_block.ord_time.center
-									| 01/30 11:32
-								.ord_block.ord_price.center
-									| $36,650
-								.ord_block.pay_time.center.col_center
-									p.bold 授權失敗
-									p (信用卡)
-								.ord_block.ord_cancel.center
+						//- 		.ord_block.ord_no.center
+						//- 			| TX20230130123456
+						//- 		.ord_block.ord_time.center
+						//- 			| 01/30 11:32
+						//- 		.ord_block.ord_price.center
+						//- 			| $36,650
+						//- 		.ord_block.pay_time.center.col_center
+						//- 			p.bold 授權失敗
+						//- 			p (信用卡)
+						//- 		.ord_block.ord_cancel.center
 
-								.ord_block.ord_detail
+						//- 		.ord_block.ord_detail
 									
-								.ord_block.ord_ask.center
-									span 我要
-									a.grey(href="mem_chk_ask.html") 提問
-							label.chk_open_lb(for="chk_open_detail_4")
-							input#chk_open_detail_4(type="checkbox", name="")
-							.mem_chk_tab
-								.mem_chk
-									.mem_block.item_head.center 商品名稱
-									.mem_block.item_head.center 訂單序號
-									.mem_block.item_head.center 挑品退訂
-									.mem_block.item_head.center 數量
-									.mem_block.item_head.center 結帳金額
-									.mem_block.item_head.center 配送狀態
-									.mem_block.item_head.center 發票
-									.mem_block.item_head.center 其它
+						//- 		.ord_block.ord_ask.center
+						//- 			span 我要
+						//- 			a.grey(href="mem_chk_ask.html") 提問
+						//- 	label.chk_open_lb(for="chk_open_detail_4")
+						//- 	input#chk_open_detail_4(type="checkbox", name="")
+						//- 	.mem_chk_tab
+						//- 		.mem_chk
+						//- 			.mem_block.item_head.center 商品名稱
+						//- 			.mem_block.item_head.center 訂單序號
+						//- 			.mem_block.item_head.center 挑品退訂
+						//- 			.mem_block.item_head.center 數量
+						//- 			.mem_block.item_head.center 結帳金額
+						//- 			.mem_block.item_head.center 配送狀態
+						//- 			.mem_block.item_head.center 發票
+						//- 			.mem_block.item_head.center 其它
 
-									.mem_block.item_img
-										img(src="../img/sample/item_019.jpg", alt="商品圖片")
-										.item_name
-											p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
-									.mem_block.item_no.center
-										| 20230130123456
-									.mem_block.item_return.center
+						//- 			.mem_block.item_img
+						//- 				img(src="../img/sample/item_019.jpg", alt="商品圖片")
+						//- 				.item_name
+						//- 					p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
+						//- 			.mem_block.item_no.center
+						//- 				| 20230130123456
+						//- 			.mem_block.item_return.center
 
-									.mem_block.item_count.center
-										| 1
-									.mem_block.item_price.center
-										| $999,999
-										a(href="#item_price_pop") 詳
-									.mem_block.item_st.right
+						//- 			.mem_block.item_count.center
+						//- 				| 1
+						//- 			.mem_block.item_price.center
+						//- 				| $999,999
+						//- 				a(href="#item_price_pop") 詳
+						//- 			.mem_block.item_st.right
 										
-									.mem_block.item_invoice.center
+						//- 			.mem_block.item_invoice.center
 									
-									.mem_block.item_else.center
+						//- 			.mem_block.item_else.center
 
 
-						.mem_order_info
-							.order_tab
-								.ord_block.ord_head.yellow.center 交易編號
-								.ord_block.ord_head.yellow.center 訂購時間
-								.ord_block.ord_head.yellow.center 實付金額
-								.ord_block.ord_head.yellow.center 付款時間
-								.ord_block.ord_head.yellow
-								.ord_block.ord_head.yellow
-								.ord_block.ord_head.yellow
+						//- .mem_order_info
+						//- 	.order_tab
+						//- 		.ord_block.ord_head.yellow.center 交易編號
+						//- 		.ord_block.ord_head.yellow.center 訂購時間
+						//- 		.ord_block.ord_head.yellow.center 實付金額
+						//- 		.ord_block.ord_head.yellow.center 付款時間
+						//- 		.ord_block.ord_head.yellow
+						//- 		.ord_block.ord_head.yellow
+						//- 		.ord_block.ord_head.yellow
 
-								.ord_block.ord_no.center
-									| TX20230130123456
-								.ord_block.ord_time.center
-									| 01/30 11:32
-								.ord_block.ord_price.center
-									| $36,650
-								.ord_block.pay_time.center.col_center
-									p 付款失敗
-									p (LINE Pay)
-								.ord_block.ord_cancel.center
+						//- 		.ord_block.ord_no.center
+						//- 			| TX20230130123456
+						//- 		.ord_block.ord_time.center
+						//- 			| 01/30 11:32
+						//- 		.ord_block.ord_price.center
+						//- 			| $36,650
+						//- 		.ord_block.pay_time.center.col_center
+						//- 			p 付款失敗
+						//- 			p (LINE Pay)
+						//- 		.ord_block.ord_cancel.center
 
-								.ord_block.ord_detail
+						//- 		.ord_block.ord_detail
 									
-								.ord_block.ord_ask.center
-									span 我要
-									a.grey(href="mem_chk_ask.html") 提問
-							label.chk_open_lb(for="chk_open_detail_5")
-							input#chk_open_detail_5(type="checkbox", name="")
-							.mem_chk_tab
-								.mem_chk.grey
-									.mem_block.item_head.grey.center 商品名稱
-									.mem_block.item_head.grey.center 訂單序號
-									.mem_block.item_head.grey.center 挑品退訂
-									.mem_block.item_head.grey.center 數量
-									.mem_block.item_head.grey.center 結帳金額
-									.mem_block.item_head.grey.center 配送狀態
-									.mem_block.item_head.grey.center 發票
-									.mem_block.item_head.grey.center 其它
+						//- 		.ord_block.ord_ask.center
+						//- 			span 我要
+						//- 			a.grey(href="mem_chk_ask.html") 提問
+						//- 	label.chk_open_lb(for="chk_open_detail_5")
+						//- 	input#chk_open_detail_5(type="checkbox", name="")
+						//- 	.mem_chk_tab
+						//- 		.mem_chk.grey
+						//- 			.mem_block.item_head.grey.center 商品名稱
+						//- 			.mem_block.item_head.grey.center 訂單序號
+						//- 			.mem_block.item_head.grey.center 挑品退訂
+						//- 			.mem_block.item_head.grey.center 數量
+						//- 			.mem_block.item_head.grey.center 結帳金額
+						//- 			.mem_block.item_head.grey.center 配送狀態
+						//- 			.mem_block.item_head.grey.center 發票
+						//- 			.mem_block.item_head.grey.center 其它
 
-									.mem_block.item_img
-										img(src="../img/sample/item_019.jpg", alt="商品圖片")
-										.item_name
-											p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
-									.mem_block.item_no.center
-										| 20230130123456
-									.mem_block.item_return.center
+						//- 			.mem_block.item_img
+						//- 				img(src="../img/sample/item_019.jpg", alt="商品圖片")
+						//- 				.item_name
+						//- 					p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
+						//- 			.mem_block.item_no.center
+						//- 				| 20230130123456
+						//- 			.mem_block.item_return.center
 
-									.mem_block.item_count.center
-										| 1
-									.mem_block.item_price.center
-										| $999,999
-										a(href="#item_price_pop") 詳
-									.mem_block.item_st.right
+						//- 			.mem_block.item_count.center
+						//- 				| 1
+						//- 			.mem_block.item_price.center
+						//- 				| $999,999
+						//- 				a(href="#item_price_pop") 詳
+						//- 			.mem_block.item_st.right
 										
-									.mem_block.item_invoice.center
+						//- 			.mem_block.item_invoice.center
 									
-									.mem_block.item_else.center
+						//- 			.mem_block.item_else.center
 
-									.mem_block.item_img
-										img(src="../img/sample/item_01.jpg", alt="商品圖片")
-										.item_name
-											p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
-									.mem_block.item_no.center
-										| 20230130123456
-									.mem_block.item_return.center
+						//- 			.mem_block.item_img
+						//- 				img(src="../img/sample/item_01.jpg", alt="商品圖片")
+						//- 				.item_name
+						//- 					p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
+						//- 			.mem_block.item_no.center
+						//- 				| 20230130123456
+						//- 			.mem_block.item_return.center
 
-									.mem_block.item_count.center
-										| 1
-									.mem_block.item_price.center
-										| $999,999
-										a(href="#item_price_pop") 詳
-									.mem_block.item_st.right
+						//- 			.mem_block.item_count.center
+						//- 				| 1
+						//- 			.mem_block.item_price.center
+						//- 				| $999,999
+						//- 				a(href="#item_price_pop") 詳
+						//- 			.mem_block.item_st.right
 										
-									.mem_block.item_invoice.center
+						//- 			.mem_block.item_invoice.center
 									
-									.mem_block.item_else.center
+						//- 			.mem_block.item_else.center
 
-						//- 已出貨
-						.mem_order_info
-							.order_tab
-								.ord_block.ord_head.complete.center 交易編號
-								.ord_block.ord_head.complete.center 訂購時間
-								.ord_block.ord_head.complete.center 實付金額
-								.ord_block.ord_head.complete.center 付款時間
-								.ord_block.ord_head.complete
-								.ord_block.ord_head.complete
-								.ord_block.ord_head.complete
+						//- //- 已出貨
+						//- .mem_order_info
+						//- 	.order_tab
+						//- 		.ord_block.ord_head.complete.center 交易編號
+						//- 		.ord_block.ord_head.complete.center 訂購時間
+						//- 		.ord_block.ord_head.complete.center 實付金額
+						//- 		.ord_block.ord_head.complete.center 付款時間
+						//- 		.ord_block.ord_head.complete
+						//- 		.ord_block.ord_head.complete
+						//- 		.ord_block.ord_head.complete
 
-								.ord_block.ord_no.center
-									| TX20230130123456
-								.ord_block.ord_time.center
-									| 01/30 11:32
-								.ord_block.ord_price.center
-									| $36,650
-								.ord_block.pay_time.center.col_center
-									p 付款完成
-									p 01/30 10:35
-								.ord_block.ord_cancel.center
+						//- 		.ord_block.ord_no.center
+						//- 			| TX20230130123456
+						//- 		.ord_block.ord_time.center
+						//- 			| 01/30 11:32
+						//- 		.ord_block.ord_price.center
+						//- 			| $36,650
+						//- 		.ord_block.pay_time.center.col_center
+						//- 			p 付款完成
+						//- 			p 01/30 10:35
+						//- 		.ord_block.ord_cancel.center
 
-								.ord_block.ord_detail
+						//- 		.ord_block.ord_detail
 								
-								.ord_block.ord_ask.center
-									span 我要
-									a.grey(href="mem_chk_ask.html") 提問
-							label.chk_open_lb(for="chk_open_detail_6")
-							input#chk_open_detail_6(type="checkbox", name="")
-							.mem_chk_tab
-								.mem_chk
-									.mem_block.item_head.complete.center 商品名稱
-									.mem_block.item_head.complete.center 訂單序號
-									.mem_block.item_head.complete.center 挑品退訂
-									.mem_block.item_head.complete.center 數量
-									.mem_block.item_head.complete.center 結帳金額
-									.mem_block.item_head.complete.center 配送狀態
-									.mem_block.item_head.complete.center 發票
-									.mem_block.item_head.complete.center 其它
+						//- 		.ord_block.ord_ask.center
+						//- 			span 我要
+						//- 			a.grey(href="mem_chk_ask.html") 提問
+						//- 	label.chk_open_lb(for="chk_open_detail_6")
+						//- 	input#chk_open_detail_6(type="checkbox", name="")
+						//- 	.mem_chk_tab
+						//- 		.mem_chk
+						//- 			.mem_block.item_head.complete.center 商品名稱
+						//- 			.mem_block.item_head.complete.center 訂單序號
+						//- 			.mem_block.item_head.complete.center 挑品退訂
+						//- 			.mem_block.item_head.complete.center 數量
+						//- 			.mem_block.item_head.complete.center 結帳金額
+						//- 			.mem_block.item_head.complete.center 配送狀態
+						//- 			.mem_block.item_head.complete.center 發票
+						//- 			.mem_block.item_head.complete.center 其它
 
-									.mem_block.item_img
-										img(src="../img/sample/item_019.jpg", alt="商品圖片")
-										.item_name
-											p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
-									.mem_block.item_no.center
-										| 20230130123456
-									.mem_block.item_return.center
-									.mem_block.item_count.center
-										| 99
-									.mem_block.item_price.center
-										| $999,999
-										a(href="#item_price_pop") 詳 
-									.mem_block.item_st.right
-										p 已出貨
-										p 便利帶 
-										a(href="#") 002792568786
-									.mem_block.item_invoice.center
-										| 發票作廢
-									.mem_block.item_else.center
-										a.grey(href="#") 下載購買證明
-										a(href="mem_chk_return_st.html") 退訂進度
+						//- 			.mem_block.item_img
+						//- 				img(src="../img/sample/item_019.jpg", alt="商品圖片")
+						//- 				.item_name
+						//- 					p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
+						//- 			.mem_block.item_no.center
+						//- 				| 20230130123456
+						//- 			.mem_block.item_return.center
+						//- 			.mem_block.item_count.center
+						//- 				| 99
+						//- 			.mem_block.item_price.center
+						//- 				| $999,999
+						//- 				a(href="#item_price_pop") 詳 
+						//- 			.mem_block.item_st.right
+						//- 				p 已出貨
+						//- 				p 便利帶 
+						//- 				a(href="#") 002792568786
+						//- 			.mem_block.item_invoice.center
+						//- 				| 發票作廢
+						//- 			.mem_block.item_else.center
+						//- 				a.grey(href="#") 下載購買證明
+						//- 				a(href="mem_chk_return_st.html") 退訂進度
 
 
-									.mem_block.item_img
-										img(src="../img/sample/item_01.jpg", alt="商品圖片")
-										.item_name
-											p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
-									.mem_block.item_no.center
-										| 20230130123456
-									.mem_block.item_return.center
-									.mem_block.item_count.center
-										| 99
-									.mem_block.item_price.center
-										| $999,999
-										a(href="#item_price_pop") 詳 
-									.mem_block.item_st.right
-										p 已出貨
-										p 便利帶 
-										a(href="#") 002792568786
-									.mem_block.item_invoice.center
-										| 發票作廢
-									.mem_block.item_else.center
-										a.grey(href="#") 下載購買證明
-										a(href="mem_chk_return_st.html") 退訂進度
-						//- 挑品退訂
-						.mem_order_info
-							.order_tab
-								.ord_block.ord_head.center 交易編號
-								.ord_block.ord_head.center 訂購時間
-								.ord_block.ord_head.center 實付金額
-								.ord_block.ord_head.center 付款時間
-								.ord_block.ord_head
-								.ord_block.ord_head
-								.ord_block.ord_head
+						//- 			.mem_block.item_img
+						//- 				img(src="../img/sample/item_01.jpg", alt="商品圖片")
+						//- 				.item_name
+						//- 					p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
+						//- 			.mem_block.item_no.center
+						//- 				| 20230130123456
+						//- 			.mem_block.item_return.center
+						//- 			.mem_block.item_count.center
+						//- 				| 99
+						//- 			.mem_block.item_price.center
+						//- 				| $999,999
+						//- 				a(href="#item_price_pop") 詳 
+						//- 			.mem_block.item_st.right
+						//- 				p 已出貨
+						//- 				p 便利帶 
+						//- 				a(href="#") 002792568786
+						//- 			.mem_block.item_invoice.center
+						//- 				| 發票作廢
+						//- 			.mem_block.item_else.center
+						//- 				a.grey(href="#") 下載購買證明
+						//- 				a(href="mem_chk_return_st.html") 退訂進度
+						//- //- 挑品退訂
+						//- .mem_order_info
+						//- 	.order_tab
+						//- 		.ord_block.ord_head.center 交易編號
+						//- 		.ord_block.ord_head.center 訂購時間
+						//- 		.ord_block.ord_head.center 實付金額
+						//- 		.ord_block.ord_head.center 付款時間
+						//- 		.ord_block.ord_head
+						//- 		.ord_block.ord_head
+						//- 		.ord_block.ord_head
 
-								.ord_block.ord_no.center
-									| TX20230130123456
-								.ord_block.ord_time.center
-									| 01/30 11:32
-								.ord_block.ord_price.center
-									| $36,650
-								.ord_block.pay_time.center.col_center
-									p 付款完成
-									p 01/30 10:35
-								.ord_block.ord_cancel.center
-									span 我要
-									a.grey(href="mem_chk_return.html") 全退訂
-								.ord_block.ord_detail
+						//- 		.ord_block.ord_no.center
+						//- 			| TX20230130123456
+						//- 		.ord_block.ord_time.center
+						//- 			| 01/30 11:32
+						//- 		.ord_block.ord_price.center
+						//- 			| $36,650
+						//- 		.ord_block.pay_time.center.col_center
+						//- 			p 付款完成
+						//- 			p 01/30 10:35
+						//- 		.ord_block.ord_cancel.center
+						//- 			span 我要
+						//- 			a.grey(href="mem_chk_return.html") 全退訂
+						//- 		.ord_block.ord_detail
 								
-								.ord_block.ord_ask.center
-									span 我要
-									a.grey(href="mem_chk_ask.html") 提問
-							label.chk_open_lb(for="chk_open_detail_7")
-							input#chk_open_detail_7(type="checkbox", name="")
-							.mem_chk_tab
-								.mem_chk
-									.mem_block.item_head.center 商品名稱
-									.mem_block.item_head.center 訂單序號
-									.mem_block.item_head.center 挑品退訂
-									.mem_block.item_head.center 數量
-									.mem_block.item_head.center 結帳金額
-									.mem_block.item_head.center 配送狀態
-									.mem_block.item_head.center 發票
-									.mem_block.item_head.center 其它
+						//- 		.ord_block.ord_ask.center
+						//- 			span 我要
+						//- 			a.grey(href="mem_chk_ask.html") 提問
+						//- 	label.chk_open_lb(for="chk_open_detail_7")
+						//- 	input#chk_open_detail_7(type="checkbox", name="")
+						//- 	.mem_chk_tab
+						//- 		.mem_chk
+						//- 			.mem_block.item_head.center 商品名稱
+						//- 			.mem_block.item_head.center 訂單序號
+						//- 			.mem_block.item_head.center 挑品退訂
+						//- 			.mem_block.item_head.center 數量
+						//- 			.mem_block.item_head.center 結帳金額
+						//- 			.mem_block.item_head.center 配送狀態
+						//- 			.mem_block.item_head.center 發票
+						//- 			.mem_block.item_head.center 其它
 
-									.mem_block.item_img
-										img(src="../img/sample/item_019.jpg", alt="商品圖片")
-										.item_name
-											p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
-									.mem_block.item_no.center
-										| 20230130123456
-									.mem_block.item_return.center
-										input#item_return_chk(type="checkbox", name="item_return_chk")
-									.mem_block.item_count.center
-										| 99
-									.mem_block.item_price.center
-										| $999,999
-										a(href="#item_price_pop") 詳
-									.mem_block.item_st.right
-										p 已出貨
-										p 便利帶 
-										a(href="#") 002792568786
-									.mem_block.item_invoice.center
-										a(href="#") AA12345678 
-									.mem_block.item_else.center
-										a.grey(href="#") 下載購買證明
+						//- 			.mem_block.item_img
+						//- 				img(src="../img/sample/item_019.jpg", alt="商品圖片")
+						//- 				.item_name
+						//- 					p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱 比擬紅
+						//- 			.mem_block.item_no.center
+						//- 				| 20230130123456
+						//- 			.mem_block.item_return.center
+						//- 				input#item_return_chk(type="checkbox", name="item_return_chk")
+						//- 			.mem_block.item_count.center
+						//- 				| 99
+						//- 			.mem_block.item_price.center
+						//- 				| $999,999
+						//- 				a(href="#item_price_pop") 詳
+						//- 			.mem_block.item_st.right
+						//- 				p 已出貨
+						//- 				p 便利帶 
+						//- 				a(href="#") 002792568786
+						//- 			.mem_block.item_invoice.center
+						//- 				a(href="#") AA12345678 
+						//- 			.mem_block.item_else.center
+						//- 				a.grey(href="#") 下載購買證明
 
 
 
-									.mem_block.item_img
-										img(src="../img/sample/item_01.jpg", alt="商品圖片")
-										.item_name
-											p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱
-											p.bold 規格：比擬紅
-									.mem_block.item_no.center
-										| 20230130123456
-									.mem_block.item_return.center
+						//- 			.mem_block.item_img
+						//- 				img(src="../img/sample/item_01.jpg", alt="商品圖片")
+						//- 				.item_name
+						//- 					p 北歐 HAUGAS T6869-70-29吋 完美比例4:6 胖胖箱
+						//- 					p.bold 規格：比擬紅
+						//- 			.mem_block.item_no.center
+						//- 				| 20230130123456
+						//- 			.mem_block.item_return.center
 
-									.mem_block.item_count.center
-										| 99
-									.mem_block.item_price.center
-										| $999,999
-										a(href="#item_price_pop") 詳
-									.mem_block.item_st.right
-										p 已出貨
-										p 便利帶 
-										a(href="#") 002792568786
-									.mem_block.item_invoice.center
-										p 發票作廢
-									.mem_block.item_else.center
-										a.grey(href="#") 下載購買證明
-										a(href="mem_chk_return_st.html") 退訂進度
+						//- 			.mem_block.item_count.center
+						//- 				| 99
+						//- 			.mem_block.item_price.center
+						//- 				| $999,999
+						//- 				a(href="#item_price_pop") 詳
+						//- 			.mem_block.item_st.right
+						//- 				p 已出貨
+						//- 				p 便利帶 
+						//- 				a(href="#") 002792568786
+						//- 			.mem_block.item_invoice.center
+						//- 				p 發票作廢
+						//- 			.mem_block.item_else.center
+						//- 				a.grey(href="#") 下載購買證明
+						//- 				a(href="mem_chk_return_st.html") 退訂進度
 
-								.ord_addr
-									.ord_addr_b
-										p 收貨人姓名：施*宏
-										p 收貨人地址：新北市泰山區*********2號3樓
-									.ord_confirm
-										a.ord_confirm_btn(href="#") 確認退訂 
+						//- 		.ord_addr
+						//- 			.ord_addr_b
+						//- 				p 收貨人姓名：施*宏
+						//- 				p 收貨人地址：新北市泰山區*********2號3樓
+						//- 			.ord_confirm
+						//- 				a.ord_confirm_btn(href="#") 確認退訂 
 					//- include src/_pagenav.pug
 		include src/_foot.pug
 		script(src='js/3rd-party/jquery-3.6.0.min.js')
 		script(src='js/3rd-party/swiper-bundle.min.js')
 		script(src='js/common.js')
+		script.
+			$(".chk_open_lb").click(function() {
+				$(this).toggleClass('load');
+			});
 		.lightbox-target#item_price_pop
 			.content
 				.con_m
