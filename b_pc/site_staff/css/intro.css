@@ -1392,7 +1392,7 @@ h2 {
     padding: 10px;
   }
   .cont .table_blue,
-.cont .ai_table {
+  .cont .ai_table {
     width: 100%;
   }
   .cont .cont_l {
@@ -1402,6 +1402,73 @@ h2 {
     width: 50%;
   }
 }
+.lottery_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 100px 500px 200px;
+  grid-template-columns: 100px 100px 500px 200px;
+  -ms-grid-rows: 50px 50px ()[auto];
+  grid-template-rows: 50px 50px repeat(auto);
+  margin: 0 0 50px;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.lottery_grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.lottery_grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.lottery_grid > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.lottery_grid > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+.lottery_grid > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+.lottery_grid > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+.lottery_grid > *:nth-child(7) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+.lottery_grid > *:nth-child(8) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+}
+
+.lottery_head {
+  text-align: center;
+  color: white;
+  background-color: #f5281e;
+}
+
+.lottery_td {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 5px;
+  line-height: 1.6;
+  word-break: break-all;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
 @media (max-width: 1170px) {
   .site_search {
     margin: 0 0 0 5%;
@@ -1443,7 +1510,7 @@ h2 {
 }
 @media (max-width: 810px) {
   .cont.black .container, .cont.straight .container,
-.cont .table_blue.AI {
+  .cont .table_blue.AI {
     font-size: 1rem;
   }
   .cont .benefit {
@@ -1565,7 +1632,7 @@ h2 {
     width: 300px;
   }
   .cont .rate p,
-.cont .rate .btn-latest {
+  .cont .rate .btn-latest {
     font-size: 1rem;
   }
   .form {

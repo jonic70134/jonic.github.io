@@ -882,6 +882,32 @@ h2 {
     }
 }
 
+.lottery_grid {
+    display: grid;
+    grid-template-columns: 100px 100px 500px 200px;
+    grid-template-rows: 50px 50px repeat(auto);
+    margin: 0 0 50px;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.lottery_head {
+    text-align: center;
+    color: white;
+    background-color: $primary-color;
+}
+
+.lottery_td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    line-height: 1.6;
+    word-break: break-all;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
 @media (max-width: 1170px) {
     .site_search {
         margin: 0 0 0 5%;

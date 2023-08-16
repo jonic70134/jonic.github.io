@@ -1496,7 +1496,7 @@ h2 {
     padding: 10px;
   }
   .cont .table_blue,
-.cont .ai_table {
+  .cont .ai_table {
     width: 100%;
   }
   .cont .cont_l {
@@ -1556,7 +1556,7 @@ h2 {
 }
 @media (max-width: 810px) {
   .cont.black .container, .cont.straight .container,
-.cont .table_blue.AI {
+  .cont .table_blue.AI {
     font-size: 1rem;
   }
   .cont .benefit {
@@ -1693,7 +1693,7 @@ h2 {
     width: 300px;
   }
   .cont .rate p,
-.cont .rate .btn-latest {
+  .cont .rate .btn-latest {
     font-size: 1rem;
   }
   .form {
