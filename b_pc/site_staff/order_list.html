@@ -78,95 +78,25 @@
                               <div class="cart_cupn">
                                 <label class="cart_cupn_lb" for="coupon1"> 
                                   <input id="coupon1" type="radio" name="coupon">
-                                  <p>活動折抵</p>
+                                  <p>遠時折</p>
                                 </label>
                                 <div class="price">$50</div>
                               </div>
                               <div class="cart_cupn">
                                 <label class="cart_cupn_lb" for="coupon2"> 
                                   <input id="coupon2" type="radio" name="coupon">
-                                  <p>個人對品折價券 <small>(當日有效)</small></p>
+                                  <p>使用折價券</p><a class="cart_cupn_link" href="#cart_cupn">選擇折價券 </a>
                                 </label>
-                                <div class="price">$30</div>
+                                <div class="cupn_price price">$30</div>
                               </div>
                               <div class="cart_cupn">
                                 <label class="cart_cupn_lb" for="coupon3"> 
                                   <input id="coupon3" type="radio" name="coupon">
-                                  <p>使用折價券折抵 </p>
-                                  <select class="cart_select">
-                                    <option value="1">請選擇  </option>
-                                  </select>
+                                  <p>輸入折扣碼 </p>
+                                  <input class="cart_cupn_text" type="text" name="">
+                                  <input class="code_btn_submit" type="button" value="使用" disabled="disabled"><a class="code_btn_cancel" href="#">取消 </a>
                                 </label>
-                                <div class="price">$1000</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="cart_last"><a class="btn-remove" href="#">刪除</a></div>
-                        </div>
-                        <div class="cart_item">
-                          <div class="order_chk_all">
-                            <input class="order_chk" id="order_chk2" type="checkbox" checked="checked">
-                            <label class="order_chk_label" for="order_chk2"></label>
-                          </div>
-                          <div class="cart_img"><img src="../img/sample/05_18_182.jpg" alt="商品圖片"></div>
-                          <div class="cart_info">
-                            <div class="cart_name"><a class="cart_name_link" href="item.html">韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g</a>
-                              <div class="cart_size">規格：85型 4K HDR OLED</div>
-                            </div>
-                            <div class="cart_per">特價期間07/10~07/13止</div>
-                            <div class="cart_price_b">
-                              <div class="cart_price">
-                                <div class="ori_t">原價</div>
-                                <div class="ori_price">$9,999</div>
-                              </div>
-                              <div class="cart_price">
-                                <div class="ori_t">網路價</div>
-                                <div class="ori_price">$9,900</div>
-                              </div>
-                              <div class="cart_price">
-                                <div class="dis_t">折扣後價格</div>
-                                <div class="dis_price">$9,800</div>
-                              </div>
-                            </div>
-                            <div class="cart_quantity">數量：1</div>
-                            <div class="cart_gift">
-                              <ul class="cart_gift_item">
-                                <li>
-                                  <p class="red">贈品</p>
-                                  <p class="cart_gift_name">3M百利爐具專用菜瓜布x1</p>
-                                </li>
-                                <li>
-                                  <p class="red">贈品</p>
-                                  <p class="cart_gift_name">室內芳香劑x1</p>
-                                </li>
-                              </ul>
-                            </div>
-                            <hr>
-                            <div class="cart_cupn_t">以下折扣優惠擇一使用：</div>
-                            <div class="cart_cupn_b">
-                              <div class="cart_cupn">
-                                <label class="cart_cupn_lb" for="coupon1"> 
-                                  <input id="coupon1" type="radio" name="coupon">
-                                  <p>活動折抵</p>
-                                </label>
-                                <div class="price">$50</div>
-                              </div>
-                              <div class="cart_cupn">
-                                <label class="cart_cupn_lb" for="coupon2"> 
-                                  <input id="coupon2" type="radio" name="coupon">
-                                  <p>個人對品折價券 <small>(當日有效)</small></p>
-                                </label>
-                                <div class="price">$30</div>
-                              </div>
-                              <div class="cart_cupn">
-                                <label class="cart_cupn_lb" for="coupon3"> 
-                                  <input id="coupon3" type="radio" name="coupon">
-                                  <p>使用折價券折抵 </p>
-                                  <select class="cart_select">
-                                    <option value="1">請選擇  </option>
-                                  </select>
-                                </label>
-                                <div class="price">$1000</div>
+                                <div class="code_price price">$1000</div>
                               </div>
                             </div>
                           </div>
@@ -244,6 +174,39 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="lightbox-target" id="cart_cupn">
+      <div class="content">
+        <div class="cart_cupn_block">
+          <div class="cart_cupn_line">
+            <div class="cart_cupn_chose">
+              <input class="cart_chose_input" id="cart_cupn_1" type="radio" name="cart_cupn" checked>
+              <label class="cart_chose_lb icon icon_check" for="cart_cupn_1"> 
+                <p class="cupn_name">折價券 <span class="red">95</span> 折，滿1元可以折抵</p>
+                <p class="cupn_date">2023/06/16 前有效</p>
+              </label>
+            </div>
+          </div>
+          <div class="cart_cupn_line">
+            <div class="cart_cupn_chose">
+              <input class="cart_chose_input" id="cart_cupn_2" type="radio" name="cart_cupn">
+              <label class="cart_chose_lb icon icon_check" for="cart_cupn_2"> 
+                <p class="cupn_name">折價券 <span class="red">100</span> 元，滿1元可以折抵</p>
+                <p class="cupn_date">2023/06/16 前有效</p>
+              </label>
+            </div>
+          </div>
+          <div class="cart_cupn_line">
+            <div class="cart_cupn_chose">
+              <input class="cart_chose_input" id="cart_cupn_3" type="radio" name="cart_cupn">
+              <label class="cart_chose_lb icon icon_check" for="cart_cupn_3"> 
+                <p class="cupn_name">折價券 <span class="red">150</span> 元，滿1元可以折抵</p>
+                <p class="cupn_date">2023/06/16 前有效</p>
+              </label>
+            </div>
+          </div><a class="box_btn" href="#">確定</a>
         </div>
       </div>
     </div>

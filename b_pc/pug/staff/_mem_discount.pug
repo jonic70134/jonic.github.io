@@ -11,38 +11,60 @@ html
 					.mem_chk_t
 						a.back(href="mem_index.html")
 							i.icon.icon_swiper_prev
-							p.chk_order 我的折價券
+							p.chk_order 折價券
+						a.dis_take(href="#dis_take") 領取折價券 
 					.mem_dis_top
-						.mem_dis_b
-							label.mem_dis_label(for="mem_dis_label1")
-								p 折價券狀態：
-								input#mem_dis_label1(type="radio", name="mem_dis_st" checked) 
-								p 已生效
-							label.mem_dis_label(for="mem_dis_label2")
-								input#mem_dis_label2(type="radio", name="mem_dis_st")
-								p 待生效
-							label.mem_dis_label(for="mem_dis_label3")
-								input#mem_dis_label3(type="radio", name="mem_dis_st")
-								p 已到期
-							label.mem_dis_label(for="mem_dis_label4")
-								input#mem_dis_label4(type="radio", name="mem_dis_st")
-								p 已使用
-
+						//- .mem_dis_b
+						//- 	label.mem_dis_label(for="mem_dis_label1")
+						//- 		p 折價券狀態：
+						//- 		input#mem_dis_label1(type="radio", name="mem_dis_st" checked) 
+						//- 		p 已生效
+						//- 	label.mem_dis_label(for="mem_dis_label2")
+						//- 		input#mem_dis_label2(type="radio", name="mem_dis_st")
+						//- 		p 待生效
+						//- 	label.mem_dis_label(for="mem_dis_label3")
+						//- 		input#mem_dis_label3(type="radio", name="mem_dis_st")
+						//- 		p 已到期
+						//- 	label.mem_dis_label(for="mem_dis_label4")
+						//- 		input#mem_dis_label4(type="radio", name="mem_dis_st")
+						//- 		p 已使用
+						.sort_block
+							.sort
+								label(for="sort1")
+									input(type="radio", name="sort" ,value="1", id="sort1" ,checked="checked")
+									p 已生效 (#[span.red 10])
+								label(for="sort2")
+									input(type="radio", name="sort" ,value="2", id="sort2")
+									p 待生效 (#[span.red 0])
+								label(for="sort3")
+									input(type="radio", name="sort" ,value="3", id="sort3")
+									span.checkmark
+									p 已到期 (#[span.red 99])
+								label(for="sort4")
+									input(type="radio", name="sort" ,value="4", id="sort4")
+									span.checkmark
+									p 已使用 (#[span.red 1])
 					.mem_dis_con
 						.mem_dis_td.head.center 面額
-						.mem_dis_td.head 折價券說明
+						.mem_dis_td.head 活動說明/適用館別
 						.mem_dis_td.head.center 生效日
 						.mem_dis_td.head.center 到期日
 						- var j = 5;
 						- for (var i = 0; i < j; i++)
 							.mem_dis_td.value.center
-								p.red 88折
+								//- p.mem_dis_num.red 88折
+								//- p 消費金額滿 #[span.red $100,000] 可使用
+								.ticket
+									.stub
+										.ticket_top
+											|85折
+									.check
+										| 消費金額滿 #[span.red $100] 可使用
 							.mem_dis_td.des
 								.des_con 
-									p 消費金額滿 #[span.red $100,000] 可使用
-									p 折價券編號：39385737612
+									p 幸通折價券,會員限定,對應商品泛指流行美妝/居家日用/3C家電等萬件商品皆可適用,遠用商品請詳見商品頁中的「查詢可使用的折價券」
 									input.open_input(id='chk'+ i)(type="checkbox", name="open_cate")
-									label.open_cate_lb.blue(for="chk"+i) (適用館別
+									label.open_cate_lb.blue(for="chk"+i) (詳細內容)
 									
 									.cate_list
 										.cate_list_head 適用館別：
@@ -77,13 +99,17 @@ html
 						- var j = 10;
 						- for (var i = 5; i < j; i++)
 							.mem_dis_td.value.center
-								p.red $10,000
+								.ticket
+									.stub
+										.ticket_top
+											p $999,999
+									.check
+										| 消費金額滿 #[span.red $1] 可使用
 							.mem_dis_td.des
 								.des_con 
-									p 消費金額滿 #[span.red $1] 可使用
-									p 折價券編號：39385737612
+									p 幸通折價券,會員限定,對應商品泛指流行美妝/居家日用/3C家電等萬件商品皆可適用
 									input.open_input(id='chk'+ i)(type="checkbox", name="open_cate")
-									label.open_cate_lb.blue(for="chk"+i) (適用館別
+									label.open_cate_lb.blue(for="chk"+i) (詳細內容)
 									
 									.cate_list
 										.cate_list_head 適用館別：
@@ -115,6 +141,13 @@ html
 							.mem_dis_td.date.center 2023/11/11
 							.mem_dis_td.end.center 2023/12/11
 					include ../src/_pagenav.pug
+		.lightbox-target#dis_take
+			.content
+				.con_m
+					.con_m_t 恭喜您！成功獲得折價券
+					
+				.con_btn
+					a.box_btn_send(href="#") 關閉
 		include ../src/_foot.pug
 		script(src='js/3rd-party/jquery-3.6.0.min.js')
 		script(src='js/3rd-party/swiper-bundle.min.js')

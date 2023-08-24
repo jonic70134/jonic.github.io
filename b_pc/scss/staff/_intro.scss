@@ -748,7 +748,7 @@ h2 {
         .content,
         img {
             max-height: 100%;
-            max-width: 1000px;
+            max-width: 100%;
         }
     }
 
@@ -884,7 +884,7 @@ h2 {
 
 .lottery_grid {
     display: grid;
-    grid-template-columns: 100px 100px 500px 200px;
+    grid-template-columns: 100px 100px 1fr 200px;
     grid-template-rows: 50px 50px repeat(auto);
     margin: 0 0 50px;
     border-right: 1px solid #ccc;
@@ -1039,6 +1039,10 @@ h2 {
                 margin: 0 0 0 5px;
             }
         }
+    }
+
+    .lottery_grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 

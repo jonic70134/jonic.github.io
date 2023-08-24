@@ -1281,7 +1281,7 @@ h2 {
 .lightbox-target:target .content,
 .lightbox-target:target img {
   max-height: 100%;
-  max-width: 1000px;
+  max-width: 100%;
 }
 .lightbox-target .content {
   position: absolute;
@@ -1405,8 +1405,8 @@ h2 {
 .lottery_grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100px 100px 500px 200px;
-  grid-template-columns: 100px 100px 500px 200px;
+  -ms-grid-columns: 100px 100px 1fr 200px;
+  grid-template-columns: 100px 100px 1fr 200px;
   -ms-grid-rows: 50px 50px ()[auto];
   grid-template-rows: 50px 50px repeat(auto);
   margin: 0 0 50px;
@@ -1582,6 +1582,10 @@ h2 {
   }
   .head_link a::after, .head_link a:last-child::after {
     margin: 0 0 0 5px;
+  }
+  .lottery_grid {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 @media (max-width: 600px) {

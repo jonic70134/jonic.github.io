@@ -55,29 +55,29 @@ html
 										.cart_cupn
 											label.cart_cupn_lb(for="coupon1") 
 												input#coupon1(type="radio", name="coupon")
-												p 活動折抵
+												p 遠時折
 											.price $50
 										.cart_cupn
 											label.cart_cupn_lb(for="coupon2") 
 												input#coupon2(type="radio", name="coupon")
-												p 個人對品折價券 
-													small (當日有效)
+												p 使用折價券
+												a.cart_cupn_link(href="#cart_cupn") 選擇折價券 
 											
-											.price $30
+											.cupn_price.price $30
 										.cart_cupn
 											label.cart_cupn_lb(for="coupon3") 
 												input#coupon3(type="radio", name="coupon")
-												p 使用折價券折抵 
-												select.cart_select
-													option(value="1") 請選擇  
-											.price $1000
+												p 輸入折扣碼 
+												input.cart_cupn_text(type="text", name="")
+												input.code_btn_submit(type="button", value="使用" disabled="disabled")
+												a.code_btn_cancel(href="#") 取消 
+											.code_price.price $1000
 											
 
 
 								.cart_last
 									a(href="#").btn-remove 刪除
 						+cartimg(1,'05_10_182')
-						+cartimg(2,'05_18_182')
 						.cart_item.is-lack 
 							.order_chk_all
 								input(id='order_chk5').order_chk(type="checkbox", checked="checked")
@@ -147,6 +147,29 @@ html
 									a(href="#").btn-remove 
 										img(src="img/icon_trash.svg") 
 										span 刪除
+		.lightbox-target#cart_cupn
+			.content
+				.cart_cupn_block
+					.cart_cupn_line
+						.cart_cupn_chose
+							input.cart_chose_input#cart_cupn_1(type="radio", name="cart_cupn" checked) 
+							label.cart_chose_lb.icon.icon_check(for="cart_cupn_1") 
+								p.cupn_name 折價券 #[span.red 95] 折，滿1元可以折抵
+								p.cupn_date 2023/06/16 前有效
+					.cart_cupn_line
+						.cart_cupn_chose
+							input.cart_chose_input#cart_cupn_2(type="radio", name="cart_cupn") 
+							label.cart_chose_lb.icon.icon_check(for="cart_cupn_2") 
+								p.cupn_name 折價券 #[span.red 100] 元，滿1元可以折抵
+								p.cupn_date 2023/06/16 前有效
+					.cart_cupn_line
+						.cart_cupn_chose
+							input.cart_chose_input#cart_cupn_3(type="radio", name="cart_cupn") 
+							label.cart_chose_lb.icon.icon_check(for="cart_cupn_3") 
+								p.cupn_name 折價券 #[span.red 150] 元，滿1元可以折抵
+								p.cupn_date 2023/06/16 前有效
+
+					a.box_btn(href="#") 確定
 		include ../src/_foot.pug
 		script(src='js/3rd-party/jquery-3.6.0.min.js')
 		script(src='js/3rd-party/swiper-bundle.min.js')
