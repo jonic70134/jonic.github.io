@@ -63,9 +63,7 @@
                             </div>
                             <div class="cart_cupn_b">
                               <div class="cart_cupn">
-                                <label class="cart_cupn_lb" for="coupon1"> 
-                                  <p>活動折抵</p>
-                                </label>
+                                <p>活動折抵</p>
                                 <div class="price">$50</div>
                               </div>
                             </div>
@@ -78,39 +76,34 @@
                   <div class="price">$999,900</div>
                 </div>
               </div>
-              <div class="cart_sub_b align_l">
+              <div class="cart_sub_b"><a class="pt_btn happy_btn" href="#happygo">使用 Happy Go 點數</a></div>
+              <div class="cart_sub_b"><a class="pt_btn fet_btn" href="#fetcoin">使用遠傳幣</a></div>
+              <div class="cart_sub_b happygo">
                 <div class="cart_b_t_l">
-                  <input class="order_chk" type="checkbox" id="coupon1" checked>
-                  <label class="order_chk_label" for="coupon1"></label>
-                  <p>遠傳幣 <span>10000</span>，使用</p>
-                  <input class="coin_input" type="text" name="" value="0">
-                  <p>遠傳幣折抵<small>(遠傳幣1點折抵1元,最高可使用1000遠傳幣)</small></p>
+                  <div class="quantity">
+                    <p>使用快樂購物卡點數折抵消費</p>
+                    <button class="quantity-decrease" data-index="0"><i class="icon icon_minus"></i></button>
+                    <input class="quantity-input" type="text" value="0" inputmode="numberic" data-index="0">
+                    <button class="quantity-increase" data-index="0"><i class="icon icon_plus"></i></button>
+                  </div>
+                  <p><small>目前快樂購卡點數40點折10元，你剩餘的點數可折抵$190元</small></p>
                 </div>
-                <div class="cart_b_t_l">
-                  <div class="price">$0</div>
-                </div>
-              </div>
-              <div class="cart_sub_b align_l">
-                <div class="cart_b_t_l">
-                  <input class="order_chk" type="checkbox" id="coupon2" checked>
-                  <label class="order_chk_label" for="coupon2"></label>
-                  <P>HappyGo點數 <span>10000</span> 點，使用</P>
-                  <input class="coin_input" type="text" name="" value="0">
-                  <p>元折抵<small>(40點折抵10元，您的點數可折抵25元)</small></p>
-                </div>
-                <div class="cart_b_t_l">
-                  <div class="price">$0</div>
+                <div class="cart_b_t_l cart_cupn">
+                  <div class="price quantity_price" id="happy_price">$0</div>
                 </div>
               </div>
-              <div class="cart_sub_b align_l">
+              <div class="cart_sub_b fetcoin">
                 <div class="cart_b_t_l">
-                  <input class="order_chk" type="checkbox" id="coupon3">
-                  <label class="order_chk_label" for="coupon3"></label>
-                  <p>使用折扣碼折抵</p>
-                  <input class="code_input" type="text" name="" placeholder="請輸入折扣碼"><a class="code_btn" href="#">驗證 </a>
+                  <div class="quantity">
+                    <p>使用遠傳幣折抵消費</p>
+                    <button class="quantity-decrease" data-index="1"><i class="icon icon_minus"></i></button>
+                    <input class="quantity-input" type="text" value="0" inputmode="numberic" data-index="1">
+                    <button class="quantity-increase" data-index="1"><i class="icon icon_plus"></i></button>
+                  </div>
+                  <p><small>現有69遠傳幣，1遠傳幣折抵1元，最高使用195遠傳幣</small></p>
                 </div>
-                <div class="cart_b_t_l">
-                  <div class="price">$0</div>
+                <div class="cart_b_t_l cart_cupn">
+                  <div class="price quantity_price" id="fet_price">$0</div>
                 </div>
               </div>
               <div class="cart_sub_b">
@@ -265,6 +258,48 @@
             <div class="line chkout"><a class="btn-confirm" href="order_confirm_third.html">確認付款</a></div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="lightbox-target" id="happygo">
+      <div class="content">
+        <div class="con_t">HappyGo卡友登入</div>
+        <form class="login_body" action="#" onsubmit="validateCode()">
+          <div class="login_line">
+            <input type="text" placeholder="身分證末4碼" autofocus required>
+            <p class="red">請輸入正確格式</p>
+          </div>
+          <div class="login_line">
+            <input type="text" placeholder="手機號碼" value="09" required>
+            <p class="red">請輸入正確格式</p>
+          </div>
+          <div class="login_line">
+            <div class="space_btn">
+              <input class="inputCode" id="inputCode" type="text" placeholder="輸入驗證碼" inputmode="numeric" required>
+              <div class="showcode" id="checkCode"></div><i class="icon icon_refresh"></i>
+            </div>
+            <p class="red">請輸入正確的驗證碼</p>
+          </div>
+          <input class="btn_red" type="submit" value="確定">
+        </form><a class="lightbox-close" href="#"></a>
+      </div>
+    </div>
+    <div class="lightbox-target" id="fetcoin">
+      <div class="content">
+        <div class="con_t">我的遠傳幣</div>
+        <form class="login_body" action="#" onsubmit="validateCode()">
+          <div class="login_line">
+            <input type="text" placeholder="手機號碼" value="09" required>
+            <p class="red">請輸入正確格式</p>
+          </div>
+          <div class="login_line">
+            <div class="space_btn">
+              <input class="inputCode" id="inputCode" type="text" placeholder="輸入驗證碼" inputmode="numeric" required>
+              <div class="showcode" id="checkCode"></div><i class="icon icon_refresh"></i>
+            </div>
+            <p class="red">請輸入正確的驗證碼</p>
+          </div>
+          <input class="btn_red" type="submit" value="確定">
+        </form><a class="lightbox-close" href="#"></a>
       </div>
     </div>
     <div class="lightbox-target" id="perbox">

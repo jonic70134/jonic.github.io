@@ -3,8 +3,7 @@ $("#order_chk_all").click(function () {
     $('input:checkbox').not(this).prop('checked', this.checked);
 });
 
-// chk
-
+// 付款方式
 $("input[name$='payway']").click(function () {
     var paydiv = $(this).val();
     $(".paydiv").hide();
@@ -47,4 +46,97 @@ $(".code_btn_cancel").click(function (e) {
     $(this).hide();
     $('.cart_cupn_text').val();
 
+});
+
+
+// 驗證碼
+function generateRandomCode(length) {
+    let code = '';
+    const characters = '0123456789';
+    for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * characters.length);
+        code += characters.charAt(randomIndex);
+    }
+    return code;
+}
+
+function refreshCaptcha(captchaContainer) {
+    const newCode = generateRandomCode(6);
+    captchaContainer.text(newCode);
+    captchaContainer.siblings('.inputCode').val('');
+    captchaContainer.parents().find('.space_btn~.red').empty();
+}
+
+function validateCaptcha(input, captchaCode) {
+    return input === captchaCode;
+}
+
+$(document).ready(function () {
+    $('.icon_refresh').click(function () {
+        const captchaContainer = $(this).siblings('.showcode');
+        refreshCaptcha(captchaContainer);
+    });
+
+    $('.inputCode').on('input', function () {
+        const input = $(this).val();
+        const captchaCode = $(this).siblings('.showcode').text();
+        const errorMessage = $(this).parents().find('.space_btn~.red');
+
+        if (validateCaptcha(input, captchaCode)) {
+            errorMessage.empty();
+        } else {
+            errorMessage.text('驗證碼錯誤');
+        }
+    });
+
+    // Initialize captcha containers
+    $('.showcode').each(function () {
+        refreshCaptcha($(this));
+    });
+});
+
+$("#happygo .btn_red").click(function () {
+    $(".happygo").css("display", "flex");
+    $(".happy_btn").hide();
+});
+
+$("#fetcoin .btn_red").click(function () {
+    $(".fetcoin").css("display", "flex");
+    $(".fet_btn").hide();
+});
+
+
+// 幣或點數的加減
+
+var valueElements = [
+    { input: $(".happygo .quantity-input"), output: $("#happy_price"), value: 0 },
+    { input: $(".fetcoin .quantity-input"), output: $("#fet_price"), value: 0 }
+];
+
+// 更新元素的值和顯示
+function updateValue(element) {
+    element.output.text(element.value);
+}
+
+// 輸入框輸入事件
+$(".quantity-input").on("input", function () {
+    var index = $(this).data("index");
+    var newValue = parseInt($(this).val()) || 0; // 確保輸入是數字，若不是則使用預設值 0
+    valueElements[index].value = newValue;
+    updateValue(valueElements[index]);
+});
+
+// 增加和減少按鈕點擊事件
+$(".quantity-increase").on("click", function () {
+    var index = $(this).data("index");
+    valueElements[index].value++;
+    updateValue(valueElements[index]);
+    valueElements[index].input.val(valueElements[index].value);
+});
+
+$(".quantity-decrease").on("click", function () {
+    var index = $(this).data("index");
+    valueElements[index].value--;
+    updateValue(valueElements[index]);
+    valueElements[index].input.val(valueElements[index].value);
 });

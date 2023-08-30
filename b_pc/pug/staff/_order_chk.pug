@@ -42,8 +42,8 @@ html
 												| 室內芳香劑x1
 									.cart_cupn_b
 										.cart_cupn
-											label.cart_cupn_lb(for="coupon1") 
-												p 活動折抵
+											//- label.cart_cupn_lb(for="coupon1") 
+											p 活動折抵
 											.price $50
 						+cartimg(1,'05_10_182')
 						.cart_block.orderprice
@@ -51,35 +51,57 @@ html
 								.cart_b_t  商品總金額：
 								.cart_b_t
 									.price $999,900
-							.cart_sub_b.align_l
+							.cart_sub_b
+								a.pt_btn.happy_btn(href="#happygo") 使用 Happy Go 點數
+							.cart_sub_b
+								a.pt_btn.fet_btn(href="#fetcoin") 使用遠傳幣
+							
+							.cart_sub_b.happygo
 								.cart_b_t_l
-									input.order_chk(type="checkbox", id="coupon1" checked) 
-									label.order_chk_label(for="coupon1")
-									p 遠傳幣 #[span 10000]，使用
-									input.coin_input(type="text", name="",value="0")
-									p 遠傳幣折抵
-										small (遠傳幣1點折抵1元,最高可使用1000遠傳幣)
+									.quantity
+										p 使用快樂購物卡點數折抵消費
+										button.quantity-decrease(data-index="0")
+											i.icon.icon_minus
+										input.quantity-input(type='text',value="0", inputmode="numberic",data-index="0")
+										button.quantity-increase(data-index="0")
+											i.icon.icon_plus
+									p
+										small 目前快樂購卡點數40點折10元，你剩餘的點數可折抵$190元
+								.cart_b_t_l.cart_cupn
+									#happy_price.price.quantity_price $0
+
+							.cart_sub_b.fetcoin
 								.cart_b_t_l
-									.price $0
-							.cart_sub_b.align_l
-								.cart_b_t_l
-									input.order_chk(type="checkbox", id="coupon2" checked) 
-									label.order_chk_label(for="coupon2")
-									P HappyGo點數 #[span 10000] 點，使用
-									input.coin_input(type="text", name="",value="0")
-									p 元折抵
-										small (40點折抵10元，您的點數可折抵25元)
-								.cart_b_t_l
-									.price $0
-							.cart_sub_b.align_l
-								.cart_b_t_l
-									input.order_chk(type="checkbox", id="coupon3") 
-									label.order_chk_label(for="coupon3")
-									p 使用折扣碼折抵
-									input.code_input(type="text", name="",placeholder="請輸入折扣碼")
-									a.code_btn(href="#") 驗證 
-								.cart_b_t_l
-									.price $0
+									.quantity
+										p 使用遠傳幣折抵消費
+										button.quantity-decrease(data-index="1")
+											i.icon.icon_minus
+										input.quantity-input(type='text',value="0", inputmode="numberic",data-index="1")
+										button.quantity-increase(data-index="1")
+											i.icon.icon_plus
+									p
+										small 現有69遠傳幣，1遠傳幣折抵1元，最高使用195遠傳幣
+								.cart_b_t_l.cart_cupn
+									#fet_price.price.quantity_price $0
+							//- .cart_sub_b.align_l
+							//- 	.cart_b_t_l
+							//- 		input.order_chk(type="checkbox", id="coupon2" checked) 
+							//- 		label.order_chk_label(for="coupon2")
+							//- 		P HappyGo點數 #[span 10000] 點，使用
+							//- 		input.coin_input(type="text", name="",value="0")
+							//- 		p 元折抵
+							//- 			small (40點折抵10元，您的點數可折抵25元)
+							//- 	.cart_b_t_l
+							//- 		.price $0
+							//- .cart_sub_b.align_l
+							//- 	.cart_b_t_l
+							//- 		input.order_chk(type="checkbox", id="coupon3") 
+							//- 		label.order_chk_label(for="coupon3")
+							//- 		p 使用折扣碼折抵
+							//- 		input.code_input(type="text", name="",placeholder="請輸入折扣碼")
+							//- 		a.code_btn(href="#") 驗證 
+							//- 	.cart_b_t_l
+							//- 		.price $0
 							.cart_sub_b
 								.cart_b_t  運費：#[small (滿$490免運費$80，還差 #[span.trans_fee $100])]
 								.cart_b_t
@@ -225,6 +247,42 @@ html
 								| 》
 						.line.chkout
 							a.btn-confirm(href="order_confirm_third.html") 確認付款
+
+		.lightbox-target#happygo
+			.content
+				.con_t HappyGo卡友登入
+				form.login_body(action="#" onsubmit="validateCode()")
+					.login_line
+						input(type='text' placeholder='身分證末4碼' autofocus required)
+						p.red 請輸入正確格式
+					.login_line
+						input(type='text' placeholder='手機號碼' value="09" required)
+						p.red 請輸入正確格式
+					.login_line
+						.space_btn
+							input#inputCode.inputCode(type='text' placeholder='輸入驗證碼' inputmode="numeric" required)
+							#checkCode.showcode
+							i.icon.icon_refresh
+						p.red 請輸入正確的驗證碼
+					input.btn_red(type="submit", value="確定")
+				a.lightbox-close(href="#")
+
+		.lightbox-target#fetcoin
+			.content
+				.con_t 我的遠傳幣
+				form.login_body(action="#" onsubmit="validateCode()")
+					.login_line
+						input(type='text' placeholder='手機號碼' value="09" required)
+						p.red 請輸入正確格式
+					.login_line
+						.space_btn
+							input#inputCode.inputCode(type='text' placeholder='輸入驗證碼' inputmode="numeric" required)
+							#checkCode.showcode
+							i.icon.icon_refresh
+						p.red 請輸入正確的驗證碼
+					input.btn_red(type="submit", value="確定")
+				a.lightbox-close(href="#")
+
 
 		.lightbox-target#perbox
 			.content
