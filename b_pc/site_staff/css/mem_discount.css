@@ -1281,6 +1281,9 @@ body,
   -ms-grid-row: 2;
   -ms-grid-column: 2;
 }
+.cate_list a {
+  word-break: break-all;
+}
 
 .cate_list_head {
   color: #333;

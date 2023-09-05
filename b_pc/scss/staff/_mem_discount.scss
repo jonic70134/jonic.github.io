@@ -388,6 +388,10 @@ body,
     display: none;
     padding: 10px;
     background: #e1f5fe;
+
+    a {
+        word-break: break-all;
+    }
 }
 
 .cate_list_head {
