@@ -56,22 +56,24 @@ html
 											label.cart_cupn_lb(for="coupon1") 
 												input#coupon1(type="radio", name="coupon")
 												p 遠時折
-											.price $50
+												.ysdt_price.price $50
 										.cart_cupn
 											label.cart_cupn_lb(for="coupon2") 
 												input#coupon2(type="radio", name="coupon")
 												p 使用折價券
+												.cupn_price.price $30
 												a.cart_cupn_link(href="#cart_cupn") 選擇折價券 
 											
-											.cupn_price.price $30
+												
 										.cart_cupn
 											label.cart_cupn_lb(for="coupon3") 
 												input#coupon3(type="radio", name="coupon")
 												p 輸入折扣碼 
+												.code_price.price $1000
 												input.cart_cupn_text(type="text", name="")
 												input.code_btn_submit(type="button", value="使用" disabled="disabled")
 												a.code_btn_cancel(href="#") 取消 
-											.code_price.price $1000
+												
 											
 
 

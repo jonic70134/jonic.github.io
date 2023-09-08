@@ -331,10 +331,22 @@ h3 {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
+	margin: 0 0 3px;
 	cursor: pointer;
+
+	p {
+		min-width: 70px;
+	}
 
 	.price {
 		display: none;
+		margin: 0 0 0 20px;
+		font-size: fluid(12px, 15px);
+
+	}
+
+	.ysdt_price {
+		display: block;
 	}
 }
 
@@ -1843,7 +1855,7 @@ strong {
 	}
 
 	.cart_cupn_b {
-		margin: 0 0 0 -80px;
+		margin: 0 -35px 0 -80px;
 	}
 
 	.confirm {
