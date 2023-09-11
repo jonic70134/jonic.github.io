@@ -42,10 +42,7 @@ html
 							.mem_link_name 折價券
 								//- span.red 9999
 								//- | 張
-						//- a(href="mem_coin.html").mem_block3_1.mem_coin
-						//- 	img(src="img/mem_coin.svg")
-						//- 	.mem_link_name 我的遠傳幣 
-						//- 		span.red 9999
+						
 						
 						//- a(href="#").mem_block3_3.mem_coin
 						//- 	img(src="img/mem_happygo.svg")
@@ -58,23 +55,61 @@ html
 						a(href="mem_data.html").mem_block3_1.mem_data
 							img(src="img/mem_data.svg")
 							.mem_link_name 我的基本資料與修改
-						//- a(href="#").mem_block3_3.mem_exp
-						//- 	img(src="img/mem_exp.svg")
-						//- 	.mem_link_name 快樂購卡點數說明
+							
+						a(href="#fetcoin").mem_block3_2.mem_coin
+							img(src="img/mem_coin.svg")
+							.mem_link_name 綁定遠傳幣 
+								span.red $9999
+						a(href="#happygo").mem_block3_3.mem_exp
+							img(src="img/mem_happygo.svg")
+							.mem_link_name 綁定Happy Go點數 
+								span.red 9999 點
+						
 
-						a(href="mem_des.html").mem_block3_2.mem_buy
+						a(href="mem_des.html").mem_block2_1.mem_buy
 							img(src="img/mem_exp.svg")
 							.mem_link_name 購物說明
 						//- a(href="#").mem_block3_2.mem_rma
 						//- 	img(src="img/mem_rma.svg")
 						//- 	.mem_link_name 售後服務
-						a(href="mem_cheat.html").mem_block3_3.mem_anti
+						a(href="mem_cheat.html").mem_block2_2.mem_anti
 							img(src="img/mem_exp.svg")
 							.mem_link_name 防詐騙公告
-		include ../src/_foot.pug
-		script(src='js/3rd-party/jquery-3.6.0.min.js')
-		script(src='js/3rd-party/swiper-bundle.min.js')
-		script(src='js/common.js')
+		.lightbox-target#happygo
+			.content
+				.con_t HappyGo卡友登入
+				form.login_body(action="#" onsubmit="validateCode()")
+					.login_line
+						input(type='text' placeholder='身分證末4碼' autofocus required)
+						p.red 請輸入正確格式
+					.login_line
+						input(type='text' placeholder='手機號碼' value="09" required)
+						p.red 請輸入正確格式
+					.login_line
+						.space_btn
+							input#inputCode.inputCode(type='text' placeholder='輸入驗證碼' inputmode="numeric" required)
+							#checkCode.showcode
+							i.icon.icon_refresh
+						p.red 請輸入正確的驗證碼
+					input.btn_red(type="submit", value="確定")
+				a.lightbox-close(href="#")
+
+		.lightbox-target#fetcoin
+			.content
+				.con_t 我的遠傳幣
+				form.login_body(action="#" onsubmit="validateCode()")
+					.login_line
+						input(type='text' placeholder='手機號碼' value="09" required)
+						p.red 請輸入正確格式
+					.login_line
+						.space_btn
+							input#inputCode.inputCode(type='text' placeholder='輸入驗證碼' inputmode="numeric" required)
+							#checkCode.showcode
+							i.icon.icon_refresh
+						p.red 請輸入正確的驗證碼
+					input.btn_red(type="submit", value="確定")
+				a.lightbox-close(href="#")
+		
 		.lightbox-target#mem_phone_order
 			.content
 				.con_t 手機號碼查訂單
@@ -99,4 +134,8 @@ html
 					p 驗證碼簡訊將於1分鐘內發送至您的手機,若未收到簡訊,
 					p 請點学重新發送驗證碼簡訊按钮,重新發送簡訊。
 				a.lightbox-close(href="#")
-
+		include ../src/_foot.pug
+		script(src='js/3rd-party/jquery-3.6.0.min.js')
+		script(src='js/3rd-party/swiper-bundle.min.js')
+		script(src='js/common.js')
+		script(src='js/mem_index.js')

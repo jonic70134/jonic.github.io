@@ -341,8 +341,7 @@ label {
   width: 105px;
   overflow: hidden;
   white-space: nowrap;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 .site-header .profile .prof_r {
   -webkit-box-orient: vertical;
@@ -660,8 +659,7 @@ label {
 .reg_mail {
   width: 168px;
   font-size: 0.9rem;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 
@@ -1322,7 +1320,8 @@ a.gotop:after {
   text-decoration: underline;
 }
 
-.login_btn, .reg_btn {
+.login_btn,
+.reg_btn {
   color: #06c;
   text-decoration: underline;
 }
@@ -1390,7 +1389,8 @@ a.gotop:after {
   top: 0;
   bottom: 0;
 }
-.lightbox-target:target .content, .lightbox-target:target img {
+.lightbox-target:target .content,
+.lightbox-target:target img {
   max-height: 100%;
   max-width: 400px;
 }
@@ -1438,7 +1438,8 @@ a.gotop:after {
 .lightbox-target .con_m {
   margin: 20px 0;
 }
-.lightbox-target .con_m .sendphone, .lightbox-target .con_m .time {
+.lightbox-target .con_m .sendphone,
+.lightbox-target .con_m .time {
   text-align: center;
   font-size: 0.8rem;
 }
@@ -1474,7 +1475,8 @@ a.gotop:after {
   text-align: center;
 }
 
-.box_btn_resend, .box_btn_send {
+.box_btn_resend,
+.box_btn_send {
   display: inline-block;
   margin: 0 auto;
   padding: 10px 30px;

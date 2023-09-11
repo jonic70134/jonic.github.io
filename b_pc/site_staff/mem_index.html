@@ -62,28 +62,56 @@
               <div class="mem_contact">(聯絡客服)</div></a><a class="mem_block3_2 mem_phone_order" href="mem_track.html"><img src="img/mem_track.svg">
               <div class="mem_link_name">我的最愛</div></a><a class="mem_block3_3 mem_coupon" href="mem_discount.html"><img src="img/mem_coupon.svg">
               <div class="mem_link_name">折價券</div></a><a class="mem_block3_1 mem_data" href="mem_data.html"><img src="img/mem_data.svg">
-              <div class="mem_link_name">我的基本資料與修改</div></a><a class="mem_block3_2 mem_buy" href="mem_des.html"><img src="img/mem_exp.svg">
-              <div class="mem_link_name">購物說明</div></a><a class="mem_block3_3 mem_anti" href="mem_cheat.html"><img src="img/mem_exp.svg">
+              <div class="mem_link_name">我的基本資料與修改</div></a><a class="mem_block3_2 mem_coin" href="#fetcoin"><img src="img/mem_coin.svg">
+              <div class="mem_link_name">綁定遠傳幣 <span class="red">$9999</span></div></a><a class="mem_block3_3 mem_exp" href="#happygo"><img src="img/mem_happygo.svg">
+              <div class="mem_link_name">綁定Happy Go點數 <span class="red">9999 點</span></div></a><a class="mem_block2_1 mem_buy" href="mem_des.html"><img src="img/mem_exp.svg">
+              <div class="mem_link_name">購物說明</div></a><a class="mem_block2_2 mem_anti" href="mem_cheat.html"><img src="img/mem_exp.svg">
               <div class="mem_link_name">防詐騙公告</div></a></div>
         </div>
       </div>
     </div>
-    <footer class="foot_nav">
-      <div class="container">
-        <div class="foot_link"><a href="intro.html">網站簡介</a><a href="mem_service.html">服務條款</a><a href="mem_appoint.html">購物約定條款</a><a href="mem_cheat.html">防詐騙宣導</a><a href="mem_privacy.html">隱私權說明</a></div>
-        <div class="foot_pby">
-          <div class="foot_pby_txt">
-            <p>Powered by </p><img class="foot_pbyimg" src="img/ysdt_foot_logo.svg" alt="">
-          </div><small>遠時數位科技 提供技術服務,包含AI生成網站,金流,發票及客服</small><a class="pbybtn" href="#">詳</a>
-          <div class="pby_detail foot">
-            <p>本網站為「網站品牌商公司」銷售商品的網站，而本網站所有AI生成技術及網站系統均是遠時數位科技股份有限公司(以下稱YSDT)建置，日常營運之客服、金流、發票、退貨退款均由YSDT負責。本網站除了銷售「網站品牌商公司」商品外，也同時展示其它YSDT廠商的商品，而這些商品透過YSDT獨家AI 友商推薦商品    技術展示，並會顯示 友商推薦商品    標誌。透過 友商推薦商品技術，「網站品牌商公司」  就會有成千上萬的商品陳列，並進一步提供優惠折扣，讓每一位消費者可看到適合自已且具有吸引力的商品，享有嶄新的購物體驗！<a class="pbyclose" href="#">關閉</a></p>
+    <div class="lightbox-target" id="happygo">
+      <div class="content">
+        <div class="con_t">HappyGo卡友登入</div>
+        <form class="login_body" action="#" onsubmit="validateCode()">
+          <div class="login_line">
+            <input type="text" placeholder="身分證末4碼" autofocus required>
+            <p class="red">請輸入正確格式</p>
           </div>
-        </div>
-      </div><a class="gotop" href="#"></a>
-    </footer>
-    <script src="js/3rd-party/jquery-3.6.0.min.js"></script>
-    <script src="js/3rd-party/swiper-bundle.min.js"></script>
-    <script src="js/common.js"></script>
+          <div class="login_line">
+            <input type="text" placeholder="手機號碼" value="09" required>
+            <p class="red">請輸入正確格式</p>
+          </div>
+          <div class="login_line">
+            <div class="space_btn">
+              <input class="inputCode" id="inputCode" type="text" placeholder="輸入驗證碼" inputmode="numeric" required>
+              <div class="showcode" id="checkCode"></div><i class="icon icon_refresh"></i>
+            </div>
+            <p class="red">請輸入正確的驗證碼</p>
+          </div>
+          <input class="btn_red" type="submit" value="確定">
+        </form><a class="lightbox-close" href="#"></a>
+      </div>
+    </div>
+    <div class="lightbox-target" id="fetcoin">
+      <div class="content">
+        <div class="con_t">我的遠傳幣</div>
+        <form class="login_body" action="#" onsubmit="validateCode()">
+          <div class="login_line">
+            <input type="text" placeholder="手機號碼" value="09" required>
+            <p class="red">請輸入正確格式</p>
+          </div>
+          <div class="login_line">
+            <div class="space_btn">
+              <input class="inputCode" id="inputCode" type="text" placeholder="輸入驗證碼" inputmode="numeric" required>
+              <div class="showcode" id="checkCode"></div><i class="icon icon_refresh"></i>
+            </div>
+            <p class="red">請輸入正確的驗證碼</p>
+          </div>
+          <input class="btn_red" type="submit" value="確定">
+        </form><a class="lightbox-close" href="#"></a>
+      </div>
+    </div>
     <div class="lightbox-target" id="mem_phone_order">
       <div class="content">
         <div class="con_t">手機號碼查訂單</div>
@@ -109,5 +137,22 @@
         </div><a class="lightbox-close" href="#"></a>
       </div>
     </div>
+    <footer class="foot_nav">
+      <div class="container">
+        <div class="foot_link"><a href="intro.html">網站簡介</a><a href="mem_service.html">服務條款</a><a href="mem_appoint.html">購物約定條款</a><a href="mem_cheat.html">防詐騙宣導</a><a href="mem_privacy.html">隱私權說明</a></div>
+        <div class="foot_pby">
+          <div class="foot_pby_txt">
+            <p>Powered by </p><img class="foot_pbyimg" src="img/ysdt_foot_logo.svg" alt="">
+          </div><small>遠時數位科技 提供技術服務,包含AI生成網站,金流,發票及客服</small><a class="pbybtn" href="#">詳</a>
+          <div class="pby_detail foot">
+            <p>本網站為「網站品牌商公司」銷售商品的網站，而本網站所有AI生成技術及網站系統均是遠時數位科技股份有限公司(以下稱YSDT)建置，日常營運之客服、金流、發票、退貨退款均由YSDT負責。本網站除了銷售「網站品牌商公司」商品外，也同時展示其它YSDT廠商的商品，而這些商品透過YSDT獨家AI 友商推薦商品    技術展示，並會顯示 友商推薦商品    標誌。透過 友商推薦商品技術，「網站品牌商公司」  就會有成千上萬的商品陳列，並進一步提供優惠折扣，讓每一位消費者可看到適合自已且具有吸引力的商品，享有嶄新的購物體驗！<a class="pbyclose" href="#">關閉</a></p>
+          </div>
+        </div>
+      </div><a class="gotop" href="#"></a>
+    </footer>
+    <script src="js/3rd-party/jquery-3.6.0.min.js"></script>
+    <script src="js/3rd-party/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/mem_index.js"></script>
   </body>
 </html>
