@@ -70,26 +70,46 @@
         </div>
       </div>
     </div>
-    <div class="lightbox-target" id="happygo">
+    <div class="lightbox-target happygo" id="happygo">
       <div class="content">
         <div class="con_t">HappyGo卡友登入</div>
-        <form class="login_body" action="#" onsubmit="validateCode()">
+        <form class="login_body" action="#happygo_phone" onsubmit="validateCode()">
           <div class="login_line">
-            <input type="text" placeholder="身分證末4碼" autofocus required>
+            <input type="text" placeholder="身分證末4碼" value="8888" autofocus required>
             <p class="red">請輸入正確格式</p>
           </div>
           <div class="login_line">
-            <input type="text" placeholder="手機號碼" value="09" required>
+            <input type="text" placeholder="手機號碼" value="0912345678" required>
             <p class="red">請輸入正確格式</p>
           </div>
           <div class="login_line">
             <div class="space_btn">
-              <input class="inputCode" id="inputCode" type="text" placeholder="輸入驗證碼" inputmode="numeric" required>
+              <input class="inputCode" id="inputCode" type="text" placeholder="輸入右側驗證碼" inputmode="numeric" required>
               <div class="showcode" id="checkCode"></div><i class="icon icon_refresh"></i>
             </div>
             <p class="red">請輸入正確的驗證碼</p>
           </div>
-          <input class="btn_red" type="submit" value="確定">
+          <input class="btn_red" type="submit" value="發送手機驗證碼">
+        </form><a class="lightbox-close" href="#"></a>
+      </div>
+    </div>
+    <div class="lightbox-target happygo" id="happygo_phone">
+      <div class="content">
+        <div class="con_t">HappyGo卡友登入</div>
+        <form class="login_body" action="#" onsubmit="validateCode()">
+          <div class="login_line">
+            <input type="text" placeholder="身分證末4碼" value="8888" autofocus required disabled="disable">
+            <p class="red">請輸入正確格式</p>
+          </div>
+          <div class="login_line">
+            <input type="text" placeholder="手機號碼" value="0912345678" required disabled="disable">
+            <p class="red">請輸入正確格式</p>
+          </div>
+          <div class="login_line">
+            <input type="text" placeholder="請輸入手機驗證碼" inputmode="numeric" required>
+            <p class="red">請於30分鐘內輸入完畢，逾期失效</p>
+          </div>
+          <input class="btn_red" type="submit" value="登入">
         </form><a class="lightbox-close" href="#"></a>
       </div>
     </div>

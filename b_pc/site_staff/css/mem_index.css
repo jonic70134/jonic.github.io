@@ -1472,24 +1472,24 @@ a.gotop:after {
           transform: rotate(-45deg);
 }
 
-#happygo .content,
+.happygo .content,
 #fetcoin .content {
   padding: 0;
   border: 0;
 }
-#happygo .con_t,
+.happygo .con_t,
 #fetcoin .con_t {
   margin: 0;
   padding: 10px 20px;
   background: red;
   color: white;
 }
-#happygo .lightbox-close,
+.happygo .lightbox-close,
 #fetcoin .lightbox-close {
   top: 9px;
   border-color: white;
 }
-#happygo .lightbox-close::before, #happygo .lightbox-close::after,
+.happygo .lightbox-close::before, .happygo .lightbox-close::after,
 #fetcoin .lightbox-close::before,
 #fetcoin .lightbox-close::after {
   background: white;
@@ -1525,6 +1525,9 @@ a.gotop:after {
   text-align: center;
   font-size: 1.4rem;
   letter-spacing: 5px;
+}
+.login_body input:disabled {
+  background-color: #ddd;
 }
 .login_body .icon_refresh {
   cursor: pointer;

@@ -75,24 +75,41 @@ html
 						a(href="mem_cheat.html").mem_block2_2.mem_anti
 							img(src="img/mem_exp.svg")
 							.mem_link_name 防詐騙公告
-		.lightbox-target#happygo
+		.lightbox-target.happygo#happygo
+			.content
+				.con_t HappyGo卡友登入
+				form.login_body(action="#happygo_phone" onsubmit="validateCode()")
+					.login_line
+						input(type='text' placeholder='身分證末4碼' value="8888" autofocus required)
+						p.red 請輸入正確格式
+					.login_line
+						input(type='text' placeholder='手機號碼' value="0912345678" required)
+						p.red 請輸入正確格式
+					.login_line
+						.space_btn
+							input#inputCode.inputCode(type='text' placeholder='輸入右側驗證碼' inputmode="numeric" required)
+							#checkCode.showcode
+							i.icon.icon_refresh
+						p.red 請輸入正確的驗證碼
+					input.btn_red(type="submit", value="發送手機驗證碼")
+				a.lightbox-close(href="#")
+		
+		.lightbox-target.happygo#happygo_phone
 			.content
 				.con_t HappyGo卡友登入
 				form.login_body(action="#" onsubmit="validateCode()")
 					.login_line
-						input(type='text' placeholder='身分證末4碼' autofocus required)
+						input(type='text' placeholder='身分證末4碼' value="8888" autofocus required disabled="disable")
 						p.red 請輸入正確格式
 					.login_line
-						input(type='text' placeholder='手機號碼' value="09" required)
+						input(type='text' placeholder='手機號碼' value="0912345678" required disabled="disable")
 						p.red 請輸入正確格式
 					.login_line
-						.space_btn
-							input#inputCode.inputCode(type='text' placeholder='輸入驗證碼' inputmode="numeric" required)
-							#checkCode.showcode
-							i.icon.icon_refresh
-						p.red 請輸入正確的驗證碼
-					input.btn_red(type="submit", value="確定")
+						input(type='text' placeholder='請輸入手機驗證碼' inputmode="numeric" required)
+						p.red 請於30分鐘內輸入完畢，逾期失效
+					input.btn_red(type="submit", value="登入")
 				a.lightbox-close(href="#")
+
 
 		.lightbox-target#fetcoin
 			.content

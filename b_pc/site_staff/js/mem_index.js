@@ -46,7 +46,7 @@ $(document).ready(function () {
 
 
 // 顯示點數
-$("#happygo .btn_red").click(function () {
+$("#happygo_phone .btn_red").click(function () {
     $(".mem_exp .red").show();
 });
 // 顯示遠傳幣餘額
