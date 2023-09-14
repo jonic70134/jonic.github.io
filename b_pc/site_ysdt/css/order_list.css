@@ -1455,11 +1455,6 @@ button {
   line-height: 1.4;
 }
 
-.happygo,
-.fetcoin {
-  display: none;
-}
-
 .cart_b_t_l {
   font-size: clamp(0.91rem, 0.18vw + 0.86rem, 1rem);
   line-height: 1.4;
