@@ -8,19 +8,19 @@ html
 			include ../src/_order_head.pug
 			.site-main
 				.container
-					.order_all
+					.order_all.home_cart
 						.order_head
-							h3 購物車
+							h3 宅配購物車
 							.order_chk_all
-								input#order_chk_all.order_chk(type="checkbox", checked="checked")
-								label.order_chk_label(for="order_chk_all")
+								input#home_chk_all.order_chk(type="checkbox")
+								label.order_chk_label(for="home_chk_all")
 							.order-title 全選
 							
 
 						mixin cartimg(i,src)
 							.cart_item
 								.order_chk_all
-									input(id='order_chk'+i).order_chk(type="checkbox", checked="checked")
+									input(id='order_chk'+i).order_chk(type="checkbox")
 									label.order_chk_label(for='order_chk'+i)
 								.cart_img
 									img(src='../img/sample/'+ src+'.jpg', alt="商品圖片")
@@ -80,9 +80,10 @@ html
 								.cart_last
 									a(href="#").btn-remove 刪除
 						+cartimg(1,'05_10_182')
+
 						.cart_item.is-lack 
 							.order_chk_all
-								input(id='order_chk5').order_chk(type="checkbox", checked="checked")
+								input(id='order_chk5').order_chk(type="checkbox")
 								label.order_chk_label(for='order_chk5')
 							.cart_img
 								img(src='../img/sample/05_03_182.jpg', alt="商品圖片")
@@ -116,6 +117,83 @@ html
 							a.btn-continue(href="index.html") 再購物
 							a.btn-cancel(href="index.html") 離開暫記
 							a.btn-confirm(href="order_chk.html") 去結帳
+					.order_all.mkt_cart
+						.order_head
+							h3 門市取貨購物車
+							.order_chk_all
+								input#mkt_chk_all.order_chk(type="checkbox")
+								label.order_chk_label(for="mkt_chk_all")
+							.order-title 全選
+							
+
+						mixin cartimg(i,src)
+							.cart_item
+								.order_chk_all
+									input(id='order_chk'+i).order_chk(type="checkbox")
+									label.order_chk_label(for='order_chk'+i)
+								.cart_img
+									img(src='../img/sample/'+ src+'.jpg', alt="商品圖片")
+								.cart_info
+									.cart_name
+										a.cart_name_link(href="item.html") 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g
+										.cart_size 規格：85型 4K HDR OLED
+									.cart_per 特價期間07/10~07/13止
+									.cart_price_b
+										.cart_price
+											.ori_t 原價
+											.ori_price $9,999
+										.cart_price
+											.ori_t 網路價
+											.ori_price $9,900
+										.cart_price
+											.dis_t 折扣後價格
+											.dis_price $9,800
+									.cart_quantity
+										| 數量：1
+									.cart_gift
+										ul.cart_gift_item
+											li
+												p.red 贈品
+												p.cart_gift_name 3M百利爐具專用菜瓜布x1
+											li
+												p.red 贈品
+												p.cart_gift_name 室內芳香劑x1
+									hr
+									.cart_cupn_t 以下折扣優惠擇一使用：
+									.cart_cupn_b
+										.cart_cupn
+											label.cart_cupn_lb(for="coupon1") 
+												input#coupon1(type="radio", name="coupon")
+												p 遠時折
+												.ysdt_price.price $50
+										.cart_cupn
+											label.cart_cupn_lb(for="coupon2") 
+												input#coupon2(type="radio", name="coupon")
+												p 使用折價券
+												.cupn_price.price $30
+												a.cart_cupn_link(href="#cart_cupn") 選擇折價券 
+											
+												
+										.cart_cupn
+											label.cart_cupn_lb(for="coupon3") 
+												input#coupon3(type="radio", name="coupon")
+												p 輸入折扣碼 
+												.code_price.price $1000
+												input.cart_cupn_text(type="text", name="")
+												input.code_btn_submit(type="button", value="使用" disabled="disabled")
+												a.code_btn_cancel(href="#") 取消 
+												
+											
+
+
+								.cart_last
+									a(href="#").btn-remove 刪除
+						+cartimg(3,'05_10_182')
+
+						.line.orderchk
+							a.btn-continue(href="index.html") 再購物
+							a.btn-cancel(href="index.html") 離開暫記
+							a.btn-confirm(href="order_chk_mkt.html") 去結帳
 						.beforelist
 							.before_top
 								.before_t

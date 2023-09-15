@@ -1,6 +1,10 @@
-// orderlist
-$("#order_chk_all").click(function () {
-    $('input:checkbox').not(this).prop('checked', this.checked);
+// 宅配全選
+$("#home_chk_all").click(function () {
+    $('.home_cart input:checkbox').not(this).prop('checked', this.checked);
+});
+// 超取全選
+$("#mkt_chk_all").click(function () {
+    $('.mkt_cart input:checkbox').not(this).prop('checked', this.checked);
 });
 
 // 付款方式

@@ -176,33 +176,10 @@ html
 							.form.same
 								.form_t 
 									span.red *
-									| 收貨人姓名
-								.form_input
-									input(type="text" placeholder='請輸入姓名')
-								.form_same
-									<input type="checkbox" id="form_same" value="1"/>
-									<label for="form_same">同訂購人</label>
-							.form
-								.form_t
-									span.red *
-									| 手機
-								.form_input
-									input(type="tel" autocomplete="tel" placeholder="請輸入")
-							.form
-								.form_t Email
-								.form_input
-									input(type="email" autocomplete="email" placeholder="請輸入")
-							.form.addr
-								.form_t 
-									span.red *
-									|收貨地址
-								.form_input
-									.select_b
-										select#county(name="")
-											option(value="1") 台北市  
-										select#distric(name="") 
-											option(value="1") 內湖區
-									input(type="text" autocomplete="address-line1" placeholder='請輸入')
+									| 取貨門市資訊
+								.form_mkt_select
+									a.mkt_select_btn(href="#mkt_box") 選擇門市
+							
 						.line.invoice
 							.title.inv_t 發票資訊
 							.invo_b
@@ -246,6 +223,20 @@ html
 								| 》
 						.line.chkout
 							a.btn-confirm(href="order_confirm_third.html") 確認付款
+
+		.lightbox-target#mkt_box
+			.content
+				.con_t 新增門市
+				form.login_body(action="#" onsubmit="validateCode()")
+					.login_line
+						input(type='text' placeholder='請輸入收貨人姓名' autofocus required)
+						p.red 請輸入收貨人
+					.login_line
+						input(type='text' placeholder='請輸入收貨人手機號碼' value="09" required)
+						p.red 請輸入正確手機號碼格式
+
+					input.btn_red(type="submit", value="確定")
+				a.lightbox-close(href="#")
 
 		.lightbox-target#happygo
 			.content

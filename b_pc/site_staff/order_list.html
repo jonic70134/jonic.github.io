@@ -25,18 +25,18 @@
       </header>
       <div class="site-main">
         <div class="container">
-          <div class="order_all">
+          <div class="order_all home_cart">
             <div class="order_head">
-              <h3>購物車</h3>
+              <h3>宅配購物車</h3>
               <div class="order_chk_all">
-                <input class="order_chk" id="order_chk_all" type="checkbox" checked="checked">
-                <label class="order_chk_label" for="order_chk_all"></label>
+                <input class="order_chk" id="home_chk_all" type="checkbox">
+                <label class="order_chk_label" for="home_chk_all"></label>
               </div>
               <div class="order-title">全選</div>
             </div>
                         <div class="cart_item">
                           <div class="order_chk_all">
-                            <input class="order_chk" id="order_chk1" type="checkbox" checked="checked">
+                            <input class="order_chk" id="order_chk1" type="checkbox">
                             <label class="order_chk_label" for="order_chk1"></label>
                           </div>
                           <div class="cart_img"><img src="../img/sample/05_10_182.jpg" alt="商品圖片"></div>
@@ -104,7 +104,7 @@
                         </div>
             <div class="cart_item is-lack"> 
               <div class="order_chk_all">
-                <input class="order_chk" id="order_chk5" type="checkbox" checked="checked">
+                <input class="order_chk" id="order_chk5" type="checkbox">
                 <label class="order_chk_label" for="order_chk5"></label>
               </div>
               <div class="cart_img"><img src="../img/sample/05_03_182.jpg" alt="商品圖片">
@@ -139,6 +139,85 @@
               <div class="cart_last"><a class="btn-remove" href="#">刪除</a></div>
             </div>
             <div class="line orderchk"><a class="btn-continue" href="index.html">再購物</a><a class="btn-cancel" href="index.html">離開暫記</a><a class="btn-confirm" href="order_chk.html">去結帳</a></div>
+          </div>
+          <div class="order_all mkt_cart">
+            <div class="order_head">
+              <h3>門市取貨購物車</h3>
+              <div class="order_chk_all">
+                <input class="order_chk" id="mkt_chk_all" type="checkbox">
+                <label class="order_chk_label" for="mkt_chk_all"></label>
+              </div>
+              <div class="order-title">全選</div>
+            </div>
+                        <div class="cart_item">
+                          <div class="order_chk_all">
+                            <input class="order_chk" id="order_chk3" type="checkbox">
+                            <label class="order_chk_label" for="order_chk3"></label>
+                          </div>
+                          <div class="cart_img"><img src="../img/sample/05_10_182.jpg" alt="商品圖片"></div>
+                          <div class="cart_info">
+                            <div class="cart_name"><a class="cart_name_link" href="item.html">韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g 韓國 ETUDE HOUSE 氣墊頰彩(蕊) 3g</a>
+                              <div class="cart_size">規格：85型 4K HDR OLED</div>
+                            </div>
+                            <div class="cart_per">特價期間07/10~07/13止</div>
+                            <div class="cart_price_b">
+                              <div class="cart_price">
+                                <div class="ori_t">原價</div>
+                                <div class="ori_price">$9,999</div>
+                              </div>
+                              <div class="cart_price">
+                                <div class="ori_t">網路價</div>
+                                <div class="ori_price">$9,900</div>
+                              </div>
+                              <div class="cart_price">
+                                <div class="dis_t">折扣後價格</div>
+                                <div class="dis_price">$9,800</div>
+                              </div>
+                            </div>
+                            <div class="cart_quantity">數量：1</div>
+                            <div class="cart_gift">
+                              <ul class="cart_gift_item">
+                                <li>
+                                  <p class="red">贈品</p>
+                                  <p class="cart_gift_name">3M百利爐具專用菜瓜布x1</p>
+                                </li>
+                                <li>
+                                  <p class="red">贈品</p>
+                                  <p class="cart_gift_name">室內芳香劑x1</p>
+                                </li>
+                              </ul>
+                            </div>
+                            <hr>
+                            <div class="cart_cupn_t">以下折扣優惠擇一使用：</div>
+                            <div class="cart_cupn_b">
+                              <div class="cart_cupn">
+                                <label class="cart_cupn_lb" for="coupon1"> 
+                                  <input id="coupon1" type="radio" name="coupon">
+                                  <p>遠時折</p>
+                                  <div class="ysdt_price price">$50</div>
+                                </label>
+                              </div>
+                              <div class="cart_cupn">
+                                <label class="cart_cupn_lb" for="coupon2"> 
+                                  <input id="coupon2" type="radio" name="coupon">
+                                  <p>使用折價券</p>
+                                  <div class="cupn_price price">$30</div><a class="cart_cupn_link" href="#cart_cupn">選擇折價券 </a>
+                                </label>
+                              </div>
+                              <div class="cart_cupn">
+                                <label class="cart_cupn_lb" for="coupon3"> 
+                                  <input id="coupon3" type="radio" name="coupon">
+                                  <p>輸入折扣碼 </p>
+                                  <div class="code_price price">$1000</div>
+                                  <input class="cart_cupn_text" type="text" name="">
+                                  <input class="code_btn_submit" type="button" value="使用" disabled="disabled"><a class="code_btn_cancel" href="#">取消 </a>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cart_last"><a class="btn-remove" href="#">刪除</a></div>
+                        </div>
+            <div class="line orderchk"><a class="btn-continue" href="index.html">再購物</a><a class="btn-cancel" href="index.html">離開暫記</a><a class="btn-confirm" href="order_chk_mkt.html">去結帳</a></div>
             <div class="beforelist">
               <div class="before_top">
                 <div class="before_t"><a class="add_before" href="#">看以前加入購物車的商品</a>

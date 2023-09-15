@@ -1779,6 +1779,9 @@ button {
           box-shadow: 0px -5px 5px #eee;
 }
 
+.orderchk {
+  position: static;
+}
 .orderchk .btn-cancel {
   margin: 0 30px;
 }
@@ -1844,6 +1847,17 @@ button {
   margin: 0 0 0 5px;
   color: #06c;
   text-decoration: underline;
+}
+
+.form_mkt_select {
+  margin: 20px 0;
+}
+
+.mkt_select_btn {
+  margin: 0 0 0 20px;
+  padding: 5px 20px;
+  color: red;
+  border: 1px solid red;
 }
 
 .lightbox-target {
