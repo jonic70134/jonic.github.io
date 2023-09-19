@@ -7,6 +7,12 @@ $("#mkt_chk_all").click(function () {
     $('.mkt_cart input:checkbox').not(this).prop('checked', this.checked);
 });
 
+// 選擇完門市顯示取貨資訊
+$("#mkt_box .btn_red").click(function () {
+    $(".form_mkt_select").hide();
+    $(".form_mkt_select.is_selected").css("display", "flex");
+});
+
 // 付款方式
 $("input[name$='payway']").click(function () {
     var paydiv = $(this).val();

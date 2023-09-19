@@ -179,7 +179,12 @@ html
 									| 取貨門市資訊
 								.form_mkt_select
 									a.mkt_select_btn(href="#mkt_box") 選擇門市
-							
+								.form_mkt_select.is_selected
+									img.cvs_img(src="img/cvs_fm.svg", alt="")
+									p.cvs_selected 全家 全家中和員科店 新北市中和區員山路504之1號1樓
+										br 
+										|侯*航0966***611
+									a.mkt_select_btn(href="#mkt_box_re") 更換門市
 						.line.invoice
 							.title.inv_t 發票資訊
 							.invo_b
@@ -223,21 +228,72 @@ html
 								| 》
 						.line.chkout
 							a.btn-confirm(href="order_confirm_third.html") 確認付款
-
+		//- 新增取貨門市
 		.lightbox-target#mkt_box
 			.content
 				.con_t 新增門市
-				form.login_body(action="#" onsubmit="validateCode()")
+				form.login_body(action="#" onsubmit="")
 					.login_line
-						input(type='text' placeholder='請輸入收貨人姓名' autofocus required)
-						p.red 請輸入收貨人
+						.cvs_btn
+							p.login_t 設為預設門市
+							.toggleWrapper
+								input#toggle1.mobileToggle(type='checkbox' name='toggle1' checked='')
+								label(for='toggle1')
 					.login_line
+						p.login_t 收貨人
+						input(type='text' placeholder='請輸入收貨人姓名' value="王九蛋" autofocus required)
+						<!-- p.red 請輸入收貨人 -->
+					.login_line
+						p.login_t 手機號碼
 						input(type='text' placeholder='請輸入收貨人手機號碼' value="09" required)
-						p.red 請輸入正確手機號碼格式
-
+						<!-- p.red 請輸入正確手機號碼格式 -->
+					.login_line
+						p.login_t 取貨門市
+						a.cvs_link(href="#")
+							img.cvs_img(src="img/cvs_fm.svg", alt="")
+							p.cvs_txt 請選擇 全家 門市
+						a.cvs_link(href="#")
+							img.cvs_img(src="img/cvs_711.svg", alt="")
+							p.cvs_txt 請選擇 7-11 門市
+					.login_line
+						.space_btn
+							input#agree_chk.agree_chk(type="checkbox", name="")
+							label.agree_lb(for="agree_chk") 我同意將本次門市資料紀錄於「取貨門市管理」中,節省下次結帳時間。 
 					input.btn_red(type="submit", value="確定")
 				a.lightbox-close(href="#")
 
+		//- 選擇取貨門市
+		.lightbox-target#mkt_box_re
+			.content
+				.con_t 選擇門市
+				.login_body
+					.cvs_grid
+						.cvs_box
+							input#cvs_box1.cvs_chk(type="radio", name="cvs_box")
+							label.cvs_box_lb(for="cvs_box1") 
+								img.cvs_img(src="img/cvs_fm.svg", alt="")
+								p.cvs_selected 
+									strong 全家 中和員科店 
+									br
+									|新北市中和區員山路504之1號1樓
+									br 
+									|侯*航0966***611
+						.cvs_box
+							input#cvs_box2.cvs_chk(type="radio", name="cvs_box")
+							label.cvs_box_lb(for="cvs_box2") 
+								img.cvs_img(src="img/cvs_711.svg", alt="")
+								p.cvs_selected 
+									strong 7-11 中和員科店
+									br 
+									| 新北市中和區員山路504號
+									br 
+									|侯*航0966***611
+									
+						.cvs_box.new_cvs_box
+							a.new_cvs(href="#mkt_box") 新增門市
+					
+					a(href="#").btn_red 確定
+				a.lightbox-close(href="#")
 		.lightbox-target#happygo
 			.content
 				.con_t HappyGo卡友登入
