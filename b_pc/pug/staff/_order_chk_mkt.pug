@@ -269,26 +269,36 @@ html
 				.login_body
 					.cvs_grid
 						.cvs_box
-							input#cvs_box1.cvs_chk(type="radio", name="cvs_box")
+							input#cvs_box1.cvs_chk(type="radio", name="cvs_box" checked)
 							label.cvs_box_lb(for="cvs_box1") 
 								img.cvs_img(src="img/cvs_fm.svg", alt="")
 								p.cvs_selected 
-									strong 全家 中和員科店 
+									strong 全家 中和員科店
 									br
-									|新北市中和區員山路504之1號1樓
-									br 
-									|侯*航0966***611
-						.cvs_box
-							input#cvs_box2.cvs_chk(type="radio", name="cvs_box")
-							label.cvs_box_lb(for="cvs_box2") 
-								img.cvs_img(src="img/cvs_711.svg", alt="")
-								p.cvs_selected 
-									strong 7-11 中和員科店
-									br 
-									| 新北市中和區員山路504號
-									br 
-									|侯*航0966***611
-									
+									|新北市中和區員山路205巷504之1號1樓
+									br
+									|紅*子 0966***611
+							a(href="#").icon.icon_del
+						mixin cvs_box(num,pic,addr1,addr2,addr3)
+							.cvs_box
+								input.cvs_chk(id="cvs_box"+num type="radio", name="cvs_box")
+								label.cvs_box_lb(for="cvs_box"+num) 
+									img.cvs_img(src="img/"+ pic +".svg", alt="")
+									p.cvs_selected 
+										strong=addr1
+										br
+										=addr2
+										br
+										=addr3
+								a(href="#").icon.icon_del
+						+cvs_box(2,'cvs_fm','全家 搞笑店','新北市中和區員山路205巷504之1號1樓','侯*航 0966***611')
+						+cvs_box(3,'cvs_711','7-11 內湖店','新北市中和區員山路504之1號1樓','侯*航 0966***611')
+						+cvs_box(4,'cvs_fm','全家 瑞智店','新北市中和區員山路504之1號1樓','侯*航 0966***611')
+						+cvs_box(5,'cvs_711','7-11 和牛店','新北市中和區員山路504之1號1樓','侯*航 0966***611')
+						+cvs_box(6,'cvs_711','7-11 搞事店','新北市中和區員山路504之1號1樓新北市中和區員山路504之1號1樓','侯*航 0966***611')
+						+cvs_box(7,'cvs_711','7-11 非常愛睏店','新北市中和區員山路504之1號1樓','侯*航 0966***611')
+						
+						
 						.cvs_box.new_cvs_box
 							a.new_cvs(href="#mkt_box") 新增門市
 					

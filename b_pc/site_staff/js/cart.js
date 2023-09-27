@@ -12,7 +12,11 @@ $("#mkt_box .btn_red").click(function () {
     $(".form_mkt_select").hide();
     $(".form_mkt_select.is_selected").css("display", "flex");
 });
-
+// 刪除門市
+$(".cvs_box .icon_del").click(function (e) {
+    e.preventDefault();
+    $(this).parents('.cvs_box').hide();
+});
 // 付款方式
 $("input[name$='payway']").click(function () {
     var paydiv = $(this).val();
