@@ -1,0 +1,203 @@
+@import "bs/functions";
+@import "bs/variables";
+@import "bs/variables-dark";
+@import "bs/maps";
+@import "bs/mixins";
+@import "bs/utilities";
+
+@import "bs/root";
+@import "bs/reboot";
+@import "bs/type";
+@import "bs/images";
+@import "bs/containers";
+@import "bs/grid";
+
+@import "bs/transitions";
+
+@import "bs/dropdown";
+@import "bs/nav";
+@import "bs/pagination";
+@import "bs/navbar";
+@import "bs/buttons";
+// @import "bs/badge";
+// @import "bs/alert";
+// @import "bs/card";
+// @import "bs/list-group";
+@import "bs/tables";
+@import "bs/forms";
+@import "bs/buttons";
+
+@import "bs/helpers";
+@import "bs/utilities/api";
+
+
+@import "bs/bootstrap-icons.scss";
+
+#wrapper {
+  position: relative;
+}
+
+.site_body {
+  display: flex;
+  position: relative;
+}
+
+.top_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  @include flex_row_center;
+  justify-content: space-between;
+  background-color: $gray-800;
+  z-index: 99;
+}
+
+.logo,
+.side_menu_toggle {
+  display: block;
+  padding: 15px;
+  color: $white;
+  text-decoration: none;
+}
+
+.btn_group {
+  margin: 0;
+  @include flex_row_center;
+
+  i {
+    font-size: 1.2rem;
+  }
+}
+
+.nav-item {
+  position: relative;
+  color: $white;
+  border-right: 1px solid $gray-600;
+
+  &:last-child {
+    border: 0;
+  }
+}
+
+.nav-link {
+  padding: 10px 15px;
+  @include flex_row_center;
+}
+
+.notify {
+  font-size: 1.1rem;
+}
+
+.notify_num {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  @include flex_row_center;
+  justify-content: center;
+  width: 20px;
+  font-size: .7rem;
+  text-align: center;
+  background-color: $fet_color;
+  color: $white;
+  aspect-ratio: 1;
+  @include border-radius(50%);
+}
+
+#side_menu {
+  position: fixed;
+  bottom: 0;
+  top: 59px;
+  height: 100%;
+  min-height: 100%;
+  width: 42px;
+  overflow: hidden;
+  font-size: .95rem;
+  background-color: $gray-300;
+  box-shadow: $box-shadow-menu;
+  z-index: 98;
+
+  .bi {
+    margin: 0 12px 0 0;
+  }
+}
+
+.side_menu_t {
+  display: block;
+  padding: 8px 15px;
+  color: $normal_txt_color;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $white;
+    background: $blue;
+    transition: $transition-base;
+    border: 0;
+    // ~.side_sub_menu {
+    //   color: $white;
+    //   background: $gray-800;
+    // }
+  }
+
+  &:active,
+  &.active {
+    color: $normal_txt_color;
+    background: $white;
+
+  }
+}
+
+.side_menu_body,
+.side_sub_menu {
+  white-space: nowrap;
+  width: auto;
+  min-width: 200px;
+}
+
+.side_sub_menu {
+  display: none;
+  background-color: $white;
+
+  .side_menu_t {
+    padding: 6px 15px 6px 35px;
+    border-bottom: 1px solid $gray-300;
+  }
+}
+
+.main_content {
+  padding: 80px 10px 10px 60px;
+}
+
+// 此頁開始
+
+.order_table_img {
+  width: 30px;
+}
+
+.table_content {
+
+  th,
+  td {
+    text-align: center;
+  }
+
+  tr:nth-child(even) td {
+    background: #eee;
+  }
+}
+
+.form-panel {
+  margin: 0 0 10px;
+  padding: 0 10px 10px;
+  background: #deedf7;
+
+  label {
+    cursor: pointer;
+  }
+
+  input,
+  select {
+    border: 1px solid #555;
+  }
+}

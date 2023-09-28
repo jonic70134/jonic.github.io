@@ -1,0 +1,82 @@
+doctype html
+html
+	head
+		include ./src/_meta.pug
+		
+		link(href='css/table-example.css', rel='stylesheet')
+	body
+		#wrapper
+			include src/_header.pug
+			
+			.site_body.container-fluid.gx-0
+				include src/_sidemenu.pug
+				.main_content.container-fluid.gx-0
+					.container-fluid.gx-0
+						form.form-panel
+							.row.row-cols-lg-auto.g-3.m-1.align-items-center
+								.col-3
+									input.form-control(type='text' placeholder='訂單編號')
+								.col-3
+									select.form-select
+										option(selected='') 選單
+										option(value='1') 已付款
+										option(value='2') 未付款
+										option(value='3') 付款失敗
+								
+								.col-3
+									input.form-control(type='text' placeholder='輸入關鍵字')
+								.col-3
+									button.btn.btn-primary(type='submit') 查詢
+								.col-3
+									.form-check
+										input#inlineFormCheck.form-check-input(type='checkbox')
+										label.form-check-label(for='inlineFormCheck') 只顯示已成立訂單
+							.row.row-cols-lg-auto.g-3.m-1.align-items-center
+
+
+						.table_content
+							table.table.table-bordered.table-responsive
+								thead.table-dark
+									tr.align-middle
+										th(scope='col')
+										th(scope='col') 商品圖片
+										th(scope='col') 訂單編號
+										
+										th(scope='col') 日期
+										th(scope='col') 付款狀態
+										th(scope='col') 配送狀態
+										th(scope='col') 總金額
+								tbody
+									- var j = 20;
+									- for (var i = 1; i < j; i++)
+										tr.align-middle
+											td 
+												input#order_chk(type="checkbox", name="order_chk")
+											td
+												img.order_table_img(src="img/sample/100x100.jpg", alt="")
+											td(scope='row') 2023A919089237
+											td 11/15 05:45
+											td 已付款
+											td 配送中
+											td $180
+						nav.my-5(aria-label='Page navigation example')
+							ul.pagination.justify-content-center
+								li.page-item.disabled
+									a.page-link 上一頁
+								li.page-item.active
+									a.page-link(href='#') 1
+								li.page-item
+									a.page-link(href='#') 2
+								li.page-item
+									a.page-link(href='#') 3
+								li.page-item
+									a.page-link(href='#') 下一頁
+
+
+
+
+	script(src='js/3rd-party/jquery-3.6.0.min.js')
+	script(src='js/3rd-party/jquery.fancybox.min.js')
+	script(src='js/bs/bs.bundle.min.js')
+	
+	script(src='js/common.js')

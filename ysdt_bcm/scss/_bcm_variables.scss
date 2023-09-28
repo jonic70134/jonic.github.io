@@ -1,0 +1,11 @@
+//global
+$main-color: #0068b6;
+$main-lighten-color: mix($main-color,#fff,20);
+$main-blue-color: mix($main-color,#09c,10);
+$main-red-color: #e00;
+$main-green-color: #360;
+$main-grey-color: lighten(mix($main-color,#ccc,10),10);
+$anchor-color: $main-color;
+$anchor-hover-color: $main-red-color;
+$font-default: "Segoe UI",Arial,sans-serif;
+$font-heiti: "微軟正黑體","Microsoft Jhenghei","Heiti TC","LiHei Pro",sans-serif;

@@ -1,0 +1,31 @@
+header.top_menu.shadow-sm
+	.btn_group
+		//- a.side_menu_toggle(href='#' data-bs-toggle="collapse" data-bs-target="#side_menu" aria-expanded="true" aria-controls="side_menu")
+		//- 	i.bi.bi-layout-sidebar-inset
+		a.logo(href="index.html") 平台管理系統
+	ul.btn_group
+		li.nav-item
+			a.nav-link(href="#") 
+				i.bi.bi-gear.me-2
+				| 平台設定
+			//- .dropdown-toggle.p-3(href='#' type='button' data-bs-toggle='dropdown')
+			//- 	i.bi.bi-bell-fill.notify.me-2
+			//- 	span.notify_num 99
+			//- ul.dropdown-menu.dropdown-menu-end
+			//- 	li
+			//- 		a.dropdown-item(href='#') 新品上架審核已通過
+			//- 	li
+			//- 		a.dropdown-item(href='#') 群組權限已變更
+
+
+		li.nav-item.dropdown
+			a.nav-link.dropdown-toggle(href='#' data-bs-toggle='dropdown')
+				i.bi.bi-person-fill.p-1
+				span friday_user
+			ul.dropdown-menu.dropdown-menu-end
+				li
+					a.dropdown-item(href='#') 個人資料修改
+				//- li
+				//- 	hr.dropdown-divider
+				li
+					a.dropdown-item(href='#') 登出

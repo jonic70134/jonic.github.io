@@ -1,0 +1,59 @@
+doctype html
+html
+	head
+		include ./src/_meta.pug
+		
+		link(href='css/index.css', rel='stylesheet')
+	body
+		#wrapper
+			include src/_header.pug
+			
+			.site_body.container-fluid.gx-0
+				include src/_sidemenu.pug
+				.main_content.container-fluid.gx-0
+					.annoucement.alert.alert-warning
+						h6.alert-heading
+							i.bi.bi-exclamation-triangle-fill
+							| 系統維護公告
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							//- <a href="annoucement-list.php" class="more">more...</a>
+					.container-fluid.gx-0
+						.index_cata.row
+							.col-3.gx-4.gy-0
+								.card
+									.card-body.py-2.bg-primary
+										.card-title.my-0 商品管理
+									ul.list-group.list-group-flush.py-2.px-3
+										li.list-group-item
+											a(href="add-product.html") 新增商品
+										li.list-group-item 分類目錄
+										li.list-group-item 分類目錄
+							.col-3.gx-4
+								.card
+									.card-body.py-2.bg-success 
+										.card-title.my-0 訂單管理
+									ul.list-group.list-group-flush.py-2.px-3
+										li.list-group-item 
+											a(href="table-example.html") 列表頁範例
+										li.list-group-item 分類目錄
+							.col-3.gx-4
+								.card
+									.card-body.py-2.bg-warning
+										.card-title.my-0 行銷活動
+									ul.list-group.list-group-flush.py-2.px-3
+										li.list-group-item 分類目錄
+										li.list-group-item 分類目錄
+							.col-3.gx-4
+								.card
+									.card-body.py-2.bg-danger 
+										.card-title.my-0 網紅看盤管理
+									ul.list-group.list-group-flush.py-2.px-3
+										li.list-group-item 分類目錄
+										li.list-group-item 分類目錄
+
+
+	script(src='js/3rd-party/jquery-3.6.0.min.js')
+	script(src='js/3rd-party/jquery.fancybox.min.js')
+	script(src='js/bs/bs.bundle.min.js')
+	
+	script(src='js/common.js')
