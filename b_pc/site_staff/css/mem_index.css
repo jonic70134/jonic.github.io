@@ -1495,6 +1495,18 @@ a.gotop:after {
   background: white;
 }
 
+.happygo_foot {
+  padding: 0 20px 20px;
+  text-align: center;
+  color: #555;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+.happygo_foot a {
+  color: #06c;
+  text-decoration: underline;
+}
+
 .login_body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1696,4 +1708,48 @@ a.gotop:after {
   font-size: fluid(14px, 16px);
   color: #333;
   border: 1px solid #ccc;
+}
+
+.happydes {
+  background: white;
+}
+.happydes .site-main {
+  width: 900px;
+  height: auto;
+  padding: 20px 0;
+}
+.happydes .site-main .container {
+  width: 900px;
+  height: auto;
+  padding: 20px 0;
+}
+.happydes .site-main .container a {
+  color: #06c;
+}
+.happydes .site-main .container h3 {
+  margin: 10px 0;
+  padding: 5px 0;
+  color: #333;
+  font-weight: 700;
+  font-size: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.happdes_table td {
+  padding: 3px;
+  border: 1px solid #ccc;
+}
+
+.newtitle-box {
+  margin: 0 auto 5px;
+}
+
+.newcontent-box {
+  margin: 0 auto 5px;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+.intro-data-box {
+  line-height: 1.8;
 }
