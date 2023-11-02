@@ -1067,12 +1067,30 @@ button {
 .pay_label_one {
 	display: flex;
 	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
 	margin: 10px 10px 10px 0;
+	padding: 5px;
+	border: 1px solid #ccc;
 	cursor: pointer;
+	img{
+		display: block;
+		width: 110px;
+		max-width: 100%;
+		height: 35px;
+		padding: 0 5px;
+	}
+	p{
+		padding: 10px 5px;
+	}
 }
 
 .pay_radio {
+	display: none;
 	margin: 0 3px 0 0;
+	&:checked+.pay_label{
+		border:1px solid $primary-color;
+	}
 }
 
 .pay_t {
@@ -1104,7 +1122,7 @@ button {
 .quantity {
 	display: flex;
 	margin: 0 10px 0 0;
-
+	align-items: center;
 	p {
 		margin: 0 15px 0 0;
 	}
