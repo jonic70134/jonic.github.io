@@ -1630,19 +1630,16 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
+  min-width: 130px;
   margin: 10px 10px 10px 0;
   padding: 5px;
-  border: 1px solid #ccc;
   cursor: pointer;
 }
 .pay_label img,
 .pay_label_one img {
   display: block;
-  width: 110px;
-  max-width: 100%;
+  max-width: 100px;
   height: 35px;
   padding: 0 5px;
 }
@@ -1651,12 +1648,8 @@ button {
   padding: 10px 5px;
 }
 
-.pay_radio {
+.checkedborder {
   display: none;
-  margin: 0 3px 0 0;
-}
-.pay_radio:checked + .pay_label {
-  border: 1px solid #f5281e;
 }
 
 .pay_t .red {
@@ -2680,9 +2673,18 @@ strong {
   .pay_label_one {
     width: 100%;
   }
+  .payway_b {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .payway_t {
-    font-size: 0.9rem;
-    text-align: right;
+    margin: 5px 0;
+    text-align: left;
   }
   .cart_img img {
     width: 50px;

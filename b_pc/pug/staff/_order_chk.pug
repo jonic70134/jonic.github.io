@@ -114,34 +114,66 @@ html
 						.line.payway_b
 							.payway_t 付款方式：
 							.payway
-							
-									input.pay_radio#payment1(type="radio",value="1",name="payway")
-									label.pay_label(for="payment1")
-										img(src="img/pay_line.svg", alt="Line Pay")
-								
+								label.pay_label(for="payment1")
+									input.pay_radio#payment1(type="radio",value="1",name="payway" checked)
+									img(src="img/pay_line.svg", alt="Line Pay")
+									div.checkedborder
+								label.pay_label(for="payment2")
 									input.pay_radio#payment2(type="radio",value="2",name="payway")
-									label.pay_label(for="payment2")
-										img(src="img/pay_jko.svg", alt="")
-						
+									img(src="img/pay_jko.svg", alt="")
+									div.checkedborder
+								label.pay_label(for="payment3")
 									input.pay_radio#payment3(type="radio",value="3",name="payway")
-									label.pay_label(for="payment3")
-										img(src="img/pay_uucard.svg", alt="")
-						
+									img(src="img/pay_uucard.svg", alt="")
+									div.checkedborder
+								label.pay_label(for="payment4")
 									input.pay_radio#payment4(type="radio",value="4",name="payway")
-									label.pay_label(for="payment4")
-										img(src="img/pay_happy.svg", alt="")
-
-									input.pay_radio#payment7(type="radio",value="7",name="payway")
-									label.pay_label(for="payment7")
-										img(src="img/pay_family.svg", alt="")
-								
+									img(src="img/pay_happy.svg", alt="")
+									div.checkedborder
+								label.pay_label(for="payment8")
+									input.pay_radio#payment8(type="radio",value="8",name="payway")
+									img(src="img/pay_family.svg", alt="")
+									div.checkedborder
+								label.pay_label(for="payment5")
 									input.pay_radio#payment5(type="radio",value="5",name="payway")
-									label.pay_label(for="payment5")
-										p.pay_t 信用卡一次付清
-								
+									p.pay_t 信用卡一次付清
+									div.checkedborder
+								label.pay_label(for="payment6")
 									input.pay_radio#payment6(type="radio",value="6",name="payway")
-									label.pay_label(for="payment6")
-										p.pay_t 信用卡紅利折抵
+									p.pay_t ATM轉帳
+									div.checkedborder
+								label.pay_label(for="payment7")
+									input.pay_radio#payment7(type="radio",value="7",name="payway")
+									p.pay_t web-ATM
+									div.checkedborder
+
+								//- input.pay_radio#payment1(type="radio",value="1",name="payway")
+								//- label.pay_label(for="payment1")
+								//- 	img(src="img/pay_line.svg", alt="Line Pay")
+							
+								//- input.pay_radio#payment2(type="radio",value="2",name="payway")
+								//- label.pay_label(for="payment2")
+								//- 	img(src="img/pay_jko.svg", alt="")
+					
+								//- input.pay_radio#payment3(type="radio",value="3",name="payway")
+								//- label.pay_label(for="payment3")
+								//- 	img(src="img/pay_uucard.svg", alt="")
+					
+								//- input.pay_radio#payment4(type="radio",value="4",name="payway")
+								//- label.pay_label(for="payment4")
+								//- 	img(src="img/pay_happy.svg", alt="")
+
+								//- input.pay_radio#payment7(type="radio",value="7",name="payway")
+								//- label.pay_label(for="payment7")
+								//- 	img(src="img/pay_family.svg", alt="")
+							
+								//- input.pay_radio#payment5(type="radio",value="5",name="payway")
+								//- label.pay_label(for="payment5")
+								//- 	p.pay_t 信用卡一次付清
+							
+								//- input.pay_radio#payment6(type="radio",value="6",name="payway")
+								//- label.pay_label(for="payment6")
+								//- 	p.pay_t 信用卡紅利折抵
 
 						.line.paydiv#paydiv5
 							.form
