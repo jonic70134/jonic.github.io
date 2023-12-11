@@ -266,6 +266,63 @@ a.ord_confirm_btn {
     overflow-x: auto;
 }
 
+
+.order_st_list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 20px 30px;
+
+    li {
+        width: 100px;
+        position: relative;
+        text-align: center;
+        font-size: .8rem;
+        line-height: 3;
+
+
+        &:before {
+            position: absolute;
+            bottom: -13px;
+            left: calc(50% - 10px);
+        }
+    }
+
+    li.order_st_done {
+        color: black;
+        border-bottom: 4px solid #27aa80;
+
+
+        &:before {
+            content: "\e933";
+            font-family: "icomoon" !important;
+            font-size: .7rem;
+            color: white;
+            background-color: #27aa80;
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 1px 1px 0 #999;
+        }
+    }
+
+    li.order_st_todo {
+        color: #aaa;
+        border-bottom: 4px solid #aaa;
+
+        // &:before {
+        //     content: "\039F";
+        //     color: silver;
+        //     background-color: white;
+        //     font-size: 1.2rem;
+        //     bottom: -1.2em;
+        // }
+    }
+}
+
 .mem_chk_st {
     display: flex;
     flex-flow: row nowrap;

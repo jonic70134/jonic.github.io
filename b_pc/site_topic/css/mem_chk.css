@@ -1609,6 +1609,57 @@ a.ord_confirm_btn {
   -ms-grid-column: 15;
 }
 
+.order_st_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px 30px;
+}
+.order_st_list li {
+  width: 100px;
+  position: relative;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 3;
+}
+.order_st_list li:before {
+  position: absolute;
+  bottom: -13px;
+  left: calc(50% - 10px);
+}
+.order_st_list li.order_st_done {
+  color: black;
+  border-bottom: 4px solid #27aa80;
+}
+.order_st_list li.order_st_done:before {
+  content: "\e933";
+  font-family: "icomoon" !important;
+  font-size: 0.7rem;
+  color: white;
+  background-color: #27aa80;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  border: none;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 0 #999;
+          box-shadow: 1px 1px 0 #999;
+}
+.order_st_list li.order_st_todo {
+  color: #aaa;
+  border-bottom: 4px solid #aaa;
+}
+
 .mem_chk_st {
   display: -webkit-box;
   display: -ms-flexbox;
