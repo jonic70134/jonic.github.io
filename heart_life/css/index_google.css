@@ -168,13 +168,13 @@ img {
 .summary {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  line-clamp: 3;
-  -webkit-line-clamp: 3;
-  margin: 20px 60px 40px 0;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  margin: 20px 60px 20px 0;
   overflow: hidden;
   color: #999;
   line-height: 1.2;
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
   word-break: break-all;
 }
 
@@ -221,7 +221,7 @@ img {
 .cupn_t {
   margin: 0 0 10px;
   color: #f5c5c5;
-  font-size: calc(0.9rem + 0.1 * (100vw - 600px) / 600);
+  font-size: calc(0.8rem + 0.1 * (100vw - 600px) / 600);
 }
 
 .cupn_ticket {
@@ -286,9 +286,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin: 20px 0 0 0;
 }
 
@@ -309,8 +309,8 @@ img {
   -ms-flex-item-align: end;
       align-self: flex-end;
   -webkit-box-flex: 2;
-      -ms-flex: 2 1 46%;
-          flex: 2 1 46%;
+      -ms-flex: 2 1 30%;
+          flex: 2 1 30%;
 }
 
 .price {
