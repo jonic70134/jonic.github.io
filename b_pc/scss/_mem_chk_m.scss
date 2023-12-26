@@ -2,8 +2,8 @@
 @import "partials/color";
 @import "partials/function";
 @import "partials/font_iconmoon";
-@import "partials/head";
-@import 'partials/foot';
+@import "partials/head_m";
+@import 'partials/foot_m';
 @import "partials/cupn";
 @import "partials/pagenav";
 
@@ -13,19 +13,17 @@
 }
 
 .body_container {
-    min-height: calc(100vh - 82px);
-    padding: 0 0 40px;
     background: #eee;
 }
 
 .site-main {
-    width: 1220px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
 
 .container {
-    width: 1220px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -142,14 +140,13 @@
 }
 
 .order_tab {
-    display: grid;
-    grid-template-rows: 30px 30px;
-    grid-template-columns: 140px 140px 140px 83px 1fr 400px 1fr;
-    grid-gap: 5px 0;
+    display: flex;
+    flex-flow:row wrap ;
     align-items: center;
-    margin: 10px auto;
+    margin: 0 auto;
     font-size: .8rem;
     line-height: 1.2;
+    background: #cdeeff;
 }
 
 [class*="ord_head"] {
@@ -157,6 +154,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    padding: 10px;
     background: #cdeeff;
 
     &.grey {
@@ -183,7 +181,6 @@
 }
 
 .ord_addr_b {
-    width: 535px;
     font-size: .8rem;
     color: #777;
     line-height: 1.2;
@@ -196,12 +193,12 @@ a.ord_confirm_btn {
 }
 
 .mem_chk_tab {
-    display: none;
+    // display: none;
     position: relative;
 
     &.slim {
         .mem_chk {
-            grid-template-columns: 1fr 100px 100px 100px 100px;
+            grid-template-columns:85% 15%;
             margin: 0 0 10px;
             border: 2px solid #50baf0;
             border-top: 1px solid #ccc;
@@ -260,7 +257,7 @@ a.ord_confirm_btn {
 .mem_chk {
     display: grid;
     grid-template-rows: 30px 90px;
-    grid-template-columns: 400px 130px 100px 90px 110px 100px 100px 1fr;
+    grid-template-columns: repeat(5 ,auto);
     grid-gap: 0;
     margin: 0 auto;
     overflow-x: auto;
@@ -325,7 +322,7 @@ a.ord_confirm_btn {
 
 .mem_chk_st {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     margin: 0;
     background-color: #fff9e7;
     border: 2px solid #50baf0;
@@ -355,11 +352,11 @@ a.ord_confirm_btn {
     border-left: 3px solid #06c;
 }
 
-[ID*="chk_open_detail"] {
-    display: none;
-}
+// [ID*="chk_open_detail"] {
+//     display: none;
+// }
 
-[ID*="chk_open_detail"]:checked {
+[ID*="chk_open_detail"] {
     &+.mem_chk_tab {
         display: block;
         margin: 0;
@@ -373,56 +370,56 @@ a.ord_confirm_btn {
     // }
 }
 
-.chk_open_lb {
-    display: inline-block;
-    padding: 5px 10px;
-    font-size: .8rem;
-    color: #333;
-    border: 1px solid #ccc;
-    border-bottom: 0;
-    border-left: 0;
+// .chk_open_lb {
+//     display: inline-block;
+//     padding: 5px 10px;
+//     font-size: .8rem;
+//     color: #333;
+//     border: 1px solid #ccc;
+//     border-bottom: 0;
+//     border-left: 0;
 
-    // color: darken($color: #c5f1ff, $amount: 55) ;
-    // back{ground-color:darken($color: #c5f1ff, $amount: 50) ;
-    &:after {
-        display: block;
-        content: '展合明細▼';
-    }
+//     // color: darken($color: #c5f1ff, $amount: 55) ;
+//     // back{ground-color:darken($color: #c5f1ff, $amount: 50) ;
+//     &:after {
+//         display: block;
+//         content: '展合明細▼';
+//     }
 
-}
+// }
 
-.chk_open_lb.load {
-    position: relative;
+// .chk_open_lb.load {
+//     position: relative;
 
-    &:before {
-        display: block;
-        width: 65px;
-        content: '展合明細';
-    }
+//     &:before {
+//         display: block;
+//         width: 65px;
+//         content: '展合明細';
+//     }
 
-    &::after {
-        content: '';
-        position: absolute;
-        top: 4px;
-        right: 5px;
-        width: 10px;
-        height: 10px;
-        border-radius: 10px;
-        border: 3px solid #ccc;
-        border-top-color: black;
-        animation: loading 2s linear infinite;
-    }
-}
+//     &::after {
+//         content: '';
+//         position: absolute;
+//         top: 4px;
+//         right: 5px;
+//         width: 10px;
+//         height: 10px;
+//         border-radius: 10px;
+//         border: 3px solid #ccc;
+//         border-top-color: black;
+//         animation: loading 2s linear infinite;
+//     }
+// }
 
-@keyframes loading {
-    0% {
-        transform: rotate(0deg);
-    }
+// @keyframes loading {
+//     0% {
+//         transform: rotate(0deg);
+//     }
 
-    100% {
-        transform: rotate(360deg);
-    }
-}
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
 
 [class*="mem_block"] {
     display: flex;
@@ -437,7 +434,7 @@ a.ord_confirm_btn {
     border-bottom: 1px solid #ccc;
     border-right: 1px solid #ccc;
 
-    &:nth-child(5n) {
+    &:nth-child(2n) {
         border-right: 0;
     }
 
@@ -1025,14 +1022,13 @@ a.grey {
 
 @media (max-width:1220px) {
     .order_tab {
-        grid-template-columns: 140px 140px 140px 83px 100px 1fr 80px;
-        grid-template-rows: 30px 50px;
-        overflow-x: auto;
-        // grid-template-columns: repeat(7,auto);
+        // grid-template-columns: 140px 140px 140px 83px 100px 1fr 80px;
+        // grid-template-rows: 30px 50px;
+        // grid-template-columns: repeat(4,1fr);
     }
 
     .ord_block {
-        padding: 5px;
+        padding: 10px;
     }
 
     .back {
