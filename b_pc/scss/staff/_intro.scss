@@ -362,6 +362,9 @@ h2 {
     justify-content: center;
 }
 
+.duo_top_mobile{
+    display: none;
+}
 .duo_bot {
     display: flex;
     flex-flow: row nowrap;
@@ -843,12 +846,13 @@ h2 {
 }
 
 .mem_des_t {
+    margin:5px 0;
     color: #333;
 }
 
 .des_ul {
     list-style: decimal outside;
-    padding: 0 0 0 15px;
+    padding: 10px 0 0 15px;
 }
 
 @media (max-width: 1220px) {
@@ -1014,7 +1018,14 @@ h2 {
             font-size: 1rem;
         }
     }
-
+    .duo_top{
+        display: none;
+    }
+    .duo_top_mobile{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
     .duo_bot {
         flex-flow: column;
         margin: 5px 0 0;
