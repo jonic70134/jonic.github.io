@@ -1359,6 +1359,15 @@ label {
   line-height: 1.2;
   background: #cdeeff;
 }
+.order_tab.grey {
+  background: #ccc;
+}
+.order_tab.complete {
+  background: #ffcccc;
+}
+.order_tab.yellow {
+  background: #ffffcc;
+}
 
 [class*=ord_head] {
   display: -webkit-box;
@@ -1372,7 +1381,6 @@ label {
           justify-content: center;
   height: 100%;
   padding: 10px;
-  background: #cdeeff;
 }
 [class*=ord_head].grey {
   background: #ccc;

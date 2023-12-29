@@ -147,6 +147,17 @@
     font-size: .8rem;
     line-height: 1.2;
     background: #cdeeff;
+    &.grey {
+        background: #ccc;
+    }
+
+    &.complete {
+        background: #ffcccc;
+    }
+
+    &.yellow {
+        background: #ffffcc;
+    }
 }
 
 [class*="ord_head"] {
@@ -155,8 +166,6 @@
     justify-content: center;
     height: 100%;
     padding: 10px;
-    background: #cdeeff;
-
     &.grey {
         background: #ccc;
     }
