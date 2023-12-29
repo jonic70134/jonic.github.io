@@ -2,8 +2,8 @@
 @import "partials/color";
 @import "partials/function";
 @import "partials/font_iconmoon";
-@import "partials/head_m";
-@import 'partials/foot_m';
+@import 'partials/order_head';
+@import 'partials/foot';
 @import "partials/cupn";
 @import "partials/pagenav";
 
@@ -140,12 +140,15 @@
 }
 
 .order_tab {
-    display: flex;
-    flex-flow:row wrap ;
-    align-items: center;
-    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 0 0px;
+    align-items: stretch;
+    justify-content: flex-start;
     font-size: .8rem;
     line-height: 1.2;
+    border: 1px solid #ccc;
     background: #cdeeff;
     &.grey {
         background: #ccc;
@@ -159,13 +162,17 @@
         background: #ffffcc;
     }
 }
-
+.ord_block {
+    padding: 5px 10px;
+}
 [class*="ord_head"] {
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
-    padding: 10px;
+    padding: 5px 10px 0;
+    
+    &:last-child{
+        border:none;
+    }
     &.grey {
         background: #ccc;
     }
@@ -1037,9 +1044,6 @@ a.grey {
         // grid-template-columns: repeat(4,1fr);
     }
 
-    .ord_block {
-        padding: 10px;
-    }
 
     .back {
         margin: 0 0 20px;

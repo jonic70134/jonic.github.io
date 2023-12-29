@@ -5,7 +5,7 @@ html
 		link(href='css/mem_chk_m.css', rel='stylesheet')
 	body
 		.body_container
-			include src/_header_m.pug 
+			include src/_order_head.pug 
 			.site-main
 				.container
 					.mem_chk_t
@@ -18,24 +18,24 @@ html
 					.mem_order_detail
 						.mem_order_info
 							.order_tab
-								.ord_block.ord_head.center 交易編號
-								//- .ord_block.ord_head.center 訂購時間
-								//- .ord_block.ord_head.center 實付金額
-								//- .ord_block.ord_head.center 付款時間
-								//- .ord_block.ord_head
+								.ord_block.ord_head 交易編號
+								//- .ord_block.ord_head 訂購時間
+								.ord_block.ord_head 實付金額
+								.ord_block.ord_head 付款時間
+								.ord_block.ord_head
 
-								.ord_block.ord_no.center
+								.ord_block.ord_no
 									| TX20230130123456
 								//- .ord_block.ord_time.center
 								//- 	| 01/30 11:32
-								//- .ord_block.ord_price.center
-								//- 	| $36,650
-								//- .ord_block.pay_time.center.col_center
-								//- 	p 付款完成
-								//- 	p 01/30 10:35
-								//- .ord_block.ord_cancel.center
-								//- 	span 我要
-								//- 	a.grey(href="mem_chk_return.html") 全退訂 
+								.ord_block.ord_price
+									| $36,650
+								.ord_block.pay_time
+									p 付款完成
+									p 01/30 10:35
+								.ord_block.ord_cancel
+									span 我要
+									a.grey(href="mem_chk_return_m.html") 全退訂 
 								//- .ord_block.ord_detail
 								
 								//- .ord_block.ord_ask.center
@@ -166,9 +166,21 @@ html
 										//- a.ord_confirm_btn(href="#") 確認退訂 
 						.mem_order_info
 							.order_tab
-								.ord_block.ord_head.center 交易編號
-								.ord_block.ord_no.center
+								.ord_block.ord_head 交易編號
+								.ord_block.ord_head 實付金額
+								.ord_block.ord_head 付款時間
+								.ord_block.ord_head
+
+								.ord_block.ord_no
 									| TX20230130123456
+								.ord_block.ord_price
+									| $36,650
+								.ord_block.pay_time
+									p 付款完成
+									p 01/30 10:35
+								.ord_block.ord_cancel
+									span 我要
+									a.grey(href="mem_chk_return.html") 全退訂 
 							
 							.mem_chk_tab.slim
 								.mem_chk_st
@@ -211,10 +223,10 @@ html
 										p 收貨人姓名：施*宏
 										p 收貨人地址：新北市泰山區*********2號3樓
 									.ord_confirm
-										a.ord_confirm_btn(href="mem_chk_return_m.html") 全退訂 
+										//- a.ord_confirm_btn(href="mem_chk_return_m.html") 全退訂 
 										//- a.ord_confirm_btn(href="#") 確認退訂 
 
-		include src/_foot_m.pug
+		include src/_foot.pug
 		script(src='js/3rd-party/jquery-3.6.0.min.js')
 		script(src='js/3rd-party/swiper-bundle.min.js')
 		script(src='js/common.js')
