@@ -185,7 +185,7 @@
 
 .ord_addr {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     padding: 10px 0 10px 10px;
 }
 
@@ -196,9 +196,9 @@
 }
 
 a.ord_confirm_btn {
-    padding: 5px 8px;
-    text-decoration: none;
-    border: 1px solid #06c;
+    margin:0 0 0 5px;
+    padding: 0;
+    text-decoration: underline;
 }
 
 .mem_chk_tab {
@@ -658,7 +658,7 @@ a.grey {
 // 取消訂單
 .mem_chk_return,
 .mem_chk_ask {
-    padding: 30px;
+    padding: 30px 30px 80px;
     background: white;
     box-shadow: 1px 1px 10px #ccc;
 }
