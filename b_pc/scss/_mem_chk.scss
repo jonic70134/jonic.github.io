@@ -361,7 +361,7 @@ a.ord_confirm_btn {
 }
 
 [ID*="chk_open_detail"]:checked {
-    &+.mem_chk_tab {
+    & +.mem_chk_tab {
         display: block;
         margin: 0;
     }

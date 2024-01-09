@@ -44,6 +44,8 @@
                 </div>
                 <div class="ord_block ord_cancel"><span>我要</span><a class="grey" href="mem_chk_return_m.html">全退訂 </a></div>
               </div>
+              <label class="chk_open_lb" for="chk_open_detail_1"></label>
+              <input class="chk_open_detail" id="chk_open_detail_1" type="checkbox" name="">
               <div class="mem_chk_tab slim">
                 <div class="mem_chk_st">
                   <div class="mem_st"> 
@@ -127,6 +129,8 @@
                 </div>
                 <div class="ord_block ord_cancel"><span>我要</span><a class="grey" href="mem_chk_return.html">全退訂 </a></div>
               </div>
+              <label class="chk_open_lb" for="chk_open_detail_3"></label>
+              <input class="chk_open_detail" id="chk_open_detail_3" type="checkbox" name="">
               <div class="mem_chk_tab slim">
                 <div class="mem_chk_st">
                   <div class="mem_st"> 
@@ -190,6 +194,11 @@
     <script src="js/3rd-party/jquery-3.6.0.min.js"></script>
     <script src="js/3rd-party/swiper-bundle.min.js"></script>
     <script src="js/common.js"></script>
+    <script>
+      $(".chk_open_lb").click(function() {
+      	$(this).toggleClass('load');
+      });
+    </script>
     <div class="lightbox-target" id="item_price_pop">
       <div class="content">
         <div class="con_m">

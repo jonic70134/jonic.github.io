@@ -40,8 +40,8 @@ html
 								
 								//- .ord_block.ord_ask.center
 									
-							//- label.chk_open_lb(for="chk_open_detail_2")
-							//- input#chk_open_detail_2.chk_open_detail(type="checkbox", name="")
+							label.chk_open_lb(for="chk_open_detail_1")
+							input#chk_open_detail_1.chk_open_detail(type="checkbox", name="")
 							
 							.mem_chk_tab.slim
 								.mem_chk_st
@@ -182,6 +182,9 @@ html
 									span 我要
 									a.grey(href="mem_chk_return.html") 全退訂 
 							
+							label.chk_open_lb(for="chk_open_detail_3")
+							input#chk_open_detail_3.chk_open_detail(type="checkbox", name="")
+
 							.mem_chk_tab.slim
 								.mem_chk_st
 									.mem_st 
@@ -230,10 +233,10 @@ html
 		script(src='js/3rd-party/jquery-3.6.0.min.js')
 		script(src='js/3rd-party/swiper-bundle.min.js')
 		script(src='js/common.js')
-		//- script.
-		//- 	$(".chk_open_lb").click(function() {
-		//- 		$(this).toggleClass('load');
-		//- 	});
+		script.
+			$(".chk_open_lb").click(function() {
+				$(this).toggleClass('load');
+			});
 		.lightbox-target#item_price_pop
 			.content
 				.con_m

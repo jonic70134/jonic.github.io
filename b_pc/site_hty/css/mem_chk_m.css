@@ -1129,6 +1129,7 @@ a.ord_confirm_btn {
 }
 
 .mem_chk_tab {
+  display: none;
   position: relative;
 }
 .mem_chk_tab.slim .mem_chk {
@@ -1322,11 +1323,72 @@ a.ord_confirm_btn {
   border-left: 3px solid #06c;
 }
 
-[ID*=chk_open_detail] + .mem_chk_tab {
+[ID*=chk_open_detail] {
+  display: none;
+}
+
+[ID*=chk_open_detail]:checked + .mem_chk_tab {
   display: block;
   margin: 0;
 }
 
+.chk_open_lb {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  color: #333;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  border-left: 0;
+}
+.chk_open_lb:after {
+  display: block;
+  content: "展合明細▼";
+}
+
+.chk_open_lb.load {
+  position: relative;
+}
+.chk_open_lb.load:before {
+  display: block;
+  width: 65px;
+  content: "展合明細";
+}
+.chk_open_lb.load::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  border: 3px solid #ccc;
+  border-top-color: black;
+  -webkit-animation: loading 2s linear infinite;
+          animation: loading 2s linear infinite;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 [class*=mem_block] {
   display: -webkit-box;
   display: -ms-flexbox;

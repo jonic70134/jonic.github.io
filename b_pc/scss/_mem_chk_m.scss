@@ -209,7 +209,7 @@ a.ord_confirm_btn {
 }
 
 .mem_chk_tab {
-    // display: none;
+    display: none;
     position: relative;
 
     &.slim {
@@ -369,11 +369,11 @@ a.ord_confirm_btn {
     border-left: 3px solid #06c;
 }
 
-// [ID*="chk_open_detail"] {
-//     display: none;
-// }
-
 [ID*="chk_open_detail"] {
+    display: none;
+}
+
+[ID*="chk_open_detail"]:checked {
     &+.mem_chk_tab {
         display: block;
         margin: 0;
@@ -387,56 +387,56 @@ a.ord_confirm_btn {
     // }
 }
 
-// .chk_open_lb {
-//     display: inline-block;
-//     padding: 5px 10px;
-//     font-size: .8rem;
-//     color: #333;
-//     border: 1px solid #ccc;
-//     border-bottom: 0;
-//     border-left: 0;
+.chk_open_lb {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: .8rem;
+    color: #333;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    border-left: 0;
 
-//     // color: darken($color: #c5f1ff, $amount: 55) ;
-//     // back{ground-color:darken($color: #c5f1ff, $amount: 50) ;
-//     &:after {
-//         display: block;
-//         content: '展合明細▼';
-//     }
+    // color: darken($color: #c5f1ff, $amount: 55) ;
+    // back{ground-color:darken($color: #c5f1ff, $amount: 50) ;
+    &:after {
+        display: block;
+        content: '展合明細▼';
+    }
 
-// }
+}
 
-// .chk_open_lb.load {
-//     position: relative;
+.chk_open_lb.load {
+    position: relative;
 
-//     &:before {
-//         display: block;
-//         width: 65px;
-//         content: '展合明細';
-//     }
+    &:before {
+        display: block;
+        width: 65px;
+        content: '展合明細';
+    }
 
-//     &::after {
-//         content: '';
-//         position: absolute;
-//         top: 4px;
-//         right: 5px;
-//         width: 10px;
-//         height: 10px;
-//         border-radius: 10px;
-//         border: 3px solid #ccc;
-//         border-top-color: black;
-//         animation: loading 2s linear infinite;
-//     }
-// }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        right: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        border: 3px solid #ccc;
+        border-top-color: black;
+        animation: loading 2s linear infinite;
+    }
+}
 
-// @keyframes loading {
-//     0% {
-//         transform: rotate(0deg);
-//     }
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
 
-//     100% {
-//         transform: rotate(360deg);
-//     }
-// }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 [class*="mem_block"] {
     display: flex;
