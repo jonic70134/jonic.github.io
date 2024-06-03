@@ -33,12 +33,14 @@
 
 ul {
 	&.tabs {
+        width: 98%;
 		margin: 0 10px;
 		padding: 0px;
 		list-style: none;
         border-bottom: #7db0d9 3px solid;
 		li {
 			display: inline-block;
+            margin: 0 10px 0 0;
 			padding: 10px 15px;
             background: #f3f8fc;
             border: #d4dbdf 1px solid;
@@ -61,4 +63,13 @@ ul {
 	&.current {
 		display: inherit;
 	}
+}
+
+.table_content{
+    width:98%;
+    margin: 0 10px;
+    overflow-x: auto;
+    table{
+        width: 1500px;
+    }
 }
