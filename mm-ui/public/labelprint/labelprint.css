@@ -1474,8 +1474,8 @@ button {
 }
 
 .main-container {
-  width: 100%;
-  padding: 50px 10px 0 55px;
+  width: 98%;
+  padding: 50px 10px 0 60px;
 }
 
 .red {
@@ -1669,6 +1669,7 @@ button {
 }
 
 .control_panel {
+  width: 98%;
   margin: 20px 10px;
   padding: 10px;
   font-size: 0.85rem;

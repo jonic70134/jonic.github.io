@@ -60,16 +60,17 @@ ul {
 }
 .tab-content {
 	display: none;
+    width: 98%;
 	&.current {
 		display: inherit;
 	}
 }
 
 .table_content{
-    width:98%;
+    width:100%;
     margin: 0 10px;
     overflow-x: auto;
     table{
-        width: 1500px;
+        width: 1600px;
     }
 }
