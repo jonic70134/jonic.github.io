@@ -1,0 +1,13 @@
+mixin navItem(url, text, active=false)
+  li.nav-item
+    a.nav-link(href=url, class=active ? "active" : "")= text
+
+mixin navbar(activeItem)
+  nav.navbar
+    ul.nav
+      +navItem("/home", "首頁", activeItem === "home")
+      +navItem("/about", "訂單管理", activeItem === "about")
+      +navItem("/contact", "聯絡我們", activeItem === "contact")
+
+body
+  +navbar("about")

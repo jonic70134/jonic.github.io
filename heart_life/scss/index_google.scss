@@ -85,9 +85,15 @@ img{
 	position: relative;
 	max-width: 1280px;
     margin: 0 auto;
+	border-radius: 0 0 10px 10px;
 }
 .logo{
-	margin: 40px 20px;
+	// margin: 40px 20px;
+	a{
+		display: block;
+		height: 70px;
+		padding: 10px 20px;
+	}
 	img{
 		width: 200px;
 		border-radius: 0;
@@ -285,6 +291,7 @@ img{
 	margin:0 0 20px;
 	padding:1.8%;
 	background-color: #333;
+	border-radius: 10px;
 	box-sizing: border-box;
 	.info{
 		position: relative;
@@ -348,6 +355,7 @@ img{
 	margin:0 1.55% 2% 0;
 	padding: 15px 20px 15px 15px;
 	background-color: #333;
+	border-radius: 10px;
 	box-sizing: border-box;
 	&:nth-child(2n){
 		margin-left:0;
@@ -404,13 +412,21 @@ img{
 		flex:2 1 70%;
 	}
 	.cupn_block{
-		flex:2 1 20%;
+		flex:2 1 35%;
+	}
+	.cupn_bg{
+		flex-flow:row nowrap;
 	}
 	.cupn_t{
 		margin:0 0 5px;
 	}
 	.cupn_ticket{
 		font-size: clamp(.9rem, 1.5vw, 1.3rem);
+	}
+	.cupn_price_t{
+		margin:2px 3px 0 0;
+		color:#555;
+		font-size: clamp(.8rem, 1vw, 1.2rem);
 	}
 	.nor_t, .dis_t{
 		margin: 0 5px 0 0;
@@ -724,7 +740,7 @@ img{
 			flex:2 1 70%;
 		}
 		.cupn_block{
-			flex:2 1 30%;
+			flex:2 1 35%;
 		}
 	}
 }

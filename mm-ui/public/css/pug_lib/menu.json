@@ -1,0 +1,10 @@
+{
+    "list":[{
+        "name": "首頁",
+        "url": "index.html"
+    },
+    {
+        "name": "分頁",
+        "url": "page.html"
+    }]
+}

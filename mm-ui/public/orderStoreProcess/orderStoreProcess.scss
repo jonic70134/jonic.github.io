@@ -1,0 +1,28 @@
+// css編譯檔
+@import "../css/scss_lib/reset";
+@import "../css/scss_lib/var";
+@import "../css/scss_lib/font";
+@import "../css/scss_lib/layout";
+@import "../css/scss_lib/table_style";
+
+
+.panel-select{
+    width:200px;
+    margin:0 8px 0 0;
+    padding: 7px;
+}
+.panel-input{
+    width: 250px;
+    padding: 7px;
+}
+.flex-row{
+    margin: 10px 0;
+}
+[class^=flex] {
+    margin:10px 0;
+}
+.dash{
+    margin: 0 8px;
+    font-size:1rem;
+}
+

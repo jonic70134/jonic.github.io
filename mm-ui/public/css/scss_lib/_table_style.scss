@@ -1,0 +1,291 @@
+
+.table_panel,.table_content{
+    font-size:.85rem;
+}
+table {
+    font-size: .9rem;
+    background-color: var(--white-color);
+    line-height: 1.4;
+    a {
+        margin: 0 2px;
+        color: #06c;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .ref{
+        position: relative;
+        span{
+            display: none;
+            position: absolute;top:100%;left:-75px;z-index: 10;
+            width:150px;
+            padding:5px 10px;
+            color:var(--black-color);
+            border:1px solid #999;
+            background-color: white;
+        }
+        &:hover span{
+            display: block;
+            
+        }
+    }
+}
+
+thead {
+    position: sticky;top: 0;
+    color: var(--black-color);
+    background: var(--thead-color);
+    th{
+        white-space: nowrap;
+        border-bottom:1px solid var(--thead-border-color) ;
+        vertical-align: middle;
+    }
+    a{
+        color:var(--thead-link-color);
+    }
+    .notice{
+        color:var(--thead-notice-color);
+    }
+    tr:nth-child(2){
+        th{
+            white-space: nowrap;
+            border-bottom:1px solid var(--thead-border-color) ;
+            vertical-align: middle;
+        }
+        a{
+            color:var(--thead-link-color);
+        }
+        .notice{
+            color:var(--thead-notice-color);
+        }
+    }
+}
+
+tfoot {
+    text-align: center;
+}
+
+th,
+td {
+    padding: 7px 7px;
+    vertical-align: middle;
+}
+
+
+
+// input style
+input[type="text"] ,input[type="date"]{
+    margin-right: 3px;
+    padding:7px;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+
+    &:focus {
+        border: 1px solid var(--table-blue-color);
+    }
+}
+select{
+    padding:7px;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+}
+input::placeholder{
+    color:#bbb;
+}
+
+.radio_styleize{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    input[type=radio] {
+        display: none;
+    }
+    
+    .active-label {
+        color: var(--table-blue-color);
+    
+        &:before {
+            border-color: var(--table-blue-color);
+        }
+    }
+    label {
+        position: relative;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1;
+        cursor: pointer;
+        margin: 0 10px 0 0;
+        padding: 0 0 0 20px;
+        transition: all .15s ease;
+    
+        &:focus,
+        &:hover,
+        &:active {
+            @extend .active-label;
+        }
+    
+        &:first-of-type {
+            border: 0;
+        }
+    
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            border: 1px solid #ccc;
+        }
+    }
+    input:checked+label {
+        @extend .active-label;
+    
+        &:before {
+            border-color: white;
+            border: none;
+            background: var(--table-blue-color);
+        }
+    }
+    input:disabled+label {
+        background: #efefef;
+        color: rgba(black, .5);
+        cursor: not-allowed;
+    
+        &:hover {
+            border-color: rgba(black, .1);
+        }
+    
+        &:before {
+            border-color: white;
+            background: white;
+        }
+    }
+}
+
+.chk_table_cell{
+    width:80px;
+}
+.chk_stylelize{
+    [type="checkbox"]:checked,
+    [type="checkbox"]:not(:checked) {
+        display: none;
+    }
+
+    [type="checkbox"]:checked+label,
+    [type="checkbox"]:not(:checked)+label {
+        position: relative;
+        padding-left: 20px;
+        line-height: 20px;
+        color: var(--black-color);
+    }
+
+    [type="checkbox"]:checked+label:before,
+    [type="checkbox"]:not(:checked)+label:before {
+        content: "";
+        position: absolute;top: 50%;left: 0;    
+        width: 15px;
+        height: 15px;
+        background:var( --white-color);
+        border-radius: 3px;
+        border: 1px solid var(--table-blue-color);
+        transform: translateY(-50%);
+    }
+
+    [type="checkbox"]:checked+label:before {
+       background-color: var(--table-blue-color);
+    }
+
+    [type="checkbox"]:checked+label:after,
+    [type="checkbox"]:not(:checked)+label:after {
+        content: "";
+        width: 8px;
+        height: 3px;
+        position: absolute;top: 6px;left: 3px;
+        background: transparent;
+        border: 2px solid var(--white-color);
+        border-top: none;
+        border-right: none;
+        transform: rotate(-45deg);
+        transition: all 0.1s ease;
+    }
+
+    [type="checkbox"]:not(:checked)+label:after {
+        opacity: 0;
+    }
+
+    [type="checkbox"]:checked+label:after {
+        opacity: 1;
+    }
+}
+
+.table_content,
+.table_panel {
+    margin: 0 10px 10px;
+}
+
+.table_content table {
+    width: 100%;
+}
+
+.table_panel {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-top: none;
+    border-right: none;
+    background-color: var(--white-color);
+}
+
+
+
+.table_content {
+    table{
+        border: 1px solid #ccc;
+    }
+    tbody td {
+        text-align: center;
+    }
+
+    tbody tr:nth-child(even) {
+        background: #e9f3fa;
+    }
+
+    tbody tr:hover {
+        border-bottom: 1px solid var(--table-blue-color);
+        background-color: var(--trhover-color);
+    }
+    
+}
+
+.table_content tr.pageInfo{
+    color: var(--black-color);
+    background: white;
+    td{
+        padding:20px 10px 0;
+    }
+}
+.table_func{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 0 0 10px;
+    .tooltip{
+        position: relative;
+        span{
+            display: none;
+            width: 100%;
+            text-align: center;
+            font-size:.8rem;
+            color:var(--table-blue-color);
+            position: absolute;top:120%;left:50%;transform: translateX(-50%);
+        }
+        &:hover{
+            span{
+                display: block;
+                
+            }
+        }
+    }
+    
+}

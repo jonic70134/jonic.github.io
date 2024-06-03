@@ -1,0 +1,259 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='orderStoreProcess.css')
+    script(src='../js/lib/jQuery.js')
+    script(src='../js/lib/jquery/jquery-uimin.js')
+    script(src='../js/common/uiCommon.js')
+    script(src="orderStoreProcess.js") 
+    title 訂單處理
+  body(data-theme='light')
+    .main
+      include ../css/pug_lib/_header.pug
+      include ../css/pug_lib/_sidemenu.pug
+      .main-container
+        ol.breadcrumb
+          li.breadcrumb-item 首頁
+          li.breadcrumb-item 訂單管理(門市取貨)
+          li.breadcrumb-item.active(aria-current='page') 訂單處理
+        .control_panel
+          form#searchForm(method='get' action novalidate='novalidate')
+          .flex-row-center
+            select#dateType.panel-select(name='dataType')
+              option(selected) 最晚出貨日
+              option 通知出貨日
+            input#startDate.sm.valid(name='startDate' autocomplete='off' data-date-format='YYYY-MM-DD' type='date' placeholder='開始日期' dateiso='dateISO' aria-invalid='false' required)
+            span.dash  ~ 
+            input#endDate.sm.valid(name='endDate' autocomplete='off' data-date-format='YYYY-MM-DD' type='date' placeholder='結束日期' dateiso='dateISO' aria-invalid='false' required)
+          .flex-row-center
+            .col-title 訂單編號
+            input#orderids.panel-input(type='text' placeholder='請輸入訂單編號' name='orderids' autocomplete='off')
+          .flex-row-center
+            .col-title 訂單類型
+            select#orderType.panel-select(name='orderType')
+              option(value selected='selected')  全部
+              option(value='2') 一般商品
+              option(value='3') 所有預購商品
+              option(value='4') 預購型(預購日)
+              option(value='5') 預購型(訂製日)
+          .panel_func
+            input#deliveryType(type='hidden' name='deliveryType' value='4')
+            input#storeType(type='hidden' name='storeType' value='1')
+            input(type='hidden' name='orderStatus' value='3')
+            input(type='hidden' name='isStore' value='true')
+            input(type='hidden' name='orderBy' value='PAT.CREATEDATE DESC')
+            input(type='hidden' name='storeSearch' value='true')
+            a.btn-blue.search-btn 搜尋訂單
+        .table_func
+          .flex-row-end
+            a.btn-blue-hallow 確認出貨
+            a.btn-blue-hallow 匯出EXCEL
+          .pages
+            a.prev-page.disable 上一頁
+            span.current-page 1/255
+            a.next-page(href='#') 下一頁
+            select.select-page
+              option 第1頁
+        #searchResult.table_content
+          table
+            thead
+              tr
+                th
+                  .chk_stylelize
+                    input#chkall.chkall(type='checkbox' name='chk_item')
+                    label(for='chkall') 全選
+                th 訂單編號
+                th 訂單類型
+                th(style='width: 120px;') 通知出貨日
+                th(style='width: 120px;') 最晚出貨日
+                th(style='width: 120px;') 取貨門市
+                th 商品名稱編號
+                th 商品規格
+                th 供應商料號
+                th 網路價成本
+                th 訂購數量
+                th 客戶備註
+                th 出貨異常紀錄
+                th(style='width: 120px;') 遠時連絡單
+            tbody#resultData
+              tr(data-orderid data-index='1')
+                td
+                  .chk_stylelize
+                    input#chk_item1.chk_item(type='checkbox' name='chk_item')
+                    label(for='chk_item1')
+                td 20240508513160
+                td 一般商品
+                td 2024-05-08
+                td 2024-05-10
+                td (7-11)士東門市
+                td (8168803)屈臣氏維他命C嫩白潤膚乳液480ml
+                td 單一規格
+                td 148398
+                td 115
+                td 1
+                td
+                td
+                td
+                  a.btn-blue(href='#lightbox-target') 提問
+              tr(data-orderid data-index='2')
+                td
+                  .chk_stylelize
+                    input#chk_item2.chk_item(type='checkbox' name='chk_item')
+                    label(for='chk_item2')
+                td 20240508514140
+                td 一般商品
+                td 2024-05-08
+                td 2024-05-10
+                td (7-11)士東門市
+                td (8168803)屈臣氏維他命C嫩白潤膚乳液480ml
+                td 單一規格
+                td 148398
+                td 115
+                td 1
+                td
+                td
+                td
+                  a.btn-blue(href='#lightbox-target') 提問
+              tr(data-orderid data-index='3')
+                td
+                  .chk_stylelize
+                    input#chk_item3.chk_item(type='checkbox' name='chk_item')
+                    label(for='chk_item3')
+                td 20240508514140
+                td 一般商品
+                td 2024-05-08
+                td 2024-05-10
+                td (7-11)士東門市
+                td (8168803)屈臣氏維他命C嫩白潤膚乳液480ml
+                td 單一規格
+                td 148398
+                td 115
+                td 1
+                td
+                td
+                td
+                  a.btn-blue(href='#lightbox-target') 提問
+              tr(data-orderid data-index='4')
+                td
+                  .chk_stylelize
+                    input#chk_item4.chk_item(type='checkbox' name='chk_item')
+                    label(for='chk_item4')
+                td 20240508514140
+                td 一般商品
+                td 2024-05-08
+                td 2024-05-10
+                td (7-11)士東門市
+                td (8168803)屈臣氏維他命C嫩白潤膚乳液480ml
+                td 單一規格
+                td 148398
+                td 115
+                td 1
+                td
+                td
+                td
+                  a.btn-blue(href='#lightbox-target') 提問
+              tr(data-orderid data-index='5')
+                td -
+                td -
+                td 一般商品
+                td 2024-05-08
+                td 2024-05-10
+                td (7-11)士東門市
+                td (8168803)屈臣氏維他命C嫩白潤膚乳液480ml
+                td 單一規格
+                td 148398
+                td 115
+                td 1
+                td
+                td
+                td
+                  a.btn-blue(href='#lightbox-target') 提問
+              tr(data-orderid data-index='6')
+                td -
+                td -
+                td 一般商品
+                td 2024-05-08
+                td 2024-05-10
+                td (7-11)士東門市
+                td (8168803)屈臣氏維他命C嫩白潤膚乳液480ml
+                td 單一規格
+                td 148398
+                td 115
+                td 1
+                td
+                td
+                td
+                  a.btn-blue(href='#lightbox-target') 提問
+              tr(data-orderid data-index='7')
+                td -
+                td -
+                td 一般商品
+                td 2024-05-08
+                td 2024-05-10
+                td (7-11)士東門市
+                td (8168803)屈臣氏維他命C嫩白潤膚乳液480ml
+                td 單一規格
+                td 148398
+                td 115
+                td 1
+                td
+                td
+                td
+                  a.btn-blue(href='#lightbox-target') 提問
+              tr(data-orderid data-index='8')
+                td -
+                td -
+                td 一般商品
+                td 2024-05-08
+                td 2024-05-10
+                td (7-11)士東門市
+                td (8168803)屈臣氏維他命C嫩白潤膚乳液480ml
+                td 單一規格
+                td 148398
+                td 115
+                td 1
+                td
+                td
+                td
+                  a.btn-blue(href='#lightbox-target') 提問
+              tr(data-orderid data-index='9')
+                td -
+                td -
+                td 一般商品
+                td 2024-05-08
+                td 2024-05-10
+                td (7-11)士東門市
+                td (8168803)屈臣氏維他命C嫩白潤膚乳液480ml
+                td 單一規格
+                td 148398
+                td 115
+                td 1
+                td
+                td
+                td
+                  a.btn-blue(href='#lightbox-target') 提問
+              tr(data-orderid data-index='10')
+                td -
+                td -
+                td 一般商品
+                td 2024-05-08
+                td 2024-05-10
+                td (7-11)士東門市
+                td (8168803)屈臣氏維他命C嫩白潤膚乳液480ml
+                td 單一規格
+                td 148398
+                td 115
+                td 1
+                td
+                td
+                td
+                  a.btn-blue(href='#lightbox-target') 提問
+        include ../css/pug_lib/_pagenavi.pug
+      // pure css lightbox start
+      #lightbox-target.lightbox
+        .content
+          div here is content
+          a.lightbox-close(href='#')
+      // lightbox end

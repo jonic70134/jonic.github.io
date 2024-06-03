@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="labelprint.css">
+    <script src="../js/lib/jQuery.js"></script>
+    <script src="../js/lib/jquery/jquery-uimin.js"></script>
+    <script src="../js/common/uiCommon.js"></script>
+    <script src="labelprint.js"></script>
+    <title>標籤列印</title>
+  </head>
+  <body data-theme="light">
+    <div class="main">
+      <header class="top_menu">
+        <div class="navi_group"><a class="logo" href="../index.html">BCM system</a></div>
+        <ul class="navi_group">
+          <li class="nav-item"><a class="nav-link" href="#"><i class="icon-equalizer"></i>設定</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="icon-user"></i><span>friday_user_name</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="icon-exit"></i><span>登出</span></a></li>
+        </ul>
+      </header>
+      <div id="side_menu">
+        <ul class="side_menu_body">
+          <li class="dis-dropdown"><a class="side_menu_t" href="#"><i class="icon-home"></i>首頁</a></li>
+          <li><a class="side_menu_t" href="../orderQuerySalesReport/orderQuerySalesReport.html"><i class="icon-newspaper"></i>業績查詢</a></li>
+          <li><a class="side_menu_t" href="#"><i class="icon-cart"></i>訂單管理</a>
+            <ul class="side_sub_menu">
+              <li><a class="side_menu_t" href="../orderStoreProcess/orderStoreProcess.html">訂單處理</a></li>
+              <li><a class="side_menu_t" href="../labelprint/labelprint.html">標籤列印</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="main-container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">首頁</li>
+          <li class="breadcrumb-item">訂單管理(門市取貨)</li>
+          <li class="breadcrumb-item active" aria-current="page">標籤列印</li>
+        </ol>
+        <div class="control_panel">
+          <form id="searchForm" method="get" action novalidate="novalidate"></form>
+          <div class="flex-row"> 
+            <div class="flex-row-center">
+              <div class="col-title">出貨確認日</div>
+              <input class="sm valid" id="startDate" name="startDate" autocomplete="off" data-date-format="YYYY-MM-DD" type="date" placeholder="開始日期" dateiso="dateISO" aria-invalid="false" required><span class="dash"> ~ </span>
+              <input class="sm valid" id="endDate" name="endDate" autocomplete="off" data-date-format="YYYY-MM-DD" type="date" placeholder="結束日期" dateiso="dateISO" aria-invalid="false" required>
+            </div>
+            <div class="flex-row-center">
+              <div class="col-title">訂單編號</div>
+              <input class="panel-input" id="orderids" type="text" placeholder="請輸入訂單編號" name="orderids" autocomplete="off">
+            </div>
+          </div>
+          <div class="flex-row"> 
+            <div class="flex-row-center">
+              <div class="col-title">訂單類型</div>
+              <select class="panel-select" id="orderType" name="orderType">
+                <option value selected="selected"> 全部</option>
+                <option value="2">一般商品</option>
+                <option value="3">所有預購商品</option>
+                <option value="4">預購型(預購日)</option>
+                <option value="5">預購型(訂製日)</option>
+              </select>
+            </div>
+            <div class="flex-row-center">
+              <div class="col-title">門市類型</div>
+              <select class="panel-select sm valid" id="storeType" name="storeType" required="required" aria-invalid="false">
+                <option value="1" selected="selected"> 全家</option>
+                <option value="2">7-11</option>
+              </select>
+            </div>
+          </div>
+          <div class="panel_func">
+            <input id="deliveryType" type="hidden" name="deliveryType" value="4">
+            <input id="storeType" type="hidden" name="storeType" value="1">
+            <input type="hidden" name="orderStatus" value="3">
+            <input type="hidden" name="isStore" value="true">
+            <input type="hidden" name="orderBy" value="PAT.CREATEDATE DESC">
+            <input type="hidden" name="storeSearch" value="true"><a class="btn-blue search-btn">搜尋訂單</a>
+          </div>
+        </div>
+        <div class="table_func">
+          <div class="flex-row-end"><a class="btn-blue-hallow">撿貨單列印</a><a class="btn-blue-hallow">隨貨明細列印</a><a class="btn-blue-hallow tooltip">門市標籤列印<span>(直接貼在包裹上)</span></a></div>
+          <div class="pages"><a class="prev-page disable">上一頁</a><span class="current-page">1/255</span><a class="next-page" href="#">下一頁</a>
+            <select class="select-page">
+              <option>第1頁</option>
+            </select>
+          </div>
+        </div>
+        <div class="table_content" id="searchResult">
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  <div class="chk_stylelize">
+                    <input class="chkall" id="chkall" type="checkbox" name="chk_item">
+                    <label for="chkall">全選</label>
+                  </div>
+                </th>
+                <th>訂單編號</th>
+                <th>訂單類型</th>
+                <th>門市取貨付款<br>(代收金額)</th>
+                <th>配送編號</th>
+                <th style="width: 100px;">出貨確認日</th>
+                <th style="width: 120px;">通知出貨日</th>
+                <th style="width: 100px;">最晚出貨日</th>
+                <th>門市類型</th>
+                <th style="width: 120px;">取貨門市</th>
+                <th style="width: 220px;">商品名稱編號</th>
+                <th>供應商料號</th>
+                <th>原數量</th>
+                <th>客戶備註</th>
+              </tr>
+            </thead>
+            <tbody id="resultData">
+              <tr data-orderid data-index="1">
+                <td>
+                  <div class="chk_stylelize">
+                    <input class="chk_item" id="chk_item1" type="checkbox" name="chk_item">
+                    <label for="chk_item1"></label>
+                  </div>
+                </td>
+                <td>20240508513159</td>
+                <td>一般商品</td>
+                <td>98000108</td>
+                <td>0</td>
+                <td>2024-05-10</td>
+                <td>2024-05-08 20:20:28</td>
+                <td>2024-05-10</td>
+                <td>7-11</td>
+                <td> </td>
+                <td>(8168803)屈臣氏維他命C嫩白潤膚乳液480ml</td>
+                <td>148398</td>
+                <td>1</td>
+                <td> </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pages"><a class="prev-page disable">上一頁</a><span class="current-page">1/255</span><a class="next-page" href="#">下一頁</a>
+          <select class="select-page">
+            <option>第1頁</option>
+          </select>
+        </div>
+      </div>
+      <!-- pure css lightbox start-->
+      <div class="lightbox" id="lightbox-target">
+        <div class="content">
+          <div>here is content</div><a class="lightbox-close" href="#"></a>
+        </div>
+      </div>
+      <!-- lightbox end-->
+    </div>
+  </body>
+</html>
