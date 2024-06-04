@@ -1,0 +1,123 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='errorProcess.css')
+    script(src='../js/lib/jQuery.js')
+    script(src='../js/lib/jquery/jquery-uimin.js')
+    script(src='../js/common/uiCommon.js')
+    script(src="errorProcess.js") 
+    title 訂單處理
+  body(data-theme='light')
+    .main
+      include ../css/pug_lib/_header.pug
+      include ../css/pug_lib/_sidemenu.pug
+      .main-container
+        ol.breadcrumb
+          li.breadcrumb-item 首頁
+          li.breadcrumb-item 訂單管理
+          li.breadcrumb-item.active(aria-current='page') 無法出貨處理
+        .control_panel
+          form#searchForm(method='get' action novalidate='novalidate')
+          .flex-row
+            .flex-row-center
+              select#dateType.panel-select(name='dataType')
+                option(selected) 最晚出貨日
+                option 通知出貨日
+              input#startDate.sm.valid(name='startDate' autocomplete='off' data-date-format='YYYY-MM-DD' type='date' placeholder='開始日期' dateiso='dateISO' aria-invalid='false' required)
+              span.dash  ~ 
+              input#endDate.sm.valid(name='endDate' autocomplete='off' data-date-format='YYYY-MM-DD' type='date' placeholder='結束日期' dateiso='dateISO' aria-invalid='false' required)
+            .flex-row-center
+              .col-title 訂單編號
+              input#orderids.panel-input(type='text' placeholder='請輸入訂單編號' name='orderids' autocomplete='off')
+          .flex-row
+            .flex-row-center
+              .col-title 供應商料號
+              input.ml.panel-input(type="text" placeholder="請輸入供應商料號")
+            .flex-row-center
+              .col-title 門市類型
+              select#storeType.ml(name="storeType")
+                option(value="",selected="selected")
+                option(value="1") 7-11
+                option(value="2") 全家
+          .flex-row
+            .flex-row-center
+              .col-title 訂單編號
+              input#orderids.panel-input(type='text' placeholder='請輸入訂單編號' name='orderids' autocomplete='off')
+          .panel_func
+            input#deliveryType(type='hidden' name='deliveryType' value='4')
+            input#storeType(type='hidden' name='storeType' value='1')
+            input(type='hidden' name='orderStatus' value='3')
+            input(type='hidden' name='isStore' value='true')
+            input(type='hidden' name='orderBy' value='PAT.CREATEDATE DESC')
+            input(type='hidden' name='storeSearch' value='true')
+            a.btn-blue.search-btn 搜尋
+        .table_func
+          .flex-row-end
+            a.btn-blue-hallow 確認出貨
+            a.btn-blue-hallow 匯出EXCEL
+          .pages
+            a.prev-page.disable 上一頁
+            span.current-page 1/255
+            a.next-page(href='#') 下一頁
+            select.select-page
+              option 第1頁
+        #searchResult.table_content
+          table
+            thead
+              tr
+                th 項次
+                th
+                  .chk_stylelize
+                    input#chkall.chkall(type='checkbox' name='chk_item')
+                    label(for='chkall') 全選
+                th 異常原因
+                th 原因說明
+                th 訂單編號
+                th 訂單類型
+                th 配送方式
+                th 通知出貨日
+                th 最晚出貨日
+                th 取貨門市
+                th 商品名稱
+                
+                th 供應商料號
+                th 網路價成本
+                  br
+                  |網路價
+                th 訂購數量
+                th 客戶備註
+                th 出貨異常紀錄
+            tbody#resultData
+              tr(data-orderid data-index='1')
+                td 1
+                td
+                  .chk_stylelize
+                    input#chk_item1.chk_item(type='checkbox' name='chk_item')
+                    label(for='chk_item1')
+                td 
+                  select.errorReason.firstOrder 
+                    option(value="") 請選擇
+                    option(value="LGTFS004") 斷貨/缺貨
+                    option(value="LGTFS021") 延遲出貨
+                    option(value="LGTFS023") 無法出貨
+                  
+                td 
+                  input.table_(type="text",placeholder="請輸入原因")
+                td 20240508513162
+                td 一般商品
+                td 全家門市店配	
+                td 2024-05-08 20:20:28
+                td 2024-05-10
+                td (全家)全家台興店
+                td (8168803)屈臣氏維他命C嫩白潤膚乳液480ml
+                td 148398
+                td 115
+                  br
+                  span.red 119
+                td 1
+                td
+                td
+
+        include ../css/pug_lib/_pagenavi.pug

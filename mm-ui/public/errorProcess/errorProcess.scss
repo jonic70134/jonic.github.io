@@ -1,0 +1,41 @@
+// css編譯檔
+@import "../css/scss_lib/reset";
+@import "../css/scss_lib/var";
+@import "../css/scss_lib/font";
+@import "../css/scss_lib/layout";
+@import "../css/scss_lib/table_style";
+
+.table_content{
+    width:98%;
+    margin: 0 10px;
+    overflow-x: auto;
+    table{
+        width: 1800px;
+    }
+}
+.panel-select{
+    margin:0 8px 0 0;
+    padding: 7px;
+}
+.panel-input{
+    width: 250px;
+    padding: 7px;
+}
+.flex-row{
+    margin: 10px 0;
+    .col-title{
+        width: 100px;
+        text-align: right;
+    }
+    .flex-row-center{
+        width: 33%;
+    }
+}
+[class^=flex] {
+    margin:10px 0;
+}
+.dash{
+    margin: 0 8px;
+    font-size:1rem;
+}
+

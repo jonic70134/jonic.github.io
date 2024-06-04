@@ -71,20 +71,12 @@ html(lang='en')
             table
               thead
                 tr#totalLine
-                  th
-                  th(colspan='3')
-                  th
-                  th  
+                  th(colspan='5')
                   th 總計
-                  th 
                   th.priceTotal.red 18,284
                   th.costTotal.red 17,860
-                  th  
-                  th  
-                  th.sizenm  
-                  th  
-                  th  
-                  th  
+                  th(colspan='4') 
+
                 tr
                   th
                     .chk_stylelize
@@ -92,295 +84,65 @@ html(lang='en')
                       label(for='chkall') 全選
                   th.w80 項次
                   th.mw-100 訂單時間
-                  th.mw-100 商品編號
+                  th.mw-100 
+                    | 商品編號
+                    br 
+                    | 商品名稱
                   th.mw-138
                     | 廠商料號
                     br
                     | 交易序號
-                  // 66350
-                  th.mw-80 商品名稱
-                  th.mw-60 數量
-                  th.mw-100 售價
-                  th.mw-100 成本
-                  th.mw-100 售價小計
-                  th.mw-100 成本小計
-                  th.mw-100 訂單狀態
                   th.mw-100 規格編號
                   th.mw-100 商品規格
+                  //- th.mw-60 數量
+                  //- th.mw-100 售價
+                  th.mw-100 
+                    | 數量
+                    br
+                    | 成本
+                  th.mw-60 
+                    | 收件人姓名
+                    br
+                    | 收件人電話
+                  //- th.mw-100 售價小計
+                  //- th.mw-100 成本小計
+                  th.mw-100 訂單狀態
                   th.mw-100 網站名稱
                   th.mw-138 訂單編號
               tbody
-                tr
-                  td
-                    .chk_stylelize
-                      input#chk_item1.chk_item(type='checkbox' name='chk_item')
-                      label(for='chk_item1')
-                  td 1
-                  td 05-27 10:19
-                  td 8168803
-                  td.bc-dealId-66350(style='line-height:130%;')
-                    | 148398
-                    br
-                    | 20240527975349
-                  td.prdnm
-                    span.word-break.tooltip.two 屈臣氏維他命C嫩白潤膚乳液480ml
-                  td 1
-                  td 119
-                  td 115
-                  td 119
-                  td 115
-                  td 已拋出貨檔
-                  td 19009086
-                  td.sizenm
-                    span.word-break.tooltip.one 單一規格
-                  td friDay購物
-                  td 20240527513391
-                tr
-                  td
-                    .chk_stylelize
-                      input#chk_item2.chk_item(type='checkbox' name='chk_item')
-                      label(for='chk_item2')
-                  td -
-                  td 05-27 10:19
-                  td 8168809
-                  td.bc-dealId-66350(style='line-height:130%;')
-                    | 114897
-                    br
-                    | 20240527975349
-                  td.prdnm
-                    span.word-break.tooltip.two &#x5DF4;&#x9ECE;&#x840A;&#x96C5;&#x4E09;&#x5408;&#x4E00;&#x5378;&#x599D;&#x6F54;&#x984F;&#x6C34;-&#x6E05;&#x723D;&#x578B;(400ml)
-                  td 1
-                  td 489
-                  td 470
-                  td 489
-                  td 470
-                  td &#x5DF2;&#x62CB;&#x51FA;&#x8CA8;&#x6A94;
-                  td 19009092
-                  td.sizenm
-                    span.word-break.tooltip.one &#x55AE;&#x4E00;&#x898F;&#x683C;
-                  td friDay&#x8CFC;&#x7269;
-                  td 20240527513391
-                tr
-                  td
-                    .chk_stylelize
-                      input#chk_item3.chk_item(type='checkbox' name='chk_item')
-                      label(for='chk_item3')
-                  td 2
-                  td 05-27 10:19
-                  td 8168822
-                  td.bc-dealId-66350(style='line-height:130%;')
-                    | 148049
-                    br
-                    | 20240527975349
-                  td.prdnm
-                    span.word-break.tooltip.two H&amp;S &#x6D77;&#x502B;&#x4ED9;&#x5EA6;&#x7D72;&#x7537;&#x58EB; 0%&#x77FD;&#x9748;&#x6D17;&#x9AEE;&#x4E73;500ml (&#x6709;&#x6548;&#x6DE8;&#x900F;)
-                  td 1
-                  td 299
-                  td 288
-                  td 299
-                  td 288
-                  td &#x5DF2;&#x62CB;&#x51FA;&#x8CA8;&#x6A94;
-                  td 19009105
-                  td.sizenm
-                    span.word-break.tooltip.one &#x55AE;&#x4E00;&#x898F;&#x683C;
-                  td friDay&#x8CFC;&#x7269;
-                  td 20240527513392
-                tr
-                  td
-                    .chk_stylelize
-                      input#chk_item4.chk_item(type='checkbox' name='chk_item')
-                      label(for='chk_item4')
-                  td 3
-                  td 05-27 10:13
-                  td 8168822
-                  td.bc-dealId-66350(style='line-height:130%;')
-                    | 148049
-                    br
-                    | 20240527511763
-                  td.prdnm
-                    span.word-break.tooltip.two H&amp;S &#x6D77;&#x502B;&#x4ED9;&#x5EA6;&#x7D72;&#x7537;&#x58EB; 0%&#x77FD;&#x9748;&#x6D17;&#x9AEE;&#x4E73;500ml (&#x6709;&#x6548;&#x6DE8;&#x900F;)
-                  td 1
-                  td 299
-                  td 288
-                  td 299
-                  td 288
-                  td &#x5DF2;&#x62CB;&#x51FA;&#x8CA8;&#x6A94;
-                  td 19009105
-                  td.sizenm
-                    span.word-break.tooltip.one &#x55AE;&#x4E00;&#x898F;&#x683C;
-                  td friDay&#x8CFC;&#x7269;
-                  td 20240527513387
-                tr
-                  td
-                    .chk_stylelize
-                      input#chk_item5.chk_item(type='checkbox' name='chk_item')
-                      label(for='chk_item5')
-                  td 4
-                  td 05-21 16:37
-                  td 8167541
-                  td.bc-dealId-66350(style='line-height:130%;')
-                    | 234993
-                    br
-                    | 20240521460223
-                  td.prdnm
-                    span.word-break.tooltip.two &#x59AE;&#x7DAD;&#x96C5;&#x5BC6;&#x96C6;&#x4FDD;&#x6FD5;&#x4FEE;&#x8B77;&#x8B77;&#x624B;&#x971C;75ml
-                  td 1
-                  td 189
-                  td 182
-                  td 189
-                  td 182
-                  td &#x5DF2;&#x51FA;&#x8CA8;
-                  td 19006941
-                  td.sizenm
-                    span.word-break.tooltip.one &#x552F;&#x4E00;&#x898F;&#x683C;
-                  td friDay&#x8CFC;&#x7269;
-                  td 20240521513379
-                tr
-                  td
-                    .chk_stylelize
-                      input#chk_item6.chk_item(type='checkbox' name='chk_item')
-                      label(for='chk_item6')
-                  td -
-                  td 05-21 16:37
-                  td 8168802
-                  td.bc-dealId-66350(style='line-height:130%;')
-                    | 148399
-                    br
-                    | 20240521460223
-                  td.prdnm
-                    span.word-break.tooltip.two &#x5C48;&#x81E3;&#x6C0F;Q10&#x7DCA;&#x7DFB;&#x67D4;&#x819A;&#x4E73;&#x6DB2;480ml
-                  td 1
-                  td 119
-                  td 115
-                  td 119
-                  td 115
-                  td &#x5DF2;&#x51FA;&#x8CA8;
-                  td 19009085
-                  td.sizenm
-                    span.word-break.tooltip.one &#x55AE;&#x4E00;&#x898F;&#x683C;
-                  td friDay&#x8CFC;&#x7269;
-                  td 20240521513379
-                tr
-                  td
-                    .chk_stylelize
-                      input#chk_item7.chk_item(type='checkbox' name='chk_item')
-                      label(for='chk_item7')
-                  td -
-                  td 05-21 16:37
-                  td 8168803
-                  td.bc-dealId-66350(style='line-height:130%;')
-                    | 148398
-                    br
-                    | 20240521460223
-                  td.prdnm
-                    span.word-break.tooltip.two &#x5C48;&#x81E3;&#x6C0F;&#x7DAD;&#x4ED6;&#x547D;C&#x5AE9;&#x767D;&#x6F64;&#x819A;&#x4E73;&#x6DB2;480ml
-                  td 1
-                  td 119
-                  td 115
-                  td 119
-                  td 115
-                  td &#x5DF2;&#x51FA;&#x8CA8;
-                  td 19009086
-                  td.sizenm
-                    span.word-break.tooltip.one &#x55AE;&#x4E00;&#x898F;&#x683C;
-                  td friDay&#x8CFC;&#x7269;
-                  td 20240521513379
-                tr
-                  td
-                    .chk_stylelize
-                      input#chk_item8.chk_item(type='checkbox' name='chk_item')
-                      label(for='chk_item8')
-                  td -
-                  td 05-21 16:37
-                  td 8168806
-                  td.bc-dealId-66350(style='line-height:130%;')
-                    | 392670
-                    br
-                    | 20240521460223
-                  td.prdnm
-                    span.word-break.tooltip.two Biore &#x871C;&#x59AE; &#x9AD8;&#x9632;&#x66EC;&#x4E73;&#x6DB2; SPF48 (50ml)
-                  td 1
-                  td 170
-                  td 164
-                  td 170
-                  td 164
-                  td &#x5DF2;&#x51FA;&#x8CA8;
-                  td 19009089
-                  td.sizenm
-                    span.word-break.tooltip.one &#x552F;&#x4E00;&#x898F;&#x683C;
-                  td friDay&#x8CFC;&#x7269;
-                  td 20240521513379
-                tr
-                  td
-                    .chk_stylelize
-                      input#chk_item9.chk_item(type='checkbox' name='chk_item')
-                      label(for='chk_item9')
-                  td -
-                  td 05-21 16:37
-                  td 8168826
-                  td.bc-dealId-66350(style='line-height:130%;')
-                    | 117256
-                    br
-                    | 20240521460223
-                  td.prdnm
-                    span.word-break.tooltip.two &#x66FC;&#x79C0;&#x96F7;&#x6566;Lip Pure&#x7D14;&#x6DE8;&#x690D;&#x7269;&#x6F64;&#x5507;&#x818F;-&#x9999;&#x6A59;4g
-                  td 1
-                  td 159
-                  td 153
-                  td 159
-                  td 153
-                  td &#x5DF2;&#x51FA;&#x8CA8;
-                  td 19009109
-                  td.sizenm
-                    span.word-break.tooltip.one &#x552F;&#x4E00;&#x898F;&#x683C;
-                  td friDay&#x8CFC;&#x7269;
-                  td 20240521513379
-                tr
-                  td
-                    .chk_stylelize
-                      input#chk_item10.chk_item(type='checkbox' name='chk_item')
-                      label(for='chk_item10')
-                  td 5
-                  td 05-21 15:06
-                  td 8168797
-                  td.bc-dealId-66350(style='line-height:130%;')
-                    | 104613
-                    br
-                    | 20240521752888
-                  td.prdnm
-                    span.word-break.tooltip.two KISS ME &#x82B1;&#x6F3E;&#x7F8E;&#x59EC;&#x77AC;&#x7FF9;&#x81EA;&#x7136;&#x6372;&#x7E96;&#x9577;&#x9632;&#x6C34;&#x776B;&#x6BDB;&#x818F; 6g
-                  td 1
-                  td 459
-                  td 441
-                  td 459
-                  td 441
-                  td &#x5DF2;&#x51FA;&#x8CA8;
-                  td 19009080
-                  td.sizenm
-                    span.word-break.tooltip.one &#x552F;&#x4E00;&#x898F;&#x683C;
-                  td friDay&#x8CFC;&#x7269;
-                  td 20240521513378
-                tr
-                  td -
-                  td 05-21 15:06
-                  td 8168819
-                  td.bc-dealId-66350(style='line-height:130%;')
-                    | 103213
-                    br
-                    | 20240521752888
-                  td.prdnm
-                    span.word-break.tooltip.two &#x819A;&#x854A; &#x5378;&#x7CA7;&#x6309;&#x6469;&#x971C;250g
-                  td 1
-                  td 290
-                  td 279
-                  td 290
-                  td 279
-                  td &#x5DF2;&#x51FA;&#x8CA8;
-                  td 19009102
-                  td.sizenm
-                    span.word-break.tooltip.one &#x552F;&#x4E00;&#x898F;&#x683C;
-                  td friDay&#x8CFC;&#x7269;
-                  td 20240521513378
+                - var j = 11;
+                - for (var i = 1; i < j; i++)
+                  tr
+                    td
+                      .chk_stylelize
+                        input.chk_item(id='chk_item'+i,type='checkbox' name='chk_item')
+                        label(for='chk_item'+ i )
+                    td=i
+                    td 05-27 10:19
+                    td.prdnm
+                      | 8168803
+                      br
+                      | 屈臣氏維他命C嫩白潤膚乳液480ml
+                    td.bc-dealId-66350(style='line-height:130%;')
+                      | 148398
+                      br
+                      | 20240527975349
+                    
+                    td 19009086
+                    td.sizenm
+                      span.word-break.tooltip.one 單一規格
+                    td 
+                      | 10
+                      br
+                      | 115
+                    td
+                      | 紅綠燈
+                      br
+                      | 09123456789
+                    td 已拋出貨檔
+                    td friDay購物
+                    td 20240527513391
+               
         #tab-2.tab-content
           #prodSubtotal.table-result.p-none.w-full.stickyTable.table_content
             table.no-stripe
