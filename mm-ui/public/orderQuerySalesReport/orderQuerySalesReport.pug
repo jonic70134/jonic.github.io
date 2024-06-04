@@ -8,7 +8,7 @@ html(lang='en')
     script(src='../js/lib/jquery/jquery-uimin.js')
     script(src='../js/common/uiCommon.js')
     script(src='orderQuerySalesReport.js')
-    title 業績查詢
+    title 訂單查詢
   body(data-theme='light')
     .main
       include ../css/pug_lib/_header.pug
@@ -64,7 +64,7 @@ html(lang='en')
             select.select-page
               option 第1頁
         ul.tabs
-          li.tab-link.current(data-tab='tab-1') 業績查詢
+          li.tab-link.current(data-tab='tab-1') 訂單查詢
           li.tab-link(data-tab='tab-2') 依商品小計
         #tab-1.tab-content.current
           #searchResult.table_content

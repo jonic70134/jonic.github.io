@@ -1963,7 +1963,7 @@ input::placeholder {
 }
 .radio_styleize label {
   position: relative;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   line-height: 1;
   cursor: pointer;
@@ -1986,6 +1986,7 @@ input::placeholder {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   border: 1px solid #ccc;
+  background-color: var(--white-color);
 }
 .radio_styleize input:checked + label:before {
   border-color: white;
@@ -2132,33 +2133,6 @@ input::placeholder {
   display: block;
 }
 
-.panel-select {
-  width: 200px;
-  margin: 0 8px 0 0;
-  padding: 7px;
-}
-
-.panel-input {
-  width: 250px;
-  padding: 7px;
-}
-
-.flex-row {
-  margin: 30px 0;
-}
-.flex-row .col-title {
-  width: 100px;
-  text-align: right;
-}
-.flex-row .flex-row-center {
-  width: 30%;
-}
-
-.dash {
-  margin: 0 8px;
-  font-size: 1rem;
-}
-
 ul.tabs {
   width: 98%;
   margin: 0 10px;
@@ -2168,7 +2142,7 @@ ul.tabs {
 }
 ul.tabs li {
   display: inline-block;
-  margin: 0 10px 0 0;
+  margin: 0 5px 0 0;
   padding: 10px 15px;
   background: #f3f8fc;
   border: #d4dbdf 1px solid;
@@ -2200,4 +2174,31 @@ ul.tabs li.current {
 }
 .table_content table {
   width: 1600px;
+}
+
+.panel-select {
+  width: 200px;
+  margin: 0 8px 0 0;
+  padding: 7px;
+}
+
+.panel-input {
+  width: 250px;
+  padding: 7px;
+}
+
+.flex-row {
+  margin: 20px 0;
+}
+.flex-row .col-title {
+  width: 100px;
+  text-align: right;
+}
+.flex-row .flex-row-center {
+  width: 30%;
+}
+
+.dash {
+  margin: 0 8px;
+  font-size: 1rem;
 }

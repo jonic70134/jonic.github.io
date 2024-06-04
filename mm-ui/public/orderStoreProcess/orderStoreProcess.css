@@ -1963,7 +1963,7 @@ input::placeholder {
 }
 .radio_styleize label {
   position: relative;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   line-height: 1;
   cursor: pointer;
@@ -1986,6 +1986,7 @@ input::placeholder {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   border: 1px solid #ccc;
+  background-color: var(--white-color);
 }
 .radio_styleize input:checked + label:before {
   border-color: white;

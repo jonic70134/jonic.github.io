@@ -109,7 +109,7 @@ input::placeholder{
     }
     label {
         position: relative;
-        font-size: 1rem;
+        font-size: .9rem;
         font-weight: 700;
         line-height: 1;
         cursor: pointer;
@@ -137,6 +137,7 @@ input::placeholder{
             border-radius: 50%;
             transform: translateY(-50%);
             border: 1px solid #ccc;
+            background-color: var(--white-color);
         }
     }
     input:checked+label {

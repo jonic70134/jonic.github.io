@@ -71,6 +71,7 @@ html(lang='en')
                   .chk_stylelize
                     input#chkall.chkall(type='checkbox' name='chk_item')
                     label(for='chkall') 全選
+                th 項次
                 th 訂單編號
                 th 訂單類型
                 th 門市取貨付款
@@ -92,6 +93,7 @@ html(lang='en')
                   .chk_stylelize
                     input#chk_item1.chk_item(type='checkbox' name='chk_item')
                     label(for='chk_item1')
+                td 1
                 td 20240508513159
                 td 一般商品
                 td 98000108
@@ -105,7 +107,45 @@ html(lang='en')
                 td 148398
                 td 1
                 td 
-                
+              tr(data-orderid='20240508513159' data-index='2')
+                td -
+                td -
+                td 20240508513159
+                td 一般商品
+                td
+                  | 98000108
+                  input(type='hidden' name='groupcheck' value='98000108_20240508513159')
+                td 0
+                td 2024-05-10
+                td 2024-05-08 20:20:28
+                td 2024-05-10
+                td 7-11
+                td
+                td
+                  span.word-break.tooltip.two (8168809)巴黎萊雅三合一卸妝潔顏水-清爽型(400ml)
+                td 114897
+                td 1
+                td
+              tr(data-orderid='20240508513159' data-index='3')
+                td -
+                td -
+                td 20240508513159
+                td 一般商品
+                td
+                  | 98000108
+                  input(type='hidden' name='groupcheck' value='98000108_20240508513159')
+                td 0
+                td 2024-05-10
+                td 2024-05-08 20:20:28
+                td 2024-05-10
+                td 7-11
+                td
+                td
+                  span.word-break.tooltip.two (8168822) H&S 海倫仙度絲男士 0%矽靈洗髮乳500ml (有效淨透)
+                td 148049
+                td 1
+                td
+
 
         include ../css/pug_lib/_pagenavi.pug
       // pure css lightbox start
