@@ -116,7 +116,8 @@ input::placeholder{
         margin: 0 10px 0 0;
         padding: 0 0 0 20px;
         transition: all .15s ease;
-    
+        min-width: auto !important;
+        display: initial !important;
         &:focus,
         &:hover,
         &:active {
@@ -169,6 +170,10 @@ input::placeholder{
     width:80px;
 }
 .chk_stylelize{
+    label{
+        min-width: auto !important;
+        display: initial !important;
+    }
     [type="checkbox"]:checked,
     [type="checkbox"]:not(:checked) {
         display: none;
