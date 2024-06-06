@@ -32,9 +32,9 @@ html(lang='en')
                 label(for="dateType4") 本月～今日 
                 input#dateType5(type="radio", name="dateType",required="required",value="5")
                 label(for="dateType5") 上月整月
-                input#dateType6(type="radio", name="dateType",required="required",value="6")
-                label(for="dateType6") 上第二個月
-            .flex-row 
+                //- input#dateType6(type="radio", name="dateType",required="required",value="6")
+                //- label(for="dateType6") 上第二個月
+            .flex-row
               .col-title
               .radio_styleize
                 input#ordAll(type="radio", name="ordRange",required="required",value="all" checked)
@@ -46,6 +46,15 @@ html(lang='en')
               .chk_stylelize
                   input#ordShiped(type="checkbox",name="ordShiped") 
                   label(for="ordShiped") 只看已出貨訂單
+            .flex-row
+              .flex-row-center
+                .col-title 訂單類型
+                .chk_stylelize
+                    select.form-select(name="")
+                      option(value="0") 全部
+                      option(value="1") 宅配
+                      option(value="2") 7-11
+                      option(value="3") 全家
 
           
           .panel_func
@@ -57,232 +66,224 @@ html(lang='en')
             a.btn-blue-hallow 印超商小白單
             a.btn-blue-hallow 出貨回填物流號
             a.btn-blue-hallow 印遠時宅配單
-          .pages
-            a.prev-page.disable 上一頁
-            span.current-page 1/255
-            a.next-page(href='#') 下一頁
-            select.select-page
-              option 第1頁
-        ul.tabs
-          li.tab-link.current(data-tab='tab-1') 訂單查詢
-          li.tab-link(data-tab='tab-2') 依商品小計
-        #tab-1.tab-content.current
-          #searchResult.table_content
-            table
-              thead
-                tr#totalLine
-                  th(colspan='5')
-                  th 總計
-                  th.priceTotal.red 18,284
-                  th.costTotal.red 17,860
-                  th(colspan='4') 
+          //- .pages
+          //-   a.prev-page.disable 上一頁
+          //-   span.current-page 1/255
+          //-   a.next-page(href='#') 下一頁
+          //-   select.select-page
+          //-     option 第1頁
+        .tabs
+          input#tabone.tabradio(name='tabs' tabindex='1' type='radio' checked='checked')
+          label.tablabel(for='tabone') 訂單查詢
+          .tabpanel(tabindex='1')
+            #searchResult.table_content
+              table
+                thead
+                  tr#totalLine
+                    th(colspan='5')
+                    th 總計
+                    th.priceTotal.red 18,284
+                    th.costTotal.red 17,860
+                    th(colspan='4') 
 
-                tr
-                  th
-                    .chk_stylelize
-                      input#chkall.chkall(type='checkbox' name='chk_item')
-                      label(for='chkall') 全選
-                  th 項次
-                  th 訂單時間
-                  th
-                    | 商品編號
-                    br 
-                    | 商品名稱
-                  th
-                    | 廠商料號
-                    br
-                    | 交易序號
-                  th 規格編號
-                  th 商品規格
-                  //- th.mw-60 數量
-                  //- th.mw-100 售價
-                  th
-                    | 數量
-                    br
-                    | 成本
-                  th
-                    | 收件人姓名
-                    br
-                    | 收件人電話
-                  //- th.mw-100 售價小計
-                  //- th.mw-100 成本小計
-                  th 訂單狀態
-                  th 網站名稱
-                  th 訂單編號
-              tbody
-                - var j = 11;
-                - for (var i = 1; i < j; i++)
                   tr
-                    td
+                    th
                       .chk_stylelize
-                        input.chk_item(id='chk_item'+i,type='checkbox' name='chk_item')
-                        label(for='chk_item'+ i )
-                    td=i
-                    td 05-27 10:19
+                        input#chkall.chkall(type='checkbox' name='chk_item')
+                        label(for='chkall') 全選
+                    th 項次
+                    th 訂單時間
+                    th
+                      | 商品編號
+                      br 
+                      | 商品名稱
+                    th
+                      | 廠商料號
+                      br
+                      | 交易序號
+                    th 規格編號
+                    th 商品規格
+                    //- th.mw-60 數量
+                    //- th.mw-100 售價
+                    th
+                      | 數量
+                      br
+                      | 成本
+                    th
+                      | 收件人姓名
+                      br
+                      | 收件人電話
+                    //- th.mw-100 售價小計
+                    //- th.mw-100 成本小計
+                    th 訂單狀態
+                    th 網站名稱
+                    th 訂單編號
+                tbody
+                  - var j = 11;
+                  - for (var i = 1; i < j; i++)
+                    tr
+                      td
+                        .chk_stylelize
+                          input.chk_item(id='chk_item'+i,type='checkbox' name='chk_item')
+                          label(for='chk_item'+ i )
+                      td=i
+                      td 05-27 10:19
+                      td.prdnm
+                        | 8168803
+                        br
+                        | 屈臣氏維他命C嫩白潤膚乳液480ml
+                      td.bc-dealId-66350(style='line-height:130%;')
+                        | 148398
+                        br
+                        | 20240527975349
+                      
+                      td 19009086
+                      td.sizenm
+                        span.word-break.tooltip.one 單一規格
+                      td 
+                        | 10
+                        br
+                        | 115
+                      td
+                        | 紅綠燈
+                        br
+                        | 09123456789
+                      td 已拋出貨檔
+                      td friDay購物
+                      td 20240527513391
+          input#tabtwo.tabradio(tabindex='2' name='tabs' type='radio')
+          label.tablabel(for='tabtwo') 依商品小計
+          .tabpanel(tabindex='2')
+            #prodSubtotal.table_content
+              table.no-stripe
+                thead
+                  tr#itemTotalLine
+                    th  
+                    th  
+                    th &#x7E3D;&#x8A08;:
+                    th  
+                    th  
+                    th  
+                    th.priceTotal.red 4,941
+                    th.costTotal.red 4,748
+                  tr
+                    th &#x9805;&#x6B21;
+                    th &#x5546;&#x54C1;&#x7DE8;&#x865F;
+                    th.prdnm &#x5546;&#x54C1;&#x540D;&#x7A31;
+                    th &#x6578;&#x91CF;
+                    th &#x552E;&#x50F9;
+                    th &#x6210;&#x672C;
+                    th &#x552E;&#x50F9;&#x5C0F;&#x8A08;
+                    th &#x6210;&#x672C;&#x5C0F;&#x8A08;
+                tbody
+                  tr
+                    td 1
+                    td 8168803
                     td.prdnm
-                      | 8168803
-                      br
-                      | 屈臣氏維他命C嫩白潤膚乳液480ml
-                    td.bc-dealId-66350(style='line-height:130%;')
-                      | 148398
-                      br
-                      | 20240527975349
-                    
-                    td 19009086
-                    td.sizenm
-                      span.word-break.tooltip.one 單一規格
-                    td 
-                      | 10
-                      br
-                      | 115
-                    td
-                      | 紅綠燈
-                      br
-                      | 09123456789
-                    td 已拋出貨檔
-                    td friDay購物
-                    td 20240527513391
-               
-        #tab-2.tab-content
-          #prodSubtotal.table-result.p-none.w-full.stickyTable.table_content
-            table.no-stripe
-              thead
-                tr#itemTotalLine
-                  th  
-                  th  
-                  th &#x7E3D;&#x8A08;:
-                  th  
-                  th  
-                  th  
-                  th.priceTotal.red 4,941
-                  th.costTotal.red 4,748
-                tr
-                  th.w80 &#x9805;&#x6B21;
-                  th.w130 &#x5546;&#x54C1;&#x7DE8;&#x865F;
-                  th.prdnm &#x5546;&#x54C1;&#x540D;&#x7A31;
-                  th.w130 &#x6578;&#x91CF;
-                  th.w130 &#x552E;&#x50F9;
-                  th.w130 &#x6210;&#x672C;
-                  th.w130 &#x552E;&#x50F9;&#x5C0F;&#x8A08;
-                  th.w130 &#x6210;&#x672C;&#x5C0F;&#x8A08;
-              tbody
-                tr
-                  td 1
-                  td 8168803
-                  td.prdnm
-                    span.word-break.tooltip.two &#x5C48;&#x81E3;&#x6C0F;&#x7DAD;&#x4ED6;&#x547D;C&#x5AE9;&#x767D;&#x6F64;&#x819A;&#x4E73;&#x6DB2;480ml
-                  td 4
-                  td 119
-                  td 114
-                  td 476
-                  td 456
-                tr
-                  td 2
-                  td 8168802
-                  td.prdnm
-                    span.word-break.tooltip.two &#x5C48;&#x81E3;&#x6C0F;Q10&#x7DCA;&#x7DFB;&#x67D4;&#x819A;&#x4E73;&#x6DB2;480ml
-                  td 4
-                  td 119
-                  td 115
-                  td 476
-                  td 460
-                tr
-                  td 3
-                  td 8168822
-                  td.prdnm
-                    span.word-break.tooltip.two H&amp;S &#x6D77;&#x502B;&#x4ED9;&#x5EA6;&#x7D72;&#x7537;&#x58EB; 0%&#x77FD;&#x9748;&#x6D17;&#x9AEE;&#x4E73;500ml (&#x6709;&#x6548;&#x6DE8;&#x900F;)
-                  td 3
-                  td 299
-                  td 287
-                  td 897
-                  td 861
-                tr
-                  td 4
-                  td 8168809
-                  td.prdnm
-                    span.word-break.tooltip.two &#x5DF4;&#x9ECE;&#x840A;&#x96C5;&#x4E09;&#x5408;&#x4E00;&#x5378;&#x599D;&#x6F54;&#x984F;&#x6C34;-&#x6E05;&#x723D;&#x578B;(400ml)
-                  td 3
-                  td 489
-                  td 469
-                  td 1,467
-                  td 1,407
-                tr
-                  td 5
-                  td 8167541
-                  td.prdnm
-                    span.word-break.tooltip.two &#x59AE;&#x7DAD;&#x96C5;&#x5BC6;&#x96C6;&#x4FDD;&#x6FD5;&#x4FEE;&#x8B77;&#x8B77;&#x624B;&#x971C;75ml
-                  td 1
-                  td 189
-                  td 182
-                  td 189
-                  td 182
-                tr
-                  td 6
-                  td 8168826
-                  td.prdnm
-                    span.word-break.tooltip.two &#x66FC;&#x79C0;&#x96F7;&#x6566;Lip Pure&#x7D14;&#x6DE8;&#x690D;&#x7269;&#x6F64;&#x5507;&#x818F;-&#x9999;&#x6A59;4g
-                  td 1
-                  td 159
-                  td 153
-                  td 159
-                  td 153
-                tr
-                  td 7
-                  td 8168797
-                  td.prdnm
-                    span.word-break.tooltip.two KISS ME &#x82B1;&#x6F3E;&#x7F8E;&#x59EC;&#x77AC;&#x7FF9;&#x81EA;&#x7136;&#x6372;&#x7E96;&#x9577;&#x9632;&#x6C34;&#x776B;&#x6BDB;&#x818F; 6g
-                  td 1
-                  td 459
-                  td 441
-                  td 459
-                  td 441
-                tr
-                  td 8
-                  td 8168656
-                  td.prdnm
-                    span.word-break.tooltip.two Lumina&#x68C9;&#x67D4;&#x73CD;&#x73E0;&#x7D0B;&#x6D17;&#x81C9;&#x5DFE;-&#x5927;&#x80D6;&#x5305;70&#x62BD;
-                  td 1
-                  td 239
-                  td 230
-                  td 239
-                  td 230
-                tr
-                  td 9
-                  td 8168819
-                  td.prdnm
-                    span.word-break.tooltip.two &#x819A;&#x854A; &#x5378;&#x7CA7;&#x6309;&#x6469;&#x971C;250g
-                  td 1
-                  td 290
-                  td 279
-                  td 290
-                  td 279
-                tr
-                  td 10
-                  td 8168806
-                  td.prdnm
-                    span.word-break.tooltip.two Biore &#x871C;&#x59AE; &#x9AD8;&#x9632;&#x66EC;&#x4E73;&#x6DB2; SPF48 (50ml)
-                  td 1
-                  td 170
-                  td 164
-                  td 170
-                  td 164
-                tr
-                  td 11
-                  td 8168803
-                  td.prdnm
-                    span.word-break.tooltip.two &#x5C48;&#x81E3;&#x6C0F;&#x7DAD;&#x4ED6;&#x547D;C&#x5AE9;&#x767D;&#x6F64;&#x819A;&#x4E73;&#x6DB2;480ml
-                  td 1
-                  td 119
-                  td 115
-                  td 119
-                  td 115
-
-                
-
+                      span.word-break.tooltip.two &#x5C48;&#x81E3;&#x6C0F;&#x7DAD;&#x4ED6;&#x547D;C&#x5AE9;&#x767D;&#x6F64;&#x819A;&#x4E73;&#x6DB2;480ml
+                    td 4
+                    td 119
+                    td 114
+                    td 476
+                    td 456
+                  tr
+                    td 2
+                    td 8168802
+                    td.prdnm
+                      span.word-break.tooltip.two &#x5C48;&#x81E3;&#x6C0F;Q10&#x7DCA;&#x7DFB;&#x67D4;&#x819A;&#x4E73;&#x6DB2;480ml
+                    td 4
+                    td 119
+                    td 115
+                    td 476
+                    td 460
+                  tr
+                    td 3
+                    td 8168822
+                    td.prdnm
+                      span.word-break.tooltip.two H&amp;S &#x6D77;&#x502B;&#x4ED9;&#x5EA6;&#x7D72;&#x7537;&#x58EB; 0%&#x77FD;&#x9748;&#x6D17;&#x9AEE;&#x4E73;500ml (&#x6709;&#x6548;&#x6DE8;&#x900F;)
+                    td 3
+                    td 299
+                    td 287
+                    td 897
+                    td 861
+                  tr
+                    td 4
+                    td 8168809
+                    td.prdnm
+                      span.word-break.tooltip.two &#x5DF4;&#x9ECE;&#x840A;&#x96C5;&#x4E09;&#x5408;&#x4E00;&#x5378;&#x599D;&#x6F54;&#x984F;&#x6C34;-&#x6E05;&#x723D;&#x578B;(400ml)
+                    td 3
+                    td 489
+                    td 469
+                    td 1,467
+                    td 1,407
+                  tr
+                    td 5
+                    td 8167541
+                    td.prdnm
+                      span.word-break.tooltip.two &#x59AE;&#x7DAD;&#x96C5;&#x5BC6;&#x96C6;&#x4FDD;&#x6FD5;&#x4FEE;&#x8B77;&#x8B77;&#x624B;&#x971C;75ml
+                    td 1
+                    td 189
+                    td 182
+                    td 189
+                    td 182
+                  tr
+                    td 6
+                    td 8168826
+                    td.prdnm
+                      span.word-break.tooltip.two &#x66FC;&#x79C0;&#x96F7;&#x6566;Lip Pure&#x7D14;&#x6DE8;&#x690D;&#x7269;&#x6F64;&#x5507;&#x818F;-&#x9999;&#x6A59;4g
+                    td 1
+                    td 159
+                    td 153
+                    td 159
+                    td 153
+                  tr
+                    td 7
+                    td 8168797
+                    td.prdnm
+                      span.word-break.tooltip.two KISS ME &#x82B1;&#x6F3E;&#x7F8E;&#x59EC;&#x77AC;&#x7FF9;&#x81EA;&#x7136;&#x6372;&#x7E96;&#x9577;&#x9632;&#x6C34;&#x776B;&#x6BDB;&#x818F; 6g
+                    td 1
+                    td 459
+                    td 441
+                    td 459
+                    td 441
+                  tr
+                    td 8
+                    td 8168656
+                    td.prdnm
+                      span.word-break.tooltip.two Lumina&#x68C9;&#x67D4;&#x73CD;&#x73E0;&#x7D0B;&#x6D17;&#x81C9;&#x5DFE;-&#x5927;&#x80D6;&#x5305;70&#x62BD;
+                    td 1
+                    td 239
+                    td 230
+                    td 239
+                    td 230
+                  tr
+                    td 9
+                    td 8168819
+                    td.prdnm
+                      span.word-break.tooltip.two &#x819A;&#x854A; &#x5378;&#x7CA7;&#x6309;&#x6469;&#x971C;250g
+                    td 1
+                    td 290
+                    td 279
+                    td 290
+                    td 279
+                  tr
+                    td 10
+                    td 8168806
+                    td.prdnm
+                      span.word-break.tooltip.two Biore &#x871C;&#x59AE; &#x9AD8;&#x9632;&#x66EC;&#x4E73;&#x6DB2; SPF48 (50ml)
+                    td 1
+                    td 170
+                    td 164
+                    td 170
+                    td 164
+                  tr
+                    td 11
+                    td 8168803
+                    td.prdnm
+                      span.word-break.tooltip.two &#x5C48;&#x81E3;&#x6C0F;&#x7DAD;&#x4ED6;&#x547D;C&#x5AE9;&#x767D;&#x6F64;&#x819A;&#x4E73;&#x6DB2;480ml
+                    td 1
+                    td 119
+                    td 115
+                    td 119
+                    td 115
         include ../css/pug_lib/_pagenavi.pug
-      // pure css lightbox start
-      #lightbox-target.lightbox
-        .content
-          div here is content
-          a.lightbox-close(href='#')
-      // lightbox end

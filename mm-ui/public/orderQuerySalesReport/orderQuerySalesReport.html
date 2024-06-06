@@ -28,11 +28,9 @@
                 <label for="dateType4">本月～今日 </label>
                 <input id="dateType5" type="radio" name="dateType" required="required" value="5">
                 <label for="dateType5">上月整月</label>
-                <input id="dateType6" type="radio" name="dateType" required="required" value="6">
-                <label for="dateType6">上第二個月</label>
               </div>
             </div>
-            <div class="flex-row"> 
+            <div class="flex-row">
               <div class="col-title"></div>
               <div class="radio_styleize">
                 <input id="ordAll" type="radio" name="ordRange" required="required" value="all" checked>
@@ -48,395 +46,405 @@
                 <label for="ordShiped">只看已出貨訂單</label>
               </div>
             </div>
+            <div class="flex-row">
+              <div class="flex-row-center">
+                <div class="col-title">訂單類型</div>
+                <div class="chk_stylelize">
+                  <select class="form-select" name="">
+                    <option value="0">全部</option>
+                    <option value="1">宅配</option>
+                    <option value="2">7-11</option>
+                    <option value="3">全家</option>
+                  </select>
+                </div>
+              </div>
+            </div>
           </form>
           <div class="panel_func"><a class="btn-blue search-btn">確定</a><a class="btn-blue search-btn">匯出EXCEL</a></div>
         </div>
         <div class="table_func">
           <div class="flex-row-end"><a class="btn-blue-hallow">列印撿貨單</a><a class="btn-blue-hallow">印超商小白單</a><a class="btn-blue-hallow">出貨回填物流號</a><a class="btn-blue-hallow">印遠時宅配單</a></div>
-          <div class="pages"><a class="prev-page disable">上一頁</a><span class="current-page">1/255</span><a class="next-page" href="#">下一頁</a>
-            <select class="select-page">
-              <option>第1頁</option>
-            </select>
-          </div>
         </div>
-        <ul class="tabs">
-          <li class="tab-link current" data-tab="tab-1">訂單查詢</li>
-          <li class="tab-link" data-tab="tab-2">依商品小計</li>
-        </ul>
-        <div class="tab-content current" id="tab-1">
-          <div class="table_content" id="searchResult">
-            <table>
-              <thead>
-                <tr id="totalLine">
-                  <th colspan="5"></th>
-                  <th>總計</th>
-                  <th class="priceTotal red">18,284</th>
-                  <th class="costTotal red">17,860</th>
-                  <th colspan="4"> </th>
-                </tr>
-                <tr>
-                  <th>
-                    <div class="chk_stylelize">
-                      <input class="chkall" id="chkall" type="checkbox" name="chk_item">
-                      <label for="chkall">全選</label>
-                    </div>
-                  </th>
-                  <th>項次</th>
-                  <th>訂單時間</th>
-                  <th>商品編號<br>商品名稱</th>
-                  <th>廠商料號<br>交易序號</th>
-                  <th>規格編號</th>
-                  <th>商品規格</th>
-                  <th>數量<br>成本</th>
-                  <th>收件人姓名<br>收件人電話</th>
-                  <th>訂單狀態</th>
-                  <th>網站名稱</th>
-                  <th>訂單編號</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="chk_stylelize">
-                      <input class="chk_item" id="chk_item1" type="checkbox" name="chk_item">
-                      <label for="chk_item1"></label>
-                    </div>
-                  </td>
-                  <td>1</td>
-                  <td>05-27 10:19</td>
-                  <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
-                  <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                  <td>19009086</td>
-                  <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
-                  <td>
-                     10<br>115</td>
-                  <td>紅綠燈<br>09123456789</td>
-                  <td>已拋出貨檔</td>
-                  <td>friDay購物</td>
-                  <td>20240527513391</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="chk_stylelize">
-                      <input class="chk_item" id="chk_item2" type="checkbox" name="chk_item">
-                      <label for="chk_item2"></label>
-                    </div>
-                  </td>
-                  <td>2</td>
-                  <td>05-27 10:19</td>
-                  <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
-                  <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                  <td>19009086</td>
-                  <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
-                  <td>
-                     10<br>115</td>
-                  <td>紅綠燈<br>09123456789</td>
-                  <td>已拋出貨檔</td>
-                  <td>friDay購物</td>
-                  <td>20240527513391</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="chk_stylelize">
-                      <input class="chk_item" id="chk_item3" type="checkbox" name="chk_item">
-                      <label for="chk_item3"></label>
-                    </div>
-                  </td>
-                  <td>3</td>
-                  <td>05-27 10:19</td>
-                  <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
-                  <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                  <td>19009086</td>
-                  <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
-                  <td>
-                     10<br>115</td>
-                  <td>紅綠燈<br>09123456789</td>
-                  <td>已拋出貨檔</td>
-                  <td>friDay購物</td>
-                  <td>20240527513391</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="chk_stylelize">
-                      <input class="chk_item" id="chk_item4" type="checkbox" name="chk_item">
-                      <label for="chk_item4"></label>
-                    </div>
-                  </td>
-                  <td>4</td>
-                  <td>05-27 10:19</td>
-                  <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
-                  <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                  <td>19009086</td>
-                  <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
-                  <td>
-                     10<br>115</td>
-                  <td>紅綠燈<br>09123456789</td>
-                  <td>已拋出貨檔</td>
-                  <td>friDay購物</td>
-                  <td>20240527513391</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="chk_stylelize">
-                      <input class="chk_item" id="chk_item5" type="checkbox" name="chk_item">
-                      <label for="chk_item5"></label>
-                    </div>
-                  </td>
-                  <td>5</td>
-                  <td>05-27 10:19</td>
-                  <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
-                  <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                  <td>19009086</td>
-                  <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
-                  <td>
-                     10<br>115</td>
-                  <td>紅綠燈<br>09123456789</td>
-                  <td>已拋出貨檔</td>
-                  <td>friDay購物</td>
-                  <td>20240527513391</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="chk_stylelize">
-                      <input class="chk_item" id="chk_item6" type="checkbox" name="chk_item">
-                      <label for="chk_item6"></label>
-                    </div>
-                  </td>
-                  <td>6</td>
-                  <td>05-27 10:19</td>
-                  <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
-                  <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                  <td>19009086</td>
-                  <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
-                  <td>
-                     10<br>115</td>
-                  <td>紅綠燈<br>09123456789</td>
-                  <td>已拋出貨檔</td>
-                  <td>friDay購物</td>
-                  <td>20240527513391</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="chk_stylelize">
-                      <input class="chk_item" id="chk_item7" type="checkbox" name="chk_item">
-                      <label for="chk_item7"></label>
-                    </div>
-                  </td>
-                  <td>7</td>
-                  <td>05-27 10:19</td>
-                  <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
-                  <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                  <td>19009086</td>
-                  <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
-                  <td>
-                     10<br>115</td>
-                  <td>紅綠燈<br>09123456789</td>
-                  <td>已拋出貨檔</td>
-                  <td>friDay購物</td>
-                  <td>20240527513391</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="chk_stylelize">
-                      <input class="chk_item" id="chk_item8" type="checkbox" name="chk_item">
-                      <label for="chk_item8"></label>
-                    </div>
-                  </td>
-                  <td>8</td>
-                  <td>05-27 10:19</td>
-                  <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
-                  <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                  <td>19009086</td>
-                  <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
-                  <td>
-                     10<br>115</td>
-                  <td>紅綠燈<br>09123456789</td>
-                  <td>已拋出貨檔</td>
-                  <td>friDay購物</td>
-                  <td>20240527513391</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="chk_stylelize">
-                      <input class="chk_item" id="chk_item9" type="checkbox" name="chk_item">
-                      <label for="chk_item9"></label>
-                    </div>
-                  </td>
-                  <td>9</td>
-                  <td>05-27 10:19</td>
-                  <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
-                  <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                  <td>19009086</td>
-                  <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
-                  <td>
-                     10<br>115</td>
-                  <td>紅綠燈<br>09123456789</td>
-                  <td>已拋出貨檔</td>
-                  <td>friDay購物</td>
-                  <td>20240527513391</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="chk_stylelize">
-                      <input class="chk_item" id="chk_item10" type="checkbox" name="chk_item">
-                      <label for="chk_item10"></label>
-                    </div>
-                  </td>
-                  <td>10</td>
-                  <td>05-27 10:19</td>
-                  <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
-                  <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                  <td>19009086</td>
-                  <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
-                  <td>
-                     10<br>115</td>
-                  <td>紅綠燈<br>09123456789</td>
-                  <td>已拋出貨檔</td>
-                  <td>friDay購物</td>
-                  <td>20240527513391</td>
-                </tr>
-              </tbody>
-            </table>
+        <div class="tabs">
+          <input class="tabradio" id="tabone" name="tabs" tabindex="1" type="radio" checked="checked">
+          <label class="tablabel" for="tabone">訂單查詢</label>
+          <div class="tabpanel" tabindex="1">
+            <div class="table_content" id="searchResult">
+              <table>
+                <thead>
+                  <tr id="totalLine">
+                    <th colspan="5"></th>
+                    <th>總計</th>
+                    <th class="priceTotal red">18,284</th>
+                    <th class="costTotal red">17,860</th>
+                    <th colspan="4"> </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="chk_stylelize">
+                        <input class="chkall" id="chkall" type="checkbox" name="chk_item">
+                        <label for="chkall">全選</label>
+                      </div>
+                    </th>
+                    <th>項次</th>
+                    <th>訂單時間</th>
+                    <th>商品編號<br>商品名稱</th>
+                    <th>廠商料號<br>交易序號</th>
+                    <th>規格編號</th>
+                    <th>商品規格</th>
+                    <th>數量<br>成本</th>
+                    <th>收件人姓名<br>收件人電話</th>
+                    <th>訂單狀態</th>
+                    <th>網站名稱</th>
+                    <th>訂單編號</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="chk_stylelize">
+                        <input class="chk_item" id="chk_item1" type="checkbox" name="chk_item">
+                        <label for="chk_item1"></label>
+                      </div>
+                    </td>
+                    <td>1</td>
+                    <td>05-27 10:19</td>
+                    <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
+                    <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
+                    <td>19009086</td>
+                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
+                    <td>
+                       10<br>115</td>
+                    <td>紅綠燈<br>09123456789</td>
+                    <td>已拋出貨檔</td>
+                    <td>friDay購物</td>
+                    <td>20240527513391</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="chk_stylelize">
+                        <input class="chk_item" id="chk_item2" type="checkbox" name="chk_item">
+                        <label for="chk_item2"></label>
+                      </div>
+                    </td>
+                    <td>2</td>
+                    <td>05-27 10:19</td>
+                    <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
+                    <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
+                    <td>19009086</td>
+                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
+                    <td>
+                       10<br>115</td>
+                    <td>紅綠燈<br>09123456789</td>
+                    <td>已拋出貨檔</td>
+                    <td>friDay購物</td>
+                    <td>20240527513391</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="chk_stylelize">
+                        <input class="chk_item" id="chk_item3" type="checkbox" name="chk_item">
+                        <label for="chk_item3"></label>
+                      </div>
+                    </td>
+                    <td>3</td>
+                    <td>05-27 10:19</td>
+                    <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
+                    <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
+                    <td>19009086</td>
+                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
+                    <td>
+                       10<br>115</td>
+                    <td>紅綠燈<br>09123456789</td>
+                    <td>已拋出貨檔</td>
+                    <td>friDay購物</td>
+                    <td>20240527513391</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="chk_stylelize">
+                        <input class="chk_item" id="chk_item4" type="checkbox" name="chk_item">
+                        <label for="chk_item4"></label>
+                      </div>
+                    </td>
+                    <td>4</td>
+                    <td>05-27 10:19</td>
+                    <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
+                    <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
+                    <td>19009086</td>
+                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
+                    <td>
+                       10<br>115</td>
+                    <td>紅綠燈<br>09123456789</td>
+                    <td>已拋出貨檔</td>
+                    <td>friDay購物</td>
+                    <td>20240527513391</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="chk_stylelize">
+                        <input class="chk_item" id="chk_item5" type="checkbox" name="chk_item">
+                        <label for="chk_item5"></label>
+                      </div>
+                    </td>
+                    <td>5</td>
+                    <td>05-27 10:19</td>
+                    <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
+                    <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
+                    <td>19009086</td>
+                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
+                    <td>
+                       10<br>115</td>
+                    <td>紅綠燈<br>09123456789</td>
+                    <td>已拋出貨檔</td>
+                    <td>friDay購物</td>
+                    <td>20240527513391</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="chk_stylelize">
+                        <input class="chk_item" id="chk_item6" type="checkbox" name="chk_item">
+                        <label for="chk_item6"></label>
+                      </div>
+                    </td>
+                    <td>6</td>
+                    <td>05-27 10:19</td>
+                    <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
+                    <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
+                    <td>19009086</td>
+                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
+                    <td>
+                       10<br>115</td>
+                    <td>紅綠燈<br>09123456789</td>
+                    <td>已拋出貨檔</td>
+                    <td>friDay購物</td>
+                    <td>20240527513391</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="chk_stylelize">
+                        <input class="chk_item" id="chk_item7" type="checkbox" name="chk_item">
+                        <label for="chk_item7"></label>
+                      </div>
+                    </td>
+                    <td>7</td>
+                    <td>05-27 10:19</td>
+                    <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
+                    <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
+                    <td>19009086</td>
+                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
+                    <td>
+                       10<br>115</td>
+                    <td>紅綠燈<br>09123456789</td>
+                    <td>已拋出貨檔</td>
+                    <td>friDay購物</td>
+                    <td>20240527513391</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="chk_stylelize">
+                        <input class="chk_item" id="chk_item8" type="checkbox" name="chk_item">
+                        <label for="chk_item8"></label>
+                      </div>
+                    </td>
+                    <td>8</td>
+                    <td>05-27 10:19</td>
+                    <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
+                    <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
+                    <td>19009086</td>
+                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
+                    <td>
+                       10<br>115</td>
+                    <td>紅綠燈<br>09123456789</td>
+                    <td>已拋出貨檔</td>
+                    <td>friDay購物</td>
+                    <td>20240527513391</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="chk_stylelize">
+                        <input class="chk_item" id="chk_item9" type="checkbox" name="chk_item">
+                        <label for="chk_item9"></label>
+                      </div>
+                    </td>
+                    <td>9</td>
+                    <td>05-27 10:19</td>
+                    <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
+                    <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
+                    <td>19009086</td>
+                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
+                    <td>
+                       10<br>115</td>
+                    <td>紅綠燈<br>09123456789</td>
+                    <td>已拋出貨檔</td>
+                    <td>friDay購物</td>
+                    <td>20240527513391</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="chk_stylelize">
+                        <input class="chk_item" id="chk_item10" type="checkbox" name="chk_item">
+                        <label for="chk_item10"></label>
+                      </div>
+                    </td>
+                    <td>10</td>
+                    <td>05-27 10:19</td>
+                    <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
+                    <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
+                    <td>19009086</td>
+                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
+                    <td>
+                       10<br>115</td>
+                    <td>紅綠燈<br>09123456789</td>
+                    <td>已拋出貨檔</td>
+                    <td>friDay購物</td>
+                    <td>20240527513391</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-        </div>
-        <div class="tab-content" id="tab-2">
-          <div class="table-result p-none w-full stickyTable table_content" id="prodSubtotal">
-            <table class="no-stripe">
-              <thead>
-                <tr id="itemTotalLine">
-                  <th> </th>
-                  <th> </th>
-                  <th>&#x7E3D;&#x8A08;:</th>
-                  <th> </th>
-                  <th> </th>
-                  <th> </th>
-                  <th class="priceTotal red">4,941</th>
-                  <th class="costTotal red">4,748</th>
-                </tr>
-                <tr>
-                  <th class="w80">&#x9805;&#x6B21;</th>
-                  <th class="w130">&#x5546;&#x54C1;&#x7DE8;&#x865F;</th>
-                  <th class="prdnm">&#x5546;&#x54C1;&#x540D;&#x7A31;</th>
-                  <th class="w130">&#x6578;&#x91CF;</th>
-                  <th class="w130">&#x552E;&#x50F9;</th>
-                  <th class="w130">&#x6210;&#x672C;</th>
-                  <th class="w130">&#x552E;&#x50F9;&#x5C0F;&#x8A08;</th>
-                  <th class="w130">&#x6210;&#x672C;&#x5C0F;&#x8A08;</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>8168803</td>
-                  <td class="prdnm"><span class="word-break tooltip two">&#x5C48;&#x81E3;&#x6C0F;&#x7DAD;&#x4ED6;&#x547D;C&#x5AE9;&#x767D;&#x6F64;&#x819A;&#x4E73;&#x6DB2;480ml</span></td>
-                  <td>4</td>
-                  <td>119</td>
-                  <td>114</td>
-                  <td>476</td>
-                  <td>456</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>8168802</td>
-                  <td class="prdnm"><span class="word-break tooltip two">&#x5C48;&#x81E3;&#x6C0F;Q10&#x7DCA;&#x7DFB;&#x67D4;&#x819A;&#x4E73;&#x6DB2;480ml</span></td>
-                  <td>4</td>
-                  <td>119</td>
-                  <td>115</td>
-                  <td>476</td>
-                  <td>460</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>8168822</td>
-                  <td class="prdnm"><span class="word-break tooltip two">H&amp;S &#x6D77;&#x502B;&#x4ED9;&#x5EA6;&#x7D72;&#x7537;&#x58EB; 0%&#x77FD;&#x9748;&#x6D17;&#x9AEE;&#x4E73;500ml (&#x6709;&#x6548;&#x6DE8;&#x900F;)</span></td>
-                  <td>3</td>
-                  <td>299</td>
-                  <td>287</td>
-                  <td>897</td>
-                  <td>861</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>8168809</td>
-                  <td class="prdnm"><span class="word-break tooltip two">&#x5DF4;&#x9ECE;&#x840A;&#x96C5;&#x4E09;&#x5408;&#x4E00;&#x5378;&#x599D;&#x6F54;&#x984F;&#x6C34;-&#x6E05;&#x723D;&#x578B;(400ml)</span></td>
-                  <td>3</td>
-                  <td>489</td>
-                  <td>469</td>
-                  <td>1,467</td>
-                  <td>1,407</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>8167541</td>
-                  <td class="prdnm"><span class="word-break tooltip two">&#x59AE;&#x7DAD;&#x96C5;&#x5BC6;&#x96C6;&#x4FDD;&#x6FD5;&#x4FEE;&#x8B77;&#x8B77;&#x624B;&#x971C;75ml</span></td>
-                  <td>1</td>
-                  <td>189</td>
-                  <td>182</td>
-                  <td>189</td>
-                  <td>182</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>8168826</td>
-                  <td class="prdnm"><span class="word-break tooltip two">&#x66FC;&#x79C0;&#x96F7;&#x6566;Lip Pure&#x7D14;&#x6DE8;&#x690D;&#x7269;&#x6F64;&#x5507;&#x818F;-&#x9999;&#x6A59;4g</span></td>
-                  <td>1</td>
-                  <td>159</td>
-                  <td>153</td>
-                  <td>159</td>
-                  <td>153</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>8168797</td>
-                  <td class="prdnm"><span class="word-break tooltip two">KISS ME &#x82B1;&#x6F3E;&#x7F8E;&#x59EC;&#x77AC;&#x7FF9;&#x81EA;&#x7136;&#x6372;&#x7E96;&#x9577;&#x9632;&#x6C34;&#x776B;&#x6BDB;&#x818F; 6g</span></td>
-                  <td>1</td>
-                  <td>459</td>
-                  <td>441</td>
-                  <td>459</td>
-                  <td>441</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>8168656</td>
-                  <td class="prdnm"><span class="word-break tooltip two">Lumina&#x68C9;&#x67D4;&#x73CD;&#x73E0;&#x7D0B;&#x6D17;&#x81C9;&#x5DFE;-&#x5927;&#x80D6;&#x5305;70&#x62BD;</span></td>
-                  <td>1</td>
-                  <td>239</td>
-                  <td>230</td>
-                  <td>239</td>
-                  <td>230</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>8168819</td>
-                  <td class="prdnm"><span class="word-break tooltip two">&#x819A;&#x854A; &#x5378;&#x7CA7;&#x6309;&#x6469;&#x971C;250g</span></td>
-                  <td>1</td>
-                  <td>290</td>
-                  <td>279</td>
-                  <td>290</td>
-                  <td>279</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>8168806</td>
-                  <td class="prdnm"><span class="word-break tooltip two">Biore &#x871C;&#x59AE; &#x9AD8;&#x9632;&#x66EC;&#x4E73;&#x6DB2; SPF48 (50ml)</span></td>
-                  <td>1</td>
-                  <td>170</td>
-                  <td>164</td>
-                  <td>170</td>
-                  <td>164</td>
-                </tr>
-                <tr>
-                  <td>11</td>
-                  <td>8168803</td>
-                  <td class="prdnm"><span class="word-break tooltip two">&#x5C48;&#x81E3;&#x6C0F;&#x7DAD;&#x4ED6;&#x547D;C&#x5AE9;&#x767D;&#x6F64;&#x819A;&#x4E73;&#x6DB2;480ml</span></td>
-                  <td>1</td>
-                  <td>119</td>
-                  <td>115</td>
-                  <td>119</td>
-                  <td>115</td>
-                </tr>
-              </tbody>
-            </table>
+          <input class="tabradio" id="tabtwo" tabindex="2" name="tabs" type="radio">
+          <label class="tablabel" for="tabtwo">依商品小計</label>
+          <div class="tabpanel" tabindex="2">
+            <div class="table_content" id="prodSubtotal">
+              <table class="no-stripe">
+                <thead>
+                  <tr id="itemTotalLine">
+                    <th> </th>
+                    <th> </th>
+                    <th>&#x7E3D;&#x8A08;:</th>
+                    <th> </th>
+                    <th> </th>
+                    <th> </th>
+                    <th class="priceTotal red">4,941</th>
+                    <th class="costTotal red">4,748</th>
+                  </tr>
+                  <tr>
+                    <th>&#x9805;&#x6B21;</th>
+                    <th>&#x5546;&#x54C1;&#x7DE8;&#x865F;</th>
+                    <th class="prdnm">&#x5546;&#x54C1;&#x540D;&#x7A31;</th>
+                    <th>&#x6578;&#x91CF;</th>
+                    <th>&#x552E;&#x50F9;</th>
+                    <th>&#x6210;&#x672C;</th>
+                    <th>&#x552E;&#x50F9;&#x5C0F;&#x8A08;</th>
+                    <th>&#x6210;&#x672C;&#x5C0F;&#x8A08;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>8168803</td>
+                    <td class="prdnm"><span class="word-break tooltip two">&#x5C48;&#x81E3;&#x6C0F;&#x7DAD;&#x4ED6;&#x547D;C&#x5AE9;&#x767D;&#x6F64;&#x819A;&#x4E73;&#x6DB2;480ml</span></td>
+                    <td>4</td>
+                    <td>119</td>
+                    <td>114</td>
+                    <td>476</td>
+                    <td>456</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>8168802</td>
+                    <td class="prdnm"><span class="word-break tooltip two">&#x5C48;&#x81E3;&#x6C0F;Q10&#x7DCA;&#x7DFB;&#x67D4;&#x819A;&#x4E73;&#x6DB2;480ml</span></td>
+                    <td>4</td>
+                    <td>119</td>
+                    <td>115</td>
+                    <td>476</td>
+                    <td>460</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>8168822</td>
+                    <td class="prdnm"><span class="word-break tooltip two">H&amp;S &#x6D77;&#x502B;&#x4ED9;&#x5EA6;&#x7D72;&#x7537;&#x58EB; 0%&#x77FD;&#x9748;&#x6D17;&#x9AEE;&#x4E73;500ml (&#x6709;&#x6548;&#x6DE8;&#x900F;)</span></td>
+                    <td>3</td>
+                    <td>299</td>
+                    <td>287</td>
+                    <td>897</td>
+                    <td>861</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>8168809</td>
+                    <td class="prdnm"><span class="word-break tooltip two">&#x5DF4;&#x9ECE;&#x840A;&#x96C5;&#x4E09;&#x5408;&#x4E00;&#x5378;&#x599D;&#x6F54;&#x984F;&#x6C34;-&#x6E05;&#x723D;&#x578B;(400ml)</span></td>
+                    <td>3</td>
+                    <td>489</td>
+                    <td>469</td>
+                    <td>1,467</td>
+                    <td>1,407</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>8167541</td>
+                    <td class="prdnm"><span class="word-break tooltip two">&#x59AE;&#x7DAD;&#x96C5;&#x5BC6;&#x96C6;&#x4FDD;&#x6FD5;&#x4FEE;&#x8B77;&#x8B77;&#x624B;&#x971C;75ml</span></td>
+                    <td>1</td>
+                    <td>189</td>
+                    <td>182</td>
+                    <td>189</td>
+                    <td>182</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>8168826</td>
+                    <td class="prdnm"><span class="word-break tooltip two">&#x66FC;&#x79C0;&#x96F7;&#x6566;Lip Pure&#x7D14;&#x6DE8;&#x690D;&#x7269;&#x6F64;&#x5507;&#x818F;-&#x9999;&#x6A59;4g</span></td>
+                    <td>1</td>
+                    <td>159</td>
+                    <td>153</td>
+                    <td>159</td>
+                    <td>153</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>8168797</td>
+                    <td class="prdnm"><span class="word-break tooltip two">KISS ME &#x82B1;&#x6F3E;&#x7F8E;&#x59EC;&#x77AC;&#x7FF9;&#x81EA;&#x7136;&#x6372;&#x7E96;&#x9577;&#x9632;&#x6C34;&#x776B;&#x6BDB;&#x818F; 6g</span></td>
+                    <td>1</td>
+                    <td>459</td>
+                    <td>441</td>
+                    <td>459</td>
+                    <td>441</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>8168656</td>
+                    <td class="prdnm"><span class="word-break tooltip two">Lumina&#x68C9;&#x67D4;&#x73CD;&#x73E0;&#x7D0B;&#x6D17;&#x81C9;&#x5DFE;-&#x5927;&#x80D6;&#x5305;70&#x62BD;</span></td>
+                    <td>1</td>
+                    <td>239</td>
+                    <td>230</td>
+                    <td>239</td>
+                    <td>230</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>8168819</td>
+                    <td class="prdnm"><span class="word-break tooltip two">&#x819A;&#x854A; &#x5378;&#x7CA7;&#x6309;&#x6469;&#x971C;250g</span></td>
+                    <td>1</td>
+                    <td>290</td>
+                    <td>279</td>
+                    <td>290</td>
+                    <td>279</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>8168806</td>
+                    <td class="prdnm"><span class="word-break tooltip two">Biore &#x871C;&#x59AE; &#x9AD8;&#x9632;&#x66EC;&#x4E73;&#x6DB2; SPF48 (50ml)</span></td>
+                    <td>1</td>
+                    <td>170</td>
+                    <td>164</td>
+                    <td>170</td>
+                    <td>164</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>8168803</td>
+                    <td class="prdnm"><span class="word-break tooltip two">&#x5C48;&#x81E3;&#x6C0F;&#x7DAD;&#x4ED6;&#x547D;C&#x5AE9;&#x767D;&#x6F64;&#x819A;&#x4E73;&#x6DB2;480ml</span></td>
+                    <td>1</td>
+                    <td>119</td>
+                    <td>115</td>
+                    <td>119</td>
+                    <td>115</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <div class="pages"><a class="prev-page disable">上一頁</a><span class="current-page">1/255</span><a class="next-page" href="#">下一頁</a>
@@ -445,13 +453,6 @@
           </select>
         </div>
       </div>
-      <!-- pure css lightbox start-->
-      <div class="lightbox" id="lightbox-target">
-        <div class="content">
-          <div>here is content</div><a class="lightbox-close" href="#"></a>
-        </div>
-      </div>
-      <!-- lightbox end-->
     </div>
   </body>
 </html>

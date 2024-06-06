@@ -1,35 +1,45 @@
 
-ul {
-	&.tabs {
-        width: 98%;
-		margin: 0 10px;
-		padding: 0px;
-		list-style: none;
-        border-bottom: #7db0d9 3px solid;
-		li {
-			display: inline-block;
-            margin: 0 5px 0 0;
-			padding: 10px 15px;
-            background: #f3f8fc;
-            border: #d4dbdf 1px solid;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            border-bottom: none;
-            color: #9aa9b3;
-            font-weight: 700;
-			cursor: pointer;
-			&.current {
-				color: #fff;
-                background: #7db0d9;
-                border-color: #7db0d9;
+
+
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto 20px;
+	border-radius: 10px 10px 0 0;
+}
+.tabradio {
+	// position: absolute;
+	// opacity: 0;
+	display: none;
+	&:checked {
+		& + .tablabel {
+			background: #fff;
+			color: #000;
+			color: #fff;
+        	background: #7db0d9;
+        	border-color: #7db0d9;
+			border-bottom: none;
+			& + .tabpanel {
+				display: block;
 			}
 		}
 	}
 }
-.tab-content {
+.tablabel {
+	display: inline-block;
+	margin: 0 0 0 10px;
+	padding: 10px 15px;
+	background: #f3f8fc;
+	border: #d4dbdf 1px solid;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom: none;
+	color: #9aa9b3;
+	font-weight: 700;
+	cursor: pointer;
+}
+.tabpanel {
 	display: none;
-    width: 98%;
-	&.current {
-		display: inherit;
-	}
+	width: 98%;
+	order: 99;
 }
