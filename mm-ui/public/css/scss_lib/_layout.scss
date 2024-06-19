@@ -11,7 +11,10 @@
     margin: 0 auto;
     
 }
-
+a{
+    color:var(--link-color);
+    text-decoration: underline;
+}
 .flex-row {
     display: flex;
     flex-wrap: wrap;
@@ -226,6 +229,8 @@
     vertical-align: middle;
     padding: 7px 13px;
     margin: 0 5px;
+    background: transparent;
+    color:var(--link-color);
     border: none;
     outline: none;
     font-size: 1rem;
@@ -234,7 +239,11 @@
     text-decoration: none;
     line-height: 1;
 }
-
+.btn-text{
+    background: transparent;
+    color:var(--link-color);
+    text-decoration: underline;
+}
 .btn-blue {
     color: var(--white-color);
     border: 1px solid transparent;
@@ -324,7 +333,7 @@
         .content,
         img {
             max-height: 100%;
-            max-width: 400px;
+            max-width: 1200px;
         }
     }
 
@@ -356,6 +365,7 @@
     position: absolute;
     top: 5px;
     right: 5px;
+    z-index: 99;
     display: block;
     width: 20px;
     height: 20px;
@@ -364,7 +374,7 @@
     border-radius: 50%;
     box-sizing: border-box;
     cursor: pointer;
-
+    
     &:before,
     &:after {
         content: "";

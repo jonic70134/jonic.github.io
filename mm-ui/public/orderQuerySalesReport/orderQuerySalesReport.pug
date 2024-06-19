@@ -7,7 +7,7 @@ html(lang='en')
     script(src='../js/lib/jQuery.js')
     script(src='../js/lib/jquery/jquery-uimin.js')
     script(src='../js/common/uiCommon.js')
-    script(src='orderQuerySalesReport.js')
+    //- script(src='orderQuerySalesReport.js')
     title 訂單查詢
   body(data-theme='light')
     .main-body
@@ -32,40 +32,41 @@ html(lang='en')
                 label(for="dateType4") 本月～今日 
                 input#dateType5(type="radio", name="dateType",required="required",value="5")
                 label(for="dateType5") 上月整月
-                //- input#dateType6(type="radio", name="dateType",required="required",value="6")
-                //- label(for="dateType6") 上第二個月
-            .flex-row
-              .col-title
-              .radio_styleize
-                input#ordAll(type="radio", name="ordRange",required="required",value="all" checked)
-                label(for="ordAll") 全部訂單
-                input#ordSite(type="radio", name="ordRange",required="required",value="sited")
-                label(for="ordSite") 只看本網站
-            .flex-row 
-              .col-title
-              .chk_stylelize
-                  input#ordShiped(type="checkbox",name="ordShiped") 
-                  label(for="ordShiped") 只看已出貨訂單
+                input#dateType6(type="radio", name="dateType",required="required",value="6")
+                label(for="dateType6") 尚未出貨
+            //- .flex-row
+            //-   .col-title
+            //-   .radio_styleize
+            //-     input#ordAll(type="radio", name="ordRange",required="required",value="all" checked)
+            //-     label(for="ordAll") 全部訂單
+            //-     input#ordSite(type="radio", name="ordRange",required="required",value="sited")
+            //-     label(for="ordSite") 只看本網站
+            //- .flex-row 
+            //-   .col-title
+            //-   .chk_stylelize
+            //-       input#ordShiped(type="checkbox",name="ordShiped") 
+            //-       label(for="ordShiped") 只看已出貨訂單
             .flex-row
               .flex-row-center
                 .col-title 訂單類型
-                .chk_stylelize
-                    select.form-select(name="")
-                      option(value="0") 全部
-                      option(value="1") 宅配
-                      option(value="2") 7-11
-                      option(value="3") 全家
-
-          
+                .radio_styleize
+                  input#stype_all(type='radio' name='stype' value='0' checked='')
+                  label(for='stype_all') 全部
+                  input#stype_home(type='radio' name='stype' value='1')
+                  label(for='stype_home') 宅配
+                  input#stype_711(type='radio' name='stype' value='2')
+                  label(for='stype_711') 7-11
+                  input#stype_fami(type='radio' name='stype' value='3')
+                  label(for='stype_fami') 全家
           .panel_func
             a.btn-blue.search-btn 確定
-            a.btn-blue.search-btn 匯出EXCEL
         .table_func
           .flex-row-end
-            a.btn-blue-hallow 列印撿貨單
-            a.btn-blue-hallow 印超商小白單
-            a.btn-blue-hallow 出貨回填物流號
-            a.btn-blue-hallow 印遠時宅配單
+            a.btn-blue-hallow 下載 EXCEL
+            a.btn-blue-hallow(href="#print_table") 印7-11小白單
+            a.btn-blue-hallow(href="#print_table") 印全家小白單
+            a.btn-blue-hallow(href="#print_table") 印遠時宅配單
+            a.btn-text 出貨回填物流號
           //- .pages
           //-   a.prev-page.disable 上一頁
           //-   span.current-page 1/255
@@ -92,32 +93,32 @@ html(lang='en')
                         input#chkall.chkall(type='checkbox' name='chk_item')
                         label(for='chkall') 全選
                     th 項次
+                    th 交易編號
                     th 訂單時間
                     th
                       | 商品編號
                       br 
                       | 商品名稱
                     th
-                      | 廠商料號
+                      | 規格編號
                       br
-                      | 交易序號
-                    th 規格編號
-                    th 商品規格
-                    //- th.mw-60 數量
-                    //- th.mw-100 售價
+                      | 供應商料號
                     th
                       | 數量
                       br
-                      | 成本
+                      | 售價
                     th
-                      | 收件人姓名
+                      | 收件人
                       br
-                      | 收件人電話
+                      | 收件人手機
+                    th
+                      | 收件人地址/取件門市
+                    th 配送方式
                     //- th.mw-100 售價小計
                     //- th.mw-100 成本小計
-                    th 訂單狀態
-                    th 網站名稱
-                    th 訂單編號
+                    //- th 訂單狀態
+                    //- th 網站名稱
+                    //- th 訂單編號
                 tbody
                   - var j = 11;
                   - for (var i = 1; i < j; i++)
@@ -127,6 +128,7 @@ html(lang='en')
                           input.chk_item(id='chk_item'+i,type='checkbox' name='chk_item')
                           label(for='chk_item'+ i )
                       td=i
+                      td 8168803
                       td 05-27 10:19
                       td.prdnm
                         | 8168803
@@ -136,21 +138,21 @@ html(lang='en')
                         | 148398
                         br
                         | 20240527975349
-                      
-                      td 19009086
-                      td.sizenm
-                        span.word-break.tooltip.one 單一規格
                       td 
                         | 10
                         br
                         | 115
-                      td
-                        | 紅綠燈
+                      td 
+                        | Serena
                         br
-                        | 09123456789
-                      td 已拋出貨檔
-                      td friDay購物
-                      td 20240527513391
+                        | 0912345678
+                      td
+                        | 7-11 啊啊啊門市
+                      td
+                        | 宅配
+                      //- td 已拋出貨檔
+                      //- td friDay購物
+                      //- td 20240527513391
           input#tabtwo.tabradio(tabindex='2' name='tabs' type='radio')
           label.tablabel(for='tabtwo') 依商品小計
           .tabpanel(tabindex='2')
@@ -286,4 +288,75 @@ html(lang='en')
                     td 115
                     td 119
                     td 115
+        
+        #print_table.lightbox
+          .content
+            .lightbox_table
+              table
+                thead
+                  tr
+                    th
+                      .chk_stylelize
+                        input#chkall.chkall(type='checkbox' name='chk_item')
+                        label(for='chkall') 全選
+                    th 項次
+                    th 交易編號
+                    th 箱號
+                    th
+                      | 商品編號
+                      br 
+                      | 商品名稱
+                    th
+                      | 規格編號
+                      br
+                      | 供應商料號
+                    th
+                      | 數量
+                      br
+                      | 售價
+                    th
+                      | 收件人
+                      br
+                      | 收件人手機
+                    th
+                      | 收件人地址/取件門市
+                    th 配送方式
+                    th 物流配送號
+                tbody
+                  - var j = 4;
+                  - for (var i = 1; i < j; i++)
+                    tr
+                      td
+                        .chk_stylelize
+                          input.chk_item(id='chk_item'+i,type='checkbox' name='chk_item')
+                          label(for='chk_item'+ i )
+                      td=i
+                      td 
+                        | 20240527975349
+                        br
+                        a.btn-blue(href="#") 我要分箱
+                      td 1
+                      td.prdnm
+                        | 8168803
+                        br
+                        | 一般商品
+                      td.bc-dealId-66350(style='line-height:130%;')
+                        | 148398
+                        br
+                        | TEST01
+                      td 
+                        | 10
+                        br
+                        | 1154
+                      td 
+                        | Serena
+                        br
+                        | 0912345678
+                      td
+                        | 7-11 啊啊啊門市
+                      td
+                        | 超取7-11
+                      td
+                        | K1235678
+            a(href="#").lightbox-close
         include ../css/pug_lib/_pagenavi.pug

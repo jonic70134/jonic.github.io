@@ -1,5 +1,5 @@
 
-.table_panel,.table_content{
+.table_panel,.table_content,.lightbox_table{
     font-size:.85rem;
 }
 table {
@@ -29,9 +29,13 @@ table {
         }
     }
 }
-
+.lightbox_table{
+    table{
+        width: auto;
+    }
+}
 thead {
-    position: sticky;top: 0;
+    position: sticky;top: 0;z-index: 30;
     color: var(--black-color);
     background: var(--thead-color);
     th{
@@ -227,14 +231,16 @@ input::placeholder{
 }
 
 .table_content,
-.table_panel {
+.table_panel,.lightbox_table {
     margin: 0 10px 10px;
 }
 
 .table_content table {
     width: 100%;
 }
-
+.lightbox_table table{
+    width: 100%;
+}
 .table_panel {
     padding: 10px;
     border: 1px solid #aaa;
@@ -245,7 +251,7 @@ input::placeholder{
 
 
 
-.table_content {
+.table_content,.lightbox_table {
     table{
         border: 1px solid #ccc;
     }

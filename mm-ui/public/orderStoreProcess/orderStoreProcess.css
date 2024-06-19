@@ -1413,6 +1413,11 @@ button {
   margin: 0 auto;
 }
 
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
 .flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1505,6 +1510,8 @@ button {
   vertical-align: middle;
   padding: 7px 13px;
   margin: 0 5px;
+  background: transparent;
+  color: var(--link-color);
   border: none;
   outline: none;
   font-size: 1rem;
@@ -1512,6 +1519,12 @@ button {
   letter-spacing: 0.5px;
   text-decoration: none;
   line-height: 1;
+}
+
+.btn-text {
+  background: transparent;
+  color: var(--link-color);
+  text-decoration: underline;
 }
 
 .btn-blue {
@@ -1591,7 +1604,7 @@ button {
 .lightbox:target .content,
 .lightbox:target img {
   max-height: 100%;
-  max-width: 400px;
+  max-width: 1200px;
 }
 .lightbox .content {
   position: absolute;
@@ -1621,6 +1634,7 @@ button {
   position: absolute;
   top: 5px;
   right: 5px;
+  z-index: 99;
   display: block;
   width: 20px;
   height: 20px;
@@ -1648,7 +1662,7 @@ button {
           transform: rotate(-45deg);
 }
 
-.table_panel, .table_content {
+.table_panel, .table_content, .lightbox_table {
   font-size: 0.85rem;
 }
 
@@ -1682,9 +1696,14 @@ table .ref:hover span {
   display: block;
 }
 
+.lightbox_table table {
+  width: auto;
+}
+
 thead {
   position: sticky;
   top: 0;
+  z-index: 30;
   color: var(--black-color);
   background: var(--thead-color);
 }
@@ -1886,11 +1905,15 @@ input::placeholder {
 }
 
 .table_content,
-.table_panel {
+.table_panel, .lightbox_table {
   margin: 0 10px 10px;
 }
 
 .table_content table {
+  width: 100%;
+}
+
+.lightbox_table table {
   width: 100%;
 }
 
@@ -1902,16 +1925,16 @@ input::placeholder {
   background-color: var(--white-color);
 }
 
-.table_content table {
+.table_content table, .lightbox_table table {
   border: 1px solid #ccc;
 }
-.table_content tbody td {
+.table_content tbody td, .lightbox_table tbody td {
   text-align: center;
 }
-.table_content tbody tr:nth-child(even) {
+.table_content tbody tr:nth-child(even), .lightbox_table tbody tr:nth-child(even) {
   background: #e9f3fa;
 }
-.table_content tbody tr:hover {
+.table_content tbody tr:hover, .lightbox_table tbody tr:hover {
   border-bottom: 1px solid var(--table-blue-color);
   background-color: var(--trhover-color);
 }

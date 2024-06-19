@@ -7,7 +7,6 @@
     <script src="../js/lib/jQuery.js"></script>
     <script src="../js/lib/jquery/jquery-uimin.js"></script>
     <script src="../js/common/uiCommon.js"></script>
-    <script src="orderQuerySalesReport.js"></script>
     <title>訂單查詢</title>
   </head>
   <body data-theme="light">
@@ -28,42 +27,30 @@
                 <label for="dateType4">本月～今日 </label>
                 <input id="dateType5" type="radio" name="dateType" required="required" value="5">
                 <label for="dateType5">上月整月</label>
-              </div>
-            </div>
-            <div class="flex-row">
-              <div class="col-title"></div>
-              <div class="radio_styleize">
-                <input id="ordAll" type="radio" name="ordRange" required="required" value="all" checked>
-                <label for="ordAll">全部訂單</label>
-                <input id="ordSite" type="radio" name="ordRange" required="required" value="sited">
-                <label for="ordSite">只看本網站</label>
-              </div>
-            </div>
-            <div class="flex-row"> 
-              <div class="col-title"></div>
-              <div class="chk_stylelize">
-                <input id="ordShiped" type="checkbox" name="ordShiped">
-                <label for="ordShiped">只看已出貨訂單</label>
+                <input id="dateType6" type="radio" name="dateType" required="required" value="6">
+                <label for="dateType6">尚未出貨</label>
               </div>
             </div>
             <div class="flex-row">
               <div class="flex-row-center">
                 <div class="col-title">訂單類型</div>
-                <div class="chk_stylelize">
-                  <select class="form-select" name="">
-                    <option value="0">全部</option>
-                    <option value="1">宅配</option>
-                    <option value="2">7-11</option>
-                    <option value="3">全家</option>
-                  </select>
+                <div class="radio_styleize">
+                  <input id="stype_all" type="radio" name="stype" value="0" checked="">
+                  <label for="stype_all">全部</label>
+                  <input id="stype_home" type="radio" name="stype" value="1">
+                  <label for="stype_home">宅配</label>
+                  <input id="stype_711" type="radio" name="stype" value="2">
+                  <label for="stype_711">7-11</label>
+                  <input id="stype_fami" type="radio" name="stype" value="3">
+                  <label for="stype_fami">全家</label>
                 </div>
               </div>
             </div>
           </form>
-          <div class="panel_func"><a class="btn-blue search-btn">確定</a><a class="btn-blue search-btn">匯出EXCEL</a></div>
+          <div class="panel_func"><a class="btn-blue search-btn">確定</a></div>
         </div>
         <div class="table_func">
-          <div class="flex-row-end"><a class="btn-blue-hallow">列印撿貨單</a><a class="btn-blue-hallow">印超商小白單</a><a class="btn-blue-hallow">出貨回填物流號</a><a class="btn-blue-hallow">印遠時宅配單</a></div>
+          <div class="flex-row-end"><a class="btn-blue-hallow">下載 EXCEL</a><a class="btn-blue-hallow" href="#print_table">印7-11小白單</a><a class="btn-blue-hallow" href="#print_table">印全家小白單</a><a class="btn-blue-hallow" href="#print_table">印遠時宅配單</a><a class="btn-text">出貨回填物流號</a></div>
         </div>
         <div class="tabs">
           <input class="tabradio" id="tabone" name="tabs" tabindex="1" type="radio" checked="checked">
@@ -87,16 +74,14 @@
                       </div>
                     </th>
                     <th>項次</th>
+                    <th>交易編號</th>
                     <th>訂單時間</th>
                     <th>商品編號<br>商品名稱</th>
-                    <th>廠商料號<br>交易序號</th>
-                    <th>規格編號</th>
-                    <th>商品規格</th>
-                    <th>數量<br>成本</th>
-                    <th>收件人姓名<br>收件人電話</th>
-                    <th>訂單狀態</th>
-                    <th>網站名稱</th>
-                    <th>訂單編號</th>
+                    <th>規格編號<br>供應商料號</th>
+                    <th>數量<br>售價</th>
+                    <th>收件人<br>收件人手機</th>
+                    <th>收件人地址/取件門市</th>
+                    <th>配送方式</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -108,17 +93,16 @@
                       </div>
                     </td>
                     <td>1</td>
+                    <td>8168803</td>
                     <td>05-27 10:19</td>
                     <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
                     <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                    <td>19009086</td>
-                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
                     <td>
                        10<br>115</td>
-                    <td>紅綠燈<br>09123456789</td>
-                    <td>已拋出貨檔</td>
-                    <td>friDay購物</td>
-                    <td>20240527513391</td>
+                    <td>
+                       Serena<br>0912345678</td>
+                    <td>7-11 啊啊啊門市</td>
+                    <td>宅配</td>
                   </tr>
                   <tr>
                     <td>
@@ -128,17 +112,16 @@
                       </div>
                     </td>
                     <td>2</td>
+                    <td>8168803</td>
                     <td>05-27 10:19</td>
                     <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
                     <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                    <td>19009086</td>
-                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
                     <td>
                        10<br>115</td>
-                    <td>紅綠燈<br>09123456789</td>
-                    <td>已拋出貨檔</td>
-                    <td>friDay購物</td>
-                    <td>20240527513391</td>
+                    <td>
+                       Serena<br>0912345678</td>
+                    <td>7-11 啊啊啊門市</td>
+                    <td>宅配</td>
                   </tr>
                   <tr>
                     <td>
@@ -148,17 +131,16 @@
                       </div>
                     </td>
                     <td>3</td>
+                    <td>8168803</td>
                     <td>05-27 10:19</td>
                     <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
                     <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                    <td>19009086</td>
-                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
                     <td>
                        10<br>115</td>
-                    <td>紅綠燈<br>09123456789</td>
-                    <td>已拋出貨檔</td>
-                    <td>friDay購物</td>
-                    <td>20240527513391</td>
+                    <td>
+                       Serena<br>0912345678</td>
+                    <td>7-11 啊啊啊門市</td>
+                    <td>宅配</td>
                   </tr>
                   <tr>
                     <td>
@@ -168,17 +150,16 @@
                       </div>
                     </td>
                     <td>4</td>
+                    <td>8168803</td>
                     <td>05-27 10:19</td>
                     <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
                     <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                    <td>19009086</td>
-                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
                     <td>
                        10<br>115</td>
-                    <td>紅綠燈<br>09123456789</td>
-                    <td>已拋出貨檔</td>
-                    <td>friDay購物</td>
-                    <td>20240527513391</td>
+                    <td>
+                       Serena<br>0912345678</td>
+                    <td>7-11 啊啊啊門市</td>
+                    <td>宅配</td>
                   </tr>
                   <tr>
                     <td>
@@ -188,17 +169,16 @@
                       </div>
                     </td>
                     <td>5</td>
+                    <td>8168803</td>
                     <td>05-27 10:19</td>
                     <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
                     <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                    <td>19009086</td>
-                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
                     <td>
                        10<br>115</td>
-                    <td>紅綠燈<br>09123456789</td>
-                    <td>已拋出貨檔</td>
-                    <td>friDay購物</td>
-                    <td>20240527513391</td>
+                    <td>
+                       Serena<br>0912345678</td>
+                    <td>7-11 啊啊啊門市</td>
+                    <td>宅配</td>
                   </tr>
                   <tr>
                     <td>
@@ -208,17 +188,16 @@
                       </div>
                     </td>
                     <td>6</td>
+                    <td>8168803</td>
                     <td>05-27 10:19</td>
                     <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
                     <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                    <td>19009086</td>
-                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
                     <td>
                        10<br>115</td>
-                    <td>紅綠燈<br>09123456789</td>
-                    <td>已拋出貨檔</td>
-                    <td>friDay購物</td>
-                    <td>20240527513391</td>
+                    <td>
+                       Serena<br>0912345678</td>
+                    <td>7-11 啊啊啊門市</td>
+                    <td>宅配</td>
                   </tr>
                   <tr>
                     <td>
@@ -228,17 +207,16 @@
                       </div>
                     </td>
                     <td>7</td>
+                    <td>8168803</td>
                     <td>05-27 10:19</td>
                     <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
                     <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                    <td>19009086</td>
-                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
                     <td>
                        10<br>115</td>
-                    <td>紅綠燈<br>09123456789</td>
-                    <td>已拋出貨檔</td>
-                    <td>friDay購物</td>
-                    <td>20240527513391</td>
+                    <td>
+                       Serena<br>0912345678</td>
+                    <td>7-11 啊啊啊門市</td>
+                    <td>宅配</td>
                   </tr>
                   <tr>
                     <td>
@@ -248,17 +226,16 @@
                       </div>
                     </td>
                     <td>8</td>
+                    <td>8168803</td>
                     <td>05-27 10:19</td>
                     <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
                     <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                    <td>19009086</td>
-                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
                     <td>
                        10<br>115</td>
-                    <td>紅綠燈<br>09123456789</td>
-                    <td>已拋出貨檔</td>
-                    <td>friDay購物</td>
-                    <td>20240527513391</td>
+                    <td>
+                       Serena<br>0912345678</td>
+                    <td>7-11 啊啊啊門市</td>
+                    <td>宅配</td>
                   </tr>
                   <tr>
                     <td>
@@ -268,17 +245,16 @@
                       </div>
                     </td>
                     <td>9</td>
+                    <td>8168803</td>
                     <td>05-27 10:19</td>
                     <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
                     <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                    <td>19009086</td>
-                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
                     <td>
                        10<br>115</td>
-                    <td>紅綠燈<br>09123456789</td>
-                    <td>已拋出貨檔</td>
-                    <td>friDay購物</td>
-                    <td>20240527513391</td>
+                    <td>
+                       Serena<br>0912345678</td>
+                    <td>7-11 啊啊啊門市</td>
+                    <td>宅配</td>
                   </tr>
                   <tr>
                     <td>
@@ -288,17 +264,16 @@
                       </div>
                     </td>
                     <td>10</td>
+                    <td>8168803</td>
                     <td>05-27 10:19</td>
                     <td class="prdnm">8168803<br>屈臣氏維他命C嫩白潤膚乳液480ml</td>
                     <td class="bc-dealId-66350" style="line-height:130%;">148398<br>20240527975349</td>
-                    <td>19009086</td>
-                    <td class="sizenm"><span class="word-break tooltip one">單一規格</span></td>
                     <td>
                        10<br>115</td>
-                    <td>紅綠燈<br>09123456789</td>
-                    <td>已拋出貨檔</td>
-                    <td>friDay購物</td>
-                    <td>20240527513391</td>
+                    <td>
+                       Serena<br>0912345678</td>
+                    <td>7-11 啊啊啊門市</td>
+                    <td>宅配</td>
                   </tr>
                 </tbody>
               </table>
@@ -445,6 +420,99 @@
                 </tbody>
               </table>
             </div>
+          </div>
+        </div>
+        <div class="lightbox" id="print_table">
+          <div class="content">
+            <div class="lightbox_table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      <div class="chk_stylelize">
+                        <input class="chkall" id="chkall" type="checkbox" name="chk_item">
+                        <label for="chkall">全選</label>
+                      </div>
+                    </th>
+                    <th>項次</th>
+                    <th>交易編號</th>
+                    <th>箱號</th>
+                    <th>商品編號<br>商品名稱</th>
+                    <th>規格編號<br>供應商料號</th>
+                    <th>數量<br>售價</th>
+                    <th>收件人<br>收件人手機</th>
+                    <th>收件人地址/取件門市</th>
+                    <th>配送方式</th>
+                    <th>物流配送號</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="chk_stylelize">
+                        <input class="chk_item" id="chk_item1" type="checkbox" name="chk_item">
+                        <label for="chk_item1"></label>
+                      </div>
+                    </td>
+                    <td>1</td>
+                    <td>
+                       20240527975349<br><a class="btn-blue" href="#">我要分箱</a></td>
+                    <td>1</td>
+                    <td class="prdnm">8168803<br>一般商品</td>
+                    <td class="bc-dealId-66350" style="line-height:130%;">148398<br>TEST01</td>
+                    <td>
+                       10<br>1154</td>
+                    <td>
+                       Serena<br>0912345678</td>
+                    <td>7-11 啊啊啊門市</td>
+                    <td>超取7-11</td>
+                    <td>K1235678</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="chk_stylelize">
+                        <input class="chk_item" id="chk_item2" type="checkbox" name="chk_item">
+                        <label for="chk_item2"></label>
+                      </div>
+                    </td>
+                    <td>2</td>
+                    <td>
+                       20240527975349<br><a class="btn-blue" href="#">我要分箱</a></td>
+                    <td>1</td>
+                    <td class="prdnm">8168803<br>一般商品</td>
+                    <td class="bc-dealId-66350" style="line-height:130%;">148398<br>TEST01</td>
+                    <td>
+                       10<br>1154</td>
+                    <td>
+                       Serena<br>0912345678</td>
+                    <td>7-11 啊啊啊門市</td>
+                    <td>超取7-11</td>
+                    <td>K1235678</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="chk_stylelize">
+                        <input class="chk_item" id="chk_item3" type="checkbox" name="chk_item">
+                        <label for="chk_item3"></label>
+                      </div>
+                    </td>
+                    <td>3</td>
+                    <td>
+                       20240527975349<br><a class="btn-blue" href="#">我要分箱</a></td>
+                    <td>1</td>
+                    <td class="prdnm">8168803<br>一般商品</td>
+                    <td class="bc-dealId-66350" style="line-height:130%;">148398<br>TEST01</td>
+                    <td>
+                       10<br>1154</td>
+                    <td>
+                       Serena<br>0912345678</td>
+                    <td>7-11 啊啊啊門市</td>
+                    <td>超取7-11</td>
+                    <td>K1235678</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><a class="lightbox-close" href="#"></a>
           </div>
         </div>
         <div class="pages"><a class="prev-page disable">上一頁</a><span class="current-page">1/255</span><a class="next-page" href="#">下一頁</a>
